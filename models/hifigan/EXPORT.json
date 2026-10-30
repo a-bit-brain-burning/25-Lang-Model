@@ -1,0 +1,47 @@
+{
+  "status": "TRAINED_HIFIGAN_GENERATOR_ADAPTER_MODEL_ONLY_RELEASE",
+  "checkpoint_step": 31403,
+  "source_checkpoint_sha256": "c2a12e3ccd96486504d6c01d2b253e225f9e9b063a49339eed97e5217f02a803",
+  "upstream_revision": "4769534d45265d52a904b850da5a622601885777",
+  "official_initial_checkpoint_sha256": "049ff085eeae70ff0e1add39cfd4caad0fcca4511d259a84f68a0d1c1bbb2659",
+  "tensors": 219,
+  "generator_parameters": 925985,
+  "adapter_parameters": 1902992,
+  "parameters": 2828977,
+  "fp16_tensor_bytes": 5657954,
+  "combined_with_acoustic_parameters": 4015048,
+  "combined_fp16_tensor_bytes": 8030096,
+  "files": {
+    "vocoder_adapter_fp16.safetensors": {
+      "bytes": 5680322,
+      "sha256": "1493330513821fdf877d08bbc62963017ebb3c633ceb5767e3d5e242f042d802"
+    },
+    "vocoder_adapter_fp32.pt": {
+      "bytes": 11383177,
+      "sha256": "aceaa0414449ba28632ec136ae852b0e22794e8a9faf9fd9422b59a34a3a6dc2"
+    },
+    "config.json": {
+      "bytes": 794,
+      "sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06"
+    },
+    "model_config.json": {
+      "bytes": 1156,
+      "sha256": "0ac28ee7bcec978d47591f2696273fd4ecc00fe53fafec7860e456d17ba98be2"
+    },
+    "finetune_config.json": {
+      "bytes": 974,
+      "sha256": "359326ab73aa4624eb7ba699e1af4c0d5cd08995a3dc6a287d663d798180b69d"
+    }
+  },
+  "source_raw_fp16_sha256": "ef9153d35a0f6f07c9d12e3368596b95cb9006a8d11ffc0d0fa8a9028cc6b4eb",
+  "source_fp32_file_sha256": "aceaa0414449ba28632ec136ae852b0e22794e8a9faf9fd9422b59a34a3a6dc2",
+  "provenance_receipt": "receipts/hifigan_provenance.json",
+  "generator_weight_norm_folded": true,
+  "inference_mode": "offline_full_utterance",
+  "streaming_verified": false,
+  "new_text_frontend_included": false,
+  "optimizer_discriminator_rng_included": false,
+  "quality_pass": false,
+  "native_ram_pass": false,
+  "precision": "FP16 stored parameters; default CPU reference expands to FP32. FP32 alternative preserves original master parameters."
+}

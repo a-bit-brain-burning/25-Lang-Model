@@ -24,3 +24,6 @@ outputs/
 *.key
 id_ed25519*
 id_rsa*
+
+# Local IDE settings
+.idea/

@@ -1,0 +1,18 @@
+{
+  "status": "REAL_75_DEVELOPMENT_COMPLETE",
+  "source_result_sha256": "462663bc7dadbb64f44b25dcd9b3cd40bb7cd0f2b07ce11ec34b4e59758373fe",
+  "source_checkpoint_sha256": "c2a12e3ccd96486504d6c01d2b253e225f9e9b063a49339eed97e5217f02a803",
+  "cases": 75,
+  "languages": 25,
+  "mean_spectral_by_path": {
+    "frozen_acoustic_adapter_true_duration": 0.5549892274538676,
+    "physical_label_adapter": 0.36947482705116275,
+    "true_mel_oracle": 0.30369572003682455
+  },
+  "all_finite": true,
+  "input_information_differs_between_paths": true,
+  "independent_test_used": false,
+  "quality_pass": false,
+  "mos": null,
+  "native_ram_verified": false
+}

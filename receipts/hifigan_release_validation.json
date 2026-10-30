@@ -1,0 +1,63 @@
+{
+  "status": "REAL_TRAINED_WEIGHTS_SOURCE_MATH_EQUIVALENCE_VERIFIED",
+  "time_bjt": "2026-10-30T10:39:57.816729+08:00",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "unit_tests_passed": 25,
+  "unit_tests_skipped": 0,
+  "hifigan_unit_tests": 10,
+  "existing_acoustic_unit_tests": 15,
+  "reference_cases": [
+    {
+      "weights": "vocoder_adapter_fp16.safetensors",
+      "language": "en",
+      "physical_frames": 7,
+      "output_samples": 1120,
+      "adapter_max_abs_error": 0.0,
+      "generator_max_abs_error": 0.0,
+      "resampled_output_max_abs_error": 0.0
+    },
+    {
+      "weights": "vocoder_adapter_fp16.safetensors",
+      "language": "zh",
+      "physical_frames": 7,
+      "output_samples": 1120,
+      "adapter_max_abs_error": 0.0,
+      "generator_max_abs_error": 0.0,
+      "resampled_output_max_abs_error": 0.0
+    },
+    {
+      "weights": "vocoder_adapter_fp32.pt",
+      "language": "en",
+      "physical_frames": 7,
+      "output_samples": 1120,
+      "adapter_max_abs_error": 0.0,
+      "generator_max_abs_error": 0.0,
+      "resampled_output_max_abs_error": 0.0
+    },
+    {
+      "weights": "vocoder_adapter_fp32.pt",
+      "language": "zh",
+      "physical_frames": 7,
+      "output_samples": 1120,
+      "adapter_max_abs_error": 0.0,
+      "generator_max_abs_error": 0.0,
+      "resampled_output_max_abs_error": 0.0
+    }
+  ],
+  "input_scope": "Controlled normalized conditions with actual released weights; not a new speech quality or native RAM assessment",
+  "original_generator_source_sha256": "6b2c446e551fa3f0855cf02d4c4dc178d7046aa6f3cda2b42321658b281673b2",
+  "original_adapter_frontend_sha256": "d420a671d5f5786fcd07fd5581fcb9e885e281bac30c131ee597e00c8f5f38db",
+  "all_219_weights_fp16_roundtrip_equal_original_export": true,
+  "official_final_leaky_relu_slope_preserved": 0.01,
+  "matplotlib_required": false,
+  "offline_full_utterance_only": true,
+  "cpu_actual_new_deployment_peak_measured": false,
+  "native_ram_pass": false,
+  "quality_pass": false,
+  "audio_played": false
+}

@@ -1,6 +1,8 @@
 # 声码器接口规格与实现交接
 
-本仓库交付 25 语言声学模型及声码器接入位置。声码器的网络、训练代码和权重均未交付；`VocoderStub` 会抛出 `NotImplementedError`，不会生成占位音频。实现入口是 [`new25_acoustic/vocoder.py`](../new25_acoustic/vocoder.py)，声学结果由 [`new25_acoustic/inference.py`](../new25_acoustic/inference.py) 产生。
+本报告定义25语言声学输出与未来流式声码器的通用接入契约。通用入口 [`new25_acoustic/vocoder.py`](../new25_acoustic/vocoder.py) 中的`VocoderStub`仍会抛出`NotImplementedError`，不会生成占位音频；声学结果由 [`new25_acoustic/inference.py`](../new25_acoustic/inference.py) 产生。
+
+仓库已另行追加真实微调的HiFi-GAN Generator与31/39维→mel适配器，见 [`HIFIGAN_INFERENCE.md`](HIFIGAN_INFERENCE.md)。该实现使用整句离线API，不支持本报告的连续分块状态协议；不要将下文的分块示例直接套到HiFi-GAN上。
 
 接口目标是把本版本的 **31/39 维物理声学表示**转换成同一时间线上的 16 kHz 单声道浮点 PCM。这些谱形分量的原始基底和标度尚未完整说明，不能将其命名为通用 mel、线性频谱或某个已知倒谱格式，也不能直接接到仅接受 mel 的预训练声码器。
 

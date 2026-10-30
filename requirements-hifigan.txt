@@ -1,0 +1,3 @@
+-r requirements.txt
+# CPU reference version used for this repository's HiFi-GAN validation.
+scipy==1.15.3

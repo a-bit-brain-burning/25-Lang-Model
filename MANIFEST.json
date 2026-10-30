@@ -1,31 +1,39 @@
 {
-  "format_version": 1,
-  "component": "trained_25_language_acoustic_only",
+  "format_version": 2,
+  "component": "trained_25_language_acoustic_and_finetuned_hifigan",
   "self_excluded": true,
   "files": {
     ".gitignore": {
-      "bytes": 272,
-      "sha256": "f91943d87d91fa5ac287197d670a1299905380265bc5a3f5f98b8526f9126550"
+      "bytes": 301,
+      "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 4344,
-      "sha256": "61ab7339a6a4d4cc50c63b27a3a738d0c4012fa6504c88f7419698034d579c31"
+      "bytes": 5527,
+      "sha256": "0c7aa0adf48e2c2797ccb27d5bebfc1cbae2aa1424b4029b5cb6c1fb54c034b4"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
       "sha256": "15496906b820a1de276b5a56641ebdb7716595b84e5cdc33bb8b30809a7e4cc7"
     },
     "docs/ACOUSTIC_MODEL_CARD.md": {
-      "bytes": 11420,
-      "sha256": "b9be7c61f5a1a012392def5d895eb1379b1210eae188957d7c997ac56f028755"
+      "bytes": 11465,
+      "sha256": "51edcffe5830cb61955acf7bf8b458bd2b0df9e3f5062870d0a74a7e5e8465d7"
+    },
+    "docs/HIFIGAN_INFERENCE.md": {
+      "bytes": 3123,
+      "sha256": "35c145ef40d35880c5dfaca34a431b3394bcef5b900694f7e07318dbe2ee4284"
+    },
+    "docs/HIFIGAN_MODEL_CARD.md": {
+      "bytes": 5192,
+      "sha256": "fc852192151e303f97a09c9727f265f71dad19ba70c37e2bec4f1e1551c8dc39"
     },
     "docs/TRAINING.md": {
       "bytes": 8756,
       "sha256": "d5e50bc90c8090549e83b5f30de65648c884e0b40252d9e271a38cd7f373a236"
     },
     "docs/VOCODER_INTERFACE.md": {
-      "bytes": 13378,
-      "sha256": "a28273bbe1b1dd501e2c196f58cc5d36a8b9a64ae7f1e425a77624914fe4d0a3"
+      "bytes": 13617,
+      "sha256": "9337f78c42069db66477e19f7f9f4bb694072ed170a663653173968c83a3044a"
     },
     "models/EXPORT.json": {
       "bytes": 1970,
@@ -38,6 +46,30 @@
     "models/acoustic_fp32.pt": {
       "bytes": 4773201,
       "sha256": "c8c30641becc7de082ce192934761f1256007dbf4a3a786c1a0973ec31fc90c2"
+    },
+    "models/hifigan/EXPORT.json": {
+      "bytes": 1980,
+      "sha256": "d253ec081a11b94c05562d2e319668e0ddca731e61bc5a2b99ac99792e47a84a"
+    },
+    "models/hifigan/config.json": {
+      "bytes": 794,
+      "sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06"
+    },
+    "models/hifigan/finetune_config.json": {
+      "bytes": 974,
+      "sha256": "359326ab73aa4624eb7ba699e1af4c0d5cd08995a3dc6a287d663d798180b69d"
+    },
+    "models/hifigan/model_config.json": {
+      "bytes": 1156,
+      "sha256": "0ac28ee7bcec978d47591f2696273fd4ecc00fe53fafec7860e456d17ba98be2"
+    },
+    "models/hifigan/vocoder_adapter_fp16.safetensors": {
+      "bytes": 5680322,
+      "sha256": "1493330513821fdf877d08bbc62963017ebb3c633ceb5767e3d5e242f042d802"
+    },
+    "models/hifigan/vocoder_adapter_fp32.pt": {
+      "bytes": 11383177,
+      "sha256": "aceaa0414449ba28632ec136ae852b0e22794e8a9faf9fd9422b59a34a3a6dc2"
     },
     "models/model_config.json": {
       "bytes": 1564,
@@ -83,9 +115,25 @@
       "bytes": 2940,
       "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
     },
+    "new25_hifigan/__init__.py": {
+      "bytes": 489,
+      "sha256": "1a972ba8440b3656e7cb65de1916e743b5cb36d0821dddee0e4243dd457d1204"
+    },
+    "new25_hifigan/frontend.py": {
+      "bytes": 3675,
+      "sha256": "11e31760cebc18fe8cf3e88bf3e522a57c0d36c5692f563a10fdb2d0255906a1"
+    },
+    "new25_hifigan/inference.py": {
+      "bytes": 13137,
+      "sha256": "7eec39f53f5414b842bcf97c79ef50aefc952ccb8709444922600e048849e44f"
+    },
+    "new25_hifigan/model.py": {
+      "bytes": 6174,
+      "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
+    },
     "pyproject.toml": {
-      "bytes": 371,
-      "sha256": "47412c52672a10cf6d149ea1d9bf7dcacdc78a7c55769872515d279236a7e901"
+      "bytes": 449,
+      "sha256": "b51a9f896bf773198b63970e2d47ffd4484ea44266c760540d01f2afd64f3dc8"
     },
     "receipts/acoustic_completed.json": {
       "bytes": 290,
@@ -95,9 +143,25 @@
       "bytes": 20090,
       "sha256": "4ac4085a421cef314842251b0ac8e88b47854f0eb2920c3a39001d5027e0ab04"
     },
+    "receipts/hifigan_development_summary.json": {
+      "bytes": 645,
+      "sha256": "fda6f5b0c51e578eae74db998b4543c7a66cabd6e85a7d17f655f8ee169fd62a"
+    },
+    "receipts/hifigan_provenance.json": {
+      "bytes": 66888,
+      "sha256": "2cf10e9fc9ec993ea206cc779d006e7a359a8429fda40fbade40a69082a81bcd"
+    },
+    "receipts/hifigan_release_validation.json": {
+      "bytes": 2090,
+      "sha256": "ef214998fa98669931e50ad84ccba6a404eddcfe366bf39d29e9c20db18904a2"
+    },
     "receipts/release_validation.json": {
       "bytes": 9443,
       "sha256": "4527a7a757b7db0543a2967c6031c99d9344ee5656b998a3a4014e9895837f60"
+    },
+    "requirements-hifigan.txt": {
+      "bytes": 106,
+      "sha256": "6d9be3806fbae6892fa07e30445dfc8f66127d0d431900176d3bc9a456b85337"
     },
     "requirements.txt": {
       "bytes": 156,
@@ -116,8 +180,12 @@
       "sha256": "46342d781bf035b81844d8796159816de71f630c6fea61e3dff819abce322201"
     },
     "scripts/verify_release.py": {
-      "bytes": 3436,
-      "sha256": "f667df8c8cf9ed52a707429d386bedaee0a4a86d398dcfbd4d48076b0729233a"
+      "bytes": 6607,
+      "sha256": "35427376bed20ea9806ad5bdafd5cec929a7081a630424fc87f21e203f1766c8"
+    },
+    "tests/test_hifigan.py": {
+      "bytes": 13387,
+      "sha256": "d45eaf7e86f3be8e4d2e9a773261ab7ff1c9ebe2bab7ec55f78bdfb970eeba37"
     },
     "tests/test_inference.py": {
       "bytes": 9171,
@@ -126,6 +194,14 @@
     "tests/test_release.py": {
       "bytes": 2917,
       "sha256": "3696b34586cd691e445d2549c65fea8a8aa435800c0b1cb7e8ce48e3b650f47a"
+    },
+    "third_party/hifi_gan/LICENSE": {
+      "bytes": 1067,
+      "sha256": "5eec017ce442989e01a46cd9cd6aeb13cd0aa3b3943f681577bda00475afaa23"
+    },
+    "third_party/hifi_gan/PROVENANCE.json": {
+      "bytes": 1202,
+      "sha256": "cff325862a0a1500971ece5ec201f15c02dfdc62322dcd2300ee91686c040f27"
     }
   }
 }
