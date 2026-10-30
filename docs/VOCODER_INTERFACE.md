@@ -2,6 +2,8 @@
 
 本报告定义25语言声学输出与未来流式声码器的通用接入契约。通用入口 [`new25_acoustic/vocoder.py`](../new25_acoustic/vocoder.py) 中的`VocoderStub`仍会抛出`NotImplementedError`，不会生成占位音频；声学结果由 [`new25_acoustic/inference.py`](../new25_acoustic/inference.py) 产生。
 
+声码器之后的16k波形模块与原Opus BWE24后端，使用独立的[`POSTPROCESS_MODULES.md`](POSTPROCESS_MODULES.md)契约和`PCM16Stage`协议。该插槽处理PCM而不是本报告的31/39维条件；目前仅整句调用，每句显式重置状态，不冒充连续分块声码器实现。
+
 另新增固定25,000步RNDVoC-Lite与原E2物理→mel adapter，见[`RNDVOC_INFERENCE.md`](RNDVOC_INFERENCE.md)。其`synthesize`消费相同`normalized`条件并输出16k的`T*160`采样；`synthesize_mel`直接消费raw80 logmel并输出22.05k的`M*256`采样。它是整句离线接口，未实现下文预留的连续流式状态协议。
 
 仓库已另行追加真实微调的HiFi-GAN Generator与31/39维→mel适配器，见 [`HIFIGAN_INFERENCE.md`](HIFIGAN_INFERENCE.md)。该实现使用整句离线API，不支持本报告的连续分块状态协议；不要将下文的分块示例直接套到HiFi-GAN上。

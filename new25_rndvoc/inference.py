@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 from collections.abc import Mapping
 import hashlib
+import json
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -186,13 +187,28 @@ def main(argv=None):
     parser.add_argument("--model-dir", type=Path, default=Path("models/rndvoc"))
     parser.add_argument("--weights", choices=("vocoder_fp16.safetensors", "vocoder_fp32.safetensors"),
                         default="vocoder_fp16.safetensors")
-    parser.add_argument("--output", type=Path, required=True, help="Explicit 16-kHz PCM16 WAV destination")
+    parser.add_argument("--output", type=Path, required=True, help="PCM16 WAV destination:16k by default,24k with --bwe24")
+    parser.add_argument("--bwe24", action="store_true", help="Append the original Model Opus-BWE24 backend")
+    parser.add_argument("--postprocess-cache", type=Path, help="Optional external BWE build/cache directory")
     args = parser.parse_args(argv)
+    if args.postprocess_cache is not None and not args.bwe24:
+        parser.error("--postprocess-cache requires --bwe24")
     normalized = load_acoustic_npz(args.acoustic, args.language)
     model = RNDVoCVocoder.from_pretrained(args.model_dir, weights=args.weights)
-    waveform = model.synthesize(normalized, args.language)
-    write_pcm16(args.output, waveform)
-    print(f"Wrote {waveform.shape[-1]} samples at16000Hz using selected generator step25000")
+    if args.bwe24:
+        from new25_postprocess import OpusBWE24, RNDVoCWithBWE24
+        from new25_postprocess.bwe24 import quantize, save_wav
+        backend = RNDVoCWithBWE24(model, OpusBWE24(cache=args.postprocess_cache))
+        waveform = backend.synthesize(normalized, args.language)
+        save_wav(args.output, quantize(waveform[0]), 24000)
+        report = dict(backend.last_report, vocoder_checkpoint_steps=25000,
+                      vocoder_checkpoint_sha256=CHECKPOINT_SHA256, output=str(args.output))
+        Path(str(args.output) + ".json").write_text(json.dumps(report, indent=2) + "\n")
+        print(f"Wrote {waveform.shape[-1]} samples at24000Hz with original Opus BWE")
+    else:
+        waveform = model.synthesize(normalized, args.language)
+        write_pcm16(args.output, waveform)
+        print(f"Wrote {waveform.shape[-1]} samples at16000Hz using selected generator step25000")
 
 
 if __name__ == "__main__":

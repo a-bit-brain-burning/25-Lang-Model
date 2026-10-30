@@ -1,0 +1,3 @@
+# Preserve the imported Model C/DSP assets byte-for-byte under their source SHA.
+# Project Python/docs retain normal whitespace checks.
+new25_postprocess/assets/opus_bwe/** -whitespace

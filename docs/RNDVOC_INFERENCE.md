@@ -65,3 +65,7 @@ native22k = vocoder.synthesize_mel(raw_logmel)
 该实现为非因果整句离线推理。`state`或`chunk_frames`非空会报错；`synthesize_chunk`也明确拒绝调用。它没有实现[`VOCODER_INTERFACE.md`](VOCODER_INTERFACE.md)预留的逐块流式协议，不能将声学模型的分块状态直接传给它。
 
 本次push仅执行序列化与静态核对，没有运行以上示例、模块前向、完整推理、训练、评估或性能实验。已有75句试听回执来自原检查点和原实现；包内新增接口的静态一致性不表述为发布入口运行验收。主观质量、任意文本、GPU性能和原生10MB进程边界见[`RNDVOC_MODEL_CARD.md`](RNDVOC_MODEL_CARD.md)。
+
+## 原件24k后端与中间模块
+
+`--bwe24`可追加独立的原Opus BWE后端，输出24k WAV及处理sidecar；不加此选项时仍输出16k。SDK用`RNDVoCWithBWE24(vocoder, OpusBWE24(), stages=[stage_a, stage_b])`在声码器与扩带之间显式插入16k波形模块。采样率、长度、状态、精度以及直接实现协议的示例见[`POSTPROCESS_MODULES.md`](POSTPROCESS_MODULES.md)。此处不能直接插入只接受mel或31/39维物理特征的模块。

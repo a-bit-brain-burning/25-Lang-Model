@@ -1,0 +1,4 @@
+# Original Opus BWE backend: no Torch import needed by this component itself.
+numpy>=1.26,<3
+scipy>=1.11,<2
+# Native first use requires a POSIX C compiler; CMake>=3.16 is optional.

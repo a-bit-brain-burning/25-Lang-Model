@@ -1,0 +1,111 @@
+{
+  "format": "original_model_opus_bwe24_release_v1",
+  "source_model_repository": "https://github.com/a-bit-brain-burning/Model",
+  "source_model_commit": "ad4799a75530903cd128e23e38c250602f7cea61",
+  "source_directory": "models/grouped11/fp32/shared/postprocess/opus_bwe",
+  "original_module_source_sha256": "4728526d713ab7fdbc4e53a929d44eb4ff7d80394110317803c24451a70ec72b",
+  "original_assets_sha_identical": 72,
+  "original_learning_parameters": 367890,
+  "prior_runtime_validation": {
+    "status": "ORIGINAL_BWE_WRAPPER_EQUAL_LENGTH_AND_RESET_PASSED",
+    "cases": [
+      {
+        "input_samples": 320,
+        "output_samples": 480,
+        "original_wrapper_pcm_equal": true
+      },
+      {
+        "input_samples": 1,
+        "output_samples": 2,
+        "original_wrapper_pcm_equal": true
+      },
+      {
+        "input_samples": 4097,
+        "output_samples": 6146,
+        "original_wrapper_pcm_equal": true
+      },
+      {
+        "input_samples": 337,
+        "output_samples": 506,
+        "original_wrapper_pcm_equal": true
+      }
+    ],
+    "repeat_is_deterministic": true,
+    "wrong_sample_rate_rejected": true,
+    "cross_platform_bit_exactness_claimed": false,
+    "no_quality_claim": true
+  },
+  "prior_build": {
+    "backend": "original CMake AUTO",
+    "seconds": 1.9309078082442284,
+    "binary_sha256": "5e69579e9606527207aa2f13ae7c8b881f5dd5abcef531a76a93fb1c617aa434",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "parallel_build_workers": 2,
+    "fast_math": false,
+    "source_arithmetic_changed": false,
+    "compiled_for_this_host": true
+  },
+  "prior_fixed75_preview": {
+    "validation": {
+      "status": "ORIGINAL_BWE_WRAPPER_EQUAL_LENGTH_AND_RESET_PASSED",
+      "cases": [
+        {
+          "input_samples": 320,
+          "output_samples": 480,
+          "original_wrapper_pcm_equal": true
+        },
+        {
+          "input_samples": 1,
+          "output_samples": 2,
+          "original_wrapper_pcm_equal": true
+        },
+        {
+          "input_samples": 4097,
+          "output_samples": 6146,
+          "original_wrapper_pcm_equal": true
+        },
+        {
+          "input_samples": 337,
+          "output_samples": 506,
+          "original_wrapper_pcm_equal": true
+        }
+      ],
+      "repeat_is_deterministic": true,
+      "wrong_sample_rate_rejected": true,
+      "cross_platform_bit_exactness_claimed": false,
+      "no_quality_claim": true
+    },
+    "predicted_bwe_seconds": 16.382148057222366,
+    "oracle_bwe_seconds": 17.71305985376239,
+    "predicted_quantizer_clipped_samples": 3,
+    "mean_output_to_input_rms_ratio": 1.0058845730965111,
+    "input_pcm_matches_retained_baseline_all75": true,
+    "no_denoising_or_gain_normalization": true,
+    "learned_parameter_count_with_bwe": 4170882,
+    "true24k_reference_available": false,
+    "high_frequency_quality_pass": false
+  },
+  "prior_rndvoc_checkpoint_step": 35000,
+  "prior_rndvoc_checkpoint_sha256": "0509f2503892fcc412f65e70d2dadcf8f9ffa2e394d229dba9ae77be584712ae",
+  "repository_rndvoc_checkpoint_step": 25000,
+  "new_checkpoints_or_audio_included": false,
+  "original_component_math_changed": false,
+  "publication_check_scope": "Static source, assets, interfaces, packaging and documentation only",
+  "runtime_inference_training_evaluation_or_build_rerun_for_push": false,
+  "new_intermediate_stage_runtime_validated": false,
+  "human_quality_pass": false,
+  "whole_process_ram_pass": false,
+  "published_bwe_module_sha256": "25e6dc6e2eb11abb0b75ccf05ea2af7cf708c404c882595799b82150d9e30d90",
+  "unchanged_original_numeric_and_build_functions_ast_sha256": {
+    "quantize": "267065ff9d9820d7e15c12ae47dcec8d7f57a7686ac5e297cf2971153c7ca7c1",
+    "save_wav": "f7dca1ab3133a91470671b00e7559fb7f976b0fc062176154dfc029df9f04c62",
+    "OpusBWE24._build": "1412a7edb342731272298693ac85b37705c210bc73b3215f21c993f068b27a16",
+    "OpusBWE24._native48": "a4a167f0cba1de5bce313a9b413ab8c8a051fce1205ea288e97150ec896f8328",
+    "OpusBWE24.process_pcm16": "d344bb12e00eb43e4208c724dba748995eb196f2859ffce7bc0dcaa211c6ff67",
+    "OpusBWE24.process_waveform": "73af31b190799517c65319c8f192b9867109d963ccbba144c316568b7653edb3",
+    "OpusBWE24.resample_control": "c9a42ed2426d3c957586fd1ebda1a15a93b730bf67948a3b6a696cc299fe6a20",
+    "OpusBWE24.validate_port": "59875993b496e50ca361aed0af188dd6e891ae423269533965cfb895a2059eb3"
+  },
+  "relocation_changes": "Only default package asset/manifest paths, relative chain import and explicit optional intermediate waveform hooks",
+  "asset_manifest_sha256": "ba68cc7a10ec5cb46fd58da56e2195a4113f0f4180a6c61d20602b25fed7e519"
+}

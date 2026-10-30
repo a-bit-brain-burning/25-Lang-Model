@@ -1,0 +1,24 @@
+{
+  "status": "ORIGINAL_BWE24_AND_MODULE_SLOTS_STATIC_CHECKS_PASSED",
+  "original_model_assets_sha_verified": 72,
+  "package_data_paths_verified": 73,
+  "preserved_original_function_AST": 8,
+  "python_sources_ast_parsed": [
+    "new25_postprocess/bwe24.py",
+    "new25_postprocess/chain.py",
+    "new25_postprocess/__init__.py",
+    "new25_postprocess/assets/opus_bwe/cmake/unpack_weights.py",
+    "new25_rndvoc/inference.py",
+    "scripts/verify_postprocess.py"
+  ],
+  "cli_and_sdk_signatures_and_callers_checked": true,
+  "documentation_links_checked": true,
+  "third_party_license_bytes_preserved": true,
+  "default_middle_stages": [],
+  "new_stage_protocol_runtime_validated": false,
+  "package_or_model_imported": false,
+  "C_build_or_audio_processing_run": false,
+  "training_inference_evaluation_benchmark_run": false,
+  "prior_35k_runtime_evidence_reused": true,
+  "repository_rndvoc_checkpoint_still": 25000
+}

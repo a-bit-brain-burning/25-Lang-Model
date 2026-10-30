@@ -6,6 +6,8 @@
 
 现已追加 **25,000步RNDVoC-Lite本地复现候选**及同一E2 mel adapter。RNDVoC为713,929参数，接原80k声学模型和adapter后共 **3,802,992个共享可学习参数**。默认可学习权重FP16、三个非学习投影缓冲FP32；它是查询时已评估的开发集最佳，不表示最终训练结束。真实mel重建SC为0.173447，80k预测特征＋真实时长整链SC为0.717298，两者不可混用。详见[RNDVoC模型卡](docs/RNDVOC_MODEL_CARD.md)和[接入接口](docs/RNDVOC_INFERENCE.md)。
 
+另提供独立的 **Model原Opus BWE24后端**：16k波形经原16→48k扩带和对齐流程输出24k，新增367,890参数；72个原始资产字节与许可保持。支持在声码器与扩带之间通过`stages=[...]`插入其他真实16k波形模块，详见[模块插入协议与示例](docs/POSTPROCESS_MODULES.md)。仓库声码器权重仍为25k；已有35k＋BWE试听作为先前运行证据单列，本次没有替换权重或重新生成试听。
+
 声学模型为 **1,186,071个存储参数**，FP16张量净大小2,372,142字节。追加的HiFi-GAN Generator为925,985参数、适配器为1,902,992参数，**完整链合计4,015,048参数、8,030,096字节FP16净权重**。两部分均提供FP16部署权重和FP32参考权重。
 
 ## 发布内容
@@ -33,6 +35,10 @@
 | 与已有E2完全相同的独立adapter权重 | [`models/rndvoc/adapter_fp16.safetensors`](models/rndvoc/adapter_fp16.safetensors) |
 | RNDVoC身份、逐张量来源及文件SHA | [`models/rndvoc/EXPORT.json`](models/rndvoc/EXPORT.json)、[`models/rndvoc/TENSOR_PROVENANCE.json`](models/rndvoc/TENSOR_PROVENANCE.json) |
 | RNDVoC原75句评估和提交静态核对 | [`receipts/rndvoc_development_summary.json`](receipts/rndvoc_development_summary.json)、[`receipts/rndvoc_release_static_validation.json`](receipts/rndvoc_release_static_validation.json) |
+| 原Model Opus BWE后端和中间模块插槽 | [`new25_postprocess/bwe24.py`](new25_postprocess/bwe24.py)、[`new25_postprocess/chain.py`](new25_postprocess/chain.py) |
+| 原件源码、静态C权重和SHA | [`new25_postprocess/assets/opus_bwe/`](new25_postprocess/assets/opus_bwe/)、[`BWE_ASSET_MANIFEST.json`](new25_postprocess/assets/BWE_ASSET_MANIFEST.json) |
+| 插入位置、模块契约与使用方法 | [`docs/POSTPROCESS_MODULES.md`](docs/POSTPROCESS_MODULES.md) |
+| 既有运行证据和本次静态检查 | [`receipts/opus_bwe24_provenance.json`](receipts/opus_bwe24_provenance.json)、[`receipts/postprocess_release_static_validation.json`](receipts/postprocess_release_static_validation.json) |
 
 语言ID顺序固定为：
 
@@ -58,6 +64,7 @@ python scripts/verify_release.py
 python scripts/verify_fargan.py
 # 此入口仅解析源码、元数据和权重文件，不导入模型或执行推理：
 python scripts/verify_rndvoc.py
+python scripts/verify_postprocess.py
 python -m unittest discover -s tests -v
 ```
 
@@ -114,6 +121,17 @@ python -m new25_rndvoc.inference \
 
 RNDVoC还提供`RNDVoCVocoder.synthesize_mel(raw_logmel)`，直接消费固定HiFi-GAN帧网格的`[1,80,M]`自然对数mel，返回22.05k的`[1,M*256]`PCM。当前是CPU整句参考实现；不提供连续声码器状态。全链FP16可学习张量7,605,984字节，另有1,380,996字节FP32投影缓冲，均不能替代完整10MB进程实测。
 
+追加原件24k输出（首次实际使用需C编译器，原件离线构建；普通导入及静态检查不构建）：
+
+```bash
+python -m pip install -e '.[rndvoc,postprocess]'
+python -m new25_rndvoc.inference \
+  --acoustic acoustic.npz --language zh --model-dir models/rndvoc \
+  --bwe24 --output output_24k.wav
+```
+
+可选链路为`RNDVoC 16k → 模块A → 模块B → 原Opus BWE24 → 24k`。中间模块均须保持16k单声道PCM16和原长度，每句重置状态；输入为mel或物理声学特征的模块应接在声码器前。新增插槽只做静态接口核对，外部模块的真实组合效果另需验收。
+
 普通新文本到IPA及32/36维、22/34维特征的完整前端资产尚未交付。本仓库可消费已有兼容特征，经声学模型和HiFi-GAN生成音频；不能据此宣称任意新文本TTS已验收。HiFi-GAN当前为整句离线实现，未实现通用声码器接口的连续分块状态协议。
 
 ## 验收边界
@@ -123,3 +141,5 @@ RNDVoC还提供`RNDVoCVocoder.synthesize_mel(raw_logmel)`，直接消费固定Hi
 仓库包含声学模型、HiFi-GAN、FARGAN、RNDVoC与相应适配器的model-only权重和复现/推理代码；不附带训练音频、训练特征、完整联合训练检查点、优化器历史、判别器权重或服务器运维文件。HiFi-GAN的原MIT许可保留于 [`third_party/hifi_gan/LICENSE`](third_party/hifi_gan/LICENSE)，Opus FARGAN原许可及IPR说明保留于[`third_party/opus/`](third_party/opus/)，RNDVoC上游MIT原文及固定来源保留于[`third_party/rndvoc/`](third_party/rndvoc/)。
 
 RNDVoC本次提交复用已有真实75句评估/试听回执，只执行模型张量序列化、源码与接口静态核对；没有为push重跑训练、推理、数据集评测或性能实验。静态检查通过不表述为新发布入口的运行验证通过。
+
+BWE原件及插入接口的提交同样仅做静态检查，复用此前Linux x86_64构建、原件数值/长度/状态检查及35k试听回执；本次未运行C构建、推理或实验。原件BSD许可及来源保留在[`assets/opus_bwe/licenses/`](new25_postprocess/assets/opus_bwe/licenses/)。

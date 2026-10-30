@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "new25-acoustic"
-version = "0.4.0"
+version = "0.5.0"
 description = "Shared 25-language acoustic model with HiFi-GAN, FARGAN and selected RNDVoC vocoders"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3"]
@@ -13,6 +13,84 @@ dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3"]
 hifigan = ["scipy>=1.11,<2"]
 fargan = ["scipy>=1.11,<2"]
 rndvoc = ["scipy>=1.11,<2", "librosa>=0.10.2,<0.12"]
+postprocess = ["scipy>=1.11,<2"]
 
 [tool.setuptools.packages.find]
-include = ["new25_acoustic*", "new25_hifigan*", "new25_fargan*", "new25_rndvoc*"]
+include = ["new25_acoustic*", "new25_hifigan*", "new25_fargan*", "new25_rndvoc*", "new25_postprocess*"]
+
+[tool.setuptools.package-data]
+new25_postprocess = [
+  "assets/BWE_ASSET_MANIFEST.json",
+  "assets/opus_bwe/BUILD.md",
+  "assets/opus_bwe/CMakeLists.txt",
+  "assets/opus_bwe/NOTICE.md",
+  "assets/opus_bwe/PROVENANCE.json",
+  "assets/opus_bwe/cmake/unpack_weights.py",
+  "assets/opus_bwe/licenses/COPYING",
+  "assets/opus_bwe/licenses/LICENSE_PLEASE_READ.txt",
+  "assets/opus_bwe/patches/bwe-only.patch",
+  "assets/opus_bwe/upstream/celt/_kiss_fft_guts.h",
+  "assets/opus_bwe/upstream/celt/arch.h",
+  "assets/opus_bwe/upstream/celt/arm/armcpu.h",
+  "assets/opus_bwe/upstream/celt/arm/celt_neon_intr.c",
+  "assets/opus_bwe/upstream/celt/arm/mathops_arm.h",
+  "assets/opus_bwe/upstream/celt/arm/pitch_arm.h",
+  "assets/opus_bwe/upstream/celt/arm/pitch_neon_intr.c",
+  "assets/opus_bwe/upstream/celt/celt.h",
+  "assets/opus_bwe/upstream/celt/celt_lpc.h",
+  "assets/opus_bwe/upstream/celt/cpu_support.h",
+  "assets/opus_bwe/upstream/celt/ecintrin.h",
+  "assets/opus_bwe/upstream/celt/entcode.h",
+  "assets/opus_bwe/upstream/celt/entdec.h",
+  "assets/opus_bwe/upstream/celt/entenc.h",
+  "assets/opus_bwe/upstream/celt/float_cast.h",
+  "assets/opus_bwe/upstream/celt/kiss_fft.c",
+  "assets/opus_bwe/upstream/celt/kiss_fft.h",
+  "assets/opus_bwe/upstream/celt/mathops.h",
+  "assets/opus_bwe/upstream/celt/mdct.h",
+  "assets/opus_bwe/upstream/celt/modes.h",
+  "assets/opus_bwe/upstream/celt/os_support.h",
+  "assets/opus_bwe/upstream/celt/pitch.c",
+  "assets/opus_bwe/upstream/celt/pitch.h",
+  "assets/opus_bwe/upstream/celt/stack_alloc.h",
+  "assets/opus_bwe/upstream/celt/x86/x86_arch_macros.h",
+  "assets/opus_bwe/upstream/dnn/arm/dnn_arm.h",
+  "assets/opus_bwe/upstream/dnn/arm/nnet_neon.c",
+  "assets/opus_bwe/upstream/dnn/bbwenet_data.h",
+  "assets/opus_bwe/upstream/dnn/burg.h",
+  "assets/opus_bwe/upstream/dnn/bwe_demo.c",
+  "assets/opus_bwe/upstream/dnn/freq.c",
+  "assets/opus_bwe/upstream/dnn/freq.h",
+  "assets/opus_bwe/upstream/dnn/lpcnet_tables.c",
+  "assets/opus_bwe/upstream/dnn/nndsp.c",
+  "assets/opus_bwe/upstream/dnn/nndsp.h",
+  "assets/opus_bwe/upstream/dnn/nnet.c",
+  "assets/opus_bwe/upstream/dnn/nnet.h",
+  "assets/opus_bwe/upstream/dnn/nnet_arch.h",
+  "assets/opus_bwe/upstream/dnn/nnet_default.c",
+  "assets/opus_bwe/upstream/dnn/osce.c",
+  "assets/opus_bwe/upstream/dnn/osce.h",
+  "assets/opus_bwe/upstream/dnn/osce_config.h",
+  "assets/opus_bwe/upstream/dnn/osce_features.c",
+  "assets/opus_bwe/upstream/dnn/osce_features.h",
+  "assets/opus_bwe/upstream/dnn/osce_structs.h",
+  "assets/opus_bwe/upstream/dnn/parse_lpcnet_weights.c",
+  "assets/opus_bwe/upstream/dnn/vec.h",
+  "assets/opus_bwe/upstream/dnn/vec_neon.h",
+  "assets/opus_bwe/upstream/include/opus_custom.h",
+  "assets/opus_bwe/upstream/include/opus_defines.h",
+  "assets/opus_bwe/upstream/include/opus_types.h",
+  "assets/opus_bwe/upstream/silk/Inlines.h",
+  "assets/opus_bwe/upstream/silk/MacroCount.h",
+  "assets/opus_bwe/upstream/silk/MacroDebug.h",
+  "assets/opus_bwe/upstream/silk/SigProc_FIX.h",
+  "assets/opus_bwe/upstream/silk/arm/LPC_inv_pred_gain_arm.h",
+  "assets/opus_bwe/upstream/silk/arm/biquad_alt_arm.h",
+  "assets/opus_bwe/upstream/silk/define.h",
+  "assets/opus_bwe/upstream/silk/errors.h",
+  "assets/opus_bwe/upstream/silk/macros.h",
+  "assets/opus_bwe/upstream/silk/resampler_structs.h",
+  "assets/opus_bwe/upstream/silk/structs.h",
+  "assets/opus_bwe/upstream/silk/typedef.h",
+  "assets/opus_bwe/weights/bbwenet_data.c.gz"
+]
