@@ -1,0 +1,125 @@
+{
+  "qemu_arm": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)",
+  "qemu_riscv": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)",
+  "items": {
+    "m55": {
+      "elf_sha256": "443194e50a4cb7d32696c0f980381e956fd470f997c1eaa559dfc547754903e2",
+      "elf_bytes": 4155228,
+      "build": {
+        "target": "m55",
+        "command": [
+          "arm-none-eabi-gcc",
+          "-mcpu=cortex-m55",
+          "-mthumb",
+          "-mfloat-abi=hard",
+          "-DNEW25_M55=1",
+          "-Os",
+          "-std=c11",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-nostdlib",
+          "-I",
+          "/tmp/new25-int8-simulator-handoff-20261029/native",
+          "-I",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native",
+          "-Wl,--build-id=none",
+          "-Wl,-Map=/tmp/new25-int8-simulator-handoff-20261029/build/m55/kernels.map",
+          "-T",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/m55.ld",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/start_m55.S",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/platform.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/tensor.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native/model_index.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native/kernel_fixture.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/m55/weights.S",
+          "-lgcc",
+          "-o",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/m55/kernels.elf"
+        ],
+        "elf_bytes": 4155228
+      },
+      "run": {
+        "command": [
+          "qemu-system-arm",
+          "-M",
+          "mps3-an547",
+          "-nographic",
+          "-monitor",
+          "none",
+          "-serial",
+          "none",
+          "-semihosting-config",
+          "enable=on,target=native",
+          "-kernel",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/m55/kernels.elf"
+        ]
+      },
+      "compressed_sha256": "ab6c3e015e7b5d1a671e9f60ad1dcfbf233d43668f5abab7cf3c7acabbee49c8",
+      "compressed_bytes": 3731472
+    },
+    "rv32": {
+      "elf_sha256": "35f3608e63309b67d019508a3bb73bb49773b37f5102102327aa38a3d6f98b2b",
+      "elf_bytes": 4184784,
+      "build": {
+        "target": "rv32",
+        "command": [
+          "/tmp/new25-int8-handoff-toolchain/usr/bin/riscv64-unknown-elf-gcc",
+          "-march=rv32imafdc",
+          "-mabi=ilp32d",
+          "-mcmodel=medany",
+          "-msmall-data-limit=0",
+          "-mno-relax",
+          "-Os",
+          "-std=c11",
+          "-ffreestanding",
+          "-fno-builtin",
+          "-fno-fast-math",
+          "-ffp-contract=off",
+          "-fno-unwind-tables",
+          "-fno-asynchronous-unwind-tables",
+          "-nostdlib",
+          "-I",
+          "/tmp/new25-int8-simulator-handoff-20261029/native",
+          "-I",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native",
+          "-Wl,--build-id=none",
+          "-Wl,-Map=/tmp/new25-int8-simulator-handoff-20261029/build/rv32/kernels.map",
+          "-T",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/rv32.ld",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/start_rv32.S",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/platform.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/native/tensor.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native/model_index.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/native/kernel_fixture.c",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/rv32/weights.S",
+          "-lgcc",
+          "-o",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/rv32/kernels.elf"
+        ],
+        "elf_bytes": 4184784
+      },
+      "run": {
+        "command": [
+          "qemu-system-riscv32",
+          "-M",
+          "virt",
+          "-m",
+          "128M",
+          "-bios",
+          "none",
+          "-nographic",
+          "-monitor",
+          "none",
+          "-kernel",
+          "/tmp/new25-int8-simulator-handoff-20261029/build/rv32/kernels.elf"
+        ]
+      },
+      "compressed_sha256": "f961aa621b36acc76ab1aef045cc40b5f33d0136852a79efc7119b6b169904dc",
+      "compressed_bytes": 3732150
+    }
+  }
+}

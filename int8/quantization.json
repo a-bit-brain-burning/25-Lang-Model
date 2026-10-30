@@ -1,0 +1,2997 @@
+{
+  "format": "new25_symmetric_int8_storage_v1",
+  "mode": "all_int8",
+  "source_commit": "3a7465fc29e2ea11daed206dbf9401c8cfb18430",
+  "parameter_elements": 4015048,
+  "original_state_tensors": 316,
+  "weights_sha256": "ba8824f6fe9cf07d2bedbfe981f723376d41b270aa8a99fec4f2573a08849bd6",
+  "nonquantized_values": "original FP16; normalization/bias/gamma preserved",
+  "host_load": "reconstruct FP32; not a native INT8 kernel or complete MCU firmware",
+  "tensors": {
+    "acoustic.phone.weight": {
+      "shape": [
+        285,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.phone.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.language.weight": {
+      "shape": [
+        25,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.language.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.phonetic.32.weight": {
+      "shape": [
+        128,
+        32
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.phonetic.32.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.phonetic.32.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.phonetic.36.weight": {
+      "shape": [
+        128,
+        36
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.phonetic.36.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.phonetic.36.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.context.22.weight": {
+      "shape": [
+        128,
+        22
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.context.22.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.context.22.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.context.34.weight": {
+      "shape": [
+        128,
+        34
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.context.34.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.context.34.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.0.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.0.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.0.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.0.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.0.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.0.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.0.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.0.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.0.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.0.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.0.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.1.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.1.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.1.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.1.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.1.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.1.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.1.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.1.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.1.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.1.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.1.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.2.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.2.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.2.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.2.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.2.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.2.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.2.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.2.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.2.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.2.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.2.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.3.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.3.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.3.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.3.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.3.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.3.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.3.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.3.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.3.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.3.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.3.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.4.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.4.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.4.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.4.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.4.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.4.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.4.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.4.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.4.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.4.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.4.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.5.dw.weight": {
+      "shape": [
+        128,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.5.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.5.dw.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.5.up.weight": {
+      "shape": [
+        256,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.5.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.5.up.bias": {
+      "shape": [
+        256
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.5.down.weight": {
+      "shape": [
+        128,
+        256
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.encoder.5.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.encoder.5.down.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.5.norm.weight": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.encoder.5.norm.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.prosody.0.weight": {
+      "shape": [
+        128,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.prosody.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.prosody.0.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.prosody.2.weight": {
+      "shape": [
+        5,
+        128
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.prosody.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.prosody.2.bias": {
+      "shape": [
+        5
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.language_prosody.weight": {
+      "shape": [
+        25,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.language_prosody.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.frame_in.weight": {
+      "shape": [
+        192,
+        135
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.frame_in.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.frame_in.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.rnn.ih.weight": {
+      "shape": [
+        576,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.rnn.ih.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.rnn.ih.bias": {
+      "shape": [
+        576
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.rnn.hh.weight": {
+      "shape": [
+        576,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.rnn.hh.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.0.dw.weight": {
+      "shape": [
+        192,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.0.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.0.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.0.up.weight": {
+      "shape": [
+        384,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.0.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.0.up.bias": {
+      "shape": [
+        384
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.0.down.weight": {
+      "shape": [
+        192,
+        384
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.0.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.0.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.0.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.0.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.1.dw.weight": {
+      "shape": [
+        192,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.1.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.1.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.1.up.weight": {
+      "shape": [
+        384,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.1.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.1.up.bias": {
+      "shape": [
+        384
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.1.down.weight": {
+      "shape": [
+        192,
+        384
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.1.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.1.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.1.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.1.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.2.dw.weight": {
+      "shape": [
+        192,
+        1,
+        5
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.2.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.2.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.2.up.weight": {
+      "shape": [
+        384,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.2.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.2.up.bias": {
+      "shape": [
+        384
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.2.down.weight": {
+      "shape": [
+        192,
+        384
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.decoder.2.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.decoder.2.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.2.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.decoder.2.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.heads.31.weight": {
+      "shape": [
+        31,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.heads.31.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.heads.31.bias": {
+      "shape": [
+        31
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.heads.39.weight": {
+      "shape": [
+        39,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.heads.39.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "acoustic.heads.39.bias": {
+      "shape": [
+        39
+      ],
+      "source_dtype": "F16"
+    },
+    "acoustic.language_acoustic.weight": {
+      "shape": [
+        25,
+        39
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.acoustic.language_acoustic.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.conv_pre.bias": {
+      "shape": [
+        128
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.conv_pre.weight": {
+      "shape": [
+        128,
+        80,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.conv_pre.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.ups.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.ups.0.weight": {
+      "shape": [
+        128,
+        64,
+        16
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 1,
+        "scale": "__scale__.generator.ups.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.ups.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.ups.1.weight": {
+      "shape": [
+        64,
+        32,
+        16
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 1,
+        "scale": "__scale__.generator.ups.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.ups.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.ups.2.weight": {
+      "shape": [
+        32,
+        16,
+        4
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 1,
+        "scale": "__scale__.generator.ups.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.ups.3.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.ups.3.weight": {
+      "shape": [
+        16,
+        8,
+        4
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 1,
+        "scale": "__scale__.generator.ups.3.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs1.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs1.0.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs1.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs1.1.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs1.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs1.2.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs2.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs2.0.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs2.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs2.1.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.0.convs2.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.0.convs2.2.weight": {
+      "shape": [
+        64,
+        64,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.0.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs1.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs1.0.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs1.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs1.1.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs1.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs1.2.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs2.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs2.0.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs2.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs2.1.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.1.convs2.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.1.convs2.2.weight": {
+      "shape": [
+        64,
+        64,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.1.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs1.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs1.0.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs1.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs1.1.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs1.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs1.2.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs2.0.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs2.0.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs2.1.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs2.1.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.2.convs2.2.bias": {
+      "shape": [
+        64
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.2.convs2.2.weight": {
+      "shape": [
+        64,
+        64,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.2.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs1.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs1.0.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs1.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs1.1.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs1.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs1.2.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs2.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs2.0.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs2.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs2.1.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.3.convs2.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.3.convs2.2.weight": {
+      "shape": [
+        32,
+        32,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.3.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs1.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs1.0.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs1.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs1.1.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs1.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs1.2.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs2.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs2.0.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs2.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs2.1.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.4.convs2.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.4.convs2.2.weight": {
+      "shape": [
+        32,
+        32,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.4.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs1.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs1.0.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs1.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs1.1.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs1.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs1.2.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs2.0.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs2.0.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs2.1.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs2.1.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.5.convs2.2.bias": {
+      "shape": [
+        32
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.5.convs2.2.weight": {
+      "shape": [
+        32,
+        32,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.5.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs1.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs1.0.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs1.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs1.1.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs1.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs1.2.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs2.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs2.0.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs2.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs2.1.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.6.convs2.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.6.convs2.2.weight": {
+      "shape": [
+        16,
+        16,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.6.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs1.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs1.0.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs1.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs1.1.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs1.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs1.2.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs2.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs2.0.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs2.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs2.1.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.7.convs2.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.7.convs2.2.weight": {
+      "shape": [
+        16,
+        16,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.7.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs1.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs1.0.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs1.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs1.1.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs1.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs1.2.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs2.0.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs2.0.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs2.1.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs2.1.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.8.convs2.2.bias": {
+      "shape": [
+        16
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.8.convs2.2.weight": {
+      "shape": [
+        16,
+        16,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.8.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs1.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs1.0.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs1.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs1.1.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs1.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs1.2.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs2.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs2.0.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs2.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs2.1.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.9.convs2.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.9.convs2.2.weight": {
+      "shape": [
+        8,
+        8,
+        3
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.9.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs1.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs1.0.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs1.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs1.1.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs1.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs1.2.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs2.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs2.0.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs2.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs2.1.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.10.convs2.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.10.convs2.2.weight": {
+      "shape": [
+        8,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.10.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs1.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs1.0.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs1.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs1.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs1.1.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs1.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs1.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs1.2.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs1.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs2.0.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs2.0.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs2.0.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs2.1.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs2.1.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs2.1.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.resblocks.11.convs2.2.bias": {
+      "shape": [
+        8
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.resblocks.11.convs2.2.weight": {
+      "shape": [
+        8,
+        8,
+        11
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.resblocks.11.convs2.2.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "generator.conv_post.bias": {
+      "shape": [
+        1
+      ],
+      "source_dtype": "F16"
+    },
+    "generator.conv_post.weight": {
+      "shape": [
+        1,
+        8,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.generator.conv_post.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.inputs.31.weight": {
+      "shape": [
+        192,
+        31,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.inputs.31.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.inputs.31.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.inputs.39.weight": {
+      "shape": [
+        192,
+        39,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.inputs.39.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.inputs.39.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.language.weight": {
+      "shape": [
+        25,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.language.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.0.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.0.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.0.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.0.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.0.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.0.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.0.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.1.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.1.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.1.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.1.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.1.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.1.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.1.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.2.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.2.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.2.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.2.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.2.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.2.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.2.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.3.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.3.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.3.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.3.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.3.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.3.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.3.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.4.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.4.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.4.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.4.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.4.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.4.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.4.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.gamma": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.dw.weight": {
+      "shape": [
+        192,
+        1,
+        7
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.5.dw.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.5.dw.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.norm.weight": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.norm.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.up.weight": {
+      "shape": [
+        768,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.5.up.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.5.up.bias": {
+      "shape": [
+        768
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.blocks.5.down.weight": {
+      "shape": [
+        192,
+        768
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.blocks.5.down.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.blocks.5.down.bias": {
+      "shape": [
+        192
+      ],
+      "source_dtype": "F16"
+    },
+    "physical_to_mel.head.weight": {
+      "shape": [
+        80,
+        192
+      ],
+      "source_dtype": "F16",
+      "quantization": {
+        "axis": 0,
+        "scale": "__scale__.physical_to_mel.head.weight",
+        "scheme": "symmetric_per_output_channel",
+        "zero_point": 0
+      }
+    },
+    "physical_to_mel.head.bias": {
+      "shape": [
+        80
+      ],
+      "source_dtype": "F16"
+    }
+  }
+}

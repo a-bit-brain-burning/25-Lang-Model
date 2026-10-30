@@ -1,3 +1,32 @@
+# 当前分支：完整 25 语 INT8 推理交接包
+
+分支 `int8/simulator-handoff-20261029` 在原 `3a7465f` 基础上追加当前全 INT8 权重、25 语文本前端、完整声学/梅尔适配器/HiFi-GAN 源码、数值对照工具，以及 M55 / RV32 模拟器入口；`main` 和原 FP16/FP32 文件保留。
+
+**先读 [INT8 交接说明](docs/INT8_HANDOFF.md)**。普通文本到 WAV 已在 Linux 主机跑通全部 25 语。M55、RV32 已通过载入完整权重的真实层内核测试；整句原生推理调度与前端移植仍是合作者的优化工作，当前没有声称完整模型已在 MCU/QEMU 内从文本生成 WAV。
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements-int8.txt
+python scripts/verify_release.py
+python scripts/verify_int8.py
+python synthesize.py --language zh --text '你好，欢迎测试新的语音模型。' --output out/zh.wav
+python synthesize.py --language en --text 'Hello, this is a test of the new voice model.' --output out/en.wav
+# 只依赖 Python 标准库和已安装的 QEMU，无需 root、PyTorch 或编译器：
+python scripts/run_simulator.py --target m55
+python scripts/run_simulator.py --target rv32
+```
+
+- [`int8/weights.safetensors`](int8/weights.safetensors)：完整链 4,015,048 参数，4,154,768 字节；矩阵 INT8，逐输出通道 FP32 scale，偏置/归一化等保留 FP16。
+- [`frontend/`](frontend/)：16 份 FEP 共 3,875,677 字节，规则、词典、Python/C 源码、Linux 库和归属记录齐全。运行时无需旧模型仓库、训练语料或联网下载字典。
+- [`examples/host_smoke/`](examples/host_smoke/)：25 语普通文本的输入特征、完整 WAV 与校验记录；仅用于链路测试，不是质量通过证明。
+- [`native/`](native/)、[`simulator/prebuilt/`](simulator/prebuilt/)：可替换的标量基准内核、双架构构建入口和已通过测试的预编译程序；权重可无损导出供原生移植。
+- [`scripts/dump_trace.py`](scripts/dump_trace.py)：输出完整链逐模块数值，供模拟器实现逐层对齐。
+
+以下保留原 FP16/FP32 发布说明，INT8 分支使用上面的新入口。
+
+---
+
 # 25-Lang-Model · 已训练声学模型与HiFi-GAN微调声码器
 
 本仓库保存完成 **80,000次更新**的25语共享声学模型、音素时长/停顿/韵律预测、31/39维声学输出，以及独立训练和推理脚本。现已追加第二个实验完成 **31,403次Generator更新**的HiFi-GAN微调声码器及物理条件→mel适配器；可将已有兼容音素特征生成的声学结果合成为WAV。详见 [HiFi-GAN模型卡](docs/HIFIGAN_MODEL_CARD.md) 和 [整句推理说明](docs/HIFIGAN_INFERENCE.md)。

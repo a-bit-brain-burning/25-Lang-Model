@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "target": "m55",
+      "ordinary_user": true,
+      "returncode": 0,
+      "output": "NEW25_REAL_INT8_KERNELS_PASS\n"
+    },
+    {
+      "target": "rv32",
+      "ordinary_user": true,
+      "returncode": 0,
+      "output": "NEW25_REAL_INT8_KERNELS_PASS\n"
+    }
+  ]
+}

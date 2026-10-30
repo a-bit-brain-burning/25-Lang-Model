@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "scope": "three real layer fixtures, all 316 tensors present in ELF; not full utterance TTS",
+  "rows": [
+    {
+      "target": "m55",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "NEW25_REAL_INT8_KERNELS_PASS\n",
+      "command": [
+        "qemu-system-arm",
+        "-M",
+        "mps3-an547",
+        "-nographic",
+        "-monitor",
+        "none",
+        "-serial",
+        "none",
+        "-semihosting-config",
+        "enable=on,target=native",
+        "-kernel",
+        "/tmp/new25-int8-simulator-handoff-20261029/build/m55/kernels.elf"
+      ]
+    },
+    {
+      "target": "rv32",
+      "returncode": 0,
+      "stdout": "NEW25_REAL_INT8_KERNELS_PASS\n",
+      "stderr": "",
+      "command": [
+        "qemu-system-riscv32",
+        "-M",
+        "virt",
+        "-m",
+        "128M",
+        "-bios",
+        "none",
+        "-nographic",
+        "-monitor",
+        "none",
+        "-kernel",
+        "/tmp/new25-int8-simulator-handoff-20261029/build/rv32/kernels.elf"
+      ]
+    }
+  ]
+}

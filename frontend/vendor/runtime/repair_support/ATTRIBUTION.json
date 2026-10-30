@@ -1,0 +1,15 @@
+{
+  "resource": "Additional Bulgarian lexical stress from Kaikki/Wiktionary; original known entries retained",
+  "source": "https://kaikki.org/dictionary/Bulgarian/index.html",
+  "license": "CC-BY-SA-4.0",
+  "derived_dictionary_receipt": {
+    "status": "COMPLETED",
+    "added_entries": 5932,
+    "existing_known_conflicts_retained": 0,
+    "entries": 8239,
+    "target_word_types": 13088,
+    "expanded_sha256": "a15eba28843378431f60e798694203971c767a8f678a3091c0c7ff771521302b",
+    "source_sha256": "eff1e84e80fb566ac1a350915ed24b0473b7cf39914efe50ecc3f13eac99cb5b",
+    "unknown_or_ambiguous_stress_not_guessed": true
+  }
+}

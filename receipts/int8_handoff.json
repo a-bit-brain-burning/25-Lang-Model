@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE_SOURCE_AND_STORAGE_HANDOFF",
+  "base_commit": "3a7465fc29e2ea11daed206dbf9401c8cfb18430",
+  "branch": "int8/simulator-handoff-20261029",
+  "training_updates": 0,
+  "source_int8_weights_sha256": "ba8824f6fe9cf07d2bedbfe981f723376d41b270aa8a99fec4f2573a08849bd6",
+  "full_ordinary_text_host_languages": 25,
+  "reference_audio_or_durations_used": false,
+  "frontend_libraries_rebuilt_from_included_source": true,
+  "simulator_real_layer_tests_passed": [
+    "m55",
+    "rv32"
+  ],
+  "simulator_run_as_ordinary_user_passed": true,
+  "full_target_text_to_wav_implemented": false,
+  "int8_integer_mac_implemented": false,
+  "full_m4_rom_ram_latency_accepted": false,
+  "quality_reaccepted": false,
+  "traces": {
+    "en": {
+      "arrays": 381,
+      "language": "en",
+      "text": "Hello."
+    },
+    "zh": {
+      "arrays": 381,
+      "language": "zh",
+      "text": "你好。"
+    }
+  },
+  "frontend_instances_reusable_with_process_cached_resources": true
+}

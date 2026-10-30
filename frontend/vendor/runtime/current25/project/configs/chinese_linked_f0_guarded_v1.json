@@ -1,0 +1,16 @@
+{
+  "name": "chinese_linked_f0_guarded_v1",
+  "frontend_version": "chinese_training_frontend_v1",
+  "source_experiment": "chinese_linking_20261015/guarded_r2",
+  "source_variant": "f0_only",
+  "listening_code": "D",
+  "user_feedback": "明显进步，但仍有较严重机械音",
+  "half_window_frames": 1,
+  "minimum_segment_frames": 4,
+  "max_f0_change_cents": 150.0,
+  "minimum_direction_excursion_cents": 25.0,
+  "protected_syllable_fraction": [0.4, 0.6],
+  "spectral_energy_changes": false,
+  "MOS_measured": false,
+  "limitations": "Protects middle frames and endpoint direction, not complete tone amplitude; some syllables can become flatter."
+}

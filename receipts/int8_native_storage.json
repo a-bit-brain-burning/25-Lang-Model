@@ -1,0 +1,4434 @@
+{
+  "format": "new25_native_storage_v1",
+  "source_weights_sha256": "ba8824f6fe9cf07d2bedbfe981f723376d41b270aa8a99fec4f2573a08849bd6",
+  "model_bin_bytes": 4108652,
+  "model_bin_sha256": "9fd5cc3af80530080d9828efa5086909ed8b296ce465e44da00ee30d4ac229eb",
+  "tensors": 316,
+  "all_restored_tensors_exact": true,
+  "descriptors": [
+    {
+      "name": "acoustic.phone.weight",
+      "offset": 980724,
+      "scale_offset": 23876,
+      "elements": 36480,
+      "dims": [
+        285,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.language.weight",
+      "offset": 976420,
+      "scale_offset": 23576,
+      "elements": 3200,
+      "dims": [
+        25,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.phonetic.32.weight",
+      "offset": 1017460,
+      "scale_offset": 25016,
+      "elements": 4096,
+      "dims": [
+        128,
+        32,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.phonetic.32.bias",
+      "offset": 1017204,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.phonetic.36.weight",
+      "offset": 1021812,
+      "scale_offset": 25528,
+      "elements": 4608,
+      "dims": [
+        128,
+        36,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.phonetic.36.bias",
+      "offset": 1021556,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.context.22.weight",
+      "offset": 70676,
+      "scale_offset": 0,
+      "elements": 2816,
+      "dims": [
+        128,
+        22,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.context.22.bias",
+      "offset": 70420,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.context.34.weight",
+      "offset": 73748,
+      "scale_offset": 512,
+      "elements": 4352,
+      "dims": [
+        128,
+        34,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.context.34.bias",
+      "offset": 73492,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.dw.weight",
+      "offset": 563540,
+      "scale_offset": 10752,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.dw.bias",
+      "offset": 563284,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.up.weight",
+      "offset": 565204,
+      "scale_offset": 11264,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.up.bias",
+      "offset": 564692,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.down.weight",
+      "offset": 530516,
+      "scale_offset": 10240,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.down.bias",
+      "offset": 530260,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.norm.weight",
+      "offset": 564436,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.0.norm.bias",
+      "offset": 564180,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.dw.weight",
+      "offset": 631252,
+      "scale_offset": 12800,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.dw.bias",
+      "offset": 630996,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.up.weight",
+      "offset": 632916,
+      "scale_offset": 13312,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.up.bias",
+      "offset": 632404,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.down.weight",
+      "offset": 598228,
+      "scale_offset": 12288,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.down.bias",
+      "offset": 597972,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.norm.weight",
+      "offset": 632148,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.1.norm.bias",
+      "offset": 631892,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.dw.weight",
+      "offset": 698964,
+      "scale_offset": 14848,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.dw.bias",
+      "offset": 698708,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.up.weight",
+      "offset": 700628,
+      "scale_offset": 15360,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.up.bias",
+      "offset": 700116,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.down.weight",
+      "offset": 665940,
+      "scale_offset": 14336,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.down.bias",
+      "offset": 665684,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.norm.weight",
+      "offset": 699860,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.2.norm.bias",
+      "offset": 699604,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.dw.weight",
+      "offset": 766676,
+      "scale_offset": 16896,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.dw.bias",
+      "offset": 766420,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.up.weight",
+      "offset": 768340,
+      "scale_offset": 17408,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.up.bias",
+      "offset": 767828,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.down.weight",
+      "offset": 733652,
+      "scale_offset": 16384,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.down.bias",
+      "offset": 733396,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.norm.weight",
+      "offset": 767572,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.3.norm.bias",
+      "offset": 767316,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.dw.weight",
+      "offset": 834388,
+      "scale_offset": 18944,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.dw.bias",
+      "offset": 834132,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.up.weight",
+      "offset": 836052,
+      "scale_offset": 19456,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.up.bias",
+      "offset": 835540,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.down.weight",
+      "offset": 801364,
+      "scale_offset": 18432,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.down.bias",
+      "offset": 801108,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.norm.weight",
+      "offset": 835284,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.4.norm.bias",
+      "offset": 835028,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.dw.weight",
+      "offset": 902100,
+      "scale_offset": 20992,
+      "elements": 640,
+      "dims": [
+        128,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.dw.bias",
+      "offset": 901844,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.up.weight",
+      "offset": 903764,
+      "scale_offset": 21504,
+      "elements": 32768,
+      "dims": [
+        256,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.up.bias",
+      "offset": 903252,
+      "scale_offset": 0,
+      "elements": 256,
+      "dims": [
+        256,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.down.weight",
+      "offset": 869076,
+      "scale_offset": 20480,
+      "elements": 32768,
+      "dims": [
+        128,
+        256,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.down.bias",
+      "offset": 868820,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.norm.weight",
+      "offset": 902996,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.encoder.5.norm.bias",
+      "offset": 902740,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.prosody.0.weight",
+      "offset": 1026676,
+      "scale_offset": 26040,
+      "elements": 16384,
+      "dims": [
+        128,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.prosody.0.bias",
+      "offset": 1026420,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.prosody.2.weight",
+      "offset": 1043072,
+      "scale_offset": 26552,
+      "elements": 640,
+      "dims": [
+        5,
+        128,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.prosody.2.bias",
+      "offset": 1043060,
+      "scale_offset": 0,
+      "elements": 5,
+      "dims": [
+        5,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.language_prosody.weight",
+      "offset": 980596,
+      "scale_offset": 23776,
+      "elements": 125,
+      "dims": [
+        25,
+        5,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.frame_in.weight",
+      "offset": 936916,
+      "scale_offset": 22528,
+      "elements": 25920,
+      "dims": [
+        192,
+        135,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.frame_in.bias",
+      "offset": 936532,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.rnn.ih.weight",
+      "offset": 1155456,
+      "scale_offset": 28876,
+      "elements": 110592,
+      "dims": [
+        576,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.rnn.ih.bias",
+      "offset": 1154304,
+      "scale_offset": 0,
+      "elements": 576,
+      "dims": [
+        576,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.rnn.hh.weight",
+      "offset": 1043712,
+      "scale_offset": 26572,
+      "elements": 110592,
+      "dims": [
+        576,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.dw.weight",
+      "offset": 152596,
+      "scale_offset": 1792,
+      "elements": 960,
+      "dims": [
+        192,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.dw.bias",
+      "offset": 152212,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.up.weight",
+      "offset": 155092,
+      "scale_offset": 2560,
+      "elements": 73728,
+      "dims": [
+        384,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.up.bias",
+      "offset": 154324,
+      "scale_offset": 0,
+      "elements": 384,
+      "dims": [
+        384,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.down.weight",
+      "offset": 78484,
+      "scale_offset": 1024,
+      "elements": 73728,
+      "dims": [
+        192,
+        384,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.down.bias",
+      "offset": 78100,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.norm.weight",
+      "offset": 153940,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.0.norm.bias",
+      "offset": 153556,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.dw.weight",
+      "offset": 303316,
+      "scale_offset": 4864,
+      "elements": 960,
+      "dims": [
+        192,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.dw.bias",
+      "offset": 302932,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.up.weight",
+      "offset": 305812,
+      "scale_offset": 5632,
+      "elements": 73728,
+      "dims": [
+        384,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.up.bias",
+      "offset": 305044,
+      "scale_offset": 0,
+      "elements": 384,
+      "dims": [
+        384,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.down.weight",
+      "offset": 229204,
+      "scale_offset": 4096,
+      "elements": 73728,
+      "dims": [
+        192,
+        384,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.down.bias",
+      "offset": 228820,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.norm.weight",
+      "offset": 304660,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.1.norm.bias",
+      "offset": 304276,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.dw.weight",
+      "offset": 454036,
+      "scale_offset": 7936,
+      "elements": 960,
+      "dims": [
+        192,
+        1,
+        5
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.dw.bias",
+      "offset": 453652,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.up.weight",
+      "offset": 456532,
+      "scale_offset": 8704,
+      "elements": 73728,
+      "dims": [
+        384,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.up.bias",
+      "offset": 455764,
+      "scale_offset": 0,
+      "elements": 384,
+      "dims": [
+        384,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.down.weight",
+      "offset": 379924,
+      "scale_offset": 7168,
+      "elements": 73728,
+      "dims": [
+        192,
+        384,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.down.bias",
+      "offset": 379540,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.norm.weight",
+      "offset": 455380,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.decoder.2.norm.bias",
+      "offset": 454996,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.heads.31.weight",
+      "offset": 962900,
+      "scale_offset": 23296,
+      "elements": 5952,
+      "dims": [
+        31,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.heads.31.bias",
+      "offset": 962836,
+      "scale_offset": 0,
+      "elements": 31,
+      "dims": [
+        31,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.heads.39.weight",
+      "offset": 968932,
+      "scale_offset": 23420,
+      "elements": 7488,
+      "dims": [
+        39,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.heads.39.bias",
+      "offset": 968852,
+      "scale_offset": 0,
+      "elements": 39,
+      "dims": [
+        39,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "acoustic.language_acoustic.weight",
+      "offset": 979620,
+      "scale_offset": 23676,
+      "elements": 975,
+      "dims": [
+        25,
+        39,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.conv_pre.bias",
+      "offset": 1266108,
+      "scale_offset": 0,
+      "elements": 128,
+      "dims": [
+        128,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.conv_pre.weight",
+      "offset": 1266364,
+      "scale_offset": 31184,
+      "elements": 71680,
+      "dims": [
+        128,
+        80,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.ups.0.bias",
+      "offset": 2027804,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.ups.0.weight",
+      "offset": 2027932,
+      "scale_offset": 40336,
+      "elements": 131072,
+      "dims": [
+        128,
+        64,
+        16
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 1
+    },
+    {
+      "name": "generator.ups.1.bias",
+      "offset": 2159004,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.ups.1.weight",
+      "offset": 2159068,
+      "scale_offset": 40592,
+      "elements": 32768,
+      "dims": [
+        64,
+        32,
+        16
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 1
+    },
+    {
+      "name": "generator.ups.2.bias",
+      "offset": 2191836,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.ups.2.weight",
+      "offset": 2191868,
+      "scale_offset": 40720,
+      "elements": 2048,
+      "dims": [
+        32,
+        16,
+        4
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 1
+    },
+    {
+      "name": "generator.ups.3.bias",
+      "offset": 2193916,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.ups.3.weight",
+      "offset": 2193932,
+      "scale_offset": 40784,
+      "elements": 512,
+      "dims": [
+        16,
+        8,
+        4
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 1
+    },
+    {
+      "name": "generator.resblocks.0.convs1.0.bias",
+      "offset": 1338044,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs1.0.weight",
+      "offset": 1338172,
+      "scale_offset": 31696,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs1.1.bias",
+      "offset": 1350460,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs1.1.weight",
+      "offset": 1350588,
+      "scale_offset": 31952,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs1.2.bias",
+      "offset": 1362876,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs1.2.weight",
+      "offset": 1363004,
+      "scale_offset": 32208,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.0.bias",
+      "offset": 1375292,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.0.weight",
+      "offset": 1375420,
+      "scale_offset": 32464,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.1.bias",
+      "offset": 1387708,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.1.weight",
+      "offset": 1387836,
+      "scale_offset": 32720,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.2.bias",
+      "offset": 1400124,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.0.convs2.2.weight",
+      "offset": 1400252,
+      "scale_offset": 32976,
+      "elements": 12288,
+      "dims": [
+        64,
+        64,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.0.bias",
+      "offset": 1412540,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.0.weight",
+      "offset": 1412668,
+      "scale_offset": 33232,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.1.bias",
+      "offset": 1441340,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.1.weight",
+      "offset": 1441468,
+      "scale_offset": 33488,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.2.bias",
+      "offset": 1470140,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs1.2.weight",
+      "offset": 1470268,
+      "scale_offset": 33744,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.0.bias",
+      "offset": 1498940,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.0.weight",
+      "offset": 1499068,
+      "scale_offset": 34000,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.1.bias",
+      "offset": 1527740,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.1.weight",
+      "offset": 1527868,
+      "scale_offset": 34256,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.2.bias",
+      "offset": 1556540,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.1.convs2.2.weight",
+      "offset": 1556668,
+      "scale_offset": 34512,
+      "elements": 28672,
+      "dims": [
+        64,
+        64,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.0.bias",
+      "offset": 1592444,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.0.weight",
+      "offset": 1592572,
+      "scale_offset": 35152,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.1.bias",
+      "offset": 1637628,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.1.weight",
+      "offset": 1637756,
+      "scale_offset": 35408,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.2.bias",
+      "offset": 1682812,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs1.2.weight",
+      "offset": 1682940,
+      "scale_offset": 35664,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.0.bias",
+      "offset": 1727996,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.0.weight",
+      "offset": 1728124,
+      "scale_offset": 35920,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.1.bias",
+      "offset": 1773180,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.1.weight",
+      "offset": 1773308,
+      "scale_offset": 36176,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.2.bias",
+      "offset": 1818364,
+      "scale_offset": 0,
+      "elements": 64,
+      "dims": [
+        64,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.2.convs2.2.weight",
+      "offset": 1818492,
+      "scale_offset": 36432,
+      "elements": 45056,
+      "dims": [
+        64,
+        64,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.0.bias",
+      "offset": 1863548,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.0.weight",
+      "offset": 1863612,
+      "scale_offset": 36688,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.1.bias",
+      "offset": 1866684,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.1.weight",
+      "offset": 1866748,
+      "scale_offset": 36816,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.2.bias",
+      "offset": 1869820,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs1.2.weight",
+      "offset": 1869884,
+      "scale_offset": 36944,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.0.bias",
+      "offset": 1872956,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.0.weight",
+      "offset": 1873020,
+      "scale_offset": 37072,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.1.bias",
+      "offset": 1876092,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.1.weight",
+      "offset": 1876156,
+      "scale_offset": 37200,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.2.bias",
+      "offset": 1879228,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.3.convs2.2.weight",
+      "offset": 1879292,
+      "scale_offset": 37328,
+      "elements": 3072,
+      "dims": [
+        32,
+        32,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.0.bias",
+      "offset": 1882364,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.0.weight",
+      "offset": 1882428,
+      "scale_offset": 37456,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.1.bias",
+      "offset": 1889596,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.1.weight",
+      "offset": 1889660,
+      "scale_offset": 37584,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.2.bias",
+      "offset": 1896828,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs1.2.weight",
+      "offset": 1896892,
+      "scale_offset": 37712,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.0.bias",
+      "offset": 1904060,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.0.weight",
+      "offset": 1904124,
+      "scale_offset": 37840,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.1.bias",
+      "offset": 1911292,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.1.weight",
+      "offset": 1911356,
+      "scale_offset": 37968,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.2.bias",
+      "offset": 1918524,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.4.convs2.2.weight",
+      "offset": 1918588,
+      "scale_offset": 38096,
+      "elements": 7168,
+      "dims": [
+        32,
+        32,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.0.bias",
+      "offset": 1925756,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.0.weight",
+      "offset": 1925820,
+      "scale_offset": 38224,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.1.bias",
+      "offset": 1937084,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.1.weight",
+      "offset": 1937148,
+      "scale_offset": 38352,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.2.bias",
+      "offset": 1948412,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs1.2.weight",
+      "offset": 1948476,
+      "scale_offset": 38480,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.0.bias",
+      "offset": 1959740,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.0.weight",
+      "offset": 1959804,
+      "scale_offset": 38608,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.1.bias",
+      "offset": 1971068,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.1.weight",
+      "offset": 1971132,
+      "scale_offset": 38736,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.2.bias",
+      "offset": 1982396,
+      "scale_offset": 0,
+      "elements": 32,
+      "dims": [
+        32,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.5.convs2.2.weight",
+      "offset": 1982460,
+      "scale_offset": 38864,
+      "elements": 11264,
+      "dims": [
+        32,
+        32,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.0.bias",
+      "offset": 1993724,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.0.weight",
+      "offset": 1993756,
+      "scale_offset": 38992,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.1.bias",
+      "offset": 1994524,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.1.weight",
+      "offset": 1994556,
+      "scale_offset": 39056,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.2.bias",
+      "offset": 1995324,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs1.2.weight",
+      "offset": 1995356,
+      "scale_offset": 39120,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.0.bias",
+      "offset": 1996124,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.0.weight",
+      "offset": 1996156,
+      "scale_offset": 39184,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.1.bias",
+      "offset": 1996924,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.1.weight",
+      "offset": 1996956,
+      "scale_offset": 39248,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.2.bias",
+      "offset": 1997724,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.6.convs2.2.weight",
+      "offset": 1997756,
+      "scale_offset": 39312,
+      "elements": 768,
+      "dims": [
+        16,
+        16,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.0.bias",
+      "offset": 1998524,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.0.weight",
+      "offset": 1998556,
+      "scale_offset": 39376,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.1.bias",
+      "offset": 2000348,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.1.weight",
+      "offset": 2000380,
+      "scale_offset": 39440,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.2.bias",
+      "offset": 2002172,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs1.2.weight",
+      "offset": 2002204,
+      "scale_offset": 39504,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.0.bias",
+      "offset": 2003996,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.0.weight",
+      "offset": 2004028,
+      "scale_offset": 39568,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.1.bias",
+      "offset": 2005820,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.1.weight",
+      "offset": 2005852,
+      "scale_offset": 39632,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.2.bias",
+      "offset": 2007644,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.7.convs2.2.weight",
+      "offset": 2007676,
+      "scale_offset": 39696,
+      "elements": 1792,
+      "dims": [
+        16,
+        16,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.0.bias",
+      "offset": 2009468,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.0.weight",
+      "offset": 2009500,
+      "scale_offset": 39760,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.1.bias",
+      "offset": 2012316,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.1.weight",
+      "offset": 2012348,
+      "scale_offset": 39824,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.2.bias",
+      "offset": 2015164,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs1.2.weight",
+      "offset": 2015196,
+      "scale_offset": 39888,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.0.bias",
+      "offset": 2018012,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.0.weight",
+      "offset": 2018044,
+      "scale_offset": 39952,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.1.bias",
+      "offset": 2020860,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.1.weight",
+      "offset": 2020892,
+      "scale_offset": 40016,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.2.bias",
+      "offset": 2023708,
+      "scale_offset": 0,
+      "elements": 16,
+      "dims": [
+        16,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.8.convs2.2.weight",
+      "offset": 2023740,
+      "scale_offset": 40080,
+      "elements": 2816,
+      "dims": [
+        16,
+        16,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.0.bias",
+      "offset": 2026556,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.0.weight",
+      "offset": 2026572,
+      "scale_offset": 40144,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.1.bias",
+      "offset": 2026764,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.1.weight",
+      "offset": 2026780,
+      "scale_offset": 40176,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.2.bias",
+      "offset": 2026972,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs1.2.weight",
+      "offset": 2026988,
+      "scale_offset": 40208,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.0.bias",
+      "offset": 2027180,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.0.weight",
+      "offset": 2027196,
+      "scale_offset": 40240,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.1.bias",
+      "offset": 2027388,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.1.weight",
+      "offset": 2027404,
+      "scale_offset": 40272,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.2.bias",
+      "offset": 2027596,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.9.convs2.2.weight",
+      "offset": 2027612,
+      "scale_offset": 40304,
+      "elements": 192,
+      "dims": [
+        8,
+        8,
+        3
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.0.bias",
+      "offset": 1585340,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.0.weight",
+      "offset": 1585356,
+      "scale_offset": 34768,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.1.bias",
+      "offset": 1585804,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.1.weight",
+      "offset": 1585820,
+      "scale_offset": 34800,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.2.bias",
+      "offset": 1586268,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs1.2.weight",
+      "offset": 1586284,
+      "scale_offset": 34832,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.0.bias",
+      "offset": 1586732,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.0.weight",
+      "offset": 1586748,
+      "scale_offset": 34864,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.1.bias",
+      "offset": 1587196,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.1.weight",
+      "offset": 1587212,
+      "scale_offset": 34896,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.2.bias",
+      "offset": 1587660,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.10.convs2.2.weight",
+      "offset": 1587676,
+      "scale_offset": 34928,
+      "elements": 448,
+      "dims": [
+        8,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.0.bias",
+      "offset": 1588124,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.0.weight",
+      "offset": 1588140,
+      "scale_offset": 34960,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.1.bias",
+      "offset": 1588844,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.1.weight",
+      "offset": 1588860,
+      "scale_offset": 34992,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.2.bias",
+      "offset": 1589564,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs1.2.weight",
+      "offset": 1589580,
+      "scale_offset": 35024,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.0.bias",
+      "offset": 1590284,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.0.weight",
+      "offset": 1590300,
+      "scale_offset": 35056,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.1.bias",
+      "offset": 1591004,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.1.weight",
+      "offset": 1591020,
+      "scale_offset": 35088,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.2.bias",
+      "offset": 1591724,
+      "scale_offset": 0,
+      "elements": 8,
+      "dims": [
+        8,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.resblocks.11.convs2.2.weight",
+      "offset": 1591740,
+      "scale_offset": 35120,
+      "elements": 704,
+      "dims": [
+        8,
+        8,
+        11
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "generator.conv_post.bias",
+      "offset": 1266048,
+      "scale_offset": 0,
+      "elements": 1,
+      "dims": [
+        1,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "generator.conv_post.weight",
+      "offset": 1266052,
+      "scale_offset": 31180,
+      "elements": 56,
+      "dims": [
+        1,
+        8,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.inputs.31.weight",
+      "offset": 4008620,
+      "scale_offset": 68784,
+      "elements": 41664,
+      "dims": [
+        192,
+        31,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.inputs.31.bias",
+      "offset": 4008236,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.inputs.39.weight",
+      "offset": 4050668,
+      "scale_offset": 69552,
+      "elements": 52416,
+      "dims": [
+        192,
+        39,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.inputs.39.bias",
+      "offset": 4050284,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.language.weight",
+      "offset": 4103084,
+      "scale_offset": 70320,
+      "elements": 4800,
+      "dims": [
+        25,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.norm.weight",
+      "offset": 4108268,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.norm.bias",
+      "offset": 4107884,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.gamma",
+      "offset": 2344012,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.dw.weight",
+      "offset": 2342668,
+      "scale_offset": 41584,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.dw.bias",
+      "offset": 2342284,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.norm.weight",
+      "offset": 2344780,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.norm.bias",
+      "offset": 2344396,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.up.weight",
+      "offset": 2346700,
+      "scale_offset": 42352,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.up.bias",
+      "offset": 2345164,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.down.weight",
+      "offset": 2194828,
+      "scale_offset": 40816,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.0.down.bias",
+      "offset": 2194444,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.gamma",
+      "offset": 2643724,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.dw.weight",
+      "offset": 2642380,
+      "scale_offset": 46192,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.dw.bias",
+      "offset": 2641996,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.norm.weight",
+      "offset": 2644492,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.norm.bias",
+      "offset": 2644108,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.up.weight",
+      "offset": 2646412,
+      "scale_offset": 46960,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.up.bias",
+      "offset": 2644876,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.down.weight",
+      "offset": 2494540,
+      "scale_offset": 45424,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.1.down.bias",
+      "offset": 2494156,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.gamma",
+      "offset": 2943436,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.dw.weight",
+      "offset": 2942092,
+      "scale_offset": 50800,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.dw.bias",
+      "offset": 2941708,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.norm.weight",
+      "offset": 2944204,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.norm.bias",
+      "offset": 2943820,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.up.weight",
+      "offset": 2946124,
+      "scale_offset": 51568,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.up.bias",
+      "offset": 2944588,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.down.weight",
+      "offset": 2794252,
+      "scale_offset": 50032,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.2.down.bias",
+      "offset": 2793868,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.gamma",
+      "offset": 3243148,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.dw.weight",
+      "offset": 3241804,
+      "scale_offset": 55408,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.dw.bias",
+      "offset": 3241420,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.norm.weight",
+      "offset": 3243916,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.norm.bias",
+      "offset": 3243532,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.up.weight",
+      "offset": 3245836,
+      "scale_offset": 56176,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.up.bias",
+      "offset": 3244300,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.down.weight",
+      "offset": 3093964,
+      "scale_offset": 54640,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.3.down.bias",
+      "offset": 3093580,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.gamma",
+      "offset": 3542860,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.dw.weight",
+      "offset": 3541516,
+      "scale_offset": 60016,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.dw.bias",
+      "offset": 3541132,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.norm.weight",
+      "offset": 3543628,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.norm.bias",
+      "offset": 3543244,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.up.weight",
+      "offset": 3545548,
+      "scale_offset": 60784,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.up.bias",
+      "offset": 3544012,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.down.weight",
+      "offset": 3393676,
+      "scale_offset": 59248,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.4.down.bias",
+      "offset": 3393292,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.gamma",
+      "offset": 3842572,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.dw.weight",
+      "offset": 3841228,
+      "scale_offset": 64624,
+      "elements": 1344,
+      "dims": [
+        192,
+        1,
+        7
+      ],
+      "rank": 3,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.dw.bias",
+      "offset": 3840844,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.norm.weight",
+      "offset": 3843340,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.norm.bias",
+      "offset": 3842956,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.up.weight",
+      "offset": 3845260,
+      "scale_offset": 65392,
+      "elements": 147456,
+      "dims": [
+        768,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.up.bias",
+      "offset": 3843724,
+      "scale_offset": 0,
+      "elements": 768,
+      "dims": [
+        768,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.down.weight",
+      "offset": 3693388,
+      "scale_offset": 63856,
+      "elements": 147456,
+      "dims": [
+        192,
+        768,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.blocks.5.down.bias",
+      "offset": 3693004,
+      "scale_offset": 0,
+      "elements": 192,
+      "dims": [
+        192,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.head.weight",
+      "offset": 3992876,
+      "scale_offset": 68464,
+      "elements": 15360,
+      "dims": [
+        80,
+        192,
+        1
+      ],
+      "rank": 2,
+      "dtype": 0,
+      "axis": 0
+    },
+    {
+      "name": "physical_to_mel.head.bias",
+      "offset": 3992716,
+      "scale_offset": 0,
+      "elements": 80,
+      "dims": [
+        80,
+        1,
+        1
+      ],
+      "rank": 1,
+      "dtype": 1,
+      "axis": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "files": {
+    "it_frontend.py": "12abc3555fe2bddba08fc4d256f9294df651a31a6660c100b36e23584d5ba717",
+    "repair_frontends.py": "473fcc0e705e0bd86c183a48d6abaa80496d7eb962565b6d9d38ba5399752c25",
+    "bg_frontend.py": "fd4f0643459686613814c98b09ac78dfa4ce01b9a964e046448505bdabeb3085",
+    "ATTRIBUTION.json": "b7794596267d4b5cd3378dbcd4063bc171fdb78f9263ab337dd6c85e208a9f6a",
+    "repairs/bg_dictionary/expanded_lexicon.json": "a15eba28843378431f60e798694203971c767a8f678a3091c0c7ff771521302b",
+    "base/original_model_diagnosis_20261023/cross_language/corrected_frontend_v2.py": "675254e5836af9f3cea9c99372a18228e74798cbde0e814b291e496db118f599"
+  }
+}

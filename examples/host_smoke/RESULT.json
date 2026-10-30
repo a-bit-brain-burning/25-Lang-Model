@@ -1,0 +1,260 @@
+{
+  "passed": true,
+  "languages": 25,
+  "ordinary_text_only": true,
+  "reference_audio_or_durations_used": false,
+  "quality_evaluation": false,
+  "execution": "host FP32 compute with current INT8 weights",
+  "rows": [
+    {
+      "language": "bg",
+      "phones": 30,
+      "unknown_phone_count": 0,
+      "frames": 197,
+      "samples": 31520,
+      "sample_rate": 16000,
+      "wav_sha256": "b4f993f4b6269fca750c419b6a17f6439c5fcc6e4a907073365f6d58559a0352",
+      "seconds": 1.4656643510006688
+    },
+    {
+      "language": "cs",
+      "phones": 27,
+      "unknown_phone_count": 0,
+      "frames": 186,
+      "samples": 29760,
+      "sample_rate": 16000,
+      "wav_sha256": "e16f9715b9d04c64f851cf121920469180ba0df600c3139ee69d67e6980e9adf",
+      "seconds": 2.2684461230001034
+    },
+    {
+      "language": "da",
+      "phones": 28,
+      "unknown_phone_count": 0,
+      "frames": 169,
+      "samples": 27040,
+      "sample_rate": 16000,
+      "wav_sha256": "6aea59eacfb64fcef8367861684cb278691f7e6e7ce44cb8006ffddf880cb4c9",
+      "seconds": 1.5041002170000866
+    },
+    {
+      "language": "de",
+      "phones": 32,
+      "unknown_phone_count": 0,
+      "frames": 197,
+      "samples": 31520,
+      "sample_rate": 16000,
+      "wav_sha256": "247b23dbeb0f8dda7997f6052bf3b67b57ca02c93657214b01e6dde2dff659da",
+      "seconds": 0.08731437700043898
+    },
+    {
+      "language": "el",
+      "phones": 34,
+      "unknown_phone_count": 0,
+      "frames": 253,
+      "samples": 40480,
+      "sample_rate": 16000,
+      "wav_sha256": "1f955141c5767212faf9100c8b8b38a7c60e501a737eb8082b84bdba1b4bafb2",
+      "seconds": 2.088390144001096
+    },
+    {
+      "language": "en",
+      "phones": 39,
+      "unknown_phone_count": 0,
+      "frames": 257,
+      "samples": 41120,
+      "sample_rate": 16000,
+      "wav_sha256": "fcdfbce89f6700744cf62811ee67513861270dd7a8897cfac4c726cef624b19b",
+      "seconds": 11.67282881799838
+    },
+    {
+      "language": "es",
+      "phones": 31,
+      "unknown_phone_count": 0,
+      "frames": 210,
+      "samples": 33600,
+      "sample_rate": 16000,
+      "wav_sha256": "853545d8553a9062f7d8bd5b967b2d2cbddf0430a3ab12697fc5fce9c8ccae97",
+      "seconds": 3.7406954880007106
+    },
+    {
+      "language": "et",
+      "phones": 22,
+      "unknown_phone_count": 0,
+      "frames": 155,
+      "samples": 24800,
+      "sample_rate": 16000,
+      "wav_sha256": "c7c65f231251e9f24203860a9ad4d8b239f77c1dca60f06a309a319401f7f01a",
+      "seconds": 1.1389319169993541
+    },
+    {
+      "language": "fi",
+      "phones": 24,
+      "unknown_phone_count": 0,
+      "frames": 166,
+      "samples": 26560,
+      "sample_rate": 16000,
+      "wav_sha256": "af772c1d75ff2302a987d85309c90dbe5d25da3fc7b80af7a3a5278d52d8411b",
+      "seconds": 0.9137966510006663
+    },
+    {
+      "language": "fr",
+      "phones": 31,
+      "unknown_phone_count": 0,
+      "frames": 200,
+      "samples": 32000,
+      "sample_rate": 16000,
+      "wav_sha256": "fa306e311d7e7adf3dd4699e2c4e47b54d520e13b4b0b1a7502f8b14841fef4a",
+      "seconds": 6.766227341000558
+    },
+    {
+      "language": "hr",
+      "phones": 27,
+      "unknown_phone_count": 0,
+      "frames": 215,
+      "samples": 34400,
+      "sample_rate": 16000,
+      "wav_sha256": "eba6b269191332fa3d90347966f640ff7098a2c2f3ab3ae33db57634e6fa8c84",
+      "seconds": 1.3035289520012157
+    },
+    {
+      "language": "hu",
+      "phones": 20,
+      "unknown_phone_count": 0,
+      "frames": 154,
+      "samples": 24640,
+      "sample_rate": 16000,
+      "wav_sha256": "6165d20ce7c97c3fe7dec2d426a7832b2e0fd220b98d7b1c9b1ad8878da86329",
+      "seconds": 0.9336688309995225
+    },
+    {
+      "language": "it",
+      "phones": 34,
+      "unknown_phone_count": 0,
+      "frames": 223,
+      "samples": 35680,
+      "sample_rate": 16000,
+      "wav_sha256": "3311049e2d30a85399b47edce6fd641054f76d75bc90a06cb881bea9c98057e0",
+      "seconds": 3.724000222000541
+    },
+    {
+      "language": "lt",
+      "phones": 27,
+      "unknown_phone_count": 0,
+      "frames": 243,
+      "samples": 38880,
+      "sample_rate": 16000,
+      "wav_sha256": "760e8d727ca320d83ef505c608a446dae2bcc84abeafa5f62b5b60b0256758c2",
+      "seconds": 27.66123069599962
+    },
+    {
+      "language": "lv",
+      "phones": 25,
+      "unknown_phone_count": 0,
+      "frames": 203,
+      "samples": 32480,
+      "sample_rate": 16000,
+      "wav_sha256": "d155a3a96e1810bc1678e28453479f5f793dd03ce21f202105c8748b1824e92b",
+      "seconds": 1.182468629000141
+    },
+    {
+      "language": "nl",
+      "phones": 33,
+      "unknown_phone_count": 0,
+      "frames": 194,
+      "samples": 31040,
+      "sample_rate": 16000,
+      "wav_sha256": "756b6bf613f7ba5eaf47ef383c90d8003d7241c6afb9af6445f848b2bf9f91d0",
+      "seconds": 1.212253106999924
+    },
+    {
+      "language": "no",
+      "phones": 31,
+      "unknown_phone_count": 0,
+      "frames": 199,
+      "samples": 31840,
+      "sample_rate": 16000,
+      "wav_sha256": "85e1e6f95add8dfe8b8aec7be90d44f605a9be76e2d80cccced6b56d867488be",
+      "seconds": 1.2595749140000407
+    },
+    {
+      "language": "pl",
+      "phones": 30,
+      "unknown_phone_count": 0,
+      "frames": 215,
+      "samples": 34400,
+      "sample_rate": 16000,
+      "wav_sha256": "0ee7a29a8394035d5e09c06b83359215a889ae80f192e6150b8e7369cebba03d",
+      "seconds": 0.12229618100172956
+    },
+    {
+      "language": "pt",
+      "phones": 27,
+      "unknown_phone_count": 0,
+      "frames": 174,
+      "samples": 27840,
+      "sample_rate": 16000,
+      "wav_sha256": "fe0ef9269813db64c30ea437bc2731e0a54bd16b82f3699d00325789e6180ec7",
+      "seconds": 1.5106481570001051
+    },
+    {
+      "language": "ro",
+      "phones": 36,
+      "unknown_phone_count": 0,
+      "frames": 235,
+      "samples": 37600,
+      "sample_rate": 16000,
+      "wav_sha256": "5e3ff2a812ea5f040b94fe929d8d58b33a87b588e53a674f4c87cab983bb3ab6",
+      "seconds": 4.040202059999501
+    },
+    {
+      "language": "sk",
+      "phones": 27,
+      "unknown_phone_count": 0,
+      "frames": 205,
+      "samples": 32800,
+      "sample_rate": 16000,
+      "wav_sha256": "0c702f683722457bf54856743ca3a3a877c611892744849a2acc59b63ddb5687",
+      "seconds": 1.1062279699999635
+    },
+    {
+      "language": "sl",
+      "phones": 35,
+      "unknown_phone_count": 0,
+      "frames": 244,
+      "samples": 39040,
+      "sample_rate": 16000,
+      "wav_sha256": "1ba4e44426c63d9b5d9a50eb424468492ea2fb9e61200693b5d2bf3c1caa15af",
+      "seconds": 1.5256938099992112
+    },
+    {
+      "language": "sv",
+      "phones": 34,
+      "unknown_phone_count": 0,
+      "frames": 207,
+      "samples": 33120,
+      "sample_rate": 16000,
+      "wav_sha256": "9283a5e25623a3e9bd65281d5bd62c1eb3428adae862d297a2182a43360f00b2",
+      "seconds": 1.1592348070007574
+    },
+    {
+      "language": "tr",
+      "phones": 29,
+      "unknown_phone_count": 0,
+      "frames": 196,
+      "samples": 31360,
+      "sample_rate": 16000,
+      "wav_sha256": "e9b28d7dd17978c69787aa866c0f47550f4ef479947e7d8f348a0ef7f3d344ef",
+      "seconds": 1.0619004189993575
+    },
+    {
+      "language": "zh",
+      "phones": 34,
+      "unknown_phone_count": 0,
+      "frames": 289,
+      "samples": 46240,
+      "sample_rate": 16000,
+      "wav_sha256": "aeaaaa6f02e91876bd1a039e670fbd69331d6604e472a461cf3c845176f7f759",
+      "seconds": 4.014059783001358
+    }
+  ]
+}

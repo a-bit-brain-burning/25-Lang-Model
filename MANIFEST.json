@@ -1,15 +1,19 @@
 {
-  "format_version": 2,
-  "component": "trained_25_language_acoustic_and_finetuned_hifigan",
+  "format_version": 3,
+  "component": "new25_complete_int8_frontend_through_hifigan_simulator_handoff",
   "self_excluded": true,
   "files": {
+    ".gitattributes": {
+      "bytes": 160,
+      "sha256": "20a7d97cc1c055d8094ae9b118d7a193d8a2ffaf9ce72af914d11526fe14589a"
+    },
     ".gitignore": {
-      "bytes": 301,
-      "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
+      "bytes": 412,
+      "sha256": "75d1d848dd6408a1605c9ba840293b2464072d7ae2de9cfa872d0cede9150be3"
     },
     "README.md": {
-      "bytes": 5527,
-      "sha256": "0c7aa0adf48e2c2797ccb27d5bebfc1cbae2aa1424b4029b5cb6c1fb54c034b4"
+      "bytes": 7688,
+      "sha256": "fde2e243fa8208d2273e7bc502942eee95936aee5b82779860562bd000b553f0"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -27,6 +31,10 @@
       "bytes": 5192,
       "sha256": "fc852192151e303f97a09c9727f265f71dad19ba70c37e2bec4f1e1551c8dc39"
     },
+    "docs/INT8_HANDOFF.md": {
+      "bytes": 9317,
+      "sha256": "d1434a8bdde31bd1feb3699c68db565bdfc809117382677a7c85875a8da9b5d1"
+    },
     "docs/TRAINING.md": {
       "bytes": 8756,
       "sha256": "d5e50bc90c8090549e83b5f30de65648c884e0b40252d9e271a38cd7f373a236"
@@ -34,6 +42,2422 @@
     "docs/VOCODER_INTERFACE.md": {
       "bytes": 13617,
       "sha256": "9337f78c42069db66477e19f7f9f4bb694072ed170a663653173968c83a3044a"
+    },
+    "examples/host_smoke/RESULT.json": {
+      "bytes": 7368,
+      "sha256": "48060e4941c0921baa1856088d560358c4c50be10d823d8927daaca1fc434384"
+    },
+    "examples/host_smoke/bg.npz": {
+      "bytes": 1429,
+      "sha256": "d4cdb261be16b22558c3362e352ede9a144821714310b8972a0e747d04edca4b"
+    },
+    "examples/host_smoke/bg.wav": {
+      "bytes": 63084,
+      "sha256": "b4f993f4b6269fca750c419b6a17f6439c5fcc6e4a907073365f6d58559a0352"
+    },
+    "examples/host_smoke/cs.npz": {
+      "bytes": 1271,
+      "sha256": "a0d7eaf713174573416da9bc12278e683e6558cd392d8d2d89e7565594ea0301"
+    },
+    "examples/host_smoke/cs.wav": {
+      "bytes": 59564,
+      "sha256": "e16f9715b9d04c64f851cf121920469180ba0df600c3139ee69d67e6980e9adf"
+    },
+    "examples/host_smoke/da.npz": {
+      "bytes": 1284,
+      "sha256": "0e2767b5740c97900a37f8539504c1454afc3c913856a91f165d49be12a660fd"
+    },
+    "examples/host_smoke/da.wav": {
+      "bytes": 54124,
+      "sha256": "6aea59eacfb64fcef8367861684cb278691f7e6e7ce44cb8006ffddf880cb4c9"
+    },
+    "examples/host_smoke/de.npz": {
+      "bytes": 1392,
+      "sha256": "7c1dd9916b75de1b42b182b7ac7bf04c4e44f4743cad208d94f9a85861ee7a66"
+    },
+    "examples/host_smoke/de.wav": {
+      "bytes": 63084,
+      "sha256": "247b23dbeb0f8dda7997f6052bf3b67b57ca02c93657214b01e6dde2dff659da"
+    },
+    "examples/host_smoke/el.npz": {
+      "bytes": 1381,
+      "sha256": "bff5913cf07dc786ddaa510dea30faddeda7e3b84e2dde1e1fecc59ad1d9c660"
+    },
+    "examples/host_smoke/el.wav": {
+      "bytes": 81004,
+      "sha256": "1f955141c5767212faf9100c8b8b38a7c60e501a737eb8082b84bdba1b4bafb2"
+    },
+    "examples/host_smoke/en.npz": {
+      "bytes": 1472,
+      "sha256": "0bcaab1342df3978e3bf3d65d7ba00652af494d078b94050297d605576928a15"
+    },
+    "examples/host_smoke/en.wav": {
+      "bytes": 82284,
+      "sha256": "fcdfbce89f6700744cf62811ee67513861270dd7a8897cfac4c726cef624b19b"
+    },
+    "examples/host_smoke/es.npz": {
+      "bytes": 1310,
+      "sha256": "4e699d386329dc85390d588a9e3e471007a1d54cdb75890f058db035f1250262"
+    },
+    "examples/host_smoke/es.wav": {
+      "bytes": 67244,
+      "sha256": "853545d8553a9062f7d8bd5b967b2d2cbddf0430a3ab12697fc5fce9c8ccae97"
+    },
+    "examples/host_smoke/et.npz": {
+      "bytes": 1254,
+      "sha256": "b5bbe7d029d8d401db6feb038c64308f2b172a6adcb509e7be6e50fbc4d29ea0"
+    },
+    "examples/host_smoke/et.wav": {
+      "bytes": 49644,
+      "sha256": "c7c65f231251e9f24203860a9ad4d8b239f77c1dca60f06a309a319401f7f01a"
+    },
+    "examples/host_smoke/fi.npz": {
+      "bytes": 1308,
+      "sha256": "cefccbee2928dc6d1c590888aa983a571ace692d41c9701b1646030fb61bd919"
+    },
+    "examples/host_smoke/fi.wav": {
+      "bytes": 53164,
+      "sha256": "af772c1d75ff2302a987d85309c90dbe5d25da3fc7b80af7a3a5278d52d8411b"
+    },
+    "examples/host_smoke/fr.npz": {
+      "bytes": 1331,
+      "sha256": "302c17e33ac58fb3bd9a80cf4687f1471e3d9a81389451fdd91d5b8209ccc5b3"
+    },
+    "examples/host_smoke/fr.wav": {
+      "bytes": 64044,
+      "sha256": "fa306e311d7e7adf3dd4699e2c4e47b54d520e13b4b0b1a7502f8b14841fef4a"
+    },
+    "examples/host_smoke/hr.npz": {
+      "bytes": 1364,
+      "sha256": "d7bc2ccca9ab88739140634664408396e6128158505072091219d10f3e31af27"
+    },
+    "examples/host_smoke/hr.wav": {
+      "bytes": 68844,
+      "sha256": "eba6b269191332fa3d90347966f640ff7098a2c2f3ab3ae33db57634e6fa8c84"
+    },
+    "examples/host_smoke/hu.npz": {
+      "bytes": 1161,
+      "sha256": "9c5416c7fb7678a1472e6d22a28e3d7f113e9547535692b8fa2cb0848ede7eb5"
+    },
+    "examples/host_smoke/hu.wav": {
+      "bytes": 49324,
+      "sha256": "6165d20ce7c97c3fe7dec2d426a7832b2e0fd220b98d7b1c9b1ad8878da86329"
+    },
+    "examples/host_smoke/it.npz": {
+      "bytes": 1391,
+      "sha256": "1da26bd6390ba13e60d9836b3303f5c08bd3d46033ebc574084459b0ee41ea02"
+    },
+    "examples/host_smoke/it.wav": {
+      "bytes": 71404,
+      "sha256": "3311049e2d30a85399b47edce6fd641054f76d75bc90a06cb881bea9c98057e0"
+    },
+    "examples/host_smoke/lt.npz": {
+      "bytes": 1409,
+      "sha256": "90e12b186a3985799af594b7a5671c32576919bcab9a5cc2cd25b3ec7e7e8f1a"
+    },
+    "examples/host_smoke/lt.wav": {
+      "bytes": 77804,
+      "sha256": "760e8d727ca320d83ef505c608a446dae2bcc84abeafa5f62b5b60b0256758c2"
+    },
+    "examples/host_smoke/lv.npz": {
+      "bytes": 1325,
+      "sha256": "8a6fa379425c51ac6e6435fcf3fa9d6bef2eeb7b7a1e7840fae352533b81e409"
+    },
+    "examples/host_smoke/lv.wav": {
+      "bytes": 65004,
+      "sha256": "d155a3a96e1810bc1678e28453479f5f793dd03ce21f202105c8748b1824e92b"
+    },
+    "examples/host_smoke/nl.npz": {
+      "bytes": 1399,
+      "sha256": "8fe963ad5f39aa91210d7c7729165d0d84917b10e2046f2e370e9e73d4cb2133"
+    },
+    "examples/host_smoke/nl.wav": {
+      "bytes": 62124,
+      "sha256": "756b6bf613f7ba5eaf47ef383c90d8003d7241c6afb9af6445f848b2bf9f91d0"
+    },
+    "examples/host_smoke/no.npz": {
+      "bytes": 1353,
+      "sha256": "cc07fae2fd3ab9278c25d555a714b5f6232c77bb56700b1fb2bc4aaf3a04abf5"
+    },
+    "examples/host_smoke/no.wav": {
+      "bytes": 63724,
+      "sha256": "85e1e6f95add8dfe8b8aec7be90d44f605a9be76e2d80cccced6b56d867488be"
+    },
+    "examples/host_smoke/pl.npz": {
+      "bytes": 1336,
+      "sha256": "64c1c6b848e3aab7da9e243a3700be7a2d2e7efe42569a8795c07d3727be4c80"
+    },
+    "examples/host_smoke/pl.wav": {
+      "bytes": 68844,
+      "sha256": "0ee7a29a8394035d5e09c06b83359215a889ae80f192e6150b8e7369cebba03d"
+    },
+    "examples/host_smoke/pt.npz": {
+      "bytes": 1263,
+      "sha256": "d9db2e70f6cffa932af64c57ccdb6a9740b06216921c50c728708ab79a58cb90"
+    },
+    "examples/host_smoke/pt.wav": {
+      "bytes": 55724,
+      "sha256": "fe0ef9269813db64c30ea437bc2731e0a54bd16b82f3699d00325789e6180ec7"
+    },
+    "examples/host_smoke/ro.npz": {
+      "bytes": 1384,
+      "sha256": "a6629d77648d11f7c717312f042b62473755850cf295a7e94fc487a319bf913a"
+    },
+    "examples/host_smoke/ro.wav": {
+      "bytes": 75244,
+      "sha256": "5e3ff2a812ea5f040b94fe929d8d58b33a87b588e53a674f4c87cab983bb3ab6"
+    },
+    "examples/host_smoke/sk.npz": {
+      "bytes": 1294,
+      "sha256": "c6ebd96d683934b8b556beb130857077f31382046f78268993e16ad152903710"
+    },
+    "examples/host_smoke/sk.wav": {
+      "bytes": 65644,
+      "sha256": "0c702f683722457bf54856743ca3a3a877c611892744849a2acc59b63ddb5687"
+    },
+    "examples/host_smoke/sl.npz": {
+      "bytes": 1613,
+      "sha256": "72ba5c68f7920cad80eaab57e319bc347e45176a87f1d439da2939371768b1b0"
+    },
+    "examples/host_smoke/sl.wav": {
+      "bytes": 78124,
+      "sha256": "1ba4e44426c63d9b5d9a50eb424468492ea2fb9e61200693b5d2bf3c1caa15af"
+    },
+    "examples/host_smoke/sv.npz": {
+      "bytes": 1379,
+      "sha256": "92fa867b3a9d95048e1365b177cc8807ef0be8e6847eec94e0ca143461bd98de"
+    },
+    "examples/host_smoke/sv.wav": {
+      "bytes": 66284,
+      "sha256": "9283a5e25623a3e9bd65281d5bd62c1eb3428adae862d297a2182a43360f00b2"
+    },
+    "examples/host_smoke/tr.npz": {
+      "bytes": 1312,
+      "sha256": "ce24e53dd8da77a4df1b00d9ff41535d26bb8035fab4ae80ea56280185a06162"
+    },
+    "examples/host_smoke/tr.wav": {
+      "bytes": 62764,
+      "sha256": "e9b28d7dd17978c69787aa866c0f47550f4ef479947e7d8f348a0ef7f3d344ef"
+    },
+    "examples/host_smoke/zh.npz": {
+      "bytes": 1536,
+      "sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194"
+    },
+    "examples/host_smoke/zh.wav": {
+      "bytes": 92524,
+      "sha256": "aeaaaa6f02e91876bd1a039e670fbd69331d6604e472a461cf3c845176f7f759"
+    },
+    "examples/smoke_text.json": {
+      "bytes": 1167,
+      "sha256": "d5c204e6008a591db64e9ba34a3c9d161237f025e62430491aca4305fe88c630"
+    },
+    "frontend/__init__.py": {
+      "bytes": 55,
+      "sha256": "f00d1619d993d97a07e5c816ca9de96f43d1cf8f9ac53b93aed4dc50f7a3f654"
+    },
+    "frontend/api.py": {
+      "bytes": 6522,
+      "sha256": "9ed96da971a65966190b4ed054ce2c228513852539c79694213e1305dd78fa81"
+    },
+    "frontend/attribution/CURRENT_UPDATE_ATTRIBUTIONS.json": {
+      "bytes": 1437255,
+      "sha256": "d9ad239ec16b1dd3e7fbd6efb6b00a57cb895a84dc4e5a238f1df6d8fddee99d"
+    },
+    "frontend/attribution/EU_WEST_SLAVIC_ATTRIBUTIONS.json": {
+      "bytes": 1063641,
+      "sha256": "e66260f2bb190b89f0759fde9b21b985dccf9d320bd524b0f0bb2c6f67761a56"
+    },
+    "frontend/attribution/EU_WEST_SLAVIC_PROVENANCE.json": {
+      "bytes": 38965,
+      "sha256": "0c248a334f85c56c23720624261782f2c1cb64a155155a355b79d6e04d8c31ec"
+    },
+    "frontend/attribution/FI_ET_ATTRIBUTIONS.json": {
+      "bytes": 493972,
+      "sha256": "bed1dc737093eb2287454a7da404dc6d7d43495ca28ca7a91106c7c7cd3770f2"
+    },
+    "frontend/attribution/FI_ET_PROVENANCE.json": {
+      "bytes": 11516,
+      "sha256": "baeb1ea872497dd29de46b45504bb870e82e52d602171ea9c27433105cb98a5a"
+    },
+    "frontend/attribution/LT_PROVENANCE.json": {
+      "bytes": 5837,
+      "sha256": "71fe14822f945d322c55df4c70f90faf7ca60b6cefed6a01880fd8058d57addd"
+    },
+    "frontend/attribution/MT_GA_ATTRIBUTIONS.json": {
+      "bytes": 228934,
+      "sha256": "efd04df814394eded23a8ea8432a8cb17ee407af1db7b59b920f1cc9a5ea02e2"
+    },
+    "frontend/attribution/MT_GA_PROVENANCE.json": {
+      "bytes": 9905,
+      "sha256": "04a5ef334b7b44dc592af56de811a23c9a635d9714495648f0c3443f740b7fb8"
+    },
+    "frontend/attribution/SOURCE_RELEASE_NOTICE": {
+      "bytes": 5515,
+      "sha256": "b3cec522f3e66bb96d79a673c8deb015c21289811ee5a819532aee5c85b81f66"
+    },
+    "frontend/attribution/SOUTH_SLAVIC_ATTRIBUTIONS.json": {
+      "bytes": 1565361,
+      "sha256": "12b82d6d24c59873f4eb572d9b43dcd6a1e5d7563bd5f2b1b398345b4bbc3402"
+    },
+    "frontend/attribution/SV_SK_ATTRIBUTIONS.json": {
+      "bytes": 611152,
+      "sha256": "809e0a599deb6c8d78e0e5ff4f917cd8afccba5edeecb42abb94b77097e2bd84"
+    },
+    "frontend/attribution/licenses/BOSON-HIGGS-AUDIO-2-LICENSE.txt": {
+      "bytes": 9171,
+      "sha256": "ac933dc084d119bd20401956b90d11ae87c248b2da62622cd580d82cdf2fa049"
+    },
+    "frontend/attribution/licenses/LIEPA-TTS-DATA-CARD.md": {
+      "bytes": 5141,
+      "sha256": "9a8b188a06dadd6329b8205594a3a736c390a2c713fd615643726041630704e3"
+    },
+    "frontend/attribution/licenses/LT-LEXICON-DATA-CARD.md": {
+      "bytes": 4523,
+      "sha256": "65a41024089e2b5ed5935a0f6c8d3bb67e69ca58af82fe777e80b4c7a49fefe6"
+    },
+    "frontend/attribution/licenses/META-LLAMA-3-LICENSE.txt": {
+      "bytes": 12403,
+      "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+    },
+    "frontend/attribution/licenses/OmniVoice-MODEL-CARD.md": {
+      "bytes": 9424,
+      "sha256": "b5d645a1874baa96a460a0e3a7d5a262811d682d04ce235878a16d5fed287fd3"
+    },
+    "frontend/attribution/licenses/SOUTH-SLAVIC-CC-BY-SA-4.0.txt": {
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    "frontend/sources/case_compact.c": {
+      "bytes": 12723,
+      "sha256": "352ff493f3327422eba71c6c8679deba8fd3d12f546688566f902b74767e3694"
+    },
+    "frontend/sources/espeak-ng/CMakeLists.txt": {
+      "bytes": 1027,
+      "sha256": "93a940dbd943b0403d360fc23865a924abf6a934a95585a8235bad51b9095d97"
+    },
+    "frontend/sources/espeak-ng/COPYING": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "frontend/sources/espeak-ng/COPYING.APACHE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "frontend/sources/espeak-ng/COPYING.BSD2": {
+      "bytes": 1244,
+      "sha256": "a8b0c1c7d7af6c0415c068be8cf373799d1a42b0707b79dc4ccfcaf593cd902d"
+    },
+    "frontend/sources/espeak-ng/COPYING.UCD": {
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    "frontend/sources/espeak-ng/README.md": {
+      "bytes": 6741,
+      "sha256": "765e894f83a47e2d003bd2256e86d1ae412e6e0078c3092d66ece293b051e278"
+    },
+    "frontend/sources/espeak-ng/config.h": {
+      "bytes": 192,
+      "sha256": "5703e4465ec8d21d464d9d2bd7afc027ae36a4656d4d7dc1c46e5728a32fe81c"
+    },
+    "frontend/sources/espeak-ng/configure.ac": {
+      "bytes": 12401,
+      "sha256": "7cfaf6486602088ebed146537c78f9b67a557f8f1e57f8f458601cf4a7582c31"
+    },
+    "frontend/sources/espeak-ng/patched/speech.c": {
+      "bytes": 24602,
+      "sha256": "d740f38ab72f9ba6fb905d675f4961607ef9d7290ecf20bc0b40a8d4e072b03b"
+    },
+    "frontend/sources/espeak-ng/patched/synthdata.c": {
+      "bytes": 21489,
+      "sha256": "0decabadb97b05f6c38be2e46d4eabc5e4d5cde9c564c20cec343301c18f5b14"
+    },
+    "frontend/sources/espeak-ng/patched/synthesize.c": {
+      "bytes": 39494,
+      "sha256": "c47a3f3d8a07a23b6b5f369e1f09941eb6f83454fdfcafe0d658f860d154b6a2"
+    },
+    "frontend/sources/espeak-ng/provenance/SOURCE_PATCH.json": {
+      "bytes": 989,
+      "sha256": "87c960f2f3ececd79c7952db0cb2d66fb0458d9d41aa6ab4cfc4246b311cefdd"
+    },
+    "frontend/sources/espeak-ng/provenance/build_code.py": {
+      "bytes": 8728,
+      "sha256": "cb7d91bf57022a8899b52172743e91b2dae45d35d714deaa2b92e7e1417ee0c6"
+    },
+    "frontend/sources/espeak-ng/provenance/phoneme_only.patch": {
+      "bytes": 10724,
+      "sha256": "effc7ad4b812653fa060f4b514772145814f04019d22bff93add46067dc7ece9"
+    },
+    "frontend/sources/espeak-ng/src/CMakeLists.txt": {
+      "bytes": 1433,
+      "sha256": "7a7cde78f6dd459ce0151d245f1452e0a7ad70087ccea3539d867ec0e5f3c08a"
+    },
+    "frontend/sources/espeak-ng/src/compat/getopt.c": {
+      "bytes": 12515,
+      "sha256": "e781681895c169161b2ea68ac4257492659def27ac0af782f17b0bd5afa3b83c"
+    },
+    "frontend/sources/espeak-ng/src/espeak-ng.1.ronn": {
+      "bytes": 5382,
+      "sha256": "578807dd8aaa2c420a09e5d2d5d3f921271328a0400a396d75a94b11e7045945"
+    },
+    "frontend/sources/espeak-ng/src/espeak-ng.c": {
+      "bytes": 22862,
+      "sha256": "fa53a0dc1f947dba632524749cabca7d80d754771b5a4f14d9a1db8030e04434"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/endian.h": {
+      "bytes": 3768,
+      "sha256": "d9d0517fa9a3b2caabbbe84c5c003526779b1056549e7f08dbd0ce3b30c26875"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/getopt.h": {
+      "bytes": 1360,
+      "sha256": "95a2ba0e9f6765148c74bf54e237c18ea36d668a57d21c2003595c4a2d16b1e3"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/math.h": {
+      "bytes": 1108,
+      "sha256": "c76fbdcddfc9a922b0a29e52ef20fdd28bf88804d5334a58597b14297792d0f8"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/stdint.h": {
+      "bytes": 1526,
+      "sha256": "a8b70c0cc85d5dce8ade8edeb3e3d74868dbdd3cc43a90dff007a8cf4684b675"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/stdio.h": {
+      "bytes": 1147,
+      "sha256": "cec378f30afd807d10c3153b92ab0dd0707f90be915edf34e428984d7b15d4ad"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/string.h": {
+      "bytes": 1195,
+      "sha256": "839f6c027a2f67c30d8ac077fac945b7e3e7e19a88cb6889ecda261e38092c85"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/strings.h": {
+      "bytes": 986,
+      "sha256": "8ab483f7c6c556ac98072564845822cd82773cd14c2af5f95738dce986816d0a"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/sys/stat.h": {
+      "bytes": 1254,
+      "sha256": "f75eeb63683b3be83b9fa1b4f0fd511fbc9c05cc6da02ac3eb5772c49569d7ff"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/unistd.h": {
+      "bytes": 945,
+      "sha256": "8212bc3d2ad7eaae5a96f13399f7842793c7887dcbbc34578d4e6cc94f75deaa"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/wchar.h": {
+      "bytes": 1092,
+      "sha256": "f77dcf954b65de083734b702119304240c4e11c8179ada0a6afcfd804033fadb"
+    },
+    "frontend/sources/espeak-ng/src/include/compat/wctype.h": {
+      "bytes": 1516,
+      "sha256": "1f70c90c9ba2ef7fef4d2d2e1734f047b1af697c0b0b0ed1d808491a92dc4ed1"
+    },
+    "frontend/sources/espeak-ng/src/include/espeak-ng/encoding.h": {
+      "bytes": 3117,
+      "sha256": "cfdea69c66f1b309717894fa8682e761d7a49448e6a17abdd015bbd85e6de0d5"
+    },
+    "frontend/sources/espeak-ng/src/include/espeak-ng/espeak_ng.h": {
+      "bytes": 6788,
+      "sha256": "cc4557b73e583bff99ae6703b9685d573713e6c28edecd44030e5def47384051"
+    },
+    "frontend/sources/espeak-ng/src/include/espeak-ng/speak_lib.h": {
+      "bytes": 25839,
+      "sha256": "3218ca1573c58f0191830425ca2ebc823f63895de5967b0d1dced987830bfdce"
+    },
+    "frontend/sources/espeak-ng/src/include/espeak/speak_lib.h": {
+      "bytes": 25839,
+      "sha256": "3218ca1573c58f0191830425ca2ebc823f63895de5967b0d1dced987830bfdce"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/CMakeLists.txt": {
+      "bytes": 2900,
+      "sha256": "d96f3dbff293ffc507b251390c73e54b90a15bffd9f923f25ec52359574e9443"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/common.c": {
+      "bytes": 8038,
+      "sha256": "b5a2fc40da61e23b55b7f79f8f8db93ec03f3bd5ede2ac4c02586ba564c335ab"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/common.h": {
+      "bytes": 1724,
+      "sha256": "5e43e56b90fc333efb654f3edeffbd0308a432a3e942ab37e0d5172c78e3a152"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/compiledata.c": {
+      "bytes": 71564,
+      "sha256": "70d5996bfc85fb39bab210b0e6c79d5d46a1574d9a02dfca8bcfaaf4230ca244"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/compiledict.c": {
+      "bytes": 40944,
+      "sha256": "ce74d0ce87f03149148d545bf62882e26a829035bf553e9543b319fb10ba9c13"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/compiledict.h": {
+      "bytes": 1155,
+      "sha256": "e9f5bc591463b2fdfa38f1ec712ee148088b350131a7a2e11c77ad9063c2e45e"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/compilembrola.c": {
+      "bytes": 3696,
+      "sha256": "47a5c540ab9c4d635251e29c7dfd01462c2b2d0945bd2332b8152a2e47fd322b"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/config.h.in": {
+      "bytes": 241,
+      "sha256": "f408b520e4c418b3fbe93a8cb60c58c71957bf5fdd993015a8948610daf67a5a"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/dictionary.c": {
+      "bytes": 88829,
+      "sha256": "c69a0e4a8364b27a93532b3f7b867459bcf143e1e4d305b1857a293e105802da"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/dictionary.h": {
+      "bytes": 2573,
+      "sha256": "05f2b11ae9bf880365fb1d1fa91e1604754787f3fe35fd94bc7741837698ca2d"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/encoding.c": {
+      "bytes": 37603,
+      "sha256": "c1a81adb11f953eca4e5a52a83faa1ad0e96f63f2829510888f7d4e9f4a6b090"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/error.c": {
+      "bytes": 5000,
+      "sha256": "42ea187e06c57ee97988ea6ce289ad597a75dc16396c2df6319168155a79725c"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/error.h": {
+      "bytes": 1557,
+      "sha256": "92c4d98fc38b5f45bb1af37a37021026817a81860362c2f40497aa17d45194c1"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/espeak_api.c": {
+      "bytes": 5580,
+      "sha256": "991f31a5aa592d46658095916246afa0489f63a36768359285887ab8afd49783"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/espeak_command.c": {
+      "bytes": 9417,
+      "sha256": "2b39e0c76b8d6f63f2f6e2130d1596a3ee8533e6456db447dcd11164926a44ea"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/espeak_command.h": {
+      "bytes": 4385,
+      "sha256": "1400958c57b5957f261050e86b9997e17cefd281cc66c641b5c3dc6e687b0a25"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/event.c": {
+      "bytes": 10274,
+      "sha256": "2dae7e5aa8a8f83afd91bb74bfdc0ca9b541518d8d6b33c9e8bc93d84f4c5d6a"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/event.h": {
+      "bytes": 2212,
+      "sha256": "ba1d010c2f9d762463143f3c4a0a9684bc5ed9110b9e2f87a4ed81577a8ccaaa"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/fifo.c": {
+      "bytes": 11812,
+      "sha256": "2184ec0ecfb4c90007ce2959e929e3b533d72c3c09762350e8a7c8b065cacb94"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/fifo.h": {
+      "bytes": 2315,
+      "sha256": "8ad047ef2cc73fe0d8fdb05d8496dc69d6ad765ba87547ce69211ad692cee7f0"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/ieee80.c": {
+      "bytes": 2091,
+      "sha256": "9f7b27f991f1e3306bf5601c24de23a4de36ec3ca2c3a4c33afb332aac8e2230"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/ieee80.h": {
+      "bytes": 55,
+      "sha256": "3879b50453f629c2a0652930085503919107f84ea9eea76ace46137b4440baac"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/intonation.c": {
+      "bytes": 36514,
+      "sha256": "8756820e189bb5c067dfd8db6d93c777376c035c8cece24234fecab1cc67e83a"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/intonation.h": {
+      "bytes": 1041,
+      "sha256": "45651af0b2a1f4f8776821f33d0f1de10287994b210bf573d54a4abc34359d37"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/klatt.c": {
+      "bytes": 32925,
+      "sha256": "1884460792e7255dd0a0208198401dd0e48a419760da7511327712c9cfba296c"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/klatt.h": {
+      "bytes": 6075,
+      "sha256": "2728b7c61719f388b4d8baa767779cf6f432527c592c1943820397d1914a045b"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/langopts.c": {
+      "bytes": 6817,
+      "sha256": "02ad9680d30fd9caf4375f16df8d58571d5caaf1d004547537e46446e177c451"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/langopts.h": {
+      "bytes": 1075,
+      "sha256": "5c7a802c5c2dbf2e0695358dce5aee4ac5375d580ef0e579a3b3c68664f11be6"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/mbrola.h": {
+      "bytes": 1674,
+      "sha256": "366aa9ce7bf79f9ca8c36a386b5821388c1169e545bbd57a62cfe1b84767cdff"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/mbrowrap.c": {
+      "bytes": 15748,
+      "sha256": "7dc86939c950c7302a2f05cb58aa7f72726d65de471db3355786d24e59994054"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/mbrowrap.h": {
+      "bytes": 3272,
+      "sha256": "052d5e59dcf48300da7fc9e8d482d7a98bf1a099c46018fd06a5dc22bed00f4e"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/mnemonics.c": {
+      "bytes": 1331,
+      "sha256": "052f74535078139599c7fb37bf8701720eaabc261d7fd7630ce73df48e63f059"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/mnemonics.h": {
+      "bytes": 1150,
+      "sha256": "59455ca63c5540ef0ab46274e023a53f03119a20455f97d8c8b03e6f61b7743d"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/numbers.c": {
+      "bytes": 50509,
+      "sha256": "0d91d2c768b63deae442e5c0f0ab0e311422c829f9acaafa3a90f9d804750ffb"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/numbers.h": {
+      "bytes": 1467,
+      "sha256": "ec4f8b8bd660700fefd11cb596440e0d035be6252cc780018b2bcaadd472237f"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/phoneme.c": {
+      "bytes": 5162,
+      "sha256": "75c7f9d13ace78c6f1abff7eed408ea1fc7f00848c346e6ba0ec92db654e6d95"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/phoneme.h": {
+      "bytes": 9161,
+      "sha256": "9f9d91ed07885b227cce551cdbad9cf620c2945d44a8e90edf910af9646d7d75"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/phonemelist.c": {
+      "bytes": 18653,
+      "sha256": "2f7ba6165108c91402e96388cf9b2e4cef048577ddad2814351ad25ea7772e82"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/phonemelist.h": {
+      "bytes": 1067,
+      "sha256": "bc6542ab4aa332c1542de765de73f7731d239b52d4026ab0c0963b63890a6f79"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/readclause.c": {
+      "bytes": 30108,
+      "sha256": "5d110a4478727f16509519de3c4c11c536577ae83c967a04ddd92d01bc712432"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/readclause.h": {
+      "bytes": 1416,
+      "sha256": "556906a5c226aa3f6a4039328ad9f9d513fc1a6cea206cc6d1e26980cde0ae7f"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/sPlayer.c": {
+      "bytes": 5791,
+      "sha256": "e67db1db85dddd72fa29de32cb7b48f5b220c12196cd079497333bc7c2256796"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/sPlayer.h": {
+      "bytes": 389,
+      "sha256": "d2266241fb5ef5f8b1b06fde38ff5e6791bde4ac06d047ac260a16e4849d4234"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/setlengths.c": {
+      "bytes": 22585,
+      "sha256": "0eeaec2846ea158ebb49573c064b8aca022954371945791ad44c2d3be33da0d3"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/setlengths.h": {
+      "bytes": 1148,
+      "sha256": "3052c91027c348009251ead97f3cb39ffd88194b82c9e559f91ec66687c86fa6"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/sintab.h": {
+      "bytes": 14345,
+      "sha256": "c58ad93a2195532b37d67e9bcac552d77dd541856d4d55b9a94136f19c58d2a5"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/soundicon.c": {
+      "bytes": 5252,
+      "sha256": "5e8bf4217f493ad47c4ce05a5ea7d0d34a8b6c68ae39501a0db779991270342c"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/soundicon.h": {
+      "bytes": 1341,
+      "sha256": "77746328853f96051508aeca1ab4aec724ec95441290f9c9d6d9ded4751f1f30"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/spect.c": {
+      "bytes": 10881,
+      "sha256": "3120ffefbcad67ab10e482d5f107296c7bcad87ece976a7eb51dd83c0824b123"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/spect.h": {
+      "bytes": 2666,
+      "sha256": "5ccd98b047739662db9a81fd37428d1704c981dc96acacda3aee1e25c31ac1a6"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/speech.c": {
+      "bytes": 26678,
+      "sha256": "70584c853082141ae4c1de6254e4601085ea0ca06054fb8055852fb2768a70bf"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/speech.h": {
+      "bytes": 2256,
+      "sha256": "bd314598b9423b6a7d4aacf261d7012eef6467b7d1058910882bea9c78f722db"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/ssml.c": {
+      "bytes": 30337,
+      "sha256": "0898e35df4b946233b77a7311be47737f570e9d24eef47b90f3c2b2a9acbefde"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/ssml.h": {
+      "bytes": 2776,
+      "sha256": "9a5d7cc062dc2fa1e004483849670cf12057601cda243f9a0aa81cd8841f0ffd"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/synth_mbrola.c": {
+      "bytes": 16314,
+      "sha256": "410f7f376a0098700ad53edff25b4e5a7604f3a90f363f2932d0549ffb8a704e"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/synthdata.c": {
+      "bytes": 24826,
+      "sha256": "776465e7139b8c0e349b0948a8c48a3f2d4ef5e75fe32017ca2de23aa06d465b"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/synthdata.h": {
+      "bytes": 1940,
+      "sha256": "46f6315027e2145bab900277a9c9e10a467ea0bfa9a1b0b37a9f4c40fcb09f22"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/synthesize.c": {
+      "bytes": 41864,
+      "sha256": "ed4aca3492fbf17f2fed9c3c7cdcc544743395de082e5f6a90c8dcdb918ec419"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/synthesize.h": {
+      "bytes": 15058,
+      "sha256": "db8ebcf0c12c2c5bf0996fd588bf2d4c4240b196922bdd0640576215ec8b9b53"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/tr_languages.c": {
+      "bytes": 72870,
+      "sha256": "83173f257cd5302f8bb0b9ba7a164bdf5e237e01bf336aaa6eda423da4a612fd"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/translate.c": {
+      "bytes": 53322,
+      "sha256": "9c987c67db6a6be7bc37498c029bcc19dd91fdedc521ddeac7e7bba81ec9ea23"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/translate.h": {
+      "bytes": 31149,
+      "sha256": "8ff32baadc5a45e502e3151f8804a704916d9d9d27ac8a74a78e7e484185d271"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/translateword.c": {
+      "bytes": 36954,
+      "sha256": "ee4cb14c6fccd961b4de863ad284acc8585322d92546e8be460721996a010965"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/translateword.h": {
+      "bytes": 1218,
+      "sha256": "6986ebf368deb77c5d4eeee029dba7e48d708c938f6bbfb7a606a4fa01346f25"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/voice.h": {
+      "bytes": 5728,
+      "sha256": "68fb5aea4e09c8f6500adc906a275def3ef585e982dcbfc0fdca0e2894c4db6d"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/voices.c": {
+      "bytes": 40280,
+      "sha256": "6509cec3f144adf22338eb0a822915ed28262133864a47f1b2464922f9fc7a01"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/wavegen.c": {
+      "bytes": 40441,
+      "sha256": "9f327bb75ed2fd27535f58deef06fb51c994ab53e6ec7d05ea3f04eca78100d4"
+    },
+    "frontend/sources/espeak-ng/src/libespeak-ng/wavegen.h": {
+      "bytes": 1791,
+      "sha256": "f2564d6fdb8227b10e243fc31c46cf73039051c7115c5caa4dbf362984d70be8"
+    },
+    "frontend/sources/espeak-ng/src/speak-ng.1.ronn": {
+      "bytes": 4814,
+      "sha256": "0cdde8392db63011e502fa405dba7984a591b5f6419273b44046a82087ea1857"
+    },
+    "frontend/sources/espeak-ng/src/speak-ng.c": {
+      "bytes": 923,
+      "sha256": "5b7638fc457af2d6e1c9cc0d34fc2d62b3c461001a9b7c120816af7b9abd42a5"
+    },
+    "frontend/sources/espeak-ng/src/speak-ng.cpp": {
+      "bytes": 21,
+      "sha256": "e51a90eb90cd5b7078bb6e068bb9a4cba116504fed681d8668d74ad1b7ea8307"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/CMakeLists.txt": {
+      "bytes": 235,
+      "sha256": "1bd2a7ff698c8da0d987d39ddc5a7e54ccb9a1984777a8913a110b7d6f48f7ed"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/include/speechPlayer.h": {
+      "bytes": 3521,
+      "sha256": "75ddab7bd93adbdb8792a3a70968feb61277c18b8f6964753ae6af48f2709330"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/frame.cpp": {
+      "bytes": 4491,
+      "sha256": "6d5ede8c08f380f253bb5552db6c879d2757f6b12964a37c9c5ddbc2680d869b"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/frame.h": {
+      "bytes": 3323,
+      "sha256": "3cd5fc0b274c745de316b3fe3340f80de8e2ce04d5a085971f33c8ae280ba73c"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/sample.h": {
+      "bytes": 771,
+      "sha256": "d7e1adb87c26535315fa571007d64f810876fffe67a0b4066fa691239a48d78e"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/speechPlayer.cpp": {
+      "bytes": 2407,
+      "sha256": "978abf5bcdd7e3e39c92eb76fbb87a28d836560e89719a62754bdbc67f0cb43d"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/speechPlayer.h": {
+      "bytes": 1328,
+      "sha256": "351f86e912df39dee970d9d7505e578782f3a48beaa69b8933642be4714176c6"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/speechWaveGenerator.cpp": {
+      "bytes": 6168,
+      "sha256": "bf7c9fea860a5cfc64add34f37d3e670279321e31f04a6d907a04653cfb82a14"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/speechWaveGenerator.h": {
+      "bytes": 985,
+      "sha256": "e6d6d422b27069d12039ae1ec44eaf49dcbc1b5d546dbcebf59c197fabc8b627"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/utils.h": {
+      "bytes": 1155,
+      "sha256": "7cb8f00b575731cb1ee0c3167acba8a2b662095edf63c135df278d2977f843a5"
+    },
+    "frontend/sources/espeak-ng/src/speechPlayer/src/waveGenerator.h": {
+      "bytes": 888,
+      "sha256": "7958ad1c4304cb8a38cb44a40c26727748c2832bc64aeda97c3916c96ed675b3"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/.gitignore": {
+      "bytes": 618,
+      "sha256": "370657ef0c4c82c796023ec3ac690c25561e66612c42192e79e5a29adfd2154d"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/AUTHORS": {
+      "bytes": 14,
+      "sha256": "9d9caf027539d45e772e3d7571f154441d1a106919803ad87de03928198d80e7"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/CHANGELOG.md": {
+      "bytes": 2086,
+      "sha256": "21cfda8583c0322f845340167e3731e649221726d6a657653a9984db196f4b41"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/CMakeLists.txt": {
+      "bytes": 285,
+      "sha256": "4e23796fc69bf51190876c5cb97b6b321e25d0eaf1ad54bef563fc9918423422"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/COPYING": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/COPYING.UCD": {
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/Makefile.am": {
+      "bytes": 4646,
+      "sha256": "b12c79fb3746d921019b1cf9f89d6f38437532546f4b41a6e81b217b48c0fcaa"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/README.md": {
+      "bytes": 3423,
+      "sha256": "1b72781f3942e8b8126058ffe1f706bc1d1c4d8d1ce10074aa74aa25c4987366"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/_layouts/webpage.html": {
+      "bytes": 628,
+      "sha256": "fe582a0cdc7b69617b7ebbe4489c5822aa4b50c03d9c10ac1993b9b4ca3e71a4"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/autogen.sh": {
+      "bytes": 318,
+      "sha256": "ca239f9341edc868ab44c8a99f090e018fcf7c2f54b9c8e4f43ebdd48d7e3fe7"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/configure.ac": {
+      "bytes": 2556,
+      "sha256": "c467beda2ea07b5de3e463bbfc4b4abd21ab65f6b1fc54bae7b3717bfc24e091"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/docs/ucd-tools.conf": {
+      "bytes": 6305,
+      "sha256": "d7b39dbb8fe18379e7c7a55784112e58af44aa9d4927645cc05d6a42e6c0dc93"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/m4/ax_check_compile_flag.m4": {
+      "bytes": 3332,
+      "sha256": "6e7315ad440f04b6ffb03b1042acafa7a070ecbc71ec0ff8772716fb072bca2b"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/case.c": {
+      "bytes": 127584,
+      "sha256": "04622da7360518fb8feb94a0e53e75f281b2a530690626a142d9522767bda3d7"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/categories.c": {
+      "bytes": 197003,
+      "sha256": "edd26047254c98d65936f1f4237feb2389acb1cce3733a2b693e1a9b9f333880"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/ctype.c": {
+      "bytes": 4692,
+      "sha256": "7c3a160f572c19d9b429aff57cfec9eb526b47535bcb96f747fadc5601d6ba93"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/include/ucd/ucd.h": {
+      "bytes": 48525,
+      "sha256": "4d0f07930384e2a57a4abeb433bd3fef35a5904b2c5ce6ad6ee30f72ddfde67f"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/proplist.c": {
+      "bytes": 128122,
+      "sha256": "6a96e07b90ca58a9b807f6cf8ece6294f4864ba017e99c0574aeb235b0d41053"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/scripts.c": {
+      "bytes": 277601,
+      "sha256": "01ad466cf4a176928f058ff55ec04ee5bedb4cb1d7eb849a3cc6c4184013280e"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/src/tostring.c": {
+      "bytes": 4459,
+      "sha256": "4f5a4b311d5f2388e7c2473192ea42bfd6445fda16df75cf35b6d70a9cdeea91"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tests/printcdata.c": {
+      "bytes": 6121,
+      "sha256": "e07f0a47ee59e0cdda7bf85373bc7181dfd186ff9298bb2d9ae167761489b2db"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tests/printucddata.c": {
+      "bytes": 5889,
+      "sha256": "4ca907360afa89806d2b836a4910740c58e2534519aa4bb20a6f38b31bd7eb73"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tests/printucddata_cpp.cpp": {
+      "bytes": 5836,
+      "sha256": "a6ad6e34f2146ebb55e938037f290b3e0025ee3361ef0bf2127ee26f363e1efa"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/case.py": {
+      "bytes": 3606,
+      "sha256": "758c1568e2dbdc5b7d276c6f03f6752ed34b1f44d04d18c9df061cb68a17f7d3"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/categories.py": {
+      "bytes": 8186,
+      "sha256": "2a72e58f0a5707fd6069c44389899bcc43ebbcb56e500f9cef10c75cb569b49d"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/mkencodingtable": {
+      "bytes": 1178,
+      "sha256": "a5252adf2c96a84e8510339fd00b334026c004f4d9303a460688749fcf3373d7"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/printdata.py": {
+      "bytes": 7284,
+      "sha256": "8ee0365202347178dd71f4402ee7d742f65c9a05c8235ce2df4e6c22fe5e6f3f"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/scripts.py": {
+      "bytes": 11297,
+      "sha256": "a10430ca18d93a8a1a0ab7a148cd4f43222b835c32b886962e02679fcbae225b"
+    },
+    "frontend/sources/espeak-ng/src/ucd-tools/tools/ucd.py": {
+      "bytes": 4864,
+      "sha256": "f440fcd602057ed197087d47f3166cc9a87d4c183d1500c9f2b14eb4e39f90ce"
+    },
+    "frontend/sources/espeak-ng/src/windows/com/comentrypoints.c": {
+      "bytes": 2362,
+      "sha256": "bf029d1dc2133cc1439e174ff4acc8f0c307668ccca6f2210958774455bdf767"
+    },
+    "frontend/sources/espeak-ng/src/windows/com/ttsengine.cpp": {
+      "bytes": 6428,
+      "sha256": "344848c9cc87b4680b6a98a721bc4b8103162024a47b74f4eb91523bcb9477f6"
+    },
+    "frontend/sources/espeak-ng/src/windows/config.h": {
+      "bytes": 585,
+      "sha256": "8664fe56f36264b12202b64497b85db277cf07a0a66c375737417c75d4470d1c"
+    },
+    "frontend/sources/espeak-ng/src/windows/data.vcxproj": {
+      "bytes": 44410,
+      "sha256": "19d5bed13878805163295a26652584f9123d5ec6feb82d47e60d83985e0db881"
+    },
+    "frontend/sources/espeak-ng/src/windows/data.vcxproj.filters": {
+      "bytes": 129,
+      "sha256": "504c1d7f2199dce2b845272b1a666080c969592d15faa81c668f5d5e5edac88c"
+    },
+    "frontend/sources/espeak-ng/src/windows/espeak-ng.sln": {
+      "bytes": 3785,
+      "sha256": "28ab5a539bb5bf01e9bf3042886507e8e92a698437ba211cb9ff31ed7946a69b"
+    },
+    "frontend/sources/espeak-ng/src/windows/espeak-ng.vcxproj": {
+      "bytes": 8360,
+      "sha256": "76d1278c35b58ce5d85ea012f513b78655cbc9870d7760e6641dd63c4f93b425"
+    },
+    "frontend/sources/espeak-ng/src/windows/espeak-ng.vcxproj.filters": {
+      "bytes": 1551,
+      "sha256": "84beede3c53d395c684a2375fc90cd8eb5fbf4deaf1237e1f75efd300b2f1c5b"
+    },
+    "frontend/sources/espeak-ng/src/windows/installer/License_GPLv3.rtf": {
+      "bytes": 38406,
+      "sha256": "65841738955d35894b0ba444beff6d34a4581e8203d887b1f7419e3240443f76"
+    },
+    "frontend/sources/espeak-ng/src/windows/installer/Product.wxs": {
+      "bytes": 131735,
+      "sha256": "f1dd2f148be375ce4057036f603bf9fe08fa541f7ee9dd82498fe6e24c819d6e"
+    },
+    "frontend/sources/espeak-ng/src/windows/installer/installer.wixproj": {
+      "bytes": 3670,
+      "sha256": "9939a672f93ba22304013b5f3fde4bf3a92b787894112a1ce8c40e022fc8b441"
+    },
+    "frontend/sources/espeak-ng/src/windows/libespeak-ng.def": {
+      "bytes": 84,
+      "sha256": "836da1077f7c708f1edbec4a34a57fde7d184b0b0dd72c5eaa48e67d778214bb"
+    },
+    "frontend/sources/espeak-ng/src/windows/libespeak-ng.vcxproj": {
+      "bytes": 13722,
+      "sha256": "055a020c843dea8e8fc93b817139c205c31ef391dbf4cf7fc44f8828dde0a348"
+    },
+    "frontend/sources/espeak-ng/src/windows/libespeak-ng.vcxproj.filters": {
+      "bytes": 8556,
+      "sha256": "7dbfa690cf0d4df4f72b6ca354eb337f05a5bad935a0094ccd4a5d4cf90980dc"
+    },
+    "frontend/sources/exports.map": {
+      "bytes": 157,
+      "sha256": "85effb002b272efa84a3b3f11ae118112e492b3fd4246b3d7fd1654dcfbec228"
+    },
+    "frontend/sources/properties_compact.c": {
+      "bytes": 34331,
+      "sha256": "7d66fc03dd5accf6e38659e5f0825ab6febc28be2018264e5356684678e33841"
+    },
+    "frontend/sources/readers/lookup_reader.c": {
+      "bytes": 1226,
+      "sha256": "0a4c8fd34c3548b8032272bd1669b01fa9a621e03df293b5bd1cc4bdef6f42e4"
+    },
+    "frontend/sources/readers/lookup_reader.h": {
+      "bytes": 722,
+      "sha256": "26e07e3b36e99e10be5e210408eea7d3ec9bd9eb1257181edd51f86a6f8a854a"
+    },
+    "frontend/sources/readers/open_predict.c": {
+      "bytes": 2220,
+      "sha256": "af686ac53db6ae9b1fff02eea0ada728bb844d4cc8e0517092928a9f27e5bbbb"
+    },
+    "frontend/sources/readers/predict_reader.c": {
+      "bytes": 5762,
+      "sha256": "ac1378d6173084520fb60abb932117bde3d95fac15b9cb738b720d86510226b8"
+    },
+    "frontend/sources/readers/predict_reader.h": {
+      "bytes": 886,
+      "sha256": "fb5dffade529d28262dcb44c3c2c26b3e39e922a333c02bea3d24cbd5434f8d8"
+    },
+    "frontend/sources/readers/reader.c": {
+      "bytes": 7620,
+      "sha256": "7cf30084f11eb4d418ca1a4cb7aaad3b8b0c42a7cdbcc5abc97f83f60f9d4973"
+    },
+    "frontend/sources/readers/reader.h": {
+      "bytes": 1114,
+      "sha256": "14eadd4d806ffc0c227b8eac61f2c550bc5d01671db148d9f962e090b8a82eb6"
+    },
+    "frontend/sources/readers/table_reader.c": {
+      "bytes": 8572,
+      "sha256": "5f4b02984a7a5bab0244fa0c398e2fcd3fde723fef512fbd75e0a5008cbad28c"
+    },
+    "frontend/sources/readers/table_reader.h": {
+      "bytes": 1211,
+      "sha256": "261ffaac0595b9a7be80ea3b5c5e5f1fd6846f89941a95af145d1e64cd743bdf"
+    },
+    "frontend/sources/readers/value_decoders.c": {
+      "bytes": 3929,
+      "sha256": "ff150d8e33addc72fc1a05516834e6e745247af5c290f673864cdacec044a216"
+    },
+    "frontend/sources/readers/value_decoders.h": {
+      "bytes": 590,
+      "sha256": "0e5f6cc48e5c566135174ee5564d906b9dfcee70ff5e3da09018dec208699221"
+    },
+    "frontend/sources/source_list.json": {
+      "bytes": 1370,
+      "sha256": "6383a7318410b0c46aa065c62a003ed13d544db11163cf15216d55444a172e2e"
+    },
+    "frontend/vendor/FEATURE_LAYOUT.json": {
+      "bytes": 82643,
+      "sha256": "31b28d2953102bfd782613682462b57f49d9b0d5e8835bde48a7a941ca1bf02d"
+    },
+    "frontend/vendor/FRONTEND_INDEX.json": {
+      "bytes": 2523,
+      "sha256": "338cb969a9a4cdf0e2dfd8d4d753cd10362cd3a2e5b800c0f57bae99d35593a0"
+    },
+    "frontend/vendor/common.py": {
+      "bytes": 555,
+      "sha256": "6a791a0a507b0e324ea64bc9c2c760403d0786f3a8ab889675c341f8e8361709"
+    },
+    "frontend/vendor/espeakng_loader.py": {
+      "bytes": 332,
+      "sha256": "4f2a6167b7c6fbf66e6806e2823545eaad819631bfbcb4b9ce854941cf263267"
+    },
+    "frontend/vendor/fe_codec.py": {
+      "bytes": 18403,
+      "sha256": "634a107dd1383de4c565dc46d5adb3ce3366e9a626808320a76112dc6ab3ca3e"
+    },
+    "frontend/vendor/fe_lexicon.py": {
+      "bytes": 5044,
+      "sha256": "5e20afa3a3d18c8cf7f00a9fd959da14a4c89e0706bd1d4dba4a9565c5ee06f1"
+    },
+    "frontend/vendor/frontend/MANIFEST.json": {
+      "bytes": 3386,
+      "sha256": "dc3c7a58e45f1f1a95b9430de6f3eaba795e62cfc4d96d32e677734499a50600"
+    },
+    "frontend/vendor/frontend/libs/libespeak_phonemes.so": {
+      "bytes": 270848,
+      "sha256": "8615e98305098f4db3b1bc4ae63cb00a4b137ab695bcce362b78fbe277c98a14"
+    },
+    "frontend/vendor/frontend/libs/libfrontend4.so": {
+      "bytes": 24936,
+      "sha256": "e7ebad5a8c4e1e35dc782e994d2c883183123d6f08dbd49e179437d0bbc1e55b"
+    },
+    "frontend/vendor/frontend/libs/libopen_predict.so": {
+      "bytes": 16008,
+      "sha256": "3dc8b00ab2fb8911133a955bb9eecd23d0e70b39e694a8a786fd209c08b519a6"
+    },
+    "frontend/vendor/frontend/libs/libreader.so": {
+      "bytes": 16112,
+      "sha256": "1a88e23155245f149e3e032cd185366bf44de61655d43cbbf4db3cdd9e32578f"
+    },
+    "frontend/vendor/frontend/packages/bg-BG.fep": {
+      "bytes": 18138,
+      "sha256": "1679b9689a98fd7b85eb2dceb2dcc81377cc3ef4df51e15d02b9a1d78005a807"
+    },
+    "frontend/vendor/frontend/packages/bundle.fep": {
+      "bytes": 1275,
+      "sha256": "c8dc87e8576fe1711ab5329debd69a5672b28e33d6e1f99a2e168d7c5ca81532"
+    },
+    "frontend/vendor/frontend/packages/en-CMU.fep": {
+      "bytes": 448659,
+      "sha256": "2724410dd2ee2296c95d56a392766ba0729065a46f80863b5906677b4fec9b99"
+    },
+    "frontend/vendor/frontend/packages/es-ES.fep": {
+      "bytes": 118771,
+      "sha256": "2942a662270577d617336b5acc9801fb8444118fe82f01d5849735277a7998fc"
+    },
+    "frontend/vendor/frontend/packages/espeak.fep": {
+      "bytes": 710800,
+      "sha256": "f5a3b7dbb8cdae16767722e35cf3df5efd5e9df2db0f8890b2a6ee3fce09c5eb"
+    },
+    "frontend/vendor/frontend/packages/fr-FR.fep": {
+      "bytes": 409369,
+      "sha256": "db38e403a7118045d8beb1da12cf1f7eb23d80ca46ee6250028d6a3284fc5c4c"
+    },
+    "frontend/vendor/frontend/packages/frontend-supplement.fep": {
+      "bytes": 98875,
+      "sha256": "b2bdc4eacc8827ea16adaae0133b766431c61a89f6b49001a89c5f3119f02ffe"
+    },
+    "frontend/vendor/frontend/packages/integration-supplement.fep": {
+      "bytes": 308095,
+      "sha256": "aaf2297c86a3106e0998c580c30ed417b39b22044ec9e3157f3a3656db28064c"
+    },
+    "frontend/vendor/frontend/packages/it-IT.fep": {
+      "bytes": 88824,
+      "sha256": "373d9de287c83e8a4aaa6da87144b1bd7cc7b5cdd31fdccaad8d2450f21c5c57"
+    },
+    "frontend/vendor/frontend/packages/lt-LT.fep": {
+      "bytes": 684884,
+      "sha256": "7dc4306f0b969e05d40d335683df8d833cddf2252dbc92663b8c7b39618bfd08"
+    },
+    "frontend/vendor/frontend/packages/pt-PT.fep": {
+      "bytes": 69688,
+      "sha256": "8c491416ee52d15b68b1b6b3c33bae28608e6463f83774241b1788b378cf50d9"
+    },
+    "frontend/vendor/frontend/packages/ro-RO.fep": {
+      "bytes": 178262,
+      "sha256": "5cb770a0d3f5d05f7285b8f5b45fc664c919683e179a255dd2d078c6a406c7a6"
+    },
+    "frontend/vendor/frontend/packages/sl-SI.fep": {
+      "bytes": 59856,
+      "sha256": "8ecfafe1099d526a8f0f23418e9bc750843a0816b15a4c1cf7e065c805de1ab5"
+    },
+    "frontend/vendor/frontend/packages/zh-characters.fep": {
+      "bytes": 88466,
+      "sha256": "0002828e26e658ebe137c1afc070fa75f1cf1ab2a16ac408b3fc8e50d7bbedcb"
+    },
+    "frontend/vendor/frontend/packages/zh-shared.fep": {
+      "bytes": 488330,
+      "sha256": "752f92c691981a26f377485367022e1c79166c98e6c3b2b223d3d5568e4469d1"
+    },
+    "frontend/vendor/frontend/packages/zh-supplement-phrases.fep": {
+      "bytes": 103385,
+      "sha256": "4bc72afb35c20e122952b214c8e973a9576d0f08449efb0d5d2657a731e88329"
+    },
+    "frontend/vendor/frontend_resources.py": {
+      "bytes": 12451,
+      "sha256": "60d65fbad02b44a2feed4374570f11313d9b6729434a298ce27e77310ffcbf75"
+    },
+    "frontend/vendor/models/G1/systems/de/architecture.json": {
+      "bytes": 2843,
+      "sha256": "87308d4c2f513b4fc52bb675e679d416c259eecbf8fbfda297f6e9e0dc50e221"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/de/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "80479633b978ea84db679efba16ea19e9dbfa6dae451dd6c7053f495614bff3b"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G1/systems/de/frontend_metadata.json": {
+      "bytes": 34374,
+      "sha256": "69c2e8c839203f23ed10d04f03a78f819aa912b79b17693f26ba45c2fac2ff56"
+    },
+    "frontend/vendor/models/G1/systems/de/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "f833f8142dbb1c1454be88540f6c6158901855e40fdc4cb0dc19ab88be102c9f"
+    },
+    "frontend/vendor/models/G1/systems/de/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "9f562ed061e7f88289d30c83413e8e2b88ee4d40e6a1310e8569203758aa4e78"
+    },
+    "frontend/vendor/models/G1/systems/en/architecture.json": {
+      "bytes": 5581,
+      "sha256": "025199c6485956f33960d73b13b8e27e6a134696945d0adf5d6c2dfa63df430b"
+    },
+    "frontend/vendor/models/G1/systems/en/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G1/systems/en/frontend_metadata.json": {
+      "bytes": 22456,
+      "sha256": "efffd20e823a9bdcc2407b3dd3d78d506c70f24e54aea0b98c2be7bc2c1f347d"
+    },
+    "frontend/vendor/models/G1/systems/en/source_architecture.json": {
+      "bytes": 4615,
+      "sha256": "304c8b5ffb2d2f3accdab16a0600b49e02eca6479df49c08aa8b4f8cc78f9913"
+    },
+    "frontend/vendor/models/G1/systems/en/source_inference_profile.json": {
+      "bytes": 1722,
+      "sha256": "90579ac4db8854746bd61f549c030b5c5a0e1d58e702fc425a04c4c11888c769"
+    },
+    "frontend/vendor/models/G1/systems/en/training_tools/zh_en_frontend_adapter.py": {
+      "bytes": 3166,
+      "sha256": "bb41669c75bf2e69ac409264a90e4330819eedc5c7efe5bc72eedb8e17ad8768"
+    },
+    "frontend/vendor/models/G1/systems/nl/architecture.json": {
+      "bytes": 2843,
+      "sha256": "bf617c7be5559db6f75aec7055edd2efe5b12925d390a72801de92ba948e8c80"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "9612a58fd073c78613500d476813bc11e8d953a755d0537ece31804dd074dc74"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G1/systems/nl/frontend_metadata.json": {
+      "bytes": 32989,
+      "sha256": "6693faee83bf65dab412d5397a4af3b0d2418019c99ee42307aa24c9ef09fbbb"
+    },
+    "frontend/vendor/models/G1/systems/nl/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "6c54461444609f5329eacb3c5418116c1d2db58979fc555bb8a67f60c6e14c6e"
+    },
+    "frontend/vendor/models/G1/systems/nl/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b2699cf8d8dcba1b1d8936ae5cff32933188fc933880d9e58990bd367c9e5605"
+    },
+    "frontend/vendor/models/G10/systems/tr/architecture.json": {
+      "bytes": 2858,
+      "sha256": "7c9d47d4978cffb161a6bd3b03f0efc8d71610c4bbbe4b888d9740dfd9c55517"
+    },
+    "frontend/vendor/models/G10/systems/tr/frontend/adapter.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "frontend/vendor/models/G10/systems/tr/frontend/adapter_v2.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "frontend/vendor/models/G10/systems/tr/frontend_metadata.json": {
+      "bytes": 27470,
+      "sha256": "aed71146a1f8fe76e39e6fb17c37e9088897d5c16164037097927e5a395e2316"
+    },
+    "frontend/vendor/models/G10/systems/tr/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "8a4e0c369ddfee92a184d20d738b0df65dbf8f4f836f68337829db0153fd84b7"
+    },
+    "frontend/vendor/models/G11/systems/zh/architecture.json": {
+      "bytes": 3695,
+      "sha256": "998cf64a3bca951ad8f4d09eed45f25d44c0a12830882c595298a4cecd55434d"
+    },
+    "frontend/vendor/models/G11/systems/zh/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G11/systems/zh/frontend_metadata.json": {
+      "bytes": 94418,
+      "sha256": "d66f19a2f6365ceaf45d45b049f9fb87053cc2802a4532e178736414b07fc9d3"
+    },
+    "frontend/vendor/models/G11/systems/zh/source_architecture.json": {
+      "bytes": 2722,
+      "sha256": "fffba0337f0424d10c4d7702ef47d64130c9767ac81ea05b229f6a2c1fd1f889"
+    },
+    "frontend/vendor/models/G11/systems/zh/source_inference_profile.json": {
+      "bytes": 1736,
+      "sha256": "a0d4dd1e66042a36759fcc429a275c12c5fe3a159a45300512445b232c6c6430"
+    },
+    "frontend/vendor/models/G11/systems/zh/training_tools/zh_en_frontend_adapter.py": {
+      "bytes": 3166,
+      "sha256": "bb41669c75bf2e69ac409264a90e4330819eedc5c7efe5bc72eedb8e17ad8768"
+    },
+    "frontend/vendor/models/G2/systems/da/architecture.json": {
+      "bytes": 2858,
+      "sha256": "a297d95d624c29e30e5c1247f04ed27142e9ff769ec0b1dc8bf454d919dd21f5"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/da/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/eu_four.py": {
+      "bytes": 43583,
+      "sha256": "ddd2a85ee2c469a9550e6a89d98b85cfea27b2f7c8dafe495b9461180fa7b593"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G2/systems/da/frontend_metadata.json": {
+      "bytes": 30079,
+      "sha256": "a18d53eb8e87951728674562dbc0c8e7b048dc791fe547d61c3c0a6c655f5822"
+    },
+    "frontend/vendor/models/G2/systems/da/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "d6d8cdcde3f8832c4d4f94144c71856bc72f28bcb2ebcc03c2149597327a64f2"
+    },
+    "frontend/vendor/models/G2/systems/da/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1bbbe73554eab7350a8cc991af92b6687a5c20ff42792f8fe0582c488f3afa53"
+    },
+    "frontend/vendor/models/G2/systems/no/architecture.json": {
+      "bytes": 2398,
+      "sha256": "44e29615acf308c70fb956dfc98c10c3edb53004f355e73757ccd0498bdfa816"
+    },
+    "frontend/vendor/models/G2/systems/no/frontend/adapter.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "frontend/vendor/models/G2/systems/no/frontend/adapter_v2.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "frontend/vendor/models/G2/systems/no/frontend_metadata.json": {
+      "bytes": 38644,
+      "sha256": "794df57bd9c9106482be30d58c384521ed9d8c4845a63217b5e661d06c8a5e44"
+    },
+    "frontend/vendor/models/G2/systems/no/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "5331ca801746ba1acd4cf5159d3b634d96d5a79bb4625dafd68a9428fadca9bc"
+    },
+    "frontend/vendor/models/G2/systems/sv/architecture.json": {
+      "bytes": 2398,
+      "sha256": "34146934d9bd75601364db1e41a0089f0808ff3524a87b8c04b70df30e812730"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "dea2012aad8b232965a395556bed9c14b138246bf0b3630939bc879735c69710"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G2/systems/sv/frontend_metadata.json": {
+      "bytes": 29562,
+      "sha256": "3ad18bfab21171290511591f8dbd16bc9a8437473de570e2943646f1badb3743"
+    },
+    "frontend/vendor/models/G2/systems/sv/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "4f9fe523f1c83975808b224c7bda5d6ce0a02683d81bb919e4c8d32bbdb05f6c"
+    },
+    "frontend/vendor/models/G2/systems/sv/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1770b038b134c10018a4933b722ee38b12b81935044f353edd2ffe44b7b78d0c"
+    },
+    "frontend/vendor/models/G3/systems/es/architecture.json": {
+      "bytes": 2791,
+      "sha256": "386def085a87ad85156aeb488daf188a946fe79fff814a63d1177ce265966d14"
+    },
+    "frontend/vendor/models/G3/systems/es/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "frontend/vendor/models/G3/systems/es/frontend_metadata.json": {
+      "bytes": 14038,
+      "sha256": "4f2522bbec2556a56270be9368365cae784f3e6c4c9bf026c73d30cb209b822d"
+    },
+    "frontend/vendor/models/G3/systems/es/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "22e0a8b99d99ea4bc62e0d79d1b3766a79701e1237e45764d8b94b9b911aa102"
+    },
+    "frontend/vendor/models/G3/systems/es/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "de5820997a75ee461d01b3422231fa1e7dd9e40435a478cf76c2e952dac8a864"
+    },
+    "frontend/vendor/models/G3/systems/fr/architecture.json": {
+      "bytes": 2791,
+      "sha256": "b534fd44917006db645823afe1c7fe541ced98c94ef9ff9d3834bb522eefa593"
+    },
+    "frontend/vendor/models/G3/systems/fr/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "frontend/vendor/models/G3/systems/fr/frontend_metadata.json": {
+      "bytes": 15583,
+      "sha256": "28b88b2899783b71b05b2de39434935cc9a50aa9c9de8397d42d4aa8078b2524"
+    },
+    "frontend/vendor/models/G3/systems/fr/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "a9292d919ce0d1997c7965a798c30ddf30c875e83638fde4062cb7bf2edec46a"
+    },
+    "frontend/vendor/models/G3/systems/fr/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "8bb52c22110d06b602a7fedbf29241ee3e3e0fb3afe0fd670f8797a10244b859"
+    },
+    "frontend/vendor/models/G3/systems/it/architecture.json": {
+      "bytes": 2791,
+      "sha256": "50408822a20472401eaf6a677da0626831cee08e0c52cef4a9a2cbbe58762f35"
+    },
+    "frontend/vendor/models/G3/systems/it/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "frontend/vendor/models/G3/systems/it/frontend_metadata.json": {
+      "bytes": 16860,
+      "sha256": "394748283aee6faee9fa819b9e574b421f376de59dbb2d88eeb8e5170aa7ac41"
+    },
+    "frontend/vendor/models/G3/systems/it/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "a836184680a878d98fbb49a60c8dc35ffa1941ba4a7c7b48ea6da3e2684fff78"
+    },
+    "frontend/vendor/models/G3/systems/it/source_frontend_metadata.json": {
+      "bytes": 16813,
+      "sha256": "2abb200767851948c3bd4d113dbefbd2d0c7dadd7a760d7217e4a9089ff1a9c4"
+    },
+    "frontend/vendor/models/G3/systems/it/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "8e9694fc09fd10bf91e7541a2b48a13a53425950918a260516614cab295b9225"
+    },
+    "frontend/vendor/models/G3/systems/pt/architecture.json": {
+      "bytes": 2791,
+      "sha256": "e8afac298e49b97b8ca0fef051a037f88cde3a3fab2a8c091815caef7461755d"
+    },
+    "frontend/vendor/models/G3/systems/pt/frontend/adapter.py": {
+      "bytes": 5039,
+      "sha256": "4db80e4cccf8a47790f680d21c2fbe6f6b68d66a386678aad38c50210e7c2f23"
+    },
+    "frontend/vendor/models/G3/systems/pt/frontend_metadata.json": {
+      "bytes": 17961,
+      "sha256": "e4a1b00f01cdaa35f7469de97b49eb365d587623f1e504a59c58e455d4873697"
+    },
+    "frontend/vendor/models/G3/systems/pt/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "1a3b555c9ef751d8455ee05d9270f716c1300a711357dbb29a646b8c3a863d57"
+    },
+    "frontend/vendor/models/G3/systems/pt/source_frontend_metadata.json": {
+      "bytes": 17914,
+      "sha256": "dd0cc4f547014f8b20a98810186bc7bea18d3c4360984fd9153e6913835139e2"
+    },
+    "frontend/vendor/models/G3/systems/pt/source_inference_profile.json": {
+      "bytes": 1755,
+      "sha256": "843be5c83f07ac7e1036ba2cbd08d7d676799bcd5caecf6f6296f3079d4ce377"
+    },
+    "frontend/vendor/models/G3/systems/ro/architecture.json": {
+      "bytes": 2791,
+      "sha256": "912fcdac9e897dd965fd1824c0a1efa04f68f1250d113b68f1dcb79a7b207f6c"
+    },
+    "frontend/vendor/models/G3/systems/ro/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "frontend/vendor/models/G3/systems/ro/frontend_metadata.json": {
+      "bytes": 14232,
+      "sha256": "e8d2e3b3cab988c5f4ed12586bd0ba22e1e7c2871c7809e0ec77925f977708a9"
+    },
+    "frontend/vendor/models/G3/systems/ro/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "37c847fa518979fc476d9b6fede3d236bb1bdf162b1657feaa5b546cd1fe8090"
+    },
+    "frontend/vendor/models/G3/systems/ro/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b6f6da265c2250d483668a19cefe097140a9dc06e829f7e1dfd784f4130a154b"
+    },
+    "frontend/vendor/models/G4/systems/cs/architecture.json": {
+      "bytes": 2858,
+      "sha256": "ae612d147cfc36fef154cb48dc9a1db59711d93a21def56ab8e3f3f808dd405c"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "f6bf55b9c49d465560c6e58434fd0a9244c73aaf7181d44316cf73636b2a9614"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G4/systems/cs/frontend_metadata.json": {
+      "bytes": 33441,
+      "sha256": "a8ac871e8f27aa3e305be68be7ec0334bad9520a264d885c9dc7830f1b57d7e5"
+    },
+    "frontend/vendor/models/G4/systems/cs/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "cd83c86795fafe89876b0e632ff4f7a6bd7a38f7161fdcd8a131d10d5f21b84a"
+    },
+    "frontend/vendor/models/G4/systems/cs/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b933be853af4956f259200fb1f83eabab7a53f656e0605b5eb8df2205abca07e"
+    },
+    "frontend/vendor/models/G4/systems/pl/architecture.json": {
+      "bytes": 2858,
+      "sha256": "0bf9fac9951b71578da74a04af60bd9b556d24e752e0f57307e9dd32b9893172"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "d0f8b01e12257ee4e74f5fbeaf5f903bd3b360d57232fd5ddfbf8f6b25e105c3"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G4/systems/pl/frontend_metadata.json": {
+      "bytes": 33546,
+      "sha256": "bf5a377dd3ac1e73a27ba37fda627fab9f9e18628186e8d40341e041593afdeb"
+    },
+    "frontend/vendor/models/G4/systems/pl/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "17572e9346e0c6e6ed250b943d13eee22036819ab61bad048ca1233949d3f91f"
+    },
+    "frontend/vendor/models/G4/systems/pl/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1bfbc364007201dea1ef9608a2cc22abdfe8e89b64302ed7d0c902bd1666dd5a"
+    },
+    "frontend/vendor/models/G4/systems/sk/architecture.json": {
+      "bytes": 2858,
+      "sha256": "f4dc68a90e7cc0f4ae137afa5d87e8eb99895a79d8a9a2c261a346b8f53660b1"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/eu_four.py": {
+      "bytes": 43495,
+      "sha256": "1cf85311ce3deb1fc612edbdae2ac0ced2344a482dae0e66dccfda4791b5a8f5"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G4/systems/sk/frontend_metadata.json": {
+      "bytes": 33196,
+      "sha256": "2850b6dd37f0013737594822d96c639ca7ecc95fb84c8b55c7dc0b94547dc87f"
+    },
+    "frontend/vendor/models/G4/systems/sk/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "16451b9c2f984035329237317dc640630a7df1081fd561d1b2ca3a44a5590ba7"
+    },
+    "frontend/vendor/models/G4/systems/sk/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "a148f8bd31d58f73b7ef2f681becd1b4445a071d14cda402b460ebdaef19c481"
+    },
+    "frontend/vendor/models/G5/systems/bg/architecture.json": {
+      "bytes": 2214,
+      "sha256": "b9aa8f893649b3ba4ec6aa22a6e1b1eed9882702b57742c271605c635d9cb7a0"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G5/systems/bg/frontend_metadata.json": {
+      "bytes": 1403,
+      "sha256": "572d129ba5a75f4757dce2c314ebe5c5d6232a0dbb2b73b1072b72cd99736d09"
+    },
+    "frontend/vendor/models/G5/systems/bg/source_architecture.json": {
+      "bytes": 1693,
+      "sha256": "4aa705efc47f011150482eaf8ba58b16c346d91d720d4ef3c0516f0135d37761"
+    },
+    "frontend/vendor/models/G5/systems/bg/source_frontend_metadata.json": {
+      "bytes": 1356,
+      "sha256": "d3270aa3abad75940d686fce5bb5f6780685a9edc0ed122259ddc9f71a1a7eea"
+    },
+    "frontend/vendor/models/G5/systems/bg/source_inference_profile.json": {
+      "bytes": 1596,
+      "sha256": "ea59d48c254f62f304b6f97769c46289fad4e9a5a2cd35727f5c6021439c99ea"
+    },
+    "frontend/vendor/models/G5/systems/hr/architecture.json": {
+      "bytes": 2213,
+      "sha256": "2f49db8b6bdf41248e960474d745787dfa0a26591b90a0858d964b1242385ef1"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G5/systems/hr/frontend_metadata.json": {
+      "bytes": 1200,
+      "sha256": "05867eb69e4e865aa6d23f496fc64b4e388f0ed72e8f7ee60baa474b214cf7a4"
+    },
+    "frontend/vendor/models/G5/systems/hr/source_architecture.json": {
+      "bytes": 1692,
+      "sha256": "645457df51e3bf1e1539f027f5b1724f17c5b04a2dfac349ca243d2f9266db59"
+    },
+    "frontend/vendor/models/G5/systems/hr/source_inference_profile.json": {
+      "bytes": 1596,
+      "sha256": "7e945a7c1c47936598eb37a77c0b77fde900fa0b4d4b3ee842dda986b07156f1"
+    },
+    "frontend/vendor/models/G5/systems/sl/architecture.json": {
+      "bytes": 2213,
+      "sha256": "8c2fca5ce44dfc9096cf1f5c90e5ec0e6c2299f85a40a1964075eeaf9792e0b7"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G5/systems/sl/frontend_metadata.json": {
+      "bytes": 1236,
+      "sha256": "4094ed6789d6d32ddac244d7e24fc9f30651153557035a30826c90040523546d"
+    },
+    "frontend/vendor/models/G5/systems/sl/source_architecture.json": {
+      "bytes": 1692,
+      "sha256": "a64d219ac7560ab51716c3df61171960a4ce0ebb3437d2eac047365734c0ba9c"
+    },
+    "frontend/vendor/models/G5/systems/sl/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "30d3805cd56aaaf83074c3b75caa9a505fbf02784080c6e9659b180772fc5b44"
+    },
+    "frontend/vendor/models/G6/systems/lt/architecture.json": {
+      "bytes": 2202,
+      "sha256": "01ba40a90e6d8245dd61a3c633afc62a2feec8ce5bb59b442e52a5d9dc889a78"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/eu_baltic.py": {
+      "bytes": 33826,
+      "sha256": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G6/systems/lt/frontend_metadata.json": {
+      "bytes": 1243,
+      "sha256": "f3ddb2e8b84c6b8569df8fbfc25ee500305b79a8b1e349754bcf8d35be1df2b2"
+    },
+    "frontend/vendor/models/G6/systems/lt/source_architecture.json": {
+      "bytes": 1681,
+      "sha256": "40e8262c85ef4bfff7e707f2fde1a71434be09ea80602344d99f089435ec38ee"
+    },
+    "frontend/vendor/models/G6/systems/lt/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "cba8001bb99baf9a1b6cd2bfdea21c1d4eb90f67db5735409374c38444829937"
+    },
+    "frontend/vendor/models/G6/systems/lv/architecture.json": {
+      "bytes": 2201,
+      "sha256": "9f19365dbb4977f50747e524204e203330fd66f8066503cf44a82f277b5ad60b"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/eu_baltic.py": {
+      "bytes": 33826,
+      "sha256": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G6/systems/lv/frontend_metadata.json": {
+      "bytes": 1213,
+      "sha256": "caf59dc11e7d004fb63e1537944335edcf5c2ac389bf9d69d7d18047c26f95b0"
+    },
+    "frontend/vendor/models/G6/systems/lv/source_architecture.json": {
+      "bytes": 1680,
+      "sha256": "a9d1385c291d9906017f6522f46bc6b6522354bfa6945c4b23a9cf678f5d7f26"
+    },
+    "frontend/vendor/models/G6/systems/lv/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "29e346a310bd9553e6a8a6b484b977bfd7397347272ffee2a54bbc1c1cb0b2f6"
+    },
+    "frontend/vendor/models/G7/systems/et/architecture.json": {
+      "bytes": 2760,
+      "sha256": "3a492156b4fe11ff763246b5b3a854c1f4491c11da4422df04dbc0251bc3fae8"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/eu_finnic.py": {
+      "bytes": 30476,
+      "sha256": "fca0f9f6a113c119365d3b395a9cd08f6deed4cfe0f569d1cc661f7b2827a3a8"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G7/systems/et/frontend_metadata.json": {
+      "bytes": 1199,
+      "sha256": "68cdfa76061e3d7a59f1663adfe86a648fb26343f6da6c289303e4769d29b189"
+    },
+    "frontend/vendor/models/G7/systems/et/source_architecture.json": {
+      "bytes": 1787,
+      "sha256": "afc6a6f9d0b0f93fa9deb56ec455d952f174e1d49b366876a2a45fa6b3bb4210"
+    },
+    "frontend/vendor/models/G7/systems/et/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "3b6ab0fc132c16cca23748c6ccd96218ca39919504ac23091b7710970e2b9862"
+    },
+    "frontend/vendor/models/G7/systems/fi/architecture.json": {
+      "bytes": 2760,
+      "sha256": "9ddfd2bee8299011dbfd917f98719f2bbe3337934ebf6f546ddfbabb3ef7e61d"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/eu_finnic.py": {
+      "bytes": 30476,
+      "sha256": "fca0f9f6a113c119365d3b395a9cd08f6deed4cfe0f569d1cc661f7b2827a3a8"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G7/systems/fi/frontend_metadata.json": {
+      "bytes": 1222,
+      "sha256": "8f69142cdc453a09530ae603fd62f18fb06e6ff7fb18f0d1fdce3480cf3848da"
+    },
+    "frontend/vendor/models/G7/systems/fi/source_architecture.json": {
+      "bytes": 1787,
+      "sha256": "a54e5a9ecc471aa1ac6c73e425db0f086f81b8d7006231aa9a8e2f5176c928fa"
+    },
+    "frontend/vendor/models/G7/systems/fi/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "04e8e14b0d8dd2ce2e1b357d41656d5e291845107dcb92b7f1623c0c82ae1ebb"
+    },
+    "frontend/vendor/models/G8/systems/el/architecture.json": {
+      "bytes": 2558,
+      "sha256": "985b0068afe06840b6348861e1c8666afb4c011609c3d9a1d909489b52329fb8"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/el/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G8/systems/el/frontend_metadata.json": {
+      "bytes": 1384,
+      "sha256": "c4893f550c9a072f6739b3fa89458d225e3ce128a9cb4800506bdab27f8338ce"
+    },
+    "frontend/vendor/models/G8/systems/el/source_architecture.json": {
+      "bytes": 1585,
+      "sha256": "cd21061de417cb458ff63321bca8af4209c712359f0195da3db804ad7e98a577"
+    },
+    "frontend/vendor/models/G8/systems/el/source_inference_profile.json": {
+      "bytes": 1589,
+      "sha256": "00b2142fe169e389e3ad43bbe3f506f95918ddb98c82911fa7746065f421bf14"
+    },
+    "frontend/vendor/models/G9/systems/hu/architecture.json": {
+      "bytes": 2105,
+      "sha256": "be7517147744bb4112dc129a172814580b5fa7326585f771211a63055e5ffbb7"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/eu_four.py": {
+      "bytes": 43489,
+      "sha256": "9bb9d779a0640077211574ed325175a0d30fe895bebedca0a8bfd9fa95676ddf"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/models/G9/systems/hu/frontend_metadata.json": {
+      "bytes": 1229,
+      "sha256": "7fa55b73f280d92dbb496e1c07fd09b3371cb74cb4e6c5da1632f2400b9358c1"
+    },
+    "frontend/vendor/models/G9/systems/hu/source_architecture.json": {
+      "bytes": 1584,
+      "sha256": "f16b66ca5db48d986fc48d15012fb64c6570fc4239fbb2d990cd66e14a08f4fe"
+    },
+    "frontend/vendor/models/G9/systems/hu/source_inference_profile.json": {
+      "bytes": 1589,
+      "sha256": "fa8e1c4af6c696478651f5653c3410d6891d6aca5741a1cfc32bfa0ebff3cf41"
+    },
+    "frontend/vendor/new_frontend.py": {
+      "bytes": 4668,
+      "sha256": "9585c028cb5024f0c95dffb8780eb4272d21aef5b302fa2efae748f67e5ce15c"
+    },
+    "frontend/vendor/runtime/current25/project/__init__.py": {
+      "bytes": 48,
+      "sha256": "acb4e17dd17e1c60dee9e2c5416f23b3660bf7d1751fae9ccdecb149d3e2972f"
+    },
+    "frontend/vendor/runtime/current25/project/configs/chinese_linked_f0_guarded_v1.json": {
+      "bytes": 654,
+      "sha256": "8cdcb70ebbe0a641e82097e21701a4893f2996276bf2c47f4487b1dc6835cdf3"
+    },
+    "frontend/vendor/runtime/current25/project/src/__init__.py": {
+      "bytes": 49,
+      "sha256": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/delivery_timing.py": {
+      "bytes": 2170,
+      "sha256": "665317dee5a47ceabe1f802d3fc1e2931099b1bce1db14aaf10d99396e157e37"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/dsp.py": {
+      "bytes": 7849,
+      "sha256": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/extractor.py": {
+      "bytes": 3967,
+      "sha256": "d3c463eaf89c8b68dc39e4a7e3c355e9c95b9767e2d3cbc97a56c649e46b0f65"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/native.c": {
+      "bytes": 8714,
+      "sha256": "f83edf292bc0c619a3d734f2b2ef4bbc7ae6192d7f2198b725a183ffb28bf8ce"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/native_stream.c": {
+      "bytes": 2151,
+      "sha256": "4e8fd8e7a32c02b4ffc717ed0fd9c9db581614ad9659443980cb93978c82f4b2"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/schema.py": {
+      "bytes": 4031,
+      "sha256": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/trajectory_continuity.py": {
+      "bytes": 3549,
+      "sha256": "9ed3429260fdd9aec80d7fc454611b8614ea2b96caf9a687c4f83be641e41c78"
+    },
+    "frontend/vendor/runtime/current25/project/src/audio/trajectory_continuity_guarded.py": {
+      "bytes": 2839,
+      "sha256": "bf4fcd9d8ece55a810ca5e99597bcd859ec90c58a281339ba6f9a300d89a4757"
+    },
+    "frontend/vendor/runtime/current25/project/src/common.py": {
+      "bytes": 732,
+      "sha256": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/__init__.py": {
+      "bytes": 61,
+      "sha256": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/boundary_trajectory_diagnostics.py": {
+      "bytes": 30480,
+      "sha256": "5af6ec8d51daa73aa7e1121d265b219d540ee68a957b37d6c2d5a7b89734e134"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/chinese_prosody_evaluate.py": {
+      "bytes": 28163,
+      "sha256": "ce1e50375134a8263647ca2000d787948784ddb93b8a1a4792e51e96b6784efb"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/chinese_prosody_train.py": {
+      "bytes": 18777,
+      "sha256": "f9860dacbd3cad9208a492130821e520d9d6f9ead56c7d592b7c254e191b05db"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/chinese_train.py": {
+      "bytes": 27980,
+      "sha256": "40226c8b06f151f2a273512e737154035a60dceac221ca4dc194ef13fc7125b1"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/continuity_representation.py": {
+      "bytes": 20899,
+      "sha256": "88ab1ce443b3bd530712810659b7d264c9685e70494d70e498b1cd3345971844"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/english_clarity_train.py": {
+      "bytes": 16536,
+      "sha256": "5e5a7bb3b403846909fdef65e9dbf37141c2c6e3cbae09d6cf2aa8e581a4e2c3"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/english_strict_train.py": {
+      "bytes": 26131,
+      "sha256": "1063cd9ad38322febd46bf0e9f1d915b4b67b39e3f0d846bb1b6d45e79373cb5"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/english_word_train.py": {
+      "bytes": 15006,
+      "sha256": "9fcdcf824a3524ecc60ef2af4b97a630fe6ea521cb87d0e0d4cd786fec62262f"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/eu_quality_spectrum_basis.py": {
+      "bytes": 3911,
+      "sha256": "a007f9326424f235b0a469dcac93c183de2acf76574451d79d2fc1e0d64ddfde"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/phrase_acoustic_inference.py": {
+      "bytes": 9451,
+      "sha256": "6568113e605221594606f799f3344e78ce7aa65082e6ace520b990550a98f8fa"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/phrase_acoustic_train.py": {
+      "bytes": 19469,
+      "sha256": "6756b2bfd887ba36fa6caa567e5f9d0d4bb7f19696066e121d77bcf1133ed550"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/phrase_execution_train.py": {
+      "bytes": 21797,
+      "sha256": "68f6d947cdfdf684bc0f3972c474e3ad576ea3d1c3cad1c51b39fbc483e42956"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/phrase_gpu_execution.py": {
+      "bytes": 15456,
+      "sha256": "ff7e148f0366624e78556be8e2cb2c60b0e1681a013b3f9f0fbe71efe14e4a6c"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/representation_limit.py": {
+      "bytes": 17714,
+      "sha256": "e011c35124fa8e383810894977b4970b97389942283415a6413795b94c46afa0"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/romance_evaluate.py": {
+      "bytes": 27520,
+      "sha256": "2ba4bd24b1657a91a60f21b2fa66f7ee9ed73a53b080bf161f6779d96f8c8868"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/romance_listen.py": {
+      "bytes": 19611,
+      "sha256": "4c6d44f8d9d825530cf1d852268422d2d07d9df6641b22a086a9f00dbc47c8ee"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/romance_routed_delivery.py": {
+      "bytes": 21043,
+      "sha256": "dd57e0d7df82c7580062457432cb89e34686ea08688b7f623d968600821a2b2b"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/romance_train.py": {
+      "bytes": 25500,
+      "sha256": "fc1bbae62ce52410017fe4e85b3b67d280460d58b4e34b0408713e02cae4225d"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/segment_boundary_diagnose.py": {
+      "bytes": 20786,
+      "sha256": "0c0a3c2b6463225456b1a0d49810eb16c062d851aa5ca5c43ba816f160141da8"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/tts25_train.py": {
+      "bytes": 48889,
+      "sha256": "39089b9d7ad264d6f8a18f2a1a8905464354bf66ae93ad6d4339dbcb05d9cc57"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/universal_train.py": {
+      "bytes": 25152,
+      "sha256": "9fee4ca5d51d4251d421776e6d2541a0d265cedc63fda665f8f0dbdcdc7ccd87"
+    },
+    "frontend/vendor/runtime/current25/project/src/experiments/upgrade_common.py": {
+      "bytes": 3287,
+      "sha256": "a2cddd58540b512237cc12b07268ac5592b08f5d4c821f8ec6fe7b62ea638631"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/__init__.py": {
+      "bytes": 566,
+      "sha256": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/CHINESE_POLYPHONE_DATA_NOTICE.md": {
+      "bytes": 5984,
+      "sha256": "0a0dba02e96857bab7500facf2b45d9590fdb510fd83a8943690a79726e26605"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/CMUDICT_LICENSE": {
+      "bytes": 1754,
+      "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/G2PM_LICENSE.txt": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/PHRASE_PINYIN_DATA_LICENSE.txt": {
+      "bytes": 1066,
+      "sha256": "89ac55df747e4776088c3e77531ef61b973a1a59dd8e6a4548a58996da9a4f70"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/PINYIN_PRO_LICENSE.txt": {
+      "bytes": 1070,
+      "sha256": "824f6069c5a59b0c1650d0fb9f8d091866c6019eb761c8e658dfc03f001eabd2"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/POCKETSPHINX_LICENSE": {
+      "bytes": 6697,
+      "sha256": "1c3b5c5529d7360c927aa034eea28010c59558c1f67fb722d8d8b5d69cb98a23"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/assets/PYPINYIN_DICT_LICENSE.txt": {
+      "bytes": 1076,
+      "sha256": "239199faa0e3098c6b7fc7c5d4c50d623c44b7c4c0d8990c1a030266aa558f2c"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_delivery_policy.py": {
+      "bytes": 10169,
+      "sha256": "d17e731c123745eee13b6a27a603f876e9fce39c91cdc11135126d989b66cf84"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_erhua.py": {
+      "bytes": 3823,
+      "sha256": "fcf6670479da2683bf07aa763f29b908895f68de115f3a1f9c27e227ef9314c8"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_linking_policy.py": {
+      "bytes": 1770,
+      "sha256": "03d9c5e00d3225d677b752713b78ee350673b384d47b93be66fdada15714f78e"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_polyphone.py": {
+      "bytes": 10239,
+      "sha256": "fd675bd186fe79d84201a855e6246fce471368cd33ed3f7b4271a29c55d3d347"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_prosody.py": {
+      "bytes": 20862,
+      "sha256": "81c07998f940901f001c7b856a59923ee9c882adac1c20b39a4a75228f59d374"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/chinese_training.py": {
+      "bytes": 22920,
+      "sha256": "83a12edb67708ba961c22899ff321ea3a4ece66b332e8be36d21104b06f24762"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/english.py": {
+      "bytes": 15727,
+      "sha256": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/english_clarity.py": {
+      "bytes": 1636,
+      "sha256": "23544c6c3578556bd5cba13ac84bc240608771e1e1969c000ba11c1c7c4420f2"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/english_pause_units.py": {
+      "bytes": 3608,
+      "sha256": "cc10e84d3c2e02c4d8f5b7902e92e17ba7efe539408d3dd9c679c66da00675af"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/english_policy.py": {
+      "bytes": 1784,
+      "sha256": "01601247f1a73efb50af6da9b9203307f22deb143b609b2f29f3eb8e0003c010"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/english_word_prosody.py": {
+      "bytes": 7275,
+      "sha256": "d81bfd3cbe620cabe5366afa628e52a121b2045b036b70269374783901170d7c"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/french_prosody.py": {
+      "bytes": 7270,
+      "sha256": "5451ad077fba8b8822f69bfd7ea29b30120a87fc2f5548519f31264a9cf2d3f5"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/phrase_plan.py": {
+      "bytes": 4981,
+      "sha256": "874f7cb089beb50950dda31f3652c8321820b1ea1aedf9db7301a9472dd15415"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romance.py": {
+      "bytes": 17486,
+      "sha256": "adaf8d2ca926db18df0e1ebd8d658469782054de6cbc7669f529616c81225673"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romance_dispatch.py": {
+      "bytes": 2442,
+      "sha256": "b2a74d6f1500eb5a03311e7398fb4ca45decebc7ad5f9d717185ae891d7b8e31"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romance_five_profile.py": {
+      "bytes": 3026,
+      "sha256": "f524c80bedad27555334c295cc3de5bfd691bc9e727c923cada5a999126e487c"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romanian.py": {
+      "bytes": 8014,
+      "sha256": "df77f38afb58386c0cfc426c1f1bc54e442e6b0e5a7e72517cc7d3429a1efbdc"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romanian_alignment.py": {
+      "bytes": 1550,
+      "sha256": "8d973a148760618f596f2c84b23146029ba7f8514f3bc720fa5f0555ce19024b"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/romanian_expansion.py": {
+      "bytes": 5099,
+      "sha256": "b18d919d867461756b1b7e86e4357b7e12e14cb399c82b31a2138be254340563"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/universal_chinese.py": {
+      "bytes": 4931,
+      "sha256": "05d8db0e6fb54f2d70acfaa2e8835e1660bcbbc0e072db6ad9b32622a0610404"
+    },
+    "frontend/vendor/runtime/current25/project/src/frontend/universal_english.py": {
+      "bytes": 2653,
+      "sha256": "83ca33779872ab94a68914f4a33643d06ee193b7168e18d0f4657c203bd3f3af"
+    },
+    "frontend/vendor/runtime/current25/project/src/inference/evaluate.py": {
+      "bytes": 12175,
+      "sha256": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/acoustic.py": {
+      "bytes": 8000,
+      "sha256": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/boundary_acoustic.py": {
+      "bytes": 8536,
+      "sha256": "935021aad1d243ac52f535059ea563b88c99c3b6385437ecdecc1e5736cb83d5"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/english39_acoustic.py": {
+      "bytes": 5162,
+      "sha256": "0a604527c3f7be39a88e82a027f898205823ecfdad64b928ea622b4faaf9f91f"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/english_word_planner.py": {
+      "bytes": 27205,
+      "sha256": "5417b4291255494e23b728c4833d7f565dbae4d895ac2d7731a97389f5785596"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/phrase_prosody.py": {
+      "bytes": 3631,
+      "sha256": "1725a9d69786efcd4289c3844e2b31ab9cfd077be47ce6d1956c23bc2492a97c"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/residual.py": {
+      "bytes": 1730,
+      "sha256": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/romance_routed_acoustic.py": {
+      "bytes": 1715,
+      "sha256": "bc3b0327afc0d4ca8b4f223d8d919443df6f2eaeab7ada9db2a8f9eb758c8bbf"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/romance_word_planner.py": {
+      "bytes": 20284,
+      "sha256": "eee4cd5526da30234f69678ec01c426a2fb8b182dddd6e3fcdf557af3bcd4c3d"
+    },
+    "frontend/vendor/runtime/current25/project/src/models/universal_acoustic.py": {
+      "bytes": 8945,
+      "sha256": "9250a7be41b3267d75b4e1e085b7a5bc7214db7a5311280a91a403474979a5fb"
+    },
+    "frontend/vendor/runtime/current25/project/src/training/clarity_objective.py": {
+      "bytes": 3184,
+      "sha256": "34e499ed70d542d2a534d8463c702cf64bc4b4d1a18c7893c0e309ba3673c65e"
+    },
+    "frontend/vendor/runtime/current25/project/src/training/english39_objective.py": {
+      "bytes": 3472,
+      "sha256": "545b67ee83ffe54ea9c2a17edef7fe34fae036c9f2b5592fcbb536d0a711ed98"
+    },
+    "frontend/vendor/runtime/current25/project/src/training/prepare_data.py": {
+      "bytes": 16147,
+      "sha256": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba"
+    },
+    "frontend/vendor/runtime/current25/project/src/training/recording_epochs.py": {
+      "bytes": 4101,
+      "sha256": "4553e6702587a4b3cf3e3889b0227ef0e8260956531e1eaefc256b30087829ec"
+    },
+    "frontend/vendor/runtime/current25/project/src/training/train_acoustic.py": {
+      "bytes": 21738,
+      "sha256": "532341b0fac1ecaa302e3f2d404991404f6a9c657a365d3d94dbfb82729395b8"
+    },
+    "frontend/vendor/runtime/repair_support/ATTRIBUTION.json": {
+      "bytes": 629,
+      "sha256": "b7794596267d4b5cd3378dbcd4063bc171fdb78f9263ab337dd6c85e208a9f6a"
+    },
+    "frontend/vendor/runtime/repair_support/FP32_SOURCE_MANIFEST.json": {
+      "bytes": 660,
+      "sha256": "fe20324d33aff78344f8b3f04132a581bac5c0f34d6642d42496338c58e6c4ff"
+    },
+    "frontend/vendor/runtime/repair_support/base/original_model_diagnosis_20261023/cross_language/corrected_frontend_v2.py": {
+      "bytes": 7601,
+      "sha256": "675254e5836af9f3cea9c99372a18228e74798cbde0e814b291e496db118f599"
+    },
+    "frontend/vendor/runtime/repair_support/bg_frontend.py": {
+      "bytes": 1293,
+      "sha256": "fd4f0643459686613814c98b09ac78dfa4ce01b9a964e046448505bdabeb3085"
+    },
+    "frontend/vendor/runtime/repair_support/it_frontend.py": {
+      "bytes": 6808,
+      "sha256": "12abc3555fe2bddba08fc4d256f9294df651a31a6660c100b36e23584d5ba717"
+    },
+    "frontend/vendor/runtime/repair_support/repair_frontends.py": {
+      "bytes": 1550,
+      "sha256": "473fcc0e705e0bd86c183a48d6abaa80496d7eb962565b6d9d38ba5399752c25"
+    },
+    "int8/PACKAGE_MANIFEST.json": {
+      "bytes": 3947,
+      "sha256": "b001a941614997f0b5b8b5ac5983209ada1105fc543eb7e1b31669f851333494"
+    },
+    "int8/README.txt": {
+      "bytes": 717,
+      "sha256": "962f6c6ea86be77924ada2a50d958105aeb545e11420c51cbdb6382ad5aca861"
+    },
+    "int8/assets/acoustic_model_config.json": {
+      "bytes": 1564,
+      "sha256": "080d818ad61a47dd722c3608d0f99a4abb08fd52713c7b43e60f6637fa3f5bd4"
+    },
+    "int8/assets/hifigan_config.json": {
+      "bytes": 794,
+      "sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06"
+    },
+    "int8/assets/hifigan_model_config.json": {
+      "bytes": 1156,
+      "sha256": "0ac28ee7bcec978d47591f2696273fd4ecc00fe53fafec7860e456d17ba98be2"
+    },
+    "int8/assets/normalization.json": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    },
+    "int8/assets/vocabulary.json": {
+      "bytes": 3887,
+      "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+    },
+    "int8/codec.py": {
+      "bytes": 4608,
+      "sha256": "efa2c0882f62ced6cf8bd0fbb34750bf28304776ba74a43233bd1932c990139c"
+    },
+    "int8/licenses/hifi_gan/LICENSE": {
+      "bytes": 1067,
+      "sha256": "5eec017ce442989e01a46cd9cd6aeb13cd0aa3b3943f681577bda00475afaa23"
+    },
+    "int8/licenses/hifi_gan/PROVENANCE.json": {
+      "bytes": 1202,
+      "sha256": "cff325862a0a1500971ece5ec201f15c02dfdc62322dcd2300ee91686c040f27"
+    },
+    "int8/quantization.json": {
+      "bytes": 66458,
+      "sha256": "5950f04bbafbaf1dee998778bb5cd93992b897ae3e70b33b0ab7a01c50e59acb"
+    },
+    "int8/requirements.txt": {
+      "bytes": 41,
+      "sha256": "ddb3f80c9bfd4662feed94894f3c21ad6b580514fcc76e460a063480d835f14c"
+    },
+    "int8/runtime.py": {
+      "bytes": 1640,
+      "sha256": "05dc02bc6146617bee7e72bb32aa84037ae1cb04cfb0b0f6fe0efe6092c3ab14"
+    },
+    "int8/runtime/new25_acoustic/__init__.py": {
+      "bytes": 463,
+      "sha256": "51bc89788aeddba72bb2fc169f48cc3bc771e9fc0c9b8f340bb0c2914062d5a9"
+    },
+    "int8/runtime/new25_acoustic/batching.py": {
+      "bytes": 2385,
+      "sha256": "e6f2b7795ad543fda27eb543060d08dad194a055eafe0eeaa8006a211a3d7a66"
+    },
+    "int8/runtime/new25_acoustic/contracts.py": {
+      "bytes": 3761,
+      "sha256": "0d51b63ecb4a5836e1b88001e21fef08959b9e7535bb0d1477c2400d0d4cda8e"
+    },
+    "int8/runtime/new25_acoustic/data.py": {
+      "bytes": 6694,
+      "sha256": "0e0a7b76ede1f2673e425307c9bc57ac45d8e5ec35a69178835d46900634293e"
+    },
+    "int8/runtime/new25_acoustic/inference.py": {
+      "bytes": 18788,
+      "sha256": "500b3c7502c7d9002b693511cd5a267457478253129b6d4ca5866e73ac5f1aec"
+    },
+    "int8/runtime/new25_acoustic/losses.py": {
+      "bytes": 2088,
+      "sha256": "650b5794fdb4a087ce57d62439e34bb8050c86d744b849a3488e1e4db6a4fa88"
+    },
+    "int8/runtime/new25_acoustic/model.py": {
+      "bytes": 4872,
+      "sha256": "6e05a51d7f83c55566eb2032760887211e41cc092535456807208718794b7cdd"
+    },
+    "int8/runtime/new25_acoustic/vocoder.py": {
+      "bytes": 2940,
+      "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
+    },
+    "int8/runtime/new25_hifigan/__init__.py": {
+      "bytes": 489,
+      "sha256": "1a972ba8440b3656e7cb65de1916e743b5cb36d0821dddee0e4243dd457d1204"
+    },
+    "int8/runtime/new25_hifigan/frontend.py": {
+      "bytes": 3675,
+      "sha256": "11e31760cebc18fe8cf3e88bf3e522a57c0d36c5692f563a10fdb2d0255906a1"
+    },
+    "int8/runtime/new25_hifigan/inference.py": {
+      "bytes": 13137,
+      "sha256": "7eec39f53f5414b842bcf97c79ef50aefc952ccb8709444922600e048849e44f"
+    },
+    "int8/runtime/new25_hifigan/model.py": {
+      "bytes": 6174,
+      "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
+    },
+    "int8/synthesize_features.py": {
+      "bytes": 1254,
+      "sha256": "37df418cc6d8d0175629b0849d36a715a7219450e7afef1d7d15f51b22e895bf"
+    },
+    "int8/weights.safetensors": {
+      "bytes": 4154768,
+      "sha256": "ba8824f6fe9cf07d2bedbfe981f723376d41b270aa8a99fec4f2573a08849bd6"
     },
     "models/EXPORT.json": {
       "bytes": 1970,
@@ -82,6 +2506,38 @@
     "models/vocabulary.json": {
       "bytes": 3887,
       "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+    },
+    "native/m55.ld": {
+      "bytes": 466,
+      "sha256": "b3b3bb109c58435331e76c22bdb9026c3b5c8ff2ce0268446f268e3ecacf6803"
+    },
+    "native/platform.c": {
+      "bytes": 803,
+      "sha256": "c3f4a044008d504ca661a5fd0b63958a7b5b2d3742fe1eed01a2cd06c1b3329e"
+    },
+    "native/platform.h": {
+      "bytes": 132,
+      "sha256": "742959e77bd48ad84f1f5fc1abf5cdf0324d0863e4719b7c44013b6371e61a8a"
+    },
+    "native/rv32.ld": {
+      "bytes": 380,
+      "sha256": "ec6e39b0587400952b55ebfc0076ac567ba8d869e7a6566be6cf276f9696e0ca"
+    },
+    "native/start_m55.S": {
+      "bytes": 286,
+      "sha256": "3801bef780fc637616749c6bac94205c7aa0a74c2fff927b495330891e75eb5e"
+    },
+    "native/start_rv32.S": {
+      "bytes": 148,
+      "sha256": "798052c6df4d71c06800a7a280f47ce2ed75e53d91e08fd10746d5b0c642f766"
+    },
+    "native/tensor.c": {
+      "bytes": 2955,
+      "sha256": "46f03cb0a4002f6bdae51079a096d597ddf09a13004488af75820cd28fafdee8"
+    },
+    "native/tensor.h": {
+      "bytes": 1235,
+      "sha256": "cc55b384bc2d5c9b417b477f3a7c7631829896e509d8e347487c424e54c5c0ff"
     },
     "new25_acoustic/__init__.py": {
       "bytes": 463,
@@ -155,6 +2611,30 @@
       "bytes": 2090,
       "sha256": "ef214998fa98669931e50ad84ccba6a404eddcfe366bf39d29e9c20db18904a2"
     },
+    "receipts/int8_frontend_compatibility.json": {
+      "bytes": 18059,
+      "sha256": "a75300c817123affa60855d36bfbf5d980782a3548911a296a4d3ca7303e18f9"
+    },
+    "receipts/int8_handoff.json": {
+      "bytes": 981,
+      "sha256": "40ca2dad408a55298ad300b5df0ef9d8b6362f08181f1228986225afb1f2e18a"
+    },
+    "receipts/int8_native_kernels.json": {
+      "bytes": 19785,
+      "sha256": "7bf8ab4e6e66b70cf04d26c79692982c0b45f651af47d722956d5d220718c36e"
+    },
+    "receipts/int8_native_storage.json": {
+      "bytes": 78642,
+      "sha256": "2530d2c579765ce1ee04d5505d71b3f1af8ae3744472564e38af04f6742fcb43"
+    },
+    "receipts/int8_nonroot_simulators.json": {
+      "bytes": 312,
+      "sha256": "f73b71b5509d355d0f11aae11abcd546cd0485d1c28987eabfdc54efe699b930"
+    },
+    "receipts/int8_simulator_kernels.json": {
+      "bytes": 1039,
+      "sha256": "6daa4968c2b402dcda751a55b39fa2efaca55a3160c5a670e1dcb6af245afaf9"
+    },
     "receipts/release_validation.json": {
       "bytes": 9443,
       "sha256": "4527a7a757b7db0543a2967c6031c99d9344ee5656b998a3a4014e9895837f60"
@@ -163,25 +2643,77 @@
       "bytes": 106,
       "sha256": "6d9be3806fbae6892fa07e30445dfc8f66127d0d431900176d3bc9a456b85337"
     },
+    "requirements-int8.txt": {
+      "bytes": 223,
+      "sha256": "d7a4921acfd1fb64e1371b0f9c752cb28d05c554128fecdcd424c2802bc51376"
+    },
     "requirements.txt": {
       "bytes": 156,
       "sha256": "7ba6e9da9caf5c205d0054db79f98f6e4c5071eeb2321a571569f96a279448db"
+    },
+    "scripts/build_frontend.py": {
+      "bytes": 2932,
+      "sha256": "b3c7205e8118fb2112c94db71b07ec0f1ab23c664e44fda10a8bb1a9c3e3d398"
+    },
+    "scripts/build_simulator.py": {
+      "bytes": 2471,
+      "sha256": "800c87050be023f037c6685816708cc48ae16e8de422d02fefde0b716474de36"
+    },
+    "scripts/dump_trace.py": {
+      "bytes": 3064,
+      "sha256": "5659390d860a7b490a4962439d83321a71295757f9415f9236e1e35a04779612"
     },
     "scripts/export_acoustic.py": {
       "bytes": 8992,
       "sha256": "bcfc1d5ce22a2df6f637c87951425fa5dd6967031231aa64808b6d9d600320fa"
     },
+    "scripts/export_native.py": {
+      "bytes": 3707,
+      "sha256": "72ef76ecf1bc641aaaba947c8ffe98acd1c9a3635561b76fbffc0e47b32d8715"
+    },
     "scripts/prepare_corpus.py": {
       "bytes": 10330,
       "sha256": "e827848b06149176fe5854bd2c99f4ccea126abea8da89dea5de662e74aac1a9"
+    },
+    "scripts/run_simulator.py": {
+      "bytes": 1890,
+      "sha256": "5dc660093ec7a44bca6b795db4fdc4e8a175f2817e208cd861115dd856ecd1bd"
+    },
+    "scripts/smoke_text.py": {
+      "bytes": 2259,
+      "sha256": "3c59626af042258fedb47e3e05ae8de606e902216a5725b0697bac6dfc859f45"
+    },
+    "scripts/test_native.py": {
+      "bytes": 6028,
+      "sha256": "29eea81d691a586e4cfe2b77844fbe49041c99a1da6e2a45039fdb783ba7ad3c"
     },
     "scripts/train_acoustic.py": {
       "bytes": 15795,
       "sha256": "46342d781bf035b81844d8796159816de71f630c6fea61e3dff819abce322201"
     },
+    "scripts/verify_int8.py": {
+      "bytes": 2563,
+      "sha256": "49420b3da925ee4f43c2a0293d805bf5aa77bd392abe1f92a0d9a486e73375b6"
+    },
     "scripts/verify_release.py": {
       "bytes": 6607,
       "sha256": "35427376bed20ea9806ad5bdafd5cec929a7081a630424fc87f21e203f1766c8"
+    },
+    "simulator/prebuilt/MANIFEST.json": {
+      "bytes": 4450,
+      "sha256": "1f66708c0a2983315de166065c5dc620a1cf2b4ad18249dbfcd76a4fac85c7f4"
+    },
+    "simulator/prebuilt/m55.elf.gz": {
+      "bytes": 3731472,
+      "sha256": "ab6c3e015e7b5d1a671e9f60ad1dcfbf233d43668f5abab7cf3c7acabbee49c8"
+    },
+    "simulator/prebuilt/rv32.elf.gz": {
+      "bytes": 3732150,
+      "sha256": "f961aa621b36acc76ab1aef045cc40b5f33d0136852a79efc7119b6b169904dc"
+    },
+    "synthesize.py": {
+      "bytes": 1990,
+      "sha256": "b4f41e770284467f5e37ef2b8247a8ecd559c79345fb44cdb223daaf7fbd037e"
     },
     "tests/test_hifigan.py": {
       "bytes": 13387,

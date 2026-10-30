@@ -1,0 +1,9 @@
+*.safetensors -text
+*.fep -text
+*.so -text
+*.bin -text
+*.npz -text
+*.wav -text
+frontend/vendor/** -text
+frontend/sources/** -text
+frontend/attribution/** -text

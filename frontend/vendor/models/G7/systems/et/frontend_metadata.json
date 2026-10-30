@@ -1,0 +1,27 @@
+{
+  "language": "et",
+  "adapter_path": "frontend/adapter.py",
+  "adapter_sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2",
+  "frontend_signature": "b876e8ac99c1fa6615738f4fbcfc755f2d3dce5a897d9b778fad16bf3bb25c90",
+  "phonetic_dim": 32,
+  "base_context_dim": 34,
+  "output_channels": 39,
+  "frame_shift_ms": 10,
+  "sample_rate": 16000,
+  "control_points": 8,
+  "lexicon_path": "",
+  "ordinary_text_does_not_read_reference_audio_or_durations": true,
+  "validation_is_reused_development_not_new_test": true,
+  "novel_texts": [
+    "Homme hommikul avame akna ja kuulame aias laulvaid linde.",
+    "Pärast õhtusööki loevad lapsed vaikses toas uut lugu."
+  ],
+  "novel_texts_receipt": "/home/fomak/newtts/project/outputs/tts25_userref_20261020_175500/frontend/et/novel_texts.json",
+  "packaging": {
+    "adapter_and_lexicon_paths": "relative to bundle; resolve in memory",
+    "espeak": "inject paths from installed espeakng-loader; do not use original-host adapter defaults",
+    "frontend_code_and_dictionary_bytes_unchanged": true
+  },
+  "source_preparation_status_historical": "TEXT_INPUTS_READY_REAL_AUDIO_CHAIN_PENDING",
+  "inference_status": "PACKAGING_VERIFIED"
+}

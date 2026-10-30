@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-18",
+  "runtime_repository": "https://github.com/a-bit-brain-burning/TTS",
+  "runtime_commit": "a555a4e48c16c3fa36be8ea4e7a3d67b863742fe",
+  "runtime_entrypoint": "project.src.inference.baltic_synthesize",
+  "runtime_file_sha256": {
+    "project/src/inference/baltic_synthesize.py": "904aa9bc4956fba781f5eb671eb9508dcd3b432ab7b08ba8a1ecb83cb82718ab",
+    "project/src/frontend/eu_baltic.py": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f",
+    "project/src/frontend/eu_baltic_lexicon.py": "e66a2eb050722463b09e2f378649ae2b22386c954d2200a3f717ecaeb37b7c1e",
+    "project/src/frontend/eu_four.py": "793c3c051d6e50928e2b0501dc0898d06242a05dfaed3ba715eff55df11ec965",
+    "project/src/frontend/phonetic_features.py": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6",
+    "project/src/frontend/universal.py": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6",
+    "project/src/models/universal_acoustic.py": "9250a7be41b3267d75b4e1e085b7a5bc7214db7a5311280a91a403474979a5fb",
+    "project/src/audio/dsp.py": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce",
+    "project/src/audio/eu_acoustic39.py": "25abde0e5471ca6a38def7a1bc8260a8d451064af67d4f6590133ce7913065de",
+    "project/src/audio/native.c": "f83edf292bc0c619a3d734f2b2ef4bbc7ae6192d7f2198b725a183ffb28bf8ce"
+  },
+  "training_source_identity_sha256": "ce107a8e1b5d12a48fc870682095ab66cabca2dc0fad1a882e37a0da0775097e",
+  "source_note": "The listed inference files are byte-identical to the frozen training snapshot and runtime commit.",
+  "dataset": {
+    "id": "meldynamics/liepa-tts",
+    "revision": "8e98537027ce4fe0c6ef53686fce6fac6a388dd5",
+    "url": "https://huggingface.co/datasets/meldynamics/liepa-tts",
+    "license": "CC-BY-4.0",
+    "attribution": "Vilnius University and the LIEPA project; MEL DYNAMICS for the structured dataset edition.",
+    "citation": "Evaluation of Lithuanian text-to-speech synthesizers, DOI:10.5755/j01.sal.0.28.15130",
+    "speaker_dataset_alias": "liepa_aiste",
+    "real_human_audio": true,
+    "synthetic_audio": false,
+    "source_stress_annotations_used": false,
+    "waveform_policy": "source-level-v1",
+    "raw_manifest_sha256": "243c3149c6f09d550dfd49d41236d6eae293bfe411be18dac92d1ecde6680738",
+    "split_counts": {
+      "train": 4061,
+      "validation": 225,
+      "test": 225
+    },
+    "split_hours": {
+      "train": 2.8569355034722106,
+      "validation": 0.15743842013888895,
+      "test": 0.15982605902777786
+    },
+    "label_manifest_sha256": "1d8042020c197f963c44e9a39fddac5960ae981597ac165d0cfd970e30a554f0"
+  },
+  "lexicon": {
+    "attribution": "Arūnas Smaliukas; Lithuanian pronunciation lexicon derived from LIEPA-3 and the VDU Lithuanian emotional-speech corpus (EMO), distributed via CLARIN-LT (CC BY 4.0).",
+    "changes": [
+      "explicit source notation converted to canonical IPA and separate stress/pitch features",
+      "vowel plus offglide represented as one diphthong nucleus",
+      "word-final softness and obstruent voicing normalized for isolated lexical lookup",
+      "nasal place before velars made explicit",
+      "conflicting canonical word variants excluded"
+    ],
+    "converter_sha256": "e66a2eb050722463b09e2f378649ae2b22386c954d2200a3f717ecaeb37b7c1e",
+    "converter_version": "liepa_notation_to_baltic_ipa_v1",
+    "license": "CC-BY-4.0",
+    "limitations": [
+      "one fixed pronunciation per word, no contextual homograph disambiguation",
+      "public lexicon derived from external corpus annotations; may overlap LIEPA family sources",
+      "lexicon-covered and OOV evaluation must be reported separately",
+      "unmarked/unsupported pitch accent stays unknown; no fixed F0 shape imposed"
+    ],
+    "notation_file_sha256": "8e56087fa89fddb0e7c89bfa5d0afb0e5c8c0b50f2b334cd20ff473ff9e9a54d",
+    "notation_source": "Girdenis and Kasparaitis, Lithuanian MBROLA LT1 database README, release 1.0 (2003)",
+    "notation_url": "https://github.com/numediart/MBROLA-voices/blob/master/data/lt1/README.txt",
+    "source_dataset": "svogunas/g2p-lt-lexicon",
+    "source_file": "lexicon.tsv",
+    "source_revision": "b6fd9bc0ce5e27f3a979310bd17014e30145f261",
+    "source_sha256": "43abd0455edf1c6a80daa41f97f87ac3b428065508cb91b872691d4c0d3e799d",
+    "source_url": "https://huggingface.co/datasets/svogunas/g2p-lt-lexicon/blob/b6fd9bc0ce5e27f3a979310bd17014e30145f261/lexicon.tsv",
+    "uses_this_experiments_audio_or_annotations": false
+  },
+  "initialization": {
+    "initialized_from": "random_constructor_and_train_only_statistics",
+    "initial_state_sha256": "79e7a4daf8e3f8a8a1573b23b8a02de3c6da6d1d05e27505a3308e2f90e5b469",
+    "initial_trainable_sha256": "920914673ede69f5357b8c4895de70d08e02df95866b8f233141326de470bd6d",
+    "normalization_train_only": true,
+    "pretrained_weights": null,
+    "pretrained_statistics": null,
+    "hidden_trainable_components": 0
+  },
+  "training": {
+    "seed": 20261018,
+    "target_steps": 20000,
+    "batch_size": 16,
+    "optimizer": {
+      "name": "AdamW",
+      "learning_rate": 0.0015,
+      "weight_decay": 0.0001
+    },
+    "frame_policy": "phone_anchors_75_25",
+    "training_frame_samples": 96,
+    "validation_frame_policy": "uniform",
+    "validation_frame_samples": 192,
+    "acoustic_objective": "base physical/spectral/F0/VUV plus quantity-weighted duration and within-phone F0 delta",
+    "torch_version": "2.12.1+cu130",
+    "device": "NVIDIA GeForce RTX 5080 Laptop GPU"
+  },
+  "checkpoint_sha256": "e5c250bd29b7558b8bc08f9c419717acb43e2bd6d96097f914aa2a4d7262a903",
+  "profile_sha256": "eea86b9d062c4597d97908a431c247ee1202bf3273bd3eff8f0aefa15690ef24",
+  "training_source": "tts_baltic_20261018_1122/training/lt/real/run",
+  "source_selection_sha256": "a73e5aaf249d771dc2370848adf0f5ebb50ca4fbfcee6263afee527a1d40fc0a"
+}

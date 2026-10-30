@@ -1,0 +1,58 @@
+{
+  "language": "el",
+  "locale": "el-GR",
+  "family": "universal39",
+  "parameters": 179542,
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 22,
+    "base_context_dim": 22,
+    "additional_context_dim": 0
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_universal_acoustic_v2",
+      "parameters": 179542,
+      "config": {
+        "width": 104,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 88,
+        "dropout": 0.05,
+        "phonetic_dim": 32,
+        "context_dim": 22,
+        "continuous_voicing": true,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "basis_id": "warped700_32_v1",
+        "frontend_version": "eu_four_frontend_v1",
+        "language": "el",
+        "channels": 39
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/el-GR/compact39/acoustic.pt",
+      "architecture_source_sha256": "e0e84e379c4612940325cb4605e007949bb2c703e5d2e23290a2aa1f0426ee5c",
+      "weights_as_initialization": false
+    }
+  },
+  "scratch": true,
+  "parent": null,
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "existing selected Model release architecture; no old tensors loaded"
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "tts25_userref_inference_profile_v1",
+  "language": "cs-CZ",
+  "model_id": "cs-CZ-userref-cs_repair_v1",
+  "selected_variant": "cs_repair_v1",
+  "family": "routed39",
+  "architecture": "architecture.json",
+  "frontend_metadata": "frontend_metadata.json",
+  "input": {
+    "phonetic_dim": 36,
+    "context_dim": 27,
+    "base_context_dim": 22,
+    "additional_context_dim": 5
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "frontend_signature": "534362822a3c8a925c122fef8d51845a7083238fb98f8b6eb1bf36c52c4d2840",
+  "components": {
+    "acoustic": {
+      "file": "acoustic.pt",
+      "sha256": "12bd8e24b44b6b8c3e90deee459cf268b6b7b828296901d8625b7381b8023c4f"
+    },
+    "planner": {
+      "file": "planner.pt",
+      "sha256": "9d9e8a424a124caa2361e2b830536d3872c784ce2169a9cbb4960d622d570cce"
+    }
+  },
+  "runtime_entrypoint": "runtime.loader.ModelRuntime; CLI runtime/infer.py",
+  "runtime_requirements": "bundled runtime/current25 + runtime/requirements.txt; docs/INFERENCE_25.md",
+  "no_legacy_frame_repair_or_external_calibration": true,
+  "reference_audio_required_at_inference": false,
+  "quality_status": "USER_SELECTED_RESEARCH_ASSET_NOT_HUMAN_QUALITY_PROMOTED",
+  "human_listening_this_release": "NOT_RUN",
+  "MOS": null,
+  "independent_test": false,
+  "native_synthesis_basis": {
+    "artifact": "en_basis",
+    "shape": [
+      128,
+      31
+    ],
+    "mode": "warped39",
+    "fixed_taps": 128,
+    "gain": 1.0,
+    "seed": 1729
+  },
+  "external_TTS_checkout_required": false
+}

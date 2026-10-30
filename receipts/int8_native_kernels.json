@@ -1,0 +1,723 @@
+{
+  "passed": true,
+  "all_316_tensors_decode_exact": true,
+  "real_weight_kernel_cases": 142,
+  "maximum_absolute_error": 3.337860107421875e-06,
+  "simulator_fixtures": [
+    "acoustic.phonetic.36.weight",
+    "generator.ups.0.weight",
+    "physical_to_mel.inputs.31.weight"
+  ],
+  "rows": [
+    {
+      "name": "acoustic.phone.weight",
+      "mode": "linear",
+      "max_absolute_error": 3.337860107421875e-06
+    },
+    {
+      "name": "acoustic.language.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.430511474609375e-06
+    },
+    {
+      "name": "acoustic.phonetic.32.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.phonetic.36.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.context.22.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.context.34.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.encoder.0.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.encoder.0.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "name": "acoustic.encoder.0.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.470348358154297e-07
+    },
+    {
+      "name": "acoustic.encoder.1.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.encoder.1.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "acoustic.encoder.1.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "acoustic.encoder.2.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.encoder.2.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "name": "acoustic.encoder.2.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "acoustic.encoder.3.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.encoder.3.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "acoustic.encoder.3.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "name": "acoustic.encoder.4.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.encoder.4.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 3.2782554626464844e-07
+    },
+    {
+      "name": "acoustic.encoder.4.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "acoustic.encoder.5.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.encoder.5.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "acoustic.encoder.5.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "acoustic.prosody.0.weight",
+      "mode": "linear",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "acoustic.prosody.2.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.4156103134155273e-07
+    },
+    {
+      "name": "acoustic.language_prosody.weight",
+      "mode": "linear",
+      "max_absolute_error": 7.450580596923828e-09
+    },
+    {
+      "name": "acoustic.frame_in.weight",
+      "mode": "linear",
+      "max_absolute_error": 2.682209014892578e-07
+    },
+    {
+      "name": "acoustic.rnn.ih.weight",
+      "mode": "linear",
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "acoustic.rnn.hh.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.662441253662109e-07
+    },
+    {
+      "name": "acoustic.decoder.0.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.decoder.0.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "acoustic.decoder.0.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "name": "acoustic.decoder.1.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.decoder.1.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "acoustic.decoder.1.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "acoustic.decoder.2.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "acoustic.decoder.2.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.662441253662109e-07
+    },
+    {
+      "name": "acoustic.decoder.2.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 8.940696716308594e-07
+    },
+    {
+      "name": "acoustic.heads.31.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.4901161193847656e-07
+    },
+    {
+      "name": "acoustic.heads.39.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "acoustic.language_acoustic.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "generator.conv_pre.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.ups.0.weight",
+      "mode": "transpose",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.ups.1.weight",
+      "mode": "transpose",
+      "max_absolute_error": 8.940696716308594e-08
+    },
+    {
+      "name": "generator.ups.2.weight",
+      "mode": "transpose",
+      "max_absolute_error": 6.705522537231445e-08
+    },
+    {
+      "name": "generator.ups.3.weight",
+      "mode": "transpose",
+      "max_absolute_error": 2.9802322387695312e-08
+    },
+    {
+      "name": "generator.resblocks.0.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.0.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.0.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.066394805908203e-07
+    },
+    {
+      "name": "generator.resblocks.0.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.0.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.0.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "name": "generator.resblocks.1.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.0132789611816406e-06
+    },
+    {
+      "name": "generator.resblocks.1.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.1.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "name": "generator.resblocks.1.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.1.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.1.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "generator.resblocks.2.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 6.258487701416016e-07
+    },
+    {
+      "name": "generator.resblocks.2.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 7.748603820800781e-07
+    },
+    {
+      "name": "generator.resblocks.2.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 6.556510925292969e-07
+    },
+    {
+      "name": "generator.resblocks.2.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "name": "generator.resblocks.2.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.0728836059570312e-06
+    },
+    {
+      "name": "generator.resblocks.2.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1324882507324219e-06
+    },
+    {
+      "name": "generator.resblocks.3.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.3.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.3.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.3.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.3.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.3.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 6.556510925292969e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.4.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 6.556510925292969e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.725290298461914e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "name": "generator.resblocks.5.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.341104507446289e-07
+    },
+    {
+      "name": "generator.resblocks.6.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.4586915969848633e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.7.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.682209014892578e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.8.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "generator.resblocks.9.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 7.450580596923828e-08
+    },
+    {
+      "name": "generator.resblocks.9.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "generator.resblocks.9.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "generator.resblocks.9.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "generator.resblocks.9.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.9.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 8.940696716308594e-08
+    },
+    {
+      "name": "generator.resblocks.10.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.10.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "generator.resblocks.10.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.10.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.086162567138672e-07
+    },
+    {
+      "name": "generator.resblocks.10.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.10.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs1.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs1.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs1.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs2.0.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs2.1.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.resblocks.11.convs2.2.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "name": "generator.conv_post.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.4901161193847656e-08
+    },
+    {
+      "name": "physical_to_mel.inputs.31.weight",
+      "mode": "conv",
+      "max_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "name": "physical_to_mel.inputs.39.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1324882507324219e-06
+    },
+    {
+      "name": "physical_to_mel.language.weight",
+      "mode": "linear",
+      "max_absolute_error": 2.1457672119140625e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.0.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.0.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.0.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.0728836059570312e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.1.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.1.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.1.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.0281801223754883e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.2.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "physical_to_mel.blocks.2.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 7.748603820800781e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.2.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.1920928955078125e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.3.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "name": "physical_to_mel.blocks.3.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.3.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.0728836059570312e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.4.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 8.940696716308594e-08
+    },
+    {
+      "name": "physical_to_mel.blocks.4.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.4.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.2516975402832031e-06
+    },
+    {
+      "name": "physical_to_mel.blocks.5.dw.weight",
+      "mode": "conv",
+      "max_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.5.up.weight",
+      "mode": "linear",
+      "max_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "name": "physical_to_mel.blocks.5.down.weight",
+      "mode": "linear",
+      "max_absolute_error": 1.430511474609375e-06
+    },
+    {
+      "name": "physical_to_mel.head.weight",
+      "mode": "linear",
+      "max_absolute_error": 3.2782554626464844e-07
+    }
+  ]
+}

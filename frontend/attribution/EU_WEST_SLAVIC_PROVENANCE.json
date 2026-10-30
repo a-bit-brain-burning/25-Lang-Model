@@ -1,0 +1,537 @@
+{
+  "scope": "Current DE/NL/CS/PL/DA assets; PL B replaces original PL at8a166f7; other22 unchanged.",
+  "base_model_commit": "83ad0cb8c86ab6b9e0aa82d8e70f479cc50592b9",
+  "source_repository": "https://github.com/a-bit-brain-burning/TTS",
+  "TTS_base_commit": "d2348999f1847fde5a2f76bc1d77a275cec0a1d0",
+  "exact_runtime_source_bundle": "artifacts/eu_latest_20261019/execution_sources.json",
+  "exact_runtime_source_bundle_sha256": "d1e202e14f583edf5e39bc42180ba502bc25499bca566abb248394b9d75d7114",
+  "entries": [
+    {
+      "language": "de-DE",
+      "artifact": "de_acoustic",
+      "profile": "de_profile",
+      "source_checkpoint": "artifacts/eu_latest_20261019/de_gpu12000.pt",
+      "source_sha256": "daf4476f46c14b23fb06b770197c8a63efbd8990d1b64c0cafaa2e4496f81198",
+      "source_native_format": "eu_west_germanic17_standalone39_v1",
+      "published_sha256": "598d43ec9bebcb226b03bae4825e8872cab0673987a52877b99034a035738a3b",
+      "parameters": 186882,
+      "buffers": 79,
+      "tensors_equal": true,
+      "config_equal": true,
+      "source_frontend_signature": "46401d42c8758b9b4ca3969f5f309404f412ad43e55edcb623614e16111400b0",
+      "external_lexicon_sha256": "41c991eb7b7e587eec3a9d083a3a264d2f429713228a7774f60e10c823d52892",
+      "data_manifest_sha256": "41a180298efc204ddbf7c63394b11f4aebaa74c2fc7a4212ea0240812849ab02",
+      "fixed_dev_cases": 3,
+      "source_calibration_sha256": null
+    },
+    {
+      "language": "nl-NL",
+      "artifact": "nl_acoustic",
+      "profile": "nl_profile",
+      "source_checkpoint": "artifacts/eu_latest_20261019/nl_gpu12000.pt",
+      "source_sha256": "73b369e9d1e0c5719c3b0a49c4dcf5ddd99ebd2c58d3b8d95ea59197c1e3ded1",
+      "source_native_format": "eu_west_germanic17_nl3_standalone39_v3",
+      "published_sha256": "79d1a243224410b3853885cdc37cd5b583083f41d08ea03b8c4fa3c80c21e3e5",
+      "parameters": 186882,
+      "buffers": 79,
+      "tensors_equal": true,
+      "config_equal": true,
+      "source_frontend_signature": "706e7674653b552d300d7f55bda405d080b8e7c5212f5fa4ac18de87bb0f9807",
+      "external_lexicon_sha256": "52827968eba1f4fc5341fc600382099ab9b2dda9ae23960d8fab081279fb74fb",
+      "data_manifest_sha256": "184bdcb51400f27b5143168bbc3f514ae9759a589a0ecdee0c35da833733ea49",
+      "fixed_dev_cases": 3,
+      "source_calibration_sha256": null
+    },
+    {
+      "language": "cs-CZ",
+      "artifact": "cs_acoustic",
+      "profile": "cs_profile",
+      "source_checkpoint": "project/outputs/eu_omnivoice5_allstart_20261019/cs/B/inference.pt",
+      "source_sha256": "026a594a0c99173eb7c09f0be20b25d2afee66683489ebfff84e5b712597691f",
+      "source_native_format": "eu_omnivoice5_staged_warmstart39_v1",
+      "published_sha256": "b589d6810642158e888c4744cac8de34952b74111a08409bd53205d7611eb0b2",
+      "parameters": 187922,
+      "buffers": 79,
+      "tensors_equal": true,
+      "config_equal": true,
+      "source_frontend_signature": "371e3dd28c7638f89c1ff6fba0161688bd7514f67ebb3bf76ca58e9b1dc1707b",
+      "external_lexicon_sha256": "584d940fc0edea4e9d572a974fde2f5a3e5eb9b8e5d7ded13b49bf4baa076fa0",
+      "data_manifest_sha256": "184fc4ec2a8db234bba422e112699bf43cb2f562ce32f7351ff45d1d80dc19dd",
+      "fixed_dev_cases": 3,
+      "source_calibration_sha256": null
+    },
+    {
+      "language": "pl-PL",
+      "artifact": "pl_acoustic",
+      "profile": "pl_profile",
+      "source_checkpoint": "project/outputs/eu_omnivoice5_stress_input_20261019/pl/continuation/B/inference.pt",
+      "source_sha256": "2b96067d34d2ff452a4c9a10a3bad24cf0874520f03664aee16b8358058aac32",
+      "source_native_format": "eu_omnivoice5_stress_continuation39_v1",
+      "published_sha256": "b6ee95c4de6e11b82f433fca3b9cd4e86f188990e012b95039ddd7c27ff2b4a8",
+      "parameters": 188082,
+      "buffers": 79,
+      "tensors_equal": true,
+      "config_equal": true,
+      "source_frontend_signature": "3a3a5fad47ae06a31bf85b2c78350999a35e2c87f8c7394bcd5b77afb6c9cada",
+      "external_lexicon_sha256": "5ee399375d8c003ed543d1982be3457a35b0bfb9e6a35ebb9d109b037476c714",
+      "data_manifest_sha256": "a551c351c42a64892c443956b478bf43e4c1c7782786a0598e4501acf413172c",
+      "fixed_dev_cases": 10,
+      "source_calibration_sha256": null,
+      "external_stress_labels_sha256": "0f39583415ff48f347d0711fd69dfcb2dafb8199e7058d5646a39db27c7d1f5a",
+      "data_manifest_kind": "immutable matched explicit-stress stage1 contract",
+      "postfilter": "identity",
+      "source_contract_sha256": "a551c351c42a64892c443956b478bf43e4c1c7782786a0598e4501acf413172c",
+      "training_history": {
+        "historical_updates": 250,
+        "new_updates": 11750,
+        "historical_real_trained_warmstart_preserved": true,
+        "new_B_data_synthetic_only": true
+      }
+    },
+    {
+      "language": "da-DK",
+      "artifact": "da_acoustic",
+      "profile": "da_profile",
+      "source_checkpoint": "artifacts/eu_latest_20261019/da_gpu12000.pt",
+      "source_sha256": "7837c72f71a506cbe19167aded33c486b39f4b1602ce9be762d35bd32245ec4e",
+      "source_native_format": "eu_north_west18_da_DanFA2_fulltoken_standalone39_v1",
+      "published_sha256": "6428624ab006fda34447e0e7b385d36793e1d0d978251d9b533fb209b840b221",
+      "parameters": 193826,
+      "buffers": 79,
+      "tensors_equal": true,
+      "config_equal": true,
+      "source_frontend_signature": "0931b61f86e3960e3f92a47f444f90eb88f2022932e10ca0aaf8ce934014b155",
+      "external_lexicon_sha256": "5e6f8de6030ee2f23fd190988f8158b9156ebc7236105b3c925f43a64560a3b6",
+      "data_manifest_sha256": "f9d1dfddd811ef057ba2702235ab96eb753d221eca39809e5bfe876866e18b4c",
+      "fixed_dev_cases": 3,
+      "source_calibration_sha256": "4da0911b3d641207b369e013f8673e02e89cb4805bf1cd8bae5f6b8032062247"
+    }
+  ],
+  "previous18_artifact_SHA_preserved": {
+    "models/zh-CN/s1g/acoustic.pt": "f7791b387a9d51d7c77392a1962dd7f6d7fd4fedb81bdbfd9251a6a4b796ffa2",
+    "models/zh-CN/s1g/planner.pt": "7a9d49311c35276cb4b0e5a0fa992a94cf0bf788764cc2ade35a1f21567e49f6",
+    "models/en-US/s0-warped39/acoustic.pt": "c6d6b2b79c17aca491f25de729ea804e054b8e1808b14224a82723e857750442",
+    "models/en-US/s0-warped39/planner.pt": "002e465e6b83395ac8ab7b9f1eca85243e10c5b29253732d09e0a24ad0fd281b",
+    "models/zh-CN/s1g/inference_profile.json": "1f34d4bf4410d721b6e7d105a6358413d7908a2db03ff94cae2313c6a734ef0c",
+    "models/en-US/s0-warped39/inference_profile.json": "6d99d4d0db1756c6eff021657004219cf8a924071f4f523c026a7fc44231f505",
+    "dsp/linear32_compat23_v1.f32le": "9ac1765132ab96e499441d185ee005648ad3bcb18bba03f1918eb685ee7ba58a",
+    "dsp/warped700_32_v1.f32le": "33c0aa455d86057acbaf42c46abe790bb30cddb43a75ac41e6349c2afdc1f06f",
+    "dsp/ap5_bank.f32le": "17d3cadea541851be92e8990d08784dd4656e02da9600bd0c116649eeea13a48",
+    "models/hu-HU/compact39/acoustic.pt": "ef2de6c01a282352c0238f1de42c4ac0cbc906d3f2e673779883cc45623f599b",
+    "models/hu-HU/compact39/inference_profile.json": "baf423fd139f2cb0ad6c1d609e63f5251a3a26746b34d88235efe8b33c64bbcc",
+    "models/el-GR/compact39/acoustic.pt": "e0e84e379c4612940325cb4605e007949bb2c703e5d2e23290a2aa1f0426ee5c",
+    "models/el-GR/compact39/inference_profile.json": "993a37f5c8df158a1bda5db7e561607de22e7b44f48a209baec754afd26cf87e",
+    "models/mt-MT/compact39/acoustic.pt": "e5e67144d9cabe0ccd64086755c98616005d8d226069361a4e749d18a2c63730",
+    "models/mt-MT/compact39/inference_profile.json": "89585fc2e5f852583bdfd25d6b56752a8323216ffff9e2b779634f372cd7b2e6",
+    "models/ga-IE/compact39/acoustic.pt": "1c93f096fe86f0364091e3f78cde7c303b11c967687e5b448029d07fc81eea44",
+    "models/ga-IE/compact39/inference_profile.json": "c58c25e39a8a92d476c022c621434d166f06a03f85cae13f44d62cd5ca4717f6",
+    "models/lt-LT/compact39/acoustic.pt": "e5c250bd29b7558b8bc08f9c419717acb43e2bd6d96097f914aa2a4d7262a903",
+    "models/lt-LT/compact39/inference_profile.json": "eea86b9d062c4597d97908a431c247ee1202bf3273bd3eff8f0aefa15690ef24",
+    "frontend/lt-LT/lt_lexicon_v1.json": "bece3545abd4042855a3b9f8903febf1474123f6f4700acf82ad981e089739ef",
+    "models/fi-FI/compact39/acoustic.pt": "e39b7a5e10b6c74e100bddf8a0e54e4c24db1adf57a77156870d6b4735ac3970",
+    "models/fi-FI/compact39/inference_profile.json": "834c225c0c3b715361219a8c71d3baf839853a971a5f832d40c87917105bb6d2",
+    "models/et-EE/compact39/acoustic.pt": "68db52d6e4b644249454ad9dc6cc2818fe446b84e4abb26e66f95bef900eb99a",
+    "models/et-EE/compact39/inference_profile.json": "9358bd990693f03e781810e948ab0f6f80d78369da6fe19c5d2af15d655ecbc4",
+    "models/lv-LV/compact39/acoustic.pt": "380573606585cf0e3ead8edd0abbd734a4b950b1803955e5620b472525c116b6",
+    "models/lv-LV/compact39/inference_profile.json": "71f307b1cd1c3b7a8558cbb56e5d995dda7b025cf749c6ff1cb6ad764a57b14e",
+    "models/hr-HR/compact39/acoustic.pt": "ca4eb02188dd61e7e2c6e61aefc2c82917fa4d416f8038e172419c4b9397e968",
+    "models/hr-HR/compact39/inference_profile.json": "4f0cd255017344a8176369400665f73f0dea95f4807e891293aca9f639962a97",
+    "models/sl-SI/compact39/acoustic.pt": "eb888022e3943d883d2a276a0f8ca2de40df5b7cee8e3bc9484f8d2477a90a4c",
+    "models/sl-SI/compact39/inference_profile.json": "f20dcd34965ca48440675f4f7175d1002894fdd57e56e45af224ef1463db3757",
+    "frontend/sl-SI/sl_prosody_lexicon_v1.json": "f97d96fa7b819622a41d3307c729e2a576769dee3cb5d78ad0467962e705a46f",
+    "models/bg-BG/compact39/acoustic.pt": "b2829e22d09e784dd5af1cf5332cc5bad337e8a96f5156e2e5f6201c5a1518d5",
+    "models/bg-BG/compact39/inference_profile.json": "985c183a5bb9dad1a6c47cad1b8ff0dc6af25794c07e948ba5c211bf566f4d4c",
+    "frontend/bg-BG/bg_prosody_lexicon_v1.json": "bbdb9e4d9a37829562bdea9160396fdd4d6c8f54a6e002e645ba91c496898cbc",
+    "models/shared/romance5/repair.pt": "0833c4194109d8a4753cb2bfa4a30af80ef3b72497e17ef7c859fe754d6aa340",
+    "models/shared/romance5/inference_profile.json": "2e225cf56809ff3558839fc93000e55e9f5eb1b45bdd9f277d246f649f707589",
+    "models/es-ES/routed39/acoustic.pt": "45cbfa5cb525b00d6a9119f299645e6f8eb3adb8651f9829f9276b7bc195bc19",
+    "models/es-ES/routed39/planner.pt": "a905729b8fe7a881f2ba05af9ca9ddb4581fac84d1abd954f7956a1bedfbe199",
+    "models/es-ES/routed39/inference_profile.json": "8cd807541ce3147a041b8d6e4ab1ca018f7e32e1af46decded79d14dacc7d9d4",
+    "models/fr-FR/routed39/acoustic.pt": "2ca11c49f2c5eef362c6e7b41a106ba5436f5d48a56ced1ee36cfa7cea5b4a66",
+    "models/fr-FR/routed39/planner.pt": "3a6d04f01b4101725450d9e8896e27618bc959f391e192a7aeb09c3162487f68",
+    "models/fr-FR/routed39/inference_profile.json": "f78fba04d3d2b35bb5b6ec8d53cbbd8f66a7559c017592251deb1147a3fc933a",
+    "models/it-IT/routed39/acoustic.pt": "d266a35db3ee2903672b963d041273dccadfd3dc453cbe504539d940d7fca532",
+    "models/it-IT/routed39/planner.pt": "97a4f8a474feb54a10ba20b003d0ca9bb8deea4739838a49e8fa5c2dc197380f",
+    "models/it-IT/routed39/inference_profile.json": "c83ce3bc297e06fcd5736276b6ff45353ba0d1510b8e3120c086b8d5f9c48d32",
+    "models/pt-PT/routed39/acoustic.pt": "29d08bace6c808da39fccd2e0f109cb7fc2a641d62184a46c1e9ab0b6ec87937",
+    "models/pt-PT/routed39/planner.pt": "b6c7dba371912318851bd7f2b8c2abedfafeecf18de8fcf764976a121642f79d",
+    "models/pt-PT/routed39/inference_profile.json": "57682062583bbc1ad6bac6ec31ed7ef8f2fb9e11165c2bc7293609859782ebcb",
+    "models/ro-RO/routed39/acoustic.pt": "834812e75317988c1664792bb5325f3d589df9b2b492a9306c36cea9ca4585a2",
+    "models/ro-RO/routed39/planner.pt": "edf2a7ad678c834c6058c6ec1a8da431b8d87310fa901d8acada3858a97124e7",
+    "models/ro-RO/routed39/inference_profile.json": "d02ae55fe79546339d2e88794c65dd4bc6a2da2e0760ae9df13623a7ad26cd54"
+  },
+  "new_training_updates": 0,
+  "source_code_uploaded_to_Model": false,
+  "original_weights_modified": false,
+  "source_sentences_audio_optimizer_RNG_uploaded": false,
+  "exact_runtime_source_sha256": {
+    "project/src/__init__.py": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738",
+    "project/src/models/universal_acoustic.py": "48314fe658429e601c3dc4a7e49e0c67a32b5a46831df49c953156bdd5e08edf",
+    "project/src/experiments/__init__.py": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17",
+    "project/src/common.py": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8",
+    "project/src/audio/dsp.py": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce",
+    "project/src/frontend/english.py": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26",
+    "project/src/frontend/__init__.py": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d",
+    "project/src/frontend/phonetic_features.py": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6",
+    "project/src/frontend/universal.py": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6",
+    "project/src/experiments/phonetic_v2_probe.py": "455352386032ef195c2cf39f2a31a5232d8bb3a57880212badd6bdf301b96266",
+    "project/src/frontend/european_v2.py": "080fc6a4471b7c892e6f35a92b8d1f9113056950d976a386d7a40a0ca710ed96",
+    "project/src/audio/schema.py": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266",
+    "project/src/audio/extractor.py": "d3c463eaf89c8b68dc39e4a7e3c355e9c95b9767e2d3cbc97a56c649e46b0f65",
+    "project/src/training/prepare_data.py": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba",
+    "project/src/models/acoustic.py": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164",
+    "project/src/models/residual.py": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae",
+    "project/src/inference/evaluate.py": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee",
+    "project/src/experiments/representation_limit.py": "f740be0ec5ab816de488635dde229b92639f8540e85b1aa984f2bed3a5e7bdda",
+    "project/src/experiments/chinese_data.py": "f53d061b8f6e09822cb19906ab5761aad220aaef25036740f8a83838e033c764",
+    "project/src/experiments/eu_tts_data.py": "40e0a2eb39c70b67e1ddcff053db8ab93f06486c01ea6669d98de70a0503c37d",
+    "project/src/experiments/eu_quality.py": "2b6381c6968178ba6a28195179495a0a5c3d4b9800b787661e0c166fd9b6db3a",
+    "project/src/experiments/eu_quality_spectrum_basis.py": "a007f9326424f235b0a469dcac93c183de2acf76574451d79d2fc1e0d64ddfde",
+    "project/src/experiments/eu_quality_capacity39_data.py": "ab78966814e6b402c05d5e685af1a0157bd73277f02c56e8730f04083e1b75a4",
+    "project/src/experiments/eu_tts_loss.py": "a31ccf1af08bdcf62b3b3572183b7080e687d64cb599cc954abac3d4385f4488",
+    "project/src/experiments/eu_tts_train.py": "543f1de90c8a940b04976273c48267bbdda434aba70dde8d9817b6862a669287",
+    "project/src/experiments/eu_quality_capacity39_loss.py": "6190b461b73ff5fcd0aa952c6f70b89e25f16df7fad4a21a796b15df635dc49c",
+    "project/src/experiments/eu_quality_capacity39_train.py": "fd5ae920738082f29500519d769a9b8478685b92a716bfdb57ca75392c297518",
+    "project/src/experiments/eu_quality_capacity39.py": "ea1afab6beba8f8ca154e2a5a9976fb1604a7ddf3d1ff7c60085e2dfc1c5cd27",
+    "project/src/experiments/eu_group_frontend.py": "7c06eca252a739324a4a1069caf15a445776629516b95c49d0b8989257c1160f",
+    "project/scripts/eu_spanish_corpus.py": "5f82a85cc7dc5c5ec9a5ac0dac84adda8a2df76ecf4548fd853145f534eab175",
+    "project/src/experiments/eu_group_data.py": "79cfc50ac16ee30d0b0e74e49063f043a3701d759fe3614b609edd16741db285",
+    "project/src/experiments/eu_quality_repair19_diagnose.py": "4a546d02c71ea710a21dee137d0de82446860739441bcd7654222a4062465d08",
+    "project/src/experiments/eu_west_germanic17_frontend.py": "fe6c1c4d0cc33f80e323c2489d9e6248d6f3fc8c1a39281af9919d18b9ce193a",
+    "project/src/experiments/eu_west_germanic17_nl3_frontend.py": "4f7d22ff820983558b6426c2faead91aae8059153d6da5e4f3cf02611af13de0",
+    "project/src/experiments/eu_north_west18_sources.py": "45ae6a98bd83a4b0c1c21571c7292c5c9e9901b1956072affd3461699fb65c64",
+    "project/src/experiments/eu_north_west18_frontend.py": "29c317437650548481018175f86bbf2d9fd0967252571c6d64a3505983e2e65e",
+    "project/src/experiments/eu_north_west18_da_frontend.py": "963ba1baf1fc61ed7a64f712996bf8faab7dd65e42947b9ba31bf3d53523e425",
+    "project/src/audio/native.c": "3c897fda472fad3638733d4923103dd1e39b0e18fc962b27ae3afe4849e24408",
+    "project/src/audio/native_stream.c": "4e8fd8e7a32c02b4ffc717ed0fd9c9db581614ad9659443980cb93978c82f4b2"
+  },
+  "packaging_script_sha256": "29e54fb1695bf8454f9760de1edf447dc491d19fb61d6c9130133df1b25c8622",
+  "runtime_source_byte_recovery": {
+    "project/src/__init__.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738",
+      "execution_sha256": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738"
+    },
+    "project/src/models/universal_acoustic.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "48314fe658429e601c3dc4a7e49e0c67a32b5a46831df49c953156bdd5e08edf"
+    },
+    "project/src/experiments/__init__.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17",
+      "execution_sha256": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17"
+    },
+    "project/src/common.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8",
+      "execution_sha256": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8"
+    },
+    "project/src/audio/dsp.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce"
+    },
+    "project/src/frontend/english.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26",
+      "execution_sha256": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26"
+    },
+    "project/src/frontend/__init__.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d",
+      "execution_sha256": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d"
+    },
+    "project/src/frontend/phonetic_features.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6",
+      "execution_sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "project/src/frontend/universal.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6",
+      "execution_sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "project/src/experiments/phonetic_v2_probe.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "455352386032ef195c2cf39f2a31a5232d8bb3a57880212badd6bdf301b96266",
+      "execution_sha256": "455352386032ef195c2cf39f2a31a5232d8bb3a57880212badd6bdf301b96266"
+    },
+    "project/src/frontend/european_v2.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "080fc6a4471b7c892e6f35a92b8d1f9113056950d976a386d7a40a0ca710ed96"
+    },
+    "project/src/audio/schema.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266",
+      "execution_sha256": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266"
+    },
+    "project/src/audio/extractor.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "d3c463eaf89c8b68dc39e4a7e3c355e9c95b9767e2d3cbc97a56c649e46b0f65"
+    },
+    "project/src/training/prepare_data.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba",
+      "execution_sha256": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba"
+    },
+    "project/src/models/acoustic.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164",
+      "execution_sha256": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164"
+    },
+    "project/src/models/residual.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae",
+      "execution_sha256": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae"
+    },
+    "project/src/inference/evaluate.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee",
+      "execution_sha256": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee"
+    },
+    "project/src/experiments/representation_limit.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "f740be0ec5ab816de488635dde229b92639f8540e85b1aa984f2bed3a5e7bdda",
+      "execution_sha256": "f740be0ec5ab816de488635dde229b92639f8540e85b1aa984f2bed3a5e7bdda"
+    },
+    "project/src/experiments/chinese_data.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "f53d061b8f6e09822cb19906ab5761aad220aaef25036740f8a83838e033c764",
+      "execution_sha256": "f53d061b8f6e09822cb19906ab5761aad220aaef25036740f8a83838e033c764"
+    },
+    "project/src/experiments/eu_tts_data.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "40e0a2eb39c70b67e1ddcff053db8ab93f06486c01ea6669d98de70a0503c37d"
+    },
+    "project/src/experiments/eu_quality.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "2b6381c6968178ba6a28195179495a0a5c3d4b9800b787661e0c166fd9b6db3a",
+      "execution_sha256": "2b6381c6968178ba6a28195179495a0a5c3d4b9800b787661e0c166fd9b6db3a"
+    },
+    "project/src/experiments/eu_quality_spectrum_basis.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "a007f9326424f235b0a469dcac93c183de2acf76574451d79d2fc1e0d64ddfde"
+    },
+    "project/src/experiments/eu_quality_capacity39_data.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "ab78966814e6b402c05d5e685af1a0157bd73277f02c56e8730f04083e1b75a4"
+    },
+    "project/src/experiments/eu_tts_loss.py": {
+      "storage": "public_git_blob_expand_LF_to_CRLF",
+      "git_blob_sha256": "f71c6bad9456f80f97b012123aba21c1d481b6a621f3db91a0cf8f5acd77e840",
+      "execution_sha256": "a31ccf1af08bdcf62b3b3572183b7080e687d64cb599cc954abac3d4385f4488"
+    },
+    "project/src/experiments/eu_tts_train.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "543f1de90c8a940b04976273c48267bbdda434aba70dde8d9817b6862a669287",
+      "execution_sha256": "543f1de90c8a940b04976273c48267bbdda434aba70dde8d9817b6862a669287"
+    },
+    "project/src/experiments/eu_quality_capacity39_loss.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "6190b461b73ff5fcd0aa952c6f70b89e25f16df7fad4a21a796b15df635dc49c"
+    },
+    "project/src/experiments/eu_quality_capacity39_train.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "fd5ae920738082f29500519d769a9b8478685b92a716bfdb57ca75392c297518"
+    },
+    "project/src/experiments/eu_quality_capacity39.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "ea1afab6beba8f8ca154e2a5a9976fb1604a7ddf3d1ff7c60085e2dfc1c5cd27",
+      "execution_sha256": "ea1afab6beba8f8ca154e2a5a9976fb1604a7ddf3d1ff7c60085e2dfc1c5cd27"
+    },
+    "project/src/experiments/eu_group_frontend.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "7c06eca252a739324a4a1069caf15a445776629516b95c49d0b8989257c1160f"
+    },
+    "project/scripts/eu_spanish_corpus.py": {
+      "storage": "public_git_blob_exact",
+      "git_blob_sha256": "5f82a85cc7dc5c5ec9a5ac0dac84adda8a2df76ecf4548fd853145f534eab175",
+      "execution_sha256": "5f82a85cc7dc5c5ec9a5ac0dac84adda8a2df76ecf4548fd853145f534eab175"
+    },
+    "project/src/experiments/eu_group_data.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "79cfc50ac16ee30d0b0e74e49063f043a3701d759fe3614b609edd16741db285"
+    },
+    "project/src/experiments/eu_quality_repair19_diagnose.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "4a546d02c71ea710a21dee137d0de82446860739441bcd7654222a4062465d08"
+    },
+    "project/src/experiments/eu_west_germanic17_frontend.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "fe6c1c4d0cc33f80e323c2489d9e6248d6f3fc8c1a39281af9919d18b9ce193a"
+    },
+    "project/src/experiments/eu_west_germanic17_nl3_frontend.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "4f7d22ff820983558b6426c2faead91aae8059153d6da5e4f3cf02611af13de0"
+    },
+    "project/src/experiments/eu_north_west18_sources.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "45ae6a98bd83a4b0c1c21571c7292c5c9e9901b1956072affd3461699fb65c64"
+    },
+    "project/src/experiments/eu_north_west18_frontend.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "29c317437650548481018175f86bbf2d9fd0967252571c6d64a3505983e2e65e"
+    },
+    "project/src/experiments/eu_north_west18_da_frontend.py": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "963ba1baf1fc61ed7a64f712996bf8faab7dd65e42947b9ba31bf3d53523e425"
+    },
+    "project/src/audio/native.c": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "3c897fda472fad3638733d4923103dd1e39b0e18fc962b27ae3afe4849e24408"
+    },
+    "project/src/audio/native_stream.c": {
+      "storage": "published_exact_source_bundle",
+      "execution_sha256": "4e8fd8e7a32c02b4ffc717ed0fd9c9db581614ad9659443980cb93978c82f4b2"
+    }
+  },
+  "unresolved_runtime_source_files": [
+    "project/scripts/share_model_assets20.py",
+    "project/src/experiments/eu_four17_model.py",
+    "project/src/experiments/eu_group_model.py",
+    "project/src/experiments/eu_north_west18_data.py",
+    "project/src/experiments/eu_north_west18_model.py",
+    "project/src/experiments/eu_omnivoice5_allstart_data.py",
+    "project/src/experiments/eu_omnivoice5_common.py",
+    "project/src/experiments/eu_omnivoice5_data.py",
+    "project/src/experiments/eu_omnivoice5_disk.py",
+    "project/src/experiments/eu_omnivoice5_resample_baseline.py",
+    "project/src/experiments/eu_omnivoice5_resample_bulk.py",
+    "project/src/experiments/eu_omnivoice5_stress_data.py",
+    "project/src/experiments/eu_omnivoice5_stress_labels.py",
+    "project/src/experiments/eu_omnivoice5_text.py"
+  ],
+  "native_runtime_code_bytes_recoverable_from_pinned_public_sources": false,
+  "PL_update_base_commit": "8a166f7185fd37e32afaeecb7739f523d441198b",
+  "new_PL_exact_runtime_source_sha256": {
+    "project/src/__init__.py": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738",
+    "project/src/models/universal_acoustic.py": "48314fe658429e601c3dc4a7e49e0c67a32b5a46831df49c953156bdd5e08edf",
+    "project/src/experiments/__init__.py": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17",
+    "project/src/experiments/eu_omnivoice5_common.py": "5b4756e3b700e3203c4e6659a23d39a214184e85afd368e5b6c090a8df0fba68",
+    "project/src/experiments/eu_omnivoice5_text.py": "743838c2e24c28315c7cc7e146d7e577dbc3a58afdc4aa73afc824d979ad024d",
+    "project/src/experiments/eu_omnivoice5_stress_labels.py": "4689d7cc2203def86fd90c486edac33d752b30a129cdd32ad71797f3fd4ad4a2",
+    "project/src/frontend/english.py": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26",
+    "project/src/frontend/__init__.py": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d",
+    "project/src/frontend/phonetic_features.py": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6",
+    "project/src/frontend/universal.py": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6",
+    "project/src/experiments/phonetic_v2_probe.py": "455352386032ef195c2cf39f2a31a5232d8bb3a57880212badd6bdf301b96266",
+    "project/src/frontend/european_v2.py": "080fc6a4471b7c892e6f35a92b8d1f9113056950d976a386d7a40a0ca710ed96",
+    "project/src/common.py": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8",
+    "project/src/audio/dsp.py": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce",
+    "project/src/audio/schema.py": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266",
+    "project/src/audio/extractor.py": "d3c463eaf89c8b68dc39e4a7e3c355e9c95b9767e2d3cbc97a56c649e46b0f65",
+    "project/src/training/prepare_data.py": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba",
+    "project/src/models/acoustic.py": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164",
+    "project/src/models/residual.py": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae",
+    "project/src/inference/evaluate.py": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee",
+    "project/src/experiments/representation_limit.py": "f740be0ec5ab816de488635dde229b92639f8540e85b1aa984f2bed3a5e7bdda",
+    "project/src/experiments/chinese_data.py": "f53d061b8f6e09822cb19906ab5761aad220aaef25036740f8a83838e033c764",
+    "project/src/experiments/eu_tts_data.py": "40e0a2eb39c70b67e1ddcff053db8ab93f06486c01ea6669d98de70a0503c37d",
+    "project/src/experiments/eu_quality_spectrum_basis.py": "a007f9326424f235b0a469dcac93c183de2acf76574451d79d2fc1e0d64ddfde",
+    "project/src/experiments/eu_quality_capacity39_data.py": "ab78966814e6b402c05d5e685af1a0157bd73277f02c56e8730f04083e1b75a4",
+    "project/src/experiments/eu_group_frontend.py": "7c06eca252a739324a4a1069caf15a445776629516b95c49d0b8989257c1160f",
+    "project/scripts/eu_spanish_corpus.py": "5f82a85cc7dc5c5ec9a5ac0dac84adda8a2df76ecf4548fd853145f534eab175",
+    "project/src/experiments/eu_group_data.py": "79cfc50ac16ee30d0b0e74e49063f043a3701d759fe3614b609edd16741db285",
+    "project/src/experiments/eu_quality_repair19_diagnose.py": "4a546d02c71ea710a21dee137d0de82446860739441bcd7654222a4062465d08",
+    "project/src/experiments/eu_north_west18_sources.py": "45ae6a98bd83a4b0c1c21571c7292c5c9e9901b1956072affd3461699fb65c64",
+    "project/src/experiments/eu_north_west18_frontend.py": "29c317437650548481018175f86bbf2d9fd0967252571c6d64a3505983e2e65e",
+    "project/src/experiments/eu_tts_loss.py": "a31ccf1af08bdcf62b3b3572183b7080e687d64cb599cc954abac3d4385f4488",
+    "project/src/experiments/eu_tts_train.py": "543f1de90c8a940b04976273c48267bbdda434aba70dde8d9817b6862a669287",
+    "project/src/experiments/eu_quality_capacity39_loss.py": "6190b461b73ff5fcd0aa952c6f70b89e25f16df7fad4a21a796b15df635dc49c",
+    "project/src/experiments/eu_quality_capacity39_train.py": "fd5ae920738082f29500519d769a9b8478685b92a716bfdb57ca75392c297518",
+    "project/src/experiments/eu_group_model.py": "dee2ce5271383d7a76957da2bf7b57ad9be14b9d9c8e884c7cd06d3687462cb9",
+    "project/src/experiments/eu_four17_model.py": "75c01aef64daffe58ac55e1a51b7898adcefbe0b8e81d0308cc508a163e60911",
+    "project/src/experiments/eu_north_west18_model.py": "5b7f72ebef5ddf741becdbc6810698ecab4493f2b3b6af3382157c50188e8f01",
+    "project/src/experiments/eu_north_west18_data.py": "6904cc5d0aeef1f263d4aa90a8e45ab0505b402d4240cc6d31835b9a87b3c44a",
+    "project/src/experiments/eu_omnivoice5_data.py": "5668a248a63642e4f149b1eba0aae4fc00e3cbe626b2734e90aa8dde3f8375af",
+    "project/src/experiments/eu_omnivoice5_disk.py": "b074ead18f402d80b9c1ca7eca8180e9fc10166e7ec77733e6cab82f7898b6bb",
+    "project/src/experiments/eu_omnivoice5_resample_baseline.py": "6290a64b5991c1cb68cf25bb65cc678b05a7f581c9ffea05767d38a4266e6aea",
+    "project/src/experiments/eu_omnivoice5_resample_bulk.py": "8526a5dbb77a5f1f762402d1296e1d2556452066088b20d0750d12bacce13361",
+    "project/src/experiments/eu_omnivoice5_allstart_data.py": "6c60fdb2091c5ae5357a2b828213560a00313eccd83712ebde6fe31d03c70e5b",
+    "project/src/experiments/eu_omnivoice5_stress_data.py": "e3550d05dfe9011aeb0aa10bd857628ec257eafaad902dfb13d4cf2ae32119aa",
+    "project/src/experiments/eu_quality.py": "2b6381c6968178ba6a28195179495a0a5c3d4b9800b787661e0c166fd9b6db3a",
+    "project/src/experiments/eu_quality_capacity39.py": "ea1afab6beba8f8ca154e2a5a9976fb1604a7ddf3d1ff7c60085e2dfc1c5cd27",
+    "project/scripts/share_model_assets20.py": "29e54fb1695bf8454f9760de1edf447dc491d19fb61d6c9130133df1b25c8622"
+  },
+  "new_PL_runtime_source_scope": "Actual local inference/packaging modules; hashes are provenance, not a claim they were uploaded to public TTS.",
+  "PL_packaging_script_sha256": "b88554f049d024cc2054f8b0a877ce362e2bf6f5643a22e56a5b3879b386e239",
+  "previous22_artifact_SHA_preserved": {
+    "zh_acoustic": "f7791b387a9d51d7c77392a1962dd7f6d7fd4fedb81bdbfd9251a6a4b796ffa2",
+    "zh_planner": "7a9d49311c35276cb4b0e5a0fa992a94cf0bf788764cc2ade35a1f21567e49f6",
+    "en_acoustic": "c6d6b2b79c17aca491f25de729ea804e054b8e1808b14224a82723e857750442",
+    "en_planner": "002e465e6b83395ac8ab7b9f1eca85243e10c5b29253732d09e0a24ad0fd281b",
+    "zh_profile": "1f34d4bf4410d721b6e7d105a6358413d7908a2db03ff94cae2313c6a734ef0c",
+    "en_profile": "6d99d4d0db1756c6eff021657004219cf8a924071f4f523c026a7fc44231f505",
+    "zh_basis": "9ac1765132ab96e499441d185ee005648ad3bcb18bba03f1918eb685ee7ba58a",
+    "en_basis": "33c0aa455d86057acbaf42c46abe790bb30cddb43a75ac41e6349c2afdc1f06f",
+    "ap5_bank": "17d3cadea541851be92e8990d08784dd4656e02da9600bd0c116649eeea13a48",
+    "hu_acoustic": "ef2de6c01a282352c0238f1de42c4ac0cbc906d3f2e673779883cc45623f599b",
+    "hu_profile": "baf423fd139f2cb0ad6c1d609e63f5251a3a26746b34d88235efe8b33c64bbcc",
+    "el_acoustic": "e0e84e379c4612940325cb4605e007949bb2c703e5d2e23290a2aa1f0426ee5c",
+    "el_profile": "993a37f5c8df158a1bda5db7e561607de22e7b44f48a209baec754afd26cf87e",
+    "mt_acoustic": "e5e67144d9cabe0ccd64086755c98616005d8d226069361a4e749d18a2c63730",
+    "mt_profile": "89585fc2e5f852583bdfd25d6b56752a8323216ffff9e2b779634f372cd7b2e6",
+    "ga_acoustic": "1c93f096fe86f0364091e3f78cde7c303b11c967687e5b448029d07fc81eea44",
+    "ga_profile": "c58c25e39a8a92d476c022c621434d166f06a03f85cae13f44d62cd5ca4717f6",
+    "lt_acoustic": "e5c250bd29b7558b8bc08f9c419717acb43e2bd6d96097f914aa2a4d7262a903",
+    "lt_profile": "eea86b9d062c4597d97908a431c247ee1202bf3273bd3eff8f0aefa15690ef24",
+    "lt_lexicon": "bece3545abd4042855a3b9f8903febf1474123f6f4700acf82ad981e089739ef",
+    "fi_acoustic": "e39b7a5e10b6c74e100bddf8a0e54e4c24db1adf57a77156870d6b4735ac3970",
+    "fi_profile": "834c225c0c3b715361219a8c71d3baf839853a971a5f832d40c87917105bb6d2",
+    "et_acoustic": "68db52d6e4b644249454ad9dc6cc2818fe446b84e4abb26e66f95bef900eb99a",
+    "et_profile": "9358bd990693f03e781810e948ab0f6f80d78369da6fe19c5d2af15d655ecbc4",
+    "lv_acoustic": "380573606585cf0e3ead8edd0abbd734a4b950b1803955e5620b472525c116b6",
+    "lv_profile": "71f307b1cd1c3b7a8558cbb56e5d995dda7b025cf749c6ff1cb6ad764a57b14e",
+    "hr_acoustic": "ca4eb02188dd61e7e2c6e61aefc2c82917fa4d416f8038e172419c4b9397e968",
+    "hr_profile": "4f0cd255017344a8176369400665f73f0dea95f4807e891293aca9f639962a97",
+    "sl_acoustic": "eb888022e3943d883d2a276a0f8ca2de40df5b7cee8e3bc9484f8d2477a90a4c",
+    "sl_profile": "f20dcd34965ca48440675f4f7175d1002894fdd57e56e45af224ef1463db3757",
+    "sl_lexicon": "f97d96fa7b819622a41d3307c729e2a576769dee3cb5d78ad0467962e705a46f",
+    "bg_acoustic": "b2829e22d09e784dd5af1cf5332cc5bad337e8a96f5156e2e5f6201c5a1518d5",
+    "bg_profile": "985c183a5bb9dad1a6c47cad1b8ff0dc6af25794c07e948ba5c211bf566f4d4c",
+    "bg_lexicon": "bbdb9e4d9a37829562bdea9160396fdd4d6c8f54a6e002e645ba91c496898cbc",
+    "romance5_repair": "0833c4194109d8a4753cb2bfa4a30af80ef3b72497e17ef7c859fe754d6aa340",
+    "romance5_repair_profile": "2e225cf56809ff3558839fc93000e55e9f5eb1b45bdd9f277d246f649f707589",
+    "es_acoustic": "45cbfa5cb525b00d6a9119f299645e6f8eb3adb8651f9829f9276b7bc195bc19",
+    "es_planner": "a905729b8fe7a881f2ba05af9ca9ddb4581fac84d1abd954f7956a1bedfbe199",
+    "es_profile": "8cd807541ce3147a041b8d6e4ab1ca018f7e32e1af46decded79d14dacc7d9d4",
+    "fr_acoustic": "2ca11c49f2c5eef362c6e7b41a106ba5436f5d48a56ced1ee36cfa7cea5b4a66",
+    "fr_planner": "3a6d04f01b4101725450d9e8896e27618bc959f391e192a7aeb09c3162487f68",
+    "fr_profile": "f78fba04d3d2b35bb5b6ec8d53cbbd8f66a7559c017592251deb1147a3fc933a",
+    "it_acoustic": "d266a35db3ee2903672b963d041273dccadfd3dc453cbe504539d940d7fca532",
+    "it_planner": "97a4f8a474feb54a10ba20b003d0ca9bb8deea4739838a49e8fa5c2dc197380f",
+    "it_profile": "c83ce3bc297e06fcd5736276b6ff45353ba0d1510b8e3120c086b8d5f9c48d32",
+    "pt_acoustic": "29d08bace6c808da39fccd2e0f109cb7fc2a641d62184a46c1e9ab0b6ec87937",
+    "pt_planner": "b6c7dba371912318851bd7f2b8c2abedfafeecf18de8fcf764976a121642f79d",
+    "pt_profile": "57682062583bbc1ad6bac6ec31ed7ef8f2fb9e11165c2bc7293609859782ebcb",
+    "ro_acoustic": "834812e75317988c1664792bb5325f3d589df9b2b492a9306c36cea9ca4585a2",
+    "ro_planner": "edf2a7ad678c834c6058c6ec1a8da431b8d87310fa901d8acada3858a97124e7",
+    "ro_profile": "d02ae55fe79546339d2e88794c65dd4bc6a2da2e0760ae9df13623a7ad26cd54",
+    "de_acoustic": "598d43ec9bebcb226b03bae4825e8872cab0673987a52877b99034a035738a3b",
+    "de_profile": "988a287c74f89e37833d591fda41fcc1fadad58744107195e037180dd0febf98",
+    "nl_acoustic": "79d1a243224410b3853885cdc37cd5b583083f41d08ea03b8c4fa3c80c21e3e5",
+    "nl_profile": "0fbc25436eb98a86122f2f5d4716ae2fb40814696b764d8ef7e4e5b51ef1e158",
+    "cs_acoustic": "b589d6810642158e888c4744cac8de34952b74111a08409bd53205d7611eb0b2",
+    "cs_profile": "245bc4285a8780fc36955ee78e1653b82b0321a1a8d2299be91e3873f3221f8e",
+    "da_acoustic": "6428624ab006fda34447e0e7b385d36793e1d0d978251d9b533fb209b840b221",
+    "da_profile": "506bfa8869e15647ea96c68bc4824b5a4c3986750c1961a65e436b66e9b216eb",
+    "da_calibration": "77a6aec90a3142cac4163292f3924341f863893869c934cbbabb587e5c36b4bb"
+  },
+  "PL_training_audit_sha256": "22e3c7465f3663f500f15bbc2e92edb9ede0c01592adc3cd9215f9bc90c1f1fa",
+  "PL_development_audit_sha256": "7b9357042c9878d08391b2a10fedb81cd2c8673e818d414dcb12c56290d9066d",
+  "PL_comparison_sha256": "28d11da8c0aa683e18a221b0d5f50812df7a25d4a840051aa61708c152854cda",
+  "FRONTEND_DICTIONARIES_USER_REQUEST_20261020_addendum": {
+    "document": "docs/FRONTEND_DICTIONARIES_20261020.md",
+    "distributed_dictionaries": [
+      "frontend/de-DE/de_lexicon_v1.json",
+      "frontend/nl-NL/nl_lexicon_v1.json",
+      "frontend/cs-CZ/cs_lexicon_v1.json",
+      "frontend/pl-PL/pl_lexicon_v1.json",
+      "frontend/pl-PL/pl_stress_lexicon_ordered_v1.json",
+      "frontend/da-DK/da_lexicon_v1.json",
+      "frontend/sv-SE/sv_lexicon_v1.json",
+      "frontend/sk-SK/sk_lexicon_v1.json"
+    ],
+    "PL_stress_frontend_source": "frontend/pl-PL/stress_frontend_v1",
+    "weights_and_training_unchanged": true
+  }
+}

@@ -1,0 +1,2202 @@
+{
+  "systems": {
+    "fi": {
+      "spec": {
+        "language": "fi",
+        "locale": "fi-FI",
+        "family": "universal39",
+        "parameters": 129406,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 129406,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_finnic_frontend_v1",
+              "feature_adapter_version": "finnic_articulatory32_v1",
+              "language": "fi",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/fi-FI/compact39/acoustic.pt",
+            "architecture_source_sha256": "e39b7a5e10b6c74e100bddf8a0e54e4c24db1adf57a77156870d6b4735ac3970",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 1,
+                "basis_key": "compact_w104"
+              },
+              "blocks.1.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 2,
+                "basis_key": "compact_w104"
+              },
+              "blocks.2.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 4,
+                "basis_key": "compact_w104"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "5ba00086510d6d20654d494c8f71e72a064e4e4ecd7c67c4a6a89d85acb973c9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "a54e5a9ecc471aa1ac6c73e425db0f086f81b8d7006231aa9a8e2f5176c928fa"
+      }
+    },
+    "et": {
+      "spec": {
+        "language": "et",
+        "locale": "et-EE",
+        "family": "universal39",
+        "parameters": 129406,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 129406,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_finnic_frontend_v1",
+              "feature_adapter_version": "finnic_articulatory32_v1",
+              "language": "et",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/et-EE/compact39/acoustic.pt",
+            "architecture_source_sha256": "68db52d6e4b644249454ad9dc6cc2818fe446b84e4abb26e66f95bef900eb99a",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 1,
+                "basis_key": "compact_w104"
+              },
+              "blocks.1.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 2,
+                "basis_key": "compact_w104"
+              },
+              "blocks.2.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 4,
+                "basis_key": "compact_w104"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "5ba00086510d6d20654d494c8f71e72a064e4e4ecd7c67c4a6a89d85acb973c9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "afc6a6f9d0b0f93fa9deb56ec455d952f174e1d49b366876a2a45fa6b3bb4210"
+      }
+    },
+    "tr": {
+      "spec": {
+        "language": "tr",
+        "locale": "tr-TR",
+        "family": "routed39",
+        "parameters": 142574,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 97849,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "tr",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 1,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 2,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 4,
+                "basis_key": "conservative_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "cbea00680c51e9db532371e8788c10d515eed7234aa380dc656318497e01e7f8"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "8a4e0c369ddfee92a184d20d738b0df65dbf8f4f836f68337829db0153fd84b7"
+      }
+    },
+    "hu": {
+      "spec": {
+        "language": "hu",
+        "locale": "hu-HU",
+        "family": "universal39",
+        "parameters": 158954,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 22,
+          "base_context_dim": 22,
+          "additional_context_dim": 0
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 158954,
+            "config": {
+              "width": 96,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 64,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 22,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_four_frontend_v1",
+              "language": "hu",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/hu-HU/compact39/acoustic.pt",
+            "architecture_source_sha256": "ef2de6c01a282352c0238f1de42c4ac0cbc906d3f2e673779883cc45623f599b",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "84dd7d7c0fe2895dd9e7da19ff3b6cab590735aa439a3e94276b29c82b534497"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "f16b66ca5db48d986fc48d15012fb64c6570fc4239fbb2d990cd66e14a08f4fe"
+      }
+    },
+    "de": {
+      "spec": {
+        "language": "de",
+        "locale": "de-DE",
+        "family": "routed39",
+        "parameters": 131054,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 86329,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "de",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 1,
+                "basis_key": "compact_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 2,
+                "basis_key": "compact_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 4,
+                "basis_key": "compact_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "8635a1aee95a5951bb4e51833c2c835d9c049e1e80401e48bd48958aeba1d8ef"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "f833f8142dbb1c1454be88540f6c6158901855e40fdc4cb0dc19ab88be102c9f"
+      }
+    },
+    "nl": {
+      "spec": {
+        "language": "nl",
+        "locale": "nl-NL",
+        "family": "routed39",
+        "parameters": 131054,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 86329,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "nl",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 1,
+                "basis_key": "compact_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 2,
+                "basis_key": "compact_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 4,
+                "basis_key": "compact_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "8635a1aee95a5951bb4e51833c2c835d9c049e1e80401e48bd48958aeba1d8ef"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "6c54461444609f5329eacb3c5418116c1d2db58979fc555bb8a67f60c6e14c6e"
+      }
+    },
+    "en": {
+      "spec": {
+        "language": "en",
+        "locale": "en-US",
+        "family": "english39",
+        "parameters": 132318,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "english_paired_harvest_acoustic_v1",
+            "parameters": 86009,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "english_word_plan_version": "english_word_plan5_pause_v1",
+              "english_topology": "english_optional_word_pause_v1",
+              "english_representation_contract": {
+                "version": "english_paired_harvest_20261016_v1",
+                "mode": "warped39",
+                "phonetic_dim": 32,
+                "context_dim": 27,
+                "plan_dim": 5,
+                "channels": 39,
+                "spectral": {
+                  "version": "experimental_logwarp_dct_v1",
+                  "spectral_dim": 32,
+                  "shape_channels": 31,
+                  "warp_knee_Hz": 700.0,
+                  "sample_rate": 16000,
+                  "fft_size": 1024,
+                  "bins": 513,
+                  "taps": 128,
+                  "encoding": "DCT-II ortho(log power on uniform warped axis)[1:dim]/sqrt513",
+                  "DC": "waveform log mean-square energy replaces discarded spectral DC",
+                  "normalization": "trapezoid frequency power mean513 endpoints half, denominator512",
+                  "native_basis_float32_sha256": "33c0aa455d86057acbaf42c46abe790bb30cddb43a75ac41e6349c2afdc1f06f"
+                },
+                "channel_names": [
+                  "logF0",
+                  "log_waveform_energy",
+                  "shape_1",
+                  "shape_2",
+                  "shape_3",
+                  "shape_4",
+                  "shape_5",
+                  "shape_6",
+                  "shape_7",
+                  "shape_8",
+                  "shape_9",
+                  "shape_10",
+                  "shape_11",
+                  "shape_12",
+                  "shape_13",
+                  "shape_14",
+                  "shape_15",
+                  "shape_16",
+                  "shape_17",
+                  "shape_18",
+                  "shape_19",
+                  "shape_20",
+                  "shape_21",
+                  "shape_22",
+                  "shape_23",
+                  "shape_24",
+                  "shape_25",
+                  "shape_26",
+                  "shape_27",
+                  "shape_28",
+                  "shape_29",
+                  "shape_30",
+                  "shape_31",
+                  "AP_0",
+                  "AP_1",
+                  "AP_2",
+                  "AP_3",
+                  "AP_4",
+                  "VUV_logit"
+                ],
+                "control_points": 8,
+                "frame_period_ms": 10,
+                "sample_rate": 16000,
+                "analysis": "Harvest50-400+StoneMask/CheapTrick1024/D4C1024",
+                "AP_edges_Hz": [
+                  0,
+                  500,
+                  1500,
+                  3000,
+                  5000,
+                  8000
+                ],
+                "AP_encoding": "20log10(RMS amplitude ratio)/60",
+                "DSP": "existing native kernel, taps128, gain1, seed1729",
+                "remote_source_commit": "421570a5a42172109633da350f039baae3eb50d7",
+                "postfilter": null
+              }
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/en-US/s0-warped39/acoustic.pt",
+            "architecture_source_sha256": "c6d6b2b79c17aca491f25de729ea804e054b8e1808b14224a82723e857750442",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 1,
+                "basis_key": "compact_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 2,
+                "basis_key": "compact_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 48,
+                "dilation": 4,
+                "basis_key": "compact_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_english_word_planner_v1",
+            "parameters": 46309,
+            "config": {
+              "feature_dim": 195,
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/en-US/s0-warped39/planner.pt",
+            "architecture_source_sha256": "002e465e6b83395ac8ab7b9f1eca85243e10c5b29253732d09e0a24ad0fd281b",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "8635a1aee95a5951bb4e51833c2c835d9c049e1e80401e48bd48958aeba1d8ef"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "304c8b5ffb2d2f3accdab16a0600b49e02eca6479df49c08aa8b4f8cc78f9913"
+      }
+    },
+    "zh": {
+      "spec": {
+        "language": "zh",
+        "locale": "zh-CN",
+        "family": "boundary31",
+        "parameters": 553166,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 42,
+          "base_context_dim": 22,
+          "additional_context_dim": 20
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "linear32_compat23_v1",
+          "neural_channels": 31,
+          "physical_channels": 39,
+          "trained_shape_channels": 23,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_boundary_acoustic_v1",
+            "parameters": 376758,
+            "config": {
+              "width": 192,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 24,
+              "ap_bands": 5,
+              "acoustic_hidden": 192,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 42,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "frame",
+              "channels": 31,
+              "prosody_contract": "context22_plus_prosody12_v1",
+              "segment_skip_hidden": 0,
+              "parameter_budget": 1000000,
+              "phrase_plan_names": [
+                "boundary_none",
+                "boundary_1",
+                "boundary_2",
+                "boundary_3",
+                "prominence_z",
+                "log_duration_ratio",
+                "pitch_level_z",
+                "pitch_range_z"
+              ],
+              "phrase_plan_dim": 8,
+              "boundary_hidden": 32,
+              "boundary_duration_condition": "log1p_predicted_continuous_frames",
+              "boundary_residual_domain": "base_train_scale_times_raw",
+              "boundary_adjacency": "deployment_nonzero_units_v2"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/zh-CN/s1g/acoustic.pt",
+            "architecture_source_sha256": "f7791b387a9d51d7c77392a1962dd7f6d7fd4fedb81bdbfd9251a6a4b796ffa2",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 192,
+                "rank": 96,
+                "dilation": 1,
+                "basis_key": "compact_w192"
+              },
+              "blocks.1.conv": {
+                "width": 192,
+                "rank": 96,
+                "dilation": 2,
+                "basis_key": "compact_w192"
+              },
+              "blocks.2.conv": {
+                "width": 192,
+                "rank": 96,
+                "dilation": 4,
+                "basis_key": "compact_w192"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_phrase_prosody_v1",
+            "parameters": 176408,
+            "config": {
+              "numeric_dim": 66,
+              "embedding_dim": 16,
+              "input_hidden": 64,
+              "gru_hidden": 96,
+              "head_hidden": 64,
+              "dropout": 0.05,
+              "vocab_size": 4057
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/zh-CN/s1g/planner.pt",
+            "architecture_source_sha256": "7a9d49311c35276cb4b0e5a0fa992a94cf0bf788764cc2ade35a1f21567e49f6",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "782535fd280d1a2730559e0ed877f198ccfed10e70514eb10fc93592f99747a8"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "fffba0337f0424d10c4d7702ef47d64130c9767ac81ea05b229f6a2c1fd1f889"
+      }
+    },
+    "sv": {
+      "spec": {
+        "language": "sv",
+        "locale": "sv-SE",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "sv",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "5d83731adb934275b9c59f63ab259c1ffde52d28664f37637b77b6d945808f33"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "4f9fe523f1c83975808b224c7bda5d6ce0a02683d81bb919e4c8d32bbdb05f6c"
+      }
+    },
+    "no": {
+      "spec": {
+        "language": "no",
+        "locale": "nb-NO",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "no",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "5d83731adb934275b9c59f63ab259c1ffde52d28664f37637b77b6d945808f33"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "5331ca801746ba1acd4cf5159d3b634d96d5a79bb4625dafd68a9428fadca9bc"
+      }
+    },
+    "da": {
+      "spec": {
+        "language": "da",
+        "locale": "da-DK",
+        "family": "routed39",
+        "parameters": 142574,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 97849,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "da",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 1,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 2,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 4,
+                "basis_key": "conservative_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "5d83731adb934275b9c59f63ab259c1ffde52d28664f37637b77b6d945808f33"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "d6d8cdcde3f8832c4d4f94144c71856bc72f28bcb2ebcc03c2149597327a64f2"
+      }
+    },
+    "lt": {
+      "spec": {
+        "language": "lt",
+        "locale": "lt-LT",
+        "family": "universal39",
+        "parameters": 261862,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 261862,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 256,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_baltic_frontend_v1",
+              "feature_adapter_version": "baltic_articulatory32_v1",
+              "language": "lt",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/lt-LT/compact39/acoustic.pt",
+            "architecture_source_sha256": "e5c250bd29b7558b8bc08f9c419717acb43e2bd6d96097f914aa2a4d7262a903",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "74a74a23c81d5ff4340bcda8405108722cf3277231b4fa7012781423fbea6075"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "40e8262c85ef4bfff7e707f2fde1a71434be09ea80602344d99f089435ec38ee"
+      }
+    },
+    "lv": {
+      "spec": {
+        "language": "lv",
+        "locale": "lv-LV",
+        "family": "universal39",
+        "parameters": 191806,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 191806,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_baltic_frontend_v1",
+              "feature_adapter_version": "baltic_articulatory32_v1",
+              "language": "lv",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/lv-LV/compact39/acoustic.pt",
+            "architecture_source_sha256": "380573606585cf0e3ead8edd0abbd734a4b950b1803955e5620b472525c116b6",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "74a74a23c81d5ff4340bcda8405108722cf3277231b4fa7012781423fbea6075"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "a9d1385c291d9906017f6522f46bc6b6522354bfa6945c4b23a9cf678f5d7f26"
+      }
+    },
+    "hr": {
+      "spec": {
+        "language": "hr",
+        "locale": "hr-HR",
+        "family": "universal39",
+        "parameters": 191806,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 191806,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_south_slavic_frontend_v2",
+              "feature_adapter_version": "south_slavic_articulatory32_v1",
+              "language": "hr",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/hr-HR/compact39/acoustic.pt",
+            "architecture_source_sha256": "ca4eb02188dd61e7e2c6e61aefc2c82917fa4d416f8038e172419c4b9397e968",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "305c5e21ea707619127212337327db13551ee08ec5df1663cdff97e79da74f8d"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "645457df51e3bf1e1539f027f5b1724f17c5b04a2dfac349ca243d2f9266db59"
+      }
+    },
+    "sl": {
+      "spec": {
+        "language": "sl",
+        "locale": "sl-SI",
+        "family": "universal39",
+        "parameters": 191806,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 191806,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_south_slavic_frontend_v2",
+              "feature_adapter_version": "south_slavic_articulatory32_v1",
+              "language": "sl",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/sl-SI/compact39/acoustic.pt",
+            "architecture_source_sha256": "eb888022e3943d883d2a276a0f8ca2de40df5b7cee8e3bc9484f8d2477a90a4c",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "305c5e21ea707619127212337327db13551ee08ec5df1663cdff97e79da74f8d"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "a64d219ac7560ab51716c3df61171960a4ce0ebb3437d2eac047365734c0ba9c"
+      }
+    },
+    "bg": {
+      "spec": {
+        "language": "bg",
+        "locale": "bg-BG",
+        "family": "universal39",
+        "parameters": 261862,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 34,
+          "base_context_dim": 22,
+          "additional_context_dim": 12
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 261862,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 256,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 34,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_south_slavic_frontend_v2",
+              "feature_adapter_version": "south_slavic_articulatory32_v1",
+              "language": "bg",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/bg-BG/compact39/acoustic.pt",
+            "architecture_source_sha256": "b2829e22d09e784dd5af1cf5332cc5bad337e8a96f5156e2e5f6201c5a1518d5",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "305c5e21ea707619127212337327db13551ee08ec5df1663cdff97e79da74f8d"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "4aa705efc47f011150482eaf8ba58b16c346d91d720d4ef3c0516f0135d37761"
+      }
+    },
+    "cs": {
+      "spec": {
+        "language": "cs",
+        "locale": "cs-CZ",
+        "family": "routed39",
+        "parameters": 142574,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 97849,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "cs",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 1,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 2,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 4,
+                "basis_key": "conservative_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "6130b43d358feda8ec0c9189a9fffa3c3c366257c21d0525f65abf26dbddec95"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "cd83c86795fafe89876b0e632ff4f7a6bd7a38f7161fdcd8a131d10d5f21b84a"
+      }
+    },
+    "sk": {
+      "spec": {
+        "language": "sk",
+        "locale": "sk-SK",
+        "family": "routed39",
+        "parameters": 142574,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 97849,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "sk",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 1,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 2,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 4,
+                "basis_key": "conservative_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "6130b43d358feda8ec0c9189a9fffa3c3c366257c21d0525f65abf26dbddec95"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "16451b9c2f984035329237317dc640630a7df1081fd561d1b2ca3a44a5590ba7"
+      }
+    },
+    "pl": {
+      "spec": {
+        "language": "pl",
+        "locale": "pl-PL",
+        "family": "routed39",
+        "parameters": 142574,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 97849,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "pl",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 1,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.1.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 2,
+                "basis_key": "conservative_w80"
+              },
+              "blocks.2.conv": {
+                "width": 80,
+                "rank": 72,
+                "dilation": 4,
+                "basis_key": "conservative_w80"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "6130b43d358feda8ec0c9189a9fffa3c3c366257c21d0525f65abf26dbddec95"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "17572e9346e0c6e6ed250b943d13eee22036819ab61bad048ca1233949d3f91f"
+      }
+    },
+    "es": {
+      "spec": {
+        "language": "es",
+        "locale": "es-ES",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "es",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/es-ES/routed39/acoustic.pt",
+            "architecture_source_sha256": "45cbfa5cb525b00d6a9119f299645e6f8eb3adb8651f9829f9276b7bc195bc19",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/es-ES/routed39/planner.pt",
+            "architecture_source_sha256": "a905729b8fe7a881f2ba05af9ca9ddb4581fac84d1abd954f7956a1bedfbe199",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "2f061b6273e6d3490d8042f0c88445298a6bbef02807e5c583a44a76375e7ab9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "22e0a8b99d99ea4bc62e0d79d1b3766a79701e1237e45764d8b94b9b911aa102"
+      }
+    },
+    "pt": {
+      "spec": {
+        "language": "pt",
+        "locale": "pt-PT",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "pt",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/pt-PT/routed39/acoustic.pt",
+            "architecture_source_sha256": "29d08bace6c808da39fccd2e0f109cb7fc2a641d62184a46c1e9ab0b6ec87937",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/pt-PT/routed39/planner.pt",
+            "architecture_source_sha256": "b6c7dba371912318851bd7f2b8c2abedfafeecf18de8fcf764976a121642f79d",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "2f061b6273e6d3490d8042f0c88445298a6bbef02807e5c583a44a76375e7ab9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "1a3b555c9ef751d8455ee05d9270f716c1300a711357dbb29a646b8c3a863d57"
+      }
+    },
+    "it": {
+      "spec": {
+        "language": "it",
+        "locale": "it-IT",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "it",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/it-IT/routed39/acoustic.pt",
+            "architecture_source_sha256": "d266a35db3ee2903672b963d041273dccadfd3dc453cbe504539d940d7fca532",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/it-IT/routed39/planner.pt",
+            "architecture_source_sha256": "97a4f8a474feb54a10ba20b003d0ca9bb8deea4739838a49e8fa5c2dc197380f",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "2f061b6273e6d3490d8042f0c88445298a6bbef02807e5c583a44a76375e7ab9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "a836184680a878d98fbb49a60c8dc35ffa1941ba4a7c7b48ea6da3e2684fff78"
+      }
+    },
+    "fr": {
+      "spec": {
+        "language": "fr",
+        "locale": "fr-FR",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "fr",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/fr-FR/routed39/acoustic.pt",
+            "architecture_source_sha256": "2ca11c49f2c5eef362c6e7b41a106ba5436f5d48a56ced1ee36cfa7cea5b4a66",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/fr-FR/routed39/planner.pt",
+            "architecture_source_sha256": "3a6d04f01b4101725450d9e8896e27618bc959f391e192a7aeb09c3162487f68",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "2f061b6273e6d3490d8042f0c88445298a6bbef02807e5c583a44a76375e7ab9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "a9292d919ce0d1997c7965a798c30ddf30c875e83638fde4062cb7bf2edec46a"
+      }
+    },
+    "ro": {
+      "spec": {
+        "language": "ro",
+        "locale": "ro-RO",
+        "family": "routed39",
+        "parameters": 165614,
+        "input": {
+          "phonetic_dim": 36,
+          "context_dim": 27,
+          "base_context_dim": 22,
+          "additional_context_dim": 5
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_romance_routed39_v1",
+            "parameters": 120889,
+            "config": {
+              "width": 80,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 63,
+              "dropout": 0.05,
+              "phonetic_dim": 36,
+              "context_dim": 27,
+              "continuous_voicing": false,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "voiced_prior": 0.5,
+              "vuv_supervision": "control",
+              "channels": 39,
+              "language": "ro",
+              "romance_contract": "numeric36_context22_plan5_warped39_v1",
+              "duration_condition_route": "rate_pause_only_v1"
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/ro-RO/routed39/acoustic.pt",
+            "architecture_source_sha256": "834812e75317988c1664792bb5325f3d589df9b2b492a9306c36cea9ca4585a2",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {},
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          },
+          "planner": {
+            "format": "tiny_romance_numeric_word_planner_v1",
+            "parameters": 44725,
+            "config": {
+              "feature_dim": 162,
+              "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+              "width": 48,
+              "hidden": 32,
+              "layers": 2,
+              "dropout": 0.1
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/ro-RO/routed39/planner.pt",
+            "architecture_source_sha256": "edf2a7ad678c834c6058c6ec1a8da431b8d87310fa901d8acada3858a97124e7",
+            "weights_as_initialization": false
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "2f061b6273e6d3490d8042f0c88445298a6bbef02807e5c583a44a76375e7ab9"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "37c847fa518979fc476d9b6fede3d236bb1bdf162b1657feaa5b546cd1fe8090"
+      }
+    },
+    "el": {
+      "spec": {
+        "language": "el",
+        "locale": "el-GR",
+        "family": "universal39",
+        "parameters": 128158,
+        "input": {
+          "phonetic_dim": 32,
+          "context_dim": 22,
+          "base_context_dim": 22,
+          "additional_context_dim": 0
+        },
+        "output": {
+          "schema": "Acoustic39.v1",
+          "basis_id": "warped700_32_v1",
+          "neural_channels": 39,
+          "physical_channels": 39,
+          "trained_shape_channels": 31,
+          "control_points_per_unit": 8,
+          "frame_shift_ms": 10,
+          "sample_rate": 16000
+        },
+        "components": {
+          "acoustic": {
+            "format": "tiny_universal_acoustic_v2",
+            "parameters": 128158,
+            "config": {
+              "width": 104,
+              "dilations": [
+                1,
+                2,
+                4
+              ],
+              "spectral_dim": 32,
+              "ap_bands": 5,
+              "acoustic_hidden": 88,
+              "dropout": 0.05,
+              "phonetic_dim": 32,
+              "context_dim": 22,
+              "continuous_voicing": true,
+              "control_points": 8,
+              "frame_period_ms": 10,
+              "max_phone_frames": 150,
+              "basis_id": "warped700_32_v1",
+              "frontend_version": "eu_four_frontend_v1",
+              "language": "el",
+              "channels": 39,
+              "voiced_prior": 0.5
+            },
+            "architecture_source_artifact": "/home/fomak/Model/models/el-GR/compact39/acoustic.pt",
+            "architecture_source_sha256": "e0e84e379c4612940325cb4605e007949bb2c703e5d2e23290a2aa1f0426ee5c",
+            "weights_as_initialization": true,
+            "shared_convolution_basis": {
+              "blocks.0.base.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 1,
+                "basis_key": "compact_w104"
+              },
+              "blocks.1.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 2,
+                "basis_key": "compact_w104"
+              },
+              "blocks.2.conv": {
+                "width": 104,
+                "rank": 56,
+                "dilation": 4,
+                "basis_key": "compact_w104"
+              }
+            },
+            "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+          }
+        },
+        "scratch": false,
+        "parent": {
+          "source_group_acoustic_sha256": "efb68a2d962af8078b9c497178957605f0e9c9dcefb870441ac10c3ae0bda248"
+        },
+        "seed": 20261023,
+        "optional_frame_repair_enabled": false,
+        "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+        "source_architecture_sha256": "cd21061de417cb458ff63321bca8af4209c712359f0195da3db804ad7e98a577"
+      }
+    }
+  }
+}

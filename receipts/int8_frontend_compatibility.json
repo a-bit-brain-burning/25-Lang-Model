@@ -1,0 +1,793 @@
+{
+  "rows": [
+    {
+      "key": "bg_01",
+      "language": "bg",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": false,
+          "max_absolute_error": 1.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "cs_01",
+      "language": "cs",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "da_01",
+      "language": "da",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "de_01",
+      "language": "de",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "el_01",
+      "language": "el",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "en_01",
+      "language": "en",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "en_02",
+      "language": "en",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "en_03",
+      "language": "en",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "es_01",
+      "language": "es",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "et_01",
+      "language": "et",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "fi_01",
+      "language": "fi",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "fr_01",
+      "language": "fr",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "hr_01",
+      "language": "hr",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "hu_01",
+      "language": "hu",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "it_01",
+      "language": "it",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "lt_01",
+      "language": "lt",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "lv_01",
+      "language": "lv",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "nl_01",
+      "language": "nl",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "no_01",
+      "language": "no",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "pl_01",
+      "language": "pl",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "pt_01",
+      "language": "pt",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "ro_01",
+      "language": "ro",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "sk_01",
+      "language": "sk",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "sl_01",
+      "language": "sl",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "sv_01",
+      "language": "sv",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "tr_01",
+      "language": "tr",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "zh_01",
+      "language": "zh",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": false,
+          "max_absolute_error": 1.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "zh_02",
+      "language": "zh",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": false,
+          "max_absolute_error": 1.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    },
+    {
+      "key": "zh_03",
+      "language": "zh",
+      "checks": {
+        "phones": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "phonetic": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "context": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        },
+        "pause": {
+          "shape_identical": true,
+          "exact": true,
+          "max_absolute_error": 0.0
+        }
+      },
+      "unknowns": 0
+    }
+  ],
+  "cases": 29,
+  "languages": 25,
+  "all_feature_arrays_exact": false,
+  "elapsed_seconds": 50.84348905299885,
+  "original_acoustic_weights_loaded": false,
+  "reference_audio_or_durations_used": false
+}

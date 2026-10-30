@@ -1,0 +1,28 @@
+{
+  "upstream_commit": "4870adfa25b1a32b4361592f1be8a40337c58d6c",
+  "files": [
+    {
+      "file": "synthdata.c",
+      "upstream_sha256": "776465e7139b8c0e349b0948a8c48a3f2d4ef5e75fe32017ca2de23aa06d465b",
+      "patched_sha256": "0decabadb97b05f6c38be2e46d4eabc5e4d5cde9c564c20cec343301c18f5b14"
+    },
+    {
+      "file": "synthesize.c",
+      "upstream_sha256": "ed4aca3492fbf17f2fed9c3c7cdcc544743395de082e5f6a90c8dcdb918ec419",
+      "patched_sha256": "c47a3f3d8a07a23b6b5f369e1f09941eb6f83454fdfcafe0d658f860d154b6a2"
+    },
+    {
+      "file": "speech.c",
+      "upstream_sha256": "70584c853082141ae4c1de6254e4601085ea0ca06054fb8055852fb2768a70bf",
+      "patched_sha256": "d740f38ab72f9ba6fb905d675f4961607ef9d7290ecf20bc0b40a8d4e072b03b"
+    }
+  ],
+  "retained_header_bytes": 8,
+  "payload_readers_guarded": [
+    "LookupSpect",
+    "GetEnvelope",
+    "DoSample2"
+  ],
+  "public_audio_synthesis": "explicitly unsupported",
+  "phoneme_rule_tables_and_interpreter": "unchanged"
+}

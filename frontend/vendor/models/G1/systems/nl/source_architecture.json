@@ -1,0 +1,71 @@
+{
+  "language": "nl",
+  "locale": "nl-NL",
+  "family": "routed39",
+  "parameters": 156158,
+  "input": {
+    "phonetic_dim": 36,
+    "context_dim": 27,
+    "base_context_dim": 22,
+    "additional_context_dim": 5
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_romance_routed39_v1",
+      "parameters": 111433,
+      "config": {
+        "width": 80,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 63,
+        "dropout": 0.05,
+        "phonetic_dim": 36,
+        "context_dim": 27,
+        "continuous_voicing": false,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "voiced_prior": 0.5,
+        "vuv_supervision": "control",
+        "channels": 39,
+        "language": "nl",
+        "romance_contract": "numeric36_context22_plan5_warped39_v1",
+        "duration_condition_route": "rate_pause_only_v1"
+      },
+      "weights_as_initialization": false
+    },
+    "planner": {
+      "format": "tiny_romance_numeric_word_planner_v1",
+      "parameters": 44725,
+      "config": {
+        "feature_dim": 162,
+        "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+        "width": 48,
+        "hidden": 32,
+        "layers": 2,
+        "dropout": 0.1
+      },
+      "weights_as_initialization": false
+    }
+  },
+  "scratch": true,
+  "parent": null,
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "user explicitly authorized existing Romance156158 architecture for language without selected old model"
+}

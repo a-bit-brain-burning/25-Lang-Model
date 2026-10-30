@@ -1,0 +1,863 @@
+{
+  "language": "de",
+  "adapter_path": "frontend/adapter.py",
+  "adapter_sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2",
+  "frontend_signature": "e5e87fc58590fac7ffc382b0e474e8ade3d7b0c417bbea6df4af5e045355b81a",
+  "phonetic_dim": 36,
+  "base_context_dim": 22,
+  "output_channels": 39,
+  "frame_shift_ms": 10,
+  "sample_rate": 16000,
+  "control_points": 8,
+  "lexicon_path": "",
+  "ordinary_text_does_not_read_reference_audio_or_durations": true,
+  "validation_is_reused_development_not_new_test": true,
+  "novel_texts": [
+    "Morgen früh öffnen wir das Fenster und hören den Vögeln im Garten zu.",
+    "Nach dem Abendessen lesen die Kinder eine neue Geschichte im ruhigen Zimmer."
+  ],
+  "novel_texts_receipt": "/home/fomak/newtts/project/outputs/tts25_userref_20261020_175500/frontend/de/novel_texts.json",
+  "normalization": {
+    "continuous_indices": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "mean": [
+      -0.04206288978457451,
+      0.11140221357345581,
+      0.006834404543042183,
+      2.3695785999298096
+    ],
+    "scale": [
+      0.24193044006824493,
+      1.0136773586273193,
+      0.14789517223834991,
+      0.6243739128112793
+    ],
+    "valid_word_count": [
+      46948,
+      46775,
+      46729,
+      2523
+    ],
+    "fit_split": "train",
+    "clip_z": 3.0,
+    "plan_version": "romance_word_plan5_pause_v1",
+    "missing_fields_are_masked": true,
+    "raw_units": [
+      "log(speech_word_frames/train_expected_phone_frames)",
+      "log_wave_power_residual",
+      "logHz_relative_to_recording_voiced_vowel_median",
+      "log1p_positive_explicit_pause_frames"
+    ]
+  },
+  "baselines": {
+    "phone:7b30037f9cf7c8eeb0d09c0e64488c9da689013273dd18f2888a3f55f6013216": {
+      "duration_mean_frames": 4.110576923076923,
+      "duration_support": 8320,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "global": {
+      "duration_mean_frames": 7.119407745717112,
+      "duration_support": 216326,
+      "energy_mean_log_power": -5.428514383602455,
+      "energy_frame_support": 595115
+    },
+    "phone:37a3b30bb8303b625b1d009b59e92e1061a63c9cfd099655f191417cff95ce0d": {
+      "duration_mean_frames": 9.490318550905684,
+      "duration_support": 1601,
+      "energy_mean_log_power": -5.141152554740551,
+      "energy_frame_support": 15065
+    },
+    "phone:13e9f61841c668892573738a25108256c35ba43c92108c6fea1d568db521dc65": {
+      "duration_mean_frames": 6.938044034818228,
+      "duration_support": 3906,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:8372d4547b22404553fe5723f3c74213ca1de2a0c6bf846601761b7d26c3b858": {
+      "duration_mean_frames": 5.17384916748286,
+      "duration_support": 4084,
+      "energy_mean_log_power": -5.1833179158800755,
+      "energy_frame_support": 20664
+    },
+    "phone:68737c5c2fc93cf1ed543e27ec05ddc006199be1b20fcd8b560eb5930bba9bfc": {
+      "duration_mean_frames": 7.4316393223956245,
+      "duration_support": 7497,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:bc1c191b8cfb79ccb0de2eea1825f1f2f4f01f9ff265a24556c1a04b9f62054e": {
+      "duration_mean_frames": 5.040694789081886,
+      "duration_support": 2015,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:0a4355ace349ed5454b2e624ac96a6e94e7517b98e3fd0cb537e699385b19f81": {
+      "duration_mean_frames": 7.940139480821387,
+      "duration_support": 5162,
+      "energy_mean_log_power": -5.330800623081846,
+      "energy_frame_support": 39820
+    },
+    "phone:6e39faf45b9a9eaeeb3e11911825d72e6655cb2db20bc85f053452e4bdd4183e": {
+      "duration_mean_frames": 4.239812246639642,
+      "duration_support": 4687,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:d17fa877bbaa4fa4a5889553c856665b73474df645705bfc3a41d10597513576": {
+      "duration_mean_frames": 9.381284916201118,
+      "duration_support": 3580,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:e0d54d4520a8cbe05004cd9241278cd6f1d901525abe0186fd1e52cd10fe2bdc": {
+      "duration_mean_frames": 10.647169811320754,
+      "duration_support": 1590,
+      "energy_mean_log_power": -5.336814445175928,
+      "energy_frame_support": 16724
+    },
+    "phone:06179cb0cc1b391efb0c1513360945c9c85e8d4c949d9fb35eabda9763f1f7fa": {
+      "duration_mean_frames": 6.489160425699645,
+      "duration_support": 2537,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:771056a6663d96ea7cb66af42b2fb04a974823ef47b721768121da4209d7c795": {
+      "duration_mean_frames": 9.216958958596999,
+      "duration_support": 5531,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:a5fabc192b5a57da45fab4916d4d547bf74a89e77e829e8d0eb6fe75f11d1699": {
+      "duration_mean_frames": 7.0782684739833845,
+      "duration_support": 2287,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:cb148806f47c2e2b9dfea6a6f2d1ca78352167961abe01c9f643b1390666b151": {
+      "duration_mean_frames": 5.634574341949253,
+      "duration_support": 4217,
+      "energy_mean_log_power": -5.805458942200209,
+      "energy_frame_support": 22562
+    },
+    "phone:27fd440fde221bff672be5718aeafce70f008a3309caae56cecf252994d76d6f": {
+      "duration_mean_frames": 9.704957678355502,
+      "duration_support": 2481,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:5c8fc5c5997c9603dc6b79122ec5acc3fe510ed57addbcd5a700e9622870e113": {
+      "duration_mean_frames": 5.766214177978884,
+      "duration_support": 663,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:020d12f1345f14815b99ec37fb2d010442138e9df60ccf79b46a6ec28178eeba": {
+      "duration_mean_frames": 6.273953357684743,
+      "duration_support": 3559,
+      "energy_mean_log_power": -5.296663672297334,
+      "energy_frame_support": 21928
+    },
+    "phone:02f84253cf632dedc82eb4551ff84d22b9a3cabb6610d0f96d80e1cbc2407f99": {
+      "duration_mean_frames": 6.332392378263938,
+      "duration_support": 1417,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:5e413e7dbc58130022157d1abe5400db7703b089d3b93fc611a62b0784001b81": {
+      "duration_mean_frames": 7.674097664543525,
+      "duration_support": 1884,
+      "energy_mean_log_power": -5.462999511598292,
+      "energy_frame_support": 13649
+    },
+    "phone:fc3c60b8dc651bf83dfeaaf7fa23293baa2ce9d15f3b5f33cb438d062deca9e1": {
+      "duration_mean_frames": 10.823260073260073,
+      "duration_support": 2184,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:0e558e8c6110cbc65a70617e20598f7cac051b3399ba0847c4b21231e55c9541": {
+      "duration_mean_frames": 5.406796116504855,
+      "duration_support": 1030,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:c612bf8e5b5aa85fb2778e5e2d6bc6b7806c04232f96736edb9c76bfaacaec56": {
+      "duration_mean_frames": 11.50943396226415,
+      "duration_support": 477,
+      "energy_mean_log_power": -5.879555870756631,
+      "energy_frame_support": 5405
+    },
+    "phone:eaa0755e1c975e82300e4956d03a1bcce84fb257b2d7418308952c5b082cddcc": {
+      "duration_mean_frames": 5.15893563466379,
+      "duration_support": 2781,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:f7bdd8a5091e1aefea63d282179f5d63d471971edfdf4e402b9128f762511872": {
+      "duration_mean_frames": 3.7567238729508197,
+      "duration_support": 15616,
+      "energy_mean_log_power": -5.65892723299018,
+      "energy_frame_support": 56781
+    },
+    "phone:2adb1d920be6a775c92b74fa5f9c43327d1e9dde3bc5d7bb7b055b31175f9b2c": {
+      "duration_mean_frames": 7.257687626774848,
+      "duration_support": 12325,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:f63a2765f2e708c87f1257fd62d19a8f082f0583c8e6509c4a3b58d6a6be32cf": {
+      "duration_mean_frames": 12.46271186440678,
+      "duration_support": 590,
+      "energy_mean_log_power": -5.441488357883826,
+      "energy_frame_support": 7026
+    },
+    "phone:d0bcc1cd2db3f2903a49ec651f9457200eef32e30090252dbf055906d074dab8": {
+      "duration_mean_frames": 7.781308411214953,
+      "duration_support": 535,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:413068f7edced56b5e2d670a4c12d2d6431279fe6aa1c37ac228d25c6a7a5520": {
+      "duration_mean_frames": 5.989431658055425,
+      "duration_support": 4258,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:995c4c4df4b9c0a817feb44d02d674d914a9b2fc88c0238fe26d30b4f2a526ca": {
+      "duration_mean_frames": 12.077675659650163,
+      "duration_support": 3373,
+      "energy_mean_log_power": -5.243005703241111,
+      "energy_frame_support": 40259
+    },
+    "phone:a2a929074b096cd3cfe73abf2034751c6f7f45960c0d07d7f68fa248ff549d83": {
+      "duration_mean_frames": 9.836126629422719,
+      "duration_support": 1611,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:9dd37e125ea0fcc5acc7c1a35dc888231101e4ffe55ab895c154c3c544601b4c": {
+      "duration_mean_frames": 6.836212760168684,
+      "duration_support": 7351,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:7a3bb979f52a8c0b8f31141df8e357d7b4fe7d33c01396e3f2681ea9a5ae09ec": {
+      "duration_mean_frames": 6.254559270516717,
+      "duration_support": 1316,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:a977221852e9e10bece16d9b45130ee7887f8744c90a0efbd46621fe98710b7e": {
+      "duration_mean_frames": 10.278546712802768,
+      "duration_support": 1734,
+      "energy_mean_log_power": -5.236353608647708,
+      "energy_frame_support": 17666
+    },
+    "phone:3fac5789ad3c224f22e2120d1542c3b61f6cd65aca89f5f6457a2bd4b394e7aa": {
+      "duration_mean_frames": 10.674650698602795,
+      "duration_support": 1002,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:77d3d9b4f81247a59b40dafd724d698bca50940e319128e8e5c59fce88f91541": {
+      "duration_mean_frames": 8.02734375,
+      "duration_support": 1536,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:285fd82a168168f6eb28f4e003a7f3eb90923c30e2ee80193e5551c6ecfe9e3c": {
+      "duration_mean_frames": 8.383314543404735,
+      "duration_support": 887,
+      "energy_mean_log_power": -6.15132190681115,
+      "energy_frame_support": 7061
+    },
+    "phone:5cdb858d731e58510eb55f4ea50fdde44da1e22183c8b54466cd10d71357c78a": {
+      "duration_mean_frames": 6.298929663608563,
+      "duration_support": 1308,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:26b68d8fea965f059847603131cb943895eb28812baab52eecf1920582589ca2": {
+      "duration_mean_frames": 9.340925789860396,
+      "duration_support": 2722,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:04aa2e13c2486efc122e682f2f3d3bba781fada7657822b8dc5e5d144e37e201": {
+      "duration_mean_frames": 6.7686170212765955,
+      "duration_support": 376,
+      "energy_mean_log_power": -5.041946379193365,
+      "energy_frame_support": 2538
+    },
+    "phone:4df00c17df243c20b2d7ef3f8c0adb084ea26fb6f3fdbdb7dfdedff704739fcb": {
+      "duration_mean_frames": 5.273185483870968,
+      "duration_support": 1984,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:37a7331a06327d0221e29e14e61798a1890a44fec51a5794ea0336f883f64818": {
+      "duration_mean_frames": 6.579185520361991,
+      "duration_support": 663,
+      "energy_mean_log_power": -5.586690324241738,
+      "energy_frame_support": 4286
+    },
+    "phone:eb6a85fa37b3818c178927a9e4304a4811decc64f7557e6753f7bef089494be0": {
+      "duration_mean_frames": 7.657180675049636,
+      "duration_support": 3022,
+      "energy_mean_log_power": -5.2939819860047574,
+      "energy_frame_support": 22867
+    },
+    "phone:1863c273141d8b8a9726ee8ffbb33ea577ddba8edc814838f83c73b5a65186f9": {
+      "duration_mean_frames": 6.866385911179173,
+      "duration_support": 7836,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:6975c0bf1f21b7e87102d38ceadcd532f8319c27812471da3474037766d55f42": {
+      "duration_mean_frames": 6.996530454895914,
+      "duration_support": 2594,
+      "energy_mean_log_power": -5.208597739675076,
+      "energy_frame_support": 17915
+    },
+    "phone:9c67c5a6e5b2a5b8769eae1c52d14c88226984c2928dd00f19796174b52e910f": {
+      "duration_mean_frames": 12.716235982447586,
+      "duration_support": 2051,
+      "energy_mean_log_power": -5.549272504941834,
+      "energy_frame_support": 25090
+    },
+    "phone:b2d9565920f170a4c9b00601ac9b8e96a900600df04e11015ee9b8f2ea8f93b7": {
+      "duration_mean_frames": 9.573551713679102,
+      "duration_support": 3297,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:91818717f16d80e81e5317acec118b6b27772b5db76c6b3737a833c1360a0af4": {
+      "duration_mean_frames": 8.422378759143863,
+      "duration_support": 3691,
+      "energy_mean_log_power": -5.723538550669965,
+      "energy_frame_support": 30562
+    },
+    "phone:8cda117064d69d9ce32dff21fcc318142e26275fcf7cec1c35925df4a239a6eb": {
+      "duration_mean_frames": 6.930930930930931,
+      "duration_support": 1332,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:49e713b498d18378039287c630c542b656beccc6758798bff4d9e5107a786b3c": {
+      "duration_mean_frames": 10.37037037037037,
+      "duration_support": 243,
+      "energy_mean_log_power": -4.96719745208294,
+      "energy_frame_support": 2513
+    },
+    "phone:3050552fa6d7f0ab8e50ae89fb1a7f332cfd9805da3aba0d94a1bc8615ad7bb8": {
+      "duration_mean_frames": 5.148161120840631,
+      "duration_support": 2855,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:3135f55b4d4edea2953689fbb8bc4b173feffff9fb5c4d395cb22f5a06a7420e": {
+      "duration_mean_frames": 6.8168734491315135,
+      "duration_support": 2015,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:1cd0d7d37d0c999c7c82002ff12bd378b573119d34daf8f36ca235e0f2bb3dd0": {
+      "duration_mean_frames": 2.136228756406798,
+      "duration_support": 3707,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:ae8e838ec450abcd94e760edfa55e9b015f65cf993bac3db28752fd68fb12a2a": {
+      "duration_mean_frames": 5.357928343384179,
+      "duration_support": 2819,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:99c74623a74a3ff27a3fbbbd0fe50327766998957514d09fe29cfbad1165bc0a": {
+      "duration_mean_frames": 7.797297297297297,
+      "duration_support": 1776,
+      "energy_mean_log_power": -5.255255217573053,
+      "energy_frame_support": 13710
+    },
+    "phone:346d2ef1c31053ce5a4a850daeaa686f527cd79feba8095c206e82286f1bedd0": {
+      "duration_mean_frames": 6.3972171173536365,
+      "duration_support": 3809,
+      "energy_mean_log_power": -5.006409834391725,
+      "energy_frame_support": 24098
+    },
+    "phone:ced75546358d28bef366be41a6c7b8d7dfdc2ebff179e632e6d133ed159bbd90": {
+      "duration_mean_frames": 5.196078431372549,
+      "duration_support": 408,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:c562dc94260e0fa8faa12b1d9d7887770fc3cd6c495044396ee8b4f251d36977": {
+      "duration_mean_frames": 7.3108108108108105,
+      "duration_support": 444,
+      "energy_mean_log_power": -5.946056304449393,
+      "energy_frame_support": 3085
+    },
+    "phone:0dbe6dbbdeb6040449f2cbbed2faa1b6399eeb8a05ddd57eda7ba41927a73e17": {
+      "duration_mean_frames": 8.492366412213741,
+      "duration_support": 262,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:bdf0d19f90f632eb21748ff12eadba3abcef60853f8d4f20b7143a5a85289db5": {
+      "duration_mean_frames": 4.554751131221719,
+      "duration_support": 1105,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:73f2fb3f4c01d101b8eb2300bf2b50f5b85405aa8e0fafc331b926276fc520d4": {
+      "duration_mean_frames": 11.190041493775933,
+      "duration_support": 1205,
+      "energy_mean_log_power": -5.669713335922723,
+      "energy_frame_support": 13064
+    },
+    "phone:930a897651d0681c12cf1904fccdfa10ad0556d4b6dff716df942352d117a3e9": {
+      "duration_mean_frames": 7.6993318485523385,
+      "duration_support": 898,
+      "energy_mean_log_power": -5.4137249227046755,
+      "energy_frame_support": 6833
+    },
+    "phone:4ef5f6813928932aa7946de6adce5c40f3c76faaf3c900fa0c9c33f07a3b154b": {
+      "duration_mean_frames": 7.25,
+      "duration_support": 40,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:568c3e2a31f0df44d91fff40b42fad2983fe2181bf61b9e11f0fd8e3384374ba": {
+      "duration_mean_frames": 6.845088161209068,
+      "duration_support": 794,
+      "energy_mean_log_power": -5.362832152111801,
+      "energy_frame_support": 5344
+    },
+    "phone:b776240bc2a85998579a2a3bb768bfc8814ec1e74b3535afc9e428e11db8dfea": {
+      "duration_mean_frames": 7.539870689655173,
+      "duration_support": 928,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:bd1cdb9e58b438154be310004a5d54c4d9fdc1abdf77417a658f15cf5aaa5b07": {
+      "duration_mean_frames": 9.302139037433156,
+      "duration_support": 2244,
+      "energy_mean_log_power": -5.298709678054892,
+      "energy_frame_support": 20716
+    },
+    "phone:1c964e079081c6b8d1da7a07fcb7e8566a147ef8e87209504f9af783e1113354": {
+      "duration_mean_frames": 6.092198581560283,
+      "duration_support": 1410,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:6cad4a0b3816fffe95ef0791d881e625ddab3706b95ab190e77cc7811de0d0c7": {
+      "duration_mean_frames": 8.11032028469751,
+      "duration_support": 1405,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:ba6be5938e9c3586ce2dea73963bac374f3ce542f71424939bbcc117380870f8": {
+      "duration_mean_frames": 9.062906724511931,
+      "duration_support": 922,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:605b6254ef61ff063b600e64a77cd1e2f0dfd9f72e82345ad6f6eb500cc057aa": {
+      "duration_mean_frames": 7.18898931799507,
+      "duration_support": 1217,
+      "energy_mean_log_power": -5.667745056467341,
+      "energy_frame_support": 8568
+    },
+    "phone:e66685157ba6321a59493dd14138c2d2dad8025ff622f09a4b3bdf3cdb1c6e99": {
+      "duration_mean_frames": 9.434725848563968,
+      "duration_support": 766,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:aa53d6bcafc46fc829de44242892ea58b34828cf2948653a92bd4c4fef119b40": {
+      "duration_mean_frames": 10.71107544141252,
+      "duration_support": 2492,
+      "energy_mean_log_power": -5.291519046004995,
+      "energy_frame_support": 26533
+    },
+    "phone:2ac5454437a25e4163854a52aecb06d04d965c839f46f6afa7357fbf93f3f382": {
+      "duration_mean_frames": 5.7897058823529415,
+      "duration_support": 680,
+      "energy_mean_log_power": -5.773011812479344,
+      "energy_frame_support": 3811
+    },
+    "phone:4463315d98ed3feba6367ce0d20f1cd752495fb9503e9254a3b1dde8b25658e1": {
+      "duration_mean_frames": 1.6,
+      "duration_support": 5,
+      "energy_mean_log_power": -6.580633997917175,
+      "energy_frame_support": 8
+    },
+    "phone:d031bea0163807870ee14d421ce8a74615918cb24f9b30ec94d32e65c3e43f89": {
+      "duration_mean_frames": 8.827721221613157,
+      "duration_support": 1277,
+      "energy_mean_log_power": -5.452398695745723,
+      "energy_frame_support": 11014
+    },
+    "phone:f392edf097167e03595c517c9803f60b7a8175d7d2a052b0396ea96fe41172f7": {
+      "duration_mean_frames": 8.654521795705922,
+      "duration_support": 1537,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:aa331864c44d4e585ac75c38e86201bd52f08fb3adcb36daf6d59adceb9904b8": {
+      "duration_mean_frames": 8.39572192513369,
+      "duration_support": 187,
+      "energy_mean_log_power": -6.0178033013118615,
+      "energy_frame_support": 1461
+    },
+    "phone:34894b82612b71794d02c3b8b770ae1814e69d9daf3b249039d79559fd24cd63": {
+      "duration_mean_frames": 7.455399061032864,
+      "duration_support": 852,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:6cb393b3bdce0d0c1bb21e71f274906f1e9e59990b266fc232544ebb39842670": {
+      "duration_mean_frames": 8.161602209944752,
+      "duration_support": 1448,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:75a45a5cb701d0d53c899c5e33355fa188f9812517a0a15962812e92d1e22ba4": {
+      "duration_mean_frames": 5.442376521116679,
+      "duration_support": 1397,
+      "energy_mean_log_power": -4.849452628741688,
+      "energy_frame_support": 7516
+    },
+    "phone:f3193556b04ed5a64d8146a5d04d0d96d3abdaf342f87fc6eae9ab03211256cb": {
+      "duration_mean_frames": 9.142307692307693,
+      "duration_support": 520,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:e64e40df09011290869928c35492a17baa8c068643b60b35d970337c042617c0": {
+      "duration_mean_frames": 11.425,
+      "duration_support": 200,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:ca72bf71223cbc8d8b4a07e0d47af44392e8e560524d60303ed9ae7f247f3638": {
+      "duration_mean_frames": 8.243103448275862,
+      "duration_support": 580,
+      "energy_mean_log_power": -5.708751425363754,
+      "energy_frame_support": 4676
+    },
+    "phone:d8d0a496d9ae580b6f06a142cdd8ad5c4dd8c4f114d1b030947e35cddf4cd80d": {
+      "duration_mean_frames": 7.803030303030303,
+      "duration_support": 396,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:cbde40f9abd17024466eda728d4d0de7090ecd06c025ef6b3f84c626e5a49fbe": {
+      "duration_mean_frames": 4.431034482758621,
+      "duration_support": 58,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:f85198f2c2190dda02514688989634aa0718838777a345e5c0946b3a26e814be": {
+      "duration_mean_frames": 9.297029702970297,
+      "duration_support": 101,
+      "energy_mean_log_power": -5.839315253160732,
+      "energy_frame_support": 924
+    },
+    "phone:ea52953e37e80ba2c199e7e0fb0af7df7f8691c23d3cd93f7e88a7814e6047da": {
+      "duration_mean_frames": 8.2906548933039,
+      "duration_support": 1359,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:225f30c316fe779c6e4cf11b7fcc9c446de0b343dd8b34d971c18474ad3fb333": {
+      "duration_mean_frames": 4.929152148664344,
+      "duration_support": 861,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:f26fa5b24cab9df1bc5d78b98c3d04d4b40c30f6aa90a9b48f649ac4d106b47c": {
+      "duration_mean_frames": 9.883928571428571,
+      "duration_support": 112,
+      "energy_mean_log_power": -5.232590211156953,
+      "energy_frame_support": 1094
+    },
+    "phone:4fcd5a501901665015030907edc9d060bdc9efed70d2716269d6f73e7b33fdc9": {
+      "duration_mean_frames": 6.8853754940711465,
+      "duration_support": 506,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:308b8cd8b738a5c4f68ce432107568a2b41b6bc7122b23b89fefd2dcac965297": {
+      "duration_mean_frames": 5.986615678776291,
+      "duration_support": 523,
+      "energy_mean_log_power": -4.939345798764823,
+      "energy_frame_support": 3116
+    },
+    "phone:6c1f2a9731dfa337d0ae36b6f578b423d678aee7dd3e7c45e437e439b0b3ec04": {
+      "duration_mean_frames": 10.28804347826087,
+      "duration_support": 184,
+      "energy_mean_log_power": -5.354215455017211,
+      "energy_frame_support": 1881
+    },
+    "phone:9494a29747a7c269ba90187c57b36ab2436d965e4d799a875aa585f2cd15da23": {
+      "duration_mean_frames": 8.364583333333334,
+      "duration_support": 384,
+      "energy_mean_log_power": -5.625811858019169,
+      "energy_frame_support": 3078
+    },
+    "phone:6dbb3ce92d9722964357e7a5114c35044b28ee3731777b54f66e73113be885e3": {
+      "duration_mean_frames": 7.452344931921331,
+      "duration_support": 661,
+      "energy_mean_log_power": -5.312591120823106,
+      "energy_frame_support": 4824
+    },
+    "phone:8dde18a4db33d2555729bf5541dc9f9f68d12a614523bbf29e26b6759752e58c": {
+      "duration_mean_frames": 7.355102040816327,
+      "duration_support": 490,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:6b771cfda9a5bffefd8ae28643ed80819fdd90f7559a959b184eead832e4e012": {
+      "duration_mean_frames": 9.464566929133857,
+      "duration_support": 381,
+      "energy_mean_log_power": -5.758390598811887,
+      "energy_frame_support": 3520
+    },
+    "phone:76681aa8039db9e30ddac4b4133361db8ded936dbbcb628c65350c258ce297b6": {
+      "duration_mean_frames": 8.850574712643677,
+      "duration_support": 87,
+      "energy_mean_log_power": -6.314027094523112,
+      "energy_frame_support": 750
+    },
+    "phone:97efe03217c2b53be01ef9b41e88918abf8a4925e2dab4a00d32599ee510c910": {
+      "duration_mean_frames": 5.768115942028985,
+      "duration_support": 69,
+      "energy_mean_log_power": -5.987356197679198,
+      "energy_frame_support": 385
+    },
+    "phone:006b939fdcb9567cc0a7f489f592f27fa37b43732c412a3154d317a8921f69fa": {
+      "duration_mean_frames": 3.6161096829477293,
+      "duration_support": 1167,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:5826c4b85349e2193c42e3a73ef728161248976e11a97ff715e3ec3fcd7aeb80": {
+      "duration_mean_frames": 8.588983050847459,
+      "duration_support": 472,
+      "energy_mean_log_power": -5.862570309034097,
+      "energy_frame_support": 3981
+    },
+    "phone:d27c7d3680cf755e5266d9d9e72a00d89d7941d27968b7fcd7ea68f0dd904c21": {
+      "duration_mean_frames": 11.155688622754491,
+      "duration_support": 334,
+      "energy_mean_log_power": -5.330714475174654,
+      "energy_frame_support": 3689
+    },
+    "phone:e0d02560c6dba3744454aba5f3851a38eab937ee5dc58725538cf85073814c15": {
+      "duration_mean_frames": 5.309978768577495,
+      "duration_support": 942,
+      "energy_mean_log_power": -5.594768510503561,
+      "energy_frame_support": 4815
+    },
+    "phone:264fa8d6569c9f379ce04f7437636f9b0e328cc4caf10129b04533d4c82302fe": {
+      "duration_mean_frames": 11.804260985352863,
+      "duration_support": 1502,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:72db9b3de90df012a740d7a982e080c796c4497598d9aeb40da409c8c7762cd7": {
+      "duration_mean_frames": 11.941113490364026,
+      "duration_support": 934,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:1cfd033f1237ee8e833a81b829401fee6cb8f4c6bc39c3f09515735a0a1f9285": {
+      "duration_mean_frames": 6.553921568627451,
+      "duration_support": 612,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:34c09828c5951128f11b233c95cda4d546b897bcd7bdc6e97a023825db2e8d30": {
+      "duration_mean_frames": 6.384328358208955,
+      "duration_support": 268,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:790d7c416bd5dc5c6634615a87c589ea6944bc8891746dcda31ce74d3ded9ff0": {
+      "duration_mean_frames": 6.661971830985915,
+      "duration_support": 426,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:0bce16f03439b64382ee15b6d72286be93ea489481bea09f88ffadb46b8a12ec": {
+      "duration_mean_frames": 5.996699669966997,
+      "duration_support": 303,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:ae4b3bdc858c6aa33222bd9bef06183e37dc72788b852e9452874f99f343ecbf": {
+      "duration_mean_frames": 11.07857142857143,
+      "duration_support": 280,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:1a4e486d396b6f9c8485c6001b5550c3a5fd4370aa4ff4b33dd2fa4d000c6f30": {
+      "duration_mean_frames": 6.201117318435754,
+      "duration_support": 358,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:43bcb83468f81d0a71100713e02ca325d016f56619dfb3a57b1185151dab3052": {
+      "duration_mean_frames": 13.101030927835051,
+      "duration_support": 485,
+      "energy_mean_log_power": -6.385939005300675,
+      "energy_frame_support": 6173
+    },
+    "phone:92e225d87dc305aadcce1730235d245729b59f79b45f6008d0c2d39da7290805": {
+      "duration_mean_frames": 9.053042121684868,
+      "duration_support": 641,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:b307dd40bf589b663334f0a2b6730d6ebc14220596628481f8ff14fa22b6ddbb": {
+      "duration_mean_frames": 13.075757575757576,
+      "duration_support": 66,
+      "energy_mean_log_power": -6.17549888088934,
+      "energy_frame_support": 857
+    },
+    "phone:884acfc9210e31fd1c7c838d7c77304ae275fc020b57785640165b8a075c653f": {
+      "duration_mean_frames": 11.033333333333333,
+      "duration_support": 30,
+      "energy_mean_log_power": -5.718593965154706,
+      "energy_frame_support": 330
+    },
+    "phone:58d17f24be7f0ca9d50e2ffc56841c9c57fb704c027bd3ba1952af89f215f9e3": {
+      "duration_mean_frames": 9.37992125984252,
+      "duration_support": 508,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:e63b0687d21c24eb7c14699402b4287e45fa001ec69f2e684f9a5734457cbee3": {
+      "duration_mean_frames": 10.203463203463203,
+      "duration_support": 231,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:28f96d38a712e9964a57aef0f94494ab33096e2f71730b405582492a823a92a9": {
+      "duration_mean_frames": 8.028225806451612,
+      "duration_support": 248,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:9ae5892c72ce7b48e1f4043973ab236c166e91d15cf17eedb7e88e59e97b303c": {
+      "duration_mean_frames": 14.043859649122806,
+      "duration_support": 114,
+      "energy_mean_log_power": -5.971263926981968,
+      "energy_frame_support": 1569
+    },
+    "phone:b16ff1c84c55b9e9fd119dd833bfbeab08f8592d3aa9a66687e5bbcb4a506cf6": {
+      "duration_mean_frames": 13.755458515283843,
+      "duration_support": 458,
+      "energy_mean_log_power": -5.2336746619058365,
+      "energy_frame_support": 6278
+    },
+    "phone:e102357468a869eb1e9d5a62b7f5e0e9be6e73372542b9df00db79edde8aa93f": {
+      "duration_mean_frames": 7.535087719298246,
+      "duration_support": 114,
+      "energy_mean_log_power": -5.169046879671291,
+      "energy_frame_support": 835
+    },
+    "phone:53d0a37ed68301d62d40e3dab065840d0ff7bee79030e17608220db9cd4703cb": {
+      "duration_mean_frames": 8.5,
+      "duration_support": 46,
+      "energy_mean_log_power": -5.290688528842533,
+      "energy_frame_support": 388
+    },
+    "phone:ad53342de652dc31f70367e5ed614d88a4b6ce9f9409cd1f6a4d81857457d649": {
+      "duration_mean_frames": 9.816023738872403,
+      "duration_support": 337,
+      "energy_mean_log_power": -5.075928076252793,
+      "energy_frame_support": 3300
+    },
+    "phone:992150f6f555ad644813256069eb324ece654242dae2e2923d95f44baffbca48": {
+      "duration_mean_frames": 5.394736842105263,
+      "duration_support": 76,
+      "energy_mean_log_power": -5.421142020637606,
+      "energy_frame_support": 405
+    },
+    "phone:18f988fd7d70b9c12a159e93a74b8994ec8cab7b5d5390d9ae9d0e83e74024cb": {
+      "duration_mean_frames": 10.318181818181818,
+      "duration_support": 22,
+      "energy_mean_log_power": -5.959261720733983,
+      "energy_frame_support": 224
+    },
+    "phone:5c0ecc22ed81e3fb40d30f1652c5df1a3a76da765c85a3f17d83343ce6f098f8": {
+      "duration_mean_frames": 12.385964912280702,
+      "duration_support": 57,
+      "energy_mean_log_power": -5.873755866047964,
+      "energy_frame_support": 692
+    },
+    "phone:95d84f401a2f74eae0de93682736d3f27f5dbd50d783c669944a9f63ed7cf96a": {
+      "duration_mean_frames": 1.6216216216216217,
+      "duration_support": 37,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:f3069d3cd1c50493723078de007b3de59558e1f9700173e316a9d766cab71b6f": {
+      "duration_mean_frames": 9.545454545454545,
+      "duration_support": 44,
+      "energy_mean_log_power": -5.8492162349450325,
+      "energy_frame_support": 411
+    },
+    "phone:3e61194b0fd51199e60954d3d077c6e43ff899ac3ab0854d84add9398479d513": {
+      "duration_mean_frames": 8.833333333333334,
+      "duration_support": 24,
+      "energy_mean_log_power": -5.443689692367628,
+      "energy_frame_support": 206
+    },
+    "phone:b02a360a7fbb950e385a4472f45e333847be37bb5f7759a0ceab4bddd796e50c": {
+      "duration_mean_frames": 8.411764705882353,
+      "duration_support": 17,
+      "energy_mean_log_power": -5.600033423283717,
+      "energy_frame_support": 143
+    },
+    "phone:0cad8338141efe5bc8fa3d29df86ceec5347659d263e576d79523fbe1fbc3df1": {
+      "duration_mean_frames": 9.659090909090908,
+      "duration_support": 44,
+      "energy_mean_log_power": -5.950383461263192,
+      "energy_frame_support": 418
+    },
+    "phone:f1db5e5feb62f30d00eb6198f90803c93a4921cbb12c4e037bfc41627bd561e4": {
+      "duration_mean_frames": 2.125,
+      "duration_support": 8,
+      "energy_mean_log_power": 0.0,
+      "energy_frame_support": 0
+    },
+    "phone:5f53967bbca76e5b4954870e13658fcb57239320140d099c533cf4dd9121718f": {
+      "duration_mean_frames": 7.0,
+      "duration_support": 1,
+      "energy_mean_log_power": -5.209754194532122,
+      "energy_frame_support": 7
+    },
+    "phone:70d63d7375ab67201917389c1381bebeed8f8b68082ac68d4fb46fb0d8f28ae9": {
+      "duration_mean_frames": 4.0,
+      "duration_support": 1,
+      "energy_mean_log_power": -4.935195326805115,
+      "energy_frame_support": 4
+    }
+  },
+  "packaging": {
+    "adapter_and_lexicon_paths": "relative to bundle; resolve in memory",
+    "espeak": "inject paths from installed espeakng-loader; do not use original-host adapter defaults",
+    "frontend_code_and_dictionary_bytes_unchanged": true
+  },
+  "source_preparation_status_historical": "TEXT_INPUTS_READY_REAL_AUDIO_CHAIN_PENDING",
+  "inference_status": "PACKAGING_VERIFIED"
+}

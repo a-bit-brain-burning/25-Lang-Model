@@ -1,0 +1,132 @@
+[
+  {
+    "path": "README.txt",
+    "bytes": 717,
+    "sha256": "962f6c6ea86be77924ada2a50d958105aeb545e11420c51cbdb6382ad5aca861"
+  },
+  {
+    "path": "assets/acoustic_model_config.json",
+    "bytes": 1564,
+    "sha256": "080d818ad61a47dd722c3608d0f99a4abb08fd52713c7b43e60f6637fa3f5bd4"
+  },
+  {
+    "path": "assets/hifigan_config.json",
+    "bytes": 794,
+    "sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06"
+  },
+  {
+    "path": "assets/hifigan_model_config.json",
+    "bytes": 1156,
+    "sha256": "0ac28ee7bcec978d47591f2696273fd4ecc00fe53fafec7860e456d17ba98be2"
+  },
+  {
+    "path": "assets/normalization.json",
+    "bytes": 121885,
+    "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+  },
+  {
+    "path": "assets/vocabulary.json",
+    "bytes": 3887,
+    "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+  },
+  {
+    "path": "codec.py",
+    "bytes": 4608,
+    "sha256": "efa2c0882f62ced6cf8bd0fbb34750bf28304776ba74a43233bd1932c990139c"
+  },
+  {
+    "path": "licenses/hifi_gan/LICENSE",
+    "bytes": 1067,
+    "sha256": "5eec017ce442989e01a46cd9cd6aeb13cd0aa3b3943f681577bda00475afaa23"
+  },
+  {
+    "path": "licenses/hifi_gan/PROVENANCE.json",
+    "bytes": 1202,
+    "sha256": "cff325862a0a1500971ece5ec201f15c02dfdc62322dcd2300ee91686c040f27"
+  },
+  {
+    "path": "quantization.json",
+    "bytes": 66458,
+    "sha256": "5950f04bbafbaf1dee998778bb5cd93992b897ae3e70b33b0ab7a01c50e59acb"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 41,
+    "sha256": "ddb3f80c9bfd4662feed94894f3c21ad6b580514fcc76e460a063480d835f14c"
+  },
+  {
+    "path": "runtime/new25_acoustic/__init__.py",
+    "bytes": 463,
+    "sha256": "51bc89788aeddba72bb2fc169f48cc3bc771e9fc0c9b8f340bb0c2914062d5a9"
+  },
+  {
+    "path": "runtime/new25_acoustic/batching.py",
+    "bytes": 2385,
+    "sha256": "e6f2b7795ad543fda27eb543060d08dad194a055eafe0eeaa8006a211a3d7a66"
+  },
+  {
+    "path": "runtime/new25_acoustic/contracts.py",
+    "bytes": 3761,
+    "sha256": "0d51b63ecb4a5836e1b88001e21fef08959b9e7535bb0d1477c2400d0d4cda8e"
+  },
+  {
+    "path": "runtime/new25_acoustic/data.py",
+    "bytes": 6694,
+    "sha256": "0e0a7b76ede1f2673e425307c9bc57ac45d8e5ec35a69178835d46900634293e"
+  },
+  {
+    "path": "runtime/new25_acoustic/inference.py",
+    "bytes": 18788,
+    "sha256": "500b3c7502c7d9002b693511cd5a267457478253129b6d4ca5866e73ac5f1aec"
+  },
+  {
+    "path": "runtime/new25_acoustic/losses.py",
+    "bytes": 2088,
+    "sha256": "650b5794fdb4a087ce57d62439e34bb8050c86d744b849a3488e1e4db6a4fa88"
+  },
+  {
+    "path": "runtime/new25_acoustic/model.py",
+    "bytes": 4872,
+    "sha256": "6e05a51d7f83c55566eb2032760887211e41cc092535456807208718794b7cdd"
+  },
+  {
+    "path": "runtime/new25_acoustic/vocoder.py",
+    "bytes": 2940,
+    "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
+  },
+  {
+    "path": "runtime/new25_hifigan/__init__.py",
+    "bytes": 489,
+    "sha256": "1a972ba8440b3656e7cb65de1916e743b5cb36d0821dddee0e4243dd457d1204"
+  },
+  {
+    "path": "runtime/new25_hifigan/frontend.py",
+    "bytes": 3675,
+    "sha256": "11e31760cebc18fe8cf3e88bf3e522a57c0d36c5692f563a10fdb2d0255906a1"
+  },
+  {
+    "path": "runtime/new25_hifigan/inference.py",
+    "bytes": 13137,
+    "sha256": "7eec39f53f5414b842bcf97c79ef50aefc952ccb8709444922600e048849e44f"
+  },
+  {
+    "path": "runtime/new25_hifigan/model.py",
+    "bytes": 6174,
+    "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
+  },
+  {
+    "path": "runtime.py",
+    "bytes": 1640,
+    "sha256": "05dc02bc6146617bee7e72bb32aa84037ae1cb04cfb0b0f6fe0efe6092c3ab14"
+  },
+  {
+    "path": "synthesize_features.py",
+    "bytes": 1254,
+    "sha256": "37df418cc6d8d0175629b0849d36a715a7219450e7afef1d7d15f51b22e895bf"
+  },
+  {
+    "path": "weights.safetensors",
+    "bytes": 4154768,
+    "sha256": "ba8824f6fe9cf07d2bedbfe981f723376d41b270aa8a99fec4f2573a08849bd6"
+  }
+]

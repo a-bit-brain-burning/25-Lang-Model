@@ -27,3 +27,8 @@ id_rsa*
 
 # Local IDE settings
 .idea/
+
+# Full INT8 handoff examples and generated outputs
+out/
+!examples/host_smoke/*.npz
+!examples/host_smoke/*.wav
