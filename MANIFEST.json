@@ -12,8 +12,8 @@
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 13618,
-      "sha256": "be98540752cd8a30a87d81e07972dd92f7b08f4bc14eff6e2cf37bc442f45dc2"
+      "bytes": 13704,
+      "sha256": "385a7d2dfee5ab1d29450ec7f37ea0be2dd4c8d661684413a13756cb66fb5f71"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -32,8 +32,8 @@
       "sha256": "884c586cb24fd2e8ec203668b2433dcc2c95808193bb13aa9831bf17e76fd46d"
     },
     "docs/FARGAN_STREAMING_ACCELERATION.md": {
-      "bytes": 4624,
-      "sha256": "20d377ebcc1adfd440195cdf376232be51b9b49dad3a808e436eb8d8a7858c40"
+      "bytes": 4871,
+      "sha256": "84c0c954978820a5e976e2ec447db9eacae8ed3d9598ad70ac52ccebbaa57f8b"
     },
     "docs/HIFIGAN_INFERENCE.md": {
       "bytes": 3123,
@@ -232,12 +232,12 @@
       "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
     },
     "native/fargan_streaming_accel_20261030/README.md": {
-      "bytes": 2069,
-      "sha256": "2f7e97aa4a27b925b83fff37d4108f6b2cb07664308ad6a33d151f743b6ce12e"
+      "bytes": 2147,
+      "sha256": "29e9bd4e199a9307c8ec036ddb0c847096d561bd3970ac093487732a44caedfc"
     },
     "native/fargan_streaming_accel_20261030/STATUS.json": {
-      "bytes": 2054,
-      "sha256": "4a43f5ba27a8fb0fc9c1aba2d696dbef1c89e1a62308c3e37f25c118940a7dfe"
+      "bytes": 2124,
+      "sha256": "a722958fa9df72be8f6bd2bbd9a9d13c1381ccb7d85b17f8097f0f0a8c75dec9"
     },
     "native/fargan_streaming_accel_20261030/accepted_i8_final/README.md": {
       "bytes": 1327,
@@ -648,8 +648,8 @@
       "sha256": "cc55b384bc2d5c9b417b477f3a7c7631829896e509d8e347487c424e54c5c0ff"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/README.md": {
-      "bytes": 1396,
-      "sha256": "21dd22e7512b8a924c27b4eae81a20035707106a14ce213aeba18ac264941440"
+      "bytes": 2401,
+      "sha256": "fa7d3f5fe0f01efe2c42918eec31ea42e568ce7727b11de5702edc12bee23166"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/assets/FRONT_QUANTIZATION.json": {
       "bytes": 47782,
@@ -740,8 +740,8 @@
       "sha256": "40efb5ec6a58d51229ffc2e928ffed1eb1add1b131df993d450b0c2e03e674f1"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build/BUILD.json": {
-      "bytes": 70013,
-      "sha256": "e19c9e5dfb695bcdffffe5ce3edc32b8be89f823d49b72bfb1dcbdd175be52d9"
+      "bytes": 70014,
+      "sha256": "39c3315473f99aba1cd2f65948e0ad7d0d38bc9f35bf77956443cd612d3fdce9"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build/attributes.txt": {
       "bytes": 550,
@@ -749,15 +749,15 @@
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build/sections.txt": {
       "bytes": 946,
-      "sha256": "7fd1ec8f32fcee7a535b845a4368a7871c5cc06f5b0b3da09936e1b99fbf5a35"
+      "sha256": "741fddf8cd09723e810196cfd4204920c670adf5ae45ce2c4d2fdac3c7b939b2"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build/segments.txt": {
       "bytes": 940,
-      "sha256": "04cfa64593d7b6eeaac3c3005da19981e68bfcab615e6be769fd06c6cab83453"
+      "sha256": "7fc89a9dea01fc1879b9c55cf8f495383b042b6d35a5860efd362358de7c2180"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build/symbols.txt": {
       "bytes": 12716,
-      "sha256": "f21e8dddb1b42412aa34d8585f10eeb5284b82bac74e9e6b2d122ed06242dd57"
+      "sha256": "e6ca3dd2c3f1041c7ebe983f221b65feecb38226ee336e9ef3c291355c823e4b"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/build_scripts/analyze_fargan.py": {
       "bytes": 13627,
@@ -804,8 +804,8 @@
       "sha256": "4a4970107d624177fd27358ce58a05c8f015059b8b6db653deab27ed67643b14"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/bwe_fast/dnn/nnet_arch.h": {
-      "bytes": 9350,
-      "sha256": "102b91f073070274c181bd8c1c6a282ab4bba141382e6f6c1156e26e038d74d0"
+      "bytes": 9925,
+      "sha256": "a734ecce0ddbbcd984979089419c0e7fc37bc4af37afc12d4a47741a3e825148"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/bwe_fast/dnn/nnet_default.c": {
       "bytes": 2163,
@@ -816,8 +816,8 @@
       "sha256": "bd5b833f71e8efeeab9c19429762d1c257f02c1976898d7c6e2a8aaa4e6a00e8"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/firmware.elf": {
-      "bytes": 5380292,
-      "sha256": "6e4f58502ca958fd65f1a151b275b9ae9acc7cc9188d77188a3d0c731625f5c1"
+      "bytes": 5384388,
+      "sha256": "03537bda40035d2a836e2a89e3cc27763cd8ea4863eb0caa9835b9224d15af69"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/AUDIT.log": {
       "bytes": 2332,
@@ -839,21 +839,21 @@
       "bytes": 23761,
       "sha256": "1b747f88a23964fe6f13a51a769cd5be420708a12db0a75c46d21f1e4f868a2a"
     },
-    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/roi_ordinary_o3_opt10_instruction_counts.csv": {
-      "bytes": 397467,
-      "sha256": "e0b91942a6e98992a5d13c38c6fc620021ed59d4aa6b5c58080f339c4b6145f4"
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/roi_ordinary_o3_opt12_instruction_counts.csv": {
+      "bytes": 400859,
+      "sha256": "84d71a589b5b7501767cc4455d0f1e10e3269011661b4d41bcb68cdd84e75126"
     },
-    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/roi_warm_ordinary_o3_opt10_instruction_counts.csv": {
-      "bytes": 397877,
-      "sha256": "e8da6a0c4d281be4bee4ef8a44f9a1801f829c115773b92c86edded2890bb21e"
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/roi_warm_ordinary_o3_opt12_instruction_counts.csv": {
+      "bytes": 401269,
+      "sha256": "94f3ea4297d7fb90d92ffe529919881ac909b3b17da489aa8742aa306260c1ff"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/profile/run_profile.py": {
       "bytes": 5919,
       "sha256": "5c963195362e4c9edf583b11aed97195cb47920fe5437eccfac5bc226bf809e3"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/receipts/SOURCE_DELTA_VS_RELEASE_BASE.json": {
-      "bytes": 15039,
-      "sha256": "a93fd63a14fb4a1dd14cf63b19856c21532b58ec2075a74a042544182ff9da9a"
+      "bytes": 15071,
+      "sha256": "6e5d3699121fee6bbece01f7884b4623b2365382346e93f005b53d9d228c7784"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/receipts/opt300c_final_accounting/DYNAMIC_INSTRUCTION_AUDIT.json": {
       "bytes": 35975,
@@ -955,9 +955,21 @@
       "bytes": 7887,
       "sha256": "eafd9d775cc3b75c7475262c617ea2e3bb5962eba885afec74a666f450b9a5e9"
     },
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/receipts/round2_final_results/FINAL_RESULTS.json": {
+      "bytes": 18504,
+      "sha256": "6160b2831ebb55065fc7968e1ad2327b60a260b7be64087c711959be322f83bb"
+    },
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/receipts/round2_final_results/RECOVERY_README.txt": {
+      "bytes": 1032,
+      "sha256": "6266b020d01e4fd4e7e5deb2cb2b3fb31dbc54aa83ba85100c5c2b7bf26bfb1b"
+    },
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/receipts/round2_final_results/STATUS.json": {
+      "bytes": 288,
+      "sha256": "575cbd97bb22f378d0cac06cc5411aedf3915bb28cc7e5a09f5eb35f6356f391"
+    },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/reports/RESULT.json": {
-      "bytes": 66931,
-      "sha256": "e9b85b14d3ddb8a1ea342631085f6c10e5021aa7502cac8b7a2520adf007c21c"
+      "bytes": 66932,
+      "sha256": "9f9a3ce540257eb863e30e7dd9a041042b02516890f0503c1ad243d9b8fab963"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/reports/run_001/condition.f32": {
       "bytes": 35588,
@@ -990,6 +1002,14 @@
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/results/ordinary_o3_opt10.json": {
       "bytes": 1944,
       "sha256": "07c7eb21f90e69f78866491e794deb25dd5613f50279bfdf284936c76222dbad"
+    },
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/results/ordinary_o3_opt11.json": {
+      "bytes": 1943,
+      "sha256": "38bed54d56e466eb0d8525e27de502cd4764f56504a1cb2348c569ba60198093"
+    },
+    "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/results/ordinary_o3_opt12.json": {
+      "bytes": 1944,
+      "sha256": "b839018a17f47a6387e44a590cdbc95e9946aa24e3d10ae5a14b623843b88596"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/results/ordinary_o3_opt3.json": {
       "bytes": 1941,
@@ -1044,8 +1064,8 @@
       "sha256": "436618584205918e7903a3ef2827c862d00dc946ad3b4662eda41fd1c36906f8"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/src/fast_i8_dense.h": {
-      "bytes": 5979,
-      "sha256": "719a4ac2798fb3cb7ca6bbcf88bcf5b6a91efbb356523dd21f33545e9c41d277"
+      "bytes": 5703,
+      "sha256": "61b407b881acc01d6c329c0898b66982a5371b2a5cc27c848f266aac02823f7d"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/src/fast_i8_pair.h": {
       "bytes": 5640,
@@ -1112,8 +1132,8 @@
       "sha256": "ecf071ee920771d9a4198995ca8a849f8cd4c2ca53f5ee6e89a6d5f0b52df523"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/src/quality.c": {
-      "bytes": 44220,
-      "sha256": "1912d90774c4a3aa33dc5519628f06e74fe3e91f32bdab244a4b0599dc967c44"
+      "bytes": 44732,
+      "sha256": "e854ee8e6bd291b429dff7ddc1ce712aaf0ce6366fce12f53c357a9552e35b1f"
     },
     "native/fargan_streaming_accel_20261030/best_instruction_candidate_opt300d/src/startup.S": {
       "bytes": 1148,

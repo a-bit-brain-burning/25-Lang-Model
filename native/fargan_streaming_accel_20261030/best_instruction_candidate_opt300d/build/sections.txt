@@ -1,9 +1,9 @@
-/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/firmware.elf  :
+/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/firmware.elf  :
 section               size         addr
 .vectors                64    268435456
-.text               212440    268435520
-.ARM.extab              24    268647960
-.ARM.exidx             200    268647984
+.text               213672    268435520
+.ARM.extab              24    268649192
+.ARM.exidx             200    268649216
 .data                 1344    805306368
 .bss                 71152    805307712
 .stack              131072    805699584
@@ -19,6 +19,6 @@ section               size         addr
 .debug_str            9405            0
 .debug_frame          4244            0
 .debug_line_str        320            0
-Total             11546888
+Total             11548120
 
 

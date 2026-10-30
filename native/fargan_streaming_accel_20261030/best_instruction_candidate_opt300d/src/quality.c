@@ -292,6 +292,14 @@ static void norm(const char*p,float*x,unsigned n,unsigned c,float eps){
 }
 static void activation(float*x,unsigned n,int type){
  unsigned i=0;
+ if(type<2)for(;i+8<=n;i+=8){
+  float32x4_t v0=vld1q_f32(x+i),v1=vld1q_f32(x+i+4),y0,y1;
+  if(type==0){y0=vmulq_f32(v0,fast_nonlinear4(v0,0));y1=vmulq_f32(v1,fast_nonlinear4(v1,0));}
+  else{float32x4_t e0=fast_nonlinear4(vmulq_n_f32(v0,.7071067811865475f),2);float32x4_t e1=fast_nonlinear4(vmulq_n_f32(v1,.7071067811865475f),2);
+   y0=vmulq_f32(vmulq_n_f32(v0,.5f),vaddq_f32(vdupq_n_f32(1.f),e0));
+   y1=vmulq_f32(vmulq_n_f32(v1,.5f),vaddq_f32(vdupq_n_f32(1.f),e1));}
+  vst1q_f32(x+i,y0);vst1q_f32(x+i+4,y1);
+ }
  if(type<2)for(;i+4<=n;i+=4){
   float32x4_t v=vld1q_f32(x+i),y;
   if(type==0)y=vmulq_f32(v,fast_nonlinear4(v,0));

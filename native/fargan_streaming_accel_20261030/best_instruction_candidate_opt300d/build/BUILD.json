@@ -1,15 +1,15 @@
 {
   "status": "BUILT",
   "target": "MPS3_AN547_CORTEX_M55_MVE",
-  "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/firmware.elf",
-  "elf_sha256": "6e4f58502ca958fd65f1a151b275b9ae9acc7cc9188d77188a3d0c731625f5c1",
+  "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/firmware.elf",
+  "elf_sha256": "03537bda40035d2a836e2a89e3cc27763cd8ea4863eb0caa9835b9224d15af69",
   "scope": "user_supplied_firmware",
   "compiler": "arm-none-eabi-gcc (15:13.2.rel1-2) 13.2.1 20231009",
   "sources_sha256": {
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/startup.S": "cc992f5cf43558a2e8c20ef710557062c949f009bbf6880c295718b329085dcc",
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/bench.c": "d0f57fbaa5cb7894ef0748879cb955579fcdb6ad4eaec9c4a8a93d00320d84f5",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/upstream/dnn/nndsp.c": "b2f55788da5630a8f6210f088e7e512df275d0421b545b49efc34ab3a60ebebe",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/quality.c": "1912d90774c4a3aa33dc5519628f06e74fe3e91f32bdab244a4b0599dc967c44",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/upstream/dnn/nndsp.c": "4c113b3073fd1c0277cc8736ff2eb4c6da361ef59614b5ad96bb1df64d73fa20",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/quality.c": "e854ee8e6bd291b429dff7ddc1ce712aaf0ce6366fce12f53c357a9552e35b1f",
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_dot8.S": "5cf1bb2f5ea2a1e199523d582fcc488dfdaca4dbf439f97251d9499fd74e3636",
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_matrix8.S": "452e163177220e4b6b4fa9a94079ee70f798b7f4e8f1ee17ee665f491ecf91f4",
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_dot4_pair.S": "6f7a27f0ecc47ef00eaeef5c785bd9fd76cdbe4ea840c7638a307959be651c5a",
@@ -89,9 +89,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/startup.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/0_startup.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/0_startup.o"
       ],
-      "wall_seconds": 0.04205161000027147,
+      "wall_seconds": 0.046238792998337885,
       "returncode": 0
     },
     {
@@ -144,9 +144,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/bench.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/1_bench.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/1_bench.o"
       ],
-      "wall_seconds": 0.0800090579996322,
+      "wall_seconds": 0.06424685099955241,
       "returncode": 0
     },
     {
@@ -200,9 +200,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/upstream/dnn/nndsp.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/2_nndsp.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/2_nndsp.o"
       ],
-      "wall_seconds": 0.18628674899991893,
+      "wall_seconds": 0.16842455500045617,
       "returncode": 0
     },
     {
@@ -255,9 +255,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/quality.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/3_quality.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/3_quality.o"
       ],
-      "wall_seconds": 1.5038621149997198,
+      "wall_seconds": 1.398970107000423,
       "returncode": 0
     },
     {
@@ -310,9 +310,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_dot8.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/4_packed_dot8.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/4_packed_dot8.o"
       ],
-      "wall_seconds": 0.00919242100098927,
+      "wall_seconds": 0.007660765999389696,
       "returncode": 0
     },
     {
@@ -365,9 +365,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_matrix8.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/5_packed_matrix8.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/5_packed_matrix8.o"
       ],
-      "wall_seconds": 0.008588474000134738,
+      "wall_seconds": 0.007829509999282891,
       "returncode": 0
     },
     {
@@ -420,9 +420,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_dot4_pair.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/6_packed_dot4_pair.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/6_packed_dot4_pair.o"
       ],
-      "wall_seconds": 0.00817457899938745,
+      "wall_seconds": 0.007507107000492397,
       "returncode": 0
     },
     {
@@ -475,9 +475,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/packed_matrix_pair.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/7_packed_matrix_pair.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/7_packed_matrix_pair.o"
       ],
-      "wall_seconds": 0.00819020100061607,
+      "wall_seconds": 0.0072294930014322745,
       "returncode": 0
     },
     {
@@ -530,9 +530,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/tensor.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/8_tensor.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/8_tensor.o"
       ],
-      "wall_seconds": 0.13165081400074996,
+      "wall_seconds": 0.12009816399950068,
       "returncode": 0
     },
     {
@@ -585,9 +585,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/mem_override.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/9_mem_override.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/9_mem_override.o"
       ],
-      "wall_seconds": 0.07373306200133811,
+      "wall_seconds": 0.06663833300081023,
       "returncode": 0
     },
     {
@@ -640,9 +640,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/bwe_stage.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/10_bwe_stage.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/10_bwe_stage.o"
       ],
-      "wall_seconds": 0.10630309899897838,
+      "wall_seconds": 0.1030551200001355,
       "returncode": 0
     },
     {
@@ -695,9 +695,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/syscalls.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/11_syscalls.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/11_syscalls.o"
       ],
-      "wall_seconds": 0.022409846000300604,
+      "wall_seconds": 0.0210790969995287,
       "returncode": 0
     },
     {
@@ -750,9 +750,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/assets/model_index.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/12_model_index.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/12_model_index.o"
       ],
-      "wall_seconds": 0.013024354999288335,
+      "wall_seconds": 0.012043458000334795,
       "returncode": 0
     },
     {
@@ -805,9 +805,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/assets/weights.S",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/13_weights.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/13_weights.o"
       ],
-      "wall_seconds": 0.013136555999153643,
+      "wall_seconds": 0.012995017001230735,
       "returncode": 0
     },
     {
@@ -860,9 +860,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/storage.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/14_storage.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/14_storage.o"
       ],
-      "wall_seconds": 0.03669984899897827,
+      "wall_seconds": 0.034130619000279694,
       "returncode": 0
     },
     {
@@ -915,9 +915,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/storage_sha256.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/15_storage_sha256.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/15_storage_sha256.o"
       ],
-      "wall_seconds": 0.04463932199905685,
+      "wall_seconds": 0.04261290300019027,
       "returncode": 0
     },
     {
@@ -970,9 +970,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/third_party/puff/puff.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/16_puff.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/16_puff.o"
       ],
-      "wall_seconds": 0.1527218580013141,
+      "wall_seconds": 0.1459358140000404,
       "returncode": 0
     },
     {
@@ -1026,9 +1026,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/osce.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/17_osce.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/17_osce.o"
       ],
-      "wall_seconds": 0.10065636799845379,
+      "wall_seconds": 0.09587130299951241,
       "returncode": 0
     },
     {
@@ -1082,9 +1082,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/osce_features.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/18_osce_features.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/18_osce_features.o"
       ],
-      "wall_seconds": 0.0920391350009595,
+      "wall_seconds": 0.08812585999839939,
       "returncode": 0
     },
     {
@@ -1138,9 +1138,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/nnet.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/19_nnet.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/19_nnet.o"
       ],
-      "wall_seconds": 0.06167599800028256,
+      "wall_seconds": 0.06067070000062813,
       "returncode": 0
     },
     {
@@ -1194,9 +1194,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/parse_lpcnet_weights.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/20_parse_lpcnet_weights.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/20_parse_lpcnet_weights.o"
       ],
-      "wall_seconds": 0.05966501399961999,
+      "wall_seconds": 0.0569106599996303,
       "returncode": 0
     },
     {
@@ -1250,9 +1250,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/freq.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/21_freq.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/21_freq.o"
       ],
-      "wall_seconds": 0.11162947999946482,
+      "wall_seconds": 0.10482143199988059,
       "returncode": 0
     },
     {
@@ -1306,9 +1306,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/dnn/lpcnet_tables.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/22_lpcnet_tables.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/22_lpcnet_tables.o"
       ],
-      "wall_seconds": 0.016266380000161007,
+      "wall_seconds": 0.014753702998859808,
       "returncode": 0
     },
     {
@@ -1362,9 +1362,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/celt/kiss_fft.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/23_kiss_fft.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/23_kiss_fft.o"
       ],
-      "wall_seconds": 0.12399272200127598,
+      "wall_seconds": 0.11588689800009888,
       "returncode": 0
     },
     {
@@ -1418,9 +1418,9 @@
         "-c",
         "/home/fomak/ffb/new25_opus_bwe24_20261030/repo/new25_postprocess/assets/opus_bwe/upstream/celt/pitch.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/24_pitch.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/24_pitch.o"
       ],
-      "wall_seconds": 0.16122169499976735,
+      "wall_seconds": 0.15162766899993585,
       "returncode": 0
     },
     {
@@ -1474,9 +1474,9 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/bwe_fast/dnn/nnet_default.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/25_nnet_default.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/25_nnet_default.o"
       ],
-      "wall_seconds": 0.29865045600126905,
+      "wall_seconds": 0.2793103119984153,
       "returncode": 0
     },
     {
@@ -1530,61 +1530,61 @@
         "-c",
         "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/bwe_fast/assets/bbwenet_data_rowmajor.c",
         "-o",
-        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/26_bbwenet_data_rowmajor.o"
+        "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/26_bbwenet_data_rowmajor.o"
       ],
-      "wall_seconds": 0.42387617799977306,
+      "wall_seconds": 0.3776262179999321,
       "returncode": 0
     }
   ],
-  "compile_wall_seconds": 3.8903473940008553,
+  "compile_wall_seconds": 3.6123004619967105,
   "link_command": [
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/bin/arm-none-eabi-gcc",
     "-nostdlib",
     "-nostartfiles",
     "-Wl,--gc-sections",
     "-Wl,--build-id=none",
-    "-Wl,-Map=/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/firmware.map",
+    "-Wl,-Map=/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/firmware.map",
     "-Wl,--defsym=ARENA_BYTES=6000000",
     "-Wl,--defsym=STACK_BYTES=131072",
     "-T",
     "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/src/m55.ld",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/0_startup.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/1_bench.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/2_nndsp.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/3_quality.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/4_packed_dot8.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/5_packed_matrix8.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/6_packed_dot4_pair.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/7_packed_matrix_pair.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/8_tensor.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/9_mem_override.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/10_bwe_stage.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/11_syscalls.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/12_model_index.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/13_weights.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/14_storage.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/15_storage_sha256.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/16_puff.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/17_osce.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/18_osce_features.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/19_nnet.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/20_parse_lpcnet_weights.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/21_freq.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/22_lpcnet_tables.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/23_kiss_fft.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/24_pitch.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/25_nnet_default.o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/26_bbwenet_data_rowmajor.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/0_startup.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/1_bench.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/2_nndsp.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/3_quality.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/4_packed_dot8.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/5_packed_matrix8.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/6_packed_dot4_pair.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/7_packed_matrix_pair.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/8_tensor.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/9_mem_override.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/10_bwe_stage.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/11_syscalls.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/12_model_index.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/13_weights.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/14_storage.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/15_storage_sha256.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/16_puff.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/17_osce.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/18_osce_features.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/19_nnet.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/20_parse_lpcnet_weights.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/21_freq.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/22_lpcnet_tables.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/23_kiss_fft.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/24_pitch.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/25_nnet_default.o",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/26_bbwenet_data_rowmajor.o",
     "-Wl,--start-group",
     "-lm",
     "-lc",
     "-lgcc",
     "-Wl,--end-group",
     "-o",
-    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt10/firmware.elf"
+    "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt12/firmware.elf"
   ],
-  "link_wall_seconds": 0.12127309800052899,
-  "total_compilation_and_link_wall_seconds": 4.011620492001384,
+  "link_wall_seconds": 0.1060242620005738,
+  "total_compilation_and_link_wall_seconds": 3.7183247239972843,
   "sections": [
     {
       "name": ".vectors",
@@ -1593,18 +1593,18 @@
     },
     {
       "name": ".text",
-      "bytes": 212440,
+      "bytes": 213672,
       "address": 268435520
     },
     {
       "name": ".ARM.extab",
       "bytes": 24,
-      "address": 268647960
+      "address": 268649192
     },
     {
       "name": ".ARM.exidx",
       "bytes": 200,
-      "address": 268647984
+      "address": 268649216
     },
     {
       "name": ".data",

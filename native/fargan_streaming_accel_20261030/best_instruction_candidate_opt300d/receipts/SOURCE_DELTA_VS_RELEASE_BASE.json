@@ -107,9 +107,9 @@
       "current_sha256": "4a4970107d624177fd27358ce58a05c8f015059b8b6db653deab27ed67643b14"
     },
     "bwe_fast/dnn/nnet_arch.h": {
-      "status": "unchanged",
+      "status": "changed",
       "base_sha256": "102b91f073070274c181bd8c1c6a282ab4bba141382e6f6c1156e26e038d74d0",
-      "current_sha256": "102b91f073070274c181bd8c1c6a282ab4bba141382e6f6c1156e26e038d74d0"
+      "current_sha256": "a734ecce0ddbbcd984979089419c0e7fc37bc4af37afc12d4a47741a3e825148"
     },
     "bwe_fast/dnn/nnet_default.c": {
       "status": "unchanged",
@@ -164,7 +164,7 @@
     "src/fast_i8_dense.h": {
       "status": "changed",
       "base_sha256": "a12e51a8eaf15d4848c83734c9506031ffaa0a8fdea8c0f3b8d5cc83f8bbc378",
-      "current_sha256": "719a4ac2798fb3cb7ca6bbcf88bcf5b6a91efbb356523dd21f33545e9c41d277"
+      "current_sha256": "61b407b881acc01d6c329c0898b66982a5371b2a5cc27c848f266aac02823f7d"
     },
     "src/fast_i8_pair.h": {
       "status": "changed",
@@ -244,7 +244,7 @@
     "src/quality.c": {
       "status": "changed",
       "base_sha256": "727b1ef6d5e043adab631ddfe8db5865a6ee3d908a220a792d4b2a722842b443",
-      "current_sha256": "1912d90774c4a3aa33dc5519628f06e74fe3e91f32bdab244a4b0599dc967c44"
+      "current_sha256": "e854ee8e6bd291b429dff7ddc1ce712aaf0ce6366fce12f53c357a9552e35b1f"
     },
     "src/startup.S": {
       "status": "unchanged",
@@ -294,10 +294,11 @@
   },
   "summary": {
     "base_files": 58,
-    "changed_or_missing": 18,
+    "changed_or_missing": 19,
     "added": 1,
     "changed_list": [
       "assets/weights.S",
+      "bwe_fast/dnn/nnet_arch.h",
       "bwe_fast/dnn/vec.h",
       "src/adapter_stream.inc",
       "src/bench.c",

@@ -42,12 +42,6 @@ static int fast_i8_dense(const float*x,const int8_t*w,const float*scales,
   * largest finite encoding. No floating reduction may silently ignore NaN. */
  uint32x4_t maxbits4=vdupq_n_u32(0);unsigned max_at=0;
  const uint32x4_t absmask=vdupq_n_u32(0x7fffffffu);
- for(;max_at+8<=ci;max_at+=8){
-  uint32x4_t bits0=vreinterpretq_u32_f32(vld1q_f32(x+max_at));
-  uint32x4_t bits1=vreinterpretq_u32_f32(vld1q_f32(x+max_at+4));
-  maxbits4=vmaxq_u32(maxbits4,vandq_u32(bits0,absmask));
-  maxbits4=vmaxq_u32(maxbits4,vandq_u32(bits1,absmask));
- }
  for(;max_at+4<=ci;max_at+=4){
   uint32x4_t bits=vreinterpretq_u32_f32(vld1q_f32(x+max_at));
   maxbits4=vmaxq_u32(maxbits4,vandq_u32(bits,absmask));

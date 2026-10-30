@@ -149,6 +149,6 @@ BWE原件及插入接口的提交同样仅做静态检查，复用此前Linux x8
 本分支在 `main` 的离线 FARGAN 4750 接口之上追加两条已验证内容，训练更新为 **0**，原 91 个 FARGAN 张量及声学/HiFi-GAN/RNDVoC/Opus BWE 权重不变：
 
 1. **主机连续流式**：`new25_fargan.FARGANVocoder.streaming=True`，`begin_stream`/`synthesize_chunk` 跨块保留 adapter 历史、3×GRU、FWConv、激励历史、独立 RNG 和去预加重状态；`synthesize_offline()` 保留原整段参考。输出仍为原有效中心 `(T-4)*160`（原时轴 `[400,160*T-240)`），`model_config.json` 历史 `streaming:false` 按文件身份保留。`freeze_weight_norm` 仅折叠 6 个重复 legacy hook，PCM 与未优化逐字节相同。新增流式契约单元测试后全套 **29 项通过**。入口与回执见 [`pipelines/fargan_streaming_20261030/`](pipelines/fargan_streaming_20261030/)，试听见 [`examples/fargan_streaming/listening/`](examples/fargan_streaming/listening/)。
-2. **M55 原生加速**：已认可量化音质基线 `i8_final`（中文 ELF `87e096d0…`，同核顺序 QEMU 首有效 PCM24 3.6507→2.2601 s，-38.09%），以及当前最快且六输出逐字节一致的指令候选 `opt300d opt10`（62,678,844 动态指令事件，-8.919%，1 IPC 下界 313.394 ms）。二者源码、构建输入、QEMU 报告、动态 profile 与试听见 [`native/fargan_streaming_accel_20261030/`](native/fargan_streaming_accel_20261030/)。
+2. **M55 原生加速**：已认可量化音质基线 `i8_final`（中文 ELF `87e096d0…`，同核顺序 QEMU 首有效 PCM24 3.6507→2.2601 s，-38.09%），以及当前最快且六输出逐字节一致的指令候选 `opt300d opt12`（冷 ROI 61,984,476 动态指令事件，-9.928%，1 IPC 下界 309.922 ms；warm 口径 59,966,762→299.834 ms 仅锚点变化、非常驻固件实测）。二者源码、构建输入、QEMU 报告、动态 profile 与试听见 [`native/fargan_streaming_accel_20261030/`](native/fargan_streaming_accel_20261030/)。
 
 **边界**：QEMU 主机秒数不是 200 MHz 周期；完整原生 25 语前端、完整系统双 10 MB、校准后的 200 MHz 首音 300 ms、任意长文与全面人工音质验收均未通过；`opt300d` 为未最终化实验候选，未替换默认生产指针。详见 [`docs/FARGAN_STREAMING_ACCELERATION.md`](docs/FARGAN_STREAMING_ACCELERATION.md)。

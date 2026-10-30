@@ -1,7 +1,7 @@
 {
   "status": "BRANCH_SNAPSHOT_COMPLETE_300MS_AND_DOUBLE10MB_UNMET",
-  "snapshot_local": "2026-10-30T16:24:00-07:00",
-  "snapshot_utc": "2026-10-30T23:24:00Z",
+  "snapshot_local": "2026-10-30T16:31:00-07:00",
+  "snapshot_utc": "2026-10-30T23:31:00Z",
   "branch_purpose": "Host FARGAN streaming inference plus M55 native acceleration handoff",
   "training_updates": 0,
   "host_streaming": {
@@ -28,18 +28,19 @@
     "human_quality_full_scope_accepted": false
   },
   "native_best_instruction_candidate": {
-    "tag": "opt300d/ordinary_o3_opt10",
+    "tag": "opt300d/ordinary_o3_opt12",
     "adopted_as_production_pointer": false,
     "finalized_optimization_round": false,
-    "elf_sha256": "6e4f58502ca958fd65f1a151b275b9ae9acc7cc9188d77188a3d0c731625f5c1",
-    "instruction_events": 62678844,
+    "elf_sha256": "03537bda40035d2a836e2a89e3cc27763cd8ea4863eb0caa9835b9224d15af69",
+    "cold_roi_instruction_events": 61984476,
     "release_o3_instruction_events": 68816649,
-    "reduction_percent": 8.919,
-    "uncalibrated_1ipc_floor_ms": 313.39422,
-    "warm_roi_events": 60661130,
-    "warm_roi_1ipc_ms": 303.306,
+    "cold_reduction_percent": 9.928,
+    "cold_uncalibrated_1ipc_floor_ms": 309.92238,
+    "warm_roi_instruction_events": 59966762,
+    "warm_roi_1ipc_ms": 299.834,
+    "warm_is_firmware_real": false,
     "six_outputs_byte_identical_to_accepted_baseline": true,
-    "target_300ms_reached": false
+    "hardware_300ms_accepted": false
   },
   "not_verified": [
     "calibrated_200MHz_300ms",

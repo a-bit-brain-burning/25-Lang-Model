@@ -141,12 +141,22 @@ void RTCD_SUF(compute_linear_) (const LinearLayer *linear, float *out, const flo
    }
    else OPUS_CLEAR(out, N);
    if (bias != NULL) {
-      for (i=0;i<N;i++) out[i] += bias[i];
+      int bi=0;
+      for (;bi+4<=N;bi+=4)
+         vst1q_f32(out+bi,vaddq_f32(vld1q_f32(out+bi),vld1q_f32(bias+bi)));
+      for (;bi<N;bi++) out[bi] += bias[bi];
    }
    if (linear->diag) {
       /* Diag is only used for GRU recurrent weights. */
       celt_assert(3*M == N);
-      for (i=0;i<M;i++) {
+      const float *restrict dg=linear->diag;const float *restrict src=in;
+      int vi=0;
+      for (;vi+4<=M;vi+=4) {
+         vst1q_f32(out+vi,vaddq_f32(vld1q_f32(out+vi),vmulq_f32(vld1q_f32(dg+vi),vld1q_f32(src+vi))));
+         vst1q_f32(out+vi+M,vaddq_f32(vld1q_f32(out+vi+M),vmulq_f32(vld1q_f32(dg+vi+M),vld1q_f32(src+vi))));
+         vst1q_f32(out+vi+2*M,vaddq_f32(vld1q_f32(out+vi+2*M),vmulq_f32(vld1q_f32(dg+vi+2*M),vld1q_f32(src+vi))));
+      }
+      for (i=vi;i<M;i++) {
          out[i] += linear->diag[i]*in[i];
          out[i+M] += linear->diag[i+M]*in[i];
          out[i+2*M] += linear->diag[i+2*M]*in[i];
