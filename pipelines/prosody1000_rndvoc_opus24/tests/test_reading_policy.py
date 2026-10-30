@@ -10,6 +10,9 @@ class PolicyTests(unittest.TestCase):
         return [(e['source'],e['mode'],e['value'])for e in (policy or self.policy).scan(text,lang,lexical)[1]]
     def test_initialisms_and_word_acronyms(self):
         self.assertEqual(self.readings('NASA API cpu NATO SQL'),[('NASA','word','nasa'),('API','spell','API'),('cpu','spell','CPU'),('NATO','word','nato'),('SQL','spell','SQL')])
+    def test_Chinese_reference_initialisms(self):
+        self.assertEqual(self.readings('NASA RAM HELLO NASA6','zh'),[('NASA','spell','NASA'),('RAM','spell','RAM'),('HELLO','spell','HELLO'),('NASA6','spell','NASA6')])
+        self.assertEqual(self.readings('NASA','zh',ReadingPolicy(mode='word')),[('NASA','word','nasa')])
     def test_pronouns_and_articles(self):
         self.assertEqual(self.readings('I am in room 10 at 9:45. It helps us read a book.'),[])
         self.assertEqual(self.readings('US and IT'),[('US','spell','US'),('IT','spell','IT')])

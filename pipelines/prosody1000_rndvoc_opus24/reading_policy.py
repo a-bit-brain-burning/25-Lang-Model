@@ -88,7 +88,7 @@ class ReadingPolicy:
                 suffix=re.sub(r'^'+re.escape(prefix)+r'[._ -]*','',raw) if prefix else ''
                 word=self.data['word_acronyms'].get(prefix.upper())
                 special=next((v.get(language) for k,v in self.data['specials'].items() if k.casefold()==prefix.casefold()),None)
-                if re.fullmatch(r'\d+(?:\.\d+)?',suffix) and (word or special):
+                if re.fullmatch(r'\d+(?:\.\d+)?',suffix) and (word or special) and not (language=='zh' and prefix.isupper() and 2<=len(prefix)<=5):
                     item.update(mode='expand',value=(word or special)+' '+suffix,rule='word_acronym_with_number')
                 else:item.update(mode='spell',value=letters,rule='alphanumeric_identifier')
             elif kind=='word' and ("'" in raw or '’' in raw):
@@ -102,6 +102,8 @@ class ReadingPolicy:
                 if candidate and self.mode!='auto':
                     item.update(mode=self.mode,value=canonical if self.mode=='spell' else self.data['word_acronyms'].get(canonical,letters.lower()),rule='global_mode')
                 elif explicit or initialism:item.update(mode='spell',value=canonical,rule='explicit_letters' if explicit else 'initialism_dictionary')
+                elif language=='zh' and raw.isupper() and 2<=len(raw)<=5 and raw not in {'YES','NO','OK','HI','OH','HEY','STOP','WATCH','PRO'}:
+                    item.update(mode='spell',value=canonical,rule='accepted_Chinese_initialism')
                 elif acronym:item.update(mode='word',value=self.data['word_acronyms'][canonical],rule='word_acronym_dictionary')
                 elif len(raw)==1 and raw.isupper():
                     follows_word=bool(re.match(r'\s+[A-Za-z]',text[match.end():]))

@@ -7,12 +7,12 @@
       "sha256": "cd79ca1221a176dc1db8aacff1c88eedf846a83f01916a0f6391c4ce65e81b12"
     },
     "COMPONENTS.json": {
-      "bytes": 3245,
-      "sha256": "aaf82f394a76be8c65a23365494e8f2ef6a69efa35781f111ee76007cbc60fb8"
+      "bytes": 3793,
+      "sha256": "ee2c1d12549d733cd17ba35c5271892345eb45f6418b79a5305586b9a1f7ddec"
     },
     "README.md": {
-      "bytes": 8536,
-      "sha256": "af2016fec88714399ce4a3659a2351b53476b9919efd2ec4559391f563209da1"
+      "bytes": 10332,
+      "sha256": "4ea8df76b57fcadb131077ce913875c00b184cd2cf804b7e1fcea0e8204d2d21"
     },
     "acoustic_model.py": {
       "bytes": 2191,
@@ -2175,8 +2175,8 @@
       "sha256": "e8522cfdac0581dfe26f21b0d20e5e6b1cc0712d2458d166bfd3ea675081253b"
     },
     "frontend_repair.py": {
-      "bytes": 9403,
-      "sha256": "e13f59385b7bc78c97832950675e29efc981c8b64e1c6df8a36d0695b5570efd"
+      "bytes": 9354,
+      "sha256": "1db2de90420dd9ec1f89c1f0ffe90fa4c6893cb4214ecb313b926e73f7927274"
     },
     "identifier_first_digit.py": {
       "bytes": 3883,
@@ -2195,8 +2195,8 @@
       "sha256": "ef4224a598cc93c15ba3a5e281b5d40ca926f50db0af19c23fd0334bb1c8ad9d"
     },
     "legacy_contract.py": {
-      "bytes": 2398,
-      "sha256": "bfd089b94513af04e9de9edbb11c130a1d3c448bb431bb94fb1bd199c5d8ba13"
+      "bytes": 2407,
+      "sha256": "d05ce089f7e7ac54c7520faacc2e203ed99edd8b26e50b3e13324147d77b8839"
     },
     "legacy_frontend/audio_join.py": {
       "bytes": 1849,
@@ -2694,6 +2694,18 @@
       "bytes": 350,
       "sha256": "0b01577be29a71a248d24b933190a1254f8208d788bf45a9832d7bf3f434ed7a"
     },
+    "provenance/CHINESE_REFERENCE_BINARY_PARITY.json": {
+      "bytes": 52943,
+      "sha256": "889984e1ac750c7d3f8a985571fc20101603745306bd0c17f0781da8b49afa20"
+    },
+    "provenance/CHINESE_REFERENCE_REGRESSION.json": {
+      "bytes": 12595,
+      "sha256": "484558bf120f2ee70a7fa50b9a530f7c4b0b3d58977e03ee578a59dc954b5b2b"
+    },
+    "provenance/CHINESE_REFERENCE_VERIFIED.json": {
+      "bytes": 3232,
+      "sha256": "205f27cfbccd0546a5a150dc9e4364314fe07d07eb0b5b216ad13ce67544edd8"
+    },
     "provenance/FLEX_AUDIO21.json": {
       "bytes": 4565,
       "sha256": "f83cc6a3210d357861c0be68b6dcee5eac0a44f3dc742ffe6dab1eaa8d34bae2"
@@ -2743,8 +2755,104 @@
       "sha256": "6e33f109ad0269de4d112363d04e419f1684aee9e97429a1fb1ee9c0ad3e6286"
     },
     "reading_policy.py": {
-      "bytes": 11260,
-      "sha256": "6483c6949cc4044743809800421121f9748155d1398123e830f9c3d959a01fd1"
+      "bytes": 11569,
+      "sha256": "f47ab5b06e1ea8bb4be7e61f2bf05bb87e77dda748fc608080882a76c22cf2f5"
+    },
+    "reference_chinese/BUILD.json": {
+      "bytes": 2044,
+      "sha256": "1f00d929f0471dc1d5b07faa816fef54a8239ac37abb9292fdfe962909b6e444"
+    },
+    "reference_chinese/OPENCC_LICENSE.txt": {
+      "bytes": 10354,
+      "sha256": "18f3fedf9eac72e6054260489c764c1e54f63cf2b16055523f561ffeec7bc908"
+    },
+    "reference_chinese/SOURCE_IDENTITY.json": {
+      "bytes": 4644,
+      "sha256": "7f82d3fe7e7621acae5b1b46161a0e9b7be4df24482d437f64d43e3e9fe18d7b"
+    },
+    "reference_chinese/libreference_zh.so": {
+      "bytes": 1601176,
+      "sha256": "7f28f82e559633eba8f5c9e8e4f261a6f3c00d85deaf01ee3fc406558d9785b3"
+    },
+    "reference_chinese/source/assets/zh_chars.bin": {
+      "bytes": 95882,
+      "sha256": "680ec92d23f42dcbf3e862d1b31b18ed2a11b984d81850640a2b39d6f7681878"
+    },
+    "reference_chinese/source/assets/zh_words.bin": {
+      "bytes": 1169530,
+      "sha256": "5d103135ad98a73110a9e1ed366fd77eb14ba107c38bfc7ad7dd8f3cc05c083b"
+    },
+    "reference_chinese/source/bridge.c": {
+      "bytes": 1302,
+      "sha256": "74b3dbe8c689705ab7fe43f4d502224284108b0ee0287d90715cc61be3a19ac4"
+    },
+    "reference_chinese/source/frontend_crc.c": {
+      "bytes": 12680,
+      "sha256": "f820827a66ac3cf66c3e1173b2d126bcbc22bb7f637498c17f2987e0125a5ef3"
+    },
+    "reference_chinese/source/generated/zh_properties.h": {
+      "bytes": 42137,
+      "sha256": "6a9940305d618dac6306108a69be5ea924a3c49ffe50f28a91b02a1cce1e4f8b"
+    },
+    "reference_chinese/source/generated/zh_tables.h": {
+      "bytes": 118,
+      "sha256": "5098b0a79255cc53e9004ce4c4768fe7c4419e383c1e9fa2df9d1937f47e726b"
+    },
+    "reference_chinese/source/generated/zh_vocabulary.h": {
+      "bytes": 38936,
+      "sha256": "ebe1bb456bbb24cce946bbe387e9199e4b8e7d7b750cc303ed4b2a0971d739e8"
+    },
+    "reference_chinese/source/inflate_wrapper.c": {
+      "bytes": 446,
+      "sha256": "500e26797c5171264bd5018c59f7475ccee1b1d5bec594d4320bf1bf061f7b2e"
+    },
+    "reference_chinese/source/kokoro_roots.h": {
+      "bytes": 7730,
+      "sha256": "3ab579143cfac674a1928940fb1f4b486cb07f7edf913a59721d3f6f58a44923"
+    },
+    "reference_chinese/source/native.h": {
+      "bytes": 1696,
+      "sha256": "a78788a2519a9d513eed7dfd8b43619c60dc7c2982db2b71a9143134c6b03eaf"
+    },
+    "reference_chinese/source/t2s_tables.h": {
+      "bytes": 66612,
+      "sha256": "89c750684b2d1f6ed7ef6710ea7359c66873274b375e5fc5316e7867b864cfbe"
+    },
+    "reference_chinese/source/unicode_native.h": {
+      "bytes": 441,
+      "sha256": "14ddc897e4ca884167dd627120edfc54d0571f7a16fe4e87d99a47ade1671e23"
+    },
+    "reference_chinese/source/utf8_only.c": {
+      "bytes": 852,
+      "sha256": "2005615732f89d953374e4e7f51e8cb8ff1a3ffc9db16148fce8bbf8711ddabe"
+    },
+    "reference_chinese/source/zh_frontend.c": {
+      "bytes": 25889,
+      "sha256": "54d2d64ad65512e48d236f2623fa88e4ec5c567c4f1b4404b528de2ef2ade43a"
+    },
+    "reference_chinese/source/zh_frontend.h": {
+      "bytes": 378,
+      "sha256": "357ef38290919c94065bbbe487d500947ebbc9fbc6ef0ed1ca22a5711708ec7d"
+    },
+    "reference_chinese/source/zh_kokoro.c": {
+      "bytes": 3300,
+      "sha256": "65d11a1ae4e973bd1f1e24e7f364bf137fe513254dbcfbb5db6febf2828acf39"
+    },
+    "reference_chinese/source/zh_t2s.c": {
+      "bytes": 1572,
+      "sha256": "c0d705f56485ebf2a963149259feb5f597a8b4d6b6543d7004cc2fdffb067de2"
+    },
+    "reference_chinese/source/zh_tables.c": {
+      "bytes": 4686,
+      "sha256": "ef9f8f8963f373a4c6ab19443474caf32b7bd5666ad903612a8c5ac045cfd542"
+    },
+    "reference_chinese/source/zh_tables.h": {
+      "bytes": 340,
+      "sha256": "b2ba8c88bd8bf2cafc1bd89dfed361ab70514f602e61de08167e61185241273d"
+    },
+    "reference_chinese.py": {
+      "bytes": 6176,
+      "sha256": "d636f4d226f5358ccb6273642f4409e346e354c9e3f17add279e19c9f20ee83b"
     },
     "requirements-reference.txt": {
       "bytes": 88,
@@ -2779,16 +2887,20 @@
       "sha256": "00aab29bdaa52ecedf6b639f3698505ba91c529c7a499c7fe722749bf8edb444"
     },
     "tests/test_reading_policy.py": {
-      "bytes": 4282,
-      "sha256": "d9db82d3f33791e928d7284ad33549d0ca058f6530b9703ddfbf777b03500c29"
+      "bytes": 4606,
+      "sha256": "fd8b52aae72ad570847b3489166aa228870d18e334a13c77dfe9cd8582e86167"
     },
     "text_worker.py": {
-      "bytes": 3731,
-      "sha256": "12be767bd4b6c25773ff0f27511e3dc224d667d3f17920aea155e4f8ca5d43a1"
+      "bytes": 3829,
+      "sha256": "d40550178b42f16777c94ff57536b811c0dcb49ae9efe5a7f8163f951d203c1b"
     },
     "tools/build_frontend.py": {
       "bytes": 2938,
       "sha256": "fafe2ed16c18011c0473cc061a0c0e83e3760a8bbc2ec24eadcfb7a316ef8f15"
+    },
+    "tools/build_reference_chinese.py": {
+      "bytes": 1345,
+      "sha256": "418753a8fe7e908e021c6c1f9e6142fe4e06f1bab5400c2f25caa4694f287657"
     },
     "verify.py": {
       "bytes": 2748,

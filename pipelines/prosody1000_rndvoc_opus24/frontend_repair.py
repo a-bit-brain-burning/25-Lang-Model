@@ -93,17 +93,14 @@ def build_zh(front,text,normalizer=None):
   else:tokens.append(dict(kind='english',han=han,value=value.strip()))
   position=match.end()
  suffix=normalized[position:];skeleton.append(suffix);skeleton=''.join(skeleton)
- # Explicitly select separate 儿 readings; no approximate phone substitution.
- settings,adapter=front._session('zh')
- from project.src.frontend.chinese_delivery_policy import ChineseDeliveryFrontend
- from project.src.frontend.chinese_prosody import ChineseProsodyFrontend
- selected=ChineseDeliveryFrontend(ChineseProsodyFrontend(erhua_policy='separate'))
- from project.src.frontend import phrase_plan
- original=phrase_plan.make_frontend;phrase_plan.make_frontend=lambda:selected
+ # Reuse the exact accepted release's native Chinese linguistic decisions.
+ # NEW25 IDs/features are rendered explicitly; Kokoro IDs never enter the model.
+ from reference_chinese import encode as reference_encode
+ front._session('zh') # Initializes the trained numeric feature renderer modules.
+ vocabulary=read(ROOT/'models/acoustic/assets/vocabulary.json')
  anchor=not bool(re.search(r'[\u3400-\u9fff]',skeleton))
- try:
-  chinese,meta=front.encode(('啊' if anchor else '')+skeleton,'zh');raw=adapter.encode('zh',('啊' if anchor else '')+skeleton,settings)
- finally:phrase_plan.make_frontend=original
+ chinese,meta=reference_encode(('啊' if anchor else '')+skeleton,vocabulary)
+ raw={'metadata':{'syllables':meta['syllables']}}
  if anchor:
   chinese={k:v[[0,-1]].copy() for k,v in chinese.items()};meta['ipa']=['sil','sil'];raw['metadata']['syllables']=[]
  at={};syllables={};offset=0
@@ -144,4 +141,4 @@ def build_zh(front,text,normalizer=None):
  arrays={k:np.asarray(v,dtype=chinese[k].dtype) for k,v in pieces.items()};units.sort(key=lambda u:u['start'])
  n=len(phones);ctx=arrays['context'];ctx[:,10:12]=0;ctx[0,10]=1;ctx[-1,11]=1;ctx[:,5]=0;ctx[1:-1,5]=np.arange(n-2,dtype=np.float32)/max(n-3,1);ctx[:,6]=min((n-2)/200.,2.)
  assert not np.any(arrays['phones']==1),sorted(set(p for p in phones if p not in vocabulary))
- return arrays,dict(normalization_source='best_bilingual_20261029_flow_letters_v2_port',input_text=text,normalized_text=normalized,Chinese_skeleton=skeleton,protected=list(protected.values()),ipa=phones,identifier_units=units,U_reading='yiu1',U_tone=1,one_acoustic_language='zh',one_whole_utterance=True,English_acoustic_calls=0,erhua_policy='separate',unknown_phone_count=0,context_anchor_used=anchor,context_anchor_spoken=False)
+ return arrays,dict(reference_frontend={k:v for k,v in meta.items() if k not in ['ipa','syllables']},normalization_source='best_bilingual_20261029_flow_letters_v2_port',input_text=text,normalized_text=normalized,Chinese_skeleton=skeleton,protected=list(protected.values()),ipa=phones,identifier_units=units,U_reading='yiu1',U_tone=1,one_acoustic_language='zh',one_whole_utterance=True,English_acoustic_calls=0,erhua_policy='reference_fused_when_trained_otherwise_explicitly_deferred',unknown_phone_count=0,context_anchor_used=anchor,context_anchor_spoken=False)

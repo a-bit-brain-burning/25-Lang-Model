@@ -1,0 +1,79 @@
+{
+  "reference_release": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029",
+  "files": {
+    "source/zh_t2s.c": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/zh_t2s.c",
+      "sha256": "c0d705f56485ebf2a963149259feb5f597a8b4d6b6543d7004cc2fdffb067de2"
+    },
+    "source/zh_kokoro.c": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/zh_kokoro.c",
+      "sha256": "65d11a1ae4e973bd1f1e24e7f364bf137fe513254dbcfbb5db6febf2828acf39"
+    },
+    "source/kokoro_roots.h": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/kokoro_roots.h",
+      "sha256": "3ab579143cfac674a1928940fb1f4b486cb07f7edf913a59721d3f6f58a44923"
+    },
+    "source/t2s_tables.h": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/t2s_tables.h",
+      "sha256": "89c750684b2d1f6ed7ef6710ea7359c66873274b375e5fc5316e7867b864cfbe"
+    },
+    "source/utf8_only.c": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/utf8_only.c",
+      "sha256": "2005615732f89d953374e4e7f51e8cb8ff1a3ffc9db16148fce8bbf8711ddabe"
+    },
+    "source/zh_frontend.c": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/zh_frontend.c",
+      "sha256": "54d2d64ad65512e48d236f2623fa88e4ec5c567c4f1b4404b528de2ef2ade43a"
+    },
+    "source/zh_frontend.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/zh_frontend.h",
+      "sha256": "357ef38290919c94065bbbe487d500947ebbc9fbc6ef0ed1ca22a5711708ec7d"
+    },
+    "source/zh_tables.c": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/zh_tables.c",
+      "sha256": "ef9f8f8963f373a4c6ab19443474caf32b7bd5666ad903612a8c5ac045cfd542"
+    },
+    "source/zh_tables.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/zh_tables.h",
+      "sha256": "b2ba8c88bd8bf2cafc1bd89dfed361ab70514f602e61de08167e61185241273d"
+    },
+    "source/unicode_native.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/unicode_native.h",
+      "sha256": "14ddc897e4ca884167dd627120edfc54d0571f7a16fe4e87d99a47ade1671e23"
+    },
+    "source/native.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/native.h",
+      "sha256": "a78788a2519a9d513eed7dfd8b43619c60dc7c2982db2b71a9143134c6b03eaf"
+    },
+    "source/frontend_crc.c": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/frontend_crc.c",
+      "sha256": "f820827a66ac3cf66c3e1173b2d126bcbc22bb7f637498c17f2987e0125a5ef3"
+    },
+    "source/generated/zh_properties.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/generated/zh_properties.h",
+      "sha256": "6a9940305d618dac6306108a69be5ea924a3c49ffe50f28a91b02a1cce1e4f8b"
+    },
+    "source/generated/zh_tables.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/generated/zh_tables.h",
+      "sha256": "5098b0a79255cc53e9004ce4c4768fe7c4419e383c1e9fa2df9d1937f47e726b"
+    },
+    "source/generated/zh_vocabulary.h": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/generated/zh_vocabulary.h",
+      "sha256": "ebe1bb456bbb24cce946bbe387e9199e4b8e7d7b750cc303ed4b2a0971d739e8"
+    },
+    "source/assets/zh_words.bin": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/assets/zh_words.bin",
+      "sha256": "5d103135ad98a73110a9e1ed366fd77eb14ba107c38bfc7ad7dd8f3cc05c083b"
+    },
+    "source/assets/zh_chars.bin": {
+      "source": "/home/fomak/ffb/model_native25_publish_20261025/repo/runtime/native_m4/src/assets/zh_chars.bin",
+      "sha256": "680ec92d23f42dcbf3e862d1b31b18ed2a11b984d81850640a2b39d6f7681878"
+    },
+    "OPENCC_LICENSE.txt": {
+      "source": "/mnt/d/newtts/best_bilingual_release_20261029/tts_best_20261029/source_archive/frontend/opencc_license/LICENSE.txt",
+      "sha256": "18f3fedf9eac72e6054260489c764c1e54f63cf2b16055523f561ffeec7bc908"
+    }
+  },
+  "upstream_native_source_note": "The exact release build script includes this preserved native source; output equivalence against the released binary is checked separately.",
+  "original_released_binary_sha256": "7d17054295ccb871106bbec671a35bd3318356efb7de799c137b6c8292cc30e9"
+}

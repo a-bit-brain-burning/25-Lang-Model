@@ -5,6 +5,7 @@ import numpy as np
 from frontend_repair import TextFrontend,save,sha
 from frontend_live import build_zh,details
 from reading_policy import ReadingPolicy
+from reference_chinese import FrontendCapacityError
 from plan_rules import protected_positions,LIMIT_PHONES
 def plan(text,language,directory,frontend_config=None,abbreviation_mode='auto'):
     directory=Path(directory);directory.mkdir(parents=True,exist_ok=True)
@@ -15,12 +16,15 @@ def plan(text,language,directory,frontend_config=None,abbreviation_mode='auto'):
             if language=='zh':return build_zh(front,value,policy)
             spoken,unused,events,identity=details(value,'en',front,policy) if language=='en' else (value,[],[],policy.identity())
             arrays,meta=front.encode(spoken,language);meta.update(input_text=value,normalized_text=spoken,identifier_units=[],reading_decisions=events,frontend_policy=identity);return arrays,meta
+        def fits(value):
+            try:return len(encode(value)[0]['phones'])<=LIMIT_PHONES
+            except FrontendCapacityError:return False
         chunks=[];start=0;forbidden=protected_positions(text)
         if language in ['zh','en']:
             for lo,hi in policy.atomic_spans(text,language):forbidden.update(range(lo+1,hi))
         while start<len(text):
             tail=text[start:]
-            if len(encode(tail)[0]['phones'])<=LIMIT_PHONES:end=len(text);reason='end_of_text'
+            if fits(tail):end=len(text);reason='end_of_text'
             else:
                 strong=[];weak=[]
                 for match in re.finditer(r'[。！？!?；;]|\.(?!\d)|[，,、：:]|\n',tail):
@@ -31,13 +35,13 @@ def plan(text,language,directory,frontend_config=None,abbreviation_mode='auto'):
                 for reason,ends in [('sentence_boundary',strong),('clause_boundary_at_context_limit',weak)]:
                     for stop in reversed(ends):
                         if stop-start>200:continue
-                        if stop>start and len(encode(text[start:stop])[0]['phones'])<=LIMIT_PHONES:end=stop;break
+                        if stop>start and fits(text[start:stop]):end=stop;break
                     if end is not None:break
                 if end is None:
                     reason='word_boundary_at_context_limit' if language!='zh' else 'character_boundary_at_context_limit'
                     for stop in range(min(len(text)-1,start+120),start,-1):
                         if stop in forbidden or (language!='zh' and not text[stop-1:stop].isspace()):continue
-                        if len(encode(text[start:stop])[0]['phones'])<=LIMIT_PHONES:end=stop;break
+                        if fits(text[start:stop]):end=stop;break
                 if end is None:raise ValueError('A single indivisible identifier exceeds the bounded context budget')
             source=text[start:end];arrays,meta=encode(source);assert meta['unknown_phone_count']==0
             key=hashlib.sha256((language+'\0'+source).encode()).hexdigest()[:24];path=(directory/(key+'.npz')).resolve()

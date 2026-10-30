@@ -1,0 +1,116 @@
+{
+  "status": "PASSED",
+  "binary_parity_fragments": 77,
+  "numeric_contract": [
+    {
+      "text": "你好，欢迎测试新的语音模型。",
+      "raw_numeric_features_bit_exact": true,
+      "phones": 34
+    },
+    {
+      "text": "银行行长在重庆重新办理业务。",
+      "raw_numeric_features_bit_exact": true,
+      "phones": 37
+    },
+    {
+      "text": "嗯[en2]，我得去看看。",
+      "raw_numeric_features_bit_exact": true,
+      "phones": 17
+    },
+    {
+      "text": "妈妈不在家，你想不想看看？",
+      "raw_numeric_features_bit_exact": true,
+      "phones": 34
+    },
+    {
+      "text": "为什么还不能开始！",
+      "raw_numeric_features_bit_exact": true,
+      "phones": 24
+    }
+  ],
+  "Chinese_workbook_cases": 49,
+  "all_unknown_phones_zero": true,
+  "all_Chinese_English_acoustic_calls_zero": true,
+  "training_updates": 0,
+  "binary_parity_details": "CHINESE_REFERENCE_BINARY_PARITY.json",
+  "final_source_feature_identity": {
+    "status": "PASSED",
+    "audio_cases": 55,
+    "all_segment_features_and_metadata_match_final_source": 176,
+    "fused_erhua_fallback_sandhi_recomputed": true
+  },
+  "full_chain_preview_cases": 55,
+  "independent_CLI": {
+    "status": "PASSED",
+    "cases": [
+      {
+        "id": "zh_B37",
+        "sha256": "e638c24d699183ce2d9426f280293d8c852148eb9dd9998c7d880d1dd7d5d4d0",
+        "whole_Chinese_acoustic": true,
+        "known_phones_only": true,
+        "byte_exact_replay": true
+      },
+      {
+        "id": "regression_en2",
+        "sha256": "a38d6ea3299ac6f632ae8b89ad476bed3e73f2780f31e251fca20fbaff6b4665",
+        "whole_Chinese_acoustic": true,
+        "known_phones_only": true,
+        "byte_exact_replay": true
+      },
+      {
+        "id": "standalone_nasa",
+        "sha256": "20b019384613544c181c2cb1ed47bae8d3b18eff72ff8f85134aad78fc9bfea5",
+        "whole_Chinese_acoustic": true,
+        "known_phones_only": true,
+        "byte_exact_replay": false
+      },
+      {
+        "id": "nasa_word",
+        "sha256": "350bb987323c095ec98fb5666565a2161af51dc46806b8fd97c193ddc18776b2",
+        "whole_Chinese_acoustic": true,
+        "known_phones_only": true,
+        "byte_exact_replay": false
+      },
+      {
+        "id": "nasa_code",
+        "sha256": "a56e144956a148af5b9922751ea735ea9664f2c84bec30b3e034c6721e9e6b3b",
+        "whole_Chinese_acoustic": true,
+        "known_phones_only": true,
+        "byte_exact_replay": false
+      }
+    ]
+  },
+  "baseline_comparison_cases": 12,
+  "baseline_unchanged": [
+    "zh_B2",
+    "zh_B3",
+    "zh_B14",
+    "zh_B23",
+    "zh_B37",
+    "zh_B49",
+    "regression_polyphone",
+    "regression_neutral",
+    "regression_flight_mu"
+  ],
+  "baseline_changed": [
+    "regression_en2",
+    "regression_acronyms",
+    "regression_traditional"
+  ],
+  "all_34_previous_regression_wavs_byte_exact": true,
+  "non_Chinese_wav_checks": 25,
+  "policy_semantic_test_groups": 12,
+  "rndvoc_clipped_samples": 3,
+  "bwe_quantizer_clipped_samples": 5,
+  "deferred_erhua_workbook_cells": [
+    "B31",
+    "B32",
+    "B37",
+    "B42",
+    "B47"
+  ],
+  "frontend_only": true,
+  "model_weights_unchanged": true,
+  "human_quality_accepted": false,
+  "complete_target_RAM_verified": false
+}

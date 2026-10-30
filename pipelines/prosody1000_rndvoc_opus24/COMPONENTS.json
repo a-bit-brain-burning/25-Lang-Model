@@ -84,6 +84,16 @@
       "shared_frozen_CMU_lexicon": true,
       "Chinese_identifiers_use_Chinese_acoustic": true,
       "weights_unchanged": true
+    },
+    "Chinese_reference": {
+      "directory": "reference_chinese",
+      "source_release": "best_bilingual_release_20261029",
+      "renderer": "reference_chinese.py",
+      "rules": "native_zh_t2s_lexicon_polyphone_neutral_sandhi_word_groups",
+      "numeric_contract": "phonetic32_context34_native_initial_whole_rime",
+      "unknown_phone_substitution": false,
+      "untrained_fused_erhua": "explicit_defer_to_existing_separate_realization",
+      "Chinese_short_uppercase": "accepted_2_to_5_letters_spelling_unless_lexical_or_override"
     }
   },
   "total_learned_pipeline_parameters": 4622455,

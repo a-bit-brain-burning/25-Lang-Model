@@ -28,8 +28,8 @@ def normalize_chinese(text):
     text=ns['normalize_zh'](text)
     for start,end,word in reversed(letter_spans(text)):
         text=text[:start]+keep(word)+text[end:]
-    # Existing trained inventory has en, not the syllabic n used for bare 嗯.
-    text=text.replace('嗯','嗯[en5]')
+    # Match the accepted release: en2; keep an explicit user hint authoritative.
+    text=re.sub(r'嗯(?!\[)', '嗯[en2]',text)
     return text,protected
 def identity():
     return {str(LEGACY/name):hashlib.sha256((LEGACY/name).read_bytes()).hexdigest() for name in ['frontend.py','text_prepare.py','audio_join.py']}

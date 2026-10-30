@@ -1,0 +1,28 @@
+{
+  "library_sha256": "7f28f82e559633eba8f5c9e8e4f261a6f3c00d85deaf01ee3fc406558d9785b3",
+  "source_files": {
+    "source/assets/zh_chars.bin": "680ec92d23f42dcbf3e862d1b31b18ed2a11b984d81850640a2b39d6f7681878",
+    "source/assets/zh_words.bin": "5d103135ad98a73110a9e1ed366fd77eb14ba107c38bfc7ad7dd8f3cc05c083b",
+    "source/bridge.c": "74b3dbe8c689705ab7fe43f4d502224284108b0ee0287d90715cc61be3a19ac4",
+    "source/frontend_crc.c": "f820827a66ac3cf66c3e1173b2d126bcbc22bb7f637498c17f2987e0125a5ef3",
+    "source/generated/zh_properties.h": "6a9940305d618dac6306108a69be5ea924a3c49ffe50f28a91b02a1cce1e4f8b",
+    "source/generated/zh_tables.h": "5098b0a79255cc53e9004ce4c4768fe7c4419e383c1e9fa2df9d1937f47e726b",
+    "source/generated/zh_vocabulary.h": "ebe1bb456bbb24cce946bbe387e9199e4b8e7d7b750cc303ed4b2a0971d739e8",
+    "source/inflate_wrapper.c": "500e26797c5171264bd5018c59f7475ccee1b1d5bec594d4320bf1bf061f7b2e",
+    "source/kokoro_roots.h": "3ab579143cfac674a1928940fb1f4b486cb07f7edf913a59721d3f6f58a44923",
+    "source/native.h": "a78788a2519a9d513eed7dfd8b43619c60dc7c2982db2b71a9143134c6b03eaf",
+    "source/t2s_tables.h": "89c750684b2d1f6ed7ef6710ea7359c66873274b375e5fc5316e7867b864cfbe",
+    "source/unicode_native.h": "14ddc897e4ca884167dd627120edfc54d0571f7a16fe4e87d99a47ade1671e23",
+    "source/utf8_only.c": "2005615732f89d953374e4e7f51e8cb8ff1a3ffc9db16148fce8bbf8711ddabe",
+    "source/zh_frontend.c": "54d2d64ad65512e48d236f2623fa88e4ec5c567c4f1b4404b528de2ef2ade43a",
+    "source/zh_frontend.h": "357ef38290919c94065bbbe487d500947ebbc9fbc6ef0ed1ca22a5711708ec7d",
+    "source/zh_kokoro.c": "65d11a1ae4e973bd1f1e24e7f364bf137fe513254dbcfbb5db6febf2828acf39",
+    "source/zh_t2s.c": "c0d705f56485ebf2a963149259feb5f597a8b4d6b6543d7004cc2fdffb067de2",
+    "source/zh_tables.c": "ef9f8f8963f373a4c6ab19443474caf32b7bd5666ad903612a8c5ac045cfd542",
+    "source/zh_tables.h": "b2ba8c88bd8bf2cafc1bd89dfed361ab70514f602e61de08167e61185241273d"
+  },
+  "build_requires": [
+    "C compiler",
+    "zlib development headers"
+  ]
+}
