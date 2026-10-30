@@ -1,0 +1,129 @@
+{
+  "models": [
+    {
+      "short": "fi",
+      "language": "fi-FI",
+      "bundle": "models/G7/systems/fi"
+    },
+    {
+      "short": "et",
+      "language": "et-EE",
+      "bundle": "models/G7/systems/et"
+    },
+    {
+      "short": "tr",
+      "language": "tr-TR",
+      "bundle": "models/G10/systems/tr"
+    },
+    {
+      "short": "hu",
+      "language": "hu-HU",
+      "bundle": "models/G9/systems/hu"
+    },
+    {
+      "short": "de",
+      "language": "de-DE",
+      "bundle": "models/G1/systems/de"
+    },
+    {
+      "short": "nl",
+      "language": "nl-NL",
+      "bundle": "models/G1/systems/nl"
+    },
+    {
+      "short": "en",
+      "language": "en-US",
+      "bundle": "models/G1/systems/en"
+    },
+    {
+      "short": "zh",
+      "language": "zh-CN",
+      "bundle": "models/G11/systems/zh"
+    },
+    {
+      "short": "sv",
+      "language": "sv-SE",
+      "bundle": "models/G2/systems/sv"
+    },
+    {
+      "short": "no",
+      "language": "nb-NO",
+      "bundle": "models/G2/systems/no"
+    },
+    {
+      "short": "da",
+      "language": "da-DK",
+      "bundle": "models/G2/systems/da"
+    },
+    {
+      "short": "lt",
+      "language": "lt-LT",
+      "bundle": "models/G6/systems/lt"
+    },
+    {
+      "short": "lv",
+      "language": "lv-LV",
+      "bundle": "models/G6/systems/lv"
+    },
+    {
+      "short": "hr",
+      "language": "hr-HR",
+      "bundle": "models/G5/systems/hr"
+    },
+    {
+      "short": "sl",
+      "language": "sl-SI",
+      "bundle": "models/G5/systems/sl"
+    },
+    {
+      "short": "bg",
+      "language": "bg-BG",
+      "bundle": "models/G5/systems/bg"
+    },
+    {
+      "short": "cs",
+      "language": "cs-CZ",
+      "bundle": "models/G4/systems/cs"
+    },
+    {
+      "short": "sk",
+      "language": "sk-SK",
+      "bundle": "models/G4/systems/sk"
+    },
+    {
+      "short": "pl",
+      "language": "pl-PL",
+      "bundle": "models/G4/systems/pl"
+    },
+    {
+      "short": "es",
+      "language": "es-ES",
+      "bundle": "models/G3/systems/es"
+    },
+    {
+      "short": "pt",
+      "language": "pt-PT",
+      "bundle": "models/G3/systems/pt"
+    },
+    {
+      "short": "it",
+      "language": "it-IT",
+      "bundle": "models/G3/systems/it"
+    },
+    {
+      "short": "fr",
+      "language": "fr-FR",
+      "bundle": "models/G3/systems/fr"
+    },
+    {
+      "short": "ro",
+      "language": "ro-RO",
+      "bundle": "models/G3/systems/ro"
+    },
+    {
+      "short": "el",
+      "language": "el-GR",
+      "bundle": "models/G8/systems/el"
+    }
+  ]
+}

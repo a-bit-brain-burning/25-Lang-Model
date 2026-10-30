@@ -1,19 +1,19 @@
 {
-  "format_version": 5,
-  "component": "trained_25_language_acoustic_vocoders_and_modular_original_bwe24",
+  "format_version": 6,
+  "component": "trained_25_language_models_and_full_prosody1000_RNDVOC_Opus24_pipeline",
   "self_excluded": true,
   "files": {
     ".gitattributes": {
-      "bytes": 185,
-      "sha256": "5e256078f79bf5dc98bad735c54570822d16a53d82c98f0c13f6420341dea111"
+      "bytes": 458,
+      "sha256": "46339def62e7581d7b940bba4fdaf62f6c47935158cfade682a8e1fe6fe0ee3f"
     },
     ".gitignore": {
       "bytes": 301,
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 11804,
-      "sha256": "08d8d67e8e19b856ebba792da51506e04ce6a72d815604230921ae99753c948c"
+      "bytes": 12154,
+      "sha256": "14ee0fe3fe8966fcf0c6b6475c530fe4fe9ab9f0758f43923a2583af1b354b83"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -738,6 +738,2774 @@
     "third_party/rndvoc/PROVENANCE.json": {
       "bytes": 2192,
       "sha256": "cb6d2adc869fbfd33768870d467f31a1192d98a542281131cfe136d1ab822eb0"
+    },
+    "CURRENT_PIPELINE.json": {
+      "bytes": 345,
+      "sha256": "6c887a8432ada71289b7b53fed1148539e5975031629aaa8d4747cfdb1540500"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/plan_rules.py": {
+      "bytes": 350,
+      "sha256": "0b01577be29a71a248d24b933190a1254f8208d788bf45a9832d7bf3f434ed7a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_live.py": {
+      "bytes": 832,
+      "sha256": "11dba8da39b0c3e84ac2a7d29575b3d8a515b1334042b9e3f25665a2c66102f2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/acoustic_model.py": {
+      "bytes": 2191,
+      "sha256": "48882278518962d1edd3c7ff86db8923b05f61e880ae25c7b301de6aa3189504"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/COMPONENTS.json": {
+      "bytes": 2776,
+      "sha256": "e9fe80c557d31d2d316b6ac9904842d737be9e651a842367c106134d2c9f3053"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/legacy_contract.py": {
+      "bytes": 2398,
+      "sha256": "bfd089b94513af04e9de9edbb11c130a1d3c448bb431bb94fb1bd199c5d8ba13"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/README.md": {
+      "bytes": 5694,
+      "sha256": "a4cb112201948737a127e98fd6b312baaa922ebb9a0070e5eb13986ed2370aed"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/verify_manifest.py": {
+      "bytes": 594,
+      "sha256": "87b848736547588c6d69b96346c99731f12d91c93d9ecbdc8d2cbd32fe7993c8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/runtime.py": {
+      "bytes": 8472,
+      "sha256": "8fa125a7f0b6d5f9203eee21fdbc57b583aed004bebe14dadd8bc033371ff5ad"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/requirements-reference.txt": {
+      "bytes": 88,
+      "sha256": "6669055b01432e61d2adb63e8085bece0d208068c40aaebcefa55b46d8a53ee1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/identifier_light_u_long_c.py": {
+      "bytes": 2983,
+      "sha256": "d2350f73a5805429edd53b4a1d5959f19c9263eff6e5caf8b1639437e9a4a8f0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_repair.py": {
+      "bytes": 8948,
+      "sha256": "c9eda74685cf9c7141335e68a793b14296c685a072b60af883a991640786e27d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/identifier_u_natural_control.py": {
+      "bytes": 5029,
+      "sha256": "ef4224a598cc93c15ba3a5e281b5d40ca926f50db0af19c23fd0334bb1c8ad9d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/synthesize.py": {
+      "bytes": 1437,
+      "sha256": "5a5ae5c1ede1cd3ebb37dc2c7ffd6e3d9a33daec164a17e9570f6d1c988a4b52"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/loader.py": {
+      "bytes": 2069,
+      "sha256": "1964c267683d73fb873a4ba339756dfab9ffb165899fde502c15697f5d2a4c30"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/verify.py": {
+      "bytes": 2748,
+      "sha256": "8104eb43280d65b04b7b624713b1412be74fe30752ad4db928be89c09639fe23"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/storage.py": {
+      "bytes": 4608,
+      "sha256": "efa2c0882f62ced6cf8bd0fbb34750bf28304776ba74a43233bd1932c990139c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/identifier_rhythm.py": {
+      "bytes": 2606,
+      "sha256": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/text_worker.py": {
+      "bytes": 3246,
+      "sha256": "037625f98e34a305f6821b77162fd3aa9621b38402fde8a150c63001d8749a5d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/requirements.txt": {
+      "bytes": 91,
+      "sha256": "5d620184e78d78feaedbe9d228e05ce9ae82feb6e3c8289d91c6be94272f41be"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/identifier_first_digit.py": {
+      "bytes": 3883,
+      "sha256": "cc7c19dc694c24d24f7e94ad72af0d776925a9cef118a4fb65ba2d35c2615291"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/.gitignore": {
+      "bytes": 59,
+      "sha256": "cd79ca1221a176dc1db8aacff1c88eedf846a83f01916a0f6391c4ce65e81b12"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/quantization.json": {
+      "bytes": 26833,
+      "sha256": "292b1d0789ef2a3ee0cd513fd7e510512add6d91b1deb9db5fc277e2ef9060f6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/weights.safetensors": {
+      "bytes": 1711860,
+      "sha256": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/assets/letters.json": {
+      "bytes": 27501,
+      "sha256": "7685479cc139ebe40737d2d2304356e1f5731efb7875f0715acf48927c0db915"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/assets/normalization.json": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/assets/vocabulary.json": {
+      "bytes": 4592,
+      "sha256": "fcc33a75816be07c082413431e0e0831f2b4f58f1c80a44dfc3ce27f2a41a742"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/acoustic/assets/aliases.json": {
+      "bytes": 581,
+      "sha256": "4c48551c3ae970f306a5d6d95d4abc3b014a5c45b239f417b889aee840eee354"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/vocoder_fp32.safetensors": {
+      "bytes": 4259368,
+      "sha256": "95ac8081bb033b1c640587f8f1e36701398a96ca950195aa44200c862f8629db"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/adapter_fp16.safetensors": {
+      "bytes": 3811352,
+      "sha256": "2b0f43c0d80c7229aef692d03ef683860da33367a6eb9e236625ac2aebe58f1e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/config.json": {
+      "bytes": 440,
+      "sha256": "2f40ab4ecbf34ba036ec47a30c22aa7841d8e3ba6849fbc7705b463f341d8d0f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/TENSOR_PROVENANCE.json": {
+      "bytes": 75572,
+      "sha256": "5136edbaeb05389e8b2cb6af0e8c3d3a0298a8d173a3a191fd11f9a58f1ad810"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/model_config.json": {
+      "bytes": 1867,
+      "sha256": "a062cfea66953e2a579b975c90bbcc29f182067eefe1b9a9cb550c295d4d5722"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/vocoder_fp16.safetensors": {
+      "bytes": 2831510,
+      "sha256": "bc156a6adbd4fd79e085bc4f9d454c2298eed31079d94dacb6d0d217e9cfd511"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/training_config.json": {
+      "bytes": 2455,
+      "sha256": "bc57a7c7028206f05664b7d318114ab5bc985d0ff02b21a5dbf5c7ef8572ac97"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/models/rndvoc/EXPORT.json": {
+      "bytes": 2985,
+      "sha256": "fb4f0642bcda485ce45680ab80c9e2ce43a23843d5633552be355bc44edd0f17"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/model.py": {
+      "bytes": 1928,
+      "sha256": "ebbdfbd85ad20eb924ccbae0a28847cd94467981539ed0dcea4f18ebe189352a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/frontend.py": {
+      "bytes": 1931,
+      "sha256": "95f791a68621d879eb9464ccbcd69ef618f6846275297e15226dcc403e4c8a8d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/inference.py": {
+      "bytes": 9859,
+      "sha256": "5fc1c0640714afe91423d3866d745b9605faa359bc47b252b586d1f5e5691332"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/__init__.py": {
+      "bytes": 327,
+      "sha256": "27dc1dd26668a726fcb86138c9e020aae470f8a4bd1fbede35b1202105347ece"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/models/rndvoc_22k.py": {
+      "bytes": 9987,
+      "sha256": "094dea538236a7ead09a220d2adc063cb25ea93cbb8b3ff92ef43d0b815097c2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/models/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/models/rnd_utils/norm.py": {
+      "bytes": 5867,
+      "sha256": "8b52e468ac3b2c08509a00e010509a35197ba9a5e488d1d2415db21b10606444"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/models/rnd_utils/basic_arch.py": {
+      "bytes": 23791,
+      "sha256": "8f5292097c067eef3ef3fdfb60155deb0c230c6c2e9e8ec8007e76579cfb5985"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_rndvoc/_vendor/models/rnd_utils/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/bwe24.py": {
+      "bytes": 14302,
+      "sha256": "25e6dc6e2eb11abb0b75ccf05ea2af7cf708c404c882595799b82150d9e30d90"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/chain.py": {
+      "bytes": 5319,
+      "sha256": "b1aeda3f1f1899f66c03694269dbee55acadb64300bf98c932b43316c72a87a5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/__init__.py": {
+      "bytes": 553,
+      "sha256": "8b89b0a86c1b3e97e6ccb908f2d19251b718e22e1f4c590606f73d5ef2302d02"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/BWE_ASSET_MANIFEST.json": {
+      "bytes": 10760,
+      "sha256": "ba68cc7a10ec5cb46fd58da56e2195a4113f0f4180a6c61d20602b25fed7e519"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/PROVENANCE.json": {
+      "bytes": 41555,
+      "sha256": "aa7751bca6fd88873b98934c3184726c830c0b154539926c1607cc626069e097"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/NOTICE.md": {
+      "bytes": 1067,
+      "sha256": "1dd02e688988c979a69f5b921b576e0748cc523adf6c064725cd42ed872ab55a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/CMakeLists.txt": {
+      "bytes": 3197,
+      "sha256": "b2badb63f8708a0f458baf842550c2f48d0774d1243eec9e23e1c64b18e2b0f8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/BUILD.md": {
+      "bytes": 5472,
+      "sha256": "647c141f8097c9e2517a8389c7193f1445f0294b6ac05ad4416ba1619ad189ed"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/include/opus_types.h": {
+      "bytes": 5157,
+      "sha256": "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/include/opus_defines.h": {
+      "bytes": 38558,
+      "sha256": "bbd4d4e3ba99f6982b1c8d8f5541814ad77d8e8babf3cc788cf23d517b2ca9d6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/include/opus_custom.h": {
+      "bytes": 16965,
+      "sha256": "3b67a36b36eac7d712f712a4e57d602a7ff9df753d184b0743bbca8628ccff4b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/bwe_demo.c": {
+      "bytes": 2827,
+      "sha256": "ae5c223e4c5f975eb16397d686061857d12bdb0cadc55628eefbeb133c3bc55f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nnet_arch.h": {
+      "bytes": 9293,
+      "sha256": "3b227cd54ae376c21050a1116261665c9c8d82b9ec46b1c9aed9af6a6cd444d0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/burg.h": {
+      "bytes": 2464,
+      "sha256": "866d915ee4046e126dd3e7c87d822cbcf6c691e59f32e8ebf4715bfacf3f6ba7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/vec_neon.h": {
+      "bytes": 13641,
+      "sha256": "0fa404539200c5149adfd212ea0eebce1b22529a917b6a051a727d797a6964bb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce_config.h": {
+      "bytes": 2222,
+      "sha256": "7e5cce5ad1f2b0dbbba2766bb7f92ec821abd78d374ddfc760f872e9d2bd0cf3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce.h": {
+      "bytes": 4088,
+      "sha256": "e9f1784cf1372d95ca75eff9a778e9d297ed45af4be6fc82c52d0a79d15f10d0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce_features.h": {
+      "bytes": 3054,
+      "sha256": "d482f57c0771caf588a6ad0328e33cae6373f834aff95887bfdbbe516eba151d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nnet_default.c": {
+      "bytes": 1456,
+      "sha256": "1402eb611b7fcc1fe7fa18639f0395e0af47a783ef87450318411483516e9011"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nnet.h": {
+      "bytes": 5574,
+      "sha256": "d90f8b0371c39eb4dfa02b1d87120e09f37e8e4c309cf979a5650f121f9dac4b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nnet.c": {
+      "bytes": 5514,
+      "sha256": "7612655ee56fd10977be97287dd0402fc9babf3b7ad392ec503d0edf93d37732"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce.c": {
+      "bytes": 70054,
+      "sha256": "ee368fd5c11b7a657b6d20b00ab9909e90f0e78c6f77e6aaef80f5050ca8d7eb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/freq.c": {
+      "bytes": 8921,
+      "sha256": "65caf405847ea2f8bf06350eb078ad0d5934bd30cd7e93523b5e96c821bda379"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/vec.h": {
+      "bytes": 11235,
+      "sha256": "fe05311a22c7434c6cad84fa62d8f868e8eee83855032123755daecb9c7e9998"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/parse_lpcnet_weights.c": {
+      "bytes": 7561,
+      "sha256": "debf250b15197ea2097a2556b44cfdaa39287ef58b4c2c56311bef78027525d8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce_structs.h": {
+      "bytes": 4667,
+      "sha256": "4c460b9fd382c8fbf97f81a4067a8628932403e18fc8004654ca423a3bf02cc2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nndsp.c": {
+      "bytes": 15905,
+      "sha256": "d8e0808328c78403c088cd87386f934af59ab85ab708df4a18d810b5eba8cdfc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/nndsp.h": {
+      "bytes": 4152,
+      "sha256": "0da4042f6b0ffdaf684f1ed06ace42142ae78341325a8474d014e0a51490e7f2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/bbwenet_data.h": {
+      "bytes": 4387,
+      "sha256": "fb34d4dfa4f54ecbc03d76e2c685d53c4e1b2509e0bac071c5e1b8c6e948a30a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/osce_features.c": {
+      "bytes": 24876,
+      "sha256": "647a2d8e6611fbfc402e01df9c2568e9612eddab296b88b1361e7ba7ead4079c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/freq.h": {
+      "bytes": 2258,
+      "sha256": "8cf2a319c99a14daebb368919344975b44ce6d299ebc1a0ac17ae73af80a8372"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/lpcnet_tables.c": {
+      "bytes": 19083,
+      "sha256": "084670acd5cd670d2356434ebbd6fd5e7da3c27e5b4946c682f2f47c8124d742"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/arm/dnn_arm.h": {
+      "bytes": 4440,
+      "sha256": "9b87598ef5707e008811e7db1c94c67678552758af11aa5a5d97488cfd5a1574"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/dnn/arm/nnet_neon.c": {
+      "bytes": 1576,
+      "sha256": "6a034b99f5b16becc78098ee317fc1b8ea579b652f36c76e5a3384e563b0c584"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/structs.h": {
+      "bytes": 21869,
+      "sha256": "a59092ef7c40e9802b1c62dd2e2f655bb0d0d5a8ec18af64cdf8aaa3c9f409d3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/macros.h": {
+      "bytes": 6501,
+      "sha256": "7fb2ce02a79df147f9220a4fbc1effe531305881092f4b7d003057666223ebfd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/errors.h": {
+      "bytes": 3640,
+      "sha256": "3bbf21416af6475200e55cbfeacf8dccef88455e31352735e4d4fecdda84ddd6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/MacroCount.h": {
+      "bytes": 20763,
+      "sha256": "8d822f074a31b6edf49c1a9b45f6cab36d5193393aef94b73c6ff3c4d64ac4fc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/MacroDebug.h": {
+      "bytes": 33581,
+      "sha256": "aefab84ea6848a81b1c48bbcf60935f70751ded68853d5c7d0ebb1249bd75773"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/Inlines.h": {
+      "bytes": 7314,
+      "sha256": "d8d637375bd1e1525ba20dfb9103781becabd9aef9decd64cc3a5402cbc2e838"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/typedef.h": {
+      "bytes": 3522,
+      "sha256": "a25409c0741545a75f28bf8a51ccdc3a7ba2421e783bd02baafe379e6d43e5b7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/SigProc_FIX.h": {
+      "bytes": 39462,
+      "sha256": "2b8e5f5afc6aa42585fc5f7c017c09da33d0411fcc37f3799bd91e6e53cf1066"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/define.h": {
+      "bytes": 10009,
+      "sha256": "10dbeb25a21341de7a17d98c3bc8a1ab9af8e6345c57604180e985dd20619bf1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/resampler_structs.h": {
+      "bytes": 2614,
+      "sha256": "806a12a9ccfa673e04a31ce1f20e4b715ede4ad3a811419cc1726172df9d2e21"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/arm/LPC_inv_pred_gain_arm.h": {
+      "bytes": 3243,
+      "sha256": "8ea077fa01c4d1fff026c049aef8b45244283c9e5252d8e2137c335f93eba5d7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/silk/arm/biquad_alt_arm.h": {
+      "bytes": 4430,
+      "sha256": "f252b371df2859167ce6d703ccad896b1a26f991bf5db4a20465b801c541f001"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/mdct.h": {
+      "bytes": 4771,
+      "sha256": "fe4d55da1aa03159403379a1cf9d6373da7b27ed0f1de63f8f726e9d9cffd41a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/stack_alloc.h": {
+      "bytes": 6378,
+      "sha256": "d0b2c8eabad72faede82e18ea57f5713731b84b9c7212593613bb62199a6aaf7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/kiss_fft.c": {
+      "bytes": 18531,
+      "sha256": "0ff3c57ce9dededbf9925338808223ee8e164b5847f2b320da49b11bac4024d0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/modes.h": {
+      "bytes": 2665,
+      "sha256": "f1e503db4939cefaaaf9b5c744023223de0acdb51d2e33238e60bb0495e81c3f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/float_cast.h": {
+      "bytes": 5738,
+      "sha256": "ff1fab31ec21c933229a4525706fbfe98970c3ce4359e4698d38b18b220c1123"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/kiss_fft.h": {
+      "bytes": 6823,
+      "sha256": "1226ddcfdef87bc5169116e1188d370c8cc6a4e49f62eada6c7da808d19665af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/pitch.h": {
+      "bytes": 6284,
+      "sha256": "546220cfc7b32796a1f18b37ce75864e94b0016ea8a5eaace1f06c70aa8e20e2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/entcode.h": {
+      "bytes": 5423,
+      "sha256": "97e7742ae4251b545326aadcc898635e90f22d5dc18fa63471c118b8bd79d1e8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arch.h": {
+      "bytes": 12574,
+      "sha256": "fc1d7aae69fec75b97566fd6b260e76d4339242f34470230dc390878c2131884"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/pitch.c": {
+      "bytes": 15133,
+      "sha256": "ad93368ae01b6fcadd28905e6ed5a55ad165ae5031654540af77d1ffe55acfd5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/mathops.h": {
+      "bytes": 22889,
+      "sha256": "79bf06946bf6ab97e6eb933193bcc654d0a7503132044c22714d7cdcc22ba22f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/cpu_support.h": {
+      "bytes": 2434,
+      "sha256": "02bf67720c974a87fa96aad556c4847acc3370ecd16a95170193724197bc9c0e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/ecintrin.h": {
+      "bytes": 3679,
+      "sha256": "c1100f45bdf70d2243740a7891a5def54cf483b51d024a35ac915b630639b556"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/entdec.h": {
+      "bytes": 5348,
+      "sha256": "31485453c516ad9be38a03b50a3c450fd5a9b7c7fad2d9e6c05357fd07efe0a9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/celt.h": {
+      "bytes": 8947,
+      "sha256": "290d8b2e20f2ee0dd7177fbbcdc557c81ca5eadf61a7971772d27a77d9e86cae"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/entenc.h": {
+      "bytes": 5905,
+      "sha256": "b54d50fa515e4cf2f4b5a5a7a99269b85e24aefb533dd55d407660d1105b5a01"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/celt_lpc.h": {
+      "bytes": 2240,
+      "sha256": "e10b2e2e610b16a2003d00599467dfed45d300726eb28d0934857ebe2dc822cf"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/os_support.h": {
+      "bytes": 3291,
+      "sha256": "9e0b4572b0c5f366fd6f954d8f70d598d5f2b9d6cd7d123fc0f57cfff54abfd6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/_kiss_fft_guts.h": {
+      "bytes": 6200,
+      "sha256": "374d4edc9e4f82da271a12fa9675c3f2f595a3b465544fbd05eca53818320c3a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/x86/x86_arch_macros.h": {
+      "bytes": 1618,
+      "sha256": "b6118942870b62ff78731edc3025e55230c3fadaf28ec2f4024d786210631505"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arm/pitch_arm.h": {
+      "bytes": 6631,
+      "sha256": "6c941e3c917e60b6b10df2ca594be14ad43c21cf8ad9d0bf78fe6537b308ae09"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arm/pitch_neon_intr.c": {
+      "bytes": 10415,
+      "sha256": "3ac262214a575b6a9b147602be983ff09c3040e7d4a4d5673e754dfe79b9f2a8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arm/armcpu.h": {
+      "bytes": 2830,
+      "sha256": "9bfc2da335b5a37cde9dbeb16c9666c9678f0d8487466825678f6c2bbc4b520d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arm/celt_neon_intr.c": {
+      "bytes": 13324,
+      "sha256": "ea912260479f6b355407ac561d2679ea40073ddce5a767d5cc8094b724fbf83d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/upstream/celt/arm/mathops_arm.h": {
+      "bytes": 3884,
+      "sha256": "a9a8361ee8ed4c442bb820126be1f5b5612386db4268fb8c0de93dceadb9b2db"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/cmake/unpack_weights.py": {
+      "bytes": 716,
+      "sha256": "8e6f0cfeb59dc368c2ee2d07fe4be3059160c07981b7e28f1aa1ede6887ceb0e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/patches/bwe-only.patch": {
+      "bytes": 2032,
+      "sha256": "eb37fcac6d5627d1f42a0573e0dbdeb90cd111f931cdb6609e6b07508ff6a66b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/licenses/COPYING": {
+      "bytes": 1945,
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/licenses/LICENSE_PLEASE_READ.txt": {
+      "bytes": 703,
+      "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_postprocess/assets/opus_bwe/weights/bbwenet_data.c.gz": {
+      "bytes": 3877869,
+      "sha256": "5e5a053c4e794870d16f10402e352512ad26e57ed1752cada1836cbf06e762e5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/losses.py": {
+      "bytes": 2088,
+      "sha256": "650b5794fdb4a087ce57d62439e34bb8050c86d744b849a3488e1e4db6a4fa88"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/model.py": {
+      "bytes": 4872,
+      "sha256": "6e05a51d7f83c55566eb2032760887211e41cc092535456807208718794b7cdd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/vocoder.py": {
+      "bytes": 2940,
+      "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/inference.py": {
+      "bytes": 18788,
+      "sha256": "500b3c7502c7d9002b693511cd5a267457478253129b6d4ca5866e73ac5f1aec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/data.py": {
+      "bytes": 6694,
+      "sha256": "0e0a7b76ede1f2673e425307c9bc57ac45d8e5ec35a69178835d46900634293e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/batching.py": {
+      "bytes": 2385,
+      "sha256": "e6f2b7795ad543fda27eb543060d08dad194a055eafe0eeaa8006a211a3d7a66"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/contracts.py": {
+      "bytes": 3761,
+      "sha256": "0d51b63ecb4a5836e1b88001e21fef08959b9e7535bb0d1477c2400d0d4cda8e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_acoustic/__init__.py": {
+      "bytes": 463,
+      "sha256": "51bc89788aeddba72bb2fc169f48cc3bc771e9fc0c9b8f340bb0c2914062d5a9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_hifigan/model.py": {
+      "bytes": 6174,
+      "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_hifigan/frontend.py": {
+      "bytes": 3675,
+      "sha256": "11e31760cebc18fe8cf3e88bf3e522a57c0d36c5692f563a10fdb2d0255906a1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_hifigan/inference.py": {
+      "bytes": 13137,
+      "sha256": "7eec39f53f5414b842bcf97c79ef50aefc952ccb8709444922600e048849e44f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/neural/new25_hifigan/__init__.py": {
+      "bytes": 489,
+      "sha256": "1a972ba8440b3656e7cb65de1916e743b5cb36d0821dddee0e4243dd457d1204"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/legacy_frontend/audio_join.py": {
+      "bytes": 1849,
+      "sha256": "f61e2169d95cc26d6cb322f751b982ba43629792b8e638f0e1dec293934e4cc5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/legacy_frontend/frontend.py": {
+      "bytes": 6678,
+      "sha256": "ea9e6bf4e683819347638a834e5941e32cc217887fb2769cb96e9dd8f48169c6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/legacy_frontend/text_prepare.py": {
+      "bytes": 8826,
+      "sha256": "fed00669152fe968974e76a7061b49ba37bb59d03a22e6177667468a0aa897c7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/LOCAL_REPAIR_NOTES.txt": {
+      "bytes": 2110,
+      "sha256": "873d2ab34365132c33e121f3fc2e2a37d72e877150d4a65af499fe8702221abc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/STEP1000_INFERENCE_IDENTITY_VERIFIED.json": {
+      "bytes": 388,
+      "sha256": "9c7442bdc3751636b131131e1de20dce2cfb40301e4e1d7a48ce525b38944c31"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/HOST_SMOKE34.json": {
+      "bytes": 12600,
+      "sha256": "652b74836a38a7bbacd1f1ce2aa00625f4d3fb252d6dc91ec505efe066ca7729"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/SOURCE_ORIGINS.json": {
+      "bytes": 1358,
+      "sha256": "1eed29cccc8b8527b838222633434138e0e46b89ded68ec6f4ad599b52e7e46e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/TRAINING1000_COMPLETED.json": {
+      "bytes": 479,
+      "sha256": "6e33f109ad0269de4d112363d04e419f1684aee9e97429a1fb1ee9c0ad3e6286"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/PRESERVED_LISTENING257_BYTE_EQUAL.json": {
+      "bytes": 44752,
+      "sha256": "120b9b5dcd69433e06951c955eef0c4ecd3c1bb409d1326c1a584a27292c5111"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/ORIGINAL_CLI_VERIFIED.json": {
+      "bytes": 1054,
+      "sha256": "12fa6c24ae32c94e5b1773da4404963cfa9eade2db59db982b8ebe57195f3979"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/FRONTEND_SOURCE_REBUILD34_BYTE_EQUAL.json": {
+      "bytes": 12601,
+      "sha256": "54b283d91c833670c44d2d78604dc85b6f50d2f99b59622e3c01b09ccf80fd51"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/tests/REFERENCE.json": {
+      "bytes": 5981,
+      "sha256": "64836b6a1f862020a2207383d890aedc251bf459ffe362184de2ed9966dd162f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/tests/cases.json": {
+      "bytes": 5649,
+      "sha256": "66b3f5550e9f346b34555dd943f4b64c812ae49243e11b851730e2c590b0e9bd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/hifigan_model_config.json": {
+      "bytes": 1156,
+      "sha256": "0ac28ee7bcec978d47591f2696273fd4ecc00fe53fafec7860e456d17ba98be2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/hifigan_config.json": {
+      "bytes": 794,
+      "sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/normalization.json": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/vocabulary.json": {
+      "bytes": 4028,
+      "sha256": "559e1ec14d6d5747432f9b8738b6ea765db02cefaed4eb8587f457bc9d69f1fb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/acoustic_model_config.json": {
+      "bytes": 1564,
+      "sha256": "080d818ad61a47dd722c3608d0f99a4abb08fd52713c7b43e60f6637fa3f5bd4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/api.py": {
+      "bytes": 6522,
+      "sha256": "9ed96da971a65966190b4ed054ce2c228513852539c79694213e1305dd78fa81"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/__init__.py": {
+      "bytes": 55,
+      "sha256": "f00d1619d993d97a07e5c816ca9de96f43d1cf8f9ac53b93aed4dc50f7a3f654"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/FI_ET_ATTRIBUTIONS.json": {
+      "bytes": 493972,
+      "sha256": "bed1dc737093eb2287454a7da404dc6d7d43495ca28ca7a91106c7c7cd3770f2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/MT_GA_ATTRIBUTIONS.json": {
+      "bytes": 228934,
+      "sha256": "efd04df814394eded23a8ea8432a8cb17ee407af1db7b59b920f1cc9a5ea02e2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/SOUTH_SLAVIC_ATTRIBUTIONS.json": {
+      "bytes": 1565361,
+      "sha256": "12b82d6d24c59873f4eb572d9b43dcd6a1e5d7563bd5f2b1b398345b4bbc3402"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/SOURCE_RELEASE_NOTICE": {
+      "bytes": 5515,
+      "sha256": "b3cec522f3e66bb96d79a673c8deb015c21289811ee5a819532aee5c85b81f66"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/LT_PROVENANCE.json": {
+      "bytes": 5837,
+      "sha256": "71fe14822f945d322c55df4c70f90faf7ca60b6cefed6a01880fd8058d57addd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/EU_WEST_SLAVIC_PROVENANCE.json": {
+      "bytes": 38965,
+      "sha256": "0c248a334f85c56c23720624261782f2c1cb64a155155a355b79d6e04d8c31ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/CURRENT_UPDATE_ATTRIBUTIONS.json": {
+      "bytes": 1437255,
+      "sha256": "d9ad239ec16b1dd3e7fbd6efb6b00a57cb895a84dc4e5a238f1df6d8fddee99d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/EU_WEST_SLAVIC_ATTRIBUTIONS.json": {
+      "bytes": 1063641,
+      "sha256": "e66260f2bb190b89f0759fde9b21b985dccf9d320bd524b0f0bb2c6f67761a56"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/FI_ET_PROVENANCE.json": {
+      "bytes": 11516,
+      "sha256": "baeb1ea872497dd29de46b45504bb870e82e52d602171ea9c27433105cb98a5a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/SV_SK_ATTRIBUTIONS.json": {
+      "bytes": 611152,
+      "sha256": "809e0a599deb6c8d78e0e5ff4f917cd8afccba5edeecb42abb94b77097e2bd84"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/MT_GA_PROVENANCE.json": {
+      "bytes": 9905,
+      "sha256": "04a5ef334b7b44dc592af56de811a23c9a635d9714495648f0c3443f740b7fb8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/LT-LEXICON-DATA-CARD.md": {
+      "bytes": 4523,
+      "sha256": "65a41024089e2b5ed5935a0f6c8d3bb67e69ca58af82fe777e80b4c7a49fefe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/LIEPA-TTS-DATA-CARD.md": {
+      "bytes": 5141,
+      "sha256": "9a8b188a06dadd6329b8205594a3a736c390a2c713fd615643726041630704e3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/META-LLAMA-3-LICENSE.txt": {
+      "bytes": 12403,
+      "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/OmniVoice-MODEL-CARD.md": {
+      "bytes": 9424,
+      "sha256": "b5d645a1874baa96a460a0e3a7d5a262811d682d04ce235878a16d5fed287fd3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/BOSON-HIGGS-AUDIO-2-LICENSE.txt": {
+      "bytes": 9171,
+      "sha256": "ac933dc084d119bd20401956b90d11ae87c248b2da62622cd580d82cdf2fa049"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/attribution/licenses/SOUTH-SLAVIC-CC-BY-SA-4.0.txt": {
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/FRONTEND_INDEX.json": {
+      "bytes": 2523,
+      "sha256": "338cb969a9a4cdf0e2dfd8d4d753cd10362cd3a2e5b800c0f57bae99d35593a0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/fe_lexicon.py": {
+      "bytes": 5044,
+      "sha256": "5e20afa3a3d18c8cf7f00a9fd959da14a4c89e0706bd1d4dba4a9565c5ee06f1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/ro_oov_frontend.py": {
+      "bytes": 2013,
+      "sha256": "ad9bf1c7db6d2b84455781a6b750b1de8fe2f8c66b909072ab7c61cf69608c80"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/fe_codec.py": {
+      "bytes": 18403,
+      "sha256": "634a107dd1383de4c565dc46d5adb3ce3366e9a626808320a76112dc6ab3ca3e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/espeakng_loader.py": {
+      "bytes": 332,
+      "sha256": "4f2a6167b7c6fbf66e6806e2823545eaad819631bfbcb4b9ce854941cf263267"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/new_frontend.py": {
+      "bytes": 4668,
+      "sha256": "9585c028cb5024f0c95dffb8780eb4272d21aef5b302fa2efae748f67e5ce15c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/FEATURE_LAYOUT.json": {
+      "bytes": 82643,
+      "sha256": "31b28d2953102bfd782613682462b57f49d9b0d5e8835bde48a7a941ca1bf02d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend_resources.py": {
+      "bytes": 12905,
+      "sha256": "86ee7f5c0cb40839c964b0d020b35ae2451f518cce516ce98b3af49ba7c2ada1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/common.py": {
+      "bytes": 555,
+      "sha256": "6a791a0a507b0e324ea64bc9c2c760403d0786f3a8ab889675c341f8e8361709"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/MANIFEST.json": {
+      "bytes": 3386,
+      "sha256": "dc3c7a58e45f1f1a95b9430de6f3eaba795e62cfc4d96d32e677734499a50600"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/libs/libfrontend4.so": {
+      "bytes": 24936,
+      "sha256": "e7ebad5a8c4e1e35dc782e994d2c883183123d6f08dbd49e179437d0bbc1e55b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/libs/libopen_predict.so": {
+      "bytes": 16008,
+      "sha256": "3dc8b00ab2fb8911133a955bb9eecd23d0e70b39e694a8a786fd209c08b519a6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/libs/libespeak_phonemes.so": {
+      "bytes": 270848,
+      "sha256": "8615e98305098f4db3b1bc4ae63cb00a4b137ab695bcce362b78fbe277c98a14"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/libs/libreader.so": {
+      "bytes": 16112,
+      "sha256": "1a88e23155245f149e3e032cd185366bf44de61655d43cbbf4db3cdd9e32578f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/zh-characters.fep": {
+      "bytes": 88466,
+      "sha256": "0002828e26e658ebe137c1afc070fa75f1cf1ab2a16ac408b3fc8e50d7bbedcb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/sl-SI.fep": {
+      "bytes": 59856,
+      "sha256": "8ecfafe1099d526a8f0f23418e9bc750843a0816b15a4c1cf7e065c805de1ab5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/en-CMU.fep": {
+      "bytes": 448659,
+      "sha256": "2724410dd2ee2296c95d56a392766ba0729065a46f80863b5906677b4fec9b99"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/ro-RO.fep": {
+      "bytes": 178262,
+      "sha256": "5cb770a0d3f5d05f7285b8f5b45fc664c919683e179a255dd2d078c6a406c7a6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/lt-LT.fep": {
+      "bytes": 684884,
+      "sha256": "7dc4306f0b969e05d40d335683df8d833cddf2252dbc92663b8c7b39618bfd08"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/es-ES.fep": {
+      "bytes": 118771,
+      "sha256": "2942a662270577d617336b5acc9801fb8444118fe82f01d5849735277a7998fc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/bundle.fep": {
+      "bytes": 1275,
+      "sha256": "c8dc87e8576fe1711ab5329debd69a5672b28e33d6e1f99a2e168d7c5ca81532"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/frontend-supplement.fep": {
+      "bytes": 98875,
+      "sha256": "b2bdc4eacc8827ea16adaae0133b766431c61a89f6b49001a89c5f3119f02ffe"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/espeak.fep": {
+      "bytes": 710800,
+      "sha256": "f5a3b7dbb8cdae16767722e35cf3df5efd5e9df2db0f8890b2a6ee3fce09c5eb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/zh-supplement-phrases.fep": {
+      "bytes": 103385,
+      "sha256": "4bc72afb35c20e122952b214c8e973a9576d0f08449efb0d5d2657a731e88329"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/zh-shared.fep": {
+      "bytes": 488330,
+      "sha256": "752f92c691981a26f377485367022e1c79166c98e6c3b2b223d3d5568e4469d1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/integration-supplement.fep": {
+      "bytes": 308095,
+      "sha256": "aaf2297c86a3106e0998c580c30ed417b39b22044ec9e3157f3a3656db28064c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/pt-PT.fep": {
+      "bytes": 69688,
+      "sha256": "8c491416ee52d15b68b1b6b3c33bae28608e6463f83774241b1788b378cf50d9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/bg-BG.fep": {
+      "bytes": 18138,
+      "sha256": "1679b9689a98fd7b85eb2dceb2dcc81377cc3ef4df51e15d02b9a1d78005a807"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/it-IT.fep": {
+      "bytes": 88824,
+      "sha256": "373d9de287c83e8a4aaa6da87144b1bd7cc7b5cdd31fdccaad8d2450f21c5c57"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/packages/fr-FR.fep": {
+      "bytes": 409369,
+      "sha256": "db38e403a7118045d8beb1da12cf1f7eb23d80ca46ee6250028d6a3284fc5c4c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/it_frontend.py": {
+      "bytes": 6808,
+      "sha256": "12abc3555fe2bddba08fc4d256f9294df651a31a6660c100b36e23584d5ba717"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/FP32_SOURCE_MANIFEST.json": {
+      "bytes": 660,
+      "sha256": "fe20324d33aff78344f8b3f04132a581bac5c0f34d6642d42496338c58e6c4ff"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/repair_frontends.py": {
+      "bytes": 1550,
+      "sha256": "473fcc0e705e0bd86c183a48d6abaa80496d7eb962565b6d9d38ba5399752c25"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/bg_frontend.py": {
+      "bytes": 1293,
+      "sha256": "fd4f0643459686613814c98b09ac78dfa4ce01b9a964e046448505bdabeb3085"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/ATTRIBUTION.json": {
+      "bytes": 629,
+      "sha256": "b7794596267d4b5cd3378dbcd4063bc171fdb78f9263ab337dd6c85e208a9f6a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/repair_support/base/original_model_diagnosis_20261023/cross_language/corrected_frontend_v2.py": {
+      "bytes": 7601,
+      "sha256": "675254e5836af9f3cea9c99372a18228e74798cbde0e814b291e496db118f599"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/__init__.py": {
+      "bytes": 48,
+      "sha256": "acb4e17dd17e1c60dee9e2c5416f23b3660bf7d1751fae9ccdecb149d3e2972f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/__init__.py": {
+      "bytes": 49,
+      "sha256": "f76a83c9ae882c072602a9493b18309998495d74631be3da53eee9e6e0599738"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/common.py": {
+      "bytes": 732,
+      "sha256": "849237ea07f76e9b1cfaad08448c92ca4a52957a3dd443c98b902afe347511b8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/trajectory_continuity.py": {
+      "bytes": 3549,
+      "sha256": "9ed3429260fdd9aec80d7fc454611b8614ea2b96caf9a687c4f83be641e41c78"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/dsp.py": {
+      "bytes": 7849,
+      "sha256": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/extractor.py": {
+      "bytes": 3967,
+      "sha256": "d3c463eaf89c8b68dc39e4a7e3c355e9c95b9767e2d3cbc97a56c649e46b0f65"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/native.c": {
+      "bytes": 8714,
+      "sha256": "f83edf292bc0c619a3d734f2b2ef4bbc7ae6192d7f2198b725a183ffb28bf8ce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/schema.py": {
+      "bytes": 4031,
+      "sha256": "e4f5138a69444a0dc920e3b4e1d7a1a72a9559fa74e74f5b5852365e2cda5266"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/trajectory_continuity_guarded.py": {
+      "bytes": 2839,
+      "sha256": "bf4fcd9d8ece55a810ca5e99597bcd859ec90c58a281339ba6f9a300d89a4757"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/delivery_timing.py": {
+      "bytes": 2170,
+      "sha256": "665317dee5a47ceabe1f802d3fc1e2931099b1bce1db14aaf10d99396e157e37"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/audio/native_stream.c": {
+      "bytes": 2151,
+      "sha256": "4e8fd8e7a32c02b4ffc717ed0fd9c9db581614ad9659443980cb93978c82f4b2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/inference/evaluate.py": {
+      "bytes": 12175,
+      "sha256": "066c6d92db668f407bff8fa9dac04f87c474e51bcee3fa7e0e1b03fdaa20e4ee"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/training/prepare_data.py": {
+      "bytes": 16147,
+      "sha256": "f801cf095e0c75218ad0b90a8c0fb76ac2bea839d13999174066905ac9eacbba"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/training/english39_objective.py": {
+      "bytes": 3472,
+      "sha256": "545b67ee83ffe54ea9c2a17edef7fe34fae036c9f2b5592fcbb536d0a711ed98"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/training/clarity_objective.py": {
+      "bytes": 3184,
+      "sha256": "34e499ed70d542d2a534d8463c702cf64bc4b4d1a18c7893c0e309ba3673c65e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/training/train_acoustic.py": {
+      "bytes": 21738,
+      "sha256": "532341b0fac1ecaa302e3f2d404991404f6a9c657a365d3d94dbfb82729395b8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/training/recording_epochs.py": {
+      "bytes": 4101,
+      "sha256": "4553e6702587a4b3cf3e3889b0227ef0e8260956531e1eaefc256b30087829ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/universal_chinese.py": {
+      "bytes": 4931,
+      "sha256": "05d8db0e6fb54f2d70acfaa2e8835e1660bcbbc0e072db6ad9b32622a0610404"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/english_policy.py": {
+      "bytes": 1784,
+      "sha256": "01601247f1a73efb50af6da9b9203307f22deb143b609b2f29f3eb8e0003c010"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_prosody.py": {
+      "bytes": 20862,
+      "sha256": "81c07998f940901f001c7b856a59923ee9c882adac1c20b39a4a75228f59d374"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romance_five_profile.py": {
+      "bytes": 3026,
+      "sha256": "f524c80bedad27555334c295cc3de5bfd691bc9e727c923cada5a999126e487c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_training.py": {
+      "bytes": 22920,
+      "sha256": "83a12edb67708ba961c22899ff321ea3a4ece66b332e8be36d21104b06f24762"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_erhua.py": {
+      "bytes": 3823,
+      "sha256": "fcf6670479da2683bf07aa763f29b908895f68de115f3a1f9c27e227ef9314c8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/french_prosody.py": {
+      "bytes": 7270,
+      "sha256": "5451ad077fba8b8822f69bfd7ea29b30120a87fc2f5548519f31264a9cf2d3f5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romance_dispatch.py": {
+      "bytes": 2442,
+      "sha256": "b2a74d6f1500eb5a03311e7398fb4ca45decebc7ad5f9d717185ae891d7b8e31"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/english_pause_units.py": {
+      "bytes": 3608,
+      "sha256": "cc10e84d3c2e02c4d8f5b7902e92e17ba7efe539408d3dd9c679c66da00675af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romanian_expansion.py": {
+      "bytes": 5403,
+      "sha256": "a54959f78e1d2f631e4f871e50dae8d0810dbf5a446592eec16d29ce6efb1903"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/english.py": {
+      "bytes": 15727,
+      "sha256": "d213d1d8288fba365624f9af1e8e08a65f1f0cb5d5539d0950fc78a73b399b26"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romanian_alignment.py": {
+      "bytes": 1550,
+      "sha256": "8d973a148760618f596f2c84b23146029ba7f8514f3bc720fa5f0555ce19024b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romance.py": {
+      "bytes": 17945,
+      "sha256": "109051384c557e4d71ff2629fe3ae2083535e8dd6e6e35b11e641199abc52db7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/phrase_plan.py": {
+      "bytes": 4981,
+      "sha256": "874f7cb089beb50950dda31f3652c8321820b1ea1aedf9db7301a9472dd15415"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/english_word_prosody.py": {
+      "bytes": 7275,
+      "sha256": "d81bfd3cbe620cabe5366afa628e52a121b2045b036b70269374783901170d7c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_polyphone.py": {
+      "bytes": 10239,
+      "sha256": "fd675bd186fe79d84201a855e6246fce471368cd33ed3f7b4271a29c55d3d347"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/__init__.py": {
+      "bytes": 566,
+      "sha256": "2bd3d261e04cfeca1ffac76c2706a6a40899333fd7a30501b180446aefe89c5d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/english_clarity.py": {
+      "bytes": 1636,
+      "sha256": "23544c6c3578556bd5cba13ac84bc240608771e1e1969c000ba11c1c7c4420f2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/universal_english.py": {
+      "bytes": 2653,
+      "sha256": "83ca33779872ab94a68914f4a33643d06ee193b7168e18d0f4657c203bd3f3af"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_linking_policy.py": {
+      "bytes": 1770,
+      "sha256": "03d9c5e00d3225d677b752713b78ee350673b384d47b93be66fdada15714f78e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/chinese_delivery_policy.py": {
+      "bytes": 10169,
+      "sha256": "d17e731c123745eee13b6a27a603f876e9fce39c91cdc11135126d989b66cf84"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/romanian.py": {
+      "bytes": 9406,
+      "sha256": "fb99965a0a6dbd19ada2602d144d8b6248bdbf7a9c3850dc700b8a196cd2097b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/CHINESE_POLYPHONE_DATA_NOTICE.md": {
+      "bytes": 5984,
+      "sha256": "0a0dba02e96857bab7500facf2b45d9590fdb510fd83a8943690a79726e26605"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/PINYIN_PRO_LICENSE.txt": {
+      "bytes": 1070,
+      "sha256": "824f6069c5a59b0c1650d0fb9f8d091866c6019eb761c8e658dfc03f001eabd2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/PYPINYIN_DICT_LICENSE.txt": {
+      "bytes": 1076,
+      "sha256": "239199faa0e3098c6b7fc7c5d4c50d623c44b7c4c0d8990c1a030266aa558f2c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/POCKETSPHINX_LICENSE": {
+      "bytes": 6697,
+      "sha256": "1c3b5c5529d7360c927aa034eea28010c59558c1f67fb722d8d8b5d69cb98a23"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/G2PM_LICENSE.txt": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/CMUDICT_LICENSE": {
+      "bytes": 1754,
+      "sha256": "bd4ce8e44170a5f9f481310ca85c51de3c4f851a65e679b40e603b143bd3542a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/frontend/assets/PHRASE_PINYIN_DATA_LICENSE.txt": {
+      "bytes": 1066,
+      "sha256": "89ac55df747e4776088c3e77531ef61b973a1a59dd8e6a4548a58996da9a4f70"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/english_word_planner.py": {
+      "bytes": 27205,
+      "sha256": "5417b4291255494e23b728c4833d7f565dbae4d895ac2d7731a97389f5785596"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/boundary_acoustic.py": {
+      "bytes": 8536,
+      "sha256": "935021aad1d243ac52f535059ea563b88c99c3b6385437ecdecc1e5736cb83d5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/romance_routed_acoustic.py": {
+      "bytes": 1715,
+      "sha256": "bc3b0327afc0d4ca8b4f223d8d919443df6f2eaeab7ada9db2a8f9eb758c8bbf"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/phrase_prosody.py": {
+      "bytes": 3631,
+      "sha256": "1725a9d69786efcd4289c3844e2b31ab9cfd077be47ce6d1956c23bc2492a97c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/romance_word_planner.py": {
+      "bytes": 20284,
+      "sha256": "eee4cd5526da30234f69678ec01c426a2fb8b182dddd6e3fcdf557af3bcd4c3d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/universal_acoustic.py": {
+      "bytes": 8945,
+      "sha256": "9250a7be41b3267d75b4e1e085b7a5bc7214db7a5311280a91a403474979a5fb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/acoustic.py": {
+      "bytes": 8000,
+      "sha256": "1b874dc5d9d0cae9e40c2883364b34cdfb776994dceb9d75912a14b8c191c164"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/residual.py": {
+      "bytes": 1730,
+      "sha256": "e1fc71039234e463d5a9a76a27d67b547b7d2b477273cdf5dea34fe1efc81fae"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/models/english39_acoustic.py": {
+      "bytes": 5162,
+      "sha256": "0a604527c3f7be39a88e82a027f898205823ecfdad64b928ea622b4faaf9f91f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/romance_evaluate.py": {
+      "bytes": 27520,
+      "sha256": "2ba4bd24b1657a91a60f21b2fa66f7ee9ed73a53b080bf161f6779d96f8c8868"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/phrase_acoustic_inference.py": {
+      "bytes": 9451,
+      "sha256": "6568113e605221594606f799f3344e78ce7aa65082e6ace520b990550a98f8fa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/continuity_representation.py": {
+      "bytes": 20899,
+      "sha256": "88ab1ce443b3bd530712810659b7d264c9685e70494d70e498b1cd3345971844"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/representation_limit.py": {
+      "bytes": 17714,
+      "sha256": "e011c35124fa8e383810894977b4970b97389942283415a6413795b94c46afa0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/eu_quality_spectrum_basis.py": {
+      "bytes": 3911,
+      "sha256": "a007f9326424f235b0a469dcac93c183de2acf76574451d79d2fc1e0d64ddfde"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/romance_train.py": {
+      "bytes": 25500,
+      "sha256": "fc1bbae62ce52410017fe4e85b3b67d280460d58b4e34b0408713e02cae4225d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/universal_train.py": {
+      "bytes": 25152,
+      "sha256": "9fee4ca5d51d4251d421776e6d2541a0d265cedc63fda665f8f0dbdcdc7ccd87"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/boundary_trajectory_diagnostics.py": {
+      "bytes": 30480,
+      "sha256": "5af6ec8d51daa73aa7e1121d265b219d540ee68a957b37d6c2d5a7b89734e134"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/english_word_train.py": {
+      "bytes": 15006,
+      "sha256": "9fcdcf824a3524ecc60ef2af4b97a630fe6ea521cb87d0e0d4cd786fec62262f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/phrase_acoustic_train.py": {
+      "bytes": 19469,
+      "sha256": "6756b2bfd887ba36fa6caa567e5f9d0d4bb7f19696066e121d77bcf1133ed550"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/chinese_train.py": {
+      "bytes": 27980,
+      "sha256": "40226c8b06f151f2a273512e737154035a60dceac221ca4dc194ef13fc7125b1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/upgrade_common.py": {
+      "bytes": 3287,
+      "sha256": "a2cddd58540b512237cc12b07268ac5592b08f5d4c821f8ec6fe7b62ea638631"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/romance_listen.py": {
+      "bytes": 19611,
+      "sha256": "4c6d44f8d9d825530cf1d852268422d2d07d9df6641b22a086a9f00dbc47c8ee"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/chinese_prosody_evaluate.py": {
+      "bytes": 28163,
+      "sha256": "ce1e50375134a8263647ca2000d787948784ddb93b8a1a4792e51e96b6784efb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/english_strict_train.py": {
+      "bytes": 26131,
+      "sha256": "1063cd9ad38322febd46bf0e9f1d915b4b67b39e3f0d846bb1b6d45e79373cb5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/segment_boundary_diagnose.py": {
+      "bytes": 20786,
+      "sha256": "0c0a3c2b6463225456b1a0d49810eb16c062d851aa5ca5c43ba816f160141da8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/chinese_prosody_train.py": {
+      "bytes": 18777,
+      "sha256": "f9860dacbd3cad9208a492130821e520d9d6f9ead56c7d592b7c254e191b05db"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/tts25_train.py": {
+      "bytes": 48889,
+      "sha256": "39089b9d7ad264d6f8a18f2a1a8905464354bf66ae93ad6d4339dbcb05d9cc57"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/romance_routed_delivery.py": {
+      "bytes": 21043,
+      "sha256": "dd57e0d7df82c7580062457432cb89e34686ea08688b7f623d968600821a2b2b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/english_clarity_train.py": {
+      "bytes": 16536,
+      "sha256": "5e5a7bb3b403846909fdef65e9dbf37141c2c6e3cbae09d6cf2aa8e581a4e2c3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/__init__.py": {
+      "bytes": 61,
+      "sha256": "a4ce7fab67c473e18097f13f83a43c04873dd07e7fbb1912c67dc5bad365cf17"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/phrase_gpu_execution.py": {
+      "bytes": 15456,
+      "sha256": "ff7e148f0366624e78556be8e2cb2c60b0e1681a013b3f9f0fbe71efe14e4a6c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/src/experiments/phrase_execution_train.py": {
+      "bytes": 21797,
+      "sha256": "68f6d947cdfdf684bc0f3972c474e3ad576ea3d1c3cad1c51b39fbc483e42956"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/runtime/current25/project/configs/chinese_linked_f0_guarded_v1.json": {
+      "bytes": 654,
+      "sha256": "8cdcb70ebbe0a641e82097e21701a4893f2996276bf2c47f4487b1dc6835cdf3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "3b6ab0fc132c16cca23748c6ccd96218ca39919504ac23091b7710970e2b9862"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/architecture.json": {
+      "bytes": 2760,
+      "sha256": "3a492156b4fe11ff763246b5b3a854c1f4491c11da4422df04dbc0251bc3fae8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend_metadata.json": {
+      "bytes": 1199,
+      "sha256": "68cdfa76061e3d7a59f1663adfe86a648fb26343f6da6c289303e4769d29b189"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/source_architecture.json": {
+      "bytes": 1787,
+      "sha256": "afc6a6f9d0b0f93fa9deb56ec455d952f174e1d49b366876a2a45fa6b3bb4210"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/eu_finnic.py": {
+      "bytes": 30476,
+      "sha256": "fca0f9f6a113c119365d3b395a9cd08f6deed4cfe0f569d1cc661f7b2827a3a8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend/et/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "04e8e14b0d8dd2ce2e1b357d41656d5e291845107dcb92b7f1623c0c82ae1ebb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/architecture.json": {
+      "bytes": 2760,
+      "sha256": "9ddfd2bee8299011dbfd917f98719f2bbe3337934ebf6f546ddfbabb3ef7e61d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend_metadata.json": {
+      "bytes": 1222,
+      "sha256": "8f69142cdc453a09530ae603fd62f18fb06e6ff7fb18f0d1fdce3480cf3848da"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/source_architecture.json": {
+      "bytes": 1787,
+      "sha256": "a54e5a9ecc471aa1ac6c73e425db0f086f81b8d7006231aa9a8e2f5176c928fa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/eu_finnic.py": {
+      "bytes": 30476,
+      "sha256": "fca0f9f6a113c119365d3b395a9cd08f6deed4cfe0f569d1cc661f7b2827a3a8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend/fi/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/architecture.json": {
+      "bytes": 2858,
+      "sha256": "7c9d47d4978cffb161a6bd3b03f0efc8d71610c4bbbe4b888d9740dfd9c55517"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/frontend_metadata.json": {
+      "bytes": 27470,
+      "sha256": "aed71146a1f8fe76e39e6fb17c37e9088897d5c16164037097927e5a395e2316"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "8a4e0c369ddfee92a184d20d738b0df65dbf8f4f836f68337829db0153fd84b7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/frontend/adapter_v2.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/frontend/adapter.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/source_inference_profile.json": {
+      "bytes": 1589,
+      "sha256": "fa8e1c4af6c696478651f5653c3410d6891d6aca5741a1cfc32bfa0ebff3cf41"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/architecture.json": {
+      "bytes": 2105,
+      "sha256": "be7517147744bb4112dc129a172814580b5fa7326585f771211a63055e5ffbb7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend_metadata.json": {
+      "bytes": 1229,
+      "sha256": "7fa55b73f280d92dbb496e1c07fd09b3371cb74cb4e6c5da1632f2400b9358c1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/source_architecture.json": {
+      "bytes": 1584,
+      "sha256": "f16b66ca5db48d986fc48d15012fb64c6570fc4239fbb2d990cd66e14a08f4fe"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend/hu/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "9f562ed061e7f88289d30c83413e8e2b88ee4d40e6a1310e8569203758aa4e78"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/architecture.json": {
+      "bytes": 2843,
+      "sha256": "87308d4c2f513b4fc52bb675e679d416c259eecbf8fbfda297f6e9e0dc50e221"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend_metadata.json": {
+      "bytes": 34374,
+      "sha256": "69c2e8c839203f23ed10d04f03a78f819aa912b79b17693f26ba45c2fac2ff56"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "f833f8142dbb1c1454be88540f6c6158901855e40fdc4cb0dc19ab88be102c9f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/de/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "6703efca5082d70f43098af7e82b5d4ff088933b8548bc98e00ad310ded272d8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend/de/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/source_inference_profile.json": {
+      "bytes": 1722,
+      "sha256": "90579ac4db8854746bd61f549c030b5c5a0e1d58e702fc425a04c4c11888c769"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/architecture.json": {
+      "bytes": 5581,
+      "sha256": "025199c6485956f33960d73b13b8e27e6a134696945d0adf5d6c2dfa63df430b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/frontend_metadata.json": {
+      "bytes": 22456,
+      "sha256": "efffd20e823a9bdcc2407b3dd3d78d506c70f24e54aea0b98c2be7bc2c1f347d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/source_architecture.json": {
+      "bytes": 4615,
+      "sha256": "304c8b5ffb2d2f3accdab16a0600b49e02eca6479df49c08aa8b4f8cc78f9913"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/training_tools/zh_en_frontend_adapter.py": {
+      "bytes": 3166,
+      "sha256": "bb41669c75bf2e69ac409264a90e4330819eedc5c7efe5bc72eedb8e17ad8768"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b2699cf8d8dcba1b1d8936ae5cff32933188fc933880d9e58990bd367c9e5605"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/architecture.json": {
+      "bytes": 2843,
+      "sha256": "bf617c7be5559db6f75aec7055edd2efe5b12925d390a72801de92ba948e8c80"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend_metadata.json": {
+      "bytes": 32989,
+      "sha256": "6693faee83bf65dab412d5397a4af3b0d2418019c99ee42307aa24c9ef09fbbb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "6c54461444609f5329eacb3c5418116c1d2db58979fc555bb8a67f60c6e14c6e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "11b032fa45518ff1036ad4245963c984cf267651a681d49ff2802618f04a3679"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend/nl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/source_inference_profile.json": {
+      "bytes": 1736,
+      "sha256": "a0d4dd1e66042a36759fcc429a275c12c5fe3a159a45300512445b232c6c6430"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/architecture.json": {
+      "bytes": 3695,
+      "sha256": "998cf64a3bca951ad8f4d09eed45f25d44c0a12830882c595298a4cecd55434d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/frontend_metadata.json": {
+      "bytes": 94418,
+      "sha256": "d66f19a2f6365ceaf45d45b049f9fb87053cc2802a4532e178736414b07fc9d3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/source_architecture.json": {
+      "bytes": 2722,
+      "sha256": "fffba0337f0424d10c4d7702ef47d64130c9767ac81ea05b229f6a2c1fd1f889"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/training_tools/zh_en_frontend_adapter.py": {
+      "bytes": 3166,
+      "sha256": "bb41669c75bf2e69ac409264a90e4330819eedc5c7efe5bc72eedb8e17ad8768"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/architecture.json": {
+      "bytes": 2398,
+      "sha256": "44e29615acf308c70fb956dfc98c10c3edb53004f355e73757ccd0498bdfa816"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/frontend_metadata.json": {
+      "bytes": 38644,
+      "sha256": "794df57bd9c9106482be30d58c384521ed9d8c4845a63217b5e661d06c8a5e44"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "5331ca801746ba1acd4cf5159d3b634d96d5a79bb4625dafd68a9428fadca9bc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/frontend/adapter_v2.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/frontend/adapter.py": {
+      "bytes": 32,
+      "sha256": "fe8429723c923f7ebed6d37d8f5d0e8ce97e504698af6dbe99aee7b00fa718ec"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1770b038b134c10018a4933b722ee38b12b81935044f353edd2ffe44b7b78d0c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/architecture.json": {
+      "bytes": 2398,
+      "sha256": "34146934d9bd75601364db1e41a0089f0808ff3524a87b8c04b70df30e812730"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend_metadata.json": {
+      "bytes": 29562,
+      "sha256": "3ad18bfab21171290511591f8dbd16bc9a8437473de570e2943646f1badb3743"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "4f9fe523f1c83975808b224c7bda5d6ce0a02683d81bb919e4c8d32bbdb05f6c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "2458122eabbf129d190e59112fc99dcf554521653c0de26cab6f8297bed1ae37"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend/sv/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1bbbe73554eab7350a8cc991af92b6687a5c20ff42792f8fe0582c488f3afa53"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/architecture.json": {
+      "bytes": 2858,
+      "sha256": "a297d95d624c29e30e5c1247f04ed27142e9ff769ec0b1dc8bf454d919dd21f5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend_metadata.json": {
+      "bytes": 30079,
+      "sha256": "a18d53eb8e87951728674562dbc0c8e7b048dc791fe547d61c3c0a6c655f5822"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "d6d8cdcde3f8832c4d4f94144c71856bc72f28bcb2ebcc03c2149597327a64f2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/da/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/eu_four.py": {
+      "bytes": 44412,
+      "sha256": "9c74387235249e13db2f056c782b786632c2df61e98c266b1792066d06bdb9e1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend/da/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "29e346a310bd9553e6a8a6b484b977bfd7397347272ffee2a54bbc1c1cb0b2f6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/architecture.json": {
+      "bytes": 2201,
+      "sha256": "9f19365dbb4977f50747e524204e203330fd66f8066503cf44a82f277b5ad60b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend_metadata.json": {
+      "bytes": 1213,
+      "sha256": "caf59dc11e7d004fb63e1537944335edcf5c2ac389bf9d69d7d18047c26f95b0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/source_architecture.json": {
+      "bytes": 1680,
+      "sha256": "a9d1385c291d9906017f6522f46bc6b6522354bfa6945c4b23a9cf678f5d7f26"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/eu_baltic.py": {
+      "bytes": 33826,
+      "sha256": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend/lv/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "cba8001bb99baf9a1b6cd2bfdea21c1d4eb90f67db5735409374c38444829937"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/architecture.json": {
+      "bytes": 2202,
+      "sha256": "01ba40a90e6d8245dd61a3c633afc62a2feec8ce5bb59b442e52a5d9dc889a78"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend_metadata.json": {
+      "bytes": 1243,
+      "sha256": "f3ddb2e8b84c6b8569df8fbfc25ee500305b79a8b1e349754bcf8d35be1df2b2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/source_architecture.json": {
+      "bytes": 1681,
+      "sha256": "40e8262c85ef4bfff7e707f2fde1a71434be09ea80602344d99f089435ec38ee"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/eu_baltic.py": {
+      "bytes": 33826,
+      "sha256": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend/lt/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/source_inference_profile.json": {
+      "bytes": 1590,
+      "sha256": "30d3805cd56aaaf83074c3b75caa9a505fbf02784080c6e9659b180772fc5b44"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/architecture.json": {
+      "bytes": 2213,
+      "sha256": "8c2fca5ce44dfc9096cf1f5c90e5ec0e6c2299f85a40a1964075eeaf9792e0b7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend_metadata.json": {
+      "bytes": 1236,
+      "sha256": "4094ed6789d6d32ddac244d7e24fc9f30651153557035a30826c90040523546d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/source_architecture.json": {
+      "bytes": 1692,
+      "sha256": "a64d219ac7560ab51716c3df61171960a4ce0ebb3437d2eac047365734c0ba9c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend/sl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/source_inference_profile.json": {
+      "bytes": 1596,
+      "sha256": "7e945a7c1c47936598eb37a77c0b77fde900fa0b4d4b3ee842dda986b07156f1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/architecture.json": {
+      "bytes": 2213,
+      "sha256": "2f49db8b6bdf41248e960474d745787dfa0a26591b90a0858d964b1242385ef1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend_metadata.json": {
+      "bytes": 1200,
+      "sha256": "05867eb69e4e865aa6d23f496fc64b4e388f0ed72e8f7ee60baa474b214cf7a4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/source_architecture.json": {
+      "bytes": 1692,
+      "sha256": "645457df51e3bf1e1539f027f5b1724f17c5b04a2dfac349ca243d2f9266db59"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend/hr/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/source_inference_profile.json": {
+      "bytes": 1596,
+      "sha256": "ea59d48c254f62f304b6f97769c46289fad4e9a5a2cd35727f5c6021439c99ea"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/architecture.json": {
+      "bytes": 2214,
+      "sha256": "b9aa8f893649b3ba4ec6aa22a6e1b1eed9882702b57742c271605c635d9cb7a0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend_metadata.json": {
+      "bytes": 1403,
+      "sha256": "572d129ba5a75f4757dce2c314ebe5c5d6232a0dbb2b73b1072b72cd99736d09"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/source_frontend_metadata.json": {
+      "bytes": 1356,
+      "sha256": "d3270aa3abad75940d686fce5bb5f6780685a9edc0ed122259ddc9f71a1a7eea"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/source_architecture.json": {
+      "bytes": 1693,
+      "sha256": "4aa705efc47f011150482eaf8ba58b16c346d91d720d4ef3c0516f0135d37761"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/eu_south_slavic.py": {
+      "bytes": 40582,
+      "sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend/bg/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "a148f8bd31d58f73b7ef2f681becd1b4445a071d14cda402b460ebdaef19c481"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/architecture.json": {
+      "bytes": 2858,
+      "sha256": "f4dc68a90e7cc0f4ae137afa5d87e8eb99895a79d8a9a2c261a346b8f53660b1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend_metadata.json": {
+      "bytes": 33196,
+      "sha256": "2850b6dd37f0013737594822d96c639ca7ecc95fb84c8b55c7dc0b94547dc87f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "16451b9c2f984035329237317dc640630a7df1081fd561d1b2ca3a44a5590ba7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "9ac1cee52b0743a941b3b37512c7133d27cf026d5caa6203b436fe887febb769"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend/sk/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b933be853af4956f259200fb1f83eabab7a53f656e0605b5eb8df2205abca07e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/architecture.json": {
+      "bytes": 2858,
+      "sha256": "ae612d147cfc36fef154cb48dc9a1db59711d93a21def56ab8e3f3f808dd405c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend_metadata.json": {
+      "bytes": 33441,
+      "sha256": "a8ac871e8f27aa3e305be68be7ec0334bad9520a264d885c9dc7830f1b57d7e5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "cd83c86795fafe89876b0e632ff4f7a6bd7a38f7161fdcd8a131d10d5f21b84a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "bb83766ca26cfb21bf021f0f2e27fa0baa878e8a0ed295977d6ec0abace5e15f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend/cs/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "1bfbc364007201dea1ef9608a2cc22abdfe8e89b64302ed7d0c902bd1666dd5a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/architecture.json": {
+      "bytes": 2858,
+      "sha256": "0bf9fac9951b71578da74a04af60bd9b556d24e752e0f57307e9dd32b9893172"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend_metadata.json": {
+      "bytes": 33546,
+      "sha256": "bf5a377dd3ac1e73a27ba37fda627fab9f9e18628186e8d40341e041593afdeb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/source_architecture.json": {
+      "bytes": 1912,
+      "sha256": "17572e9346e0c6e6ed250b943d13eee22036819ab61bad048ca1233949d3f91f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/eu_four.py": {
+      "bytes": 44324,
+      "sha256": "a304400ad3f6d241513c8579b40cdfc884f682596f317562f4c642ed99f7e490"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend/pl/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "8bb52c22110d06b602a7fedbf29241ee3e3e0fb3afe0fd670f8797a10244b859"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/architecture.json": {
+      "bytes": 2791,
+      "sha256": "b534fd44917006db645823afe1c7fe541ced98c94ef9ff9d3834bb522eefa593"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/frontend_metadata.json": {
+      "bytes": 15583,
+      "sha256": "28b88b2899783b71b05b2de39434935cc9a50aa9c9de8397d42d4aa8078b2524"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "a9292d919ce0d1997c7965a798c30ddf30c875e83638fde4062cb7bf2edec46a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "de5820997a75ee461d01b3422231fa1e7dd9e40435a478cf76c2e952dac8a864"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/architecture.json": {
+      "bytes": 2791,
+      "sha256": "386def085a87ad85156aeb488daf188a946fe79fff814a63d1177ce265966d14"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/frontend_metadata.json": {
+      "bytes": 14038,
+      "sha256": "4f2522bbec2556a56270be9368365cae784f3e6c4c9bf026c73d30cb209b822d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "22e0a8b99d99ea4bc62e0d79d1b3766a79701e1237e45764d8b94b9b911aa102"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/source_inference_profile.json": {
+      "bytes": 1727,
+      "sha256": "b6f6da265c2250d483668a19cefe097140a9dc06e829f7e1dfd784f4130a154b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/architecture.json": {
+      "bytes": 2791,
+      "sha256": "912fcdac9e897dd965fd1824c0a1efa04f68f1250d113b68f1dcb79a7b207f6c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/frontend_metadata.json": {
+      "bytes": 14232,
+      "sha256": "e8d2e3b3cab988c5f4ed12586bd0ba22e1e7c2871c7809e0ec77925f977708a9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "37c847fa518979fc476d9b6fede3d236bb1bdf162b1657feaa5b546cd1fe8090"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/source_inference_profile.json": {
+      "bytes": 1755,
+      "sha256": "843be5c83f07ac7e1036ba2cbd08d7d676799bcd5caecf6f6296f3079d4ce377"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/architecture.json": {
+      "bytes": 2791,
+      "sha256": "e8afac298e49b97b8ca0fef051a037f88cde3a3fab2a8c091815caef7461755d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/frontend_metadata.json": {
+      "bytes": 17961,
+      "sha256": "e4a1b00f01cdaa35f7469de97b49eb365d587623f1e504a59c58e455d4873697"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/source_frontend_metadata.json": {
+      "bytes": 17914,
+      "sha256": "dd0cc4f547014f8b20a98810186bc7bea18d3c4360984fd9153e6913835139e2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "1a3b555c9ef751d8455ee05d9270f716c1300a711357dbb29a646b8c3a863d57"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/frontend/adapter.py": {
+      "bytes": 5039,
+      "sha256": "4db80e4cccf8a47790f680d21c2fbe6f6b68d66a386678aad38c50210e7c2f23"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/source_inference_profile.json": {
+      "bytes": 1721,
+      "sha256": "8e9694fc09fd10bf91e7541a2b48a13a53425950918a260516614cab295b9225"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/architecture.json": {
+      "bytes": 2791,
+      "sha256": "50408822a20472401eaf6a677da0626831cee08e0c52cef4a9a2cbbe58762f35"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/frontend_metadata.json": {
+      "bytes": 16860,
+      "sha256": "394748283aee6faee9fa819b9e574b421f376de59dbb2d88eeb8e5170aa7ac41"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/source_frontend_metadata.json": {
+      "bytes": 16813,
+      "sha256": "2abb200767851948c3bd4d113dbefbd2d0c7dadd7a760d7217e4a9089ff1a9c4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/source_architecture.json": {
+      "bytes": 2270,
+      "sha256": "a836184680a878d98fbb49a60c8dc35ffa1941ba4a7c7b48ea6da3e2684fff78"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/frontend/adapter.py": {
+      "bytes": 674,
+      "sha256": "f9ed88d04c4a6c5a1ab48bc4eca0e9910d31ac6f95b06b9ed4d6a4714af57ac0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/source_inference_profile.json": {
+      "bytes": 1589,
+      "sha256": "00b2142fe169e389e3ad43bbe3f506f95918ddb98c82911fa7746065f421bf14"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/architecture.json": {
+      "bytes": 2558,
+      "sha256": "985b0068afe06840b6348861e1c8666afb4c011609c3d9a1d909489b52329fb8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend_metadata.json": {
+      "bytes": 1384,
+      "sha256": "c4893f550c9a072f6739b3fa89458d225e3ce128a9cb4800506bdab27f8338ce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/source_architecture.json": {
+      "bytes": 1585,
+      "sha256": "cd21061de417cb458ff63321bca8af4209c712359f0195da3db804ad7e98a577"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/adapter.py": {
+      "bytes": 6418,
+      "sha256": "4bb7b670954e2d4cc2fac51829b36c975bcd39bb1938aef165b23a92fee598a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/el/runtime/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/universal.py": {
+      "bytes": 3100,
+      "sha256": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/eu_four.py": {
+      "bytes": 44318,
+      "sha256": "c3f9136d7920e153559f72b9850fb557796a70c4b2b12b30ed147d01d0e8f00c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend/el/runtime/frontend/phonetic_features.py": {
+      "bytes": 5977,
+      "sha256": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/extra_resources/MANIFEST.json": {
+      "bytes": 426,
+      "sha256": "b1c343cfddf60ff3574de47b7be8c713d7e345ae25675ec361c2d6c5bfc829a9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/extra_resources/ro_dict": {
+      "bytes": 68538,
+      "sha256": "b14f68866b0440c4b0d95fb7da3b7ffd3c59b693e8593d188474fabfc9a1117d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/source_list.json": {
+      "bytes": 1370,
+      "sha256": "6383a7318410b0c46aa065c62a003ed13d544db11163cf15216d55444a172e2e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/case_compact.c": {
+      "bytes": 12723,
+      "sha256": "352ff493f3327422eba71c6c8679deba8fd3d12f546688566f902b74767e3694"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/exports.map": {
+      "bytes": 157,
+      "sha256": "85effb002b272efa84a3b3f11ae118112e492b3fd4246b3d7fd1654dcfbec228"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/properties_compact.c": {
+      "bytes": 34331,
+      "sha256": "7d66fc03dd5accf6e38659e5f0825ab6febc28be2018264e5356684678e33841"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/COPYING.UCD": {
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/COPYING": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/configure.ac": {
+      "bytes": 12401,
+      "sha256": "7cfaf6486602088ebed146537c78f9b67a557f8f1e57f8f458601cf4a7582c31"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/COPYING.BSD2": {
+      "bytes": 1244,
+      "sha256": "a8b0c1c7d7af6c0415c068be8cf373799d1a42b0707b79dc4ccfcaf593cd902d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/README.md": {
+      "bytes": 6741,
+      "sha256": "765e894f83a47e2d003bd2256e86d1ae412e6e0078c3092d66ece293b051e278"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/COPYING.APACHE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/CMakeLists.txt": {
+      "bytes": 1027,
+      "sha256": "93a940dbd943b0403d360fc23865a924abf6a934a95585a8235bad51b9095d97"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/config.h": {
+      "bytes": 192,
+      "sha256": "5703e4465ec8d21d464d9d2bd7afc027ae36a4656d4d7dc1c46e5728a32fe81c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/espeak-ng.1.ronn": {
+      "bytes": 5382,
+      "sha256": "578807dd8aaa2c420a09e5d2d5d3f921271328a0400a396d75a94b11e7045945"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speak-ng.c": {
+      "bytes": 923,
+      "sha256": "5b7638fc457af2d6e1c9cc0d34fc2d62b3c461001a9b7c120816af7b9abd42a5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speak-ng.cpp": {
+      "bytes": 21,
+      "sha256": "e51a90eb90cd5b7078bb6e068bb9a4cba116504fed681d8668d74ad1b7ea8307"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/espeak-ng.c": {
+      "bytes": 22862,
+      "sha256": "fa53a0dc1f947dba632524749cabca7d80d754771b5a4f14d9a1db8030e04434"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/CMakeLists.txt": {
+      "bytes": 1433,
+      "sha256": "7a7cde78f6dd459ce0151d245f1452e0a7ad70087ccea3539d867ec0e5f3c08a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speak-ng.1.ronn": {
+      "bytes": 4814,
+      "sha256": "0cdde8392db63011e502fa405dba7984a591b5f6419273b44046a82087ea1857"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/espeak-ng.sln": {
+      "bytes": 3785,
+      "sha256": "28ab5a539bb5bf01e9bf3042886507e8e92a698437ba211cb9ff31ed7946a69b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/libespeak-ng.def": {
+      "bytes": 84,
+      "sha256": "836da1077f7c708f1edbec4a34a57fde7d184b0b0dd72c5eaa48e67d778214bb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/espeak-ng.vcxproj.filters": {
+      "bytes": 1551,
+      "sha256": "84beede3c53d395c684a2375fc90cd8eb5fbf4deaf1237e1f75efd300b2f1c5b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/espeak-ng.vcxproj": {
+      "bytes": 8360,
+      "sha256": "76d1278c35b58ce5d85ea012f513b78655cbc9870d7760e6641dd63c4f93b425"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/data.vcxproj": {
+      "bytes": 44410,
+      "sha256": "19d5bed13878805163295a26652584f9123d5ec6feb82d47e60d83985e0db881"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/config.h": {
+      "bytes": 585,
+      "sha256": "8664fe56f36264b12202b64497b85db277cf07a0a66c375737417c75d4470d1c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/libespeak-ng.vcxproj.filters": {
+      "bytes": 8556,
+      "sha256": "7dbfa690cf0d4df4f72b6ca354eb337f05a5bad935a0094ccd4a5d4cf90980dc"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/libespeak-ng.vcxproj": {
+      "bytes": 13722,
+      "sha256": "055a020c843dea8e8fc93b817139c205c31ef391dbf4cf7fc44f8828dde0a348"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/data.vcxproj.filters": {
+      "bytes": 129,
+      "sha256": "504c1d7f2199dce2b845272b1a666080c969592d15faa81c668f5d5e5edac88c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/installer/Product.wxs": {
+      "bytes": 131735,
+      "sha256": "f1dd2f148be375ce4057036f603bf9fe08fa541f7ee9dd82498fe6e24c819d6e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/installer/installer.wixproj": {
+      "bytes": 3670,
+      "sha256": "9939a672f93ba22304013b5f3fde4bf3a92b787894112a1ce8c40e022fc8b441"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/installer/License_GPLv3.rtf": {
+      "bytes": 38406,
+      "sha256": "65841738955d35894b0ba444beff6d34a4581e8203d887b1f7419e3240443f76"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/com/ttsengine.cpp": {
+      "bytes": 6428,
+      "sha256": "344848c9cc87b4680b6a98a721bc4b8103162024a47b74f4eb91523bcb9477f6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/windows/com/comentrypoints.c": {
+      "bytes": 2362,
+      "sha256": "bf029d1dc2133cc1439e174ff4acc8f0c307668ccca6f2210958774455bdf767"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/COPYING.UCD": {
+      "bytes": 2788,
+      "sha256": "be029c50df83105a810e391778b6edcb522d6cb4b4e142332aca54437a499bf7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/COPYING": {
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/configure.ac": {
+      "bytes": 2556,
+      "sha256": "c467beda2ea07b5de3e463bbfc4b4abd21ab65f6b1fc54bae7b3717bfc24e091"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/README.md": {
+      "bytes": 3423,
+      "sha256": "1b72781f3942e8b8126058ffe1f706bc1d1c4d8d1ce10074aa74aa25c4987366"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/CHANGELOG.md": {
+      "bytes": 2086,
+      "sha256": "21cfda8583c0322f845340167e3731e649221726d6a657653a9984db196f4b41"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/autogen.sh": {
+      "bytes": 318,
+      "sha256": "ca239f9341edc868ab44c8a99f090e018fcf7c2f54b9c8e4f43ebdd48d7e3fe7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/CMakeLists.txt": {
+      "bytes": 285,
+      "sha256": "4e23796fc69bf51190876c5cb97b6b321e25d0eaf1ad54bef563fc9918423422"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/Makefile.am": {
+      "bytes": 4646,
+      "sha256": "b12c79fb3746d921019b1cf9f89d6f38437532546f4b41a6e81b217b48c0fcaa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/AUTHORS": {
+      "bytes": 14,
+      "sha256": "9d9caf027539d45e772e3d7571f154441d1a106919803ad87de03928198d80e7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/.gitignore": {
+      "bytes": 618,
+      "sha256": "370657ef0c4c82c796023ec3ac690c25561e66612c42192e79e5a29adfd2154d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/data/espeak-ng/PropList.txt": {
+      "bytes": 11001,
+      "sha256": "6246b8512d69b2cc44a263c988a9df184bc86b2a14dbb1c285dfbb956e1475da"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/data/espeak-ng/emoji-data.txt": {
+      "bytes": 4502,
+      "sha256": "f56c31e7c82b8a984e8adce098a7d0067983610b635223950d6330d44635ac29"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/data/csur/Klingon.txt": {
+      "bytes": 1712,
+      "sha256": "98f4afc7f46f394b4cd97b5095e2c58d773e8b0620eb82e47f4e57367b95e2c7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/tostring.c": {
+      "bytes": 4459,
+      "sha256": "4f5a4b311d5f2388e7c2473192ea42bfd6445fda16df75cf35b6d70a9cdeea91"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/categories.c": {
+      "bytes": 197003,
+      "sha256": "edd26047254c98d65936f1f4237feb2389acb1cce3733a2b693e1a9b9f333880"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/proplist.c": {
+      "bytes": 128122,
+      "sha256": "6a96e07b90ca58a9b807f6cf8ece6294f4864ba017e99c0574aeb235b0d41053"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/case.c": {
+      "bytes": 127584,
+      "sha256": "04622da7360518fb8feb94a0e53e75f281b2a530690626a142d9522767bda3d7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/ctype.c": {
+      "bytes": 4692,
+      "sha256": "7c3a160f572c19d9b429aff57cfec9eb526b47535bcb96f747fadc5601d6ba93"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/scripts.c": {
+      "bytes": 277601,
+      "sha256": "01ad466cf4a176928f058ff55ec04ee5bedb4cb1d7eb849a3cc6c4184013280e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/src/include/ucd/ucd.h": {
+      "bytes": 48525,
+      "sha256": "4d0f07930384e2a57a4abeb433bd3fef35a5904b2c5ce6ad6ee30f72ddfde67f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/_layouts/webpage.html": {
+      "bytes": 628,
+      "sha256": "fe582a0cdc7b69617b7ebbe4489c5822aa4b50c03d9c10ac1993b9b4ca3e71a4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tests/printcdata.c": {
+      "bytes": 6121,
+      "sha256": "e07f0a47ee59e0cdda7bf85373bc7181dfd186ff9298bb2d9ae167761489b2db"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tests/printucddata_cpp.cpp": {
+      "bytes": 5836,
+      "sha256": "a6ad6e34f2146ebb55e938037f290b3e0025ee3361ef0bf2127ee26f363e1efa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tests/printucddata.c": {
+      "bytes": 5889,
+      "sha256": "4ca907360afa89806d2b836a4910740c58e2534519aa4bb20a6f38b31bd7eb73"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/docs/ucd-tools.conf": {
+      "bytes": 6305,
+      "sha256": "d7b39dbb8fe18379e7c7a55784112e58af44aa9d4927645cc05d6a42e6c0dc93"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/categories.py": {
+      "bytes": 8186,
+      "sha256": "2a72e58f0a5707fd6069c44389899bcc43ebbcb56e500f9cef10c75cb569b49d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/ucd.py": {
+      "bytes": 4864,
+      "sha256": "f440fcd602057ed197087d47f3166cc9a87d4c183d1500c9f2b14eb4e39f90ce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/scripts.py": {
+      "bytes": 11297,
+      "sha256": "a10430ca18d93a8a1a0ab7a148cd4f43222b835c32b886962e02679fcbae225b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/case.py": {
+      "bytes": 3606,
+      "sha256": "758c1568e2dbdc5b7d276c6f03f6752ed34b1f44d04d18c9df061cb68a17f7d3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/printdata.py": {
+      "bytes": 7284,
+      "sha256": "8ee0365202347178dd71f4402ee7d742f65c9a05c8235ce2df4e6c22fe5e6f3f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/tools/mkencodingtable": {
+      "bytes": 1178,
+      "sha256": "a5252adf2c96a84e8510339fd00b334026c004f4d9303a460688749fcf3373d7"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/ucd-tools/m4/ax_check_compile_flag.m4": {
+      "bytes": 3332,
+      "sha256": "6e7315ad440f04b6ffb03b1042acafa7a070ecbc71ec0ff8772716fb072bca2b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/CMakeLists.txt": {
+      "bytes": 235,
+      "sha256": "1bd2a7ff698c8da0d987d39ddc5a7e54ccb9a1984777a8913a110b7d6f48f7ed"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/speechPlayer.h": {
+      "bytes": 1328,
+      "sha256": "351f86e912df39dee970d9d7505e578782f3a48beaa69b8933642be4714176c6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/speechPlayer.cpp": {
+      "bytes": 2407,
+      "sha256": "978abf5bcdd7e3e39c92eb76fbb87a28d836560e89719a62754bdbc67f0cb43d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/frame.h": {
+      "bytes": 3323,
+      "sha256": "3cd5fc0b274c745de316b3fe3340f80de8e2ce04d5a085971f33c8ae280ba73c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/speechWaveGenerator.cpp": {
+      "bytes": 6168,
+      "sha256": "bf7c9fea860a5cfc64add34f37d3e670279321e31f04a6d907a04653cfb82a14"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/utils.h": {
+      "bytes": 1155,
+      "sha256": "7cb8f00b575731cb1ee0c3167acba8a2b662095edf63c135df278d2977f843a5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/speechWaveGenerator.h": {
+      "bytes": 985,
+      "sha256": "e6d6d422b27069d12039ae1ec44eaf49dcbc1b5d546dbcebf59c197fabc8b627"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/waveGenerator.h": {
+      "bytes": 888,
+      "sha256": "7958ad1c4304cb8a38cb44a40c26727748c2832bc64aeda97c3916c96ed675b3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/frame.cpp": {
+      "bytes": 4491,
+      "sha256": "6d5ede8c08f380f253bb5552db6c879d2757f6b12964a37c9c5ddbc2680d869b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/src/sample.h": {
+      "bytes": 771,
+      "sha256": "d7e1adb87c26535315fa571007d64f810876fffe67a0b4066fa691239a48d78e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/speechPlayer/include/speechPlayer.h": {
+      "bytes": 3521,
+      "sha256": "75ddab7bd93adbdb8792a3a70968feb61277c18b8f6964753ae6af48f2709330"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/espeak-ng/encoding.h": {
+      "bytes": 3117,
+      "sha256": "cfdea69c66f1b309717894fa8682e761d7a49448e6a17abdd015bbd85e6de0d5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/espeak-ng/speak_lib.h": {
+      "bytes": 25839,
+      "sha256": "3218ca1573c58f0191830425ca2ebc823f63895de5967b0d1dced987830bfdce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/espeak-ng/espeak_ng.h": {
+      "bytes": 6788,
+      "sha256": "cc4557b73e583bff99ae6703b9685d573713e6c28edecd44030e5def47384051"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/strings.h": {
+      "bytes": 986,
+      "sha256": "8ab483f7c6c556ac98072564845822cd82773cd14c2af5f95738dce986816d0a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/unistd.h": {
+      "bytes": 945,
+      "sha256": "8212bc3d2ad7eaae5a96f13399f7842793c7887dcbbc34578d4e6cc94f75deaa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/stdio.h": {
+      "bytes": 1147,
+      "sha256": "cec378f30afd807d10c3153b92ab0dd0707f90be915edf34e428984d7b15d4ad"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/getopt.h": {
+      "bytes": 1360,
+      "sha256": "95a2ba0e9f6765148c74bf54e237c18ea36d668a57d21c2003595c4a2d16b1e3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/stdint.h": {
+      "bytes": 1526,
+      "sha256": "a8b70c0cc85d5dce8ade8edeb3e3d74868dbdd3cc43a90dff007a8cf4684b675"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/wctype.h": {
+      "bytes": 1516,
+      "sha256": "1f70c90c9ba2ef7fef4d2d2e1734f047b1af697c0b0b0ed1d808491a92dc4ed1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/endian.h": {
+      "bytes": 3768,
+      "sha256": "d9d0517fa9a3b2caabbbe84c5c003526779b1056549e7f08dbd0ce3b30c26875"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/string.h": {
+      "bytes": 1195,
+      "sha256": "839f6c027a2f67c30d8ac077fac945b7e3e7e19a88cb6889ecda261e38092c85"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/wchar.h": {
+      "bytes": 1092,
+      "sha256": "f77dcf954b65de083734b702119304240c4e11c8179ada0a6afcfd804033fadb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/math.h": {
+      "bytes": 1108,
+      "sha256": "c76fbdcddfc9a922b0a29e52ef20fdd28bf88804d5334a58597b14297792d0f8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/compat/sys/stat.h": {
+      "bytes": 1254,
+      "sha256": "f75eeb63683b3be83b9fa1b4f0fd511fbc9c05cc6da02ac3eb5772c49569d7ff"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/include/espeak/speak_lib.h": {
+      "bytes": 25839,
+      "sha256": "3218ca1573c58f0191830425ca2ebc823f63895de5967b0d1dced987830bfdce"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/compat/getopt.c": {
+      "bytes": 12515,
+      "sha256": "e781681895c169161b2ea68ac4257492659def27ac0af782f17b0bd5afa3b83c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/ieee80.c": {
+      "bytes": 2091,
+      "sha256": "9f7b27f991f1e3306bf5601c24de23a4de36ec3ca2c3a4c33afb332aac8e2230"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/dictionary.c": {
+      "bytes": 88829,
+      "sha256": "c69a0e4a8364b27a93532b3f7b867459bcf143e1e4d305b1857a293e105802da"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/dictionary.h": {
+      "bytes": 2573,
+      "sha256": "05f2b11ae9bf880365fb1d1fa91e1604754787f3fe35fd94bc7741837698ca2d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/langopts.h": {
+      "bytes": 1075,
+      "sha256": "5c7a802c5c2dbf2e0695358dce5aee4ac5375d580ef0e579a3b3c68664f11be6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/mbrowrap.h": {
+      "bytes": 3272,
+      "sha256": "052d5e59dcf48300da7fc9e8d482d7a98bf1a099c46018fd06a5dc22bed00f4e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/mnemonics.c": {
+      "bytes": 1331,
+      "sha256": "052f74535078139599c7fb37bf8701720eaabc261d7fd7630ce73df48e63f059"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/intonation.c": {
+      "bytes": 36514,
+      "sha256": "8756820e189bb5c067dfd8db6d93c777376c035c8cece24234fecab1cc67e83a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/config.h.in": {
+      "bytes": 241,
+      "sha256": "f408b520e4c418b3fbe93a8cb60c58c71957bf5fdd993015a8948610daf67a5a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/common.c": {
+      "bytes": 8038,
+      "sha256": "b5a2fc40da61e23b55b7f79f8f8db93ec03f3bd5ede2ac4c02586ba564c335ab"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/common.h": {
+      "bytes": 1724,
+      "sha256": "5e43e56b90fc333efb654f3edeffbd0308a432a3e942ab37e0d5172c78e3a152"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/ssml.h": {
+      "bytes": 2776,
+      "sha256": "9a5d7cc062dc2fa1e004483849670cf12057601cda243f9a0aa81cd8841f0ffd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/wavegen.c": {
+      "bytes": 40441,
+      "sha256": "9f327bb75ed2fd27535f58deef06fb51c994ab53e6ec7d05ea3f04eca78100d4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/readclause.c": {
+      "bytes": 30108,
+      "sha256": "5d110a4478727f16509519de3c4c11c536577ae83c967a04ddd92d01bc712432"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/speech.h": {
+      "bytes": 2256,
+      "sha256": "bd314598b9423b6a7d4aacf261d7012eef6467b7d1058910882bea9c78f722db"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/sPlayer.h": {
+      "bytes": 389,
+      "sha256": "d2266241fb5ef5f8b1b06fde38ff5e6791bde4ac06d047ac260a16e4849d4234"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/phoneme.c": {
+      "bytes": 5162,
+      "sha256": "75c7f9d13ace78c6f1abff7eed408ea1fc7f00848c346e6ba0ec92db654e6d95"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/soundicon.c": {
+      "bytes": 5252,
+      "sha256": "5e8bf4217f493ad47c4ce05a5ea7d0d34a8b6c68ae39501a0db779991270342c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/espeak_command.h": {
+      "bytes": 4385,
+      "sha256": "1400958c57b5957f261050e86b9997e17cefd281cc66c641b5c3dc6e687b0a25"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/fifo.c": {
+      "bytes": 11812,
+      "sha256": "2184ec0ecfb4c90007ce2959e929e3b533d72c3c09762350e8a7c8b065cacb94"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/setlengths.c": {
+      "bytes": 22585,
+      "sha256": "0eeaec2846ea158ebb49573c064b8aca022954371945791ad44c2d3be33da0d3"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/voice.h": {
+      "bytes": 5728,
+      "sha256": "68fb5aea4e09c8f6500adc906a275def3ef585e982dcbfc0fdca0e2894c4db6d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/tr_languages.c": {
+      "bytes": 72870,
+      "sha256": "83173f257cd5302f8bb0b9ba7a164bdf5e237e01bf336aaa6eda423da4a612fd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/espeak_command.c": {
+      "bytes": 9417,
+      "sha256": "2b39e0c76b8d6f63f2f6e2130d1596a3ee8533e6456db447dcd11164926a44ea"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/fifo.h": {
+      "bytes": 2315,
+      "sha256": "8ad047ef2cc73fe0d8fdb05d8496dc69d6ad765ba87547ce69211ad692cee7f0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/voices.c": {
+      "bytes": 40280,
+      "sha256": "6509cec3f144adf22338eb0a822915ed28262133864a47f1b2464922f9fc7a01"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/soundicon.h": {
+      "bytes": 1341,
+      "sha256": "77746328853f96051508aeca1ab4aec724ec95441290f9c9d6d9ded4751f1f30"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/synthesize.c": {
+      "bytes": 41864,
+      "sha256": "ed4aca3492fbf17f2fed9c3c7cdcc544743395de082e5f6a90c8dcdb918ec419"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/ieee80.h": {
+      "bytes": 55,
+      "sha256": "3879b50453f629c2a0652930085503919107f84ea9eea76ace46137b4440baac"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/langopts.c": {
+      "bytes": 6817,
+      "sha256": "02ad9680d30fd9caf4375f16df8d58571d5caaf1d004547537e46446e177c451"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/error.c": {
+      "bytes": 5000,
+      "sha256": "42ea187e06c57ee97988ea6ce289ad597a75dc16396c2df6319168155a79725c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/compiledata.c": {
+      "bytes": 71564,
+      "sha256": "70d5996bfc85fb39bab210b0e6c79d5d46a1574d9a02dfca8bcfaaf4230ca244"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/setlengths.h": {
+      "bytes": 1148,
+      "sha256": "3052c91027c348009251ead97f3cb39ffd88194b82c9e559f91ec66687c86fa6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/synthdata.c": {
+      "bytes": 24826,
+      "sha256": "776465e7139b8c0e349b0948a8c48a3f2d4ef5e75fe32017ca2de23aa06d465b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/intonation.h": {
+      "bytes": 1041,
+      "sha256": "45651af0b2a1f4f8776821f33d0f1de10287994b210bf573d54a4abc34359d37"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/klatt.c": {
+      "bytes": 32925,
+      "sha256": "1884460792e7255dd0a0208198401dd0e48a419760da7511327712c9cfba296c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/wavegen.h": {
+      "bytes": 1791,
+      "sha256": "f2564d6fdb8227b10e243fc31c46cf73039051c7115c5caa4dbf362984d70be8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/sPlayer.c": {
+      "bytes": 5791,
+      "sha256": "e67db1db85dddd72fa29de32cb7b48f5b220c12196cd079497333bc7c2256796"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/compiledict.h": {
+      "bytes": 1155,
+      "sha256": "e9f5bc591463b2fdfa38f1ec712ee148088b350131a7a2e11c77ad9063c2e45e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/synth_mbrola.c": {
+      "bytes": 16314,
+      "sha256": "410f7f376a0098700ad53edff25b4e5a7604f3a90f363f2932d0549ffb8a704e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/phonemelist.h": {
+      "bytes": 1067,
+      "sha256": "bc6542ab4aa332c1542de765de73f7731d239b52d4026ab0c0963b63890a6f79"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/compiledict.c": {
+      "bytes": 40944,
+      "sha256": "ce74d0ce87f03149148d545bf62882e26a829035bf553e9543b319fb10ba9c13"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/numbers.c": {
+      "bytes": 50509,
+      "sha256": "0d91d2c768b63deae442e5c0f0ab0e311422c829f9acaafa3a90f9d804750ffb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/spect.h": {
+      "bytes": 2666,
+      "sha256": "5ccd98b047739662db9a81fd37428d1704c981dc96acacda3aee1e25c31ac1a6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/CMakeLists.txt": {
+      "bytes": 2900,
+      "sha256": "d96f3dbff293ffc507b251390c73e54b90a15bffd9f923f25ec52359574e9443"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/klatt.h": {
+      "bytes": 6075,
+      "sha256": "2728b7c61719f388b4d8baa767779cf6f432527c592c1943820397d1914a045b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/mbrowrap.c": {
+      "bytes": 15748,
+      "sha256": "7dc86939c950c7302a2f05cb58aa7f72726d65de471db3355786d24e59994054"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/readclause.h": {
+      "bytes": 1416,
+      "sha256": "556906a5c226aa3f6a4039328ad9f9d513fc1a6cea206cc6d1e26980cde0ae7f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/ssml.c": {
+      "bytes": 30337,
+      "sha256": "0898e35df4b946233b77a7311be47737f570e9d24eef47b90f3c2b2a9acbefde"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/translate.h": {
+      "bytes": 31149,
+      "sha256": "8ff32baadc5a45e502e3151f8804a704916d9d9d27ac8a74a78e7e484185d271"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/encoding.c": {
+      "bytes": 37603,
+      "sha256": "c1a81adb11f953eca4e5a52a83faa1ad0e96f63f2829510888f7d4e9f4a6b090"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/translateword.h": {
+      "bytes": 1218,
+      "sha256": "6986ebf368deb77c5d4eeee029dba7e48d708c938f6bbfb7a606a4fa01346f25"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/error.h": {
+      "bytes": 1557,
+      "sha256": "92c4d98fc38b5f45bb1af37a37021026817a81860362c2f40497aa17d45194c1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/compilembrola.c": {
+      "bytes": 3696,
+      "sha256": "47a5c540ab9c4d635251e29c7dfd01462c2b2d0945bd2332b8152a2e47fd322b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/spect.c": {
+      "bytes": 10881,
+      "sha256": "3120ffefbcad67ab10e482d5f107296c7bcad87ece976a7eb51dd83c0824b123"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/event.h": {
+      "bytes": 2212,
+      "sha256": "ba1d010c2f9d762463143f3c4a0a9684bc5ed9110b9e2f87a4ed81577a8ccaaa"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/mnemonics.h": {
+      "bytes": 1150,
+      "sha256": "59455ca63c5540ef0ab46274e023a53f03119a20455f97d8c8b03e6f61b7743d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/synthesize.h": {
+      "bytes": 15058,
+      "sha256": "db8ebcf0c12c2c5bf0996fd588bf2d4c4240b196922bdd0640576215ec8b9b53"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/sintab.h": {
+      "bytes": 14345,
+      "sha256": "c58ad93a2195532b37d67e9bcac552d77dd541856d4d55b9a94136f19c58d2a5"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/speech.c": {
+      "bytes": 26678,
+      "sha256": "70584c853082141ae4c1de6254e4601085ea0ca06054fb8055852fb2768a70bf"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/translateword.c": {
+      "bytes": 36954,
+      "sha256": "ee4cb14c6fccd961b4de863ad284acc8585322d92546e8be460721996a010965"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/event.c": {
+      "bytes": 10274,
+      "sha256": "2dae7e5aa8a8f83afd91bb74bfdc0ca9b541518d8d6b33c9e8bc93d84f4c5d6a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/synthdata.h": {
+      "bytes": 1940,
+      "sha256": "46f6315027e2145bab900277a9c9e10a467ea0bfa9a1b0b37a9f4c40fcb09f22"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/espeak_api.c": {
+      "bytes": 5580,
+      "sha256": "991f31a5aa592d46658095916246afa0489f63a36768359285887ab8afd49783"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/phonemelist.c": {
+      "bytes": 18653,
+      "sha256": "2f7ba6165108c91402e96388cf9b2e4cef048577ddad2814351ad25ea7772e82"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/numbers.h": {
+      "bytes": 1467,
+      "sha256": "ec4f8b8bd660700fefd11cb596440e0d035be6252cc780018b2bcaadd472237f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/phoneme.h": {
+      "bytes": 9161,
+      "sha256": "9f9d91ed07885b227cce551cdbad9cf620c2945d44a8e90edf910af9646d7d75"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/mbrola.h": {
+      "bytes": 1674,
+      "sha256": "366aa9ce7bf79f9ca8c36a386b5821388c1169e545bbd57a62cfe1b84767cdff"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/src/libespeak-ng/translate.c": {
+      "bytes": 53322,
+      "sha256": "9c987c67db6a6be7bc37498c029bcc19dd91fdedc521ddeac7e7bba81ec9ea23"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/provenance/SOURCE_PATCH.json": {
+      "bytes": 989,
+      "sha256": "87c960f2f3ececd79c7952db0cb2d66fb0458d9d41aa6ab4cfc4246b311cefdd"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/provenance/phoneme_only.patch": {
+      "bytes": 10724,
+      "sha256": "effc7ad4b812653fa060f4b514772145814f04019d22bff93add46067dc7ece9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/provenance/build_code.py": {
+      "bytes": 8728,
+      "sha256": "cb7d91bf57022a8899b52172743e91b2dae45d35d714deaa2b92e7e1417ee0c6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/patched/synthesize.c": {
+      "bytes": 39494,
+      "sha256": "c47a3f3d8a07a23b6b5f369e1f09941eb6f83454fdfcafe0d658f860d154b6a2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/patched/synthdata.c": {
+      "bytes": 21489,
+      "sha256": "0decabadb97b05f6c38be2e46d4eabc5e4d5cde9c564c20cec343301c18f5b14"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/espeak-ng/patched/speech.c": {
+      "bytes": 24602,
+      "sha256": "d740f38ab72f9ba6fb905d675f4961607ef9d7290ecf20bc0b40a8d4e072b03b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/value_decoders.c": {
+      "bytes": 3929,
+      "sha256": "ff150d8e33addc72fc1a05516834e6e745247af5c290f673864cdacec044a216"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/predict_reader.c": {
+      "bytes": 5762,
+      "sha256": "ac1378d6173084520fb60abb932117bde3d95fac15b9cb738b720d86510226b8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/lookup_reader.h": {
+      "bytes": 722,
+      "sha256": "26e07e3b36e99e10be5e210408eea7d3ec9bd9eb1257181edd51f86a6f8a854a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/open_predict.c": {
+      "bytes": 2220,
+      "sha256": "af686ac53db6ae9b1fff02eea0ada728bb844d4cc8e0517092928a9f27e5bbbb"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/predict_reader.h": {
+      "bytes": 886,
+      "sha256": "fb5dffade529d28262dcb44c3c2c26b3e39e922a333c02bea3d24cbd5434f8d8"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/lookup_reader.c": {
+      "bytes": 1226,
+      "sha256": "0a4c8fd34c3548b8032272bd1669b01fa9a621e03df293b5bd1cc4bdef6f42e4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/reader.c": {
+      "bytes": 7620,
+      "sha256": "7cf30084f11eb4d418ca1a4cb7aaad3b8b0c42a7cdbcc5abc97f83f60f9d4973"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/table_reader.c": {
+      "bytes": 8572,
+      "sha256": "5f4b02984a7a5bab0244fa0c398e2fcd3fde723fef512fbd75e0a5008cbad28c"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/reader.h": {
+      "bytes": 1114,
+      "sha256": "14eadd4d806ffc0c227b8eac61f2c550bc5d01671db148d9f962e090b8a82eb6"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/table_reader.h": {
+      "bytes": 1211,
+      "sha256": "261ffaac0595b9a7be80ea3b5c5e5f1fd6846f89941a95af145d1e64cd743bdf"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/sources/readers/value_decoders.h": {
+      "bytes": 590,
+      "sha256": "0e5f6cc48e5c566135174ee5564d906b9dfcee70ff5e3da09018dec208699221"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/opus/PROVENANCE.json": {
+      "bytes": 3246,
+      "sha256": "0dd42be4c6d530cebed7311cd61f832d91c56ff19ce958296458f12bbf8bf315"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/opus/COPYING": {
+      "bytes": 1945,
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/opus/LICENSE_PLEASE_READ.txt": {
+      "bytes": 703,
+      "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/rndvoc/PROVENANCE.json": {
+      "bytes": 2192,
+      "sha256": "cb6d2adc869fbfd33768870d467f31a1192d98a542281131cfe136d1ab822eb0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/rndvoc/LICENSE": {
+      "bytes": 1069,
+      "sha256": "002c2696d92b5c8cf956c11072baa58eaf9f6ade995c031ea635c6a1ee342ad1"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/hifi_gan/PROVENANCE.json": {
+      "bytes": 1202,
+      "sha256": "cff325862a0a1500971ece5ec201f15c02dfdc62322dcd2300ee91686c040f27"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/licenses/hifi_gan/LICENSE": {
+      "bytes": 1067,
+      "sha256": "5eec017ce442989e01a46cd9cd6aeb13cd0aa3b3943f681577bda00475afaa23"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/tools/build_frontend.py": {
+      "bytes": 2938,
+      "sha256": "fafe2ed16c18011c0473cc061a0c0e83e3760a8bbc2ec24eadcfb7a316ef8f15"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/SHA256_MANIFEST.json": {
+      "bytes": 131976,
+      "sha256": "19e964246c49e78107538f47b342c32a9a63416162f0556fcbc5dac160d6852d"
     }
   }
 }

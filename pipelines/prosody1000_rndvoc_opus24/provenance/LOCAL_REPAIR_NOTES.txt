@@ -1,0 +1,16 @@
+长文本与中文缩写推理修复，2026-10-30
+
+当前声学原2000步追加1000(global3000) INT8存储权重 + 配套E2 + RNDVoC25000 + 原Opus BWE24，输出24kHz PCM16 mono。未新增训练、未改权重。
+
+借鉴的旧版：release_packaging_20261029/tts_best_20261029/inference/runtime/frontend.py及text_prepare.py的flow_letters_v2。AST直接提取缩写分类和数字规范化函数；数值转中文依托当前cardinal，未复制Kokoro参数。新增缩写分类与旧版相同，当前alias参数/音素系统仍为NEW25；保留用户指定轻U=yiu1、长C、数字首位强调。
+
+长文在完整航班号/时间/电话边界外按自然句段规划，每段至多112音素，生成检查<=1200帧，当前最大10.22秒。各段分别重置声学状态/RND全段统计/BWE状态，借鉴旧版静音边缘衔接；只在自然文本边界连接，没有把编号的字母/数字单独生成再拼接。不是原生流式MCU实现或完整10MB RAM证明。
+
+普通文本CLI：
+.venv/bin/python new25_longtext_flow_repair_20261030/synthesize.py --text "下一趟航班为CZ2671号。" --language zh --output /tmp/flight24.wav
+
+257条=原表中文49+英式100+美式100，加8条专项回归。未把已知表格用于训练。inputs保留原文/特征/完整句段范围，output保留16k/24k/逐句记录，diagnosis提供中文B23四组分量对照；原版249与旧中英文B2/B3/B37参考另保留。两套英文表使用同一已有英文模型。
+
+识别诊断只有B21/B23/B37三条长文，不是固定验收或电音听感验收。asr/RESULT保留原始繁简字形计错；CANONICAL_COMPARISON在两方同时做OpenCC t2s后比较，不修改识别输出、提示或参考，不能替代原固定质量协议。
+
+恢复以STATUS、output/RESULT、diagnosis/RESULT及DELIVERY_VERIFIED为准。正式训练1000阶段早已正常完成，不自动追加；旧模型/试听不覆盖、不删除。SOURCE_IDENTITY冻结本轮批量核心文件。CLI附加兼容层frontend_live对独立/前导零数字和电话做保留，CLI身份单列，批量原表内容重放逐字节核验。

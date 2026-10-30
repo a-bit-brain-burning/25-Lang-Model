@@ -1,0 +1,10 @@
+{
+  "full_checkpoint_sha256": "564d15c47d7fbc30868d442682ad87e6ac11c5fcdcd85e693202850536c39a45",
+  "step": 1000,
+  "parent_global_step": 3000,
+  "acoustic_package_sha256": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+  "all_acoustic_tensors_match_real_quantized_checkpoint": true,
+  "matched_tensors": 136,
+  "RNDVoC_step": 25000,
+  "subjective_accepted": false
+}

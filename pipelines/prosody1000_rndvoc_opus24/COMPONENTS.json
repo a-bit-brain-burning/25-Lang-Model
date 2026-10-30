@@ -1,0 +1,81 @@
+{
+  "format": "new25_full_text_to_opus24_prosody1000_v1",
+  "pipeline": [
+    "text_normalization_and_protected_identifier_split",
+    "unified_acoustic_and_residual_prosody",
+    "paired_E2_physical_to_mel",
+    "RNDVoC25000",
+    "Opus_BWE24",
+    "PCM16_mono_24000Hz_WAV"
+  ],
+  "acoustic": {
+    "directory": "models/acoustic",
+    "source_checkpoint_sha256": "564d15c47d7fbc30868d442682ad87e6ac11c5fcdcd85e693202850536c39a45",
+    "origin_step": 2000,
+    "prosody_stage_updates": 1000,
+    "global_step": 3000,
+    "parameters": 1637644,
+    "prosody_parameters": 14069,
+    "vocabulary": 320,
+    "state_tensors": 136,
+    "storage": "per-output-channel INT8 matrices, FP16 remaining values, FP32 scales",
+    "compute": "CPU FP32 after unpack",
+    "weights_sha256": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74"
+  },
+  "adapter": {
+    "directory": "models/rndvoc",
+    "file": "adapter_fp16.safetensors",
+    "parameters": 1902992,
+    "storage": "FP16",
+    "compute": "FP32",
+    "input_dimensions": [
+      31,
+      39
+    ],
+    "output": "raw natural-log 80-bin mel",
+    "sha256": "2b0f43c0d80c7229aef692d03ef683860da33367a6eb9e236625ac2aebe58f1e"
+  },
+  "vocoder": {
+    "directory": "models/rndvoc",
+    "file": "vocoder_fp16.safetensors",
+    "training_step": 25000,
+    "parameters": 713929,
+    "nonlearned_buffer_elements": 345249,
+    "learned_storage": "FP16",
+    "buffers": "FP32",
+    "compute": "CPU FP32",
+    "native_sample_rate": 22050,
+    "interface_sample_rate": 16000,
+    "sha256": "bc156a6adbd4fd79e085bc4f9d454c2298eed31079d94dacb6d0d217e9cfd511"
+  },
+  "postprocess": {
+    "directory": "neural/new25_postprocess/assets/opus_bwe",
+    "backend": "original Model Opus BBWENet2",
+    "parameters": 367890,
+    "input_sample_rate": 16000,
+    "intermediate_sample_rate": 48000,
+    "output_sample_rate": 24000,
+    "model_checkpoint_sha256": "a6c35c3efc53fc1b125dee1724298e2aa88c72da75bd44bdde77ebac0ce64fd0",
+    "denoiser_enabled": false,
+    "codec_encode_decode": false,
+    "build_from_vendored_source": true
+  },
+  "frontend": {
+    "directory": "frontend_bundle",
+    "languages": 25,
+    "compressed_package_count": 16,
+    "compressed_package_bytes": 3875677,
+    "default_host": "Linux x86_64",
+    "host_shared_libraries_and_C_sources_included": true
+  },
+  "total_learned_pipeline_parameters": 4622455,
+  "whole_target_RAM_limit_bytes": 10000000,
+  "whole_target_RAM_verified": false,
+  "whole_target_firmware_verified": false,
+  "full_native_INT8_compute": false,
+  "inference_reference": "host CPU, no training audio/reference durations",
+  "public_entry": "synthesize.py",
+  "model_training_updates_for_this_publication": 0,
+  "extra3000_training_not_started": true,
+  "human_quality_accepted": false
+}

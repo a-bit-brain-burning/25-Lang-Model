@@ -1,0 +1,115 @@
+{
+  "language": "zh",
+  "locale": "zh-CN",
+  "family": "boundary31",
+  "parameters": 553166,
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 42,
+    "base_context_dim": 22,
+    "additional_context_dim": 20
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "linear32_compat23_v1",
+    "neural_channels": 31,
+    "physical_channels": 39,
+    "trained_shape_channels": 23,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_boundary_acoustic_v1",
+      "parameters": 376758,
+      "config": {
+        "width": 192,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 24,
+        "ap_bands": 5,
+        "acoustic_hidden": 192,
+        "dropout": 0.05,
+        "phonetic_dim": 32,
+        "context_dim": 42,
+        "continuous_voicing": false,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "voiced_prior": 0.5,
+        "vuv_supervision": "frame",
+        "channels": 31,
+        "prosody_contract": "context22_plus_prosody12_v1",
+        "segment_skip_hidden": 0,
+        "parameter_budget": 1000000,
+        "phrase_plan_names": [
+          "boundary_none",
+          "boundary_1",
+          "boundary_2",
+          "boundary_3",
+          "prominence_z",
+          "log_duration_ratio",
+          "pitch_level_z",
+          "pitch_range_z"
+        ],
+        "phrase_plan_dim": 8,
+        "boundary_hidden": 32,
+        "boundary_duration_condition": "log1p_predicted_continuous_frames",
+        "boundary_residual_domain": "base_train_scale_times_raw",
+        "boundary_adjacency": "deployment_nonzero_units_v2"
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/zh-CN/s1g/acoustic.pt",
+      "architecture_source_sha256": "f7791b387a9d51d7c77392a1962dd7f6d7fd4fedb81bdbfd9251a6a4b796ffa2",
+      "weights_as_initialization": true,
+      "shared_convolution_basis": {
+        "blocks.0.base.conv": {
+          "width": 192,
+          "rank": 96,
+          "dilation": 1,
+          "basis_key": "compact_w192"
+        },
+        "blocks.1.conv": {
+          "width": 192,
+          "rank": 96,
+          "dilation": 2,
+          "basis_key": "compact_w192"
+        },
+        "blocks.2.conv": {
+          "width": 192,
+          "rank": 96,
+          "dilation": 4,
+          "basis_key": "compact_w192"
+        }
+      },
+      "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+    },
+    "planner": {
+      "format": "tiny_phrase_prosody_v1",
+      "parameters": 176408,
+      "config": {
+        "numeric_dim": 66,
+        "embedding_dim": 16,
+        "input_hidden": 64,
+        "gru_hidden": 96,
+        "head_hidden": 64,
+        "dropout": 0.05,
+        "vocab_size": 4057
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/zh-CN/s1g/planner.pt",
+      "architecture_source_sha256": "7a9d49311c35276cb4b0e5a0fa992a94cf0bf788764cc2ade35a1f21567e49f6",
+      "weights_as_initialization": false
+    }
+  },
+  "scratch": false,
+  "parent": {
+    "source_group_acoustic_sha256": "782535fd280d1a2730559e0ed877f198ccfed10e70514eb10fc93592f99747a8"
+  },
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+  "source_architecture_sha256": "fffba0337f0424d10c4d7702ef47d64130c9767ac81ea05b229f6a2c1fd1f889"
+}

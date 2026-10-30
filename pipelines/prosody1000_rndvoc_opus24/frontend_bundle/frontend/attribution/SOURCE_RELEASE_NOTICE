@@ -1,0 +1,33 @@
+MT/GA research models: Higgs Audio 2 Compact MT / Higgs Audio 2 Compact GA
+
+Built with Higgs Materials licensed from Boson AI USA, Inc., Copyright Boson AI USA, Inc., All Rights Reserved and Meta Llama 3 licensed under the Meta Llama 3 Community License, Copyright Meta Platforms, Inc., All Right Reserved
+
+Meta Llama 3 is licensed under the Meta Llama 3 Community License, Copyright © Meta Platforms, Inc. All Rights Reserved.
+Boson Higgs Audio 2 is licensed under the Boson Community License, Copyright © Boson AI USA, Inc. All Rights Reserved.
+
+Teacher: k2-fsa/OmniVoice, CC-BY-NC model declaration (version not specified); Apache-2.0 source code. These are separate licenses.
+Common Voice contributors: CC0-1.0. Tatoeba contributors: CC-BY-2.0-FR; full sentence-ID/author attribution in docs/MT_GA_ATTRIBUTIONS.json.
+Google FLEURS: CC-BY-4.0; one public anonymous MT train-reference recording conditioned the teacher; attribution and transformations recorded in docs/MT_GA_ATTRIBUTIONS.json.
+
+See docs/USAGE_AND_LICENSE.md and unmodified third-party license copies in docs/licenses. Noncommercial research only; no new permissive model-weight license is granted here.
+
+
+Lithuanian real-audio model added 2026-10-18. Original recordings and synthesis resources: Vilnius University and the LIEPA project. Structured dataset edition: MEL DYNAMICS, meldynamics/liepa-tts, CC BY 4.0. Citation: DOI 10.5755/j01.sal.0.28.15130.
+Required Lithuanian pronunciation lexicon: Arūnas Smaliukas; derived from LIEPA-3 and VDU Lithuanian emotional-speech corpus (EMO), distributed via CLARIN-LT under CC BY 4.0. The packaged version converts source notation to canonical IPA and stress/pitch features; full modifications and upstream hashes are embedded in frontend/lt-LT/lt_lexicon_v1.json and docs/LT_PROVENANCE.json. License: https://creativecommons.org/licenses/by/4.0/ . No additional model weight license is granted here.
+
+Finnish model added 2026-10-18: Higgs Audio 2 Compact FI — OmniVoice output distillation. Existing Boson/Meta Built with attribution and license copies above also apply to FI. Teacher A only; no teacher B data. OmniVoice weights declare CC-BY-NC without a version; noncommercial research.
+Finnish training texts: Tatoeba contributors, CC-BY-2.0-FR, https://creativecommons.org/licenses/by/2.0/fr/ . All 4,000 sentence IDs, authors, links and changes are recorded in docs/FI_ET_ATTRIBUTIONS.json.
+Estonian real model and Finnish teacher reference: University of Tartu; Speech Corpus of Estonian News Sentences, public speaker alias Mari. Download agreement states CC-BY-3.0; publication states CC-BY-4.0; resource page states CC-BY. These source-version differences remain recorded. Selected/processed audio was used for tiny-model training; no source audio is distributed here. No new model-weight license is granted.
+Corpus documentation authors: Liisa Rätsep, Liisi Piits, Hille Pajupuu, Indrek Hein, Mark Fišel. DOI: 10.15155/9-00-0000-0000-0000-001ABL. Source license links: https://creativecommons.org/licenses/by/3.0/ and https://creativecommons.org/licenses/by/4.0/ .
+
+Latvian model added 2026-10-18: Higgs Audio 2 Compact LV — OmniVoice female-A output distillation. Existing Boson/Meta Built with attribution and license copies above also apply to LV. OmniVoice weights declare CC-BY-NC without a version; noncommercial research only. The fixed female-A reference and all teacher targets are synthetic.
+Latvian source texts: Mozilla Common Voice 21 contributors, CC0-1.0, https://creativecommons.org/publicdomain/zero/1.0/ . Fixed dataset mirror: yvfu/common_voice_21_0, revision 9a364be7375675e7dd665760f79e2d9f50442287. Existing grouped texts were synthesized with the selected teacher and quality-filtered for training; original Common Voice recordings were not used in this release's training. No source text corpus or audio is distributed here. See docs/LV_PROVENANCE.json and docs/USAGE_AND_LICENSE.md. No new model-weight license is granted.
+
+
+HR/SL/BG shared female-A output-distilled models: noncommercial research; OmniVoice, Boson Higgs Audio 2 and Meta Llama3 restrictions retained. Text and pronunciation dictionary source attribution and SA conditions are recorded in docs/SOUTH_SLAVIC_RELEASE.md, SOUTH_SLAVIC_ATTRIBUTIONS.json, SOUTH_SLAVIC_ARTUR_ATTRIBUTION.json and dictionary provenance. No new blanket model license or commercial authorization is granted.
+
+2026-10-20 current SK/DA/SV update: retain OmniVoice, Higgs tokenizer, reference, dictionary and Tatoeba/Wiktionary source conditions. New DA/SV distilled assets are noncommercial research only; no new unified weight license. See docs/CURRENT_UPDATE_20261020.md and CURRENT_UPDATE_ATTRIBUTIONS.json.
+
+Current user-reference25 scratch release: see docs/USERREF25_RELEASE.md, USERREF25_TEXT_SOURCES.json and USERREF25_SOURCE_RECEIPTS.json. Mixed text/teacher/frontend terms remain separate; no new uniform student-weight or commercial license is granted. Original reference recordings are excluded. Earlier notices concern their respective historical assets.
+
+Current25 runtime source bundle: user explicitly authorized Model publication of the matching inference source. Original72 file bytes and static frontend resources/licenses are preserved; see runtime/SOURCE_MANIFEST.json and docs/USERREF25_RELEASE.md. No new uniform project-code or student-weight license is introduced. PT selected B best replaces the previous PT repair carrier; other24 weights and frozen frontend resources remain unchanged.

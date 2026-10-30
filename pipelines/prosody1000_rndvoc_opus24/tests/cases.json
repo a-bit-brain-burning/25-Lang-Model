@@ -1,0 +1,172 @@
+[
+  {
+    "id": "smoke_bg",
+    "language": "bg",
+    "text": "Здравей, това е тест на гласа."
+  },
+  {
+    "id": "smoke_cs",
+    "language": "cs",
+    "text": "Ahoj, toto je hlasový test."
+  },
+  {
+    "id": "smoke_da",
+    "language": "da",
+    "text": "Dette er en test af stemmen."
+  },
+  {
+    "id": "smoke_de",
+    "language": "de",
+    "text": "Hallo, dies ist ein Test der Stimme."
+  },
+  {
+    "id": "smoke_el",
+    "language": "el",
+    "text": "Γεια σας, αυτή είναι μια δοκιμή φωνής."
+  },
+  {
+    "id": "smoke_en",
+    "language": "en",
+    "text": "Hello, this is a test of the new voice model."
+  },
+  {
+    "id": "smoke_es",
+    "language": "es",
+    "text": "Hola, esta es una prueba de voz."
+  },
+  {
+    "id": "smoke_et",
+    "language": "et",
+    "text": "Tere, see on hääle test."
+  },
+  {
+    "id": "smoke_fi",
+    "language": "fi",
+    "text": "Hei, tämä on puheen testi."
+  },
+  {
+    "id": "smoke_fr",
+    "language": "fr",
+    "text": "Bonjour, ceci est un test de la voix."
+  },
+  {
+    "id": "smoke_hr",
+    "language": "hr",
+    "text": "Pozdrav, ovo je test glasa."
+  },
+  {
+    "id": "smoke_hu",
+    "language": "hu",
+    "text": "Szia, ez egy hangteszt."
+  },
+  {
+    "id": "smoke_it",
+    "language": "it",
+    "text": "Ciao, questa è una prova della voce."
+  },
+  {
+    "id": "smoke_lt",
+    "language": "lt",
+    "text": "Labas, tai yra balso testas."
+  },
+  {
+    "id": "smoke_lv",
+    "language": "lv",
+    "text": "Sveiki, šis ir balss tests."
+  },
+  {
+    "id": "smoke_nl",
+    "language": "nl",
+    "text": "Hallo, dit is een test van de stem."
+  },
+  {
+    "id": "smoke_no",
+    "language": "no",
+    "text": "Hei, dette er en test av stemmen."
+  },
+  {
+    "id": "smoke_pl",
+    "language": "pl",
+    "text": "Dzień dobry, to jest test głosu."
+  },
+  {
+    "id": "smoke_pt",
+    "language": "pt",
+    "text": "Olá, este é um teste de voz."
+  },
+  {
+    "id": "smoke_ro",
+    "language": "ro",
+    "text": "Salut, acesta este un test de voce."
+  },
+  {
+    "id": "smoke_sk",
+    "language": "sk",
+    "text": "Ahoj, toto je skúška hlasu."
+  },
+  {
+    "id": "smoke_sl",
+    "language": "sl",
+    "text": "Pozdravljeni, to je preizkus glasu."
+  },
+  {
+    "id": "smoke_sv",
+    "language": "sv",
+    "text": "Hej, det här är ett test av rösten."
+  },
+  {
+    "id": "smoke_tr",
+    "language": "tr",
+    "text": "Merhaba, bu bir ses testidir."
+  },
+  {
+    "id": "smoke_zh",
+    "language": "zh",
+    "text": "你好，欢迎测试新的语音模型。"
+  },
+  {
+    "id": "flight_cz",
+    "language": "zh",
+    "text": "下一趟航班为CZ2671号。"
+  },
+  {
+    "id": "flight_mu",
+    "language": "zh",
+    "text": "下一趟航班为MU5108号，请前往T2航站楼。"
+  },
+  {
+    "id": "flight_ca",
+    "language": "zh",
+    "text": "航班CA0806正在登机，请核对登机口A12。"
+  },
+  {
+    "id": "spaced_code",
+    "language": "zh",
+    "text": "下一趟航班为cz 2671号。"
+  },
+  {
+    "id": "initialisms",
+    "language": "zh",
+    "text": "请打开PDF文档，检查CPU、GPU、USB和API接口。"
+  },
+  {
+    "id": "digit_runs",
+    "language": "zh",
+    "text": "请核对编号A12B34和AB0072，保留开头的零。"
+  },
+  {
+    "id": "repeat_probe",
+    "language": "zh",
+    "text": "下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。"
+  },
+  {
+    "id": "english_long",
+    "language": "en",
+    "text": "The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. "
+  },
+  {
+    "id": "long_zh",
+    "language": "zh",
+    "text": "请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。"
+  }
+]

@@ -1,0 +1,1550 @@
+{
+  "status": "PASSED",
+  "cases": 257,
+  "all_previous_listening_wavs_byte_equal": true,
+  "seconds": 140.58253455162048,
+  "rows": [
+    {
+      "id": "中文_B1",
+      "byte_equal": true,
+      "sha256": "e712534b7e20cefb478596d96aac0f5d7bbeea5873c9fb588d4bcca40bde9f36",
+      "segments": 2
+    },
+    {
+      "id": "中文_B2",
+      "byte_equal": true,
+      "sha256": "82560b58a1c03e0e1b7c7430b3e07c9183cb5f7f5e3857f4ab06a3d185ef9ef8",
+      "segments": 3
+    },
+    {
+      "id": "中文_B4",
+      "byte_equal": true,
+      "sha256": "e6aa5af54b07678c55ce100a91d82c9c47c2297fa633658180b7766f1fa49958",
+      "segments": 1
+    },
+    {
+      "id": "中文_B3",
+      "byte_equal": true,
+      "sha256": "56af3b2fa70e2379ed75c5e91bb21f5beaf9f981f470d1dece1c2dea297d0bca",
+      "segments": 3
+    },
+    {
+      "id": "中文_B5",
+      "byte_equal": true,
+      "sha256": "af9f6a036d317af4204673f1df9c194739dad2bffeac6e6c8f15b3bc4a048f4a",
+      "segments": 1
+    },
+    {
+      "id": "中文_B7",
+      "byte_equal": true,
+      "sha256": "de47852acbe6c52d3f295e8721cad44646a469d27276e0733c4173382b0d3038",
+      "segments": 5
+    },
+    {
+      "id": "中文_B8",
+      "byte_equal": true,
+      "sha256": "bc7e2a1ad3ff28a87ca041959a8b98da8910fc669361772ad0d311331ecbd89b",
+      "segments": 3
+    },
+    {
+      "id": "中文_B6",
+      "byte_equal": true,
+      "sha256": "7ad425c3e68a80adec0cffd326af993918ca7383bec8042d411ea6030efbfb78",
+      "segments": 2
+    },
+    {
+      "id": "中文_B9",
+      "byte_equal": true,
+      "sha256": "aca7969db36d15ff62de84bbb7d8419cd88ef5bd9ecc6aa6593f47c60735c713",
+      "segments": 6
+    },
+    {
+      "id": "中文_B10",
+      "byte_equal": true,
+      "sha256": "a3c6c011bafd5256d9898b9bded8bfaa64abc362502bdcbe35396c1998fa09a2",
+      "segments": 5
+    },
+    {
+      "id": "中文_B11",
+      "byte_equal": true,
+      "sha256": "8ad7e282fda731f3a3c67953abad41687b9f80a6463ab532a0ca1e121da5cb90",
+      "segments": 7
+    },
+    {
+      "id": "中文_B12",
+      "byte_equal": true,
+      "sha256": "253b3f4f8d746f4db7619d77a2007bc308aa8278aece9e56be2d91b0343ef0b7",
+      "segments": 8
+    },
+    {
+      "id": "中文_B13",
+      "byte_equal": true,
+      "sha256": "50e6eaa3ba7661072f92e5827f71784e45e87beb5f224a9dc6381242f1d1608f",
+      "segments": 6
+    },
+    {
+      "id": "中文_B15",
+      "byte_equal": true,
+      "sha256": "ff5e3a274434167c3e3845313630153c0c7a1f0a702ffbfdfec88a65731da243",
+      "segments": 2
+    },
+    {
+      "id": "中文_B14",
+      "byte_equal": true,
+      "sha256": "7a7434b2fee0b58c7840f3eb3a58804dd303b7d7c5b5ec78c8548f74a2bd8c75",
+      "segments": 4
+    },
+    {
+      "id": "中文_B16",
+      "byte_equal": true,
+      "sha256": "8a7b3df14147215073b98bcfbf78a6da6cb79a3c1e9f9b602107190d17dd2cc3",
+      "segments": 1
+    },
+    {
+      "id": "中文_B17",
+      "byte_equal": true,
+      "sha256": "e47ab87ec9cd8f005299b1d8decff36302708c83451e4cc93bbc5f53a6376237",
+      "segments": 3
+    },
+    {
+      "id": "中文_B19",
+      "byte_equal": true,
+      "sha256": "2eef99db9ad40071051ca40e0fe14971539d3576065f454218b729d5c260f252",
+      "segments": 5
+    },
+    {
+      "id": "中文_B20",
+      "byte_equal": true,
+      "sha256": "1795ddbb42992205e77623f76bc7b5f84518353ff32246ff658f014ed3d7d90f",
+      "segments": 3
+    },
+    {
+      "id": "中文_B18",
+      "byte_equal": true,
+      "sha256": "ead049135495e84ff75bc1443cff744c42c23642ddc3dd5f9ca47054c5b0635a",
+      "segments": 3
+    },
+    {
+      "id": "中文_B22",
+      "byte_equal": true,
+      "sha256": "775675adc1b24ee2d060d2f3cc3b661a58d09dcd4cb9688933ed85bd2f88de63",
+      "segments": 4
+    },
+    {
+      "id": "中文_B21",
+      "byte_equal": true,
+      "sha256": "ca27e9a0ed8835c9768f6a7aa8af00152be685cce1f2285ad0ff2e5d71fdbe30",
+      "segments": 8
+    },
+    {
+      "id": "中文_B24",
+      "byte_equal": true,
+      "sha256": "05d02a7f832eb7ed6eed5be727e1e6dea5681473041acc44a714bebdbd3f89c1",
+      "segments": 4
+    },
+    {
+      "id": "中文_B25",
+      "byte_equal": true,
+      "sha256": "7afd807a8b0ca6b36e472bb95caa7c3a7825ad250a3d898a972f2724ca2bb766",
+      "segments": 5
+    },
+    {
+      "id": "中文_B26",
+      "byte_equal": true,
+      "sha256": "227554f75f969cd4b514876d484441d0b51d1acd6a5eecb74c3f4a136f51c525",
+      "segments": 1
+    },
+    {
+      "id": "中文_B23",
+      "byte_equal": true,
+      "sha256": "b0a1c0e973222c9a8ce440ac412615e701ace03ad5310b367b1cdc2b2cd90702",
+      "segments": 9
+    },
+    {
+      "id": "中文_B27",
+      "byte_equal": true,
+      "sha256": "c2e05bd06ef5f52e5e3a265286cf392d1a66e88958117ad305a2486f50b28dd0",
+      "segments": 2
+    },
+    {
+      "id": "中文_B29",
+      "byte_equal": true,
+      "sha256": "263353d48a1c495a426cb54f852672f91bf7e0c3225d3891b480d8ae6082ff7f",
+      "segments": 2
+    },
+    {
+      "id": "中文_B28",
+      "byte_equal": true,
+      "sha256": "b00490feb794b531225b70d50344cbc475892da6de38646baadde2db24fd92b4",
+      "segments": 3
+    },
+    {
+      "id": "中文_B31",
+      "byte_equal": true,
+      "sha256": "38b7dc018efa0a52e397d4cff2d2cf3d6093293de5bde8c99f532c1a7beb97a4",
+      "segments": 3
+    },
+    {
+      "id": "中文_B30",
+      "byte_equal": true,
+      "sha256": "2b0d03223b7db8b25fa1e3090c3fc6d6234ed9861da6fd9be40dcf91d1a59360",
+      "segments": 4
+    },
+    {
+      "id": "中文_B32",
+      "byte_equal": true,
+      "sha256": "34154dc46996246ab10b8cfaef0aaceda4cc1ae709a4e6234ded6adca10ff15b",
+      "segments": 5
+    },
+    {
+      "id": "中文_B33",
+      "byte_equal": true,
+      "sha256": "64027798ff02af2c02bf96cf328b6e7d56469e567809c754148056dc6004ef8f",
+      "segments": 3
+    },
+    {
+      "id": "中文_B35",
+      "byte_equal": true,
+      "sha256": "e5c39ddca5120a5a22c36e20ba2622d256379c4f186de788c2b096a9feac8b76",
+      "segments": 3
+    },
+    {
+      "id": "中文_B34",
+      "byte_equal": true,
+      "sha256": "0a16a330320bb1f73b6147d04552620e803d3d0e2036e7e857fa5853c69fa103",
+      "segments": 3
+    },
+    {
+      "id": "中文_B36",
+      "byte_equal": true,
+      "sha256": "2bb8b352aa578caf0e56867b6f67e2ecd637adb019b7fe7f09431bed385d88f1",
+      "segments": 3
+    },
+    {
+      "id": "中文_B37",
+      "byte_equal": true,
+      "sha256": "e638c24d699183ce2d9426f280293d8c852148eb9dd9998c7d880d1dd7d5d4d0",
+      "segments": 2
+    },
+    {
+      "id": "中文_B39",
+      "byte_equal": true,
+      "sha256": "57c5a7a05c3f009b0a426c4e3837e7bd023c60d23174b62db8671198e9f08c43",
+      "segments": 2
+    },
+    {
+      "id": "中文_B40",
+      "byte_equal": true,
+      "sha256": "405d0096a823427d73bbf4ca8ef1d6fb1adf8a5a35efcfd86d81c19d14bee205",
+      "segments": 1
+    },
+    {
+      "id": "中文_B38",
+      "byte_equal": true,
+      "sha256": "501b5d2c9134687f00a8890a8be92c42224f2b65707ec217d6c9e726cae8661a",
+      "segments": 4
+    },
+    {
+      "id": "中文_B41",
+      "byte_equal": true,
+      "sha256": "315e8d7e6f06dbc49d6f97372d0f736f2a9a6dd4729360dbee10f2a3b63f7836",
+      "segments": 1
+    },
+    {
+      "id": "中文_B42",
+      "byte_equal": true,
+      "sha256": "7d99585cb5c0ce1e11bd16fbd8296f747b6e9a05ff13a33ece84a05a88b44988",
+      "segments": 2
+    },
+    {
+      "id": "中文_B43",
+      "byte_equal": true,
+      "sha256": "7c4fb72aff2ac56c78dce4bd290744e0d69a68ff6c8609fa0a4d57b8fa6e8f3e",
+      "segments": 3
+    },
+    {
+      "id": "中文_B44",
+      "byte_equal": true,
+      "sha256": "0e81bb09117c1f499167ed38608c776e547c9f156388d9fae78bb614b39c2d24",
+      "segments": 2
+    },
+    {
+      "id": "中文_B45",
+      "byte_equal": true,
+      "sha256": "e6cba11c4f729d7f8839e7d46f01ad8ebbb3b412ffec69b5e5f0e694ac06b03a",
+      "segments": 3
+    },
+    {
+      "id": "中文_B46",
+      "byte_equal": true,
+      "sha256": "89dd5ea4dbd7a4e82aef10efd2f7fe99750049b51311db42753d37eac515e404",
+      "segments": 5
+    },
+    {
+      "id": "中文_B48",
+      "byte_equal": true,
+      "sha256": "18ee7060c6af2748be3fd4967ffde14c947884822f7dba6651407b3c1343a794",
+      "segments": 3
+    },
+    {
+      "id": "中文_B47",
+      "byte_equal": true,
+      "sha256": "b41b6202342c0815b1b2100ec14dce16f3fcfdd200e8ba73ddc346ba7de09290",
+      "segments": 5
+    },
+    {
+      "id": "中文_B49",
+      "byte_equal": true,
+      "sha256": "0196e8b20ac5dd29c3713f03d8122cbfe2a11e0199a5952cb77286775a7db374",
+      "segments": 2
+    },
+    {
+      "id": "英式英语_B2",
+      "byte_equal": true,
+      "sha256": "0a195ca544de7350cb0c0399185aca5408aa8a1b95b533f6e249f357f2fa4cfe",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B1",
+      "byte_equal": true,
+      "sha256": "6664efc0fed1deb8b1c2f856b7603a0793ee51898c0f262d957a2998138fe487",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B3",
+      "byte_equal": true,
+      "sha256": "bbd3bb1a10153466586a72a4582b44d45ee98784341c21c9f7ca450155703b73",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B4",
+      "byte_equal": true,
+      "sha256": "9955a8c47e7d6f1b6feb0cae5e5aa056cdd929574d0731ef0dc6586b4b2e0864",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B5",
+      "byte_equal": true,
+      "sha256": "a2588562572c382f3381d7fc4a45d2642a091a08ba58620e78ddda75a19405e1",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B6",
+      "byte_equal": true,
+      "sha256": "f1297a74a4ac4732ae4a5e2e07305ff0736c7e6bb31b01e4bafbd5b889279900",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B8",
+      "byte_equal": true,
+      "sha256": "2457d849c3024752897ce7ef299188963318f436a55b5bdc50dcb99f2b7ddecb",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B7",
+      "byte_equal": true,
+      "sha256": "f3909b7bfea61daad1a1133fd675f78c11d1df595cc1196c087fca4c5e8d538c",
+      "segments": 2
+    },
+    {
+      "id": "英式英语_B9",
+      "byte_equal": true,
+      "sha256": "89edf3497f795539c443d79350b5f1f1745c44c1a27dad613c5738902fb9cd75",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B10",
+      "byte_equal": true,
+      "sha256": "e991b062751b439e854d2e178778878b65e6de6e0dad30fc766100059f07b411",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B12",
+      "byte_equal": true,
+      "sha256": "492ac8faa0d568b0d69a697267cbf3c0b1c355d64118e6756a344ffc0ee304ec",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B11",
+      "byte_equal": true,
+      "sha256": "35380f96378c4c3535331e905e87995944b30f492ea00d971169b1376a860c04",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B14",
+      "byte_equal": true,
+      "sha256": "9955a8c47e7d6f1b6feb0cae5e5aa056cdd929574d0731ef0dc6586b4b2e0864",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B13",
+      "byte_equal": true,
+      "sha256": "585b85f240e614a18b3c30578df1498b261473cc7e8a07706b29b8266db7e37f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B16",
+      "byte_equal": true,
+      "sha256": "38b054ef95889505ae5220fe19fb78c260b286e7c083de09cfa456f8184bae65",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B15",
+      "byte_equal": true,
+      "sha256": "e77b81e8ff1d862d97cd2fcd3d4de495c0bf0ef8f026f2514b7794b2be977d90",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B18",
+      "byte_equal": true,
+      "sha256": "66b31e16ab617cb41c4bfe40863eaef8937fddb99103ad9c4559e1d734327d80",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B17",
+      "byte_equal": true,
+      "sha256": "fa8155dbd4f59a253129adebbd9d55a28b79e2d0196efac08dc99066be880fa9",
+      "segments": 2
+    },
+    {
+      "id": "英式英语_B19",
+      "byte_equal": true,
+      "sha256": "a35589ecb658b593e09cd1dba6898eb33e27a4440800827c9e3404687b443879",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B20",
+      "byte_equal": true,
+      "sha256": "9c5a857a89606289ae8b83f89179d7d6fa98cf15faa73d59e275ad703dc567ca",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B22",
+      "byte_equal": true,
+      "sha256": "9fa9b6f9f2ab493dc296b34159769058c6d648f3f82cf342227f76a9863f1b0a",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B21",
+      "byte_equal": true,
+      "sha256": "13a00bc501ab8c27754bc2336f64253a09f0b3f8b5b149f0108bac916c522cad",
+      "segments": 2
+    },
+    {
+      "id": "英式英语_B23",
+      "byte_equal": true,
+      "sha256": "0af85403975def889c875ffa9aaff269edd0a83a9adfff7c482e186538f45584",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B24",
+      "byte_equal": true,
+      "sha256": "6a9024ae599fb0cc2eef467424c8de7b07a30a8d5e6d3ff17f4c31f566dcc0be",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B25",
+      "byte_equal": true,
+      "sha256": "fbd76b25df434fe534a52f879918fc2a90671df12d9290c3872ab9c2e099dc70",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B26",
+      "byte_equal": true,
+      "sha256": "b4ac75bc2985c4e08ac543b7797eb28a03cd642a6d70c489131d2c07d8c0fac6",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B27",
+      "byte_equal": true,
+      "sha256": "77d9c42c8c1f418404f6e2fa2aa8f328fad945ec0da5bd29d98ced2952a091c3",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B28",
+      "byte_equal": true,
+      "sha256": "42b3266e608644b510529ea4f7c8643455c670d85b313d2622adc5ab16ca1a24",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B29",
+      "byte_equal": true,
+      "sha256": "0db0e45df7d89f60efe44fb1468db69307c033e4339ed7de25f3af3cf9199269",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B30",
+      "byte_equal": true,
+      "sha256": "0b5dfa8e4ef5ede16b169ba106e01c8d9d847aea2fa3b8e371313935412d1ce3",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B32",
+      "byte_equal": true,
+      "sha256": "c0eb14f6819325950a00ede702df626d5134fc3ada6b790891b3d7718e52f3dd",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B31",
+      "byte_equal": true,
+      "sha256": "48255d4686cc1d2ca11d9836ca5d3c1cfeb93754aa88cb5e452986a5a11100cc",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B33",
+      "byte_equal": true,
+      "sha256": "122aec193675417b3393a71d9e095ceaaa29ce680cfeff191d7f223decc6e594",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B34",
+      "byte_equal": true,
+      "sha256": "8fa3c38adb2c6b44d6f87410cbb61df943e5cbf559e825c160171b0ea92d17fe",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B36",
+      "byte_equal": true,
+      "sha256": "8de17e246f9697cb2eaf0682319cf6b2fc8918e6cbe58ced1d6bcddabc58a8c6",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B35",
+      "byte_equal": true,
+      "sha256": "8233b8211f6e8dec7a3105dc388309ac3e36068668e725727eb168c46a3f486e",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B37",
+      "byte_equal": true,
+      "sha256": "e661a2447c0f81642b8f9b8503ad5f2393d8a9b91cd846e948fc3c7f8fac1dc8",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B39",
+      "byte_equal": true,
+      "sha256": "93717c6008723942b91374e8aee4a50cdc2e769464814675b888633bf5ca909c",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B38",
+      "byte_equal": true,
+      "sha256": "207ebf24b467b7964e82285f0b7c3743b2b329e39099c399e283c09f88f6fce7",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B41",
+      "byte_equal": true,
+      "sha256": "b1402fc19a876e9b8ed5a7c53da0ca6ef79a73bba5b3f98cbdf9a89eac88a54e",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B40",
+      "byte_equal": true,
+      "sha256": "17694ee0b574ef8721822dedcc32eab19c9075729ce9bb97fdf6a827f9285d53",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B42",
+      "byte_equal": true,
+      "sha256": "419733fcb536954dcf3515576a8e3744cb7aff74a648f6729ed4b890efda549f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B43",
+      "byte_equal": true,
+      "sha256": "e4bb8724a96899769cd4a128502d227525ffd36c1c0177ca68a85500a2f78759",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B45",
+      "byte_equal": true,
+      "sha256": "ed5813dc558b46311df93aad4994def9fcc8f2cd64d94f168e1379904ed89c00",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B44",
+      "byte_equal": true,
+      "sha256": "fdf0d6b448e9e68e6ce1494867ae2c73885c6cccf9163b70eefeea33e15cb21c",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B47",
+      "byte_equal": true,
+      "sha256": "e5082406ee306377ec6e3a6365a810abb97070b8bac864284e1d31941aca4e0f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B46",
+      "byte_equal": true,
+      "sha256": "4fbedac3c553ee3a4793e8f7099678bb105e7d6c575912af5f1fb5b84b355094",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B48",
+      "byte_equal": true,
+      "sha256": "1c1b055d19b82a63d119a27daf6903a9ee073259193aca7bc132d96b1473cc06",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B49",
+      "byte_equal": true,
+      "sha256": "8f2e87ba927e98d3c883f2f3403f44db57a2955e613733245ccf12eee65ba9a7",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B50",
+      "byte_equal": true,
+      "sha256": "767c583979ef1cc0f40cf6ccc999ea687cfca162ebf06514d1aa0f56555914ba",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B51",
+      "byte_equal": true,
+      "sha256": "a548d7364912c3c45b1bc6f9a3aab4e27d9bcb2926983e153dea27b226a91cb5",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B52",
+      "byte_equal": true,
+      "sha256": "1184cf48a8ba5dc830239dd5b37ccd6df7b21118a3a016e73592fe0c1a36b83f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B53",
+      "byte_equal": true,
+      "sha256": "782dc8da8a358bc457f6bbc6daa6b97fbc419524bf95cc49a5af16ff9d8891f4",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B54",
+      "byte_equal": true,
+      "sha256": "530ccdb8f2e1e3403a4933c86812d05a27a66381b1ab63a84e42df7c5901d1d6",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B55",
+      "byte_equal": true,
+      "sha256": "38a34f2b7d6bfcad31040d7eebd08cadb063292dfc395d3f2832baa3937d9749",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B57",
+      "byte_equal": true,
+      "sha256": "aa41c6fe12539c0ce40353553a48a84997690ca156ddc76fc233445e6d0f2008",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B56",
+      "byte_equal": true,
+      "sha256": "a73976d39ba6b32282138bf961b7230497245f72e49c25e105b655201cee041f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B58",
+      "byte_equal": true,
+      "sha256": "b29f9fde2dcb8ae1c654f53dea53be1550029b619ba3d8aef9ee12dd00d95fb5",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B59",
+      "byte_equal": true,
+      "sha256": "18b59aa44b5658410b32beeebf5a1a21a1535bf3285f077ca545a281a8099120",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B60",
+      "byte_equal": true,
+      "sha256": "fe844a94a707498317acc71052630c4eedb82623726c636ff4f97da000f5ddc1",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B61",
+      "byte_equal": true,
+      "sha256": "080d35d4601d69cc223249a997ddfb29be02a47a174207b5590bbc2ffb89cc45",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B62",
+      "byte_equal": true,
+      "sha256": "779fc246b369b98724f23c6f51f9d5f8c9bbd3b819d90a0586088be6641ccb1e",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B63",
+      "byte_equal": true,
+      "sha256": "9cee37a2ac5ee2af227b2d91cf875128790b26a5207cf72c329efbc8eb1f1cf1",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B64",
+      "byte_equal": true,
+      "sha256": "fcb64c2eb40634c15c44db48228fd0e73fd8b740bda28eca9e36e545513816f0",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B65",
+      "byte_equal": true,
+      "sha256": "18c99e1ca0c3f5bc00188bc3e2b9dd1cb58024dd82aea38130b506582480f0e7",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B66",
+      "byte_equal": true,
+      "sha256": "4583abe10978cb6287b94fc1cee458a70fafccac35711049b4dafbe2b58ff34d",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B67",
+      "byte_equal": true,
+      "sha256": "072461b749bb67aac4baa481ac5b8ab7a3546d30cd4954af6ba3284d1e2c41c4",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B69",
+      "byte_equal": true,
+      "sha256": "b07b041f692177c02d141cc1e371ab4236e7f8332b0c72bbf4134d6cb80455c1",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B68",
+      "byte_equal": true,
+      "sha256": "7a63a0449300f15813f2c01e848fcc57a48abfe9521bf4f4790443a152b1f4d8",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B70",
+      "byte_equal": true,
+      "sha256": "e5535f06f72ed5fe5ec2c092e870b5e0e9e636fc1b6e6c6162da5a623515fab7",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B71",
+      "byte_equal": true,
+      "sha256": "e4d2290a6911b336b45229b88791e50a5047dab7f5152d6190c3247edf99feed",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B73",
+      "byte_equal": true,
+      "sha256": "cfe06f336d2cae6c276a0dda00714c01e63daa730d78eeb33a92ca116028b863",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B72",
+      "byte_equal": true,
+      "sha256": "bc05839300f348eed1bf5849ca402aa4233331e02ffa98b63f31740a11d11218",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B75",
+      "byte_equal": true,
+      "sha256": "e943fbf9e208480392112a9bd79c4383f82d6797b8585d1d438e9814eac28bdc",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B74",
+      "byte_equal": true,
+      "sha256": "6bdaeb56e3b1cdf6d2686d3677aa9bd954ea24996e15cadab601b6e40466e5d7",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B76",
+      "byte_equal": true,
+      "sha256": "d798035bf3a63dd2777a51fbe1c52f129d7ff2bc48c51e9f7430c8816dfd0444",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B78",
+      "byte_equal": true,
+      "sha256": "f60c65d08bacf3ce529010283c718888f7f6d58fdd9db1c147f1b56796d24351",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B77",
+      "byte_equal": true,
+      "sha256": "a7074c4c749c51511755b44e6a99eacd2cadf4b357b1b66f32dd75fdb7250f4e",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B79",
+      "byte_equal": true,
+      "sha256": "295bcd06fbd2bfb984993b302ad172694a24a7726cebeb9d89be675e8258dd98",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B80",
+      "byte_equal": true,
+      "sha256": "f606b9b358acd6ee70b44d3b9f9c2547ba18956799b566f49c26da9903c03f42",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B81",
+      "byte_equal": true,
+      "sha256": "6a7a756cb279a9f19cab71db27cc131dcba42d03f0f765ae4b9cc7b2b05ff6a8",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B82",
+      "byte_equal": true,
+      "sha256": "8ed60d8aa21da2868315764804f30668f34c02241eb325f138e5afde8d5f1d27",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B83",
+      "byte_equal": true,
+      "sha256": "15d18b1df575d912367dafadba71d54192e902d7e99f88985a933aa33a9eedab",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B84",
+      "byte_equal": true,
+      "sha256": "a65d02138d9cc977eb21037e720318c233692fed84df1e545324222667a80a99",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B85",
+      "byte_equal": true,
+      "sha256": "8f03e45d039512357af6a9639c60a1dabc979921d347b2e78b4d964869e3db2d",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B86",
+      "byte_equal": true,
+      "sha256": "5775bc20d34631690b8f5ec8d3b7def3d9a49b5ea19cf5108b2118b3ad9d3695",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B87",
+      "byte_equal": true,
+      "sha256": "0906df41eb2778aa1d8344c4b6fcd7f8adb0a37c9e2c9cee0467785743db892f",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B88",
+      "byte_equal": true,
+      "sha256": "5c1360b8d6ff9df6988a61d488155b392aa0335ed2c169b396fa4c215fcbef19",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B89",
+      "byte_equal": true,
+      "sha256": "a4d4a4b6ad697826ddaf034c19b16f731ab6e6cf76d75e68de28839d40ebcf5b",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B90",
+      "byte_equal": true,
+      "sha256": "8996b1360463f55d69f751abaa3c89063bdcc3fd75d1d36156f9b73cd5f0b01d",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B91",
+      "byte_equal": true,
+      "sha256": "b1073030aa75de659363d177ae430a58591126ae1691d13bf5bb433aa8a13a3d",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B92",
+      "byte_equal": true,
+      "sha256": "5a365990adeafe65144c866f73bd10a5beca464581d44aa182019abc1d053c0b",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B93",
+      "byte_equal": true,
+      "sha256": "4f2c61f41926ea68953bbb34aa4cf8036be209656fb0d3b9e8f1c0a1ca03d67a",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B95",
+      "byte_equal": true,
+      "sha256": "b2869293879a660acb6ae4a53c1bce0b71c6ac40f0958a79e1878443631c9d57",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B94",
+      "byte_equal": true,
+      "sha256": "612d43341d7d452071da3de3a9ad397b71a242d29c9270251a4957200900cf88",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B97",
+      "byte_equal": true,
+      "sha256": "a963f09396542e7fbcfcdfeebec285134f108e7ff1cb4bc54abc817eeba52e77",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B98",
+      "byte_equal": true,
+      "sha256": "f32d17558b7b3be136330af5c345bcac4a096bffa02d833b666387f499f6a1ad",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B96",
+      "byte_equal": true,
+      "sha256": "20217ddefb1c7710ecdadd1ee6c98d6e518fd6d893d6d43571df070e49e187f6",
+      "segments": 2
+    },
+    {
+      "id": "英式英语_B100",
+      "byte_equal": true,
+      "sha256": "375f1f06830a950e4df36a226257a99eeb4d87499a8a77b224b728c0b8e9f396",
+      "segments": 1
+    },
+    {
+      "id": "英式英语_B99",
+      "byte_equal": true,
+      "sha256": "4787a91b900b361f06eb37b21b847836f73b927936f97f30f8ba692e2b84d8ae",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B1",
+      "byte_equal": true,
+      "sha256": "4c5bb6c045bc16eca117a63ab75161ac20005ceb2563f07f004a8eb5f5bd0b70",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B2",
+      "byte_equal": true,
+      "sha256": "8852af496183423ed02826acce7258bd77484a0a4e1a67a547acea1f7ebc5e02",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B3",
+      "byte_equal": true,
+      "sha256": "9990dcab315192063627d475579d9da659a55716889d6822ae92553c6d24af78",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B4",
+      "byte_equal": true,
+      "sha256": "1f38e269a99ed25f1d839aa3c8426266216f2e503d8375a32c07a2d50a7bb611",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B6",
+      "byte_equal": true,
+      "sha256": "c0b9c317892a7f7ea6415b0a681a09e4929babe1d9ad6c567b37b96acc603f48",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B5",
+      "byte_equal": true,
+      "sha256": "51673829fc50d900ca65984df6353146c0dd4a434ce8bb7e8d72055373ef52fe",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B7",
+      "byte_equal": true,
+      "sha256": "493288f91b8e8047b6aafd9257a85a74ae4bed392c88df73355b366132069e63",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B8",
+      "byte_equal": true,
+      "sha256": "8c8844d963ecc2e40e6960e8e8ce98f59fe0b745ff3b9afefd17fc17d74d53ef",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B10",
+      "byte_equal": true,
+      "sha256": "4af00a6a4cb1f3d45f17c468132d97dc5fe975bf90ceac7a3fcf6b1698e70fe1",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B9",
+      "byte_equal": true,
+      "sha256": "79118430ece7a5242e1787cfe6abbeab15621b5814e71c011657fc31efa042a0",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B12",
+      "byte_equal": true,
+      "sha256": "89addb0939342c78cb4d827cc64463e4bc33ed9d7abe333cd84027de6e6937e7",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B11",
+      "byte_equal": true,
+      "sha256": "af80e029c442fe2b213fde94fc676b5f06ebff373d5aaa5507600f03af4e7468",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B13",
+      "byte_equal": true,
+      "sha256": "732caf781470e50086dffa43b40ae206a674189edd77f1286d079f28d5e227f4",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B14",
+      "byte_equal": true,
+      "sha256": "473c6b56431728834d0810201dc9d235de469766cac357f05c570f293fa7857e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B15",
+      "byte_equal": true,
+      "sha256": "c5c55ea15b6c4d26ba36c154880ef6420cc6d77a5349fafdcdaf718216a76946",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B17",
+      "byte_equal": true,
+      "sha256": "a100be4abf0c086c1a53aef0fd250eacb6342e8a06d20f4b4f5c1d9d98493059",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B16",
+      "byte_equal": true,
+      "sha256": "8303eed767c0a48e336265742c9cdf98e396bbb8d06e10afde9e2abc32c2100c",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B18",
+      "byte_equal": true,
+      "sha256": "dfc98a72c53e01833de8901196a8cdb06439d5144e04bda8aebc75032472ded2",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B19",
+      "byte_equal": true,
+      "sha256": "aaf2111d4531eec8dbf5ff9e0fd69e9ab45ada09a36818426e4214695fdc84d8",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B20",
+      "byte_equal": true,
+      "sha256": "a80e9b247205135416ca0a1adfaa44c4884aa2f5bccfc07c33fa384386292669",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B22",
+      "byte_equal": true,
+      "sha256": "43102f7a3ad43e88ceb58fdd2bf18aae89635c0bc5a09f28fff4b154eabbc3a9",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B21",
+      "byte_equal": true,
+      "sha256": "d9057465ba1d972be57d78c9ffdc999b23b049735b70af878bcfacdbe4b30cdb",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B24",
+      "byte_equal": true,
+      "sha256": "32e73306c6863eff419f539758c4434e921fed92ef987958c64fc4b57a0fff05",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B23",
+      "byte_equal": true,
+      "sha256": "f974abda1b155862277293bdb0836a2b455bfb7b8daa518107dd730a01a2f75f",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B26",
+      "byte_equal": true,
+      "sha256": "0430b31cc165b0f26ec0104bdc4905e4e234bc5532e1abff00905e658e76febb",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B25",
+      "byte_equal": true,
+      "sha256": "24fa211a0263194a7b2c1a0f636a91b959150eb38d988f642d5ff4fbf30e8365",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B27",
+      "byte_equal": true,
+      "sha256": "166c7cf5c9da308f4312198cbdeb92054f9bfcf78953e4e2fa60595bd1454c0c",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B28",
+      "byte_equal": true,
+      "sha256": "4bdc54f14e8ad5b8d7c5cf3f968a19188c5c2ba05cd7803c14edf783583caf9b",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B29",
+      "byte_equal": true,
+      "sha256": "9819a78767acdbf8c729bfbdf2d45b86a66ed0d75cd13496f05a199a8ded13af",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B31",
+      "byte_equal": true,
+      "sha256": "75d3eda055f85707e1b8892a580071f71d7a3fb3156db4c2a7641f2a85c7537f",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B32",
+      "byte_equal": true,
+      "sha256": "5cd5a09931067b11ff9790c7d3788778f7354baa4ff03ed8d52615108ef1ab7f",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B30",
+      "byte_equal": true,
+      "sha256": "300f8c516a41e698dfef2d4eba3930d8d27bc0e16b4655f837a7c5aeeed7ed2c",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B33",
+      "byte_equal": true,
+      "sha256": "0c7541eb4b18319beddb766fd936166dab2531ed63902b910d0371780e476401",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B34",
+      "byte_equal": true,
+      "sha256": "a92a1016bb6d139b0dcff93a8958300b909daa9aad926b82fc73819f08326634",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B35",
+      "byte_equal": true,
+      "sha256": "7e7deeb004b6695ae5e68bea38d8a3e543642b0eb2b950d852e6f79c7ea70e07",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B36",
+      "byte_equal": true,
+      "sha256": "7383e9c8a1ca3e0511874318b4540c03e39e80b5508109e1d6e06ba978666ea8",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B38",
+      "byte_equal": true,
+      "sha256": "e782a75b7e3ab8a53bb442564cf57ca2d641158ce17ea24f6c64dbe147d92216",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B37",
+      "byte_equal": true,
+      "sha256": "9990dcab315192063627d475579d9da659a55716889d6822ae92553c6d24af78",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B39",
+      "byte_equal": true,
+      "sha256": "8c5842d3b7784a8a8fba5e005b482aaf1fdf82ec539918229369bf91492d0e1e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B40",
+      "byte_equal": true,
+      "sha256": "d7cfea4b03633fcccf7134a16274e97a44bd635f8fef25b74ebccd253b0847ff",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B41",
+      "byte_equal": true,
+      "sha256": "8643a6123f829f3e3457c77b9cff280b401cd07980ef7030c023cdfff3386f12",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B43",
+      "byte_equal": true,
+      "sha256": "f00df26b2753d1f4d99aae455c343fc8dad1b6a612fe89bd9052340cd6261d6f",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B42",
+      "byte_equal": true,
+      "sha256": "f9ad3086b2f948005439c9fdd3fe4bc37b264b2223f44687c0ddf4e99bb530db",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B44",
+      "byte_equal": true,
+      "sha256": "b1a47d3ca8b98a2f4442c387cb6543fd8c7c9fcd63c809a978859c17e211f786",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B45",
+      "byte_equal": true,
+      "sha256": "12c6c2367aef6272c8335a8e580fb692e6d61603854ddd988d06cc9e8fde6f9e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B47",
+      "byte_equal": true,
+      "sha256": "82dbb39606d49934072d5e2cde37a9779fcde2a8d12ec282ade69a3d997186d8",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B46",
+      "byte_equal": true,
+      "sha256": "b15a731e6615cf1dff22b56a33b7acc0bd7a567305c8c3659523a276c7925989",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B48",
+      "byte_equal": true,
+      "sha256": "3e5d647e7f092f8dd1917c75b2bb4d5d5ae09afdb52453084e8c8b6c6e148dcd",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B49",
+      "byte_equal": true,
+      "sha256": "3fdcd572b3a1d6b5238c561ff34c49c2f5aeee0f3e9456c5b2a4f3ba43c1a234",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B50",
+      "byte_equal": true,
+      "sha256": "122aec193675417b3393a71d9e095ceaaa29ce680cfeff191d7f223decc6e594",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B52",
+      "byte_equal": true,
+      "sha256": "c7147c2fc25b6d1de06b9120a77a74b18d1fdb53d77e7c43264b38cb2a14872c",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B51",
+      "byte_equal": true,
+      "sha256": "a288871d1fca3b22cbabfdd94c9a14235f783fac320e52bda891c8cc8c4aef00",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B54",
+      "byte_equal": true,
+      "sha256": "741c2bcb1ce1c8129663bab0b9d91bbf7165b403911089c6c9ba3250da46d21b",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B53",
+      "byte_equal": true,
+      "sha256": "03bc878c858e998a7a31e8d9d87e0601bb74eaa371864518f5820b5f3d32a546",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B55",
+      "byte_equal": true,
+      "sha256": "4b6282b58bfa05c587e452db8facd17b8bbb02479488f444ffd41b5dd5636aaf",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B57",
+      "byte_equal": true,
+      "sha256": "e1cd9557c79e2ee16151b57f5874fb12507bba9e382d2a50b98c93638fbf0403",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B56",
+      "byte_equal": true,
+      "sha256": "93ef8babb68a0f1100efee7a37c0802f79c98779c91318081646359e1d506208",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B58",
+      "byte_equal": true,
+      "sha256": "06e44fdb4f7a3db6510605b52556e66a09f8bf36c371438fc1952b5830b3235a",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B60",
+      "byte_equal": true,
+      "sha256": "28ecfb324169c6ed6b15d2f544e4ce5ce2a29dbfdc20e7a6adb92cc35f2f6315",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B59",
+      "byte_equal": true,
+      "sha256": "9eb6193fc820f9d295e9e57624741f57bb435d0bfe76bd9d14548fc3a97d53d6",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B62",
+      "byte_equal": true,
+      "sha256": "7417a884ab8ef699cc2f67e596158181a8526043598d09ecca0a69f0228c89b4",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B61",
+      "byte_equal": true,
+      "sha256": "8ff28910c286c39eacce4bab0024132004c85f0095a0c23e295b818b879b73cd",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B63",
+      "byte_equal": true,
+      "sha256": "7e0e49fb3b8de74a620a02e0bfdc37afcb2eed49778598458dd8dd8006f52fbd",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B64",
+      "byte_equal": true,
+      "sha256": "5cdadebb67e95b312adf1d39bef600de088744dc435526ce7efa807b1ddf2014",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B65",
+      "byte_equal": true,
+      "sha256": "bffadd394badbb53477e50f9780270990b894b8594bc196657fee44a6d323e66",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B66",
+      "byte_equal": true,
+      "sha256": "defdb952ef69966d12440472675abd4ab29c179183cc2357380de174c1c34488",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B68",
+      "byte_equal": true,
+      "sha256": "e0d730f07e0d99ccd6b3eef259a0214fbe95e1b48a66585307dd6c0cb41e7d4b",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B69",
+      "byte_equal": true,
+      "sha256": "b6e6e22ced23af95ba61487bf1c4fefa4e96fb864578ee70a7cd7e965aa735f9",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B67",
+      "byte_equal": true,
+      "sha256": "2898bb65d50981279682b89aa29cdfa86aff8931e17a536e72941828aafff52d",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B70",
+      "byte_equal": true,
+      "sha256": "8233b8211f6e8dec7a3105dc388309ac3e36068668e725727eb168c46a3f486e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B71",
+      "byte_equal": true,
+      "sha256": "8ef9930220f390bdd8590574ee8dd52062165072587d42ca0914aa1e4d012b22",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B72",
+      "byte_equal": true,
+      "sha256": "720da7cb8ec445da3a5b9c1c34d07b01412c2680f526584d6e5eaf3d56afec85",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B74",
+      "byte_equal": true,
+      "sha256": "9f2ccbf582cc4980ce036e624fc18052caf21c1e00b4e54c4d48ed7b61ba1fd2",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B73",
+      "byte_equal": true,
+      "sha256": "4d87d447c1df8eac4784c6725555e0af4e69e54515fdc4866619ae165381e140",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B75",
+      "byte_equal": true,
+      "sha256": "2bc33c38e624139edba0688a47d9db92255a4f26919291c31e3413edee7f93bd",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B76",
+      "byte_equal": true,
+      "sha256": "80e3bca80e5b9c9df16117519c707e80177010280b43f5e561230dbae1e9c45d",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B77",
+      "byte_equal": true,
+      "sha256": "ee6dd45427f82e3ec37a593f92bd0d0887289c1d0e9a99efb5487698e9a355be",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B78",
+      "byte_equal": true,
+      "sha256": "4fe67ffb5ce7c305fd20bb5e5abc497d793bc808fb181ec4585160e99d893e72",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B80",
+      "byte_equal": true,
+      "sha256": "4e370cf61e1cc3a8f103531bbf45689c0d0d4f3ab7318164e0527213a59a32a7",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B79",
+      "byte_equal": true,
+      "sha256": "cb13f778cbbe1bc4bee87cd1630e32f775a06efd1021f7a72ba6a9daf9b0a36b",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B81",
+      "byte_equal": true,
+      "sha256": "b0f3a7f0161a4a43852e851e4874d685bbad7924f0c15f08b491c4c056ea129f",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B82",
+      "byte_equal": true,
+      "sha256": "8841838d355d2388294bfd0bf8b23d028cab1aec25fd50cb7edb6e40dd506979",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B84",
+      "byte_equal": true,
+      "sha256": "dfc98a72c53e01833de8901196a8cdb06439d5144e04bda8aebc75032472ded2",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B83",
+      "byte_equal": true,
+      "sha256": "f289779717fed368c43f1b37f67aa33a0ad578fdfaba2059e7468b0e2c7374be",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B85",
+      "byte_equal": true,
+      "sha256": "4a3654fc5c65ea6003c7124a6afd54db964feead8c46353f7abc186dec932c8b",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B86",
+      "byte_equal": true,
+      "sha256": "17b9bce8903df240800e88c6c71c5d32230189b94c630b1dca083283a5f79875",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B88",
+      "byte_equal": true,
+      "sha256": "a46f137bf54623c7522bb3b5b4d6c1cb9fb4b8e00eccd6c4228f725344c9daae",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B89",
+      "byte_equal": true,
+      "sha256": "e28b90aafa67f88b171200f7f89727b2b7a0a18f7dd0119c01c591d9294d845e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B87",
+      "byte_equal": true,
+      "sha256": "3a1bcebc232d151ba1eb7c4989c68180f5fdeac41c8b8c5099efd8edb5e93ce8",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B90",
+      "byte_equal": true,
+      "sha256": "b43713f506a4150f41eaba8d4a80adcd231e373f00334586e6ca52f816fd5c6e",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B91",
+      "byte_equal": true,
+      "sha256": "f14e9588f712591e6b4b454b75c0b0e6a2eeb37fd2ca271e39d7285eb5818161",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B92",
+      "byte_equal": true,
+      "sha256": "263c37627c4e713e3983c132a8b5eaa90138176501b83b5d9e76278d0abf9beb",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B93",
+      "byte_equal": true,
+      "sha256": "312b6c7688918e369cde2a007b6f7d3624a19a6791317fec4a05bf60d98f6df6",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B95",
+      "byte_equal": true,
+      "sha256": "419f6c91c7f120878b60101957d3f2034bde0ec7be592eb4660534633fefc3ca",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B94",
+      "byte_equal": true,
+      "sha256": "373a3aa5f16923ad3a902777621e8c4765df5c909411346373a9506f9faf9c41",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B97",
+      "byte_equal": true,
+      "sha256": "65590b8871b4e1bf585b2fc0c82928b9faae128392a4e57f83db890a57623a8a",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B98",
+      "byte_equal": true,
+      "sha256": "ddc9211b952b7fc17853fe9010379452e0dd3f17afb5d7e7a2683725cade8a44",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B96",
+      "byte_equal": true,
+      "sha256": "2d19b2ea97dfe8e9237f9c5bc402a59d6be65081fc2b91c71b3a47a3726433c0",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B99",
+      "byte_equal": true,
+      "sha256": "04bbd8256869861321efebc5d7a0af38ab98eddf8f8aa48c162e59eada3eb0c5",
+      "segments": 1
+    },
+    {
+      "id": "美式英文_B100",
+      "byte_equal": true,
+      "sha256": "db9106fbbb2aa615becb3b7f8f39715180c85dc09a94b36c8e1eb27bf2dae252",
+      "segments": 1
+    },
+    {
+      "id": "flight_cz",
+      "byte_equal": true,
+      "sha256": "70184a8c742ecb156aeebe2c09177e343afec3fe279fed76cbed68f232c53d32",
+      "segments": 1
+    },
+    {
+      "id": "flight_mu",
+      "byte_equal": true,
+      "sha256": "814d17f7cdb47fd1bca3d35d9032be3cd025b87959b23acf3e9c4fadd2445527",
+      "segments": 1
+    },
+    {
+      "id": "flight_ca",
+      "byte_equal": true,
+      "sha256": "ca0df1b5893f904ba638fb716ed81f49db1bf662d9864cec1dcbd36b025da4f2",
+      "segments": 1
+    },
+    {
+      "id": "spaced_code",
+      "byte_equal": true,
+      "sha256": "70184a8c742ecb156aeebe2c09177e343afec3fe279fed76cbed68f232c53d32",
+      "segments": 1
+    },
+    {
+      "id": "initialisms",
+      "byte_equal": true,
+      "sha256": "55415c2d684fa30572a402243a5f15ef43d5d88e4583cf2e1c7a869645e21f56",
+      "segments": 1
+    },
+    {
+      "id": "digit_runs",
+      "byte_equal": true,
+      "sha256": "5f3dad38082b54209bdc586d779686a6413021034f0d87ef19c812d99b7dfeae",
+      "segments": 1
+    },
+    {
+      "id": "repeat_probe",
+      "byte_equal": true,
+      "sha256": "20240499e294a3bfb897b88522e03a9749587f3c4f377807ef90c1a58f4c4bf1",
+      "segments": 4
+    },
+    {
+      "id": "english_long",
+      "byte_equal": true,
+      "sha256": "be27fafa4f6772ac5f13c83cfa013b12c67e75c3cddaa48a507e211c29421d3a",
+      "segments": 12
+    }
+  ]
+}

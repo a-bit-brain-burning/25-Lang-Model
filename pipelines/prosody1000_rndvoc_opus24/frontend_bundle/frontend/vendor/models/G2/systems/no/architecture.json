@@ -1,0 +1,76 @@
+{
+  "language": "no",
+  "locale": "nb-NO",
+  "family": "routed39",
+  "parameters": 165614,
+  "input": {
+    "phonetic_dim": 36,
+    "context_dim": 27,
+    "base_context_dim": 22,
+    "additional_context_dim": 5
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_romance_routed39_v1",
+      "parameters": 120889,
+      "config": {
+        "width": 80,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 63,
+        "dropout": 0.05,
+        "phonetic_dim": 36,
+        "context_dim": 27,
+        "continuous_voicing": false,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "voiced_prior": 0.5,
+        "vuv_supervision": "control",
+        "channels": 39,
+        "language": "no",
+        "romance_contract": "numeric36_context22_plan5_warped39_v1",
+        "duration_condition_route": "rate_pause_only_v1"
+      },
+      "weights_as_initialization": true,
+      "shared_convolution_basis": {},
+      "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+    },
+    "planner": {
+      "format": "tiny_romance_numeric_word_planner_v1",
+      "parameters": 44725,
+      "config": {
+        "feature_dim": 162,
+        "feature_schema_sha256": "3c522214986a74ddb4ce173839cf9cdc51fb10c79541e9941677e18d4280bde2",
+        "width": 48,
+        "hidden": 32,
+        "layers": 2,
+        "dropout": 0.1
+      },
+      "weights_as_initialization": false
+    }
+  },
+  "scratch": false,
+  "parent": {
+    "source_group_acoustic_sha256": "5d83731adb934275b9c59f63ab259c1ffde52d28664f37637b77b6d945808f33"
+  },
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+  "source_architecture_sha256": "5331ca801746ba1acd4cf5159d3b634d96d5a79bb4625dafd68a9428fadca9bc"
+}

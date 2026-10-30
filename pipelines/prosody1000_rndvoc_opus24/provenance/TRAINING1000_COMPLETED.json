@@ -1,0 +1,16 @@
+{
+  "stage": "STEP1000_COMPLETE_RNDVOC_EVALUATION_REQUIRED",
+  "formal_updates": 1000,
+  "new_since500": 500,
+  "chinese_letter_parameters_updated": true,
+  "full_checkpoint_sha256": "564d15c47d7fbc30868d442682ad87e6ac11c5fcdcd85e693202850536c39a45",
+  "quality_accepted": false,
+  "budget": {
+    "acoustic_only": true,
+    "HiFi_GAN_tensors": 0,
+    "weights_bytes": 1711860,
+    "RNDVoC_frozen": true,
+    "full_target_RAM_verified": false
+  },
+  "time": 1793361558.1340487
+}

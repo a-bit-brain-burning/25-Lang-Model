@@ -1,0 +1,16 @@
+{
+  "files": {
+    "new25_screenreader_20261030/unified_zh_prosody_v2/network.py": "e65024d7345ce8715bcdaeed255363831aeb679f2bbe2e64881f6badfab7d269",
+    "new25_quality_continue_20261029/model.py": "ccc33166e4b8b5b3ce2c1d375e132ec23b82bdcbf7ec4c50247a4013a145ae78",
+    "new25_longtext_flow_repair_20261030/runtime.py": "1598cb6a9e59698a51c1aec990faf4665e1403ea9d46adc3d4f29d6244d5ea8b",
+    "new25_longtext_flow_repair_20261030/frontend_repair.py": "1a619a15e7f49c92fced85d4d3addfa3d427429082bbf8962e59ad95b2aa8871",
+    "new25_longtext_flow_repair_20261030/legacy_contract.py": "c09158e9c3642d8202ecd22ebb2c6c1c04ed6b83a622341509e9fa6f49099a09",
+    "new25_longtext_flow_repair_20261030/text_worker.py": "30769df918d8368fbf2987b336bab4ee664def2cae9ecb7f0e663b07493efa5b",
+    "new25_longtext_flow_repair_20261030/synthesize.py": "101625531cad664d010e42aab9010a0579d6ed069d4a8252ec6433ad55f516a5",
+    "new25_screenreader_20261030/unified_zh_prosody_v2/rndvoc_bridge/synthesize_step1000_first_digit.py": "ddab3fc6a148e587a7c66b4955ba97a0a7d857660ce6e95cf2941e9b14070872"
+  },
+  "acoustic_weights_sha256": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+  "RND_export_sha256": "fb4f0642bcda485ce45680ab80c9e2ce43a23843d5633552be355bc44edd0f17",
+  "old_release_model_weights_not_included": true,
+  "training_updates_for_publication": 0
+}

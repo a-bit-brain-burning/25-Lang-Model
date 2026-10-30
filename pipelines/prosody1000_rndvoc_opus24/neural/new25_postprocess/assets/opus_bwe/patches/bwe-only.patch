@@ -1,0 +1,65 @@
+--- a/dnn/bwe_demo.c
++++ b/dnn/bwe_demo.c
+@@ -33,7 +33,6 @@
+ #include <string.h>
+ #include <stdlib.h>
+ #include "arch.h"
+-#include "lpcnet.h"
+ #include "os_support.h"
+ #include "cpu_support.h"
+ #include "osce_features.h"
+
+--- a/dnn/nnet.c
++++ b/dnn/nnet.c
+@@ -35,9 +35,6 @@
+ #include "opus_types.h"
+ #include "arch.h"
+ #include "nnet.h"
+-#include "dred_rdovae_constants.h"
+-#include "plc_data.h"
+-#include "fargan.h"
+ #include "os_support.h"
+ #include "vec.h"
+ 
+@@ -63,15 +60,8 @@
+    compute_activation(output, output, layer->nb_outputs, activation, arch);
+ }
+ 
+-#ifdef ENABLE_OSCE
+-#ifdef ENABLE_OSCE_BWE
+-#define MAX_RNN_NEURONS_ALL IMAX(IMAX(IMAX(IMAX(FARGAN_MAX_RNN_NEURONS, PLC_MAX_RNN_UNITS), DRED_MAX_RNN_NEURONS), OSCE_MAX_RNN_NEURONS), OSCE_BWE_MAX_RNN_NEURONS)
+-#else
+-#define MAX_RNN_NEURONS_ALL IMAX(IMAX(IMAX(FARGAN_MAX_RNN_NEURONS, PLC_MAX_RNN_UNITS), DRED_MAX_RNN_NEURONS), OSCE_MAX_RNN_NEURONS)
+-#endif
+-#else
+-#define MAX_RNN_NEURONS_ALL IMAX(IMAX(FARGAN_MAX_RNN_NEURONS, PLC_MAX_RNN_UNITS), DRED_MAX_RNN_NEURONS)
+-#endif
++/* BWE-only build: BBWENet is the only compiled recurrent model. */
++#define MAX_RNN_NEURONS_ALL OSCE_BWE_MAX_RNN_NEURONS
+ 
+ void compute_generic_gru(const LinearLayer *input_weights, const LinearLayer *recurrent_weights, float *state, const float *in, int arch)
+ {
+@@ -119,7 +109,7 @@
+    }
+ }
+ 
+-#define MAX_CONV_INPUTS_ALL IMAX(DRED_MAX_CONV_INPUTS, 1024)
++#define MAX_CONV_INPUTS_ALL 1024
+ 
+ void compute_generic_conv1d(const LinearLayer *layer, float *output, float *mem, const float *input, int input_size, int activation, int arch)
+ {
+
+--- a/dnn/vec.h
++++ b/dnn/vec.h
+@@ -35,9 +35,9 @@
+ #include "x86/x86_arch_macros.h"
+ 
+ 
+-#if defined(__AVX__) || defined(__SSE2__)
++#if (defined(__AVX__) || defined(__SSE2__)) && !defined(OPUS_BWE_SCALAR)
+ #include "vec_avx.h"
+-#elif (defined(__ARM_NEON__) || defined(__ARM_NEON)) && !defined(DISABLE_NEON)
++#elif (defined(__ARM_NEON__) || defined(__ARM_NEON)) && !defined(DISABLE_NEON) && !defined(OPUS_BWE_SCALAR)
+ #include "vec_neon.h"
+ #else
+ 

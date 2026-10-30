@@ -1,0 +1,22 @@
+{
+  "sampling_rate": 22050,
+  "num_mels": 80,
+  "n_fft": 1024,
+  "win_size": 1024,
+  "hop_size": 256,
+  "fmin": 0,
+  "fmax": 8000,
+  "nrep": 2,
+  "kernel_size": 7,
+  "causal": false,
+  "time_type": "convnext_v2",
+  "freq_type": "shuffler",
+  "use_shared_encoder": true,
+  "use_shared_decoder": true,
+  "use_rnd": true,
+  "phiphiT_learnable": false,
+  "null_nstage": 4,
+  "input_channel": 128,
+  "hidden_channel": 72,
+  "squeeze_size": 32
+}

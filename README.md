@@ -1,3 +1,5 @@
+> **当前完整文本到24 kHz入口（本分支）**：见 [`pipelines/prosody1000_rndvoc_opus24/`](pipelines/prosody1000_rndvoc_opus24/README.md)。已集成当前1000步续训声学／韵律、中文航班号/长文前端、E2、RNDVoC25000和原Opus BWE24，带独立运行/校验脚本。下文原80k声学和各声码器发布保持原样。
+
 # 25-Lang-Model · 已训练声学模型、HiFi-GAN、FARGAN与RNDVoC声码器
 
 本仓库保存完成 **80,000次更新**的25语共享声学模型、音素时长/停顿/韵律预测、31/39维声学输出，以及独立训练和推理脚本。现已追加第二个实验完成 **31,403次Generator更新**的HiFi-GAN微调声码器及物理条件→mel适配器；可将已有兼容音素特征生成的声学结果合成为WAV。详见 [HiFi-GAN模型卡](docs/HIFIGAN_MODEL_CARD.md) 和 [整句推理说明](docs/HIFIGAN_INFERENCE.md)。

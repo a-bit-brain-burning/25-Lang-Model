@@ -1,0 +1,388 @@
+--- a/src/libespeak-ng/synthdata.c
++++ b/src/libespeak-ng/synthdata.c
+@@ -120,8 +120,11 @@
+ 		return status;
+ 	if ((status = ReadPhFile((void **)&phoneme_index, "phonindex", NULL, context)) != ENS_OK)
+ 		return status;
+-	if ((status = ReadPhFile((void **)&phondata_ptr, "phondata", NULL, context)) != ENS_OK)
++	if ((status = ReadPhFile((void **)&phondata_ptr, "phondata", &length, context)) != ENS_OK)
+ 		return status;
++	/* Require the matching header-only resource; reject mismatched packs. */
++	if (length != 8)
++		return ENS_NOT_SUPPORTED;
+ 	if ((status = ReadPhFile((void **)&tunes, "intonations", &length, context)) != ENS_OK)
+ 		return status;
+ 	wavefile_data = (unsigned char *)phondata_ptr;
+@@ -208,135 +211,14 @@
+ 
+ frameref_t *LookupSpect(PHONEME_TAB *this_ph, int which, FMT_PARAMS *fmt_params,  int *n_frames, PHONEME_LIST *plist)
+ {
+-	int ix;
+-	int nf;
+-	int nf1;
+-	int seq_break;
+-	frameref_t *frames;
+-	int length1;
+-	SPECT_SEQ *seq, *seq2;
+-	SPECT_SEQK *seqk, *seqk2;
+-	frame_t *frame;
+-	static frameref_t frames_buf[N_SEQ_FRAMES];
+-
+-	MAKE_MEM_UNDEFINED(&frames_buf, sizeof(frames_buf));
+-
+-	seq = (SPECT_SEQ *)(&phondata_ptr[fmt_params->fmt_addr]);
+-	seqk = (SPECT_SEQK *)seq;
+-	nf = seq->n_frames;
+-
+-	if (nf >= N_SEQ_FRAMES)
+-		nf = N_SEQ_FRAMES - 1;
+-
+-	seq_len_adjust = fmt_params->fmt2_lenadj + fmt_params->fmt_length;
+-	seq_break = 0;
+-
+-	for (ix = 0; ix < nf; ix++) {
+-		if (seq->frame[0].frflags & FRFLAG_KLATT)
+-			frame = &seqk->frame[ix];
+-		else
+-			frame = (frame_t *)&seq->frame[ix];
+-		frames_buf[ix].frame = frame;
+-		frames_buf[ix].frflags = frame->frflags;
+-		frames_buf[ix].length = frame->length;
+-		if (frame->frflags & FRFLAG_VOWEL_CENTRE)
+-			seq_break = ix;
+-	}
+-
+-	frames = &frames_buf[0];
+-	if (seq_break > 0) {
+-		if (which == 1)
+-			nf = seq_break + 1;
+-		else {
+-			frames = &frames_buf[seq_break]; // body of vowel, skip past initial frames
+-			nf -= seq_break;
+-		}
+-	}
+-
+-	// do we need to modify a frame for blending with a consonant?
+-	if ((this_ph->type == phVOWEL) && (fmt_params->fmt2_addr == 0) && (fmt_params->use_vowelin))
+-		seq_len_adjust += FormantTransition2(frames, &nf, fmt_params->transition0, fmt_params->transition1, NULL, which);
+-
+-	length1 = 0;
+-	nf1 = nf - 1;
+-	for (ix = 0; ix < nf1; ix++)
+-		length1 += frames[ix].length;
+-
+-	if (fmt_params->fmt2_addr != 0) {
+-		// a secondary reference has been returned, which is not a wavefile
+-		// add these spectra to the main sequence
+-		seq2 = (SPECT_SEQ *)(&phondata_ptr[fmt_params->fmt2_addr]);
+-		seqk2 = (SPECT_SEQK *)seq2;
+-
+-		// first frame of the addition just sets the length of the last frame of the main seq
+-		nf--;
+-		for (ix = 0; ix < seq2->n_frames; ix++) {
+-			if (seq2->frame[0].frflags & FRFLAG_KLATT)
+-				frame = &seqk2->frame[ix];
+-			else
+-				frame = (frame_t *)&seq2->frame[ix];
+-
+-			frames[nf].length = frame->length;
+-			if (ix > 0) {
+-				frames[nf].frame = frame;
+-				frames[nf].frflags = frame->frflags;
+-			}
+-			nf++;
+-		}
+-	}
+-
+-	if (length1 > 0) {
+-		int length_factor;
+-		if (which == 2) {
+-			// adjust the length of the main part to match the standard length specified for the vowel
+-			// less the front part of the vowel and any added suffix
+-
+-			int length_std = fmt_params->std_length + seq_len_adjust - 45;
+-			if (length_std < 10)
+-				length_std = 10;
+-			if (plist->synthflags & SFLAG_LENGTHEN)
+-				length_std += (phoneme_tab[phonLENGTHEN]->std_length * 2); // phoneme was followed by an extra : symbol
+-
+-			// can adjust vowel length for stressed syllables here
+-
+-			length_factor = (length_std * 256)/ length1;
+-
+-			for (ix = 0; ix < nf1; ix++)
+-				frames[ix].length = (frames[ix].length * length_factor)/256;
+-		} else {
+-			if (which == 1) {
+-				// front of a vowel
+-				if (fmt_params->fmt_control == 1) {
+-					// This is the default start of a vowel.
+-					// Allow very short vowels to have shorter front parts
+-					if (fmt_params->std_length < 130)
+-						frames[0].length = (frames[0].length * fmt_params->std_length)/130;
+-				}
+-			} else {
+-				// not a vowel
+-				if (fmt_params->std_length > 0)
+-					seq_len_adjust += (fmt_params->std_length - length1);
+-			}
+-
+-			if (seq_len_adjust != 0) {
+-				length_factor = ((length1 + seq_len_adjust) * 256)/length1;
+-				for (ix = 0; ix < nf1; ix++)
+-					frames[ix].length = (frames[ix].length * length_factor)/256;
+-			}
+-		}
+-	}
+-
+-	*n_frames = nf;
+-	return frames;
++	/* Text-to-phoneme-only build: no waveform payload exists. */
++	abort();
+ }
+ 
+ const unsigned char *GetEnvelope(int index)
+ {
+-	if (index == 0) {
+-		fprintf(stderr, "espeak: No envelope\n");
+-		return envelope_data[0]; // not found, use a default envelope
+-	}
+-	return (unsigned char *)&phondata_ptr[index];
++	/* Text-to-phoneme-only build: no waveform payload exists. */
++	abort();
+ }
+ 
+ static void SetUpPhonemeTable(int number)
+--- a/src/libespeak-ng/synthesize.c
++++ b/src/libespeak-ng/synthesize.c
+@@ -223,131 +223,8 @@
+ 
+ static int DoSample2(int index, int which, int std_length, int control, int length_mod, int amp)
+ {
+-	int length;
+-	int wav_length;
+-	int wav_scale;
+-	int min_length;
+-	int x;
+-	int len4;
+-	intptr_t *q;
+-	unsigned char *p;
+-
+-	index = index & 0x7fffff;
+-	p = &wavefile_data[index];
+-	wav_scale = p[2];
+-	wav_length = (p[1] * 256);
+-	wav_length += p[0]; // length in bytes
+-
+-	if (wav_length == 0)
+-		return 0;
+-
+-	min_length = speed.min_sample_len;
+-
+-	if (wav_scale == 0)
+-		min_length *= 2; // 16 bit samples
+-
+-	if (std_length > 0) {
+-		std_length = (std_length * samplerate)/1000;
+-		if (wav_scale == 0)
+-			std_length *= 2;
+-
+-		x = (min_length * std_length)/wav_length;
+-		if (x > min_length)
+-			min_length = x;
+-	} else {
+-		// no length specified, use the length of the stored sound
+-		std_length = wav_length;
+-	}
+-
+-	if (length_mod > 0)
+-		std_length = (std_length * length_mod)/256;
+-
+-	length = (std_length * speed.wav_factor)/256;
+-
+-	if (control & pd_DONTLENGTHEN) {
+-		// this option is used for Stops, with short noise bursts.
+-		// Don't change their length much.
+-		if (length > std_length) {
+-			// don't let length exceed std_length
+-			length = std_length;
+-		}
+-	}
+-
+-	if (length < min_length)
+-		length = min_length;
+-
+-
+-	if (wav_scale == 0) {
+-		// 16 bit samples
+-		length /= 2;
+-		wav_length /= 2;
+-	}
+-
+-	if (amp < 0)
+-		return length;
+-
+-	len4 = wav_length / 4;
+-
+-	index += 4;
+-
+-	if (which & 0x100) {
+-		// mix this with synthesised wave
+-		last_wcmdq = wcmdq_tail;
+-		q = wcmdq[wcmdq_tail];
+-		q[0] = WCMD_WAVE2;
+-		q[1] = length | (wav_length << 16); // length in samples
+-		q[2] = (intptr_t)(&wavefile_data[index]);
+-		q[3] = wav_scale + (amp << 8);
+-		WcmdqInc();
+-		return length;
+-	}
+-
+-	if (length > wav_length) {
+-		x = len4*3;
+-		length -= x;
+-	} else {
+-		x = length;
+-		length = 0;
+-	}
+-
+-	last_wcmdq = wcmdq_tail;
+-	q = wcmdq[wcmdq_tail];
+-	q[0] = WCMD_WAVE;
+-	q[1] = x; // length in samples
+-	q[2] = (intptr_t)(&wavefile_data[index]);
+-	q[3] = wav_scale + (amp << 8);
+-	WcmdqInc();
+-
+-	while (length > len4*3) {
+-		x = len4;
+-		if (wav_scale == 0)
+-			x *= 2;
+-
+-		last_wcmdq = wcmdq_tail;
+-		q = wcmdq[wcmdq_tail];
+-		q[0] = WCMD_WAVE;
+-		q[1] = len4*2; // length in samples
+-		q[2] = (intptr_t)(&wavefile_data[index+x]);
+-		q[3] = wav_scale + (amp << 8);
+-		WcmdqInc();
+-
+-		length -= len4*2;
+-	}
+-
+-	if (length > 0) {
+-		x = wav_length - length;
+-		if (wav_scale == 0)
+-			x *= 2;
+-		last_wcmdq = wcmdq_tail;
+-		q = wcmdq[wcmdq_tail];
+-		q[0] = WCMD_WAVE;
+-		q[1] = length; // length in samples
+-		q[2] = (intptr_t)(&wavefile_data[index+x]);
+-		q[3] = wav_scale + (amp << 8);
+-		WcmdqInc();
+-	}
+-
+-	return length;
++	/* No sample-bank access is permitted by this build. */
++	abort();
+ }
+ 
+ int DoSample3(PHONEME_DATA *phdata, int length_mod, int amp)
+--- a/src/libespeak-ng/speech.c
++++ b/src/libespeak-ng/speech.c
+@@ -657,44 +657,8 @@
+                      unsigned int end_position, unsigned int flags,
+                      unsigned int *unique_identifier, void *user_data)
+ {
+-	(void)size; // unused in non-async modes
+-
+-	unsigned int temp_identifier;
+-
+-	if (unique_identifier == NULL)
+-		unique_identifier = &temp_identifier;
+-	*unique_identifier = 0;
+-
+-	if (my_mode & ENOUTPUT_MODE_SYNCHRONOUS)
+-		return sync_espeak_Synth(0, text, position, position_type, end_position, flags, user_data);
+-
+-#if USE_ASYNC
+-	// Create the text command
+-	t_espeak_command *c1 = create_espeak_text(text, size, position, position_type, end_position, flags, user_data);
+-	if (c1) {
+-		// Retrieve the unique identifier
+-		*unique_identifier = c1->u.my_text.unique_identifier;
+-	}
+-
+-	// Create the "terminated msg" command (same uid)
+-	t_espeak_command *c2 = create_espeak_terminated_msg(*unique_identifier, user_data);
+-
+-	// Try to add these 2 commands (single transaction)
+-	if (c1 && c2) {
+-		espeak_ng_STATUS status = fifo_add_commands(c1, c2);
+-		if (status != ENS_OK) {
+-			delete_espeak_command(c1);
+-			delete_espeak_command(c2);
+-		}
+-		return status;
+-	}
+-
+-	delete_espeak_command(c1);
+-	delete_espeak_command(c2);
+-	return ENOMEM;
+-#else
+-	return sync_espeak_Synth(0, text, position, position_type, end_position, flags, user_data);
+-#endif
++	/* Audio is generated by the project acoustic model and DSP. */
++	return ENS_NOT_SUPPORTED;
+ }
+ 
+ ESPEAK_NG_API espeak_ng_STATUS
+@@ -706,45 +670,8 @@
+                          unsigned int *unique_identifier,
+                          void *user_data)
+ {
+-	(void)size; // unused in non-async modes
+-
+-	unsigned int temp_identifier;
+-
+-	if (unique_identifier == NULL)
+-		unique_identifier = &temp_identifier;
+-	*unique_identifier = 0;
+-
+-	if (my_mode & ENOUTPUT_MODE_SYNCHRONOUS)
+-		return sync_espeak_Synth_Mark(0, text, index_mark, end_position, flags, user_data);
+-
+-#if USE_ASYNC
+-	// Create the mark command
+-	t_espeak_command *c1 = create_espeak_mark(text, size, index_mark, end_position,
+-	                                          flags, user_data);
+-	if (c1) {
+-		// Retrieve the unique identifier
+-		*unique_identifier = c1->u.my_mark.unique_identifier;
+-	}
+-
+-	// Create the "terminated msg" command (same uid)
+-	t_espeak_command *c2 = create_espeak_terminated_msg(*unique_identifier, user_data);
+-
+-	// Try to add these 2 commands (single transaction)
+-	if (c1 && c2) {
+-		espeak_ng_STATUS status = fifo_add_commands(c1, c2);
+-		if (status != ENS_OK) {
+-			delete_espeak_command(c1);
+-			delete_espeak_command(c2);
+-		}
+-		return status;
+-	}
+-
+-	delete_espeak_command(c1);
+-	delete_espeak_command(c2);
+-	return ENOMEM;
+-#else
+-	return sync_espeak_Synth_Mark(0, text, index_mark, end_position, flags, user_data);
+-#endif
++	/* Audio is generated by the project acoustic model and DSP. */
++	return ENS_NOT_SUPPORTED;
+ }
+ 
+ ESPEAK_NG_API espeak_ng_STATUS espeak_ng_SpeakKeyName(const char *key_name)

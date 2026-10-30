@@ -1,0 +1,86 @@
+{
+  "name": "New25_RNDVoC_Lite_713929_real_mel_v1",
+  "upstream_commit": "f219eb5cf7dad21bbf64489f48a685edd62736af",
+  "model": {
+    "sampling_rate": 22050,
+    "num_mels": 80,
+    "n_fft": 1024,
+    "win_size": 1024,
+    "hop_size": 256,
+    "fmin": 0,
+    "fmax": 8000,
+    "nrep": 2,
+    "kernel_size": 7,
+    "causal": false,
+    "time_type": "convnext_v2",
+    "freq_type": "shuffler",
+    "use_shared_encoder": true,
+    "use_shared_decoder": true,
+    "use_rnd": true,
+    "phiphiT_learnable": false,
+    "null_nstage": 4,
+    "input_channel": 128,
+    "hidden_channel": 72,
+    "squeeze_size": 32
+  },
+  "parameter_min": 713929,
+  "parameter_max": 713929,
+  "seed": 1234,
+  "batch_size": 16,
+  "segment_size": 16384,
+  "learning_rate": 0.0002,
+  "max_generator_updates": 1000000,
+  "max_seconds": 86400,
+  "cpu_workers": 8,
+  "save_every_generator_steps": 1000,
+  "evaluate_every_generator_steps": 5000,
+  "mpd_periods": [
+    2,
+    3,
+    5,
+    7,
+    11
+  ],
+  "mrd_resolutions": [
+    [
+      1024,
+      256,
+      1024
+    ],
+    [
+      2048,
+      512,
+      2048
+    ],
+    [
+      512,
+      128,
+      512
+    ]
+  ],
+  "weights": {
+    "amplitude": 45.0,
+    "phase": 100.0,
+    "consistency": 45.0,
+    "ri": 45.0,
+    "mel": 45.0
+  },
+  "precision": "FP32 generator, discriminators, FFT and Adam; TF32 disabled",
+  "architecture_status": "Locally reconstructed Lite-sized candidate, NOT an official Lite configuration/checkpoint",
+  "paper_constraints": {
+    "shared_encoder_decoder": true,
+    "dual_path_blocks": 4,
+    "channels": 128,
+    "published_parameters_approx": 710000
+  },
+  "locally_resolved_unpublished_widths": {
+    "hidden_channel": 72,
+    "squeeze_size": 32,
+    "reason": "Official default hidden128/squeeze64 gives939657 parameters at B4/C128; selected tensor-core-aligned widths give713929, matching rounded paper budget. Numerical/measured quality must be assessed independently."
+  },
+  "mel_interface": "22050 Hz, Slaney80, FFT1024/Hann1024/hop256/fmax8000, reflect384 centerFalse, sqrt(mag2+1e-9), ln clamp1e-5; raw denormalized input",
+  "checkpoint_retention": "All generator snapshots immutable; only resume_latest/resume_previous are two managed rolling full-state slots; final full state is immutable. Old project assets untouched.",
+  "corpus_view": "Read-only existing 110310 train and2471 validation WAV; no new generation, no test reads",
+  "old_gan_resume": false,
+  "automatic_retry": false
+}

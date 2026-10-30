@@ -1,0 +1,10 @@
+{
+  "path": "pipelines/prosody1000_rndvoc_opus24",
+  "entry": "pipelines/prosody1000_rndvoc_opus24/synthesize.py",
+  "components": "pipelines/prosody1000_rndvoc_opus24/COMPONENTS.json",
+  "acoustic_prosody_stage_updates": 1000,
+  "acoustic_global_step": 3000,
+  "RNDVoC_step": 25000,
+  "output_sample_rate": 24000,
+  "quality_accepted": false
+}

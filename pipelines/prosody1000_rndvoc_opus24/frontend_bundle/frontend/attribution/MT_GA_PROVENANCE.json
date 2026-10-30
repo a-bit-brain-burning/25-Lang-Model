@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-18",
+  "base_model_commit": "9d41732d1c0c79736a71ac6d8c6f9492ce25fe7c",
+  "runtime_commit": "e1946a00975f9b910c08b2ebb138906c50fc27a8",
+  "runtime_repository": "https://github.com/a-bit-brain-burning/TTS",
+  "runtime_entrypoint": "project.src.inference.eu_four_synthesize",
+  "runtime_file_sha256": {
+    "project/src/inference/eu_four_synthesize.py": "83e41d194aee04f82fbb15bac42349cea4f54f65789239d36e1a6c48f219a069",
+    "project/src/frontend/eu_four.py": "b96010797c25c743b70cc85093f4de951cdf75e41ef4ee059282111606ceed99",
+    "project/src/frontend/phonetic_features.py": "c09da83c2b7223c0e3d7b23d5b694f925b997f7c84e41f4d34653c5160c1daa6",
+    "project/src/frontend/universal.py": "28b2929c7a535125068572f9196850bf7e873152b7f4d6f456ac262fceb97fe6",
+    "project/src/models/universal_acoustic.py": "9250a7be41b3267d75b4e1e085b7a5bc7214db7a5311280a91a403474979a5fb",
+    "project/src/audio/eu_acoustic39.py": "25abde0e5471ca6a38def7a1bc8260a8d451064af67d4f6590133ce7913065de",
+    "project/src/audio/dsp.py": "5b758c302949ee03edb9f38c1306e185b723b94876926a2cf3f920f164a102ce",
+    "project/src/audio/native.c": "f83edf292bc0c619a3d734f2b2ef4bbc7ae6192d7f2198b725a183ffb28bf8ce"
+  },
+  "training_source_identity_sha256": "b07658cfc5dbc49f62b9cd1358fc549cebe179a239a03e928fe6858b6d1716ef",
+  "training_source_note": "Training snapshot based on runtime commit with an experiment-specific eu_four_train.py frame-sampling patch. Runtime inference files match the pinned commit; the complete training snapshot is not claimed identical to that commit.",
+  "teacher": {
+    "model": "k2-fsa/OmniVoice",
+    "model_revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+    "code_revision": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+    "model_card": "https://huggingface.co/k2-fsa/OmniVoice/blob/c5fdb5ccb189668d56333f77ba2629f4cd7535f4/README.md",
+    "weight_license": "CC-BY-NC, exact version not stated by pinned model card; no commercial permission asserted",
+    "code_license": "Apache-2.0 (not the model weight license)",
+    "codec": "bosonai/higgs-audio-v2-tokenizer",
+    "codec_license": "Boson Higgs Audio 2 Community License, incorporating Meta Llama 3 terms",
+    "model_sha256": "730839316de585f4c8298ec0e1712efc10fb19c6fa4e36eb741cb8d51ebcf6aa",
+    "codec_sha256": "fe7c5e8785e0a05833e1bfc3e002ec7f55af21e306b2e7154a448c1f54ccfb0d"
+  },
+  "text_split_freeze_sha256": "708417e1e53962984c7c44cd51a21d0ec414913e8a40d8545734d28787714993",
+  "cohort_freeze_sha256": "77e7972bd2a05e2a63360bbcdcd0cdbe0d251e6210c6c2e3ec25c4f77213d673",
+  "languages": {
+    "mt-MT": {
+      "variant": "kd1_final",
+      "parameters": 179542,
+      "completed_steps": 20000,
+      "initial_state_sha256": "571f59e44f326920d43d12761998757d35c31060a39cb7efb0d87ea07f829103",
+      "input_identity_sha256": "67628f581ee4b2e0f47d869f92ef2aaf415faff9e6a52488fbf906b63b58e4fb",
+      "train_manifest_sha256": "a8ad66b9738a5c75ec6520c5a394655bebba19064993ec41e6e1e0863f321cf9",
+      "labeled_split_counts": {
+        "train": 3149,
+        "test": 175,
+        "validation": 175
+      },
+      "labeled_split_hours": {
+        "train": 3.2510361111111075,
+        "validation": 0.17716666666666678,
+        "test": 0.18338333333333337
+      },
+      "teacher_manifest_sha256": "689072ae2c8b23847539e3a609290f7a81c7c7b865f9e4567212ececc36263a7",
+      "text_manifest_sha256": "e07497310339ab432dfaae9efb3a54937faed52ddf1c491bc875a8a92108848a",
+      "teacher_identity_sha256": "3f06735af6652bb3763fdeec58e6343978e3265f0b04338976f371b3f5273b2b",
+      "reference": {
+        "source_id": "fleurs_mt_train_17723445203296930877",
+        "source_split": "train",
+        "source_text_sha256": "8b832d3e4fcd0c97aa6ddc92c1f4ca49ce74ea501e5a1b3b52ed367097dcd90f",
+        "prompt_text_sha256": "8b832d3e4fcd0c97aa6ddc92c1f4ca49ce74ea501e5a1b3b52ed367097dcd90f",
+        "audio_sha256": "10a9c0fb7c1cecea49ea870a995b039abc22e40ea3f644e8be9827250a06f096",
+        "raw_audio_sha256": "458e3e4ee6af1616c214dd3013acd9b3a5285d2a6ce835d59832735cb76852d2",
+        "prompt_sha256": "14651a09f90bca79c46adf65a08020f23a5beb1d91406b23226e8bc214e2d916",
+        "source_license": "CC-BY-4.0",
+        "source_revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+        "source_selection_sha256": "31b500312b765708a5c40853e2f7065d05807fb55e0caac8c8acfa2087b4c0f3",
+        "identity": "fixed public anonymous train reference; not a verified real-person identity",
+        "dataset_url": "https://huggingface.co/datasets/google/fleurs"
+      },
+      "frontend_version": "eu_four_frontend_v1",
+      "frontend_semantic_sha256": "bdcd1471adbce5871545e3e3e2fc36bd7791677f4f88006da42f3046809f3d5c",
+      "training": {
+        "seed": 20261017,
+        "batch_size": 16,
+        "optimizer": {
+          "name": "AdamW",
+          "learning_rate": 0.0015,
+          "weight_decay": 0.0001
+        },
+        "frame_policy": "phone_anchors_75_25",
+        "frames": 96,
+        "validation_frame_policy": "uniform",
+        "validation_frames": 192,
+        "pretrained_student_weights": false,
+        "teacher_hidden_states": false,
+        "teacher_native_units": false
+      },
+      "generation_config": {
+        "num_step": 32,
+        "guidance_scale": 2.0,
+        "t_shift": 0.1,
+        "layer_penalty_factor": 5.0,
+        "position_temperature": 5.0,
+        "class_temperature": 0.0,
+        "denoise": true,
+        "preprocess_prompt": true,
+        "postprocess_output": true,
+        "audio_chunk_duration": 15.0,
+        "audio_chunk_threshold": 30.0,
+        "pad_duration": 0.1,
+        "fade_duration": 0.1
+      },
+      "generation_config_sha256": "f1800d9bbcf6ba2770b68318ca81b0ee5cd3e8a8c7d433fcfa8ac40da5bc6410",
+      "reconstruction": "Teacher waveform -> train-fitted alignment + WORLD 39 channels -> compact acoustic regression. Existing DSP used for deployment."
+    },
+    "ga-IE": {
+      "variant": "kd0_final",
+      "parameters": 179542,
+      "completed_steps": 20000,
+      "initial_state_sha256": "73cf42f769c5ea3b9e4e4eb11b901f92bfe7ebf7b44f3c39a47ee70a770aef57",
+      "input_identity_sha256": "9e7616dd313acde9640e816ad8a83e932586f2ece751e2876e5a4b7235ffaf52",
+      "train_manifest_sha256": "ab2c1b69113318f3fde2677f6936de421776a446239f8ba5f340bf6f5d5c2caa",
+      "labeled_split_counts": {
+        "train": 2778,
+        "validation": 128,
+        "test": 128
+      },
+      "labeled_split_hours": {
+        "train": 1.8059138888888888,
+        "validation": 0.0779736111111111,
+        "test": 0.08234027777777776
+      },
+      "teacher_manifest_sha256": "23da4e84d06dec8041656fc0c93e192e6b646ba3515d38b91dd1361f80cff5c1",
+      "text_manifest_sha256": "df2c74e78293ab1f762963b10794f1824b5cf50bf661ef16ec4e5a763e671416",
+      "teacher_identity_sha256": "f5c966fb61ee35c530f703fa0261dc04d7574af47cecbbef2dd2524607a767e6",
+      "reference": {
+        "source_id": "cv21_ga-IE_common_voice_ga-IE_17663580",
+        "source_split": "train",
+        "source_text_sha256": "d77719ba15a232156a040e0f25f573d87d3743a345a4c2926452d8381a4dc73c",
+        "prompt_text_sha256": "b499dcb9263fa6a2251cce504558dae85da2331cd030ee2b7db935e4ac963c92",
+        "audio_sha256": "8797e569c99f59a27dfc0d1502ad42d052651f87e8417bf9a4b0d7d73d4a866e",
+        "raw_audio_sha256": "a2d7cbad203c71c85b812c5c698a1586b10ab5c66b3b909265fc0005606499a5",
+        "prompt_sha256": "b28b86801ea916d3d996d96e4debc32f7fd632df28963e4b03a3388d2ace6670",
+        "source_license": "CC0-1.0",
+        "source_revision": "9a364be7375675e7dd665760f79e2d9f50442287",
+        "source_selection_sha256": "31b500312b765708a5c40853e2f7065d05807fb55e0caac8c8acfa2087b4c0f3",
+        "identity": "fixed public anonymous train reference; not a verified real-person identity",
+        "dataset_url": "https://huggingface.co/datasets/fsicoli/common_voice_21_0"
+      },
+      "frontend_version": "eu_four_frontend_ga_v2",
+      "frontend_semantic_sha256": "a79eff67ebb6e16a21d8e88768a284e02b7ef2e728b4e0ed77ba81eb56275b0a",
+      "training": {
+        "seed": 20261017,
+        "batch_size": 16,
+        "optimizer": {
+          "name": "AdamW",
+          "learning_rate": 0.0015,
+          "weight_decay": 0.0001
+        },
+        "frame_policy": "uniform",
+        "frames": 96,
+        "validation_frame_policy": "uniform",
+        "validation_frames": 192,
+        "pretrained_student_weights": false,
+        "teacher_hidden_states": false,
+        "teacher_native_units": false
+      },
+      "generation_config": {
+        "num_step": 32,
+        "guidance_scale": 2.0,
+        "t_shift": 0.1,
+        "layer_penalty_factor": 5.0,
+        "position_temperature": 5.0,
+        "class_temperature": 0.0,
+        "denoise": true,
+        "preprocess_prompt": true,
+        "postprocess_output": true,
+        "audio_chunk_duration": 15.0,
+        "audio_chunk_threshold": 30.0,
+        "pad_duration": 0.1,
+        "fade_duration": 0.1
+      },
+      "generation_config_sha256": "f1800d9bbcf6ba2770b68318ca81b0ee5cd3e8a8c7d433fcfa8ac40da5bc6410",
+      "reconstruction": "Teacher waveform -> train-fitted alignment + WORLD 39 channels -> compact acoustic regression. Existing DSP used for deployment."
+    }
+  },
+  "license_files_sha256": {
+    "docs/licenses/BOSON-HIGGS-AUDIO-2-LICENSE.txt": "ac933dc084d119bd20401956b90d11ae87c248b2da62622cd580d82cdf2fa049",
+    "docs/licenses/META-LLAMA-3-LICENSE.txt": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f",
+    "docs/licenses/OmniVoice-MODEL-CARD.md": "b5d645a1874baa96a460a0e3a7d5a262811d682d04ce235878a16d5fed287fd3"
+  },
+  "meta_license_download": {
+    "repository": "meta-llama/llama3",
+    "commit": "dab0ae890fd0316369b89901b199355034bbe1b5",
+    "url": "https://raw.githubusercontent.com/meta-llama/llama3/dab0ae890fd0316369b89901b199355034bbe1b5/LICENSE",
+    "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+  }
+}

@@ -1,0 +1,1136 @@
+{
+  "schema": "opus_bwe_source_subset_v1",
+  "upstream": {
+    "repository": "https://github.com/xiph/opus",
+    "tag": "v1.6",
+    "commit": "a8b13e40d751c7b40833b94fc9437c5c3439da89"
+  },
+  "model": {
+    "name": "official BBWENet v2",
+    "archive_url": "https://media.xiph.org/opus/models/opus_data-a5177ec6fb7d15058e99e57029746100121f68e4890b1467d4094aa336b6013e.tar.gz",
+    "archive_sha256": "a5177ec6fb7d15058e99e57029746100121f68e4890b1467d4094aa336b6013e",
+    "archive_bytes": 134674421,
+    "checkpoint_sha256": "a6c35c3efc53fc1b125dee1724298e2aa88c72da75bd44bdde77ebac0ce64fd0",
+    "generator_trainable_parameters": 367890,
+    "generator_state_values": 368414,
+    "generator_fixed_dsp_window_values": 524,
+    "runtime_format": "official generated static C arrays; losslessly gzip-compressed for redistribution",
+    "archive_included": false,
+    "checkpoint_included": false,
+    "other_models_included": false
+  },
+  "build": {
+    "system": "CMake >=3.16; Python 3 standard library; Clang or GCC; POSIX C99",
+    "target": "bwe_demo",
+    "default_simd": "AUTO: official NEON on native AArch64, otherwise generic C",
+    "fallback_option": "-DOPUS_BWE_SIMD=SCALAR",
+    "configure": [
+      "cmake",
+      "-S",
+      "opus_bwe",
+      "-B",
+      "build/opus_bwe",
+      "-DCMAKE_BUILD_TYPE=Release"
+    ],
+    "compile": [
+      "cmake",
+      "--build",
+      "build/opus_bwe",
+      "--target",
+      "bwe_demo",
+      "--parallel",
+      "2"
+    ],
+    "network_access": false,
+    "precompiled_binary_included": false
+  },
+  "signal_contract": {
+    "input": "16000 Hz mono native-endian int16 raw PCM",
+    "frame_input_samples": 320,
+    "output": "48000 Hz mono native-endian int16 raw PCM",
+    "frame_output_samples": 960,
+    "delay_compensation_samples_48k": 34,
+    "delay_components_48k": {
+      "osce_output_buffer": 21,
+      "checkpoint_upsampling_delay": 13
+    },
+    "flush_input_samples": 640,
+    "final24_samples": "(3 * original_input_samples + 1) // 2",
+    "final_resampler": "scipy.signal.resample_poly(up=1, down=2, window=(kaiser,8.6), padtype=constant)",
+    "normalization": "none",
+    "codec_encode_decode": false
+  },
+  "patches": {
+    "file": "patches/bwe-only.patch",
+    "sha256": "eb37fcac6d5627d1f42a0573e0dbdeb90cd111f931cdb6609e6b07508ff6a66b",
+    "changed_sources": [
+      "dnn/bwe_demo.c",
+      "dnn/nnet.c",
+      "dnn/vec.h"
+    ],
+    "purpose": [
+      "remove unused LPCNet demo include",
+      "remove unrelated model headers and bound scratch space to BWE needs",
+      "permit explicit generic C fallback by disabling implicit SIMD helpers"
+    ],
+    "bwe_arithmetic_changed": false
+  },
+  "validation": {
+    "reference": "complete official Opus 1.6 build with official NEON on macOS arm64",
+    "real_input_count": 16,
+    "original_input_count": 8,
+    "gtcrn_input_count": 8,
+    "all_48k_pcm_byte_equal": true,
+    "all_final24_pcm_byte_equal": true,
+    "all_match_preexisting_accepted_24k_pcm": true,
+    "macos_arm64_scalar_compiled_and_executed": true,
+    "macos_x86_64_scalar_compiled": true,
+    "macos_x86_64_scalar_executed": false,
+    "linux_aarch64_gcc14_neon_and_scalar_compiled_and_executed": true,
+    "linux_build_used_cmake": false,
+    "linux_build_note": "available container lacked CMake; equivalent direct GCC source list and definitions were used",
+    "linux_synthetic_probes": [
+      "silence",
+      "sine",
+      "high_amplitude",
+      "impulse"
+    ],
+    "linux_x86_64_executed": false,
+    "cross_platform_bit_exactness_claimed": false,
+    "cross_platform_comparison_max_abs_pcm16": {
+      "scalar": {
+        "48k": 79,
+        "24k": 75
+      },
+      "neon": {
+        "48k": 22,
+        "24k": 21
+      }
+    },
+    "audit_artifact_names": [
+      "opus_equivalence.json",
+      "opus_linux_validation.json",
+      "opus_portability_comparison.json",
+      "opus_build_auto.log",
+      "opus_build_scalar.log",
+      "opus_build_x86_64.log"
+    ],
+    "audio_played": false,
+    "training": false
+  },
+  "source_files": [
+    {
+      "source_path": "celt/_kiss_fft_guts.h",
+      "origin": "source_git",
+      "source_sha256": "374d4edc9e4f82da271a12fa9675c3f2f595a3b465544fbd05eca53818320c3a",
+      "source_bytes": 6200,
+      "shipped_path": "upstream/celt/_kiss_fft_guts.h",
+      "shipped_sha256": "374d4edc9e4f82da271a12fa9675c3f2f595a3b465544fbd05eca53818320c3a",
+      "shipped_bytes": 6200,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arch.h",
+      "origin": "source_git",
+      "source_sha256": "fc1d7aae69fec75b97566fd6b260e76d4339242f34470230dc390878c2131884",
+      "source_bytes": 12574,
+      "shipped_path": "upstream/celt/arch.h",
+      "shipped_sha256": "fc1d7aae69fec75b97566fd6b260e76d4339242f34470230dc390878c2131884",
+      "shipped_bytes": 12574,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arm/armcpu.h",
+      "origin": "source_git",
+      "source_sha256": "9bfc2da335b5a37cde9dbeb16c9666c9678f0d8487466825678f6c2bbc4b520d",
+      "source_bytes": 2830,
+      "shipped_path": "upstream/celt/arm/armcpu.h",
+      "shipped_sha256": "9bfc2da335b5a37cde9dbeb16c9666c9678f0d8487466825678f6c2bbc4b520d",
+      "shipped_bytes": 2830,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arm/celt_neon_intr.c",
+      "origin": "source_git",
+      "source_sha256": "ea912260479f6b355407ac561d2679ea40073ddce5a767d5cc8094b724fbf83d",
+      "source_bytes": 13324,
+      "shipped_path": "upstream/celt/arm/celt_neon_intr.c",
+      "shipped_sha256": "ea912260479f6b355407ac561d2679ea40073ddce5a767d5cc8094b724fbf83d",
+      "shipped_bytes": 13324,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arm/mathops_arm.h",
+      "origin": "source_git",
+      "source_sha256": "a9a8361ee8ed4c442bb820126be1f5b5612386db4268fb8c0de93dceadb9b2db",
+      "source_bytes": 3884,
+      "shipped_path": "upstream/celt/arm/mathops_arm.h",
+      "shipped_sha256": "a9a8361ee8ed4c442bb820126be1f5b5612386db4268fb8c0de93dceadb9b2db",
+      "shipped_bytes": 3884,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arm/pitch_arm.h",
+      "origin": "source_git",
+      "source_sha256": "6c941e3c917e60b6b10df2ca594be14ad43c21cf8ad9d0bf78fe6537b308ae09",
+      "source_bytes": 6631,
+      "shipped_path": "upstream/celt/arm/pitch_arm.h",
+      "shipped_sha256": "6c941e3c917e60b6b10df2ca594be14ad43c21cf8ad9d0bf78fe6537b308ae09",
+      "shipped_bytes": 6631,
+      "patched": false
+    },
+    {
+      "source_path": "celt/arm/pitch_neon_intr.c",
+      "origin": "source_git",
+      "source_sha256": "3ac262214a575b6a9b147602be983ff09c3040e7d4a4d5673e754dfe79b9f2a8",
+      "source_bytes": 10415,
+      "shipped_path": "upstream/celt/arm/pitch_neon_intr.c",
+      "shipped_sha256": "3ac262214a575b6a9b147602be983ff09c3040e7d4a4d5673e754dfe79b9f2a8",
+      "shipped_bytes": 10415,
+      "patched": false
+    },
+    {
+      "source_path": "celt/celt.h",
+      "origin": "source_git",
+      "source_sha256": "290d8b2e20f2ee0dd7177fbbcdc557c81ca5eadf61a7971772d27a77d9e86cae",
+      "source_bytes": 8947,
+      "shipped_path": "upstream/celt/celt.h",
+      "shipped_sha256": "290d8b2e20f2ee0dd7177fbbcdc557c81ca5eadf61a7971772d27a77d9e86cae",
+      "shipped_bytes": 8947,
+      "patched": false
+    },
+    {
+      "source_path": "celt/celt_lpc.h",
+      "origin": "source_git",
+      "source_sha256": "e10b2e2e610b16a2003d00599467dfed45d300726eb28d0934857ebe2dc822cf",
+      "source_bytes": 2240,
+      "shipped_path": "upstream/celt/celt_lpc.h",
+      "shipped_sha256": "e10b2e2e610b16a2003d00599467dfed45d300726eb28d0934857ebe2dc822cf",
+      "shipped_bytes": 2240,
+      "patched": false
+    },
+    {
+      "source_path": "celt/cpu_support.h",
+      "origin": "source_git",
+      "source_sha256": "02bf67720c974a87fa96aad556c4847acc3370ecd16a95170193724197bc9c0e",
+      "source_bytes": 2434,
+      "shipped_path": "upstream/celt/cpu_support.h",
+      "shipped_sha256": "02bf67720c974a87fa96aad556c4847acc3370ecd16a95170193724197bc9c0e",
+      "shipped_bytes": 2434,
+      "patched": false
+    },
+    {
+      "source_path": "celt/ecintrin.h",
+      "origin": "source_git",
+      "source_sha256": "c1100f45bdf70d2243740a7891a5def54cf483b51d024a35ac915b630639b556",
+      "source_bytes": 3679,
+      "shipped_path": "upstream/celt/ecintrin.h",
+      "shipped_sha256": "c1100f45bdf70d2243740a7891a5def54cf483b51d024a35ac915b630639b556",
+      "shipped_bytes": 3679,
+      "patched": false
+    },
+    {
+      "source_path": "celt/entcode.h",
+      "origin": "source_git",
+      "source_sha256": "97e7742ae4251b545326aadcc898635e90f22d5dc18fa63471c118b8bd79d1e8",
+      "source_bytes": 5423,
+      "shipped_path": "upstream/celt/entcode.h",
+      "shipped_sha256": "97e7742ae4251b545326aadcc898635e90f22d5dc18fa63471c118b8bd79d1e8",
+      "shipped_bytes": 5423,
+      "patched": false
+    },
+    {
+      "source_path": "celt/entdec.h",
+      "origin": "source_git",
+      "source_sha256": "31485453c516ad9be38a03b50a3c450fd5a9b7c7fad2d9e6c05357fd07efe0a9",
+      "source_bytes": 5348,
+      "shipped_path": "upstream/celt/entdec.h",
+      "shipped_sha256": "31485453c516ad9be38a03b50a3c450fd5a9b7c7fad2d9e6c05357fd07efe0a9",
+      "shipped_bytes": 5348,
+      "patched": false
+    },
+    {
+      "source_path": "celt/entenc.h",
+      "origin": "source_git",
+      "source_sha256": "b54d50fa515e4cf2f4b5a5a7a99269b85e24aefb533dd55d407660d1105b5a01",
+      "source_bytes": 5905,
+      "shipped_path": "upstream/celt/entenc.h",
+      "shipped_sha256": "b54d50fa515e4cf2f4b5a5a7a99269b85e24aefb533dd55d407660d1105b5a01",
+      "shipped_bytes": 5905,
+      "patched": false
+    },
+    {
+      "source_path": "celt/float_cast.h",
+      "origin": "source_git",
+      "source_sha256": "ff1fab31ec21c933229a4525706fbfe98970c3ce4359e4698d38b18b220c1123",
+      "source_bytes": 5738,
+      "shipped_path": "upstream/celt/float_cast.h",
+      "shipped_sha256": "ff1fab31ec21c933229a4525706fbfe98970c3ce4359e4698d38b18b220c1123",
+      "shipped_bytes": 5738,
+      "patched": false
+    },
+    {
+      "source_path": "celt/kiss_fft.c",
+      "origin": "source_git",
+      "source_sha256": "0ff3c57ce9dededbf9925338808223ee8e164b5847f2b320da49b11bac4024d0",
+      "source_bytes": 18531,
+      "shipped_path": "upstream/celt/kiss_fft.c",
+      "shipped_sha256": "0ff3c57ce9dededbf9925338808223ee8e164b5847f2b320da49b11bac4024d0",
+      "shipped_bytes": 18531,
+      "patched": false
+    },
+    {
+      "source_path": "celt/kiss_fft.h",
+      "origin": "source_git",
+      "source_sha256": "1226ddcfdef87bc5169116e1188d370c8cc6a4e49f62eada6c7da808d19665af",
+      "source_bytes": 6823,
+      "shipped_path": "upstream/celt/kiss_fft.h",
+      "shipped_sha256": "1226ddcfdef87bc5169116e1188d370c8cc6a4e49f62eada6c7da808d19665af",
+      "shipped_bytes": 6823,
+      "patched": false
+    },
+    {
+      "source_path": "celt/mathops.h",
+      "origin": "source_git",
+      "source_sha256": "79bf06946bf6ab97e6eb933193bcc654d0a7503132044c22714d7cdcc22ba22f",
+      "source_bytes": 22889,
+      "shipped_path": "upstream/celt/mathops.h",
+      "shipped_sha256": "79bf06946bf6ab97e6eb933193bcc654d0a7503132044c22714d7cdcc22ba22f",
+      "shipped_bytes": 22889,
+      "patched": false
+    },
+    {
+      "source_path": "celt/mdct.h",
+      "origin": "source_git",
+      "source_sha256": "fe4d55da1aa03159403379a1cf9d6373da7b27ed0f1de63f8f726e9d9cffd41a",
+      "source_bytes": 4771,
+      "shipped_path": "upstream/celt/mdct.h",
+      "shipped_sha256": "fe4d55da1aa03159403379a1cf9d6373da7b27ed0f1de63f8f726e9d9cffd41a",
+      "shipped_bytes": 4771,
+      "patched": false
+    },
+    {
+      "source_path": "celt/modes.h",
+      "origin": "source_git",
+      "source_sha256": "f1e503db4939cefaaaf9b5c744023223de0acdb51d2e33238e60bb0495e81c3f",
+      "source_bytes": 2665,
+      "shipped_path": "upstream/celt/modes.h",
+      "shipped_sha256": "f1e503db4939cefaaaf9b5c744023223de0acdb51d2e33238e60bb0495e81c3f",
+      "shipped_bytes": 2665,
+      "patched": false
+    },
+    {
+      "source_path": "celt/os_support.h",
+      "origin": "source_git",
+      "source_sha256": "9e0b4572b0c5f366fd6f954d8f70d598d5f2b9d6cd7d123fc0f57cfff54abfd6",
+      "source_bytes": 3291,
+      "shipped_path": "upstream/celt/os_support.h",
+      "shipped_sha256": "9e0b4572b0c5f366fd6f954d8f70d598d5f2b9d6cd7d123fc0f57cfff54abfd6",
+      "shipped_bytes": 3291,
+      "patched": false
+    },
+    {
+      "source_path": "celt/pitch.c",
+      "origin": "source_git",
+      "source_sha256": "ad93368ae01b6fcadd28905e6ed5a55ad165ae5031654540af77d1ffe55acfd5",
+      "source_bytes": 15133,
+      "shipped_path": "upstream/celt/pitch.c",
+      "shipped_sha256": "ad93368ae01b6fcadd28905e6ed5a55ad165ae5031654540af77d1ffe55acfd5",
+      "shipped_bytes": 15133,
+      "patched": false
+    },
+    {
+      "source_path": "celt/pitch.h",
+      "origin": "source_git",
+      "source_sha256": "546220cfc7b32796a1f18b37ce75864e94b0016ea8a5eaace1f06c70aa8e20e2",
+      "source_bytes": 6284,
+      "shipped_path": "upstream/celt/pitch.h",
+      "shipped_sha256": "546220cfc7b32796a1f18b37ce75864e94b0016ea8a5eaace1f06c70aa8e20e2",
+      "shipped_bytes": 6284,
+      "patched": false
+    },
+    {
+      "source_path": "celt/stack_alloc.h",
+      "origin": "source_git",
+      "source_sha256": "d0b2c8eabad72faede82e18ea57f5713731b84b9c7212593613bb62199a6aaf7",
+      "source_bytes": 6378,
+      "shipped_path": "upstream/celt/stack_alloc.h",
+      "shipped_sha256": "d0b2c8eabad72faede82e18ea57f5713731b84b9c7212593613bb62199a6aaf7",
+      "shipped_bytes": 6378,
+      "patched": false
+    },
+    {
+      "source_path": "celt/x86/x86_arch_macros.h",
+      "origin": "source_git",
+      "source_sha256": "b6118942870b62ff78731edc3025e55230c3fadaf28ec2f4024d786210631505",
+      "source_bytes": 1618,
+      "shipped_path": "upstream/celt/x86/x86_arch_macros.h",
+      "shipped_sha256": "b6118942870b62ff78731edc3025e55230c3fadaf28ec2f4024d786210631505",
+      "shipped_bytes": 1618,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/arm/dnn_arm.h",
+      "origin": "source_git",
+      "source_sha256": "9b87598ef5707e008811e7db1c94c67678552758af11aa5a5d97488cfd5a1574",
+      "source_bytes": 4440,
+      "shipped_path": "upstream/dnn/arm/dnn_arm.h",
+      "shipped_sha256": "9b87598ef5707e008811e7db1c94c67678552758af11aa5a5d97488cfd5a1574",
+      "shipped_bytes": 4440,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/arm/nnet_neon.c",
+      "origin": "source_git",
+      "source_sha256": "6a034b99f5b16becc78098ee317fc1b8ea579b652f36c76e5a3384e563b0c584",
+      "source_bytes": 1576,
+      "shipped_path": "upstream/dnn/arm/nnet_neon.c",
+      "shipped_sha256": "6a034b99f5b16becc78098ee317fc1b8ea579b652f36c76e5a3384e563b0c584",
+      "shipped_bytes": 1576,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/bbwenet_data.h",
+      "origin": "official_model_archive",
+      "source_sha256": "fb34d4dfa4f54ecbc03d76e2c685d53c4e1b2509e0bac071c5e1b8c6e948a30a",
+      "source_bytes": 4387,
+      "shipped_path": "upstream/dnn/bbwenet_data.h",
+      "shipped_sha256": "fb34d4dfa4f54ecbc03d76e2c685d53c4e1b2509e0bac071c5e1b8c6e948a30a",
+      "shipped_bytes": 4387,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/burg.h",
+      "origin": "source_git",
+      "source_sha256": "866d915ee4046e126dd3e7c87d822cbcf6c691e59f32e8ebf4715bfacf3f6ba7",
+      "source_bytes": 2464,
+      "shipped_path": "upstream/dnn/burg.h",
+      "shipped_sha256": "866d915ee4046e126dd3e7c87d822cbcf6c691e59f32e8ebf4715bfacf3f6ba7",
+      "shipped_bytes": 2464,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/bwe_demo.c",
+      "origin": "source_git",
+      "source_sha256": "bd49766ef46afdc6dccbe269897721e4d436c96de876d3ebd130c8a871f2b4c3",
+      "source_bytes": 2847,
+      "shipped_path": "upstream/dnn/bwe_demo.c",
+      "shipped_sha256": "ae5c223e4c5f975eb16397d686061857d12bdb0cadc55628eefbeb133c3bc55f",
+      "shipped_bytes": 2827,
+      "patched": true
+    },
+    {
+      "source_path": "dnn/freq.c",
+      "origin": "source_git",
+      "source_sha256": "65caf405847ea2f8bf06350eb078ad0d5934bd30cd7e93523b5e96c821bda379",
+      "source_bytes": 8921,
+      "shipped_path": "upstream/dnn/freq.c",
+      "shipped_sha256": "65caf405847ea2f8bf06350eb078ad0d5934bd30cd7e93523b5e96c821bda379",
+      "shipped_bytes": 8921,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/freq.h",
+      "origin": "source_git",
+      "source_sha256": "8cf2a319c99a14daebb368919344975b44ce6d299ebc1a0ac17ae73af80a8372",
+      "source_bytes": 2258,
+      "shipped_path": "upstream/dnn/freq.h",
+      "shipped_sha256": "8cf2a319c99a14daebb368919344975b44ce6d299ebc1a0ac17ae73af80a8372",
+      "shipped_bytes": 2258,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/lpcnet_tables.c",
+      "origin": "source_git",
+      "source_sha256": "084670acd5cd670d2356434ebbd6fd5e7da3c27e5b4946c682f2f47c8124d742",
+      "source_bytes": 19083,
+      "shipped_path": "upstream/dnn/lpcnet_tables.c",
+      "shipped_sha256": "084670acd5cd670d2356434ebbd6fd5e7da3c27e5b4946c682f2f47c8124d742",
+      "shipped_bytes": 19083,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/nndsp.c",
+      "origin": "source_git",
+      "source_sha256": "d8e0808328c78403c088cd87386f934af59ab85ab708df4a18d810b5eba8cdfc",
+      "source_bytes": 15905,
+      "shipped_path": "upstream/dnn/nndsp.c",
+      "shipped_sha256": "d8e0808328c78403c088cd87386f934af59ab85ab708df4a18d810b5eba8cdfc",
+      "shipped_bytes": 15905,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/nndsp.h",
+      "origin": "source_git",
+      "source_sha256": "0da4042f6b0ffdaf684f1ed06ace42142ae78341325a8474d014e0a51490e7f2",
+      "source_bytes": 4152,
+      "shipped_path": "upstream/dnn/nndsp.h",
+      "shipped_sha256": "0da4042f6b0ffdaf684f1ed06ace42142ae78341325a8474d014e0a51490e7f2",
+      "shipped_bytes": 4152,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/nnet.c",
+      "origin": "source_git",
+      "source_sha256": "1b376a8499167e143f8a4ec8d0c622d259b4ae99d8c7495a80d6318912de81e7",
+      "source_bytes": 5966,
+      "shipped_path": "upstream/dnn/nnet.c",
+      "shipped_sha256": "7612655ee56fd10977be97287dd0402fc9babf3b7ad392ec503d0edf93d37732",
+      "shipped_bytes": 5514,
+      "patched": true
+    },
+    {
+      "source_path": "dnn/nnet.h",
+      "origin": "source_git",
+      "source_sha256": "d90f8b0371c39eb4dfa02b1d87120e09f37e8e4c309cf979a5650f121f9dac4b",
+      "source_bytes": 5574,
+      "shipped_path": "upstream/dnn/nnet.h",
+      "shipped_sha256": "d90f8b0371c39eb4dfa02b1d87120e09f37e8e4c309cf979a5650f121f9dac4b",
+      "shipped_bytes": 5574,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/nnet_arch.h",
+      "origin": "source_git",
+      "source_sha256": "3b227cd54ae376c21050a1116261665c9c8d82b9ec46b1c9aed9af6a6cd444d0",
+      "source_bytes": 9293,
+      "shipped_path": "upstream/dnn/nnet_arch.h",
+      "shipped_sha256": "3b227cd54ae376c21050a1116261665c9c8d82b9ec46b1c9aed9af6a6cd444d0",
+      "shipped_bytes": 9293,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/nnet_default.c",
+      "origin": "source_git",
+      "source_sha256": "1402eb611b7fcc1fe7fa18639f0395e0af47a783ef87450318411483516e9011",
+      "source_bytes": 1456,
+      "shipped_path": "upstream/dnn/nnet_default.c",
+      "shipped_sha256": "1402eb611b7fcc1fe7fa18639f0395e0af47a783ef87450318411483516e9011",
+      "shipped_bytes": 1456,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce.c",
+      "origin": "source_git",
+      "source_sha256": "ee368fd5c11b7a657b6d20b00ab9909e90f0e78c6f77e6aaef80f5050ca8d7eb",
+      "source_bytes": 70054,
+      "shipped_path": "upstream/dnn/osce.c",
+      "shipped_sha256": "ee368fd5c11b7a657b6d20b00ab9909e90f0e78c6f77e6aaef80f5050ca8d7eb",
+      "shipped_bytes": 70054,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce.h",
+      "origin": "source_git",
+      "source_sha256": "e9f1784cf1372d95ca75eff9a778e9d297ed45af4be6fc82c52d0a79d15f10d0",
+      "source_bytes": 4088,
+      "shipped_path": "upstream/dnn/osce.h",
+      "shipped_sha256": "e9f1784cf1372d95ca75eff9a778e9d297ed45af4be6fc82c52d0a79d15f10d0",
+      "shipped_bytes": 4088,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce_config.h",
+      "origin": "source_git",
+      "source_sha256": "7e5cce5ad1f2b0dbbba2766bb7f92ec821abd78d374ddfc760f872e9d2bd0cf3",
+      "source_bytes": 2222,
+      "shipped_path": "upstream/dnn/osce_config.h",
+      "shipped_sha256": "7e5cce5ad1f2b0dbbba2766bb7f92ec821abd78d374ddfc760f872e9d2bd0cf3",
+      "shipped_bytes": 2222,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce_features.c",
+      "origin": "source_git",
+      "source_sha256": "647a2d8e6611fbfc402e01df9c2568e9612eddab296b88b1361e7ba7ead4079c",
+      "source_bytes": 24876,
+      "shipped_path": "upstream/dnn/osce_features.c",
+      "shipped_sha256": "647a2d8e6611fbfc402e01df9c2568e9612eddab296b88b1361e7ba7ead4079c",
+      "shipped_bytes": 24876,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce_features.h",
+      "origin": "source_git",
+      "source_sha256": "d482f57c0771caf588a6ad0328e33cae6373f834aff95887bfdbbe516eba151d",
+      "source_bytes": 3054,
+      "shipped_path": "upstream/dnn/osce_features.h",
+      "shipped_sha256": "d482f57c0771caf588a6ad0328e33cae6373f834aff95887bfdbbe516eba151d",
+      "shipped_bytes": 3054,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/osce_structs.h",
+      "origin": "source_git",
+      "source_sha256": "4c460b9fd382c8fbf97f81a4067a8628932403e18fc8004654ca423a3bf02cc2",
+      "source_bytes": 4667,
+      "shipped_path": "upstream/dnn/osce_structs.h",
+      "shipped_sha256": "4c460b9fd382c8fbf97f81a4067a8628932403e18fc8004654ca423a3bf02cc2",
+      "shipped_bytes": 4667,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/parse_lpcnet_weights.c",
+      "origin": "source_git",
+      "source_sha256": "debf250b15197ea2097a2556b44cfdaa39287ef58b4c2c56311bef78027525d8",
+      "source_bytes": 7561,
+      "shipped_path": "upstream/dnn/parse_lpcnet_weights.c",
+      "shipped_sha256": "debf250b15197ea2097a2556b44cfdaa39287ef58b4c2c56311bef78027525d8",
+      "shipped_bytes": 7561,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/vec.h",
+      "origin": "source_git",
+      "source_sha256": "fbdf49c54d60cfaa81607caef2f2d83bebde51de2a53aee2607b114350425a8e",
+      "source_bytes": 11175,
+      "shipped_path": "upstream/dnn/vec.h",
+      "shipped_sha256": "fe05311a22c7434c6cad84fa62d8f868e8eee83855032123755daecb9c7e9998",
+      "shipped_bytes": 11235,
+      "patched": true
+    },
+    {
+      "source_path": "dnn/vec_neon.h",
+      "origin": "source_git",
+      "source_sha256": "0fa404539200c5149adfd212ea0eebce1b22529a917b6a051a727d797a6964bb",
+      "source_bytes": 13641,
+      "shipped_path": "upstream/dnn/vec_neon.h",
+      "shipped_sha256": "0fa404539200c5149adfd212ea0eebce1b22529a917b6a051a727d797a6964bb",
+      "shipped_bytes": 13641,
+      "patched": false
+    },
+    {
+      "source_path": "include/opus_custom.h",
+      "origin": "source_git",
+      "source_sha256": "3b67a36b36eac7d712f712a4e57d602a7ff9df753d184b0743bbca8628ccff4b",
+      "source_bytes": 16965,
+      "shipped_path": "upstream/include/opus_custom.h",
+      "shipped_sha256": "3b67a36b36eac7d712f712a4e57d602a7ff9df753d184b0743bbca8628ccff4b",
+      "shipped_bytes": 16965,
+      "patched": false
+    },
+    {
+      "source_path": "include/opus_defines.h",
+      "origin": "source_git",
+      "source_sha256": "bbd4d4e3ba99f6982b1c8d8f5541814ad77d8e8babf3cc788cf23d517b2ca9d6",
+      "source_bytes": 38558,
+      "shipped_path": "upstream/include/opus_defines.h",
+      "shipped_sha256": "bbd4d4e3ba99f6982b1c8d8f5541814ad77d8e8babf3cc788cf23d517b2ca9d6",
+      "shipped_bytes": 38558,
+      "patched": false
+    },
+    {
+      "source_path": "include/opus_types.h",
+      "origin": "source_git",
+      "source_sha256": "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa",
+      "source_bytes": 5157,
+      "shipped_path": "upstream/include/opus_types.h",
+      "shipped_sha256": "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa",
+      "shipped_bytes": 5157,
+      "patched": false
+    },
+    {
+      "source_path": "silk/Inlines.h",
+      "origin": "source_git",
+      "source_sha256": "d8d637375bd1e1525ba20dfb9103781becabd9aef9decd64cc3a5402cbc2e838",
+      "source_bytes": 7314,
+      "shipped_path": "upstream/silk/Inlines.h",
+      "shipped_sha256": "d8d637375bd1e1525ba20dfb9103781becabd9aef9decd64cc3a5402cbc2e838",
+      "shipped_bytes": 7314,
+      "patched": false
+    },
+    {
+      "source_path": "silk/MacroCount.h",
+      "origin": "source_git",
+      "source_sha256": "8d822f074a31b6edf49c1a9b45f6cab36d5193393aef94b73c6ff3c4d64ac4fc",
+      "source_bytes": 20763,
+      "shipped_path": "upstream/silk/MacroCount.h",
+      "shipped_sha256": "8d822f074a31b6edf49c1a9b45f6cab36d5193393aef94b73c6ff3c4d64ac4fc",
+      "shipped_bytes": 20763,
+      "patched": false
+    },
+    {
+      "source_path": "silk/MacroDebug.h",
+      "origin": "source_git",
+      "source_sha256": "aefab84ea6848a81b1c48bbcf60935f70751ded68853d5c7d0ebb1249bd75773",
+      "source_bytes": 33581,
+      "shipped_path": "upstream/silk/MacroDebug.h",
+      "shipped_sha256": "aefab84ea6848a81b1c48bbcf60935f70751ded68853d5c7d0ebb1249bd75773",
+      "shipped_bytes": 33581,
+      "patched": false
+    },
+    {
+      "source_path": "silk/SigProc_FIX.h",
+      "origin": "source_git",
+      "source_sha256": "2b8e5f5afc6aa42585fc5f7c017c09da33d0411fcc37f3799bd91e6e53cf1066",
+      "source_bytes": 39462,
+      "shipped_path": "upstream/silk/SigProc_FIX.h",
+      "shipped_sha256": "2b8e5f5afc6aa42585fc5f7c017c09da33d0411fcc37f3799bd91e6e53cf1066",
+      "shipped_bytes": 39462,
+      "patched": false
+    },
+    {
+      "source_path": "silk/arm/LPC_inv_pred_gain_arm.h",
+      "origin": "source_git",
+      "source_sha256": "8ea077fa01c4d1fff026c049aef8b45244283c9e5252d8e2137c335f93eba5d7",
+      "source_bytes": 3243,
+      "shipped_path": "upstream/silk/arm/LPC_inv_pred_gain_arm.h",
+      "shipped_sha256": "8ea077fa01c4d1fff026c049aef8b45244283c9e5252d8e2137c335f93eba5d7",
+      "shipped_bytes": 3243,
+      "patched": false
+    },
+    {
+      "source_path": "silk/arm/biquad_alt_arm.h",
+      "origin": "source_git",
+      "source_sha256": "f252b371df2859167ce6d703ccad896b1a26f991bf5db4a20465b801c541f001",
+      "source_bytes": 4430,
+      "shipped_path": "upstream/silk/arm/biquad_alt_arm.h",
+      "shipped_sha256": "f252b371df2859167ce6d703ccad896b1a26f991bf5db4a20465b801c541f001",
+      "shipped_bytes": 4430,
+      "patched": false
+    },
+    {
+      "source_path": "silk/define.h",
+      "origin": "source_git",
+      "source_sha256": "10dbeb25a21341de7a17d98c3bc8a1ab9af8e6345c57604180e985dd20619bf1",
+      "source_bytes": 10009,
+      "shipped_path": "upstream/silk/define.h",
+      "shipped_sha256": "10dbeb25a21341de7a17d98c3bc8a1ab9af8e6345c57604180e985dd20619bf1",
+      "shipped_bytes": 10009,
+      "patched": false
+    },
+    {
+      "source_path": "silk/errors.h",
+      "origin": "source_git",
+      "source_sha256": "3bbf21416af6475200e55cbfeacf8dccef88455e31352735e4d4fecdda84ddd6",
+      "source_bytes": 3640,
+      "shipped_path": "upstream/silk/errors.h",
+      "shipped_sha256": "3bbf21416af6475200e55cbfeacf8dccef88455e31352735e4d4fecdda84ddd6",
+      "shipped_bytes": 3640,
+      "patched": false
+    },
+    {
+      "source_path": "silk/macros.h",
+      "origin": "source_git",
+      "source_sha256": "7fb2ce02a79df147f9220a4fbc1effe531305881092f4b7d003057666223ebfd",
+      "source_bytes": 6501,
+      "shipped_path": "upstream/silk/macros.h",
+      "shipped_sha256": "7fb2ce02a79df147f9220a4fbc1effe531305881092f4b7d003057666223ebfd",
+      "shipped_bytes": 6501,
+      "patched": false
+    },
+    {
+      "source_path": "silk/resampler_structs.h",
+      "origin": "source_git",
+      "source_sha256": "806a12a9ccfa673e04a31ce1f20e4b715ede4ad3a811419cc1726172df9d2e21",
+      "source_bytes": 2614,
+      "shipped_path": "upstream/silk/resampler_structs.h",
+      "shipped_sha256": "806a12a9ccfa673e04a31ce1f20e4b715ede4ad3a811419cc1726172df9d2e21",
+      "shipped_bytes": 2614,
+      "patched": false
+    },
+    {
+      "source_path": "silk/structs.h",
+      "origin": "source_git",
+      "source_sha256": "a59092ef7c40e9802b1c62dd2e2f655bb0d0d5a8ec18af64cdf8aaa3c9f409d3",
+      "source_bytes": 21869,
+      "shipped_path": "upstream/silk/structs.h",
+      "shipped_sha256": "a59092ef7c40e9802b1c62dd2e2f655bb0d0d5a8ec18af64cdf8aaa3c9f409d3",
+      "shipped_bytes": 21869,
+      "patched": false
+    },
+    {
+      "source_path": "silk/typedef.h",
+      "origin": "source_git",
+      "source_sha256": "a25409c0741545a75f28bf8a51ccdc3a7ba2421e783bd02baafe379e6d43e5b7",
+      "source_bytes": 3522,
+      "shipped_path": "upstream/silk/typedef.h",
+      "shipped_sha256": "a25409c0741545a75f28bf8a51ccdc3a7ba2421e783bd02baafe379e6d43e5b7",
+      "shipped_bytes": 3522,
+      "patched": false
+    },
+    {
+      "source_path": "dnn/bbwenet_data.c",
+      "origin": "official_model_archive",
+      "source_sha256": "64d95f4ac400a6e2a2ec182cad6eea211c91ebac983a741741beb5957db6e0c3",
+      "source_bytes": 9626771,
+      "shipped_path": "weights/bbwenet_data.c.gz",
+      "shipped_sha256": "5e5a053c4e794870d16f10402e352512ad26e57ed1752cada1836cbf06e762e5",
+      "shipped_bytes": 3877869,
+      "decoded_sha256": "64d95f4ac400a6e2a2ec182cad6eea211c91ebac983a741741beb5957db6e0c3",
+      "compression": "gzip level 9, mtime=0",
+      "patched": false
+    }
+  ],
+  "license_files": [
+    {
+      "source_path": "COPYING",
+      "shipped_path": "licenses/COPYING",
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+      "bytes": 1945
+    },
+    {
+      "source_path": "LICENSE_PLEASE_READ.txt",
+      "shipped_path": "licenses/LICENSE_PLEASE_READ.txt",
+      "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d",
+      "bytes": 703
+    }
+  ],
+  "package_files": [
+    {
+      "path": "BUILD.md",
+      "sha256": "647c141f8097c9e2517a8389c7193f1445f0294b6ac05ad4416ba1619ad189ed",
+      "bytes": 5472
+    },
+    {
+      "path": "CMakeLists.txt",
+      "sha256": "b2badb63f8708a0f458baf842550c2f48d0774d1243eec9e23e1c64b18e2b0f8",
+      "bytes": 3197
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "1dd02e688988c979a69f5b921b576e0748cc523adf6c064725cd42ed872ab55a",
+      "bytes": 1067
+    },
+    {
+      "path": "cmake/unpack_weights.py",
+      "sha256": "8e6f0cfeb59dc368c2ee2d07fe4be3059160c07981b7e28f1aa1ede6887ceb0e",
+      "bytes": 716
+    },
+    {
+      "path": "licenses/COPYING",
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+      "bytes": 1945
+    },
+    {
+      "path": "licenses/LICENSE_PLEASE_READ.txt",
+      "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d",
+      "bytes": 703
+    },
+    {
+      "path": "patches/bwe-only.patch",
+      "sha256": "eb37fcac6d5627d1f42a0573e0dbdeb90cd111f931cdb6609e6b07508ff6a66b",
+      "bytes": 2032
+    },
+    {
+      "path": "upstream/celt/_kiss_fft_guts.h",
+      "sha256": "374d4edc9e4f82da271a12fa9675c3f2f595a3b465544fbd05eca53818320c3a",
+      "bytes": 6200
+    },
+    {
+      "path": "upstream/celt/arch.h",
+      "sha256": "fc1d7aae69fec75b97566fd6b260e76d4339242f34470230dc390878c2131884",
+      "bytes": 12574
+    },
+    {
+      "path": "upstream/celt/arm/armcpu.h",
+      "sha256": "9bfc2da335b5a37cde9dbeb16c9666c9678f0d8487466825678f6c2bbc4b520d",
+      "bytes": 2830
+    },
+    {
+      "path": "upstream/celt/arm/celt_neon_intr.c",
+      "sha256": "ea912260479f6b355407ac561d2679ea40073ddce5a767d5cc8094b724fbf83d",
+      "bytes": 13324
+    },
+    {
+      "path": "upstream/celt/arm/mathops_arm.h",
+      "sha256": "a9a8361ee8ed4c442bb820126be1f5b5612386db4268fb8c0de93dceadb9b2db",
+      "bytes": 3884
+    },
+    {
+      "path": "upstream/celt/arm/pitch_arm.h",
+      "sha256": "6c941e3c917e60b6b10df2ca594be14ad43c21cf8ad9d0bf78fe6537b308ae09",
+      "bytes": 6631
+    },
+    {
+      "path": "upstream/celt/arm/pitch_neon_intr.c",
+      "sha256": "3ac262214a575b6a9b147602be983ff09c3040e7d4a4d5673e754dfe79b9f2a8",
+      "bytes": 10415
+    },
+    {
+      "path": "upstream/celt/celt.h",
+      "sha256": "290d8b2e20f2ee0dd7177fbbcdc557c81ca5eadf61a7971772d27a77d9e86cae",
+      "bytes": 8947
+    },
+    {
+      "path": "upstream/celt/celt_lpc.h",
+      "sha256": "e10b2e2e610b16a2003d00599467dfed45d300726eb28d0934857ebe2dc822cf",
+      "bytes": 2240
+    },
+    {
+      "path": "upstream/celt/cpu_support.h",
+      "sha256": "02bf67720c974a87fa96aad556c4847acc3370ecd16a95170193724197bc9c0e",
+      "bytes": 2434
+    },
+    {
+      "path": "upstream/celt/ecintrin.h",
+      "sha256": "c1100f45bdf70d2243740a7891a5def54cf483b51d024a35ac915b630639b556",
+      "bytes": 3679
+    },
+    {
+      "path": "upstream/celt/entcode.h",
+      "sha256": "97e7742ae4251b545326aadcc898635e90f22d5dc18fa63471c118b8bd79d1e8",
+      "bytes": 5423
+    },
+    {
+      "path": "upstream/celt/entdec.h",
+      "sha256": "31485453c516ad9be38a03b50a3c450fd5a9b7c7fad2d9e6c05357fd07efe0a9",
+      "bytes": 5348
+    },
+    {
+      "path": "upstream/celt/entenc.h",
+      "sha256": "b54d50fa515e4cf2f4b5a5a7a99269b85e24aefb533dd55d407660d1105b5a01",
+      "bytes": 5905
+    },
+    {
+      "path": "upstream/celt/float_cast.h",
+      "sha256": "ff1fab31ec21c933229a4525706fbfe98970c3ce4359e4698d38b18b220c1123",
+      "bytes": 5738
+    },
+    {
+      "path": "upstream/celt/kiss_fft.c",
+      "sha256": "0ff3c57ce9dededbf9925338808223ee8e164b5847f2b320da49b11bac4024d0",
+      "bytes": 18531
+    },
+    {
+      "path": "upstream/celt/kiss_fft.h",
+      "sha256": "1226ddcfdef87bc5169116e1188d370c8cc6a4e49f62eada6c7da808d19665af",
+      "bytes": 6823
+    },
+    {
+      "path": "upstream/celt/mathops.h",
+      "sha256": "79bf06946bf6ab97e6eb933193bcc654d0a7503132044c22714d7cdcc22ba22f",
+      "bytes": 22889
+    },
+    {
+      "path": "upstream/celt/mdct.h",
+      "sha256": "fe4d55da1aa03159403379a1cf9d6373da7b27ed0f1de63f8f726e9d9cffd41a",
+      "bytes": 4771
+    },
+    {
+      "path": "upstream/celt/modes.h",
+      "sha256": "f1e503db4939cefaaaf9b5c744023223de0acdb51d2e33238e60bb0495e81c3f",
+      "bytes": 2665
+    },
+    {
+      "path": "upstream/celt/os_support.h",
+      "sha256": "9e0b4572b0c5f366fd6f954d8f70d598d5f2b9d6cd7d123fc0f57cfff54abfd6",
+      "bytes": 3291
+    },
+    {
+      "path": "upstream/celt/pitch.c",
+      "sha256": "ad93368ae01b6fcadd28905e6ed5a55ad165ae5031654540af77d1ffe55acfd5",
+      "bytes": 15133
+    },
+    {
+      "path": "upstream/celt/pitch.h",
+      "sha256": "546220cfc7b32796a1f18b37ce75864e94b0016ea8a5eaace1f06c70aa8e20e2",
+      "bytes": 6284
+    },
+    {
+      "path": "upstream/celt/stack_alloc.h",
+      "sha256": "d0b2c8eabad72faede82e18ea57f5713731b84b9c7212593613bb62199a6aaf7",
+      "bytes": 6378
+    },
+    {
+      "path": "upstream/celt/x86/x86_arch_macros.h",
+      "sha256": "b6118942870b62ff78731edc3025e55230c3fadaf28ec2f4024d786210631505",
+      "bytes": 1618
+    },
+    {
+      "path": "upstream/dnn/arm/dnn_arm.h",
+      "sha256": "9b87598ef5707e008811e7db1c94c67678552758af11aa5a5d97488cfd5a1574",
+      "bytes": 4440
+    },
+    {
+      "path": "upstream/dnn/arm/nnet_neon.c",
+      "sha256": "6a034b99f5b16becc78098ee317fc1b8ea579b652f36c76e5a3384e563b0c584",
+      "bytes": 1576
+    },
+    {
+      "path": "upstream/dnn/bbwenet_data.h",
+      "sha256": "fb34d4dfa4f54ecbc03d76e2c685d53c4e1b2509e0bac071c5e1b8c6e948a30a",
+      "bytes": 4387
+    },
+    {
+      "path": "upstream/dnn/burg.h",
+      "sha256": "866d915ee4046e126dd3e7c87d822cbcf6c691e59f32e8ebf4715bfacf3f6ba7",
+      "bytes": 2464
+    },
+    {
+      "path": "upstream/dnn/bwe_demo.c",
+      "sha256": "ae5c223e4c5f975eb16397d686061857d12bdb0cadc55628eefbeb133c3bc55f",
+      "bytes": 2827
+    },
+    {
+      "path": "upstream/dnn/freq.c",
+      "sha256": "65caf405847ea2f8bf06350eb078ad0d5934bd30cd7e93523b5e96c821bda379",
+      "bytes": 8921
+    },
+    {
+      "path": "upstream/dnn/freq.h",
+      "sha256": "8cf2a319c99a14daebb368919344975b44ce6d299ebc1a0ac17ae73af80a8372",
+      "bytes": 2258
+    },
+    {
+      "path": "upstream/dnn/lpcnet_tables.c",
+      "sha256": "084670acd5cd670d2356434ebbd6fd5e7da3c27e5b4946c682f2f47c8124d742",
+      "bytes": 19083
+    },
+    {
+      "path": "upstream/dnn/nndsp.c",
+      "sha256": "d8e0808328c78403c088cd87386f934af59ab85ab708df4a18d810b5eba8cdfc",
+      "bytes": 15905
+    },
+    {
+      "path": "upstream/dnn/nndsp.h",
+      "sha256": "0da4042f6b0ffdaf684f1ed06ace42142ae78341325a8474d014e0a51490e7f2",
+      "bytes": 4152
+    },
+    {
+      "path": "upstream/dnn/nnet.c",
+      "sha256": "7612655ee56fd10977be97287dd0402fc9babf3b7ad392ec503d0edf93d37732",
+      "bytes": 5514
+    },
+    {
+      "path": "upstream/dnn/nnet.h",
+      "sha256": "d90f8b0371c39eb4dfa02b1d87120e09f37e8e4c309cf979a5650f121f9dac4b",
+      "bytes": 5574
+    },
+    {
+      "path": "upstream/dnn/nnet_arch.h",
+      "sha256": "3b227cd54ae376c21050a1116261665c9c8d82b9ec46b1c9aed9af6a6cd444d0",
+      "bytes": 9293
+    },
+    {
+      "path": "upstream/dnn/nnet_default.c",
+      "sha256": "1402eb611b7fcc1fe7fa18639f0395e0af47a783ef87450318411483516e9011",
+      "bytes": 1456
+    },
+    {
+      "path": "upstream/dnn/osce.c",
+      "sha256": "ee368fd5c11b7a657b6d20b00ab9909e90f0e78c6f77e6aaef80f5050ca8d7eb",
+      "bytes": 70054
+    },
+    {
+      "path": "upstream/dnn/osce.h",
+      "sha256": "e9f1784cf1372d95ca75eff9a778e9d297ed45af4be6fc82c52d0a79d15f10d0",
+      "bytes": 4088
+    },
+    {
+      "path": "upstream/dnn/osce_config.h",
+      "sha256": "7e5cce5ad1f2b0dbbba2766bb7f92ec821abd78d374ddfc760f872e9d2bd0cf3",
+      "bytes": 2222
+    },
+    {
+      "path": "upstream/dnn/osce_features.c",
+      "sha256": "647a2d8e6611fbfc402e01df9c2568e9612eddab296b88b1361e7ba7ead4079c",
+      "bytes": 24876
+    },
+    {
+      "path": "upstream/dnn/osce_features.h",
+      "sha256": "d482f57c0771caf588a6ad0328e33cae6373f834aff95887bfdbbe516eba151d",
+      "bytes": 3054
+    },
+    {
+      "path": "upstream/dnn/osce_structs.h",
+      "sha256": "4c460b9fd382c8fbf97f81a4067a8628932403e18fc8004654ca423a3bf02cc2",
+      "bytes": 4667
+    },
+    {
+      "path": "upstream/dnn/parse_lpcnet_weights.c",
+      "sha256": "debf250b15197ea2097a2556b44cfdaa39287ef58b4c2c56311bef78027525d8",
+      "bytes": 7561
+    },
+    {
+      "path": "upstream/dnn/vec.h",
+      "sha256": "fe05311a22c7434c6cad84fa62d8f868e8eee83855032123755daecb9c7e9998",
+      "bytes": 11235
+    },
+    {
+      "path": "upstream/dnn/vec_neon.h",
+      "sha256": "0fa404539200c5149adfd212ea0eebce1b22529a917b6a051a727d797a6964bb",
+      "bytes": 13641
+    },
+    {
+      "path": "upstream/include/opus_custom.h",
+      "sha256": "3b67a36b36eac7d712f712a4e57d602a7ff9df753d184b0743bbca8628ccff4b",
+      "bytes": 16965
+    },
+    {
+      "path": "upstream/include/opus_defines.h",
+      "sha256": "bbd4d4e3ba99f6982b1c8d8f5541814ad77d8e8babf3cc788cf23d517b2ca9d6",
+      "bytes": 38558
+    },
+    {
+      "path": "upstream/include/opus_types.h",
+      "sha256": "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa",
+      "bytes": 5157
+    },
+    {
+      "path": "upstream/silk/Inlines.h",
+      "sha256": "d8d637375bd1e1525ba20dfb9103781becabd9aef9decd64cc3a5402cbc2e838",
+      "bytes": 7314
+    },
+    {
+      "path": "upstream/silk/MacroCount.h",
+      "sha256": "8d822f074a31b6edf49c1a9b45f6cab36d5193393aef94b73c6ff3c4d64ac4fc",
+      "bytes": 20763
+    },
+    {
+      "path": "upstream/silk/MacroDebug.h",
+      "sha256": "aefab84ea6848a81b1c48bbcf60935f70751ded68853d5c7d0ebb1249bd75773",
+      "bytes": 33581
+    },
+    {
+      "path": "upstream/silk/SigProc_FIX.h",
+      "sha256": "2b8e5f5afc6aa42585fc5f7c017c09da33d0411fcc37f3799bd91e6e53cf1066",
+      "bytes": 39462
+    },
+    {
+      "path": "upstream/silk/arm/LPC_inv_pred_gain_arm.h",
+      "sha256": "8ea077fa01c4d1fff026c049aef8b45244283c9e5252d8e2137c335f93eba5d7",
+      "bytes": 3243
+    },
+    {
+      "path": "upstream/silk/arm/biquad_alt_arm.h",
+      "sha256": "f252b371df2859167ce6d703ccad896b1a26f991bf5db4a20465b801c541f001",
+      "bytes": 4430
+    },
+    {
+      "path": "upstream/silk/define.h",
+      "sha256": "10dbeb25a21341de7a17d98c3bc8a1ab9af8e6345c57604180e985dd20619bf1",
+      "bytes": 10009
+    },
+    {
+      "path": "upstream/silk/errors.h",
+      "sha256": "3bbf21416af6475200e55cbfeacf8dccef88455e31352735e4d4fecdda84ddd6",
+      "bytes": 3640
+    },
+    {
+      "path": "upstream/silk/macros.h",
+      "sha256": "7fb2ce02a79df147f9220a4fbc1effe531305881092f4b7d003057666223ebfd",
+      "bytes": 6501
+    },
+    {
+      "path": "upstream/silk/resampler_structs.h",
+      "sha256": "806a12a9ccfa673e04a31ce1f20e4b715ede4ad3a811419cc1726172df9d2e21",
+      "bytes": 2614
+    },
+    {
+      "path": "upstream/silk/structs.h",
+      "sha256": "a59092ef7c40e9802b1c62dd2e2f655bb0d0d5a8ec18af64cdf8aaa3c9f409d3",
+      "bytes": 21869
+    },
+    {
+      "path": "upstream/silk/typedef.h",
+      "sha256": "a25409c0741545a75f28bf8a51ccdc3a7ba2421e783bd02baafe379e6d43e5b7",
+      "bytes": 3522
+    },
+    {
+      "path": "weights/bbwenet_data.c.gz",
+      "sha256": "5e5a053c4e794870d16f10402e352512ad26e57ed1752cada1836cbf06e762e5",
+      "bytes": 3877869
+    }
+  ]
+}

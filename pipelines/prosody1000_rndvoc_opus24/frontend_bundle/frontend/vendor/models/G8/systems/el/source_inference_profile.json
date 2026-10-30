@@ -1,0 +1,52 @@
+{
+  "schema": "tts25_userref_inference_profile_v1",
+  "language": "el-GR",
+  "model_id": "el-GR-userref-initial25",
+  "selected_variant": "initial25",
+  "family": "universal39",
+  "architecture": "architecture.json",
+  "frontend_metadata": "frontend_metadata.json",
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 22,
+    "base_context_dim": 22,
+    "additional_context_dim": 0
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "frontend_signature": "75487b2cb99d3e6b1c9aa07b06efdc3831d70f465e18394204be34bcc3ce6fd7",
+  "components": {
+    "acoustic": {
+      "file": "acoustic.pt",
+      "sha256": "839d952907721374e3a0919b01f617b204861dcf1e661cf29f87ec6e47184a8d"
+    }
+  },
+  "runtime_entrypoint": "runtime.loader.ModelRuntime; CLI runtime/infer.py",
+  "runtime_requirements": "bundled runtime/current25 + runtime/requirements.txt; docs/INFERENCE_25.md",
+  "no_legacy_frame_repair_or_external_calibration": true,
+  "reference_audio_required_at_inference": false,
+  "quality_status": "USER_SELECTED_RESEARCH_ASSET_NOT_HUMAN_QUALITY_PROMOTED",
+  "human_listening_this_release": "NOT_RUN",
+  "MOS": null,
+  "independent_test": false,
+  "native_synthesis_basis": {
+    "artifact": "en_basis",
+    "shape": [
+      128,
+      31
+    ],
+    "mode": "warped39",
+    "fixed_taps": 128,
+    "gain": 1.0,
+    "seed": 1729
+  },
+  "external_TTS_checkout_required": false
+}

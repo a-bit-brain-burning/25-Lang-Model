@@ -1,0 +1,61 @@
+{
+  "language": "et",
+  "locale": "et-EE",
+  "family": "universal39",
+  "parameters": 180790,
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 34,
+    "base_context_dim": 22,
+    "additional_context_dim": 12
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_universal_acoustic_v2",
+      "parameters": 180790,
+      "config": {
+        "width": 104,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 88,
+        "dropout": 0.05,
+        "phonetic_dim": 32,
+        "context_dim": 34,
+        "continuous_voicing": true,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "basis_id": "warped700_32_v1",
+        "frontend_version": "eu_finnic_frontend_v1",
+        "feature_adapter_version": "finnic_articulatory32_v1",
+        "language": "et",
+        "frontend_semantic_sha256": "29425aa9524de500054515d748711fc537b5ac6c833efa3aa2661dea41de10ab",
+        "lexicon_sha256": null,
+        "channels": 39
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/et-EE/compact39/acoustic.pt",
+      "architecture_source_sha256": "68db52d6e4b644249454ad9dc6cc2818fe446b84e4abb26e66f95bef900eb99a",
+      "weights_as_initialization": false
+    }
+  },
+  "scratch": true,
+  "parent": null,
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "existing selected Model release architecture; no old tensors loaded"
+}

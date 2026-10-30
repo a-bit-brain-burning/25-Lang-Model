@@ -1,0 +1,85 @@
+{
+  "language": "fi",
+  "locale": "fi-FI",
+  "family": "universal39",
+  "parameters": 129406,
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 34,
+    "base_context_dim": 22,
+    "additional_context_dim": 12
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_universal_acoustic_v2",
+      "parameters": 129406,
+      "config": {
+        "width": 104,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 88,
+        "dropout": 0.05,
+        "phonetic_dim": 32,
+        "context_dim": 34,
+        "continuous_voicing": true,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "basis_id": "warped700_32_v1",
+        "frontend_version": "eu_finnic_frontend_v1",
+        "feature_adapter_version": "finnic_articulatory32_v1",
+        "language": "fi",
+        "frontend_semantic_sha256": "2e6e9d045893cf0a1f667ff559dee16ee67f75a7f2548894c8cdc5b8a77c0b22",
+        "lexicon_sha256": null,
+        "channels": 39
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/fi-FI/compact39/acoustic.pt",
+      "architecture_source_sha256": "e39b7a5e10b6c74e100bddf8a0e54e4c24db1adf57a77156870d6b4735ac3970",
+      "weights_as_initialization": true,
+      "shared_convolution_basis": {
+        "blocks.0.base.conv": {
+          "width": 104,
+          "rank": 56,
+          "dilation": 1,
+          "basis_key": "compact_w104"
+        },
+        "blocks.1.conv": {
+          "width": 104,
+          "rank": 56,
+          "dilation": 2,
+          "basis_key": "compact_w104"
+        },
+        "blocks.2.conv": {
+          "width": 104,
+          "rank": 56,
+          "dilation": 4,
+          "basis_key": "compact_w104"
+        }
+      },
+      "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+    }
+  },
+  "scratch": false,
+  "parent": {
+    "source_group_acoustic_sha256": "5ba00086510d6d20654d494c8f71e72a064e4e4ecd7c67c4a6a89d85acb973c9"
+  },
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+  "source_architecture_sha256": "a54e5a9ecc471aa1ac6c73e425db0f086f81b8d7006231aa9a8e2f5176c928fa"
+}

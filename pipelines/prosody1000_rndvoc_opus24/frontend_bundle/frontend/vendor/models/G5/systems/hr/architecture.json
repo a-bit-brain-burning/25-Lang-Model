@@ -1,0 +1,65 @@
+{
+  "language": "hr",
+  "locale": "hr-HR",
+  "family": "universal39",
+  "parameters": 191806,
+  "input": {
+    "phonetic_dim": 32,
+    "context_dim": 34,
+    "base_context_dim": 22,
+    "additional_context_dim": 12
+  },
+  "output": {
+    "schema": "Acoustic39.v1",
+    "basis_id": "warped700_32_v1",
+    "neural_channels": 39,
+    "physical_channels": 39,
+    "trained_shape_channels": 31,
+    "control_points_per_unit": 8,
+    "frame_shift_ms": 10,
+    "sample_rate": 16000
+  },
+  "components": {
+    "acoustic": {
+      "format": "tiny_universal_acoustic_v2",
+      "parameters": 191806,
+      "config": {
+        "width": 104,
+        "dilations": [
+          1,
+          2,
+          4
+        ],
+        "spectral_dim": 32,
+        "ap_bands": 5,
+        "acoustic_hidden": 88,
+        "dropout": 0.05,
+        "phonetic_dim": 32,
+        "context_dim": 34,
+        "continuous_voicing": true,
+        "control_points": 8,
+        "frame_period_ms": 10,
+        "max_phone_frames": 150,
+        "basis_id": "warped700_32_v1",
+        "frontend_version": "eu_south_slavic_frontend_v2",
+        "feature_adapter_version": "south_slavic_articulatory32_v1",
+        "language": "hr",
+        "channels": 39,
+        "voiced_prior": 0.5
+      },
+      "architecture_source_artifact": "/home/fomak/Model/models/hr-HR/compact39/acoustic.pt",
+      "architecture_source_sha256": "ca4eb02188dd61e7e2c6e61aefc2c82917fa4d416f8038e172419c4b9397e968",
+      "weights_as_initialization": true,
+      "shared_convolution_basis": {},
+      "parameter_scope": "Active acoustic parameters including one copy of each shared basis and global module used by this language; use fleet PARAMETERS.json for the deduplicated total."
+    }
+  },
+  "scratch": false,
+  "parent": {
+    "source_group_acoustic_sha256": "305c5e21ea707619127212337327db13551ee08ec5df1663cdff97e79da74f8d"
+  },
+  "seed": 20261023,
+  "optional_frame_repair_enabled": false,
+  "architecture_basis": "Trained shared temporal convolution bases and per-module projections; original numeric input/output, private planners, duration and acoustic heads retained.",
+  "source_architecture_sha256": "645457df51e3bf1e1539f027f5b1724f17c5b04a2dfac349ca243d2f9266db59"
+}

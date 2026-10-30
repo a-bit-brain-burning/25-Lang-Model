@@ -1,0 +1,1 @@
+{ global: espeak_Initialize; espeak_Info; espeak_SetVoiceByName; espeak_GetCurrentVoice; espeak_TextToPhonemes; espeak_Terminate; espeak_Synth; local: *; };

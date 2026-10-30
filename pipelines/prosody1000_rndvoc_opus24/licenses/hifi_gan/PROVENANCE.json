@@ -1,0 +1,13 @@
+{
+  "upstream_repository": "https://github.com/jik876/hifi-gan",
+  "upstream_revision": "4769534d45265d52a904b850da5a622601885777",
+  "upstream_models_py_sha256": "6b2c446e551fa3f0855cf02d4c4dc178d7046aa6f3cda2b42321658b281673b2",
+  "upstream_license_sha256": "5eec017ce442989e01a46cd9cd6aeb13cd0aa3b3943f681577bda00475afaa23",
+  "official_pretrained_name": "VCTK_V2/generator_v2",
+  "official_pretrained_checkpoint_sha256": "049ff085eeae70ff0e1add39cfd4caad0fcca4511d259a84f68a0d1c1bbb2659",
+  "official_generator_config_sha256": "b639a7a0c5e1f874cf6ce9e33cdb066bc66cb9ad989be9e1175c61d298373e06",
+  "fine_tuned_checkpoint_sha256": "c2a12e3ccd96486504d6c01d2b253e225f9e9b063a49339eed97e5217f02a803",
+  "fine_tuned_generator_updates": 31403,
+  "adaptation": "Generator/ResBlock inference math with already-folded weight normalization; omit discriminator, training-only utilities, plotting imports and original pretrained weight files. PhysicalMelAdapter is the separately trained 31/39D-to-mel component.",
+  "license_notice": "Upstream source is MIT licensed; original notice is retained in LICENSE. The official linked checkpoint folder did not supply a separate checkpoint-specific license file."
+}
