@@ -1,8 +1,9 @@
-"""Offline FARGAN synthesis of the selected model's original valid center.
+"""Persistent FARGAN synthesis of the selected model's original valid center.
 
 Consume the existing NEW25 normalized waveform condition. T input frames give
 (T-4)*160 samples aligned to [400,160*T-240) on the original utterance timeline.
-No edge padding, reference waveform, teacher prefill or streaming is applied.
+No edge extension, reference waveform or teacher prefill is applied. The original
+offline reference remains available as ``synthesize_offline``.
 """
 
 from __future__ import annotations
@@ -10,6 +11,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -24,6 +26,7 @@ from new25_hifigan.inference import (
 )
 
 from .adapter import PhysicalFarganAdapter
+from .adapter_stream import PhysicalFarganAdapterStream
 from ._vendor.fargan import FARGAN
 
 SAMPLE_RATE = 16000
@@ -48,6 +51,51 @@ METADATA = {
     "math": "FP32 including recurrent state",
     "parameter_storage": "FP16",
 }
+# METADATA describes immutable released files, including their historical API.
+# Runtime capability is separate: loading never rewrites model_config.json.
+RUNTIME_CAPABILITIES = {"streaming": True, "artifact_streaming": False,
+                        "adapter_future_context_frames": 21,
+                        "output_alignment": "[400,160*T-240)"}
+
+
+@dataclass
+class FARGANStreamState:
+    owner: object
+    language_id: int
+    seed: int
+    adapter: PhysicalFarganAdapterStream
+    generator: object
+    received_frames: int = 0
+    output_samples: int = 0
+    finished: bool = False
+
+    def report(self):
+        return {"received_frames": self.received_frames,
+                "output_samples": self.output_samples, "finished": self.finished,
+                "adapter": self.adapter.report(), "generator": self.generator.report()}
+
+
+def _chunk_tensor(normalized, language_id):
+    """Same numeric contract as the released reader, also accepting empty blocks."""
+    if isinstance(normalized, torch.Tensor):
+        if normalized.dtype == torch.bool or normalized.is_complex() or normalized.is_quantized:
+            raise ValueError("normalized must contain finite real numeric features")
+        x = normalized.detach()
+    else:
+        value = np.asarray(normalized)
+        if value.dtype.kind not in "iuf":
+            raise ValueError("normalized must contain finite real numeric features")
+        with np.errstate(over="ignore"):
+            x = torch.from_numpy(value.astype(np.float32, copy=True))
+    dimension = 31 if LANGUAGES[language_id] == "zh" else 39
+    if x.ndim != 3 or x.shape[0] != 1 or x.shape[2] != dimension:
+        raise ValueError(f"normalized must have shape [1,T,{dimension}]")
+    if not 0 <= x.shape[1] <= MAX_FRAMES:
+        raise ValueError(f"A chunk must contain 0..{MAX_FRAMES} physical frames")
+    x = x.to(device="cpu", dtype=torch.float32)
+    if not torch.isfinite(x).all():
+        raise ValueError("normalized must contain finite values representable in FP32")
+    return x
 
 
 def sample_layout(frames):
@@ -69,12 +117,12 @@ class FARGANVocoder(nn.Module):
     """B=1 CPU FP32 reference returning float32 [1,(T-4)*160] PCM.
 
     ``normalized`` is AcousticResult.normalized with an explicit batch axis,
-    not raw head logits or physical values. The trained adapter consumes the
-    entire supplied timeline. Each call starts fresh recurrent/excitation and
-    de-emphasis states; it is not the reserved T*160 streaming protocol.
+    not raw head logits or physical values. A stream preserves adapter context,
+    excitation, recurrent, noise and de-emphasis state across calls. Output
+    remains the original valid center, not the reserved T*160 padded protocol.
     """
 
-    streaming = False
+    streaming = True
 
     def __init__(self):
         super().__init__()
@@ -118,7 +166,7 @@ class FARGANVocoder(nn.Module):
         return model
 
     @torch.inference_mode()
-    def synthesize(self, normalized, language, *, seed=0, state=None, chunk_frames=None):
+    def synthesize_offline(self, normalized, language, *, seed=0):
         """Render the original valid center with zero teacher-prefill frames.
 
         The official Python FARGAN adds noise even in eval. An explicit seed
@@ -126,8 +174,6 @@ class FARGANVocoder(nn.Module):
         The input durations may be supplied or predicted upstream; only the
         supplied-true-duration path has the recorded 75-case development score.
         """
-        if state is not None or chunk_frames is not None:
-            raise ValueError("FARGAN requires a complete utterance; state/chunking are unsupported")
         if type(seed) is not int or not 0 <= seed < 2**63:
             raise ValueError("seed must be an integer in 0..2**63-1")
         language_id = _language_id(language)
@@ -156,8 +202,68 @@ class FARGANVocoder(nn.Module):
             raise ValueError("De-emphasis returned nonfinite PCM")
         return torch.from_numpy(pcm.copy())[None]
 
-    def synthesize_chunk(self, *args, **kwargs):
-        raise ValueError("FARGAN has no streaming/chunk API; supply a complete utterance")
+    def begin_stream(self, language, seed=0):
+        """Create an independent request without mutating any caller RNG."""
+        from .streaming_core import FARGANGeneratorStream
+        if type(seed) is not int or not 0 <= seed < 2**63:
+            raise ValueError("seed must be an integer in 0..2**63-1")
+        language_id = _language_id(language)
+        if any(p.device.type != "cpu" for p in self.parameters()):
+            raise ValueError("Selected FARGAN reference supports CPU inference")
+        self.float().eval()
+        dimension = 31 if LANGUAGES[language_id] == "zh" else 39
+        return FARGANStreamState(self, language_id, seed,
+                                PhysicalFarganAdapterStream(self.adapter, language_id, dimension),
+                                FARGANGeneratorStream(self.generator, seed))
+
+    @torch.inference_mode()
+    def synthesize_chunk(self, normalized, language, state=None, seed=0, final=False):
+        """Consume new physical frames and return only newly finalized PCM."""
+        language_id = _language_id(language)
+        x = _chunk_tensor(normalized, language_id)
+        if state is None:
+            state = self.begin_stream(language, seed=seed)
+        if (not isinstance(state, FARGANStreamState) or state.owner is not self
+                or state.language_id != language_id):
+            raise ValueError("Stream state belongs to another model or language")
+        if state.finished:
+            raise ValueError("FARGAN stream is already finished; begin a new stream")
+        if type(final) is not bool:
+            raise ValueError("final must be a bool")
+        total = state.received_frames + int(x.shape[1])
+        if total > MAX_FRAMES or (final and total < 5):
+            raise ValueError(f"A complete FARGAN stream requires 5..{MAX_FRAMES} physical frames")
+        with torch.autocast("cpu", enabled=False):
+            features = state.adapter.push(x, final=final)
+            pcm = state.generator.push(features, final=final)
+        if pcm.ndim != 2 or pcm.shape[0] != 1 or pcm.dtype != torch.float32 or not torch.isfinite(pcm).all():
+            raise ValueError("FARGAN stream returned invalid PCM")
+        state.received_frames = total
+        state.output_samples += int(pcm.shape[1])
+        state.finished = final
+        if final and state.output_samples != sample_layout(total)["output_samples"]:
+            raise RuntimeError("FARGAN stream did not preserve the original valid center")
+        return pcm, state
+
+    @torch.inference_mode()
+    def synthesize(self, normalized, language, *, seed=0, state=None, chunk_frames=None):
+        """Collect real streaming output; use synthesize_chunk for immediate delivery."""
+        if state is not None:
+            raise ValueError("Use synthesize_chunk to continue an existing stream")
+        language_id = _language_id(language)
+        x = _normalized_tensor(normalized, language_id, "cpu")
+        sample_layout(int(x.shape[1]))
+        chunk_frames = 16 if chunk_frames is None else chunk_frames
+        if type(chunk_frames) is not int or chunk_frames < 1:
+            raise ValueError("chunk_frames must be a positive integer")
+        state = self.begin_stream(language, seed=seed)
+        pieces = []
+        for begin in range(0, int(x.shape[1]), chunk_frames):
+            end = min(int(x.shape[1]), begin + chunk_frames)
+            pcm, state = self.synthesize_chunk(x[:, begin:end], language, state=state,
+                                               final=end == x.shape[1])
+            pieces.append(pcm)
+        return torch.cat(pieces, dim=1)
 
 
 def main(argv=None):
@@ -175,7 +281,7 @@ def main(argv=None):
     write_pcm16(args.output, waveform)
     receipt = dict(sample_layout(int(normalized.shape[1])), language=args.language,
                    selected_checkpoint_step=4750, source_checkpoint_sha256=CHECKPOINT_SHA256,
-                   seed=args.seed, streaming=False, teacher_prefill_frames=0,
+                   seed=args.seed, streaming=True, artifact_streaming=False, teacher_prefill_frames=0,
                    alignment="valid_center", duration_source="supplied_by_acoustic_npz",
                    pcm16_clipped_samples=int((waveform.abs() > 1).sum()))
     metadata = args.metadata if args.metadata is not None else Path(str(args.output) + ".json")

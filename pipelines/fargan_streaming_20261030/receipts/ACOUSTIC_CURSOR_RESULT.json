@@ -1,0 +1,286 @@
+{
+  "status": "FINITE_CURRENT_MODEL_ACOUSTIC_CURSOR_VERIFIED",
+  "cases": [
+    {
+      "language": "zh",
+      "chunk": 16,
+      "output_sha256": "29ee12e0c6dca5c1cdde7f0e69ff46a110e9d276f3130cd4ec43e35cd1a39657",
+      "matches_old_cursor_same_chunks": true,
+      "full_reference_difference": {
+        "byte_identical": false,
+        "max_abs": 2.1457672119140625e-06,
+        "RMS": 4.971043170588734e-08,
+        "fixed_index_no_shift_or_fitting": true
+      },
+      "report": {
+        "language": "zh",
+        "physical_frames": 287,
+        "emitted_frames": 287,
+        "dimension": 31,
+        "decoder_calls": 18,
+        "encode_calls_this_request": 1,
+        "total_encode_calls": 1,
+        "generation": 1,
+        "decoder_state_bytes": 96000,
+        "encoded_prosody_bytes": 18088,
+        "decoder_state_shapes": {
+          "gru": [
+            1,
+            192
+          ],
+          "conv": [
+            [
+              1,
+              4,
+              192
+            ],
+            [
+              1,
+              8,
+              192
+            ],
+            [
+              1,
+              16,
+              192
+            ],
+            [
+              1,
+              32,
+              192
+            ],
+            [
+              1,
+              64,
+              192
+            ]
+          ]
+        },
+        "decoder_state_owns_storage": true,
+        "peak_layout_frames": 16,
+        "full_audio_layout_cached": false,
+        "cancelled": false,
+        "closed": false,
+        "finished": true,
+        "weights_reloaded": false,
+        "training_updates": 0,
+        "full_text_unit_encoding_retained": true,
+        "character_input_causal": false
+      }
+    },
+    {
+      "language": "zh",
+      "chunk": 64,
+      "output_sha256": "c0b1e20606e1a309d1e5dbdf7f33f2eb86de21566b986bd54c9cc840859062e2",
+      "matches_old_cursor_same_chunks": true,
+      "full_reference_difference": {
+        "byte_identical": false,
+        "max_abs": 2.1457672119140625e-06,
+        "RMS": 3.204945848016353e-08,
+        "fixed_index_no_shift_or_fitting": true
+      },
+      "report": {
+        "language": "zh",
+        "physical_frames": 287,
+        "emitted_frames": 287,
+        "dimension": 31,
+        "decoder_calls": 5,
+        "encode_calls_this_request": 1,
+        "total_encode_calls": 1,
+        "generation": 1,
+        "decoder_state_bytes": 96000,
+        "encoded_prosody_bytes": 18088,
+        "decoder_state_shapes": {
+          "gru": [
+            1,
+            192
+          ],
+          "conv": [
+            [
+              1,
+              4,
+              192
+            ],
+            [
+              1,
+              8,
+              192
+            ],
+            [
+              1,
+              16,
+              192
+            ],
+            [
+              1,
+              32,
+              192
+            ],
+            [
+              1,
+              64,
+              192
+            ]
+          ]
+        },
+        "decoder_state_owns_storage": true,
+        "peak_layout_frames": 64,
+        "full_audio_layout_cached": false,
+        "cancelled": false,
+        "closed": false,
+        "finished": true,
+        "weights_reloaded": false,
+        "training_updates": 0,
+        "full_text_unit_encoding_retained": true,
+        "character_input_causal": false
+      }
+    },
+    {
+      "language": "en",
+      "chunk": 16,
+      "output_sha256": "55803f9e486c8dcbe535f6ec6a1cdd3afecf1b2b7343cf7a09f70a65490a66ac",
+      "matches_old_cursor_same_chunks": true,
+      "full_reference_difference": {
+        "byte_identical": true,
+        "max_abs": 0.0,
+        "RMS": 0.0,
+        "fixed_index_no_shift_or_fitting": true
+      },
+      "report": {
+        "language": "en",
+        "physical_frames": 208,
+        "emitted_frames": 208,
+        "dimension": 39,
+        "decoder_calls": 13,
+        "encode_calls_this_request": 1,
+        "total_encode_calls": 1,
+        "generation": 1,
+        "decoder_state_bytes": 96000,
+        "encoded_prosody_bytes": 12768,
+        "decoder_state_shapes": {
+          "gru": [
+            1,
+            192
+          ],
+          "conv": [
+            [
+              1,
+              4,
+              192
+            ],
+            [
+              1,
+              8,
+              192
+            ],
+            [
+              1,
+              16,
+              192
+            ],
+            [
+              1,
+              32,
+              192
+            ],
+            [
+              1,
+              64,
+              192
+            ]
+          ]
+        },
+        "decoder_state_owns_storage": true,
+        "peak_layout_frames": 16,
+        "full_audio_layout_cached": false,
+        "cancelled": false,
+        "closed": false,
+        "finished": true,
+        "weights_reloaded": false,
+        "training_updates": 0,
+        "full_text_unit_encoding_retained": true,
+        "character_input_causal": false
+      }
+    },
+    {
+      "language": "en",
+      "chunk": 64,
+      "output_sha256": "55803f9e486c8dcbe535f6ec6a1cdd3afecf1b2b7343cf7a09f70a65490a66ac",
+      "matches_old_cursor_same_chunks": true,
+      "full_reference_difference": {
+        "byte_identical": true,
+        "max_abs": 0.0,
+        "RMS": 0.0,
+        "fixed_index_no_shift_or_fitting": true
+      },
+      "report": {
+        "language": "en",
+        "physical_frames": 208,
+        "emitted_frames": 208,
+        "dimension": 39,
+        "decoder_calls": 4,
+        "encode_calls_this_request": 1,
+        "total_encode_calls": 1,
+        "generation": 1,
+        "decoder_state_bytes": 96000,
+        "encoded_prosody_bytes": 12768,
+        "decoder_state_shapes": {
+          "gru": [
+            1,
+            192
+          ],
+          "conv": [
+            [
+              1,
+              4,
+              192
+            ],
+            [
+              1,
+              8,
+              192
+            ],
+            [
+              1,
+              16,
+              192
+            ],
+            [
+              1,
+              32,
+              192
+            ],
+            [
+              1,
+              64,
+              192
+            ]
+          ]
+        },
+        "decoder_state_owns_storage": true,
+        "peak_layout_frames": 64,
+        "full_audio_layout_cached": false,
+        "cancelled": false,
+        "closed": false,
+        "finished": true,
+        "weights_reloaded": false,
+        "training_updates": 0,
+        "full_text_unit_encoding_retained": true,
+        "character_input_causal": false
+      }
+    }
+  ],
+  "cancel_releases_request_tensors": true,
+  "reset_same_prefix": true,
+  "interleaved_requests_same_output": true,
+  "state_storage_compact": true,
+  "source_file_sha256": "0eb7671714482dbde197e74cd202f11fa051deadace01d5aab74d2763821ee1b",
+  "original_cursor_sha256": "aba26759a3da398e3400e8e34d5349b8289aab3b645f0865f08e8cf206643279",
+  "model_state_unchanged": true,
+  "training_updates": 0,
+  "full_text_unit_encoding_retained": true,
+  "character_input_causal": false,
+  "human_quality_accepted": false,
+  "M55_deployment_verified": false,
+  "waveform_alignment_or_fitting": false
+}

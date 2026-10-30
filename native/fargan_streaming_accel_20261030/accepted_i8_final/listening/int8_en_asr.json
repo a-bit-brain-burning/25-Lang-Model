@@ -1,0 +1,12 @@
+{
+  "reference": "Hello, welcome to the flight.",
+  "hypothesis": " Hello, welcome to the flight",
+  "normalized_exact": true,
+  "wav_sha256": "8a08aa7b86c9fd5fd57aa6b1b564b7e70366f50641440b73793e562112015855",
+  "recognizer_weights_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "protocol": "medium,en,beam5,temp0,fp32,no_prompt,no_previous_text",
+  "scope": "Fixed-case intelligibility check; human quality unaccepted",
+  "human_quality_accepted": false,
+  "waveform_alignment": false,
+  "inherited_from_identical_complete_audio": "m55_fargan_stream_20261030/native_integer_combo_en/reports/i8_v2"
+}

@@ -1,0 +1,11 @@
+{
+  "reference": "你好，欢迎测试新的语音模型。",
+  "hypothesis": "你好,歡迎測試新的語音模型",
+  "normalized_exact": false,
+  "wav_sha256": "63b2e08588994b2653a09822c48f717d6753aa408c80354dac016135c20bd595",
+  "recognizer_weights_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "protocol": "medium,zh,beam5,temp0,fp32,no_prompt,no_previous_text",
+  "scope": "Single fixed-Chinese intelligibility check; human quality unaccepted",
+  "human_quality_accepted": false,
+  "waveform_alignment": false
+}

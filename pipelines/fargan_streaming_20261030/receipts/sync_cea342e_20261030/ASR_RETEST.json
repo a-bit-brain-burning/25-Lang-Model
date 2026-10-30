@@ -1,0 +1,41 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "id": "zh_plain",
+      "text": "你好，欢迎测试新的语音模型。",
+      "hypothesis": "你好,歡迎測試新的語音模型",
+      "normalized_exact": false,
+      "wav_sha256": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7",
+      "language": "zh"
+    },
+    {
+      "id": "zh_CZ2671",
+      "text": "请乘坐CZ2671航班。",
+      "hypothesis": "请乘坐CZ82671航班",
+      "normalized_exact": false,
+      "wav_sha256": "3dcb256c900463d0c2a15a3ee91a3b26d78906d493827ba560e2af90f7f449a8",
+      "language": "zh"
+    },
+    {
+      "id": "zh_MU5108",
+      "text": "请乘坐MU5108航班。",
+      "hypothesis": "請乘坐MU5108航班",
+      "normalized_exact": false,
+      "wav_sha256": "7ae39b98db9711d9a38710f6938e2b80608ec841edd8dbd46fd7fef41ae2fa5b",
+      "language": "zh"
+    },
+    {
+      "id": "en_digits",
+      "text": "Flight MU5108 departs at 10:30. Please check gate 12.",
+      "hypothesis": " Flight MU5108 departs at 10.30. Please check gate 12.",
+      "normalized_exact": true,
+      "wav_sha256": "003c0a37326b993f1912786987adb38a9ff0327e7c310176664dd7fc9c43c55f",
+      "language": "en"
+    }
+  ],
+  "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+  "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "scope": "Host FP16 FARGAN intelligibility check, not M55 INT8 or subjective quality acceptance",
+  "alignment_or_fitting": false
+}

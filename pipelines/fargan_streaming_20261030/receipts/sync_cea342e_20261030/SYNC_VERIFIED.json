@@ -1,0 +1,263 @@
+{
+  "status": "EXACT_CEA342E_ACOUSTIC_CONTROL_SYNC_VERIFIED",
+  "reference_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+  "source_acoustic_piece_executed_without_source_runtime_import": true,
+  "full_arrays_byte_equal": true,
+  "records": [
+    {
+      "case": "zh_plain",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "natural",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+      "metadata_sha256": "ce9e69c0a94b1dc0b142c041444f3e6759f6086ec921580220f8982c1e8e415c",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_plain_natural_conditions.npz",
+      "conditions_sha256": "e849d86a56a1881382aadef21a1b0f75535f89f7766e151229f1e38a59482230",
+      "physical_frames": 287,
+      "training_updates": 0
+    },
+    {
+      "case": "zh_plain",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "original",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+      "metadata_sha256": "ce9e69c0a94b1dc0b142c041444f3e6759f6086ec921580220f8982c1e8e415c",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_plain_original_conditions.npz",
+      "conditions_sha256": "e849d86a56a1881382aadef21a1b0f75535f89f7766e151229f1e38a59482230",
+      "physical_frames": 287,
+      "training_updates": 0
+    },
+    {
+      "case": "zh_CZ2671",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "natural",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "5457752b16abbcaa6b83a210e67e5c5261149d4919215261f6c22580741f2bee",
+      "metadata_sha256": "53a41846de1cc3ae2842db947fd8dfe9cb8e6474ad9116e65d19bfa4cbae9780",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_CZ2671_natural_conditions.npz",
+      "conditions_sha256": "3ca8186093f86c7c86a2ab6505eab2ecfad384c50877feb3ab7b4f9a193ed898",
+      "physical_frames": 285,
+      "training_updates": 0
+    },
+    {
+      "case": "zh_CZ2671",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "original",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "5457752b16abbcaa6b83a210e67e5c5261149d4919215261f6c22580741f2bee",
+      "metadata_sha256": "53a41846de1cc3ae2842db947fd8dfe9cb8e6474ad9116e65d19bfa4cbae9780",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_CZ2671_original_conditions.npz",
+      "conditions_sha256": "48f363282800b2130b9d7192466bcd8cd1e15565c2c76f9395971515624514bd",
+      "physical_frames": 293,
+      "training_updates": 0
+    },
+    {
+      "case": "zh_MU5108",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "natural",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "6f0ba4357ac40d6e0f8c41229d8b0bd6438b378c4a305c1ea7f9247f40743603",
+      "metadata_sha256": "424a16e4efc8dd51842e8378514edd104aebbe01116efb13c4d51f41d10847bf",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_MU5108_natural_conditions.npz",
+      "conditions_sha256": "e7f94cb1da2a586da08e3efe447ed5346c790572fafa6779776ea9d931d3cf85",
+      "physical_frames": 273,
+      "training_updates": 0
+    },
+    {
+      "case": "zh_MU5108",
+      "chunk": 0,
+      "language": "zh",
+      "mode": "original",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "6f0ba4357ac40d6e0f8c41229d8b0bd6438b378c4a305c1ea7f9247f40743603",
+      "metadata_sha256": "424a16e4efc8dd51842e8378514edd104aebbe01116efb13c4d51f41d10847bf",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_MU5108_original_conditions.npz",
+      "conditions_sha256": "e3f942728cc35191f80d376db987dbe83e9338bec46fc96298d10afec2ce5868",
+      "physical_frames": 281,
+      "training_updates": 0
+    },
+    {
+      "case": "en_digits",
+      "chunk": 0,
+      "language": "en",
+      "mode": "natural",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "bf9b22b62e7a10cad581bbbd3b7df1a0e16175f6bbe4ad06c58b951870f08b9a",
+      "metadata_sha256": "213d4a04710fb0f1a8d81aeded65b8263f27f48967d68724100496151ebfccf5",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/en_digits_natural_conditions.npz",
+      "conditions_sha256": "dc1ff419a7dd7b4706f9f0240917fa8f4f40f525654a4c360e6c141810c37e3e",
+      "physical_frames": 517,
+      "training_updates": 0
+    },
+    {
+      "case": "en_digits",
+      "chunk": 0,
+      "language": "en",
+      "mode": "original",
+      "exact_reference_arrays": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      },
+      "exact_reference_controls": {
+        "regular": true,
+        "U": true,
+        "C": true,
+        "first_digit": true,
+        "continuous_code_flow": true,
+        "identifier_prosody_mode": true,
+        "connected_identifier_gaps": true,
+        "identifier_pitch": true
+      },
+      "features_sha256": "bf9b22b62e7a10cad581bbbd3b7df1a0e16175f6bbe4ad06c58b951870f08b9a",
+      "metadata_sha256": "213d4a04710fb0f1a8d81aeded65b8263f27f48967d68724100496151ebfccf5",
+      "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/en_digits_original_conditions.npz",
+      "conditions_sha256": "dc1ff419a7dd7b4706f9f0240917fa8f4f40f525654a4c360e6c141810c37e3e",
+      "physical_frames": 517,
+      "training_updates": 0
+    }
+  ],
+  "model_files_unchanged": {
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/weights.safetensors": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/quantization.json": "292b1d0789ef2a3ee0cd513fd7e510512add6d91b1deb9db5fc277e2ef9060f6",
+    "/home/fomak/ffb/new25_quality_continue_20261029/baseline/int8/assets/normalization.json": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2",
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/assets/vocabulary.json": "fcc33a75816be07c082413431e0e0831f2b4f58f1c80a44dfc3ce27f2a41a742",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/vocoder_adapter_fp16.safetensors": "2f3fde31d51b16cfb03e4c9904371dd2f393cd29d8f5fc17b9e7cb2cf52332af",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/model_config.json": "f05ac90328e12f76f886f825d86c7f73bca885d96ef190f843330e2f17eef994",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/EXPORT.json": "6a5f8237c2d9a85c6c0f785d6c5175c64fdff826bece2a488fe5fd9d21075d28"
+  },
+  "source_RND_loaded": false,
+  "original_control_module_names_polluted": false,
+  "no_identifier_stream_keeps_persistent_acoustic_cursor": true,
+  "identifier_natural_waits_for_complete_corrected_acoustic_unit": true,
+  "training_updates": 0,
+  "human_quality_accepted": false
+}

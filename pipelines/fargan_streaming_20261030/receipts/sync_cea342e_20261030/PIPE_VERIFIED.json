@@ -1,0 +1,21 @@
+{
+  "status": "REAL_PIPE20MS_BEFORE_EXIT_VERIFIED",
+  "first_packet_bytes": 960,
+  "first_packet_host_seconds": 3.7130825679996633,
+  "first_packet_before_exit": true,
+  "stdout_PCM_equals_WAV": true,
+  "pipe_WAV_equals_normal_CLI": true,
+  "first_packet_measures_any_PCM_not_effective_speech": true,
+  "hardware_cycles_measured": false,
+  "command": [
+    "/home/fomak/ffb/.venv/bin/python",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/synthesize.py",
+    "--text",
+    "请乘坐MU5108航班。",
+    "--language",
+    "zh",
+    "--output",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_MU5108_pipe.wav",
+    "--pcm-stdout"
+  ]
+}

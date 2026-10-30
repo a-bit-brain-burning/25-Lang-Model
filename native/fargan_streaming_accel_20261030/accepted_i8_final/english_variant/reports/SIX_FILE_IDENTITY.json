@@ -1,0 +1,29 @@
+{
+  "status": "PASSED",
+  "files": {
+    "output.pcm": {
+      "sha256": "b29d4025c62e57fb522717bdf76700a18cda77269ae0b3925778efbb49062d6a",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "output24.pcm": {
+      "sha256": "8ad130a2d9c3c99f25d6766404f07cdea577c38948fe5b2452081b79fc2da0fb",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "condition.f32": {
+      "sha256": "42e8e7a643a2603bbb0cdf78315c7400578644af60b5fd745f61e72bdbfefc31",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "durations.u32": {
+      "sha256": "5358e595a74d6ce83c66abec2e2d1eccd6e5cd3108bb902fcb1bc853ffc455d7",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "first24.pcm": {
+      "sha256": "964fad1747f28feff82417d9089484e1ed957f31707d87fe2bd13ecf928097d9",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "fargan.f32": {
+      "sha256": "c154ea2d470fada56dc002ffbb5f5bba3cf08f38bc77f059bcfcc1f5cc40c1bf",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    }
+  }
+}

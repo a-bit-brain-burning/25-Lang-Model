@@ -1,0 +1,46 @@
+{
+  "tag": "ordinary_o3_opt4",
+  "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/build/ordinary_o3_opt4/firmware.elf",
+  "elf_sha256": "0fcce73ee360dbc3378d74dad71f0b9f842f5b3443ca1a0bb8d4d6b1096c5571",
+  "qemu": "{\"run\": 1, \"wall_seconds\": 17.72849969300023, \"exit\": 0, \"timed_out\": false, \"passed\": true}\nReport: /home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300d_20261030/reports/ordinary_o3_opt4/RESULT.json",
+  "six_file_identity": {
+    "condition.f32": {
+      "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce",
+      "integrated": true,
+      "final_native": true
+    },
+    "durations.u32": {
+      "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+      "integrated": true,
+      "final_native": true
+    },
+    "output.pcm": {
+      "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+      "integrated": true,
+      "final_native": true
+    },
+    "output24.pcm": {
+      "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28",
+      "integrated": true,
+      "final_native": true
+    },
+    "first24.pcm": {
+      "sha256": "5f4fb1d5c5229cf858155f3f90eaa8249123490f36666110c31311358d977a3a",
+      "integrated": true,
+      "final_native": true
+    },
+    "fargan.f32": {
+      "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7",
+      "integrated": true,
+      "final_native": true
+    }
+  },
+  "begin_pc": "0x1000c890",
+  "end_pc": "0x1000c88c",
+  "instruction_events": 65394236,
+  "events_vs_release_o3": -3422413,
+  "reduction_vs_release_o3": 0.04973234020738204,
+  "uncalibrated_1ipc_floor_ms": 326.97118,
+  "csv": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/roi_ordinary_o3_opt4_instruction_counts.csv",
+  "csv_sha256": "f75c52d3074b3126080d626276078efa9b79fcc78d52d4538c2f4de97b5e7ddf"
+}

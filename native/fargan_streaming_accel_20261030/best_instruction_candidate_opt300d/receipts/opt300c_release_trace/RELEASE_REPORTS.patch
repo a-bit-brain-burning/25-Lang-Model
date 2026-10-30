@@ -1,0 +1,280 @@
+--- a/src/adapter_stream.inc
++++ b/src/adapter_stream.inc
+@@ -132,14 +132,4 @@
+  return adapter_stream_head+index*ADAPTER_STREAM_OUTPUT;
+ }
+ 
+-static void adapter_stream_report(void){
+- bench_metric("adapter_fargan_frame_requests",adapter_stream_requests);
+- bench_metric("adapter_fargan_reused_frames",adapter_stream_reused_frames);
+- bench_metric("adapter_stream_head_frames",adapter_stream_head_done);
+- bench_metric("adapter_stream_ring_bytes",ADAPTER_STREAM_LAYERS*ADAPTER_STREAM_RING*ADAPTER_STREAM_CHANNELS*4);
+- bench_metric("adapter_stream_head_bytes",frames*ADAPTER_STREAM_OUTPUT*4);
+- bench_metric("adapter_stream_output_dimensions",ADAPTER_STREAM_OUTPUT);
+- for(unsigned i=0;i<ADAPTER_STREAM_LAYERS;i++){
+-  char name[80];namefmt(name,sizeof(name),"adapter_stream_layer_%u_frames",i);bench_metric(name,adapter_stream_done[i]);
+- }
+-}
++static void adapter_stream_report(void){}
+--- a/src/bench.c
++++ b/src/bench.c
+@@ -1,3 +1,4 @@
++#define TTS_BENCH_IMPLEMENTATION 1
+ #include "bench.h"
+ extern unsigned char __code_start[], __image_end[], __data_start[], __bss_end[];
+ extern unsigned char __assets_start[], __assets_end[], __arena_start[], __arena_end[];
+@@ -72,24 +73,7 @@
+     while (p < top && *p == 0xa5a5a5a5u) p++;
+     return (size_t)((const unsigned char *)top - (const unsigned char *)p);
+ }
+-void bench_memory_report(void) {
+-    size_t code = (size_t)(__image_end-__code_start);
+-    size_t data = (size_t)(__bss_end-__data_start);
+-    size_t assets = (size_t)(__assets_end-__assets_start);
+-    size_t stack = (size_t)(__stack_top-__stack_bottom);
+-    size_t written = bench_stack_written_high_water();
+-    bench_metric("image_code_rodata_and_data_initializer_bytes", code);
+-    bench_metric("static_rw_bytes", data);
+-    bench_metric("assets_qspi_rom_bytes", assets);
+-    bench_metric("arena_reserved_bytes", bench_arena_capacity());
+-    bench_metric("arena_peak_bytes", arena_peak);
+-    bench_metric("arena_failed_requests", allocation_failures);
+-    bench_metric("stack_reserved_bytes", stack);
+-    bench_metric("stack_written_high_water_bytes", written);
+-    bench_metric("reserved_resident_ram_bytes", code+data+stack+bench_arena_capacity());
+-    /* Bounds refer only to the linked bare-metal image and this arena/stack. */
+-    bench_metric("stack_bottom_guard_ok", *(volatile uint32_t *)__stack_bottom == 0xa5a5a5a5u);
+-}
++void bench_memory_report(void) {}
+ int bench_write_file(const char *name, const void *data, size_t bytes) {
+     size_t length = 0;
+     while (name[length]) length++;
+--- a/src/bench.h
++++ b/src/bench.h
+@@ -15,4 +15,14 @@
+ size_t bench_stack_written_high_water(void);
+ void bench_memory_report(void);
+ int bench_write_file(const char *name, const void *data, size_t bytes);
++/* Release-trace clients do not evaluate diagnostic metric arguments or
++ * host-clock reads. These clocks were used only for debug durations/latches;
++ * mathematical state, RNG, PCM counters and energy observers remain intact.
++ * bench.c keeps its real semihost implementation behind the implementation
++ * guard, avoiding any macro/function-definition collision. */
++#ifndef TTS_BENCH_IMPLEMENTATION
++#define bench_metric(name,value) ((void)0)
++#define bench_now() UINT64_C(0)
++#define bench_tick_frequency() UINT32_C(0)
+ #endif
++#endif
+--- a/src/bwe_stage.c
++++ b/src/bwe_stage.c
+@@ -13,30 +13,14 @@
+ extern unsigned long long bwe_act_rational_vectors,bwe_act_scalar_divisions,bwe_act_scalar_tail_elements,bwe_act_vector_operations,bwe_act_vector_loads,bwe_act_vector_stores;
+ extern unsigned long long bwe_exp_guard_vectors,bwe_exp_fast_vectors,bwe_exp_fallback_vectors,bwe_exp_scalar_elements;
+ extern unsigned long long bwe_exp_vector_arithmetic_operations,bwe_exp_guard_operations,bwe_exp_explicit_vector_loads,bwe_exp_explicit_vector_stores;
+-static void bwe_activation_report(int first){
+- const char*names[8]={"linear","sigmoid","tanh","relu","softmax","swish","exp","unused"};
+- char name[96];
+- for(unsigned i=0;i<8;i++){snprintf(name,sizeof(name),"BWE_%s_act_%s_calls",first?"first":"final",names[i]);bench_metric(name,bwe_activation_calls[i]);snprintf(name,sizeof(name),"BWE_%s_act_%s_elements",first?"first":"final",names[i]);bench_metric(name,bwe_activation_elements[i]);}
+-#define ACT_REPORT(field) snprintf(name,sizeof(name),"BWE_%s_" #field,first?"first":"final");bench_metric(name,bwe_act_##field)
+- ACT_REPORT(guard_vectors);ACT_REPORT(fallback_vectors);ACT_REPORT(fallback_elements);ACT_REPORT(rational_vectors);ACT_REPORT(scalar_divisions);ACT_REPORT(scalar_tail_elements);ACT_REPORT(vector_operations);ACT_REPORT(vector_loads);ACT_REPORT(vector_stores);
+-#undef ACT_REPORT
+-#define EXP_REPORT(field) snprintf(name,sizeof(name),"BWE_%s_exp_" #field,first?"first":"final");bench_metric(name,bwe_exp_##field)
+- EXP_REPORT(guard_vectors);EXP_REPORT(fast_vectors);EXP_REPORT(fallback_vectors);EXP_REPORT(scalar_elements);EXP_REPORT(vector_arithmetic_operations);EXP_REPORT(guard_operations);EXP_REPORT(explicit_vector_loads);EXP_REPORT(explicit_vector_stores);
+-#undef EXP_REPORT
+-}
++static void bwe_activation_report(int first){}
+ 
+ extern unsigned long long bwe_mve_vectors,bwe_scalar_macs,bwe_i8_dots,bwe_i8_inputs;
+ extern unsigned long long bwe_adaconv_mve_groups,bwe_adaconv_scalar_macs,bwe_adaconv_calls,bwe_adaconv_output4_stores;
+ 
+ extern unsigned long long bwe_adaconv_outer16_groups,bwe_adaconv_outer4_groups,bwe_adaconv_scalar_outputs;
+ extern unsigned long long bwe_adaconv_x_scalar_loads,bwe_adaconv_shared_x_loads_saved,bwe_adaconv_outer_iterations_saved;
+-static void bwe_block16_report(int first){
+-#define BLOCK16_REPORT(label,value) bench_metric(first?"BWE_first_block16_" label:"BWE_final_block16_" label,value)
+- BLOCK16_REPORT("outer16_groups",bwe_adaconv_outer16_groups);BLOCK16_REPORT("outer4_groups",bwe_adaconv_outer4_groups);
+- BLOCK16_REPORT("scalar_outputs",bwe_adaconv_scalar_outputs);BLOCK16_REPORT("x_scalar_loads",bwe_adaconv_x_scalar_loads);
+- BLOCK16_REPORT("shared_x_loads_saved",bwe_adaconv_shared_x_loads_saved);BLOCK16_REPORT("outer_iterations_saved",bwe_adaconv_outer_iterations_saved);
+-#undef BLOCK16_REPORT
+-}
++static void bwe_block16_report(int first){}
+ static OSCEModel model;
+ static silk_OSCE_BWE_struct state;
+ #ifndef FAST_BWE_FIR
+--- a/src/depthwise_exact.inc
++++ b/src/depthwise_exact.inc
+@@ -73,15 +73,4 @@
+  ((void)0);
+  ((void)0);
+ }
+-static void depthwise_report(const char*prefix){
+- char name[100];
+-#define DW_REPORT(field) namefmt(name,sizeof(name),"%s_depthwise_%s",prefix,#field);bench_metric(name,depthwise_stats.field)
+- DW_REPORT(generic_calls);DW_REPORT(adapter_calls);DW_REPORT(logical_dot1_calls_removed);
+- DW_REPORT(vector_groups);DW_REPORT(scalar_tail_outputs);DW_REPORT(vector_multiply_groups);DW_REPORT(vector_math_operations);
+- DW_REPORT(vector_loads);DW_REPORT(vector_stores);DW_REPORT(scalar_tail_taps);DW_REPORT(bias_value_reads);DW_REPORT(weight_value_reads);
+- DW_REPORT(input_frame_validity_checks);DW_REPORT(input_frame_pointers);
+- DW_REPORT(original_scalar_tap_MAC_replaced);DW_REPORT(vector_add_groups);DW_REPORT(scalar_fallback_calls);DW_REPORT(scalar_fallback_taps);
+- DW_REPORT(range_scan_calls);DW_REPORT(range_scan_vector_groups);DW_REPORT(range_scan_vector_loads);DW_REPORT(range_scan_vector_operations);
+- DW_REPORT(range_scan_reductions);DW_REPORT(range_scan_scalar_elements);
+-#undef DW_REPORT
+-}
++static void depthwise_report(const char*prefix){}
+--- a/src/fargan_stream.inc
++++ b/src/fargan_stream.inc
+@@ -40,16 +40,7 @@
+  bench_metric("FARGAN_model_RAM_zero_copy",1);bench_metric("FARGAN_model_RAM_base_address",(uintptr_t)n25_blob);
+  bench_metric("FARGAN_borrowed_model_RAM_bytes",fg_i8_borrowed_bytes);
+ }
+-static void report_fg_ram_cache(const char*prefix){
+- char name[100];
+-#define FG_CACHE_METRIC(label,value) namefmt(name,sizeof(name),"%s_%s",prefix,label);bench_metric(name,value)
+- FG_CACHE_METRIC("bytes",fg_i8_ram_bytes);FG_CACHE_METRIC("tensors",fg_i8_ram_tensors);
+- FG_CACHE_METRIC("source_ROM_copy_bytes",fg_i8_source_copy_bytes);
+- FG_CACHE_METRIC("runtime_I8_source_ROM_bytes",0);
+- FG_CACHE_METRIC("runtime_RAM_weight_bytes",fg_i8_ram_weight_reads);FG_CACHE_METRIC("runtime_RAM_scale_bytes",fg_i8_ram_scale_reads);
+- FG_CACHE_METRIC("matrix_hits",fg_i8_ram_hits);FG_CACHE_METRIC("init_host_ticks",fg_i8_ram_init_ticks);
+-#undef FG_CACHE_METRIC
+-}
++static void report_fg_ram_cache(const char*prefix){}
+ 
+ /* MT19937 algorithm: Copyright (C)1997-2002 Makoto Matsumoto and Takuji
+  * Nishimura, all rights reserved. Redistribution/use with or without changes
+@@ -110,12 +101,7 @@
+   x[i]=v< -1.f?-1.f:v>1.f?1.f:v;((void)0);
+  }
+ }
+-static void fg_noise_report(const char*prefix){
+- char key0[100];namefmt(key0,sizeof(key0),"%s_noise_twist_vector_groups",prefix);bench_metric(key0,fg_twist_vector_groups);namefmt(key0,sizeof(key0),"%s_noise_twist_scalar_iterations",prefix);bench_metric(key0,fg_twist_scalar_iterations);
+- const char*names[]={"groups","vector_loads","vector_stores","vector_operations","scalar_lanes","MT_scalar_twists","draws"};
+- uint64_t values[]={fg_noise_vector_groups,fg_noise_vector_loads,fg_noise_vector_stores,fg_noise_vector_operations,fg_noise_scalar_lanes,fg_mt_twists,fg_random_draws};
+- for(unsigned i=0;i<7;i++){char key[100];namefmt(key,sizeof(key),"%s_noise_%s",prefix,names[i]);bench_metric(key,values[i]);}
+-}
++static void fg_noise_report(const char*prefix){}
+ static const n25_tensor*fg_tryfind(const char*name){
+  for(unsigned i=0;i<N25_TENSOR_COUNT;i++)if(!strcmp(name,n25_names[i]))return n25_tensors+i;
+  return 0;
+@@ -233,10 +219,4 @@
+  }
+  fg_output_frames++;fargan_emit(pcm,160);
+ }
+-static void fargan_stream_report(void){
+- report_fg_ram_cache("total_FARGAN_I8_cache");
+- bench_metric("FARGAN_duplicate_cache_export_bytes",0);
+- if(fg_received<5||fg_output_frames!=fg_received-4)fail("FARGAN_VALID_CENTER_COUNT");
+- bench_metric("FARGAN_input_feature_frames",fg_received);bench_metric("FARGAN_output_frames",fg_output_frames);bench_metric("FARGAN_output_samples",fg_output_frames*160);
+- bench_metric("FARGAN_subframe_calls",fg_subframes);bench_metric("FARGAN_random_float_draws",fg_random_draws);bench_metric("FARGAN_source_sample_start",400);bench_metric("FARGAN_source_sample_end",fg_received*160-240);
+-}
++static void fargan_stream_report(void){if(fg_received<5||fg_output_frames!=fg_received-4)fail("FARGAN_VALID_CENTER_COUNT");}
+--- a/src/fast_math.inc
++++ b/src/fast_math.inc
+@@ -61,8 +61,4 @@
+  ((void)0);
+  return y;
+ }
+-static void fast_math_report(const char*prefix){
+- const char*names[]={"sigmoid_lut","tanh_lut","erf_lut","sigmoid_fallback","tanh_fallback","erf_fallback","tanh_saturated","erf_saturated","vector_groups","vector_gathers","vector_validation_groups","vector_validation_fallbacks","inline_invocations","fallback_calls","fast_vector_operations","validation_vector_operations","validation_reductions","table_words"};
+- uint64_t values[]={fast_sigmoid_lut,fast_tanh_lut,fast_erf_lut,fast_sigmoid_fallback,fast_tanh_fallback,fast_erf_fallback,fast_tanh_saturated,fast_erf_saturated,fast_lut_vector_groups,fast_lut_vector_gathers,fast_lut_vector_validation_groups,fast_lut_vector_validation_fallbacks,fast_lut_inline_invocations,fast_lut_fallback_calls,fast_lut_fast_vector_operations,fast_lut_validation_vector_operations,fast_lut_validation_reductions,fast_lut_table_words};
+- for(unsigned i=0;i<18;i++){char key[100];namefmt(key,sizeof(key),"%s_fast_math_%s",prefix,names[i]);bench_metric(key,values[i]);}
+-}
++static void fast_math_report(const char*prefix){}
+--- a/src/fir_fast.inc
++++ b/src/fir_fast.inc
+@@ -22,12 +22,4 @@
+  ((void)0);((void)0);((void)0);((void)0);((void)0);
+  return value;
+ }
+-static void fast_fir_report(int first){
+- if(first){
+-  bench_metric("FIR_first_mve_vectors",fir_mve_groups);bench_metric("FIR_first_vector_loads",fir_vector_loads);
+-  bench_metric("FIR_first_scalar_macs",fir_scalar_taps);bench_metric("FIR_first_reductions",fir_reductions);bench_metric("FIR_first_outputs",fir_outputs);
+- }else{
+-  bench_metric("FIR_total_mve_vectors",fir_mve_groups);bench_metric("FIR_total_vector_loads",fir_vector_loads);
+-  bench_metric("FIR_total_scalar_macs",fir_scalar_taps);bench_metric("FIR_total_reductions",fir_reductions);bench_metric("FIR_total_outputs",fir_outputs);
+- }
+-}
++static void fast_fir_report(int first){}
+--- a/src/gru_fusion.inc
++++ b/src/gru_fusion.inc
+@@ -29,8 +29,4 @@
+  for(unsigned j=0;j<width;j+=4)vst1q_f32(x+j,vmulq_f32(vld1q_f32(x+j),fast_nonlinear4(vld1q_f32(gates+j),0)));
+  unsigned groups=width/4;((void)0);((void)0);((void)0);((void)0);
+ }
+-static void fusion_report(const char*prefix){
+- const char*names[]={"fg_gru_groups","acoustic_gru_groups","glu_groups","vector_loads","vector_stores","vector_operations"};
+- uint64_t values[]={fusion_fg_gru_groups,fusion_acoustic_gru_groups,fusion_glu_groups,fusion_vector_loads,fusion_vector_stores,fusion_vector_operations};
+- for(unsigned i=0;i<6;i++){char key[100];namefmt(key,sizeof(key),"%s_fusion_%s",prefix,names[i]);bench_metric(key,values[i]);}
+-}
++static void fusion_report(const char*prefix){}
+--- a/src/identifier_control.inc
++++ b/src/identifier_control.inc
+@@ -190,11 +190,5 @@
+  if(bench_write_file("identifier_voice.f32",identifier_original_voice,frames*4)||bench_write_file("identifier_pitch_before.f32",identifier_original_logf0,frames*4)||bench_write_file("identifier_pitch_after.f32",identifier_after_logf0,frames*4)||bench_write_file("identifier_pitch_units.f32",identifier_pitch_records,identifier_unit_count*8*4))fail("IDENTIFIER_PITCH_EXPORT");
+ }
+ 
+-static void identifier_snapshot_first(void){
+- bench_metric("chain_first_decoded_acoustic_frames",decoded_frames);bench_metric("chain_first_identifier_pitch_groups",identifier_pitch_groups);bench_metric("chain_first_identifier_pitch_changed_frames",identifier_pitch_frames);bench_metric("chain_first_identifier_prepare_host_ticks",identifier_prepare_ticks);
+-}
+-static void identifier_report(void){
+- identifier_pitch_export();
+- bench_metric("identifier_lazy_group_pitch",1);bench_metric("identifier_pitch_first_request_frames",identifier_pitch_first_request);bench_metric("identifier_pitch_max_raw_ahead_frames",identifier_pitch_max_raw_ahead);
+- bench_metric("identifier_units",identifier_unit_count);bench_metric("identifier_connection_gaps",identifier_gap_count);bench_metric("identifier_first_digits",identifier_digit_count);bench_metric("identifier_U_units",identifier_u_count);bench_metric("identifier_C_units",identifier_c_count);bench_metric("identifier_pitch_groups",identifier_pitch_groups);bench_metric("identifier_pitch_changed_frames",identifier_pitch_frames);bench_metric("identifier_full_acoustic_barrier",0);bench_metric("identifier_prepare_host_ticks",identifier_prepare_ticks);bench_metric("identifier_native_text_parser",0);bench_metric("identifier_mel_offsets_applied",0);
+-}
++static void identifier_snapshot_first(void){}
++static void identifier_report(void){identifier_pitch_export();}
+--- a/src/quality.c
++++ b/src/quality.c
+@@ -58,28 +58,9 @@
+ #define erff measured_erf
+ #define tanhf measured_tanh
+ #define sqrtf measured_sqrt
+-static void report_first_costs(void){
+- depthwise_report("first");
+- report_fg_ram_cache("first_FARGAN_I8_cache");
+- report_front_i8("first_all_i8");
+- fast_math_report("first");fusion_report("first");fg_noise_report("first");
+- bench_metric("first_acoustic_gru_cache_fills",acoustic_gru_cache_fills);bench_metric("first_acoustic_gru_cache_uses",acoustic_gru_cache_uses);
+- bench_metric("first_generator_cache_hits",generator_cache_hits);bench_metric("first_generator_cache_misses",generator_cache_misses);bench_metric("first_generator_cache_filled_bytes",generator_cache_filled_bytes);bench_metric("first_generator_source_weight_read_bytes",generator_source_weight_read_bytes);
+- bench_metric("first_linear_pair_calls",linear_pair_calls);bench_metric("first_linear_single_rows",linear_single_rows);
+- bench_metric("first_gru_ih_pairs",gru_ih_pairs);bench_metric("first_gru_ih_singles",gru_ih_singles);bench_metric("first_gru_hh_frames",gru_hh_frames);
+- bench_metric("first_cost_mac",cost_mac);bench_metric("first_cost_vfma",cost_vfma);bench_metric("first_cost_vload",cost_vload);bench_metric("first_cost_iterations",cost_iterations);bench_metric("first_cost_reductions",cost_reductions);bench_metric("first_cost_scalar_mac",cost_scalar_mac);bench_metric("first_cost_pack_read",cost_pack_read);bench_metric("first_cost_pack_write",cost_pack_write);bench_metric("first_cost_dequant",cost_dequant);bench_metric("first_cost_activation_vec",cost_activation_vec);bench_metric("first_cost_activation_scalar",cost_activation_scalar);bench_metric("first_cost_norm_cells",cost_norm_cells);bench_metric("first_cost_exp",cost_exp);bench_metric("first_cost_erf",cost_erf);bench_metric("first_cost_tanh",cost_tanh);bench_metric("first_cost_sqrt",cost_sqrt);
+-}
++static void report_first_costs(void){}
+ static void identifier_snapshot_first(void);
+-void snapshot_first_active_costs(void){
+- depthwise_report("chain_first");
+- bench_metric("full_chain_first_active_including_storage_host_ticks",bench_now()-storage_boot_ticks);
+- identifier_snapshot_first();
+- report_fg_ram_cache("chain_first_FARGAN_I8_cache");
+- report_front_i8("chain_first_all_i8");
+- fast_math_report("chain_first");fusion_report("chain_first");fg_noise_report("chain_first");
+- bench_metric("chain_first_cost_mac",cost_mac);bench_metric("chain_first_cost_vload",cost_vload);bench_metric("chain_first_cost_iterations",cost_iterations);bench_metric("chain_first_cost_vfma",cost_vfma);
+- bench_metric("chain_first_cost_reductions",cost_reductions);bench_metric("chain_first_cost_scalar_mac",cost_scalar_mac);bench_metric("chain_first_cost_pack_read",cost_pack_read);bench_metric("chain_first_cost_pack_write",cost_pack_write);bench_metric("chain_first_cost_dequant",cost_dequant);bench_metric("chain_first_cost_activation_vec",cost_activation_vec);bench_metric("chain_first_cost_activation_scalar",cost_activation_scalar);bench_metric("chain_first_cost_norm_cells",cost_norm_cells);bench_metric("chain_first_cost_exp",cost_exp);bench_metric("chain_first_cost_erf",cost_erf);bench_metric("chain_first_cost_tanh",cost_tanh);bench_metric("chain_first_cost_sqrt",cost_sqrt);
+-}
++__attribute__((noinline,used)) void snapshot_first_active_costs(void){__asm__ volatile("" ::: "memory");}
+ static void namefmt(char*out,size_t cap,const char*fmt,...){
+  va_list args;va_start(args,fmt);size_t n=0;
+  while(*fmt&&n+1<cap){
+@@ -89,21 +70,7 @@
+   fmt++;
+  }out[n]=0;va_end(args);
+ }
+-static void report_front_i8(const char*prefix){
+- char name[100];
+-#define PAIR_MATRIX_METRIC(field) namefmt(name,sizeof(name),"%s_pair_matrix_%s",prefix,#field);bench_metric(name,fast_pair_matrix_stats.field)
+- PAIR_MATRIX_METRIC(calls);PAIR_MATRIX_METRIC(tiles);PAIR_MATRIX_METRIC(context_load_words);PAIR_MATRIX_METRIC(context_store_words);PAIR_MATRIX_METRIC(context_initialization_words);PAIR_MATRIX_METRIC(direct_register_moves);PAIR_MATRIX_METRIC(extra_vector_operations);PAIR_MATRIX_METRIC(outer_scalar_instructions);
+-#undef PAIR_MATRIX_METRIC
+-
+-#define I8_METRIC(field) namefmt(name,sizeof(name),"%s_%s",prefix,#field);bench_metric(name,fast_i8_stats.field)
+- namefmt(name,sizeof(name),"%s_pair_matrix_pairs",prefix);bench_metric(name,fast_i8_pair_stats.matrix_pairs);
+- namefmt(name,sizeof(name),"%s_pair_helper_calls",prefix);bench_metric(name,fast_i8_pair_stats.helper_calls);
+- namefmt(name,sizeof(name),"%s_pair_block_iterations",prefix);bench_metric(name,fast_i8_pair_stats.block_iterations);
+- namefmt(name,sizeof(name),"%s_pair_zero_rows",prefix);bench_metric(name,fast_i8_pair_stats.zero_rows);
+- I8_METRIC(no_clamp_groups);I8_METRIC(no_clamp_rows); I8_METRIC(matrix_asm_calls);I8_METRIC(matrix_asm_tiles);I8_METRIC(matrix_context_word_loads);I8_METRIC(matrix_context_word_stores);I8_METRIC(matrix_context_initialization_words);I8_METRIC(matrix_direct_register_moves);I8_METRIC(matrix_extra_vector_operations); I8_METRIC(packed_control_iterations);I8_METRIC(packed_tile_calls);I8_METRIC(activation_padding_bytes);I8_METRIC(asm_saved_words);I8_METRIC(asm_restored_words);I8_METRIC(asm_result_store_words);
+- I8_METRIC(tile8_full_iterations);I8_METRIC(tile8_tail_iterations);I8_METRIC(epilogue_vector_groups);I8_METRIC(epilogue_vector_loads);I8_METRIC(epilogue_vector_stores);I8_METRIC(epilogue_vector_operations);I8_METRIC(epilogue_scalar_outputs);I8_METRIC(absmax_vector_groups);I8_METRIC(absmax_reductions);I8_METRIC(absmax_scalar_tail);I8_METRIC(loop_iterations);I8_METRIC(matrix_calls);I8_METRIC(quantized_activation_elements);I8_METRIC(integer_mac);I8_METRIC(logical_mac);I8_METRIC(dot_instructions);I8_METRIC(weight_vector_loads);I8_METRIC(activation_vector_loads);I8_METRIC(quantized_rows);I8_METRIC(output_elements);I8_METRIC(tail_vectors);I8_METRIC(zero_rows);
+-#undef I8_METRIC
+-}
++static void report_front_i8(const char*prefix){}
+ static uint64_t generator_ticks,adapter_ticks,inference_start_ticks,first_pcm_ticks;
+ static unsigned stream_part,stream_samples;
+ static unsigned frames,mel_frames;

@@ -1,0 +1,23 @@
+{
+  "snapshot_first_active_costs": [
+    [
+      "10005a3c",
+      "snapshot_first_active_costs"
+    ]
+  ],
+  "tensor_views_prepare": [
+    [
+      "10005a40",
+      "tensor_views_prepare"
+    ]
+  ],
+  "main": [
+    [
+      "10005be8",
+      "main"
+    ]
+  ],
+  "bench_metric": [],
+  "bench_now": [],
+  "bench_tick_frequency": []
+}

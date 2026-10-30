@@ -1,0 +1,37 @@
+{
+  "commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+  "source": "/home/fomak/ffb/new25_clarity_repair_20261030/repo/pipelines/prosody1000_rndvoc_opus24",
+  "identifier_modules": {
+    "identifier_first_digit.py": {
+      "source_sha256": "cc7c19dc694c24d24f7e94ad72af0d776925a9cef118a4fb65ba2d35c2615291",
+      "local_sha256": "69eb74d365fa097cf1343de87171421076696488bb76e4b4b4a85458b19bfcdb",
+      "only_change": "package-relative identifier imports"
+    },
+    "identifier_light_u_long_c.py": {
+      "source_sha256": "d2350f73a5805429edd53b4a1d5959f19c9263eff6e5caf8b1639437e9a4a8f0",
+      "local_sha256": "b9e2186088944c60e4cabfc213c5d4be89b0e06d5995ee991c5fc60d9bb118e4",
+      "only_change": "package-relative identifier imports"
+    },
+    "identifier_prosody.py": {
+      "source_sha256": "9479be4cafa79420141bdbdc0dc6acbc9b640951a0fb5f6b1f389902c1fd371b",
+      "local_sha256": "9479be4cafa79420141bdbdc0dc6acbc9b640951a0fb5f6b1f389902c1fd371b",
+      "only_change": "package-relative identifier imports"
+    },
+    "identifier_rhythm.py": {
+      "source_sha256": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77",
+      "local_sha256": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77",
+      "only_change": "package-relative identifier imports"
+    },
+    "identifier_u_natural_control.py": {
+      "source_sha256": "ef4224a598cc93c15ba3a5e281b5d40ca926f50db0af19c23fd0334bb1c8ad9d",
+      "local_sha256": "abb6853648659a7a7bb343680db2a983853a812b40d81e6664943911c87d65ff",
+      "only_change": "package-relative identifier imports"
+    }
+  },
+  "extracted_runtime_functions": [
+    "install_flow",
+    "join_phrases"
+  ],
+  "source_runtime_sha256": "ca76dc2f25f7c39e32af35a7140a890ddf533939d7f0252fcf95fe48f12e9cd8",
+  "models_loaded_from_source_runtime": false
+}

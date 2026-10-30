@@ -1,0 +1,358 @@
+{
+  "status": "INCOMPLETE_UNCALIBRATED_OPERATION_SENSITIVITY",
+  "result": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/reports/i8_final/RESULT.json",
+  "result_sha256": "bc2acc1bd244391606c0a0d7efaadef9e1ab01d0d7d437a3798cd8338e51b60f",
+  "elf_sha256": "87e096d0ecde9cdb56125ec4458055f4086d60339da1fd8938262000a0b3e2c1",
+  "kernel_source": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/src/fast_i8_dense.h",
+  "kernel_source_sha256": "7c6ef9db2147c39ead32e39936d23ae085f6e63d212067f2a03cc1011d4c6cf2",
+  "kernel_version": "vector_RNE_v2_with_I32_conversion_fast_path",
+  "activation_bits": 8,
+  "clock_hz": 200000000,
+  "first_effective_audio_offset_seconds": 0.17,
+  "offset_not_added_to_compute_subtotal": true,
+  "scenarios": [
+    {
+      "name": "fast_TCM_SRAM_good_overlap",
+      "known_and_budgeted_subtotal_cycles": 94041174.0,
+      "known_and_budgeted_subtotal_seconds": 0.47020587,
+      "ratio_to_60Mcycle_budget": 1.5673529,
+      "subtotal_exceeds_60Mcycles": true,
+      "component_cycles": {
+        "remaining_FP32": 5329389.0,
+        "integer_dense": 63290392,
+        "nonlinear_LUT": 8706433,
+        "BWE_measured_dense": 6222480.0,
+        "BWE_legacy_remaining_allowance": 10000000.0,
+        "FP32_MVE_FIR": 492480
+      },
+      "bottleneck_ranking": [
+        {
+          "component": "integer_dense",
+          "cycles": 63290392,
+          "seconds": 0.31645196,
+          "share": 0.6730072510579249
+        },
+        {
+          "component": "BWE_legacy_remaining_allowance",
+          "cycles": 10000000.0,
+          "seconds": 0.05,
+          "share": 0.10633640111723829
+        },
+        {
+          "component": "nonlinear_LUT",
+          "cycles": 8706433,
+          "seconds": 0.043532165,
+          "share": 0.09258107517883603
+        },
+        {
+          "component": "BWE_measured_dense",
+          "cycles": 6222480.0,
+          "seconds": 0.0311124,
+          "share": 0.06616761292239928
+        },
+        {
+          "component": "remaining_FP32",
+          "cycles": 5329389.0,
+          "seconds": 0.026646945,
+          "share": 0.056670804641379746
+        },
+        {
+          "component": "FP32_MVE_FIR",
+          "cycles": 492480,
+          "seconds": 0.0024624,
+          "share": 0.0052368550822217514
+        }
+      ],
+      "integer_breakdown": {
+        "cycles": 63290392,
+        "dot_and_load_kernel_cycles": 45566536,
+        "dot_arithmetic_cycles": 22779368,
+        "vector_load_cycles": 28476160,
+        "pair_loop_control_cycles": 17090376,
+        "activation_maximum_scan_cycles": 4452246,
+        "activation_quantization_and_split_cycles": 1997904,
+        "matrix_row_setup_and_scale_cycles": 98304,
+        "output_recompose_conversion_scale_bias_store_cycles": 11175402,
+        "exact_output_tile_block_iterations": 2848396,
+        "loop_count_source": "measured_loop_iterations",
+        "quant_vector_groups_budget": 183207,
+        "quant_scalar_tail_elements_budget": 9213,
+        "quant_tail_count_is_measured": false,
+        "activation_component_lanes": 1,
+        "measured_dot_count_used_without_extra_lane_multiplier": true,
+        "padded_integer_mac": 182234944,
+        "logical_mac": 181916928,
+        "zero_rows_not_discounted": 4,
+        "rare_i64_conversion_extra_cycles": null
+      },
+      "LUT_breakdown": {
+        "cycles": 8706433,
+        "scalar_lookup_lanes": 185086,
+        "vector_groups": 89124,
+        "scalar_lookup_cycles": 4071892,
+        "vector_lookup_cycles": 4634448,
+        "vector_arithmetic_and_epilogue_cycles": 2851968,
+        "vector_gather_and_memory_cycles": 1247736,
+        "saturation_or_fallback_dispatch_cycles": 93,
+        "fallback_libm_cost_already_in_remaining_FP32_library_counters": true
+      },
+      "FIR_breakdown": {
+        "cycles": 492480,
+        "vector_arithmetic_cycles": 182400,
+        "measured_vector_load_cycles": 273600,
+        "loop_control_cycles": 91200,
+        "scalar_tail_cycles": 63840,
+        "horizontal_reduction_cycles": 27360,
+        "output_housekeeping_cycles": 36480,
+        "includes_index_coefficient_and_history_vector_loads": true
+      },
+      "remaining_FP32_breakdown": {
+        "arithmetic_cycles": 61920,
+        "load_store_cycles": 73933.0,
+        "control_and_scalar_cycles": 5232408,
+        "counted_math_library_cycles": 23048
+      },
+      "coefficients": {
+        "overlap": true,
+        "vector_dot": 2,
+        "vector_load": 2,
+        "vector_operation": 2,
+        "integer_pair_block_control": 6,
+        "integer_row_setup": 32,
+        "activation_max_scan_per_element": 6,
+        "quant_group_control": 2,
+        "quant_scalar_tail_i8": 18,
+        "quant_scalar_tail_i16_extra": 10,
+        "output_conversion_scale_bias_store_i8": 14,
+        "output_i16_recompose_extra": 8,
+        "lut_scalar_arithmetic_control": 18,
+        "lut_scalar_table_load": 2,
+        "lut_vector_operation_budget": 12,
+        "lut_vector_epilogue_ops_budget": 4,
+        "lut_gather": 4,
+        "lut_group_other_memory": 6,
+        "lut_group_validation_control": 20,
+        "lut_tail_or_fallback_dispatch": 3,
+        "FIR_loop_control_per_group": 2,
+        "FIR_scalar_tail": 14,
+        "FIR_horizontal_reduction": 6,
+        "FIR_output_housekeeping": 8
+      }
+    },
+    {
+      "name": "fast_memory_limited_overlap",
+      "known_and_budgeted_subtotal_cycles": 195359644.0,
+      "known_and_budgeted_subtotal_seconds": 0.97679822,
+      "ratio_to_60Mcycle_budget": 3.2559940666666667,
+      "subtotal_exceeds_60Mcycles": true,
+      "component_cycles": {
+        "remaining_FP32": 12666642.0,
+        "integer_dense": 120566730,
+        "nonlinear_LUT": 17056432,
+        "BWE_measured_dense": 12075760.0,
+        "BWE_legacy_remaining_allowance": 32000000.0,
+        "FP32_MVE_FIR": 994080
+      },
+      "bottleneck_ranking": [
+        {
+          "component": "integer_dense",
+          "cycles": 120566730,
+          "seconds": 0.60283365,
+          "share": 0.6171526909621109
+        },
+        {
+          "component": "BWE_legacy_remaining_allowance",
+          "cycles": 32000000.0,
+          "seconds": 0.16,
+          "share": 0.1638004622899497
+        },
+        {
+          "component": "nonlinear_LUT",
+          "cycles": 17056432,
+          "seconds": 0.08528216,
+          "share": 0.0873078577067841
+        },
+        {
+          "component": "remaining_FP32",
+          "cycles": 12666642.0,
+          "seconds": 0.06333321,
+          "share": 0.06483755672691541
+        },
+        {
+          "component": "BWE_measured_dense",
+          "cycles": 12075760.0,
+          "seconds": 0.0603788,
+          "share": 0.061812970953202595
+        },
+        {
+          "component": "FP32_MVE_FIR",
+          "cycles": 994080,
+          "seconds": 0.0049704,
+          "share": 0.005088461361037288
+        }
+      ],
+      "integer_breakdown": {
+        "cycles": 120566730,
+        "dot_and_load_kernel_cycles": 85436280,
+        "dot_arithmetic_cycles": 22779368,
+        "vector_load_cycles": 28476160,
+        "pair_loop_control_cycles": 34180752,
+        "activation_maximum_scan_cycles": 8904492,
+        "activation_quantization_and_split_cycles": 3629394,
+        "matrix_row_setup_and_scale_cycles": 245760,
+        "output_recompose_conversion_scale_bias_store_cycles": 22350804,
+        "exact_output_tile_block_iterations": 2848396,
+        "loop_count_source": "measured_loop_iterations",
+        "quant_vector_groups_budget": 183207,
+        "quant_scalar_tail_elements_budget": 9213,
+        "quant_tail_count_is_measured": false,
+        "activation_component_lanes": 1,
+        "measured_dot_count_used_without_extra_lane_multiplier": true,
+        "padded_integer_mac": 182234944,
+        "logical_mac": 181916928,
+        "zero_rows_not_discounted": 4,
+        "rare_i64_conversion_extra_cycles": null
+      },
+      "LUT_breakdown": {
+        "cycles": 17056432,
+        "scalar_lookup_lanes": 185086,
+        "vector_groups": 89124,
+        "scalar_lookup_cycles": 8143784,
+        "vector_lookup_cycles": 8912400,
+        "vector_arithmetic_and_epilogue_cycles": 2851968,
+        "vector_gather_and_memory_cycles": 2495472,
+        "saturation_or_fallback_dispatch_cycles": 248,
+        "fallback_libm_cost_already_in_remaining_FP32_library_counters": true
+      },
+      "FIR_breakdown": {
+        "cycles": 994080,
+        "vector_arithmetic_cycles": 182400,
+        "measured_vector_load_cycles": 273600,
+        "loop_control_cycles": 273600,
+        "scalar_tail_cycles": 136800,
+        "horizontal_reduction_cycles": 54720,
+        "output_housekeeping_cycles": 72960,
+        "includes_index_coefficient_and_history_vector_loads": true
+      },
+      "remaining_FP32_breakdown": {
+        "arithmetic_cycles": 61920,
+        "load_store_cycles": 82954.0,
+        "control_and_scalar_cycles": 12475920,
+        "counted_math_library_cycles": 45848
+      },
+      "coefficients": {
+        "overlap": false,
+        "vector_dot": 2,
+        "vector_load": 2,
+        "vector_operation": 2,
+        "integer_pair_block_control": 12,
+        "integer_row_setup": 80,
+        "activation_max_scan_per_element": 12,
+        "quant_group_control": 6,
+        "quant_scalar_tail_i8": 36,
+        "quant_scalar_tail_i16_extra": 20,
+        "output_conversion_scale_bias_store_i8": 28,
+        "output_i16_recompose_extra": 20,
+        "lut_scalar_arithmetic_control": 36,
+        "lut_scalar_table_load": 4,
+        "lut_vector_operation_budget": 12,
+        "lut_vector_epilogue_ops_budget": 4,
+        "lut_gather": 8,
+        "lut_group_other_memory": 12,
+        "lut_group_validation_control": 40,
+        "lut_tail_or_fallback_dispatch": 8,
+        "FIR_loop_control_per_group": 6,
+        "FIR_scalar_tail": 30,
+        "FIR_horizontal_reduction": 12,
+        "FIR_output_housekeeping": 16
+      }
+    }
+  ],
+  "actual_snapshot": {
+    "integer": {
+      "matrix_calls": 3072,
+      "quantized_activation_elements": 742041,
+      "integer_mac": 182234944,
+      "logical_mac": 181916928,
+      "dot_instructions": 11389684,
+      "weight_vector_loads": 11389684,
+      "activation_vector_loads": 2848396,
+      "quantized_rows": 3072,
+      "output_elements": 798243,
+      "tail_vectors": 36416,
+      "zero_rows": 4,
+      "loop_iterations": 2848396
+    },
+    "LUT": {
+      "sigmoid_lut": 315373,
+      "tanh_lut": 81060,
+      "erf_lut": 145149,
+      "sigmoid_fallback": 0,
+      "tanh_fallback": 0,
+      "erf_fallback": 0,
+      "tanh_saturated": 28,
+      "erf_saturated": 3,
+      "vector_groups": 89124,
+      "vector_gathers": 178248
+    },
+    "FIR": {
+      "mve_vectors": 45600,
+      "vector_loads": 136800,
+      "scalar_macs": 4560,
+      "reductions": 4560,
+      "outputs": 4560
+    },
+    "remaining_FP32": {
+      "chain_first_cost_mac": 751776,
+      "chain_first_cost_vload": 32016,
+      "chain_first_cost_iterations": 8752,
+      "chain_first_cost_vfma": 30520,
+      "chain_first_cost_reductions": 414516,
+      "chain_first_cost_scalar_mac": 629696,
+      "chain_first_cost_pack_read": 35712,
+      "chain_first_cost_pack_write": 36456,
+      "chain_first_cost_dequant": 220,
+      "chain_first_cost_activation_vec": 0,
+      "chain_first_cost_activation_scalar": 0,
+      "chain_first_cost_norm_cells": 122368,
+      "chain_first_cost_exp": 114,
+      "chain_first_cost_erf": 0,
+      "chain_first_cost_tanh": 0,
+      "chain_first_cost_sqrt": 728
+    },
+    "BWE": {
+      "BWE_first_mve_vectors": 718880,
+      "BWE_first_adaconv_mve_groups": 1152000,
+      "BWE_first_adaconv_scalar_macs": 0,
+      "BWE_first_adaconv_calls": 1200,
+      "BWE_first_adaconv_output4_stores": 36000,
+      "BWE_first_scalar_macs": 35840,
+      "BWE_first_i8_dots": 599040,
+      "BWE_first_i8_inputs": 56320
+    }
+  },
+  "missing_or_budgeted_scope": [
+    "FARGAN MT19937/noise, recurrent state copies and FP64 de-emphasis are not fully counted.",
+    "FP16 initialization/weight expansion, weight/name lookup and uninstrumented scalar bookkeeping remain incomplete.",
+    "Exact vector-quantizer group/tail counts are unavailable: use the maximum possible tail element count consistent with measured elements/rows, without charging those elements again as vector groups.",
+    "Zero-row input/output dimensions are unavailable; measured zero rows are reported but their quantization/output budget is not discounted.",
+    "Actual rare I64-to-float fallback count is unavailable; output budget covers the v2 I32 fast path, fallback cost remains unknown.",
+    "LUT counts do not separate all caller epilogues; a four-vector-operation allowance per vector group is explicit.",
+    "BWE adaptive filtering/features/nonlinear overhead retains its historical broad allowance; measured adaconv counters are not charged again.",
+    "FIR clock/PCM quantizer scalar work is only partly covered by an output housekeeping allowance.",
+    "Physical external-memory/cache/bus waits, dynamic text frontend, OS/audio transport and scheduling are excluded.",
+    "Kernel counters describe explicit vector loads; compiler-generated register spills are not separately counted.",
+    "Instrumentation/semihost-file overhead is excluded. QEMU wall time is never used to determine cycles."
+  ],
+  "unknown_extra_cycles": null,
+  "old_FP32_coefficients_unchanged": true,
+  "old_BWE_coefficients_and_broad_allowance_unchanged": true,
+  "inherited_coefficient_source": "/home/fomak/ffb/m55_firstspeech_packed_20261030/analyze.py",
+  "inherited_coefficient_source_sha256": "b0ae0135258b35b66c55f62df4d10ec1c63e2277e61f797d3be79a2ad8b6cb36",
+  "new_coefficients_are_uncalibrated": true,
+  "coefficients_fitted_to_target": false,
+  "guaranteed_bounds": false,
+  "QEMU_wall_time_scaling_used": false,
+  "complete_end_to_end_estimate": false,
+  "hardware_300ms_accepted": false
+}

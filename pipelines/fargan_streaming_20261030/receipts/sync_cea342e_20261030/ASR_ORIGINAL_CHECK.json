@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "id": "zh_CZ2671_original",
+      "text": "请乘坐CZ2671航班。",
+      "hypothesis": "请乘坐CZ82671航班",
+      "normalized_exact": false,
+      "wav_sha256": "ed207e52565c3c8e287f09b1244620c795107aad950e34259724e330862efef9",
+      "language": "zh"
+    },
+    {
+      "id": "zh_MU5108_original",
+      "text": "请乘坐MU5108航班。",
+      "hypothesis": "請乘坐MU5108航班",
+      "normalized_exact": false,
+      "wav_sha256": "16cbc6b78b5a62e104c54400b48125dd2f61738e64fbac5464757de19df11dac",
+      "language": "zh"
+    }
+  ],
+  "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+  "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "scope": "Host FP16 FARGAN intelligibility check, not M55 INT8 or subjective quality acceptance",
+  "alignment_or_fitting": false
+}

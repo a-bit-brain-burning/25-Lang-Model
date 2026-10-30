@@ -1,0 +1,23 @@
+/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/build/i8_final/firmware.elf  :
+section              size         addr
+.vectors               64    268435456
+.text              167280    268435520
+.ARM.exidx              8    268602800
+.data                1344    805306368
+.bss                49840    805307712
+.stack             131072    805699584
+.assets           5157984    939524096
+.arena            3500000   1610612736
+.ARM.attributes        58            0
+.debug_info         48240            0
+.debug_abbrev       15880            0
+.debug_loclists     22002            0
+.debug_aranges       1472            0
+.debug_rnglists      1049            0
+.debug_line         29494            0
+.debug_str           7235            0
+.debug_frame         2988            0
+.debug_line_str       168            0
+Total             9136178
+
+

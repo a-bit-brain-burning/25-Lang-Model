@@ -1,0 +1,52 @@
+{
+  "status": "BRANCH_SNAPSHOT_COMPLETE_300MS_AND_DOUBLE10MB_UNMET",
+  "snapshot_local": "2026-10-30T16:24:00-07:00",
+  "snapshot_utc": "2026-10-30T23:24:00Z",
+  "branch_purpose": "Host FARGAN streaming inference plus M55 native acceleration handoff",
+  "training_updates": 0,
+  "host_streaming": {
+    "runtime_streaming": true,
+    "unit_tests_passed": 29,
+    "optimization_pcm_byte_identical": true,
+    "stream_offline_pcm16_max_lsb": 1,
+    "stream_offline_pcm16_rms_lsb": 0.0623,
+    "frontend_sync_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "hardware_or_m55_claim": false
+  },
+  "native_accepted_i8_final": {
+    "elf_zh_sha256": "87e096d0ecde9cdb56125ec4458055f4086d60339da1fd8938262000a0b3e2c1",
+    "elf_en_sha256": "dd8370e2e95f5aa57f172cc82d86c4a77e0dc0e8f10edcc27d1ea6ac857c90e9",
+    "qemu_first_active_pcm24_seconds": 2.260072977,
+    "qemu_baseline_first_active_pcm24_seconds": 3.650699934,
+    "first_active_reduction_percent": 38.09,
+    "qemu_total_seconds": 21.569267013,
+    "backend_rom_bytes": 5326688,
+    "reserved_resident_ram_bytes": 3850960,
+    "arena_peak_bytes": 1768720,
+    "stack_high_water_bytes": 109568,
+    "user_quantized_quality_accepted": true,
+    "human_quality_full_scope_accepted": false
+  },
+  "native_best_instruction_candidate": {
+    "tag": "opt300d/ordinary_o3_opt10",
+    "adopted_as_production_pointer": false,
+    "finalized_optimization_round": false,
+    "elf_sha256": "6e4f58502ca958fd65f1a151b275b9ae9acc7cc9188d77188a3d0c731625f5c1",
+    "instruction_events": 62678844,
+    "release_o3_instruction_events": 68816649,
+    "reduction_percent": 8.919,
+    "uncalibrated_1ipc_floor_ms": 313.39422,
+    "warm_roi_events": 60661130,
+    "warm_roi_1ipc_ms": 303.306,
+    "six_outputs_byte_identical_to_accepted_baseline": true,
+    "target_300ms_reached": false
+  },
+  "not_verified": [
+    "calibrated_200MHz_300ms",
+    "complete_system_double_10MB",
+    "complete_native_25_language_frontend",
+    "arbitrary_long_text",
+    "human_quality_full_scope"
+  ],
+  "pending_processes": []
+}

@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_OPTIMIZATION_ROUND_TARGET_UNMET",
+  "updated_utc": "2026-10-30T18:20:00.800869+00:00",
+  "result": "/home/fomak/ffb/m55_fargan_stream_20261030/acceleration_20261030/FINAL_RESULTS.json",
+  "candidate": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/build/i8_final/firmware.elf",
+  "listening_index": "/mnt/d/newtts/fargan_m55_integer_opt_20261030/index.html",
+  "training_updates": 0,
+  "hardware_300ms_verified": false,
+  "complete_system_double10MB_verified": false,
+  "pending_processes": []
+}

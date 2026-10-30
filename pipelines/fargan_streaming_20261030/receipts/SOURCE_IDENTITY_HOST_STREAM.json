@@ -1,0 +1,24 @@
+{
+  "source_files_sha256": {
+    "/home/fomak/ffb/m55_fargan_stream_20261030/runtime.py": "d14aa1080709c56363077aeb09ffe9d88451e6be6f163f688ca207e24bf24404",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/synthesize.py": "a989994644e3c8f4f723212f3b7501d96363c1ad7884059e1902ad05430cf25f",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/acoustic_cursor.py": "0eb7671714482dbde197e74cd202f11fa051deadace01d5aab74d2763821ee1b",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/adapter_stream.py": "e0af2eea93f6549026d1957c4066046bc194ad1f044ef05d866f57412112250c",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/adapter.py": "0abda160440590cf71943494905ba677714099be6c82669fea22a412d300d77a",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/streaming_core.py": "232f58e8e5c4e3f46fe546560ddf38a124c6380342833b83c536cde6a1156ed5",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/inference.py": "d82cd54f5cda0a948ca4cecde5b608c1b2d211cd7210c1981a75861553aef9e9",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/__init__.py": "700cad1f0791e2f32fb6bae79dd0e5af9938d66bd019797dfba458f379a96bf9",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/new25_fargan/inference_optim.py": "4aa5317170f14ff2108ccbf885e1a969bf0ce44047dff9e231c58d376cf21881"
+  },
+  "model_files_sha256": {
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/weights.safetensors": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/quantization.json": "292b1d0789ef2a3ee0cd513fd7e510512add6d91b1deb9db5fc277e2ef9060f6",
+    "/home/fomak/ffb/new25_quality_continue_20261029/baseline/int8/assets/normalization.json": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2",
+    "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/assets/vocabulary.json": "fcc33a75816be07c082413431e0e0831f2b4f58f1c80a44dfc3ce27f2a41a742",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/vocoder_adapter_fp16.safetensors": "2f3fde31d51b16cfb03e4c9904371dd2f393cd29d8f5fc17b9e7cb2cf52332af",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/model_config.json": "f05ac90328e12f76f886f825d86c7f73bca885d96ef190f843330e2f17eef994",
+    "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/EXPORT.json": "6a5f8237c2d9a85c6c0f785d6c5175c64fdff826bece2a488fe5fd9d21075d28"
+  },
+  "weights_modified": false,
+  "training_updates": 0
+}

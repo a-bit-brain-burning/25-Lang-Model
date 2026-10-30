@@ -1,0 +1,728 @@
+{
+  "status": "PASSED",
+  "commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+  "fresh_plan_cases": 34,
+  "languages": 25,
+  "all_arrays_byte_identical_to_cea_regression": true,
+  "rows": [
+    {
+      "id": "smoke_bg",
+      "language": "bg",
+      "text": "Здравей, това е тест на гласа.",
+      "segments": 1,
+      "phones": [
+        30
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "e69f2e203d5924390c5d8f5d.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_cs",
+      "language": "cs",
+      "text": "Ahoj, toto je hlasový test.",
+      "segments": 1,
+      "phones": [
+        27
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "7ed247713251d8d54b1f2f0e.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_da",
+      "language": "da",
+      "text": "Dette er en test af stemmen.",
+      "segments": 1,
+      "phones": [
+        28
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "89bfb8dbe660d57da879dc4e.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_de",
+      "language": "de",
+      "text": "Hallo, dies ist ein Test der Stimme.",
+      "segments": 1,
+      "phones": [
+        32
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "9de56195d57adc32fcb98904.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_el",
+      "language": "el",
+      "text": "Γεια σας, αυτή είναι μια δοκιμή φωνής.",
+      "segments": 1,
+      "phones": [
+        34
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "4017254c4ba55061a399e47c.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_en",
+      "language": "en",
+      "text": "Hello, this is a test of the new voice model.",
+      "segments": 1,
+      "phones": [
+        39
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "1f17b2e2fc5e97d21aa46a7d.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_es",
+      "language": "es",
+      "text": "Hola, esta es una prueba de voz.",
+      "segments": 1,
+      "phones": [
+        31
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "b243856842830b57a33e7302.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_et",
+      "language": "et",
+      "text": "Tere, see on hääle test.",
+      "segments": 1,
+      "phones": [
+        22
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "468a3ab4bf77cbc60337defa.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_fi",
+      "language": "fi",
+      "text": "Hei, tämä on puheen testi.",
+      "segments": 1,
+      "phones": [
+        24
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "a5adcac009670df931a6667e.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_fr",
+      "language": "fr",
+      "text": "Bonjour, ceci est un test de la voix.",
+      "segments": 1,
+      "phones": [
+        31
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "c557ecd6f5d7c491428e10eb.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_hr",
+      "language": "hr",
+      "text": "Pozdrav, ovo je test glasa.",
+      "segments": 1,
+      "phones": [
+        27
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "41b6a140a13697942f7a0cd7.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_hu",
+      "language": "hu",
+      "text": "Szia, ez egy hangteszt.",
+      "segments": 1,
+      "phones": [
+        20
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "92127b2371f258a80976ab99.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_it",
+      "language": "it",
+      "text": "Ciao, questa è una prova della voce.",
+      "segments": 1,
+      "phones": [
+        34
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "6e2f4e704057e24c6652919f.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_lt",
+      "language": "lt",
+      "text": "Labas, tai yra balso testas.",
+      "segments": 1,
+      "phones": [
+        27
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "80fcd56f2f73edf10eeca1f8.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_lv",
+      "language": "lv",
+      "text": "Sveiki, šis ir balss tests.",
+      "segments": 1,
+      "phones": [
+        25
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "e0c5130f3485d750c08412a8.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_nl",
+      "language": "nl",
+      "text": "Hallo, dit is een test van de stem.",
+      "segments": 1,
+      "phones": [
+        33
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "d89b097bd8ee7ae335f5b9a3.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_no",
+      "language": "no",
+      "text": "Hei, dette er en test av stemmen.",
+      "segments": 1,
+      "phones": [
+        31
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "6fdc885d0e2700f7507ff6a3.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_pl",
+      "language": "pl",
+      "text": "Dzień dobry, to jest test głosu.",
+      "segments": 1,
+      "phones": [
+        30
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "44ad57819165cd4f6f31c8bb.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_pt",
+      "language": "pt",
+      "text": "Olá, este é um teste de voz.",
+      "segments": 1,
+      "phones": [
+        27
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "89cc34f07f4f5b310f6c8e44.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_ro",
+      "language": "ro",
+      "text": "Salut, acesta este un test de voce.",
+      "segments": 1,
+      "phones": [
+        36
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "2e4f21a354fb922d4764c55c.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_sk",
+      "language": "sk",
+      "text": "Ahoj, toto je skúška hlasu.",
+      "segments": 1,
+      "phones": [
+        27
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "a0520abe42a0646826fda868.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_sl",
+      "language": "sl",
+      "text": "Pozdravljeni, to je preizkus glasu.",
+      "segments": 1,
+      "phones": [
+        35
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "f67ee376cacc643ddc479327.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_sv",
+      "language": "sv",
+      "text": "Hej, det här är ett test av rösten.",
+      "segments": 1,
+      "phones": [
+        34
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "45546379710f6181ac01b7e1.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_tr",
+      "language": "tr",
+      "text": "Merhaba, bu bir ses testidir.",
+      "segments": 1,
+      "phones": [
+        29
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "e91714a39f2d52126e665f90.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "smoke_zh",
+      "language": "zh",
+      "text": "你好，欢迎测试新的语音模型。",
+      "segments": 1,
+      "phones": [
+        34
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "42bd8645b7a0d3bbc25a26c5.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "flight_cz",
+      "language": "zh",
+      "text": "下一趟航班为CZ2671号。",
+      "segments": 1,
+      "phones": [
+        36
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "e2413d10b312f457919833ff.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "flight_mu",
+      "language": "zh",
+      "text": "下一趟航班为MU5108号，请前往T2航站楼。",
+      "segments": 1,
+      "phones": [
+        58
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "9d90f2d900e459328ba0a7bf.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "flight_ca",
+      "language": "zh",
+      "text": "航班CA0806正在登机，请核对登机口A12。",
+      "segments": 1,
+      "phones": [
+        60
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "ebbbc964d4925a3e5432d04a.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "spaced_code",
+      "language": "zh",
+      "text": "下一趟航班为cz 2671号。",
+      "segments": 1,
+      "phones": [
+        36
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "d2751afdbaa1e8fe3757355d.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "initialisms",
+      "language": "zh",
+      "text": "请打开PDF文档，检查CPU、GPU、USB和API接口。",
+      "segments": 1,
+      "phones": [
+        73
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "e5ef55dce2c3b008c1b4db28.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "digit_runs",
+      "language": "zh",
+      "text": "请核对编号A12B34和AB0072，保留开头的零。",
+      "segments": 1,
+      "phones": [
+        68
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "f8447bc2a608e1f747747bfa.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "repeat_probe",
+      "language": "zh",
+      "text": "下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。",
+      "segments": 4,
+      "phones": [
+        101,
+        101,
+        101,
+        101
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "7d1e075eb6597110a2aa43ec.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "7d1e075eb6597110a2aa43ec.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "7d1e075eb6597110a2aa43ec.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "7d1e075eb6597110a2aa43ec.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "english_long",
+      "language": "en",
+      "text": "The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. ",
+      "segments": 12,
+      "phones": [
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94,
+        94
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "c8d71ef90821be0ece83e564.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "52499cabbe1c5c37a2f6345f.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "4bafc7eb6ccfc99819f95805.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    },
+    {
+      "id": "long_zh",
+      "language": "zh",
+      "text": "请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。",
+      "segments": 8,
+      "phones": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "frontend_host_seconds": null,
+      "plan_from_current_sync_run_reused": true,
+      "reference_arrays": true,
+      "comparisons": [
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        },
+        {
+          "file": "315b4c49365b1bd4ecdba8c0.npz",
+          "all_arrays_byte_identical": true
+        }
+      ]
+    }
+  ],
+  "scope": "Frontend numeric features/planning, not generated-audio quality or complete M55 frontend",
+  "training_updates": 0
+}

@@ -41,18 +41,42 @@ class FARGANTests(unittest.TestCase):
         self.assertEqual(sample_layout(8)["source_sample_start"], 400)
         self.assertEqual(sample_layout(8)["source_sample_end"], 1040)
 
-    def test_repeatability_rng_and_explicit_offline_rejection(self):
+    def test_repeatability_rng_and_stream_contract(self):
         x = np.zeros((1, 5, 31), np.float32)
+        self.assertTrue(self.model.streaming)
         rng = torch.random.get_rng_state().clone()
         a = self.model.synthesize(x, "zh", seed=91)
         torch.testing.assert_close(torch.random.get_rng_state(), rng, rtol=0, atol=0)
         torch.testing.assert_close(a, self.model.synthesize(x, "zh", seed=91), rtol=0, atol=0)
         self.assertFalse(torch.equal(a, self.model.synthesize(x, "zh", seed=92)))
-        for kwargs in ({"state": {}}, {"chunk_frames": 1}, {"seed": True}, {"seed": -1}):
+        for kwargs in ({"state": {}}, {"seed": True}, {"seed": -1}):
             with self.assertRaises(ValueError):
                 self.model.synthesize(x, "zh", **kwargs)
+        for chunk_frames in (0, -1, True, 1.5):
+            with self.assertRaises(ValueError):
+                self.model.synthesize(x, "zh", chunk_frames=chunk_frames)
+        self.assertEqual(self.model.synthesize(x, "zh", chunk_frames=1).shape, (1, 160))
+        # The persistent stream keeps every recurrent/noise/de-emphasis state.
+        state = self.model.begin_stream("zh", seed=91)
+        pieces = []
+        for begin in (0, 2, 4):
+            pcm, state = self.model.synthesize_chunk(
+                x[:, begin:begin + 2], "zh", state=state, final=begin + 2 >= x.shape[1])
+            pieces.append(pcm)
+        streamed = torch.cat(pieces, dim=1)
+        self.assertEqual(streamed.shape, (1, 160))
+        self.assertTrue(torch.isfinite(streamed).all())
+        report = state.report()
+        self.assertEqual((report["received_frames"], report["output_samples"], report["finished"]),
+                         (5, 160, True))
         with self.assertRaises(ValueError):
-            self.model.synthesize_chunk(x)
+            self.model.synthesize_chunk(x, "zh", state=state)
+        with self.assertRaises(ValueError):
+            self.model.synthesize_chunk(x, "en")
+        # Original offline reference stays available and separate.
+        offline = self.model.synthesize_offline(x, "zh", seed=91)
+        self.assertEqual(offline.shape, (1, 160))
+        self.assertTrue(torch.isfinite(offline).all())
 
     def test_invalid_inputs_and_short_timeline(self):
         for x, language in [(np.zeros((1, 4, 31)), "zh"),
@@ -88,7 +112,8 @@ class FARGANTests(unittest.TestCase):
                 self.assertEqual(metadata["source_sample_start"], 400)
                 self.assertEqual(metadata["source_sample_end"], 1040)
                 self.assertEqual(metadata["selected_checkpoint_step"], 4750)
-                self.assertFalse(metadata["streaming"])
+                self.assertTrue(metadata["streaming"])
+                self.assertFalse(metadata["artifact_streaming"])
 
 
 if __name__ == "__main__":

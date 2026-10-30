@@ -1,0 +1,11 @@
+{
+  "text": "Hello, welcome to the flight.",
+  "language": "en",
+  "source_features": "/home/fomak/ffb/m55_fargan_stream_20261030/acoustic_cursor_validation/en_features/7fd3d2e33d7012f4ab0324ac.npz",
+  "source_sha256": "945a483c93b3fb469794f602c395175507cbfe1f38109e1f866341c45b8a2dcb",
+  "normalization_sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2",
+  "header_sha256": "dc487b07a64d189b59b6ad045abdda1eba42bcb52f3843f7c0d8828ac5ab6c1e",
+  "duration_source": "Autonomous model prediction",
+  "ordinary_frontend_features": true,
+  "supplied_reference_durations": false
+}

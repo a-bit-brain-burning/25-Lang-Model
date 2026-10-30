@@ -1,0 +1,31 @@
+{
+  "status": "PASSED",
+  "files": {
+    "output.pcm": {
+      "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "output24.pcm": {
+      "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "condition.f32": {
+      "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "durations.u32": {
+      "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "first24.pcm": {
+      "sha256": "5f4fb1d5c5229cf858155f3f90eaa8249123490f36666110c31311358d977a3a",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    },
+    "fargan.f32": {
+      "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7",
+      "byte_identical_to_pre_cache_pre_tile_integer_candidate": true
+    }
+  },
+  "cache_payload_matches_independently_verified_cache": true,
+  "payload_bytes": 830352
+}

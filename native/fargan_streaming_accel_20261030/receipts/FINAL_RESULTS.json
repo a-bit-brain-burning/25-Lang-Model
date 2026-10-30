@@ -1,0 +1,292 @@
+{
+  "status": "COMPLETE_OPTIMIZATION_ROUND_TARGET_UNMET",
+  "updated_utc": "2026-10-30T18:20:00.800869+00:00",
+  "selected_candidate": "native_integer_final/build/i8_final/firmware.elf",
+  "candidate_is_original_quality_baseline": false,
+  "default_quality_baseline_replaced": false,
+  "changes": [
+    "real_I8_MVE_dense_with_I8_or_splitI16_activation",
+    "FP32_recurrent_state",
+    "fast_interpolated_vector_activations",
+    "continuous_FP32_MVE_FIR",
+    "remove_unused_FP32_acoustic_GRU_cache",
+    "tile4_output_channel_activation_reuse",
+    "830352byte_request_owned_FARGAN_RAM_weight_cache"
+  ],
+  "Chinese": {
+    "status": "FUNCTIONAL_CHECKS_PASSED",
+    "report": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/reports/i8_final",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final/build/i8_final/firmware.elf",
+    "elf_sha256": "87e096d0ecde9cdb56125ec4458055f4086d60339da1fd8938262000a0b3e2c1",
+    "checks": {
+      "output_nonempty": true,
+      "output24_nonempty": true,
+      "stream16_reconstructs_complete": true,
+      "packets24_reconstruct_complete": true,
+      "packet_sizes": true,
+      "first24_own_prefix": true,
+      "EOS_once": true,
+      "packets_before_EOS": true,
+      "arena_ok": true,
+      "stack_guard_ok": true,
+      "active16_detected": true,
+      "active24_detected": true,
+      "valid_center_length": true,
+      "resampling_length": true,
+      "condition_finite": true,
+      "generator_finite": true
+    },
+    "failed_checks": [],
+    "qemu_host_seconds": {
+      "first_pcm_ready_host_ticks": 1.375103353,
+      "full_chain_first_any_PCM24_host_ticks": 1.436143274,
+      "first_active_frame_ready_host_ticks": 2.203357878,
+      "full_chain_first_active_PCM24_host_ticks": 2.260072977,
+      "firmware_total_host_ticks": 21.569267013
+    },
+    "first_effective_audio_offset_seconds": 0.17,
+    "clips16": 0,
+    "clips24": 0,
+    "comparisons": {
+      "output.pcm": {
+        "bytes": 90560,
+        "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+        "baseline_sha256": "4038496b064064f648b8e6a0a8e210ff53a12603d827e2070e4001b78f9071bd",
+        "byte_identical": false,
+        "samples": 45280,
+        "baseline_samples": 45280,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 14240.0,
+        "rms_difference": 1518.8915400680467,
+        "baseline_rms": 2959.949991101762
+      },
+      "output24.pcm": {
+        "bytes": 135840,
+        "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28",
+        "baseline_sha256": "1d5fb73577d529d2cb7dfdf761712835b16e562254d8900b88a322f23e625457",
+        "byte_identical": false,
+        "samples": 67920,
+        "baseline_samples": 67920,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 14462.0,
+        "rms_difference": 1519.41618148805,
+        "baseline_rms": 2965.524185038704
+      },
+      "durations.u32": {
+        "bytes": 136,
+        "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+        "baseline_sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+        "byte_identical": true,
+        "samples": 34,
+        "baseline_samples": 34,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 0.0,
+        "rms_difference": 0.0,
+        "baseline_rms": 10.455789277322143
+      },
+      "condition.f32": {
+        "bytes": 35588,
+        "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce",
+        "baseline_sha256": "b686093914e3d7cf04ba0d8174c5f45fb46baa69f9fc0877711b198d3b7cee4a",
+        "byte_identical": false,
+        "samples": 8897,
+        "baseline_samples": 8897,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 0.26124680042266846,
+        "rms_difference": 0.028356546991429723,
+        "baseline_rms": 0.8296321232800989
+      },
+      "fargan.f32": {
+        "bytes": 181120,
+        "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7",
+        "baseline_sha256": "3d5035115868db7e6264295f4c784c8495a7c6e90b00da5093eb9f810e8dedb6",
+        "byte_identical": false,
+        "samples": 45280,
+        "baseline_samples": 45280,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 0.43455875664949417,
+        "rms_difference": 0.04635285770189007,
+        "baseline_rms": 0.0903305107312669
+      }
+    },
+    "memory": {
+      "image_code_rodata_and_data_initializer_bytes": 168704,
+      "assets_qspi_rom_bytes": 5157984,
+      "static_rw_bytes": 51184,
+      "arena_reserved_bytes": 3500000,
+      "arena_peak_bytes": 1768720,
+      "stack_reserved_bytes": 131072,
+      "stack_written_high_water_bytes": 109568,
+      "reserved_resident_ram_bytes": 3850960,
+      "backend_ROM_bytes": 5326688
+    },
+    "audio_seconds": 2.83,
+    "human_quality_accepted": false,
+    "hardware_300ms_verified": false,
+    "complete_system_10MB_verified": false,
+    "QEMU_time_is_not_M55_cycles": true,
+    "alignment_or_fitting": false,
+    "training_updates": 0
+  },
+  "English": {
+    "status": "FUNCTIONAL_CHECKS_PASSED",
+    "report": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final_en/reports/i8_final",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/native_integer_final_en/build/i8_final/firmware.elf",
+    "elf_sha256": "dd8370e2e95f5aa57f172cc82d86c4a77e0dc0e8f10edcc27d1ea6ac857c90e9",
+    "checks": {
+      "output_nonempty": true,
+      "output24_nonempty": true,
+      "stream16_reconstructs_complete": true,
+      "packets24_reconstruct_complete": true,
+      "packet_sizes": true,
+      "first24_own_prefix": true,
+      "EOS_once": true,
+      "packets_before_EOS": true,
+      "arena_ok": true,
+      "stack_guard_ok": true,
+      "active16_detected": true,
+      "active24_detected": true,
+      "valid_center_length": true,
+      "resampling_length": true,
+      "condition_finite": true,
+      "generator_finite": true
+    },
+    "failed_checks": [],
+    "qemu_host_seconds": {
+      "first_pcm_ready_host_ticks": 1.633065111,
+      "full_chain_first_any_PCM24_host_ticks": 1.693985977,
+      "first_active_frame_ready_host_ticks": 2.864652274,
+      "full_chain_first_active_PCM24_host_ticks": 2.978162411,
+      "firmware_total_host_ticks": 15.655879007
+    },
+    "first_effective_audio_offset_seconds": 0.26,
+    "clips16": 0,
+    "clips24": 0,
+    "comparisons": {
+      "output.pcm": {
+        "bytes": 64960,
+        "sha256": "b29d4025c62e57fb522717bdf76700a18cda77269ae0b3925778efbb49062d6a",
+        "baseline_sha256": "5fbdf8c87f629b798d63a0220dfa9563a81d0552540cff7ed676413205d76478",
+        "byte_identical": false,
+        "samples": 32480,
+        "baseline_samples": 32640,
+        "alignment_or_fitting": false,
+        "numeric_comparison": "NOT_COMPARABLE_DIFFERENT_LENGTHS"
+      },
+      "output24.pcm": {
+        "bytes": 97440,
+        "sha256": "8ad130a2d9c3c99f25d6766404f07cdea577c38948fe5b2452081b79fc2da0fb",
+        "baseline_sha256": "0f371779a97d82edf62bbf9e4ddbcab964dc1ce17d0f27becc61b2b449ea4932",
+        "byte_identical": false,
+        "samples": 48720,
+        "baseline_samples": 48960,
+        "alignment_or_fitting": false,
+        "numeric_comparison": "NOT_COMPARABLE_DIFFERENT_LENGTHS"
+      },
+      "durations.u32": {
+        "bytes": 96,
+        "sha256": "5358e595a74d6ce83c66abec2e2d1eccd6e5cd3108bb902fcb1bc853ffc455d7",
+        "baseline_sha256": "ba8590de77c68b101df1466168a7217ce9990e139f0c3a96b5b0419cad1fc7e0",
+        "byte_identical": false,
+        "samples": 24,
+        "baseline_samples": 24,
+        "alignment_or_fitting": false,
+        "max_abs_difference": 1.0,
+        "rms_difference": 0.2041241452319315,
+        "baseline_rms": 11.29527924990495
+      },
+      "condition.f32": {
+        "bytes": 32292,
+        "sha256": "42e8e7a643a2603bbb0cdf78315c7400578644af60b5fd745f61e72bdbfefc31",
+        "baseline_sha256": "4661e1a9b2fb992b182d5a28c420cbaa4e7c158e9390aff456ba55a88d570bed",
+        "byte_identical": false,
+        "samples": 8073,
+        "baseline_samples": 8112,
+        "alignment_or_fitting": false,
+        "numeric_comparison": "NOT_COMPARABLE_DIFFERENT_LENGTHS"
+      },
+      "fargan.f32": {
+        "bytes": 129920,
+        "sha256": "c154ea2d470fada56dc002ffbb5f5bba3cf08f38bc77f059bcfcc1f5cc40c1bf",
+        "baseline_sha256": "70edeb911e772d9ee4f7456ea901c4c94458b350b81778ade7f9c118a7946d9a",
+        "byte_identical": false,
+        "samples": 32480,
+        "baseline_samples": 32640,
+        "alignment_or_fitting": false,
+        "numeric_comparison": "NOT_COMPARABLE_DIFFERENT_LENGTHS"
+      }
+    },
+    "memory": {
+      "image_code_rodata_and_data_initializer_bytes": 164752,
+      "assets_qspi_rom_bytes": 5157984,
+      "static_rw_bytes": 51152,
+      "arena_reserved_bytes": 3500000,
+      "arena_peak_bytes": 1674560,
+      "stack_reserved_bytes": 131072,
+      "stack_written_high_water_bytes": 109568,
+      "reserved_resident_ram_bytes": 3846976,
+      "backend_ROM_bytes": 5322736
+    },
+    "audio_seconds": 2.03,
+    "human_quality_accepted": false,
+    "hardware_300ms_verified": false,
+    "complete_system_10MB_verified": false,
+    "QEMU_time_is_not_M55_cycles": true,
+    "alignment_or_fitting": false,
+    "training_updates": 0
+  },
+  "controlled_single_run_comparison": {
+    "host_cpu_affinity": 31,
+    "runs_sequential": true,
+    "baseline_first_effective_QEMU_seconds": 3.650699934,
+    "final_first_effective_QEMU_seconds": 2.260072977,
+    "relative_reduction_percent": 38.09206404636816,
+    "QEMU_time_is_not_M55_cycles": true
+  },
+  "partial_uncalibrated_200MHz_seconds": {
+    "Chinese": [
+      0.47020587,
+      0.97679822
+    ],
+    "English": [
+      0.61890487,
+      1.29532002
+    ]
+  },
+  "operation_budget_missing_scope": [
+    "FARGAN MT19937/noise, recurrent state copies and FP64 de-emphasis are not fully counted.",
+    "FP16 initialization/weight expansion, weight/name lookup and uninstrumented scalar bookkeeping remain incomplete.",
+    "Exact vector-quantizer group/tail counts are unavailable: use the maximum possible tail element count consistent with measured elements/rows, without charging those elements again as vector groups.",
+    "Zero-row input/output dimensions are unavailable; measured zero rows are reported but their quantization/output budget is not discounted.",
+    "Actual rare I64-to-float fallback count is unavailable; output budget covers the v2 I32 fast path, fallback cost remains unknown.",
+    "LUT counts do not separate all caller epilogues; a four-vector-operation allowance per vector group is explicit.",
+    "BWE adaptive filtering/features/nonlinear overhead retains its historical broad allowance; measured adaconv counters are not charged again.",
+    "FIR clock/PCM quantizer scalar work is only partly covered by an output housekeeping allowance.",
+    "Physical external-memory/cache/bus waits, dynamic text frontend, OS/audio transport and scheduling are excluded.",
+    "Kernel counters describe explicit vector loads; compiler-generated register spills are not separately counted.",
+    "Instrumentation/semihost-file overhead is excluded. QEMU wall time is never used to determine cycles."
+  ],
+  "lossless_asset_conditional_inventory": {
+    "previous_all_conditions_known_inventory_bytes": 10787506,
+    "additional_metadata_saving_bytes": 493428,
+    "additional_model_saving_bytes": 334301,
+    "new_conditional_known_inventory_bytes": 9959777,
+    "margin_to_10000000_bytes": 40223,
+    "asset_inventory_under_10000000": true,
+    "deployed_firmware_accepted": false,
+    "code_cache_manifest_alignment_and_unknown_components_not_included": true,
+    "all_prior_U_template_GC_JSON_dictionary_conditions_still_required": true,
+    "final_backend_delta_bytes": 1344,
+    "updated_final_candidate_conditional_inventory_bytes": 9961121,
+    "complete_firmware_accepted": false
+  },
+  "final_and_pre_cache_pre_tile_integer_audio_byte_identical": true,
+  "original_native_source_and_assets_unchanged": true,
+  "source_original_file_count": 26,
+  "listening_index": "/mnt/d/newtts/fargan_m55_integer_opt_20261030/index.html",
+  "human_quality_accepted": false,
+  "hardware_300ms_verified": false,
+  "complete_system_double10MB_verified": false,
+  "training_updates": 0,
+  "pending_processes": []
+}

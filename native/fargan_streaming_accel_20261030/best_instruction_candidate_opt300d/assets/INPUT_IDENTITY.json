@@ -1,0 +1,7 @@
+{
+  "text": "你好，欢迎测试新的语音模型。",
+  "language": "zh",
+  "source_features": "/home/fomak/ffb/tts_stream_runtime_20261030/reports/chain_v2/zh_inputs/features/42bd8645b7a0d3bbc25a26c5.npz",
+  "source_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+  "duration_source": "Model autonomous prediction; no supplied durations"
+}

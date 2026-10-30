@@ -1,0 +1,104 @@
+{
+  "status": "DELIVERY_VERIFIED",
+  "destination": "/mnt/d/newtts/new25_fargan_current_stream_20261030",
+  "files": [
+    {
+      "file": "CZ2671_hifi24.wav",
+      "sha256": "f9dcc6e008b494a2568f57fc0d2f5ab0efb7f186e6ccabe36d6b6f119f619c11",
+      "bytes": 156524
+    },
+    {
+      "file": "CZ2671_stream16.wav",
+      "sha256": "eece33b784eb97842e8f7b408cdc6c54317bfedebfa7b7827d238c36b91eb189",
+      "bytes": 103084
+    },
+    {
+      "file": "CZ2671_stream24.wav",
+      "sha256": "2d6d11c5219f40b13ec8dda63d40acf01d4159361df8cc38da558a1e4700e015",
+      "bytes": 154604
+    },
+    {
+      "file": "MANIFEST.json",
+      "sha256": "9fd4fc3d6f599d229b2a8bdc0a2722656d14d977efc439cde15fd4dd7dedf62f",
+      "bytes": 4958
+    },
+    {
+      "file": "MU5108_hifi24.wav",
+      "sha256": "fcfe47dfb103977c6867991167d38b5adda68abfdcb4de40155e981f9622423a",
+      "bytes": 147884
+    },
+    {
+      "file": "MU5108_stream16.wav",
+      "sha256": "d8820f947e5190d31e3099d98a0008febad3b9d32a56f5e7b95dcd0761792492",
+      "bytes": 97324
+    },
+    {
+      "file": "MU5108_stream24.wav",
+      "sha256": "ef6f90f71a69d4349748102450c475dc92e279bdde0f82bb5d108e126ff53266",
+      "bytes": 145964
+    },
+    {
+      "file": "en_hifi24.wav",
+      "sha256": "0a56740ee24dbe62b8c82499284fbfdeefdc9686eb7bd70d8e9a3180402744c2",
+      "bytes": 180044
+    },
+    {
+      "file": "en_stream16.wav",
+      "sha256": "c8398bf17fbb692dbbe42958679d12190828fdc36ceb5ce1d16f1377cf752b70",
+      "bytes": 118764
+    },
+    {
+      "file": "en_stream24.wav",
+      "sha256": "3f84abbaf0171536170f0b7a3ea6449d64cea5891ee7fe913d12e282e29690a0",
+      "bytes": 178124
+    },
+    {
+      "file": "index.html",
+      "sha256": "c5d7b3e5ceaa4e2cbb9d6a86d9995883e6d4023ea35a320bf09fac2593827f03",
+      "bytes": 4326
+    },
+    {
+      "file": "long_hifi24.wav",
+      "sha256": "4f1947b2e3a1d056ee8ebc9e219a6a8bafed920bbba486bff704d97854ad4e09",
+      "bytes": 398924
+    },
+    {
+      "file": "long_stream16.wav",
+      "sha256": "55a4334816a3dc2e843a92b20dff532602e32ad3d5eb67d307dc3f8cadba7506",
+      "bytes": 264684
+    },
+    {
+      "file": "long_stream24.wav",
+      "sha256": "6b7d50571f3f8e855315a9011b7fa8e850f29ce3be873899e1c978387ce42c9c",
+      "bytes": 397004
+    },
+    {
+      "file": "zh_hifi24.wav",
+      "sha256": "95305dddae7679ab61e2f0cd5ba16cabac231584078ef78b236a732c37c91c6c",
+      "bytes": 137804
+    },
+    {
+      "file": "zh_offline16.wav",
+      "sha256": "60512d985f9c99142a7c4ad18d2d7f45481a8434488d6af590edcac88766537f",
+      "bytes": 90604
+    },
+    {
+      "file": "zh_offline24.wav",
+      "sha256": "a8d43668395dd7b9e2f61c2c5597b39f9b3c8985760e65414aaf5cc7b1c52aae",
+      "bytes": 135884
+    },
+    {
+      "file": "zh_stream16.wav",
+      "sha256": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7",
+      "bytes": 90604
+    },
+    {
+      "file": "zh_stream24.wav",
+      "sha256": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece",
+      "bytes": 135884
+    }
+  ],
+  "links_checked": 34,
+  "WAV_files": 17,
+  "training_updates": 0
+}
