@@ -7,12 +7,12 @@
       "sha256": "cd79ca1221a176dc1db8aacff1c88eedf846a83f01916a0f6391c4ce65e81b12"
     },
     "COMPONENTS.json": {
-      "bytes": 2776,
-      "sha256": "e9fe80c557d31d2d316b6ac9904842d737be9e651a842367c106134d2c9f3053"
+      "bytes": 3245,
+      "sha256": "aaf82f394a76be8c65a23365494e8f2ef6a69efa35781f111ee76007cbc60fb8"
     },
     "README.md": {
-      "bytes": 5694,
-      "sha256": "a4cb112201948737a127e98fd6b312baaa922ebb9a0070e5eb13986ed2370aed"
+      "bytes": 8536,
+      "sha256": "af2016fec88714399ce4a3659a2351b53476b9919efd2ec4559391f563209da1"
     },
     "acoustic_model.py": {
       "bytes": 2191,
@@ -2163,12 +2163,20 @@
       "sha256": "559e1ec14d6d5747432f9b8738b6ea765db02cefaed4eb8587f457bc9d69f1fb"
     },
     "frontend_live.py": {
-      "bytes": 832,
-      "sha256": "11dba8da39b0c3e84ac2a7d29575b3d8a515b1334042b9e3f25665a2c66102f2"
+      "bytes": 3007,
+      "sha256": "61d56369c06f83a03786bc9367aa47baf76bb303406bcc9175848f5febaeae01"
+    },
+    "frontend_profiles/default.json": {
+      "bytes": 3820,
+      "sha256": "b77fcae181e0b93279012fb2debdea7d3eb6a6df122cebbed7de864a34f0e8cc"
+    },
+    "frontend_profiles/example.json": {
+      "bytes": 281,
+      "sha256": "e8522cfdac0581dfe26f21b0d20e5e6b1cc0712d2458d166bfd3ea675081253b"
     },
     "frontend_repair.py": {
-      "bytes": 8948,
-      "sha256": "c9eda74685cf9c7141335e68a793b14296c685a072b60af883a991640786e27d"
+      "bytes": 9403,
+      "sha256": "e13f59385b7bc78c97832950675e29efc981c8b64e1c6df8a36d0695b5570efd"
     },
     "identifier_first_digit.py": {
       "bytes": 3883,
@@ -2686,6 +2694,22 @@
       "bytes": 350,
       "sha256": "0b01577be29a71a248d24b933190a1254f8208d788bf45a9832d7bf3f434ed7a"
     },
+    "provenance/FLEX_AUDIO21.json": {
+      "bytes": 4565,
+      "sha256": "f83cc6a3210d357861c0be68b6dcee5eac0a44f3dc742ffe6dab1eaa8d34bae2"
+    },
+    "provenance/FLEX_BASELINE34_BYTE_EQUAL.json": {
+      "bytes": 12601,
+      "sha256": "18e644a707ea71423040571d7a91bc8eabeb0d3ac13bd49a71c4dd9862c568c0"
+    },
+    "provenance/FLEX_CONTRACTIONS2.json": {
+      "bytes": 525,
+      "sha256": "a9d9041e1b32719fd6c04547051926a247f8d79ae84ea53d307b6ed91327ca30"
+    },
+    "provenance/FRONTEND_FLEX_VERIFIED.json": {
+      "bytes": 501,
+      "sha256": "df21effe2c07d37ee7ecf9204aa93e0a1736eea88deb95614e7d757b1dbaa0f7"
+    },
     "provenance/FRONTEND_SOURCE_REBUILD34_BYTE_EQUAL.json": {
       "bytes": 12601,
       "sha256": "54b283d91c833670c44d2d78604dc85b6f50d2f99b59622e3c01b09ccf80fd51"
@@ -2718,6 +2742,10 @@
       "bytes": 479,
       "sha256": "6e33f109ad0269de4d112363d04e419f1684aee9e97429a1fb1ee9c0ad3e6286"
     },
+    "reading_policy.py": {
+      "bytes": 11260,
+      "sha256": "6483c6949cc4044743809800421121f9748155d1398123e830f9c3d959a01fd1"
+    },
     "requirements-reference.txt": {
       "bytes": 88,
       "sha256": "6669055b01432e61d2adb63e8085bece0d208068c40aaebcefa55b46d8a53ee1"
@@ -2735,8 +2763,8 @@
       "sha256": "efa2c0882f62ced6cf8bd0fbb34750bf28304776ba74a43233bd1932c990139c"
     },
     "synthesize.py": {
-      "bytes": 1437,
-      "sha256": "5a5ae5c1ede1cd3ebb37dc2c7ffd6e3d9a33daec164a17e9570f6d1c988a4b52"
+      "bytes": 1830,
+      "sha256": "f3ed029fe6555f26562d19565ff5e6798934016b1de24a86ea723669c3145c81"
     },
     "tests/REFERENCE.json": {
       "bytes": 5981,
@@ -2746,9 +2774,17 @@
       "bytes": 5649,
       "sha256": "66b3f5550e9f346b34555dd943f4b64c812ae49243e11b851730e2c590b0e9bd"
     },
+    "tests/flexible_readings.json": {
+      "bytes": 2904,
+      "sha256": "00aab29bdaa52ecedf6b639f3698505ba91c529c7a499c7fe722749bf8edb444"
+    },
+    "tests/test_reading_policy.py": {
+      "bytes": 4282,
+      "sha256": "d9db82d3f33791e928d7284ad33549d0ca058f6530b9703ddfbf777b03500c29"
+    },
     "text_worker.py": {
-      "bytes": 3246,
-      "sha256": "037625f98e34a305f6821b77162fd3aa9621b38402fde8a150c63001d8749a5d"
+      "bytes": 3731,
+      "sha256": "12be767bd4b6c25773ff0f27511e3dc224d667d3f17920aea155e4f8ca5d43a1"
     },
     "tools/build_frontend.py": {
       "bytes": 2938,
@@ -2757,6 +2793,10 @@
     "verify.py": {
       "bytes": 2748,
       "sha256": "8104eb43280d65b04b7b624713b1412be74fe30752ad4db928be89c09639fe23"
+    },
+    "verify_frontend.py": {
+      "bytes": 2697,
+      "sha256": "1de9723d49a0a577e4618b75255c69f8ac94e718093a104d1d9d7a03926c2607"
     },
     "verify_manifest.py": {
       "bytes": 594,

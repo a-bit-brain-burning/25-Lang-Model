@@ -3,9 +3,12 @@ from pathlib import Path
 import argparse,sys,subprocess,tempfile,json
 ROOT=Path(__file__).resolve().parent
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--text',required=True);p.add_argument('--language',choices='bg cs da de el en es et fi fr hr hu it lt lv nl no pl pt ro sk sl sv tr zh'.split(),default='zh');p.add_argument('--output',type=Path,required=True);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--text',required=True);p.add_argument('--language',choices='bg cs da de el en es et fi fr hr hu it lt lv nl no pl pt ro sk sl sv tr zh'.split(),default='zh');p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--frontend-config',type=Path,help='JSON pronunciation overrides; defaults remain active')
+    p.add_argument('--abbreviation-mode',choices=['auto','spell','word'],default='auto',help='Reading strategy for alphabetic abbreviation candidates')
+    args=p.parse_args()
     with tempfile.TemporaryDirectory(prefix='bounded-new25-') as temp:
-        d=Path(temp);job=dict(text=args.text,language=args.language,features=str(d/'features'),plan=str(d/'plan.json'))
+        d=Path(temp);job=dict(text=args.text,language=args.language,features=str(d/'features'),plan=str(d/'plan.json'),frontend_config=str(args.frontend_config.resolve()) if args.frontend_config else None,abbreviation_mode=args.abbreviation_mode)
         (d/'job.json').write_text(json.dumps(job,ensure_ascii=False))
         subprocess.run([sys.executable,str(ROOT/'text_worker.py'),str(d/'job.json')],check=True)
         row=json.loads((d/'plan.json').read_text())

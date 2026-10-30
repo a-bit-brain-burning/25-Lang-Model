@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "overrides": {
+    "en": {
+      "SQL": {
+        "mode": "word",
+        "spoken": "sequel"
+      }
+    },
+    "zh": {
+      "AI": {
+        "mode": "expand",
+        "spoken": "人工智能"
+      },
+      "SQL": {
+        "mode": "spell"
+      }
+    }
+  }
+}

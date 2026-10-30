@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "cases": 2,
+  "rows": [
+    {
+      "id": "en_contractions",
+      "language": "en",
+      "text": "I'm ready and I've checked NASA's CPU.",
+      "wav24_sha256": "8c55713d4107be0e9e5bd0b77a515dd248ad67faacb3b0186a3995724e8ab6dc"
+    },
+    {
+      "id": "zh_contractions",
+      "language": "zh",
+      "text": "请朗读I'm ready，并检查NASA's CPU。",
+      "wav24_sha256": "ed48d36d4d74c711eae571baba324c839ba4ac5595bf2cc840170e4ea3d4ae2a"
+    }
+  ],
+  "Chinese_English_acoustic_calls": 0
+}

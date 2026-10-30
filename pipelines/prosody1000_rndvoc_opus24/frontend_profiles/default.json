@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "initialisms": [
+    "AI",
+    "API",
+    "AR",
+    "CPU",
+    "DNS",
+    "DNA",
+    "ETF",
+    "FAQ",
+    "FBI",
+    "FTP",
+    "GPU",
+    "GPS",
+    "HDMI",
+    "HTML",
+    "HTTP",
+    "HTTPS",
+    "ICU",
+    "IP",
+    "ISBN",
+    "JSON",
+    "LCD",
+    "PDF",
+    "PNG",
+    "PPT",
+    "RNA",
+    "SDK",
+    "SQL",
+    "SSH",
+    "SSL",
+    "TCP",
+    "TTS",
+    "UDP",
+    "UI",
+    "URL",
+    "USB",
+    "UTF",
+    "UUID",
+    "VGA",
+    "VR",
+    "XML",
+    "WWW"
+  ],
+  "case_sensitive_initialisms": [
+    "US",
+    "UK",
+    "UN",
+    "EU",
+    "IT",
+    "TV",
+    "PC",
+    "ID",
+    "LED"
+  ],
+  "word_acronyms": {
+    "NASA": "nasa",
+    "NATO": "nato",
+    "UNESCO": "unesco",
+    "UNICEF": "unicef",
+    "ASCII": "ascii",
+    "BIOS": "bios",
+    "RAM": "ram",
+    "ROM": "rom",
+    "PIN": "pin",
+    "LASER": "laser",
+    "RADAR": "radar",
+    "COVID": "covid"
+  },
+  "lexical_words": [
+    "A",
+    "I",
+    "YES",
+    "NO",
+    "OK",
+    "HI",
+    "OH",
+    "HEY",
+    "STOP",
+    "WATCH",
+    "PRO",
+    "MAX",
+    "AIR",
+    "OPEN",
+    "SAVE",
+    "CANCEL",
+    "NEXT",
+    "BACK",
+    "HELLO",
+    "WORLD",
+    "ERROR",
+    "WARNING",
+    "READ",
+    "WRITE",
+    "FILE",
+    "HELP",
+    "ON",
+    "OFF"
+  ],
+  "abbreviations": {
+    "en": {
+      "Dr.": "doctor",
+      "Mr.": "mister",
+      "Mrs.": "missus",
+      "Ms.": "miss",
+      "Prof.": "professor",
+      "Jr.": "junior",
+      "Sr.": "senior",
+      "vs.": "versus",
+      "etc.": "et cetera",
+      "dept.": "department",
+      "e.g.": "for example",
+      "i.e.": "that is",
+      "No.": "number"
+    },
+    "zh": {
+      "Dr.": "博士",
+      "Mr.": "先生",
+      "Mrs.": "夫人",
+      "Prof.": "教授",
+      "e.g.": "例如",
+      "i.e.": "也就是说",
+      "No.": "编号"
+    }
+  },
+  "specials": {
+    "C++": {
+      "en": "see plus plus",
+      "zh": "C加加"
+    },
+    "C#": {
+      "en": "see sharp",
+      "zh": "C sharp"
+    },
+    ".NET": {
+      "en": "dot net",
+      "zh": "点net"
+    },
+    "Wi-Fi": {
+      "en": "why fie",
+      "zh": "why fie"
+    },
+    "WiFi": {
+      "en": "why fie",
+      "zh": "why fie"
+    },
+    "I/O": {
+      "en": "eye oh",
+      "zh": "I O"
+    },
+    "TCP/IP": {
+      "en": "tee see pee slash eye pee",
+      "zh": "TCP斜杠IP"
+    }
+  },
+  "units": {
+    "GB": {
+      "en": [
+        "gigabyte",
+        "gigabytes"
+      ],
+      "zh": "吉字节"
+    },
+    "MB": {
+      "en": [
+        "megabyte",
+        "megabytes"
+      ],
+      "zh": "兆字节"
+    },
+    "KB": {
+      "en": [
+        "kilobyte",
+        "kilobytes"
+      ],
+      "zh": "千字节"
+    },
+    "Gb": {
+      "en": [
+        "gigabit",
+        "gigabits"
+      ],
+      "zh": "吉比特"
+    },
+    "Mb": {
+      "en": [
+        "megabit",
+        "megabits"
+      ],
+      "zh": "兆比特"
+    },
+    "kHz": {
+      "en": [
+        "kilohertz",
+        "kilohertz"
+      ],
+      "zh": "千赫兹"
+    },
+    "Hz": {
+      "en": [
+        "hertz",
+        "hertz"
+      ],
+      "zh": "赫兹"
+    },
+    "km": {
+      "en": [
+        "kilometer",
+        "kilometers"
+      ],
+      "zh": "千米"
+    },
+    "min": {
+      "en": [
+        "minute",
+        "minutes"
+      ],
+      "zh": "分钟"
+    },
+    "kg": {
+      "en": [
+        "kilogram",
+        "kilograms"
+      ],
+      "zh": "千克"
+    },
+    "cm": {
+      "en": [
+        "centimeter",
+        "centimeters"
+      ],
+      "zh": "厘米"
+    },
+    "mm": {
+      "en": [
+        "millimeter",
+        "millimeters"
+      ],
+      "zh": "毫米"
+    },
+    "kV": {
+      "en": [
+        "kilovolt",
+        "kilovolts"
+      ],
+      "zh": "千伏"
+    },
+    "V": {
+      "en": [
+        "volt",
+        "volts"
+      ],
+      "zh": "伏"
+    }
+  },
+  "overrides": {
+    "zh": {},
+    "en": {}
+  }
+}

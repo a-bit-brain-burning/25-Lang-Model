@@ -1,0 +1,158 @@
+{
+  "status": "PASSED",
+  "cases": 21,
+  "all_unknown_phones_zero": true,
+  "flight_reference_wavs_unchanged": true,
+  "all_Chinese_English_acoustic_calls_zero": true,
+  "custom_SQL_reading_changes_generated_audio": true,
+  "training_updates": 0,
+  "rows": [
+    {
+      "id": "en_initialisms",
+      "language": "en",
+      "wav24_sha256": "efec56eefddabe21d68f88aa44509251f54bd390239adf8ab6398e5481118631",
+      "duration_seconds": 4.23,
+      "segments": 1
+    },
+    {
+      "id": "en_words",
+      "language": "en",
+      "wav24_sha256": "9b306ec5c5e71126795a4d6a75c795caa14e64d981f2e5dae0422e0eb84f4459",
+      "duration_seconds": 2.06,
+      "segments": 1
+    },
+    {
+      "id": "en_dotted",
+      "language": "en",
+      "wav24_sha256": "dc2f9a94af046ab4af4afdafa86b5cbff056a4a2645891b6d009287bb5420fb4",
+      "duration_seconds": 2.69,
+      "segments": 1
+    },
+    {
+      "id": "en_titles",
+      "language": "en",
+      "wav24_sha256": "b03acfd68deaf314718dad03461783d526682d0a9b9a348391143f3d6a2bdb9f",
+      "duration_seconds": 3.14,
+      "segments": 1
+    },
+    {
+      "id": "en_codes",
+      "language": "en",
+      "wav24_sha256": "bd7136c57ec81bca439e675c652a6f94df417b2c9cfefcde024c47ceb5a5c447",
+      "duration_seconds": 4.04,
+      "segments": 1
+    },
+    {
+      "id": "en_units",
+      "language": "en",
+      "wav24_sha256": "a8a0d325bce1dbe11ca0055497440843ce2f6231b9d8d65b0dd811d9afbaf4df",
+      "duration_seconds": 3.87,
+      "segments": 1
+    },
+    {
+      "id": "en_specials",
+      "language": "en",
+      "wav24_sha256": "2ade9058ac2afb8c72580cb861fc08d356cc3a306ac08324aba46c18ccfcd0bd",
+      "duration_seconds": 4.03,
+      "segments": 1
+    },
+    {
+      "id": "en_plain",
+      "language": "en",
+      "wav24_sha256": "7e74521d4722e5e6c928acc88e24daee3165c2cbe3a1fe5cf3a79082318808c6",
+      "duration_seconds": 4.11,
+      "segments": 1
+    },
+    {
+      "id": "en_caps",
+      "language": "en",
+      "wav24_sha256": "f8f00db166cc08f5ee8e9f798710111e751740930f97bad0a485bb671108471c",
+      "duration_seconds": 2.41,
+      "segments": 1
+    },
+    {
+      "id": "en_sql_auto",
+      "language": "en",
+      "wav24_sha256": "a2a2cd5ec9cd55ce3e0f113a58677025f7ef55563f1e434745819a290dad7b90",
+      "duration_seconds": 1.85,
+      "segments": 1
+    },
+    {
+      "id": "en_sql_custom",
+      "language": "en",
+      "wav24_sha256": "177b7815f1865387b4124523502d18ed815d28980ffec32906bceb4bef9f5c03",
+      "duration_seconds": 1.71,
+      "segments": 1
+    },
+    {
+      "id": "zh_initialisms",
+      "language": "zh",
+      "wav24_sha256": "9bed934736183d3ff1c45d67511e4010d9a7e31d734b0930cc8e556f993d20a4",
+      "duration_seconds": 5.46,
+      "segments": 1
+    },
+    {
+      "id": "zh_words",
+      "language": "zh",
+      "wav24_sha256": "f1e4dcb8007914693ffb771576f9dba956f68dc97c8c34f78faeb351f6870760",
+      "duration_seconds": 3.11,
+      "segments": 1
+    },
+    {
+      "id": "zh_dotted",
+      "language": "zh",
+      "wav24_sha256": "79e0e949dab39ff750037c8c4203c19b9e7e5d7c029eba4abb8aed08cd53ef20",
+      "duration_seconds": 4.57,
+      "segments": 1
+    },
+    {
+      "id": "zh_standalone",
+      "language": "zh",
+      "wav24_sha256": "f600914618b85653aee5d37cd7b649ca980cbef2a3751c1c0296708c5c79c2da",
+      "duration_seconds": 0.91,
+      "segments": 1
+    },
+    {
+      "id": "zh_caps",
+      "language": "zh",
+      "wav24_sha256": "16f7543c208ef21e69f1a022ee1101619a2eaa1713d9bb83ec62998a7a65e47a",
+      "duration_seconds": 3.8,
+      "segments": 1
+    },
+    {
+      "id": "zh_custom",
+      "language": "zh",
+      "wav24_sha256": "1632253d9b21ad2c10072c0f36fc67ee144c909e799c7c5b9b751b35ff11c0cd",
+      "duration_seconds": 3.66,
+      "segments": 1
+    },
+    {
+      "id": "zh_codes",
+      "language": "zh",
+      "wav24_sha256": "dca3359bcbdf36ba7b907958ff691e69dd4abfbd8d1a0f3ecf184445f9d047c6",
+      "duration_seconds": 5.18,
+      "segments": 1
+    },
+    {
+      "id": "flight_cz",
+      "language": "zh",
+      "wav24_sha256": "70184a8c742ecb156aeebe2c09177e343afec3fe279fed76cbed68f232c53d32",
+      "duration_seconds": 3.26,
+      "segments": 1
+    },
+    {
+      "id": "flight_mu",
+      "language": "zh",
+      "wav24_sha256": "814d17f7cdb47fd1bca3d35d9032be3cd025b87959b23acf3e9c4fadd2445527",
+      "duration_seconds": 5.38,
+      "segments": 1
+    },
+    {
+      "id": "en_long_title",
+      "language": "en",
+      "wav24_sha256": "a6af2a54f33d8eaf949ace7a5a72862cb98ac2da4197547937f9cda6a9eb49a2",
+      "duration_seconds": 26.545,
+      "segments": 4
+    }
+  ]
+}

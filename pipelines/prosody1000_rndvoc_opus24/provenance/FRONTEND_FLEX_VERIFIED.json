@@ -1,0 +1,16 @@
+{
+  "status": "PASSED",
+  "semantic_test_groups": 11,
+  "preserved_baseline_cases": 34,
+  "preserved_baseline_languages": 25,
+  "all_baseline_WAVs_byte_equal": true,
+  "new_audio_cases": 23,
+  "all_new_unknown_phone_counts_zero": true,
+  "Chinese_codes_English_acoustic_calls": 0,
+  "existing_CZ_and_MU_WAVs_unchanged": true,
+  "CLI_mode_and_custom_dictionary_verified": true,
+  "preview_wavs": 25,
+  "model_parameter_updates": 0,
+  "quality_human_accepted": false,
+  "contractions_preserved": true
+}

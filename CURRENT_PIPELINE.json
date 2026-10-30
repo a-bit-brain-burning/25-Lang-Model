@@ -6,5 +6,8 @@
   "acoustic_global_step": 3000,
   "RNDVoC_step": 25000,
   "output_sample_rate": 24000,
-  "quality_accepted": false
+  "quality_accepted": false,
+  "frontend_policy": "pipelines/prosody1000_rndvoc_opus24/frontend_profiles/default.json",
+  "frontend_custom_pronunciations_supported": true,
+  "frontend_revision": "flexible_abbreviations_v1"
 }

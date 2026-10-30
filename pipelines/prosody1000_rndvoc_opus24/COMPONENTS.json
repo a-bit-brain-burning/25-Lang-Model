@@ -66,7 +66,25 @@
     "compressed_package_count": 16,
     "compressed_package_bytes": 3875677,
     "default_host": "Linux x86_64",
-    "host_shared_libraries_and_C_sources_included": true
+    "host_shared_libraries_and_C_sources_included": true,
+    "reading_policy": {
+      "version": 1,
+      "default_profile": "frontend_profiles/default.json",
+      "custom_example": "frontend_profiles/example.json",
+      "strategies": [
+        "auto",
+        "spell",
+        "word"
+      ],
+      "literal_override_modes": [
+        "spell",
+        "word",
+        "expand"
+      ],
+      "shared_frozen_CMU_lexicon": true,
+      "Chinese_identifiers_use_Chinese_acoustic": true,
+      "weights_unchanged": true
+    }
   },
   "total_learned_pipeline_parameters": 4622455,
   "whole_target_RAM_limit_bytes": 10000000,

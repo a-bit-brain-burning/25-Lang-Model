@@ -65,8 +65,8 @@ def normalize(text,language):
  text=re.sub(r'[A-Za-z]+[0-9]+[A-Za-z0-9]*',lambda m:' '.join((dict(zip('ABCDEFGHIJKLMNOPQRSTUVWXYZ','ay bee see dee ee ef gee aitch eye jay kay el em en oh pee cue ar ess tee you vee double_you ex why zee'.split()))[c.upper()].replace('_',' ') if c.isalpha() else 'zero one two three four five six seven eight nine'.split()[int(c)]) for c in m[0]),text)
  return previous_normalize(text,language)
 
-def build_zh(front,text):
- normalized,protected=normalize(text,'zh');protected={r['marker']:r for r in protected}
+def build_zh(front,text,normalizer=None):
+ normalized,protected=(normalizer or normalize)(text,'zh');protected={r['marker']:r for r in protected}
  # All raw English spans stay in the one Chinese acoustic sequence.
  tokens=[];skeleton=[];han=0;position=0;code_id=0
  pattern=r'[\u3400-\u9fff]\[[a-z]+[0-5]\]|[\ue000-\uf8ff]|[A-Za-z]+(?:[\s\x27,.!?-]+[A-Za-z]+)*'
@@ -76,7 +76,10 @@ def build_zh(front,text):
   if value.endswith(']') and '[' in value:
    skeleton.append(value);han+=1;position=match.end();continue
   if value in protected:
-   event=protected[value];code=event['value'];symbol_index=0
+   event=protected[value]
+   if event['kind']=='word':
+    tokens.append(dict(kind='english',han=han,value=event['value']));position=match.end();continue
+   code=event['value'];symbol_index=0
    for c in code:
     if c=='-':skeleton.append('，');continue
     if c.isdigit():skeleton.append(DIGITS[int(c)]);tokens.append(dict(kind='digit',han=han,code=code,symbol=c,symbol_index=symbol_index,code_id=code_id));han+=1
@@ -97,9 +100,12 @@ def build_zh(front,text):
  selected=ChineseDeliveryFrontend(ChineseProsodyFrontend(erhua_policy='separate'))
  from project.src.frontend import phrase_plan
  original=phrase_plan.make_frontend;phrase_plan.make_frontend=lambda:selected
+ anchor=not bool(re.search(r'[\u3400-\u9fff]',skeleton))
  try:
-  chinese,meta=front.encode(skeleton,'zh');raw=adapter.encode('zh',skeleton,settings)
+  chinese,meta=front.encode(('啊' if anchor else '')+skeleton,'zh');raw=adapter.encode('zh',('啊' if anchor else '')+skeleton,settings)
  finally:phrase_plan.make_frontend=original
+ if anchor:
+  chinese={k:v[[0,-1]].copy() for k,v in chinese.items()};meta['ipa']=['sil','sil'];raw['metadata']['syllables']=[]
  at={};syllables={};offset=0
  for s in raw['metadata']['syllables']:
   at[offset]=int(s['phone_start']);syllables[offset]=s;offset+=len(re.findall(r'[\u3400-\u9fff]',s['character']))
@@ -138,4 +144,4 @@ def build_zh(front,text):
  arrays={k:np.asarray(v,dtype=chinese[k].dtype) for k,v in pieces.items()};units.sort(key=lambda u:u['start'])
  n=len(phones);ctx=arrays['context'];ctx[:,10:12]=0;ctx[0,10]=1;ctx[-1,11]=1;ctx[:,5]=0;ctx[1:-1,5]=np.arange(n-2,dtype=np.float32)/max(n-3,1);ctx[:,6]=min((n-2)/200.,2.)
  assert not np.any(arrays['phones']==1),sorted(set(p for p in phones if p not in vocabulary))
- return arrays,dict(normalization_source='best_bilingual_20261029_flow_letters_v2_port',input_text=text,normalized_text=normalized,Chinese_skeleton=skeleton,protected=list(protected.values()),ipa=phones,identifier_units=units,U_reading='yiu1',U_tone=1,one_acoustic_language='zh',one_whole_utterance=True,English_acoustic_calls=0,erhua_policy='separate',unknown_phone_count=0)
+ return arrays,dict(normalization_source='best_bilingual_20261029_flow_letters_v2_port',input_text=text,normalized_text=normalized,Chinese_skeleton=skeleton,protected=list(protected.values()),ipa=phones,identifier_units=units,U_reading='yiu1',U_tone=1,one_acoustic_language='zh',one_whole_utterance=True,English_acoustic_calls=0,erhua_policy='separate',unknown_phone_count=0,context_anchor_used=anchor,context_anchor_spoken=False)

@@ -1,4 +1,4 @@
-> **当前完整文本到24 kHz入口（本分支）**：见 [`pipelines/prosody1000_rndvoc_opus24/`](pipelines/prosody1000_rndvoc_opus24/README.md)。已集成当前1000步续训声学／韵律、中文航班号/长文前端、E2、RNDVoC25000和原Opus BWE24，带独立运行/校验脚本。下文原80k声学和各声码器发布保持原样。
+> **当前完整文本到24 kHz入口（本分支）**：见 [`pipelines/prosody1000_rndvoc_opus24/`](pipelines/prosody1000_rndvoc_opus24/README.md)。已集成当前1000步续训声学／韵律、中文航班号/长文前端、E2、RNDVoC25000和原Opus BWE24，带独立运行/校验脚本，支持缩写自动判断、读法策略和JSON发音词典覆盖。下文原80k声学和各声码器发布保持原样。
 
 # 25-Lang-Model · 已训练声学模型、HiFi-GAN、FARGAN与RNDVoC声码器
 

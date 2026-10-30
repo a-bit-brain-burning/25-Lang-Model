@@ -35,6 +35,56 @@ python pipelines/prosody1000_rndvoc_opus24/tools/build_frontend.py
 
 该命令更新本地共享库和运行时库哈希；重建后的副本与原发布文件清单会有差异，应另存重建产物身份。
 
+## 灵活缩写与发音配置
+
+前端先区分缩写类型，再交给已有G2P与模型：
+
+| 输入 | 默认处理 |
+|---|---|
+| `CPU / api / PDF / SQL` | 逐字母读，英文U使用英文名称；中文逐字母U保留yiu一声 |
+| `NASA / NATO / RAM` | 按单词路径读，使用现有英语词典音素 |
+| `U.S.B. / U S B` | 合并为一个逐字母缩写，长文不在内部切分 |
+| `I'm / I've / NASA's` | 保持完整词形交给词典，不拆成单字母 |
+| `Dr.Smith / e.g. / No.123` | 简写展开；规划句段时保护简写和后面的名称或编号 |
+| `USB-C / GPT-4o / H.264 / HTTP/2` | 保持完整代码，保留字母与数字顺序及前导零 |
+| `16 MB / 2 Mb / 24 kHz` | 先识别数值与单位，区分字节/比特，英文处理单复数 |
+| `C++ / C# / .NET / Wi-Fi / I/O` | 使用配置中的明确读法 |
+
+常见缩写和例外放在`frontend_profiles/default.json`。未知全大写词复用已有CMU词典：普通词走单词路径，字母串走逐字母路径；保留`I/A`在句子中的代词/冠词用法及`US/us`等大小写区别。自动规则有歧义时可以逐词指定。
+
+```bash
+# 强制将NASA逐字母读；航班号继续按完整代码处理。
+python pipelines/prosody1000_rndvoc_opus24/synthesize.py \
+  --text 'NASA uses a CPU.' --language en --abbreviation-mode spell --output /tmp/spell.wav
+
+# 用示例配置让英文SQL读sequel，中文AI展开为人工智能。
+python pipelines/prosody1000_rndvoc_opus24/synthesize.py \
+  --text 'Open the SQL editor.' --language en \
+  --frontend-config pipelines/prosody1000_rndvoc_opus24/frontend_profiles/example.json \
+  --output /tmp/custom.wav
+```
+
+自定义文件按语言覆盖，未覆盖的默认规则继续生效：
+
+```json
+{
+  "version": 1,
+  "overrides": {
+    "en": {"SQL": {"mode": "word", "spoken": "sequel"}},
+    "zh": {"AI": {"mode": "expand", "spoken": "人工智能"}}
+  }
+}
+```
+
+支持`auto / spell / word`全局缩写策略，以及逐词`spell / word / expand`覆盖。逐词键区分大小写，优先于全局模式；`word`选择现有英语G2P路径，具体读法由词典决定，需指定sequel这类读法时填写`spoken`。`expand`可使用中文替换文本。中文词型缩写借用英语音素特征后仍由中文声学生成，不切换英语声学，不拼接字母录音。单独输入`USB`或`NASA`也可使用中文模式；仅借用静音上下文模板，模板汉字不进入合成音素。
+
+每条JSON保留`reading_decisions`、规则来源、实际替换文本和配置SHA，便于定位读法。该更新仅调整前端；模型参数、声码器和训练步数不变。
+
+```bash
+python -m unittest discover -s pipelines/prosody1000_rndvoc_opus24/tests -p 'test_reading_policy.py' -v
+python pipelines/prosody1000_rndvoc_opus24/verify_frontend.py --output /tmp/frontend-flex
+```
+
 ## 自检
 
 ```bash

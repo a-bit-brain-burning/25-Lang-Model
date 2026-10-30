@@ -1,0 +1,119 @@
+[
+  {
+    "id": "en_initialisms",
+    "language": "en",
+    "text": "The CPU uses a GPU. Open the PDF through the API."
+  },
+  {
+    "id": "en_words",
+    "language": "en",
+    "text": "NASA and NATO use radar."
+  },
+  {
+    "id": "en_dotted",
+    "language": "en",
+    "text": "Connect a U.S.B. device to the terminal."
+  },
+  {
+    "id": "en_titles",
+    "language": "en",
+    "text": "Dr.Smith and Mr. Jones saved the file."
+  },
+  {
+    "id": "en_codes",
+    "language": "en",
+    "text": "Use USB-C, HTTP/2, and GPT-4o."
+  },
+  {
+    "id": "en_units",
+    "language": "en",
+    "text": "The file is 16 MB and the signal is 24 kHz."
+  },
+  {
+    "id": "en_specials",
+    "language": "en",
+    "text": "Use C++, C#, and .NET over Wi-Fi."
+  },
+  {
+    "id": "en_plain",
+    "language": "en",
+    "text": "I am in room 10 at 9:45. It helps us read a book."
+  },
+  {
+    "id": "en_caps",
+    "language": "en",
+    "text": "OPEN THE FILE and read the API."
+  },
+  {
+    "id": "en_sql_auto",
+    "language": "en",
+    "text": "Open the SQL editor."
+  },
+  {
+    "id": "en_sql_custom",
+    "language": "en",
+    "text": "Open the SQL editor.",
+    "config": "frontend_profiles/example.json"
+  },
+  {
+    "id": "zh_initialisms",
+    "language": "zh",
+    "text": "请打开PDF文档，通过API连接CPU和GPU。"
+  },
+  {
+    "id": "zh_words",
+    "language": "zh",
+    "text": "请检查NASA、NATO和RAM设备。"
+  },
+  {
+    "id": "zh_dotted",
+    "language": "zh",
+    "text": "请连接U.S.B.设备，并检查USB-C接口。"
+  },
+  {
+    "id": "zh_standalone",
+    "language": "zh",
+    "text": "USB"
+  },
+  {
+    "id": "zh_caps",
+    "language": "zh",
+    "text": "请朗读HELLO WORLD，再检查XYZ代码。"
+  },
+  {
+    "id": "zh_custom",
+    "language": "zh",
+    "text": "请使用AI检查SQL数据库。",
+    "config": "frontend_profiles/example.json"
+  },
+  {
+    "id": "zh_codes",
+    "language": "zh",
+    "text": "请检查GPT-4o、HTTP/2和H.264的编号。"
+  },
+  {
+    "id": "flight_cz",
+    "language": "zh",
+    "text": "下一趟航班为CZ2671号。"
+  },
+  {
+    "id": "flight_mu",
+    "language": "zh",
+    "text": "下一趟航班为MU5108号，请前往T2航站楼。"
+  },
+  {
+    "id": "en_long_title",
+    "language": "en",
+    "text": "The next item is ready. The next item is ready. The next item is ready. The next item is ready. The next item is ready. The next item is ready. The next item is ready. Dr. Smith uses a U.S.B. device. Please check the next item. Please check the next item. Please check the next item. Please check the next item. Please check the next item. Please check the next item. Please check the next item. "
+  },
+  {
+    "id": "en_contractions",
+    "language": "en",
+    "text": "I'm ready and I've checked NASA's CPU."
+  },
+  {
+    "id": "zh_contractions",
+    "language": "zh",
+    "text": "请朗读I'm ready，并检查NASA's CPU。"
+  }
+]
