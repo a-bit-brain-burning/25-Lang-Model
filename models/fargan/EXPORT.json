@@ -1,0 +1,44 @@
+{
+  "status": "SELECTED_FARGAN_AND_ADAPTER_ONLY_FP16",
+  "source_checkpoint_sha256": "e90567f4f4ac8811d99b6cba910d117207a95a21be05cb5dbb0ebc1cfbc32e71",
+  "source_checkpoint_step": 4750,
+  "source_archive_sha256": "96ab6e9dc47ef3ac62747150b553074a093847c4040acd05e8e30cf02c6e283d",
+  "source_manifest_sha256": "bf34877367cca0803daace3f6a6b57a4402479b3df046bd4eb9f451051e1d95f",
+  "source_raw_fp16_sha256": "a9973aaa89c5e1b992b77fe17f4cbb52a4881c7ffdc7c5e11b48bcc14d40cadd",
+  "components": {
+    "generator": {
+      "tensors": 28,
+      "parameters": 817525
+    },
+    "adapter": {
+      "tensors": 63,
+      "parameters": 1891412
+    }
+  },
+  "parameters": 2708937,
+  "fp16_tensor_bytes": 5417874,
+  "files": {
+    "vocoder_adapter_fp16.safetensors": {
+      "bytes": 5426602,
+      "sha256": "2f3fde31d51b16cfb03e4c9904371dd2f393cd29d8f5fc17b9e7cb2cf52332af"
+    },
+    "model_config.json": {
+      "bytes": 1141,
+      "sha256": "f05ac90328e12f76f886f825d86c7f73bca885d96ef190f843330e2f17eef994"
+    }
+  },
+  "acoustic_dependency": {
+    "repository_path": "models",
+    "source_checkpoint_sha256": "dbeb07dec11b3600a2f49c729353bc812b46aa9129032ada830a47927d38050f",
+    "training_steps": 80000,
+    "fp16_weights_sha256": "9e9b17f22b3355e4b9a09b34fab5d022119a7964cd03cf702e8f1d68987bff02",
+    "all_97_fp16_tensors_equal_selected_package": true,
+    "vocabulary_sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f",
+    "normalization_sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+  },
+  "contains_acoustic_weights": false,
+  "contains_optimizer_discriminator_rng_or_training_data": false,
+  "arbitrary_text_frontend_verified": false,
+  "full_linux_process_10MB_ram_verified": false,
+  "human_quality_pass": false
+}

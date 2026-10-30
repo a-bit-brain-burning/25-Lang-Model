@@ -4,6 +4,8 @@
 
 仓库已另行追加真实微调的HiFi-GAN Generator与31/39维→mel适配器，见 [`HIFIGAN_INFERENCE.md`](HIFIGAN_INFERENCE.md)。该实现使用整句离线API，不支持本报告的连续分块状态协议；不要将下文的分块示例直接套到HiFi-GAN上。
 
+另有选中4750步FARGAN与31/39维→20维adapter，见[`FARGAN_INFERENCE.md`](FARGAN_INFERENCE.md)。它也消费同一`normalized`条件，但仅返回原时轴`[400,160*T−240)`的有效中心，共`(T−4)*160`采样，另给起止sidecar；没有补边，也未实现本报告逐块`T*160`状态协议。
+
 接口目标是把本版本的 **31/39 维物理声学表示**转换成同一时间线上的 16 kHz 单声道浮点 PCM。这些谱形分量的原始基底和标度尚未完整说明，不能将其命名为通用 mel、线性频谱或某个已知倒谱格式，也不能直接接到仅接受 mel 的预训练声码器。
 
 ## 1. 调用约定

@@ -1,0 +1,53 @@
+{
+  "repository": "https://github.com/xiph/opus",
+  "commit": "bafd40dcbd506e12da257b8cb05c0afe1ed44719",
+  "official_pretrained_checkpoint_sha256": "2eb56f36f71f246174d769658b5712fa81214650bd425cf050c740c8d6b4464c",
+  "official_model_archive_sha256": "a5177ec6fb7d15058e99e57029746100121f68e4890b1467d4094aa336b6013e",
+  "copying_sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+  "patent_notice_sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d",
+  "sources": {
+    "new25_fargan/_vendor/fargan.py": {
+      "source_package_path": "source/upstream/fargan/fargan.py",
+      "source_sha256": "d70803ada9777de7d212c21f36e7111d300e24c43ebbf81bacedac7dab745db1",
+      "repository_sha256": "9581401929ce5c509421cba5e0dda9b537f15578780be27b59e4dce41d53c80c",
+      "modification": "Package-relative imports only; mathematics unchanged"
+    },
+    "new25_fargan/_vendor/filters.py": {
+      "source_package_path": "source/upstream/fargan/filters.py",
+      "source_sha256": "db99252c5403ce025da7b769a91f9ff6e8a4de737132b0d060189d79a0cb6c48",
+      "repository_sha256": "db99252c5403ce025da7b769a91f9ff6e8a4de737132b0d060189d79a0cb6c48",
+      "modification": "Byte-identical"
+    },
+    "new25_fargan/_vendor/rc.py": {
+      "source_package_path": "source/upstream/fargan/rc.py",
+      "source_sha256": "1c620692fcb04d3e021e3c8e0ea027bacf92a9fd23882e4c3cc2c8844df1624a",
+      "repository_sha256": "1c620692fcb04d3e021e3c8e0ea027bacf92a9fd23882e4c3cc2c8844df1624a",
+      "modification": "Byte-identical"
+    },
+    "new25_fargan/_vendor/dnntools/__init__.py": {
+      "source_package_path": "source/upstream/dnntools/dnntools/__init__.py",
+      "source_sha256": "8d47de8991fa0103dc23d9f3d142977d12e4db41eee724ce56e4f36ad41364ca",
+      "repository_sha256": "dda2fe1530ef2f0860e1f8975ed3359bfb8623c717c579c195dfb0635c2b1c34",
+      "modification": "Omit unused training sparsification import; quantization implementation unchanged"
+    },
+    "new25_fargan/_vendor/dnntools/quantization/__init__.py": {
+      "source_package_path": "source/upstream/dnntools/dnntools/quantization/__init__.py",
+      "source_sha256": "82de20d10c6980e8f84996294599becfdd08c0305a1d33a664b732ddf7b129ae",
+      "repository_sha256": "82de20d10c6980e8f84996294599becfdd08c0305a1d33a664b732ddf7b129ae",
+      "modification": "Byte-identical"
+    },
+    "new25_fargan/_vendor/dnntools/quantization/softquant.py": {
+      "source_package_path": "source/upstream/dnntools/dnntools/quantization/softquant.py",
+      "source_sha256": "c9bf45f3b23ee5c26ed6f8b1fe096264175fadf5527067d75901a1bf9fdb2384",
+      "repository_sha256": "c9bf45f3b23ee5c26ed6f8b1fe096264175fadf5527067d75901a1bf9fdb2384",
+      "modification": "Byte-identical"
+    },
+    "new25_fargan/adapter.py": {
+      "source_package_path": "source/adapter.py",
+      "source_sha256": "0abda160440590cf71943494905ba677714099be6c82669fea22a412d300d77a",
+      "repository_sha256": "0abda160440590cf71943494905ba677714099be6c82669fea22a412d300d77a",
+      "modification": "Byte-identical"
+    }
+  },
+  "weight_license_note": "Upstream project notices are retained. No additional license or commercial-rights claim is assigned to fine-tuned weights or adapter."
+}

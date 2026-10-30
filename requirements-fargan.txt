@@ -1,0 +1,3 @@
+-r requirements.txt
+# The existing optional HiFi-GAN extra uses the same SciPy dependency.
+scipy==1.15.3

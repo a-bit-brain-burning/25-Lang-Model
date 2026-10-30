@@ -1,6 +1,6 @@
 {
-  "format_version": 2,
-  "component": "trained_25_language_acoustic_and_finetuned_hifigan",
+  "format_version": 3,
+  "component": "trained_25_language_acoustic_hifigan_and_selected_fargan",
   "self_excluded": true,
   "files": {
     ".gitignore": {
@@ -8,8 +8,8 @@
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 5527,
-      "sha256": "0c7aa0adf48e2c2797ccb27d5bebfc1cbae2aa1424b4029b5cb6c1fb54c034b4"
+      "bytes": 7173,
+      "sha256": "c0cc929aabc72e49da70a9d88da288d2e8bfb37b1fdafacaef6c550b20bc4ad3"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -18,6 +18,14 @@
     "docs/ACOUSTIC_MODEL_CARD.md": {
       "bytes": 11465,
       "sha256": "51edcffe5830cb61955acf7bf8b458bd2b0df9e3f5062870d0a74a7e5e8465d7"
+    },
+    "docs/FARGAN_INFERENCE.md": {
+      "bytes": 3392,
+      "sha256": "e6988284584c0f305394cf4ae740d6078557758e15b7bd5b1a6decbf7be4990e"
+    },
+    "docs/FARGAN_MODEL_CARD.md": {
+      "bytes": 3528,
+      "sha256": "884c586cb24fd2e8ec203668b2433dcc2c95808193bb13aa9831bf17e76fd46d"
     },
     "docs/HIFIGAN_INFERENCE.md": {
       "bytes": 3123,
@@ -32,8 +40,8 @@
       "sha256": "d5e50bc90c8090549e83b5f30de65648c884e0b40252d9e271a38cd7f373a236"
     },
     "docs/VOCODER_INTERFACE.md": {
-      "bytes": 13617,
-      "sha256": "9337f78c42069db66477e19f7f9f4bb694072ed170a663653173968c83a3044a"
+      "bytes": 13931,
+      "sha256": "da8d4569a195f73553c5b3d563195e990fb43bbcd64dcad00ebc77fe78849bce"
     },
     "models/EXPORT.json": {
       "bytes": 1970,
@@ -46,6 +54,18 @@
     "models/acoustic_fp32.pt": {
       "bytes": 4773201,
       "sha256": "c8c30641becc7de082ce192934761f1256007dbf4a3a786c1a0973ec31fc90c2"
+    },
+    "models/fargan/EXPORT.json": {
+      "bytes": 1774,
+      "sha256": "6a5f8237c2d9a85c6c0f785d6c5175c64fdff826bece2a488fe5fd9d21075d28"
+    },
+    "models/fargan/model_config.json": {
+      "bytes": 1141,
+      "sha256": "f05ac90328e12f76f886f825d86c7f73bca885d96ef190f843330e2f17eef994"
+    },
+    "models/fargan/vocoder_adapter_fp16.safetensors": {
+      "bytes": 5426602,
+      "sha256": "2f3fde31d51b16cfb03e4c9904371dd2f393cd29d8f5fc17b9e7cb2cf52332af"
     },
     "models/hifigan/EXPORT.json": {
       "bytes": 1980,
@@ -115,6 +135,46 @@
       "bytes": 2940,
       "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
     },
+    "new25_fargan/__init__.py": {
+      "bytes": 271,
+      "sha256": "90d798b7e5c1c83f6bc2919273fd1343ccd9be7ebb72cc19f0820bc011a9fe2c"
+    },
+    "new25_fargan/_vendor/__init__.py": {
+      "bytes": 72,
+      "sha256": "a0d91335aa6210ee11571baafb6a93c904729b74d9890c1fbb2b095d5c87409d"
+    },
+    "new25_fargan/_vendor/dnntools/__init__.py": {
+      "bytes": 27,
+      "sha256": "dda2fe1530ef2f0860e1f8975ed3359bfb8623c717c579c195dfb0635c2b1c34"
+    },
+    "new25_fargan/_vendor/dnntools/quantization/__init__.py": {
+      "bytes": 52,
+      "sha256": "82de20d10c6980e8f84996294599becfdd08c0305a1d33a664b732ddf7b129ae"
+    },
+    "new25_fargan/_vendor/dnntools/quantization/softquant.py": {
+      "bytes": 4024,
+      "sha256": "c9bf45f3b23ee5c26ed6f8b1fe096264175fadf5527067d75901a1bf9fdb2384"
+    },
+    "new25_fargan/_vendor/fargan.py": {
+      "bytes": 13462,
+      "sha256": "9581401929ce5c509421cba5e0dda9b537f15578780be27b59e4dce41d53c80c"
+    },
+    "new25_fargan/_vendor/filters.py": {
+      "bytes": 1496,
+      "sha256": "db99252c5403ce025da7b769a91f9ff6e8a4de737132b0d060189d79a0cb6c48"
+    },
+    "new25_fargan/_vendor/rc.py": {
+      "bytes": 682,
+      "sha256": "1c620692fcb04d3e021e3c8e0ea027bacf92a9fd23882e4c3cc2c8844df1624a"
+    },
+    "new25_fargan/adapter.py": {
+      "bytes": 1452,
+      "sha256": "0abda160440590cf71943494905ba677714099be6c82669fea22a412d300d77a"
+    },
+    "new25_fargan/inference.py": {
+      "bytes": 9074,
+      "sha256": "c808c82535c0182b467da9e5a5c9244421aebf90adf7f0050bdc2aa1a5a4d674"
+    },
     "new25_hifigan/__init__.py": {
       "bytes": 489,
       "sha256": "1a972ba8440b3656e7cb65de1916e743b5cb36d0821dddee0e4243dd457d1204"
@@ -132,8 +192,8 @@
       "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
     },
     "pyproject.toml": {
-      "bytes": 449,
-      "sha256": "b51a9f896bf773198b63970e2d47ffd4484ea44266c760540d01f2afd64f3dc8"
+      "bytes": 497,
+      "sha256": "9e781f526293aa090eb87f3696e323da5fcd43976c4bb524a03875a96f5344ba"
     },
     "receipts/acoustic_completed.json": {
       "bytes": 290,
@@ -142,6 +202,18 @@
     "receipts/acoustic_provenance.json": {
       "bytes": 20090,
       "sha256": "4ac4085a421cef314842251b0ac8e88b47854f0eb2920c3a39001d5027e0ab04"
+    },
+    "receipts/fargan_development_summary.json": {
+      "bytes": 1001,
+      "sha256": "495d8fc31d536ebd0fc6a71503ae69985e3c6e2f33032bfa92eea6be640b5cb4"
+    },
+    "receipts/fargan_provenance.json": {
+      "bytes": 1739,
+      "sha256": "3a92929e5ffcba1c5d3f8c1b310f9f2103bbd843ccf87901b72edae165f65eb8"
+    },
+    "receipts/fargan_release_validation.json": {
+      "bytes": 1706,
+      "sha256": "20ef5df31d032b2fcb5b79170f0e63fa5a50cdbb9f70806a32bc0fb9fe408173"
     },
     "receipts/hifigan_development_summary.json": {
       "bytes": 645,
@@ -158,6 +230,10 @@
     "receipts/release_validation.json": {
       "bytes": 9443,
       "sha256": "4527a7a757b7db0543a2967c6031c99d9344ee5656b998a3a4014e9895837f60"
+    },
+    "requirements-fargan.txt": {
+      "bytes": 105,
+      "sha256": "46173621722af4a87736e1726625e40e9580db6e5b4293173b1d6349f85aa6bc"
     },
     "requirements-hifigan.txt": {
       "bytes": 106,
@@ -179,9 +255,17 @@
       "bytes": 15795,
       "sha256": "46342d781bf035b81844d8796159816de71f630c6fea61e3dff819abce322201"
     },
+    "scripts/verify_fargan.py": {
+      "bytes": 4233,
+      "sha256": "d378cf112625d42eb74d7bc567436f4046bc74417dc156618b29da3e2be7b9c6"
+    },
     "scripts/verify_release.py": {
       "bytes": 6607,
       "sha256": "35427376bed20ea9806ad5bdafd5cec929a7081a630424fc87f21e203f1766c8"
+    },
+    "tests/test_fargan.py": {
+      "bytes": 4651,
+      "sha256": "257837adb8e7ed35633c3ec0cee2c0224a9da4301f2733a8db0914ca3bbe1b13"
     },
     "tests/test_hifigan.py": {
       "bytes": 13387,
@@ -202,6 +286,18 @@
     "third_party/hifi_gan/PROVENANCE.json": {
       "bytes": 1202,
       "sha256": "cff325862a0a1500971ece5ec201f15c02dfdc62322dcd2300ee91686c040f27"
+    },
+    "third_party/opus/COPYING": {
+      "bytes": 1945,
+      "sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551"
+    },
+    "third_party/opus/LICENSE_PLEASE_READ.txt": {
+      "bytes": 703,
+      "sha256": "7efb4989e0cd1b256229bdf2f09300c5d14e35db0e7476bfb87fac243498273d"
+    },
+    "third_party/opus/PROVENANCE.json": {
+      "bytes": 3246,
+      "sha256": "0dd42be4c6d530cebed7311cd61f832d91c56ff19ce958296458f12bbf8bf315"
     }
   }
 }

@@ -1,0 +1,53 @@
+{
+  "status": "FARGAN_REPOSITORY_INTEGRATION_CHECKS_PASSED",
+  "selected_step": 4750,
+  "source_checkpoint_sha256": "e90567f4f4ac8811d99b6cba910d117207a95a21be05cb5dbb0ebc1cfbc32e71",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "device": "cpu"
+  },
+  "unittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests_run": 29,
+    "failures": 0,
+    "errors": 0,
+    "new_fargan_tests": 4
+  },
+  "interface_checks": {
+    "all_25_languages_finite_valid_center": true,
+    "existing_acoustic_api_to_fargan_cli_languages": [
+      "en",
+      "zh"
+    ],
+    "pcm16_and_alignment_sidecar_verified": true,
+    "repeated_seed_reproducible": true,
+    "caller_rng_preserved": true,
+    "invalid_modes_and_short_timelines_rejected": true,
+    "state_and_chunks_rejected": true
+  },
+  "layout_checks": {
+    "command": "python scripts/verify_fargan.py",
+    "tensors": 91,
+    "new_parameters": 2708937,
+    "new_fp16_tensor_bytes": 5417874,
+    "new_acoustic_weight_files": 0,
+    "existing_acoustic_components_unchanged": true
+  },
+  "source_reference_parity": "receipts/fargan_provenance.json",
+  "evaluation_reused": "receipts/fargan_development_summary.json",
+  "fixed_75_case_selection_repeated": false,
+  "new_dependencies_installed": false,
+  "training_updates": 0,
+  "contains_audio_training_data_partial_archives": false,
+  "boundaries": {
+    "streaming": false,
+    "output": "[1,(T-4)*160], source [400,160*T-240)",
+    "arbitrary_text_frontend_verified": false,
+    "human_quality_pass": false,
+    "full_linux_10MB_process_ram_verified": false,
+    "cross_platform_pcm_byte_equivalence_verified": false
+  }
+}

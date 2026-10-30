@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "new25-acoustic"
-version = "0.2.0"
-description = "Trained shared 25-language acoustic model and fine-tuned HiFi-GAN vocoder"
+version = "0.3.0"
+description = "Shared 25-language acoustic model with HiFi-GAN and selected FARGAN vocoders"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3"]
 
 [project.optional-dependencies]
 hifigan = ["scipy>=1.11,<2"]
+fargan = ["scipy>=1.11,<2"]
 
 [tool.setuptools.packages.find]
-include = ["new25_acoustic*", "new25_hifigan*"]
+include = ["new25_acoustic*", "new25_hifigan*", "new25_fargan*"]

@@ -1,0 +1,45 @@
+{
+  "status": "REPOSITORY_FARGAN_REFERENCE_PARITY_VERIFIED",
+  "selected_step": 4750,
+  "source_checkpoint_sha256": "e90567f4f4ac8811d99b6cba910d117207a95a21be05cb5dbb0ebc1cfbc32e71",
+  "all_91_generator_adapter_fp16_values_equal_source": true,
+  "source_package_manifest_sha256": "bf34877367cca0803daace3f6a6b57a4402479b3df046bd4eb9f451051e1d95f",
+  "reused_existing_acoustic_tensors": 97,
+  "new_acoustic_weight_files": 0,
+  "vocabulary_normalization_reused": true,
+  "cpu_only": true,
+  "cuda_initialized": false,
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  },
+  "comparison": "Original delivered load_reference.render_condition with independently loaded original generator/adapter modules vs repository FARGANVocoder.synthesize",
+  "cases": [
+    {
+      "language": "en",
+      "dimension": 39,
+      "input_frames": 8,
+      "seed": 77137,
+      "samples": 640,
+      "reference_equal": true,
+      "max_absolute_error": 0.0,
+      "float32_pcm_sha256": "eb575ad881e858eb2487b1d7cc236d300f2cc5410548ba16e739700518204249"
+    },
+    {
+      "language": "zh",
+      "dimension": 31,
+      "input_frames": 8,
+      "seed": 77137,
+      "samples": 640,
+      "reference_equal": true,
+      "max_absolute_error": 0.0,
+      "float32_pcm_sha256": "0a08e6f65798dfad3de95cef72343b07e5978b44571374e78bee53fce485d437"
+    }
+  ],
+  "prior_linux_package_strict_load": "ISOLATED_PACKAGE_SOURCES_AND_ALL_MODEL_STATES_STRICTLY_LOADED (reused prior receipt; not rerun)",
+  "prior_linux_strict_load_receipt_sha256": "662e3f89aee3d647df474d74fbdd0e187691fd3655ae07ea549f2a81360513e5",
+  "fixed_75_case_development_evaluation_repeated": false,
+  "quality_or_ram_acceptance": false
+}
