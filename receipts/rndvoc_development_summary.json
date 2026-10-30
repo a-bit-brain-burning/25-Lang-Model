@@ -1,0 +1,47 @@
+{
+  "selected_generator_steps": 25000,
+  "source_checkpoint_sha256": "45b811b8f2a3ae7eba3742fc2b0115d6898145f42fa5b8c662bb6bf8032e1dd1",
+  "selection_query_time_bjt": "2026-10-30T18:51:34.660349+08:00",
+  "criterion": "Lowest existing fixed75 real-mel development selection_score at the recorded query; not a final global best",
+  "development_cases": 75,
+  "languages": 25,
+  "development_ids_sha256": "c2213a8b8c043fa9f46108ba36b3a8cd2b1a10a6ad266f5ad429931a91350e6f",
+  "test_used": false,
+  "training_fp32_true_mel_summary": {
+    "spectral_convergence": 0.17344738324483236,
+    "spectral_log_mae": 0.5750379610061646,
+    "frame_log_energy_error": 0.15150351186593375,
+    "rms_ratio": 0.9543754593531291,
+    "clipping_fraction": 0,
+    "selection_score": 0.26882705731193224
+  },
+  "training_evaluation_sha256": "8fdac68650b0948a1b8a4f6978daf339c35976b33e77c06cf9ed3c6eb1f51893",
+  "fp16_stored_fp32_cpu_listening": {
+    "predicted_features_true_duration": {
+      "legacy_spectral": 0.5556557631492615,
+      "native_spectral_convergence": 0.7172983054320018,
+      "native_frame_log_energy_error": 0.5738255095481872,
+      "maximum_clipping_fraction": 7.05645143170841e-05
+    },
+    "true_physical_adapter": {
+      "legacy_spectral": 0.37321423570315043,
+      "native_spectral_convergence": 0.3304233105977376,
+      "native_frame_log_energy_error": 0.2468081921339035,
+      "maximum_clipping_fraction": 0.00025201612152159214
+    },
+    "true_mel_oracle": {
+      "legacy_spectral": 0.2831632081667582,
+      "native_spectral_convergence": 0.17344543019930522,
+      "native_frame_log_energy_error": 0.1515032531817754,
+      "maximum_clipping_fraction": 0.0
+    }
+  },
+  "legacy_spectral_protocol": "16k five-resolution newtts.losses.spectral_loss",
+  "native_protocol": "22.05k SC at FFT256/512/1024; frame220 log-RMS",
+  "predicted_features_true_duration_legacy_error": 0.5556557631492615,
+  "predicted_features_true_duration_native_SC": 0.7172983054320018,
+  "predicted_duration_audio_scored_as_true_duration": false,
+  "MOS": null,
+  "quality_pass": false,
+  "inference_reexecuted_during_publication": false
+}

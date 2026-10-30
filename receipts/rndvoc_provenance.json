@@ -1,0 +1,53 @@
+{
+  "selected_step": 25000,
+  "checkpoint_sha256": "45b811b8f2a3ae7eba3742fc2b0115d6898145f42fa5b8c662bb6bf8032e1dd1",
+  "source_identity": "2977f6a186c033c060f797d4c1cb7c9eb755a6b790debfdda36d1697a9077e52",
+  "original_25k_preview_archive_sha256": "0005919260e19379d2901e466262057451d1322a59677fa2344b9ad0f8a033be",
+  "original_preview_manifest_sha256": "b6e9c5babf432788c5d1821c3d9df025339712787db4e1a5deacdcc437dfa1d1",
+  "original_preview_files": 377,
+  "original_preview_audio_files": 375,
+  "prior_fixed75_cpu_seconds": 68.82882289588451,
+  "prior_cpu_preview_cuda_initialized": false,
+  "prior_cpu_preview_concurrent_generator_updates": 325,
+  "publication_actions": [
+    "Read immutable generator-only checkpoint",
+    "Check original SHA256",
+    "Convert dense tensor storage and FP16 rounding without importing Torch",
+    "Reuse exact63 published adapter tensors",
+    "Review code, paths, signatures and metadata statically"
+  ],
+  "training_evaluation_inference_or_benchmark_rerun_for_push": false,
+  "adapter_source_and_values": {
+    "source_e2_step": 31403,
+    "source_checkpoint_sha256": "c2a12e3ccd96486504d6c01d2b253e225f9e9b063a49339eed97e5217f02a803",
+    "already_published_hifigan_file_sha256": "1493330513821fdf877d08bbc62963017ebb3c633ceb5767e3d5e242f042d802",
+    "listening_source_raw_fp16_sha256": "34209d973a18f076f0be1b7922ffe0747874745c0ad8187f4a5bdd9583d4f1cd",
+    "all63_tensor_bytes_match_existing_listening": true
+  },
+  "acoustic_dependency": {
+    "repository_path": "models",
+    "training_steps": 80000,
+    "source_checkpoint_sha256": "dbeb07dec11b3600a2f49c729353bc812b46aa9129032ada830a47927d38050f",
+    "fp16_weights": {
+      "bytes": 2380398,
+      "sha256": "9e9b17f22b3355e4b9a09b34fab5d022119a7964cd03cf702e8f1d68987bff02"
+    },
+    "vocabulary": {
+      "bytes": 3887,
+      "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+    },
+    "normalization": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    }
+  },
+  "weights_tensor_provenance": "models/rndvoc/TENSOR_PROVENANCE.json",
+  "upstream_provenance": "third_party/rndvoc/PROVENANCE.json",
+  "static_source_alignment": {
+    "generator_forward_ast_identical_to_previously_measured_source": true,
+    "generator_forward_ast_sha256": "46a24a4979100cd4c1d067aa26e4c13351924aa4f7445ce0a3b709bf3033a523",
+    "aligned_frontend_byte_identical_to_previously_measured_source": true,
+    "existing_e2_adapter_forward_ast_identical": true,
+    "model_instantiated_or_forward_run_for_push": false
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "format_version": 3,
-  "component": "trained_25_language_acoustic_hifigan_and_selected_fargan",
+  "format_version": 4,
+  "component": "trained_25_language_acoustic_hifigan_fargan_and_selected_rndvoc25000",
   "self_excluded": true,
   "files": {
     ".gitignore": {
@@ -8,8 +8,8 @@
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 7173,
-      "sha256": "c0cc929aabc72e49da70a9d88da288d2e8bfb37b1fdafacaef6c550b20bc4ad3"
+      "bytes": 9659,
+      "sha256": "8c3dd3d92fefcd9f3229a1460a87a659cc218914f80d9785ec8acc68f8b1169e"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -35,13 +35,21 @@
       "bytes": 5192,
       "sha256": "fc852192151e303f97a09c9727f265f71dad19ba70c37e2bec4f1e1551c8dc39"
     },
+    "docs/RNDVOC_INFERENCE.md": {
+      "bytes": 3585,
+      "sha256": "f364325bf4010667432f1d50130d1d4ae47e18d7db58ebad1d53922a68179d6a"
+    },
+    "docs/RNDVOC_MODEL_CARD.md": {
+      "bytes": 3567,
+      "sha256": "e61f54d4f4ad37a2e386f9186d84aa62825ac1a5df63ee7c48d6108272d61d00"
+    },
     "docs/TRAINING.md": {
       "bytes": 8756,
       "sha256": "d5e50bc90c8090549e83b5f30de65648c884e0b40252d9e271a38cd7f373a236"
     },
     "docs/VOCODER_INTERFACE.md": {
-      "bytes": 13931,
-      "sha256": "da8d4569a195f73553c5b3d563195e990fb43bbcd64dcad00ebc77fe78849bce"
+      "bytes": 14277,
+      "sha256": "c27adde2ce748a1f1d4403fa76b957b2fb3e8e5603baf09f99f0518de3f934f8"
     },
     "models/EXPORT.json": {
       "bytes": 1970,
@@ -98,6 +106,38 @@
     "models/normalization.json": {
       "bytes": 121885,
       "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    },
+    "models/rndvoc/EXPORT.json": {
+      "bytes": 2985,
+      "sha256": "fb4f0642bcda485ce45680ab80c9e2ce43a23843d5633552be355bc44edd0f17"
+    },
+    "models/rndvoc/TENSOR_PROVENANCE.json": {
+      "bytes": 75572,
+      "sha256": "5136edbaeb05389e8b2cb6af0e8c3d3a0298a8d173a3a191fd11f9a58f1ad810"
+    },
+    "models/rndvoc/adapter_fp16.safetensors": {
+      "bytes": 3811352,
+      "sha256": "2b0f43c0d80c7229aef692d03ef683860da33367a6eb9e236625ac2aebe58f1e"
+    },
+    "models/rndvoc/config.json": {
+      "bytes": 440,
+      "sha256": "2f40ab4ecbf34ba036ec47a30c22aa7841d8e3ba6849fbc7705b463f341d8d0f"
+    },
+    "models/rndvoc/model_config.json": {
+      "bytes": 1867,
+      "sha256": "a062cfea66953e2a579b975c90bbcc29f182067eefe1b9a9cb550c295d4d5722"
+    },
+    "models/rndvoc/training_config.json": {
+      "bytes": 2455,
+      "sha256": "bc57a7c7028206f05664b7d318114ab5bc985d0ff02b21a5dbf5c7ef8572ac97"
+    },
+    "models/rndvoc/vocoder_fp16.safetensors": {
+      "bytes": 2831510,
+      "sha256": "bc156a6adbd4fd79e085bc4f9d454c2298eed31079d94dacb6d0d217e9cfd511"
+    },
+    "models/rndvoc/vocoder_fp32.safetensors": {
+      "bytes": 4259368,
+      "sha256": "95ac8081bb033b1c640587f8f1e36701398a96ca950195aa44200c862f8629db"
     },
     "models/vocabulary.json": {
       "bytes": 3887,
@@ -191,9 +231,49 @@
       "bytes": 6174,
       "sha256": "eadfafb53fbaa7045b7a9bd2f5cf44f52941eb356becc628904840db52d94fc0"
     },
+    "new25_rndvoc/__init__.py": {
+      "bytes": 327,
+      "sha256": "27dc1dd26668a726fcb86138c9e020aae470f8a4bd1fbede35b1202105347ece"
+    },
+    "new25_rndvoc/_vendor/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "new25_rndvoc/_vendor/models/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "new25_rndvoc/_vendor/models/rnd_utils/__init__.py": {
+      "bytes": 63,
+      "sha256": "ffebc0b9b268b121d9d2d9c1b579dd441e305deda66df7034296b4573b67a6af"
+    },
+    "new25_rndvoc/_vendor/models/rnd_utils/basic_arch.py": {
+      "bytes": 23791,
+      "sha256": "8f5292097c067eef3ef3fdfb60155deb0c230c6c2e9e8ec8007e76579cfb5985"
+    },
+    "new25_rndvoc/_vendor/models/rnd_utils/norm.py": {
+      "bytes": 5867,
+      "sha256": "8b52e468ac3b2c08509a00e010509a35197ba9a5e488d1d2415db21b10606444"
+    },
+    "new25_rndvoc/_vendor/models/rndvoc_22k.py": {
+      "bytes": 9987,
+      "sha256": "094dea538236a7ead09a220d2adc063cb25ea93cbb8b3ff92ef43d0b815097c2"
+    },
+    "new25_rndvoc/frontend.py": {
+      "bytes": 1931,
+      "sha256": "95f791a68621d879eb9464ccbcd69ef618f6846275297e15226dcc403e4c8a8d"
+    },
+    "new25_rndvoc/inference.py": {
+      "bytes": 9859,
+      "sha256": "5fc1c0640714afe91423d3866d745b9605faa359bc47b252b586d1f5e5691332"
+    },
+    "new25_rndvoc/model.py": {
+      "bytes": 1928,
+      "sha256": "ebbdfbd85ad20eb924ccbae0a28847cd94467981539ed0dcea4f18ebe189352a"
+    },
     "pyproject.toml": {
-      "bytes": 497,
-      "sha256": "9e781f526293aa090eb87f3696e323da5fcd43976c4bb524a03875a96f5344ba"
+      "bytes": 575,
+      "sha256": "0d515f99af356994d1761bf4ac5267072488945e08e502b81feac840a4d698f1"
     },
     "receipts/acoustic_completed.json": {
       "bytes": 290,
@@ -231,6 +311,18 @@
       "bytes": 9443,
       "sha256": "4527a7a757b7db0543a2967c6031c99d9344ee5656b998a3a4014e9895837f60"
     },
+    "receipts/rndvoc_development_summary.json": {
+      "bytes": 2132,
+      "sha256": "162c8e12e8734a62f59a01e7221e8a9d5fbe79dc70c0b1aa3ef64503f2dbefb2"
+    },
+    "receipts/rndvoc_provenance.json": {
+      "bytes": 2590,
+      "sha256": "8128dda5aa17172636bd752d86d13e0cf8a6707a048984a5541b105f8ec05518"
+    },
+    "receipts/rndvoc_release_static_validation.json": {
+      "bytes": 1004,
+      "sha256": "81f012c8277c7eaf5badb3e70d10d611ae505f18dbb4fea305f2fdef81363e6e"
+    },
     "requirements-fargan.txt": {
       "bytes": 105,
       "sha256": "46173621722af4a87736e1726625e40e9580db6e5b4293173b1d6349f85aa6bc"
@@ -239,6 +331,10 @@
       "bytes": 106,
       "sha256": "6d9be3806fbae6892fa07e30445dfc8f66127d0d431900176d3bc9a456b85337"
     },
+    "requirements-rndvoc.txt": {
+      "bytes": 145,
+      "sha256": "c0e18762a58b35db21574ff25dfdeb89c4d70fa83f020a37112146cf5a6940c4"
+    },
     "requirements.txt": {
       "bytes": 156,
       "sha256": "7ba6e9da9caf5c205d0054db79f98f6e4c5071eeb2321a571569f96a279448db"
@@ -246,6 +342,10 @@
     "scripts/export_acoustic.py": {
       "bytes": 8992,
       "sha256": "bcfc1d5ce22a2df6f637c87951425fa5dd6967031231aa64808b6d9d600320fa"
+    },
+    "scripts/export_rndvoc.py": {
+      "bytes": 8542,
+      "sha256": "2d9df7c97d23a118b10f90386f67b88c0348b644530b483570b91bd7e94799a5"
     },
     "scripts/prepare_corpus.py": {
       "bytes": 10330,
@@ -262,6 +362,10 @@
     "scripts/verify_release.py": {
       "bytes": 6607,
       "sha256": "35427376bed20ea9806ad5bdafd5cec929a7081a630424fc87f21e203f1766c8"
+    },
+    "scripts/verify_rndvoc.py": {
+      "bytes": 7203,
+      "sha256": "66adb08c0341e9446137962557a1b96ee71b2dc22aa03fd144dab8f643897707"
     },
     "tests/test_fargan.py": {
       "bytes": 4651,
@@ -298,6 +402,14 @@
     "third_party/opus/PROVENANCE.json": {
       "bytes": 3246,
       "sha256": "0dd42be4c6d530cebed7311cd61f832d91c56ff19ce958296458f12bbf8bf315"
+    },
+    "third_party/rndvoc/LICENSE": {
+      "bytes": 1069,
+      "sha256": "002c2696d92b5c8cf956c11072baa58eaf9f6ade995c031ea635c6a1ee342ad1"
+    },
+    "third_party/rndvoc/PROVENANCE.json": {
+      "bytes": 2192,
+      "sha256": "cb6d2adc869fbfd33768870d467f31a1192d98a542281131cfe136d1ab822eb0"
     }
   }
 }

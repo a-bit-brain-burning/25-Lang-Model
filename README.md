@@ -1,8 +1,10 @@
-# 25-Lang-Model · 已训练声学模型、HiFi-GAN与FARGAN声码器
+# 25-Lang-Model · 已训练声学模型、HiFi-GAN、FARGAN与RNDVoC声码器
 
 本仓库保存完成 **80,000次更新**的25语共享声学模型、音素时长/停顿/韵律预测、31/39维声学输出，以及独立训练和推理脚本。现已追加第二个实验完成 **31,403次Generator更新**的HiFi-GAN微调声码器及物理条件→mel适配器；可将已有兼容音素特征生成的声学结果合成为WAV。详见 [HiFi-GAN模型卡](docs/HIFIGAN_MODEL_CARD.md) 和 [整句推理说明](docs/HIFIGAN_INFERENCE.md)。
 
 另新增固定开发窗口选中的 **4750步FARGAN及31/39维→20维adapter**，复用本仓库已有80k声学模型。完整FARGAN链为 **3,895,008参数、7,790,016字节FP16净权重**；新增文件仅含FARGAN和adapter。其离线入口保留原有效中心`[400,160*T−240)`，输入T帧输出`(T−4)*160`采样，并写对齐sidecar；详见[FARGAN模型卡](docs/FARGAN_MODEL_CARD.md)和[推理说明](docs/FARGAN_INFERENCE.md)。
+
+现已追加 **25,000步RNDVoC-Lite本地复现候选**及同一E2 mel adapter。RNDVoC为713,929参数，接原80k声学模型和adapter后共 **3,802,992个共享可学习参数**。默认可学习权重FP16、三个非学习投影缓冲FP32；它是查询时已评估的开发集最佳，不表示最终训练结束。真实mel重建SC为0.173447，80k预测特征＋真实时长整链SC为0.717298，两者不可混用。详见[RNDVoC模型卡](docs/RNDVOC_MODEL_CARD.md)和[接入接口](docs/RNDVOC_INFERENCE.md)。
 
 声学模型为 **1,186,071个存储参数**，FP16张量净大小2,372,142字节。追加的HiFi-GAN Generator为925,985参数、适配器为1,902,992参数，**完整链合计4,015,048参数、8,030,096字节FP16净权重**。两部分均提供FP16部署权重和FP32参考权重。
 
@@ -26,6 +28,11 @@
 | FARGAN 4750与adapter的FP16权重，91张量 | [`models/fargan/vocoder_adapter_fp16.safetensors`](models/fargan/vocoder_adapter_fp16.safetensors) |
 | FARGAN身份、声学依赖及SHA256 | [`models/fargan/EXPORT.json`](models/fargan/EXPORT.json) |
 | FARGAN有效中心推理和能力边界 | [`docs/FARGAN_INFERENCE.md`](docs/FARGAN_INFERENCE.md)、[`docs/FARGAN_MODEL_CARD.md`](docs/FARGAN_MODEL_CARD.md) |
+| RNDVoC25k权重，FP16参数＋FP32缓冲 | [`models/rndvoc/vocoder_fp16.safetensors`](models/rndvoc/vocoder_fp16.safetensors) |
+| RNDVoC25k未舍入FP32参考权重 | [`models/rndvoc/vocoder_fp32.safetensors`](models/rndvoc/vocoder_fp32.safetensors) |
+| 与已有E2完全相同的独立adapter权重 | [`models/rndvoc/adapter_fp16.safetensors`](models/rndvoc/adapter_fp16.safetensors) |
+| RNDVoC身份、逐张量来源及文件SHA | [`models/rndvoc/EXPORT.json`](models/rndvoc/EXPORT.json)、[`models/rndvoc/TENSOR_PROVENANCE.json`](models/rndvoc/TENSOR_PROVENANCE.json) |
+| RNDVoC原75句评估和提交静态核对 | [`receipts/rndvoc_development_summary.json`](receipts/rndvoc_development_summary.json)、[`receipts/rndvoc_release_static_validation.json`](receipts/rndvoc_release_static_validation.json) |
 
 语言ID顺序固定为：
 
@@ -45,8 +52,12 @@ python -m pip install -e .
 python -m pip install -e '.[hifigan]'
 # FARGAN使用同一SciPy依赖，也可选择：
 python -m pip install -e '.[fargan]'
+# RNDVoC另需librosa构造固定mel投影：
+python -m pip install -e '.[rndvoc]'
 python scripts/verify_release.py
 python scripts/verify_fargan.py
+# 此入口仅解析源码、元数据和权重文件，不导入模型或执行推理：
+python scripts/verify_rndvoc.py
 python -m unittest discover -s tests -v
 ```
 
@@ -93,10 +104,22 @@ python -m new25_fargan.inference \
 
 FARGAN要求至少5帧，输出从原时轴第400个采样开始，结束于`160*T−240`。不补首尾，不能用完整原句长度或逐块`T*160`规则解释；它与HiFi-GAN是两种独立离线声码器选择。4750的75句开发评分使用真实时长，不能当作预测时长路径的评分。
 
+选择RNDVoC25k完整时间线（T帧输出恰好T*160个16k采样）：
+
+```bash
+python -m new25_rndvoc.inference \
+  --acoustic acoustic.npz --language zh \
+  --model-dir models/rndvoc --output output_rndvoc.wav
+```
+
+RNDVoC还提供`RNDVoCVocoder.synthesize_mel(raw_logmel)`，直接消费固定HiFi-GAN帧网格的`[1,80,M]`自然对数mel，返回22.05k的`[1,M*256]`PCM。当前是CPU整句参考实现；不提供连续声码器状态。全链FP16可学习张量7,605,984字节，另有1,380,996字节FP32投影缓冲，均不能替代完整10MB进程实测。
+
 普通新文本到IPA及32/36维、22/34维特征的完整前端资产尚未交付。本仓库可消费已有兼容特征，经声学模型和HiFi-GAN生成音频；不能据此宣称任意新文本TTS已验收。HiFi-GAN当前为整句离线实现，未实现通用声码器接口的连续分块状态协议。
 
 ## 验收边界
 
 80,000步完成回执证明声学训练达到本轮更新上限。发布核验覆盖原始检查点SHA、97个张量一致性、FP16舍入、独立模型前向、25语接口及分块状态。真实语音质量、原音色、噪声、完整任意文本TTS及整个Linux进程10,000,000字节峰值尚未全部验收。训练步数和权重文件大小不代替这些结果。
 
-仓库包含声学模型、HiFi-GAN、FARGAN与相应适配器的model-only权重和复现/推理代码；不附带训练音频、训练特征、完整联合训练检查点、优化器历史、判别器权重或服务器运维文件。HiFi-GAN的原MIT许可保留于 [`third_party/hifi_gan/LICENSE`](third_party/hifi_gan/LICENSE)，Opus FARGAN原许可及IPR说明保留于[`third_party/opus/`](third_party/opus/)。
+仓库包含声学模型、HiFi-GAN、FARGAN、RNDVoC与相应适配器的model-only权重和复现/推理代码；不附带训练音频、训练特征、完整联合训练检查点、优化器历史、判别器权重或服务器运维文件。HiFi-GAN的原MIT许可保留于 [`third_party/hifi_gan/LICENSE`](third_party/hifi_gan/LICENSE)，Opus FARGAN原许可及IPR说明保留于[`third_party/opus/`](third_party/opus/)，RNDVoC上游MIT原文及固定来源保留于[`third_party/rndvoc/`](third_party/rndvoc/)。
+
+RNDVoC本次提交复用已有真实75句评估/试听回执，只执行模型张量序列化、源码与接口静态核对；没有为push重跑训练、推理、数据集评测或性能实验。静态检查通过不表述为新发布入口的运行验证通过。

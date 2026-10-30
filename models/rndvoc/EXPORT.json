@@ -1,0 +1,74 @@
+{
+  "status": "SELECTED_RNDVOC25000_MODEL_ONLY_RELEASE",
+  "source_checkpoint_sha256": "45b811b8f2a3ae7eba3742fc2b0115d6898145f42fa5b8c662bb6bf8032e1dd1",
+  "source_checkpoint_step": 25000,
+  "source_identity": "2977f6a186c033c060f797d4c1cb7c9eb755a6b790debfdda36d1697a9077e52",
+  "upstream_commit": "f219eb5cf7dad21bbf64489f48a685edd62736af",
+  "generator_parameters": 713929,
+  "adapter_parameters": 1902992,
+  "combined_with_acoustic_parameters": 3802992,
+  "learned_fp16_tensor_bytes_with_acoustic": 7605984,
+  "additional_fp32_nonlearned_buffer_bytes": 1380996,
+  "combined_tensor_bytes_with_acoustic_and_buffers": 8986980,
+  "generator_state_tensors": 196,
+  "acoustic_dependency": {
+    "repository_path": "models",
+    "training_steps": 80000,
+    "source_checkpoint_sha256": "dbeb07dec11b3600a2f49c729353bc812b46aa9129032ada830a47927d38050f",
+    "fp16_weights": {
+      "bytes": 2380398,
+      "sha256": "9e9b17f22b3355e4b9a09b34fab5d022119a7964cd03cf702e8f1d68987bff02"
+    },
+    "vocabulary": {
+      "bytes": 3887,
+      "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+    },
+    "normalization": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    }
+  },
+  "adapter_dependency": {
+    "source_e2_step": 31403,
+    "source_checkpoint_sha256": "c2a12e3ccd96486504d6c01d2b253e225f9e9b063a49339eed97e5217f02a803",
+    "already_published_hifigan_file_sha256": "1493330513821fdf877d08bbc62963017ebb3c633ceb5767e3d5e242f042d802",
+    "listening_source_raw_fp16_sha256": "34209d973a18f076f0be1b7922ffe0747874745c0ad8187f4a5bdd9583d4f1cd",
+    "all63_tensor_bytes_match_existing_listening": true
+  },
+  "files": {
+    "TENSOR_PROVENANCE.json": {
+      "bytes": 75572,
+      "sha256": "5136edbaeb05389e8b2cb6af0e8c3d3a0298a8d173a3a191fd11f9a58f1ad810"
+    },
+    "adapter_fp16.safetensors": {
+      "bytes": 3811352,
+      "sha256": "2b0f43c0d80c7229aef692d03ef683860da33367a6eb9e236625ac2aebe58f1e"
+    },
+    "config.json": {
+      "bytes": 440,
+      "sha256": "2f40ab4ecbf34ba036ec47a30c22aa7841d8e3ba6849fbc7705b463f341d8d0f"
+    },
+    "model_config.json": {
+      "bytes": 1867,
+      "sha256": "a062cfea66953e2a579b975c90bbcc29f182067eefe1b9a9cb550c295d4d5722"
+    },
+    "training_config.json": {
+      "bytes": 2455,
+      "sha256": "bc57a7c7028206f05664b7d318114ab5bc985d0ff02b21a5dbf5c7ef8572ac97"
+    },
+    "vocoder_fp16.safetensors": {
+      "bytes": 2831510,
+      "sha256": "bc156a6adbd4fd79e085bc4f9d454c2298eed31079d94dacb6d0d217e9cfd511"
+    },
+    "vocoder_fp32.safetensors": {
+      "bytes": 4259368,
+      "sha256": "95ac8081bb033b1c640587f8f1e36701398a96ca950195aa44200c862f8629db"
+    }
+  },
+  "contains_acoustic_weights": false,
+  "contains_optimizer_discriminator_rng_training_audio_or_features": false,
+  "native_10MB_ram_pass": false,
+  "human_quality_pass": false,
+  "arbitrary_text_frontend_verified": false,
+  "original_training_continues_unmodified": true
+}

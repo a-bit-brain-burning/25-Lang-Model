@@ -1,0 +1,39 @@
+{
+  "upstream_repository": "https://github.com/Andong-Li-speech/RNDVoC",
+  "upstream_commit": "f219eb5cf7dad21bbf64489f48a685edd62736af",
+  "license": "MIT; original placeholder copyright line retained unchanged",
+  "official_lite_configuration_or_weights": false,
+  "local_candidate_parameters": 713929,
+  "local_widths": {
+    "null_nstage": 4,
+    "input_channel": 128,
+    "hidden_channel": 72,
+    "squeeze_size": 32
+  },
+  "learned_forward": "Pinned local training subclass; only package-relative imports changed",
+  "nonlearned_synthesis": "Same tested reflect384/centerFalse aligned overlap-add; no native torch.istft grid substitution",
+  "upstream_files": {
+    "models/rndvoc_22k.py": "75aad11bb3baf72fc955544c1ca940affdc7271171182950a68c308ecb56691c",
+    "models/rnd_utils/basic_arch.py": "83e59ac9e3648d36bb9347ce351ba97e560b61078d6f6f0a07e47b38278f7811",
+    "models/rnd_utils/norm.py": "79ae453ab438128ab1a5687e9a948bd3d6d9db41796e2e120e438f0a82d26f48"
+  },
+  "inference_executed_during_this_push": false,
+  "static_source_alignment": {
+    "generator_forward_ast_identical_to_previously_measured_source": true,
+    "generator_forward_ast_sha256": "46a24a4979100cd4c1d067aa26e4c13351924aa4f7445ce0a3b709bf3033a523",
+    "aligned_frontend_byte_identical_to_previously_measured_source": true,
+    "existing_e2_adapter_forward_ast_identical": true,
+    "model_instantiated_or_forward_run_for_push": false
+  },
+  "released_source_files": {
+    "models/rndvoc_22k.py": "094dea538236a7ead09a220d2adc063cb25ea93cbb8b3ff92ef43d0b815097c2",
+    "models/rnd_utils/basic_arch.py": "8f5292097c067eef3ef3fdfb60155deb0c230c6c2e9e8ec8007e76579cfb5985",
+    "models/rnd_utils/norm.py": "8b52e468ac3b2c08509a00e010509a35197ba9a5e488d1d2415db21b10606444"
+  },
+  "module_ast_sha256": {
+    "models/rndvoc_22k.py": "3ac40630c0c132a9229cb55519d5e63ccc54bb127a834e0e28962aa6d7f35e93",
+    "models/rnd_utils/basic_arch.py": "1328b910a928271d53d19472c488e08f07701a196d061b6ce7cdc8f2f782ab8a",
+    "models/rnd_utils/norm.py": "106b890009bf4c39694eec5922db3ff71ebb4c4f3df627c4331bc221cce0f4e8"
+  },
+  "vendor_formatting": "Only trailing whitespace stripped; complete module AST equals pinned source"
+}

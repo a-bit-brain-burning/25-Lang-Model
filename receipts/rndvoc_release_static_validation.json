@@ -1,0 +1,25 @@
+{
+  "status": "RNDVOC25000_STATIC_RELEASE_CHECKS_PASSED",
+  "checkpoint_step": 25000,
+  "checkpoint_sha256": "45b811b8f2a3ae7eba3742fc2b0115d6898145f42fa5b8c662bb6bf8032e1dd1",
+  "model_files_sha_verified": [
+    "models/rndvoc/TENSOR_PROVENANCE.json",
+    "models/rndvoc/adapter_fp16.safetensors",
+    "models/rndvoc/config.json",
+    "models/rndvoc/model_config.json",
+    "models/rndvoc/training_config.json",
+    "models/rndvoc/vocoder_fp16.safetensors",
+    "models/rndvoc/vocoder_fp32.safetensors"
+  ],
+  "generator_parameter_tensors": 193,
+  "generator_parameters": 713929,
+  "fp32_buffer_elements": 345249,
+  "adapter_tensor_byte_equality": 63,
+  "source_ast_parsed_files": 12,
+  "entry_signatures_paths_dependencies_and_doc_links_checked": true,
+  "tensor_values_and_headers_checked_without_torch": true,
+  "model_imported_or_instantiated": false,
+  "inference_or_training_run": false,
+  "quality_evaluation_or_performance_benchmark_run": false,
+  "existing_development_evidence_reused": true
+}

@@ -1,0 +1,5 @@
+# Offline RNDVoC reference; installation does not run inference or evaluation.
+torch>=2.6,<3
+numpy>=1.26,<3
+scipy>=1.11,<2
+librosa>=0.10.2,<0.12

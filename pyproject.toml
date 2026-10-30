@@ -4,14 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "new25-acoustic"
-version = "0.3.0"
-description = "Shared 25-language acoustic model with HiFi-GAN and selected FARGAN vocoders"
+version = "0.4.0"
+description = "Shared 25-language acoustic model with HiFi-GAN, FARGAN and selected RNDVoC vocoders"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.6,<3", "numpy>=1.26,<3"]
 
 [project.optional-dependencies]
 hifigan = ["scipy>=1.11,<2"]
 fargan = ["scipy>=1.11,<2"]
+rndvoc = ["scipy>=1.11,<2", "librosa>=0.10.2,<0.12"]
 
 [tool.setuptools.packages.find]
-include = ["new25_acoustic*", "new25_hifigan*", "new25_fargan*"]
+include = ["new25_acoustic*", "new25_hifigan*", "new25_fargan*", "new25_rndvoc*"]
