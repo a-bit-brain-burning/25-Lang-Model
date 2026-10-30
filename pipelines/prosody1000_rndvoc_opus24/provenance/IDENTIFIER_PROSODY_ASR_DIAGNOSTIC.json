@@ -1,0 +1,77 @@
+{
+  "diagnostic_only": true,
+  "rows": [
+    {
+      "id": "mu",
+      "variant": "natural",
+      "text": "下一趟航班为MU5108号。",
+      "transcription": "下一趟航班為MU5108"
+    },
+    {
+      "id": "cz",
+      "variant": "natural",
+      "text": "下一趟航班为CZ2671号。",
+      "transcription": "下一趟航班為CC-82671號"
+    },
+    {
+      "id": "ab",
+      "variant": "natural",
+      "text": "请核对编号AB3409和0072。",
+      "transcription": "請合對編號Db3409和0072"
+    },
+    {
+      "id": "two",
+      "variant": "natural",
+      "text": "航班MU5108已经到达，请前往T2航站楼。",
+      "transcription": "航班人Mu-5108已經到達,請前往第82航站樓"
+    },
+    {
+      "id": "cu",
+      "variant": "natural",
+      "text": "末班航班是CU7092号。",
+      "transcription": "莫班航班時,CEU 7092號"
+    },
+    {
+      "id": "digits",
+      "variant": "natural",
+      "text": "验证码是007236。",
+      "transcription": "驗證碼是0072236"
+    },
+    {
+      "id": "mu",
+      "variant": "relaxed",
+      "text": "下一趟航班为MU5108号。",
+      "transcription": "下一趟航班為MU5108"
+    },
+    {
+      "id": "cz",
+      "variant": "relaxed",
+      "text": "下一趟航班为CZ2671号。",
+      "transcription": "下一趟航班為CCR671號"
+    },
+    {
+      "id": "ab",
+      "variant": "relaxed",
+      "text": "请核对编号AB3409和0072。",
+      "transcription": "請合對編號Db3409和007R"
+    },
+    {
+      "id": "two",
+      "variant": "relaxed",
+      "text": "航班MU5108已经到达，请前往T2航站楼。",
+      "transcription": "航班MU5108已經到達,請前往第二航站樓"
+    },
+    {
+      "id": "cu",
+      "variant": "relaxed",
+      "text": "末班航班是CU7092号。",
+      "transcription": "墨灣航班是CU 7092號"
+    },
+    {
+      "id": "digits",
+      "variant": "relaxed",
+      "text": "验证码是007236。",
+      "transcription": "嚴正碼是007-2236"
+    }
+  ]
+}

@@ -252,6 +252,20 @@
         "volts"
       ],
       "zh": "伏"
+    },
+    "°C": {
+      "en": [
+        "degree Celsius",
+        "degrees Celsius"
+      ],
+      "zh": "摄氏度"
+    },
+    "°F": {
+      "en": [
+        "degree Fahrenheit",
+        "degrees Fahrenheit"
+      ],
+      "zh": "华氏度"
     }
   },
   "overrides": {

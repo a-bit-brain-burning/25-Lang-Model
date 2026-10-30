@@ -94,6 +94,13 @@
       "unknown_phone_substitution": false,
       "untrained_fused_erhua": "explicit_defer_to_existing_separate_realization",
       "Chinese_short_uppercase": "accepted_2_to_5_letters_spelling_unless_lexical_or_override"
+    },
+    "English_clarity": {
+      "contextual_numbers": "accepted_bilingual_normalize_en_with_safe_number_pattern",
+      "converter": "vendored_English_num2words_0.5.14",
+      "lexicon": "existing_frozen_CMU_and_productive_known_root_rules",
+      "ordinary_spaced_words_not_identifier_prefixes": true,
+      "temperatures": "unit_before_letter_spelling"
     }
   },
   "total_learned_pipeline_parameters": 4622455,
@@ -105,5 +112,20 @@
   "public_entry": "synthesize.py",
   "model_training_updates_for_this_publication": 0,
   "extra3000_training_not_started": true,
-  "human_quality_accepted": false
+  "human_quality_accepted": false,
+  "identifier_prosody": {
+    "file": "identifier_prosody.py",
+    "default": "natural",
+    "legacy_option": "original",
+    "scope": "Chinese identifier letter/digit units only",
+    "other_internal_gap_ms": 0,
+    "pitch_conditioning": "bounded coherent register;85pct native within-syllable contour",
+    "PCM_pitch_effect_or_stretch_or_letter_splice": false,
+    "U": "existing light yiu1",
+    "C": "existing long vowel",
+    "learned_weights_changed": false,
+    "logF0_target_limit_before_smoothing": 0.18,
+    "letter_to_first_digit_gap_ms": 60,
+    "standalone_digit_leading_gap": "original_first_digit_emphasis_policy"
+  }
 }

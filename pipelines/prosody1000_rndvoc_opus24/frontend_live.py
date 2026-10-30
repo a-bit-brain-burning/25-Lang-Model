@@ -9,6 +9,11 @@ def default_policy():return ReadingPolicy()
 
 def details(text,language,front=None,policy=None):
     policy=policy or default_policy()
+    compound_events=[]
+    if language=='en' and front is not None:
+        from english_lexicon import install
+        lexical_policy=install(front)
+        text,compound_events=lexical_policy.camel_case(text,policy.data['overrides'].get('en',{}),policy.data['initialisms'])
     text,events=policy.scan(text,language,LexicalLookup(front) if front is not None else None)
     if language=='en':
         pieces=[];cursor=0
@@ -17,8 +22,9 @@ def details(text,language,front=None,policy=None):
             pieces.append(' '+spoken+' ');event['spoken']=spoken;cursor=event['end']
         pieces.append(text[cursor:]);spoken=''.join(pieces)
         for symbol,word in [('/','slash'),('+','plus'),('#','hash'),('@','at'),('_','underscore')]:spoken=spoken.replace(symbol,' '+word+' ')
-        spoken=' '.join(base.normalize(spoken,'en')[0].split())
-        return spoken,[],events,policy.identity()
+        from legacy_contract import normalize_english
+        spoken=' '.join(normalize_english(spoken).split())
+        return spoken,[],events,{**policy.identity(),'English_compound_expansions':compound_events,'English_lexicon_policy':'known_CMU_productive_morphology_v1'}
     if language!='zh':return text,[],[],policy.identity()
     saved=[]
     def protect(value,kind='digits',event=None):

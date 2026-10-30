@@ -1,3 +1,5 @@
+本分支含中文编号音调／连读修正，默认使用原1000步模型权重；可通过 `--identifier-prosody original` 对照旧韵律控制。具体用法见[完整链路文档](pipelines/prosody1000_rndvoc_opus24/README.md)。
+
 当前中文前端采用指定 `best_bilingual_release_20261029` 的原生注音与词典规则；适配限制和离线重建入口见[完整链路文档](pipelines/prosody1000_rndvoc_opus24/README.md)。
 
 > **当前完整文本到24 kHz入口（本分支）**：见 [`pipelines/prosody1000_rndvoc_opus24/`](pipelines/prosody1000_rndvoc_opus24/README.md)。已集成当前1000步续训声学／韵律、中文航班号/长文前端、E2、RNDVoC25000和原Opus BWE24，带独立运行/校验脚本，支持缩写自动判断、读法策略和JSON发音词典覆盖。下文原80k声学和各声码器发布保持原样。

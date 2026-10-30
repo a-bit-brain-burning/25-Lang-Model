@@ -56,7 +56,10 @@ class ReadingPolicy:
         literals='|'.join(custom+regular) or r'(?!)'
         units='|'.join(re.escape(x) for x in sorted(self.data['units'],key=len,reverse=True))
         unit=r'\d[\d,]*(?:\.\d+)?[ \t]*(?:'+units+r')(?![A-Za-z0-9])'
-        return re.compile(r'(?<![A-Za-z0-9])(?P<literal>'+literals+r')|(?<![A-Za-z0-9])(?P<unit>'+unit+r')|(?<![A-Za-z0-9])(?P<dotted>'+_DOT+r')(?![A-Za-z0-9])|(?<![A-Za-z0-9])(?P<spaced>'+_SPACE+r')(?![A-Za-z0-9])|(?<![A-Za-z0-9])(?P<code>'+_CODE+r')(?![A-Za-z0-9])|(?P<word>'+_WORD+r')')
+        code_pattern=_CODE
+        if language=='en':
+            code_pattern=code_pattern.replace(r'[A-Za-z]{1,3}[ \t]+\d',r'(?!(?i:IS|AM|ARE|WAS|HAS|HAD|CAN|NOT|THE|AND|FOR|OF|IN|ON|AT|TO|AS|BE|BY|DO|IF|MY|OUR|WE|HE|SHE|IT|ITS|YOU|SEE|SAY|ALL|GET)\b)[A-Z]{1,3}[ \t]+\d')
+        return re.compile(r'(?<![A-Za-z0-9])(?P<literal>'+literals+r')|(?<![A-Za-z0-9])(?P<unit>'+unit+r')|(?<![A-Za-z0-9])(?P<dotted>'+_DOT+r')(?![A-Za-z0-9])|(?<![A-Za-z0-9])(?P<spaced>'+_SPACE+r')(?![A-Za-z0-9])|(?<![A-Za-z0-9])(?P<code>'+code_pattern+r')(?![A-Za-z0-9])|(?P<word>'+_WORD+r')')
 
     def scan(self,text,language,lexical=None):
         """Offsets refer to the NFKC source; literal overrides are case-sensitive."""
@@ -85,6 +88,9 @@ class ReadingPolicy:
                 prefix=prefix[0] if prefix else ''
                 if not any(c.isdigit() for c in raw) and not raw.isupper() and not any(p.upper() in self.data['initialisms'] for p in re.split('[-_]',raw)):continue
                 if re.search(r'\s',raw) and prefix.lower() in ['in','on','at','to','of','for','and','or','no','pro','max','air']:continue
+                if language=='en' and re.search(r'\s',raw):
+                    common={'is','am','are','was','has','had','can','not','the','an','as','be','by','do','if','my','our','we','he','she','it','its','you','see','say','all','get'}
+                    if prefix.lower() in common or (not prefix.isupper() and prefix.upper() not in self.data['initialisms']):continue
                 suffix=re.sub(r'^'+re.escape(prefix)+r'[._ -]*','',raw) if prefix else ''
                 word=self.data['word_acronyms'].get(prefix.upper())
                 special=next((v.get(language) for k,v in self.data['specials'].items() if k.casefold()==prefix.casefold()),None)

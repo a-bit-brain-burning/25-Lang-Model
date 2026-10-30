@@ -9,6 +9,8 @@
   "quality_accepted": false,
   "frontend_policy": "pipelines/prosody1000_rndvoc_opus24/frontend_profiles/default.json",
   "frontend_custom_pronunciations_supported": true,
-  "frontend_revision": "Chinese_reference_release_20261029_v1",
-  "Chinese_frontend_reference": "pipelines/prosody1000_rndvoc_opus24/reference_chinese/SOURCE_IDENTITY.json"
+  "frontend_revision": "contextual_English_numbers_and_Chinese_identifier_prosody_v1",
+  "Chinese_frontend_reference": "pipelines/prosody1000_rndvoc_opus24/reference_chinese/SOURCE_IDENTITY.json",
+  "identifier_prosody_default": "natural",
+  "identifier_prosody_legacy_option": "original"
 }

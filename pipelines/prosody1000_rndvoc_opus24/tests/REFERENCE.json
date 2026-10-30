@@ -150,43 +150,43 @@
     "segments": 1
   },
   "flight_cz": {
-    "wav24_sha256": "70184a8c742ecb156aeebe2c09177e343afec3fe279fed76cbed68f232c53d32",
+    "wav24_sha256": "dba55c4d053a2b691763f18033bcf3901e6b87f3b9638839568f9242ad7166c6",
     "samples": 78240,
     "sample_rate": 24000,
     "segments": 1
   },
   "flight_mu": {
-    "wav24_sha256": "814d17f7cdb47fd1bca3d35d9032be3cd025b87959b23acf3e9c4fadd2445527",
+    "wav24_sha256": "f6675b6752e2427ec731eceb5131623751ae2590fc87037130a78ded7fe15fea",
     "samples": 129120,
     "sample_rate": 24000,
     "segments": 1
   },
   "flight_ca": {
-    "wav24_sha256": "ca0df1b5893f904ba638fb716ed81f49db1bf662d9864cec1dcbd36b025da4f2",
+    "wav24_sha256": "36c127a22c64f2901b27303b4041d671c19ab26aea8c4e1b0ac0946da48a699f",
     "samples": 134880,
     "sample_rate": 24000,
     "segments": 1
   },
   "spaced_code": {
-    "wav24_sha256": "70184a8c742ecb156aeebe2c09177e343afec3fe279fed76cbed68f232c53d32",
+    "wav24_sha256": "dba55c4d053a2b691763f18033bcf3901e6b87f3b9638839568f9242ad7166c6",
     "samples": 78240,
     "sample_rate": 24000,
     "segments": 1
   },
   "initialisms": {
-    "wav24_sha256": "55415c2d684fa30572a402243a5f15ef43d5d88e4583cf2e1c7a869645e21f56",
+    "wav24_sha256": "a64103826f098a21795eb6140fa95561506baba2d6a53863e29f265ca447fa66",
     "samples": 156960,
     "sample_rate": 24000,
     "segments": 1
   },
   "digit_runs": {
-    "wav24_sha256": "5f3dad38082b54209bdc586d779686a6413021034f0d87ef19c812d99b7dfeae",
+    "wav24_sha256": "adce2a5bdc3e6f6b3c77de0b38fd62714b458f79092341ef6954f0027e028795",
     "samples": 149040,
     "sample_rate": 24000,
     "segments": 1
   },
   "repeat_probe": {
-    "wav24_sha256": "20240499e294a3bfb897b88522e03a9749587f3c4f377807ef90c1a58f4c4bf1",
+    "wav24_sha256": "6d3c3296e3a3ddfa63346ae6a61d32f95f9f77f679ae28606d68389ac76863dd",
     "samples": 964080,
     "sample_rate": 24000,
     "segments": 4
@@ -198,7 +198,7 @@
     "segments": 12
   },
   "long_zh": {
-    "wav24_sha256": "b85120312efda684dbd809b1374a5d11456516fa419ab661cb8a74289aa54a2a",
+    "wav24_sha256": "856717c8c0ef44e5d1b6087cd091e95de7bdd6db572a05ccf1e5bf6c6def7891",
     "samples": 1560600,
     "sample_rate": 24000,
     "segments": 8

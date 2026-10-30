@@ -15,7 +15,15 @@ def plan(text,language,directory,frontend_config=None,abbreviation_mode='auto'):
         def encode(value):
             if language=='zh':return build_zh(front,value,policy)
             spoken,unused,events,identity=details(value,'en',front,policy) if language=='en' else (value,[],[],policy.identity())
-            arrays,meta=front.encode(spoken,language);meta.update(input_text=value,normalized_text=spoken,identifier_units=[],reading_decisions=events,frontend_policy=identity);return arrays,meta
+            arrays,meta=front.encode(spoken,language)
+            if language=='en':
+                settings,adapter=front._session('en');raw=adapter.encode('en',spoken,settings)
+                meta['English_words']=list(raw['words']);meta['English_word_phone_ranges']=raw['word_phone_ranges'].tolist()
+                meta['English_numeric_normalization']='accepted_bilingual_20261029'
+                from english_lexicon import install
+                lexical=install(front);meta['English_lexicon_decisions']=[lexical.sources[w.lower()]for w in raw['words']if w.lower()in lexical.sources]
+                meta['English_oov_words']=list(raw.get('oov_words',[]))
+            meta.update(input_text=value,normalized_text=spoken,identifier_units=[],reading_decisions=events,frontend_policy=identity);return arrays,meta
         def fits(value):
             try:return len(encode(value)[0]['phones'])<=LIMIT_PHONES
             except FrontendCapacityError:return False

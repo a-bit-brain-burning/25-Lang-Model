@@ -33,3 +33,11 @@ def normalize_chinese(text):
     return text,protected
 def identity():
     return {str(LEGACY/name):hashlib.sha256((LEGACY/name).read_bytes()).hexdigest() for name in ['frontend.py','text_prepare.py','audio_join.py']}
+
+# The accepted bilingual release also provides contextual English numbers:
+# phone/account digits, clock/year/date, range, money and fractions/units.
+from decimal import Decimal
+from number_words import num2words
+english_ns=dict(ns,Decimal=Decimal,num2words=num2words,NUMBER=r'\d+(?:,\d{3})*(?:\.\d+)?')
+selected(LEGACY/'text_prepare.py',{'en_number','money','normalize_en'},english_ns)
+def normalize_english(text):return english_ns['normalize_en'](text)

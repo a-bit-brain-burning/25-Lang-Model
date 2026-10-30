@@ -6,6 +6,7 @@ ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'neural'))
 from loader import load
 from identifier_first_digit import install,install_vocoder_energy
+from identifier_prosody import apply_pitch,install_connection
 from new25_acoustic.inference import predict_durations
 import torch
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -71,7 +72,9 @@ def join_phrases(pieces,texts,sample_rate):
             p[:fade]*=np.linspace(0,1,fade,dtype=np.float32);p[-fade:]*=np.linspace(1,0,fade,dtype=np.float32)
     return np.concatenate(pieces),records
 class Engine:
-    def __init__(self):
+    def __init__(self,identifier_prosody='natural'):
+        if identifier_prosody not in ['original','natural']:raise ValueError('Unknown identifier prosody mode')
+        self.identifier_prosody=identifier_prosody
         self.acoustic,self.vocoder=load();self.base_encode=self.acoustic.model.encode;self.base_adapter=self.vocoder.adapter.forward
         from new25_postprocess.bwe24 import OpusBWE24
         self.bwe=OpusBWE24(cache=None)
@@ -82,8 +85,27 @@ class Engine:
         meta=read(mp);self.acoustic.model.encode=self.base_encode;self.vocoder.adapter.forward=self.base_adapter
         regular,u,c,digit=install(self.acoustic,features,meta,'natural') if language=='zh' else ([],[],[],[])
         continuous=install_flow(self.acoustic,features,meta) if flow and language=='zh' else []
+        active=language=='zh' and self.identifier_prosody!='original' and bool(meta.get('identifier_units'))
+        connection=install_connection(self.acoustic,features,meta) if active else []
         with torch.inference_mode():result=self.acoustic.predict(language=language,**features)
-        return result,dict(frontend=meta,regular=regular,U=u,C=c,first_digit=digit,continuous_code_flow=continuous)
+        pitch=apply_pitch(result,features,meta,self.acoustic.normalization[language]) if active else []
+        # Record final durations after the connection override, as well as the
+        # earlier emphasis stage's request. Energy controls use actual results.
+        for d in digit:
+            start=d['phone_range'][0];gap=[];i=start-1
+            while i>=0 and features['pause'][i]:gap.append(i);i-=1
+            actual=int(result.durations[gap].sum())*10
+            if actual!=d['after_gap_ms']:d['emphasis_stage_gap_ms']=d['after_gap_ms'];d['after_gap_ms']=actual
+        for record in u:
+            unit=next(v for v in meta['identifier_units'] if v['symbol']=='U' and [v['start'],v['end']]==record['phone_range'])
+            for direction,key in [(-1,'preceding_gap_ms'),(1,'following_gap_ms')]:
+                neighbor=next((v for v in meta['identifier_units'] if v['code_id']==unit['code_id'] and v['symbol_index']==unit['symbol_index']+direction),None)
+                if neighbor:
+                    a,b=(neighbor['end'],unit['start']) if direction<0 else (unit['end'],neighbor['start'])
+                    actual=int(result.durations[a:b].sum())*10
+                    if actual!=record[key]:record['previous_stage_'+key]=record[key];record[key]=actual
+        return result,dict(frontend=meta,regular=regular,U=u,C=c,first_digit=digit,continuous_code_flow=continuous,
+            identifier_prosody_mode=self.identifier_prosody,connected_identifier_gaps=connection,identifier_pitch=pitch)
     def voice(self,result,language,controls):
         self.vocoder.adapter.forward=self.base_adapter
         with torch.inference_mode():
@@ -113,7 +135,7 @@ class Engine:
         q24=np.rint(audio24.astype(np.float64)*32768).clip(-32768,32767).astype(np.int16)
         self.acoustic.model.encode=self.base_encode;self.vocoder.adapter.forward=self.base_adapter
         return q16,q24,dict(id=row['id'],text=row['text'],language=row['language'],segments=details,joins16=joins16,joins24=joins24,
-          sample_rate=24000,seconds=time.monotonic()-start,acoustic_additional_updates=1000,vocoder='RNDVoC25000',postprocessor='Opus BWE24',
+          sample_rate=24000,seconds=time.monotonic()-start,acoustic_additional_updates=1000,identifier_prosody_mode=self.identifier_prosody,vocoder='RNDVoC25000',postprocessor='Opus BWE24',
           acoustic_state_reset_per_segment=True,RND_global_statistics_bounded=True,BWE_state_reset_per_segment=True,
           identifiers_split=False,English_acoustic_calls=len(details) if row['language']=='en' else 0,
           identifier_waveform_splicing=False,natural_text_boundary_joins=len(details)-1,training_updates=0,human_quality_accepted=False)

@@ -1,0 +1,13 @@
+{
+  "package": "num2words",
+  "version": "0.5.14",
+  "license": "LGPL-2.1-or-later",
+  "source_files": {
+    "currency.py": "6ab41fe056ea9b696fac3c278b0bab7b51cb06c57a50dbf84977de503be591c9",
+    "compat.py": "5e302a28aa6e3fa35981c1b383a7f736c75a5cc973d8bff9e0ff19afd5387256",
+    "lang_EN.py": "e2da2ac74707e08fada340d2ad937d1d94625908adc4bb42316546d3f952e16e",
+    "base.py": "52356f1717f7c3927c15f15ec42f670635bfa2f322ed0ebca6ab48791d5249b4",
+    "lang_EU.py": "0037fd171d7c3851f20d317821c27ef58667575529f3676c66b91bd7c291418a"
+  },
+  "english_subset_only": true
+}

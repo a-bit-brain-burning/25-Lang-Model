@@ -4,16 +4,16 @@
   "self_excluded": true,
   "files": {
     ".gitattributes": {
-      "bytes": 622,
-      "sha256": "3581b0b5c7c6ba2e005e4736f0089d894600ae9a6db8f02ac0e9d6f1b0cc0d14"
+      "bytes": 826,
+      "sha256": "40867e0ae23709cb686c74bc202db7585827a5735759bacf07d0f2fd89b0049b"
     },
     ".gitignore": {
       "bytes": 301,
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 12427,
-      "sha256": "f521c00211c1b5becbf487d016cc4ac21b63cad088a7e0a8900b9772fa5dfd0a"
+      "bytes": 12665,
+      "sha256": "5694f9bfc49490daeb7b8277391eef8648f69f40d4f5497052e645d9e2cd4e67"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -740,40 +740,40 @@
       "sha256": "cb6d2adc869fbfd33768870d467f31a1192d98a542281131cfe136d1ab822eb0"
     },
     "CURRENT_PIPELINE.json": {
-      "bytes": 662,
-      "sha256": "d2fb1d11efa956bfc044d5e4419a2d89208e32d762b08dd8b553510fe1d0f99a"
+      "bytes": 778,
+      "sha256": "b686b2fddc1650dba72908e431853201d65c029c18d40f5ef5ee0704de9911e4"
     },
     "pipelines/prosody1000_rndvoc_opus24/plan_rules.py": {
       "bytes": 350,
       "sha256": "0b01577be29a71a248d24b933190a1254f8208d788bf45a9832d7bf3f434ed7a"
     },
     "pipelines/prosody1000_rndvoc_opus24/frontend_live.py": {
-      "bytes": 3007,
-      "sha256": "61d56369c06f83a03786bc9367aa47baf76bb303406bcc9175848f5febaeae01"
+      "bytes": 3444,
+      "sha256": "b9ee5d860fa1a934fe3b3de67e89a2498c2b6f730f69c6f5cc1900d320bf058a"
     },
     "pipelines/prosody1000_rndvoc_opus24/acoustic_model.py": {
       "bytes": 2191,
       "sha256": "48882278518962d1edd3c7ff86db8923b05f61e880ae25c7b301de6aa3189504"
     },
     "pipelines/prosody1000_rndvoc_opus24/COMPONENTS.json": {
-      "bytes": 3793,
-      "sha256": "ee2c1d12549d733cd17ba35c5271892345eb45f6418b79a5305586b9a1f7ddec"
+      "bytes": 4789,
+      "sha256": "12efd01d581d42347b9bab14cdf0e31d3c0f0f23a4ce5d200c920fbb6b4869e4"
     },
     "pipelines/prosody1000_rndvoc_opus24/legacy_contract.py": {
-      "bytes": 2407,
-      "sha256": "d05ce089f7e7ac54c7520faacc2e203ed99edd8b26e50b3e13324147d77b8839"
+      "bytes": 2863,
+      "sha256": "45a144eebaf40a8bf2cc22a129d261b706e3840a4cb9bdfc838e30cf146fd5d0"
     },
     "pipelines/prosody1000_rndvoc_opus24/README.md": {
-      "bytes": 10332,
-      "sha256": "4ea8df76b57fcadb131077ce913875c00b184cd2cf804b7e1fcea0e8204d2d21"
+      "bytes": 13010,
+      "sha256": "485a380851a3f341ef531df760e01838d21f59b0c603d81d97ada710849171b8"
     },
     "pipelines/prosody1000_rndvoc_opus24/verify_manifest.py": {
       "bytes": 594,
       "sha256": "87b848736547588c6d69b96346c99731f12d91c93d9ecbdc8d2cbd32fe7993c8"
     },
     "pipelines/prosody1000_rndvoc_opus24/runtime.py": {
-      "bytes": 8472,
-      "sha256": "8fa125a7f0b6d5f9203eee21fdbc57b583aed004bebe14dadd8bc033371ff5ad"
+      "bytes": 10365,
+      "sha256": "ca76dc2f25f7c39e32af35a7140a890ddf533939d7f0252fcf95fe48f12e9cd8"
     },
     "pipelines/prosody1000_rndvoc_opus24/requirements-reference.txt": {
       "bytes": 88,
@@ -792,8 +792,8 @@
       "sha256": "ef4224a598cc93c15ba3a5e281b5d40ca926f50db0af19c23fd0334bb1c8ad9d"
     },
     "pipelines/prosody1000_rndvoc_opus24/synthesize.py": {
-      "bytes": 1830,
-      "sha256": "f3ed029fe6555f26562d19565ff5e6798934016b1de24a86ea723669c3145c81"
+      "bytes": 2054,
+      "sha256": "64bc6975ab7e6f89b709546f4692200d57ecbc3f062f4b24082c4abaeba9948d"
     },
     "pipelines/prosody1000_rndvoc_opus24/loader.py": {
       "bytes": 2069,
@@ -812,8 +812,8 @@
       "sha256": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77"
     },
     "pipelines/prosody1000_rndvoc_opus24/text_worker.py": {
-      "bytes": 3829,
-      "sha256": "d40550178b42f16777c94ff57536b811c0dcb49ae9efe5a7f8163f951d203c1b"
+      "bytes": 4453,
+      "sha256": "d0e233a42c97147f99a81f6f4452e8720c5e4042daeb5be323ae514784e35ed8"
     },
     "pipelines/prosody1000_rndvoc_opus24/requirements.txt": {
       "bytes": 91,
@@ -1321,7 +1321,7 @@
     },
     "pipelines/prosody1000_rndvoc_opus24/tests/REFERENCE.json": {
       "bytes": 5981,
-      "sha256": "64836b6a1f862020a2207383d890aedc251bf459ffe362184de2ed9966dd162f"
+      "sha256": "79a0567c89782284f11def22b8703fe9ec5fd2f11c0480b558fad2522fbb9f20"
     },
     "pipelines/prosody1000_rndvoc_opus24/tests/cases.json": {
       "bytes": 5649,
@@ -3504,24 +3504,24 @@
       "sha256": "fafe2ed16c18011c0473cc061a0c0e83e3760a8bbc2ec24eadcfb7a316ef8f15"
     },
     "pipelines/prosody1000_rndvoc_opus24/SHA256_MANIFEST.json": {
-      "bytes": 137951,
-      "sha256": "2b6a34535058cc2722d8e63c900d6418b116b640d26fdd03d90ed497a39bb02f"
+      "bytes": 140367,
+      "sha256": "5f33e7d04b73630c556f48d1ccd8816a562c2b46a322a08ed33dff839c8ab21a"
     },
     "pipelines/prosody1000_rndvoc_opus24/verify_frontend.py": {
-      "bytes": 2697,
-      "sha256": "1de9723d49a0a577e4618b75255c69f8ac94e718093a104d1d9d7a03926c2607"
+      "bytes": 2752,
+      "sha256": "13f60a23eda74495a579792a6b24597148adc52c6467bf8759ebadc54769d726"
     },
     "pipelines/prosody1000_rndvoc_opus24/reading_policy.py": {
-      "bytes": 11569,
-      "sha256": "f47ab5b06e1ea8bb4be7e61f2bf05bb87e77dda748fc608080882a76c22cf2f5"
+      "bytes": 12223,
+      "sha256": "d71d93b13a1e087b6f0e20feaf3cde011ef6eda8c08a394d9b04133051d9e3a4"
     },
     "pipelines/prosody1000_rndvoc_opus24/frontend_profiles/example.json": {
       "bytes": 281,
       "sha256": "e8522cfdac0581dfe26f21b0d20e5e6b1cc0712d2458d166bfd3ea675081253b"
     },
     "pipelines/prosody1000_rndvoc_opus24/frontend_profiles/default.json": {
-      "bytes": 3820,
-      "sha256": "b77fcae181e0b93279012fb2debdea7d3eb6a6df122cebbed7de864a34f0e8cc"
+      "bytes": 4064,
+      "sha256": "9f115eb29efb4622f93c0462a17eb698a3fb164059442d094ad009d112436f88"
     },
     "pipelines/prosody1000_rndvoc_opus24/provenance/FLEX_AUDIO21.json": {
       "bytes": 4565,
@@ -3658,6 +3658,70 @@
     "pipelines/prosody1000_rndvoc_opus24/tools/build_reference_chinese.py": {
       "bytes": 1345,
       "sha256": "418753a8fe7e908e021c6c1f9e6142fe4e06f1bab5400c2f25caa4694f287657"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/english_lexicon.py": {
+      "bytes": 4613,
+      "sha256": "ecb2d604de8ef82ed8a8c3da3566bfbccf9f817ea2682820d0a51651d6765164"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/identifier_prosody.py": {
+      "bytes": 4905,
+      "sha256": "9479be4cafa79420141bdbdc0dc6acbc9b640951a0fb5f6b1f389902c1fd371b"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/currency.py": {
+      "bytes": 1761,
+      "sha256": "6ab41fe056ea9b696fac3c278b0bab7b51cb06c57a50dbf84977de503be591c9"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/COPYING": {
+      "bytes": 23995,
+      "sha256": "1457a03d928aeb06af3ea75ef065c517e915d7e41283d550dd4fa18ab20cda12"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/compat.py": {
+      "bytes": 1040,
+      "sha256": "5e302a28aa6e3fa35981c1b383a7f736c75a5cc973d8bff9e0ff19afd5387256"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/lang_EN.py": {
+      "bytes": 4410,
+      "sha256": "e2da2ac74707e08fada340d2ad937d1d94625908adc4bb42316546d3f952e16e"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/base.py": {
+      "bytes": 10022,
+      "sha256": "52356f1717f7c3927c15f15ec42f670635bfa2f322ed0ebca6ab48791d5249b4"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/lang_EU.py": {
+      "bytes": 3868,
+      "sha256": "0037fd171d7c3851f20d317821c27ef58667575529f3676c66b91bd7c291418a"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/__init__.py": {
+      "bytes": 577,
+      "sha256": "d2391cda8fe2ec50f1429470442c6187307cf1bc5485a33a5275cd8aed4c2660"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/number_words/SOURCE_IDENTITY.json": {
+      "bytes": 568,
+      "sha256": "dca70a2816f672ef54a7bd7f78574ac7e87a89465357e59f6550b22f20e71cb2"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/legacy_frontend/morphology_reference.h": {
+      "bytes": 3672,
+      "sha256": "05ae66df1ff05b394313b48b8b9150cfa78c8cf944edf0ec81d9cf961ee549ee"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/TRAINING_EXPERIMENTS_NOT_ADOPTED.json": {
+      "bytes": 871,
+      "sha256": "46757b306e7af03dc398824b867c0c3f3b86c77ae65813d1614467d289dd6089"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/IDENTIFIER_PROSODY_ASR_DIAGNOSTIC.json": {
+      "bytes": 2022,
+      "sha256": "42021521a45041c1661827433c7a52ccb6bf5c55f370da5924550c805b78d7d0"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/provenance/IDENTIFIER_PROSODY_VERIFIED.json": {
+      "bytes": 4091,
+      "sha256": "f5e1309b8e46b99809e8401933892b64e53fc8e51ae456eb52f6d55780db7793"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/tests/REFERENCE_before_identifier_prosody.json": {
+      "bytes": 5981,
+      "sha256": "64836b6a1f862020a2207383d890aedc251bf459ffe362184de2ed9966dd162f"
+    },
+    "pipelines/prosody1000_rndvoc_opus24/tests/test_number_reading.py": {
+      "bytes": 2258,
+      "sha256": "01221ad6e33661b7185ac4535f6d6ec2039c9d87a801463410ebb1ad794efeda"
     }
   }
 }

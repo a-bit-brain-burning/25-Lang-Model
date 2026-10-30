@@ -1,0 +1,149 @@
+{
+  "status": "PASSED",
+  "whole_chain_cases": 6,
+  "all_public_engine_wavs_match_pitch_candidates": true,
+  "original_mode_matches_old_wave": true,
+  "repeated_request_after_mode_switch_bit_exact": true,
+  "model_weights_changed": false,
+  "training_updates": 0,
+  "model_files_unchanged": 37,
+  "all_34_pipeline_cases_passed": true,
+  "languages": 25,
+  "unchanged_wavs": [
+    "smoke_bg",
+    "smoke_cs",
+    "smoke_da",
+    "smoke_de",
+    "smoke_el",
+    "smoke_en",
+    "smoke_es",
+    "smoke_et",
+    "smoke_fi",
+    "smoke_fr",
+    "smoke_hr",
+    "smoke_hu",
+    "smoke_it",
+    "smoke_lt",
+    "smoke_lv",
+    "smoke_nl",
+    "smoke_no",
+    "smoke_pl",
+    "smoke_pt",
+    "smoke_ro",
+    "smoke_sk",
+    "smoke_sl",
+    "smoke_sv",
+    "smoke_tr",
+    "smoke_zh",
+    "english_long"
+  ],
+  "intended_changed_wavs": [
+    {
+      "id": "flight_cz",
+      "language": "zh"
+    },
+    {
+      "id": "flight_mu",
+      "language": "zh"
+    },
+    {
+      "id": "flight_ca",
+      "language": "zh"
+    },
+    {
+      "id": "spaced_code",
+      "language": "zh"
+    },
+    {
+      "id": "initialisms",
+      "language": "zh"
+    },
+    {
+      "id": "digit_runs",
+      "language": "zh"
+    },
+    {
+      "id": "repeat_probe",
+      "language": "zh"
+    },
+    {
+      "id": "long_zh",
+      "language": "zh"
+    }
+  ],
+  "all_other_23_language_wavs_byte_exact": true,
+  "semantic_test_groups": 17,
+  "English_workbook_frontend_inputs": 200,
+  "English_workbook_frontend_failures": 0,
+  "pitch_method": "WORLD harvest+stonemask on actual 24k WAV resampled to16k",
+  "pitch_probe_comparisons": [
+    {
+      "id": "mu",
+      "old_max_adjacent_median_pitch_step_semitones": 8.944842617429408,
+      "new_max_adjacent_median_pitch_step_semitones": 3.8253572949814867
+    },
+    {
+      "id": "cz",
+      "old_max_adjacent_median_pitch_step_semitones": 5.0408953631049735,
+      "new_max_adjacent_median_pitch_step_semitones": 3.176196459088822
+    },
+    {
+      "id": "ab",
+      "old_max_adjacent_median_pitch_step_semitones": 3.296891909034698,
+      "new_max_adjacent_median_pitch_step_semitones": 1.2457805072338373
+    },
+    {
+      "id": "two",
+      "old_max_adjacent_median_pitch_step_semitones": 8.710791530228171,
+      "new_max_adjacent_median_pitch_step_semitones": 2.7867136313652328
+    },
+    {
+      "id": "cu",
+      "old_max_adjacent_median_pitch_step_semitones": 3.8790122446040822,
+      "new_max_adjacent_median_pitch_step_semitones": 1.5916026934851462
+    },
+    {
+      "id": "digits",
+      "old_max_adjacent_median_pitch_step_semitones": 3.6126727730568344,
+      "new_max_adjacent_median_pitch_step_semitones": 2.0036930178368406
+    }
+  ],
+  "internal_identifier_gap_ms": 0,
+  "within_syllable_F0_deviation_retention": 0.85,
+  "learned_prosody_weights_changed": false,
+  "human_quality_accepted": false,
+  "identifier_ASR_confusions_remain": true,
+  "new_control_native_M55_port_verified": false,
+  "complete_10MB_system_RAM_verified": false,
+  "logF0_target_limit_before_smoothing": 0.18,
+  "limit_precedes_smoothing_and_gap_interpolation": true,
+  "independent_CLI": {
+    "status": "PASSED",
+    "rows": [
+      {
+        "id": "mu_natural",
+        "mode": "natural",
+        "sha256": "9af71c6631cb71220fb156308bbead763dd94f6bc454e748b26e4b86e2d4ba17",
+        "independent_process_bit_exact": true
+      },
+      {
+        "id": "mu_original",
+        "mode": "original",
+        "sha256": "0e429e8348997ec0bb8cd34ae9560a67fa09b43b23a804928c59560b4324c3ac",
+        "independent_process_bit_exact": true
+      },
+      {
+        "id": "cz_natural",
+        "mode": "natural",
+        "sha256": "dba55c4d053a2b691763f18033bcf3901e6b87f3b9638839568f9242ad7166c6",
+        "independent_process_bit_exact": true
+      }
+    ]
+  },
+  "letter_to_first_digit_gap_ms": 60,
+  "standalone_digit_leading_gap": "original_first_digit_emphasis_policy",
+  "frontend_scenario_audio_cases_in_original_prosody_mode": 23,
+  "frontend_scenario_audio_status": "PASSED",
+  "full_chain_regression_RND_clipped_samples": 0,
+  "full_chain_regression_BWE_clipped_samples": 0
+}

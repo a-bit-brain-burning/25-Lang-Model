@@ -8,3 +8,6 @@ pipelines/prosody1000_rndvoc_opus24/neural/** -whitespace
 pipelines/prosody1000_rndvoc_opus24/legacy_frontend/** -whitespace
 # Preserve the reference release's upstream OpenCC license bytes (CRLF).
 pipelines/prosody1000_rndvoc_opus24/reference_chinese/OPENCC_LICENSE.txt -text -whitespace
+# Keep the vendored English number-converter sources/license byte-identical.
+pipelines/prosody1000_rndvoc_opus24/number_words/** -whitespace
+pipelines/prosody1000_rndvoc_opus24/number_words/COPYING -text

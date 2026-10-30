@@ -35,6 +35,27 @@ python pipelines/prosody1000_rndvoc_opus24/tools/build_frontend.py
 
 该命令更新本地共享库和运行时库哈希；重建后的副本与原发布文件清单会有差异，应另存重建产物身份。
 
+## 中文编号的音调与连读
+
+当前默认 `--identifier-prosody natural`：在中文声学输出送入 E2/RND 前，给同一编号的字母采用连贯音高基线，压小字符间的音高突跳，并保留85%的数字音节内预测升降调变化。音节内 log-F0 目标先以0.18限幅，再做平滑和间隔插值；低有声置信度帧减少调整，编号两端渐变衔接。不是对PCM做变调、拉伸或逐字母拼接。
+
+内部字符连续读，字母转入首数字前保留60ms间隔（独立数字串保留原首位间隔），连字符/标点边界保留；原轻 yiu1 U、长 C、首数字时长和能量强调继续使用。采用原1000步声学／韵律权重，37个模型文件均未改变。另做的200/200/500步独立训练实验没有可靠改善中文编号，全部保留为实验，未用于此默认推理。
+
+```bash
+# 新的音调／连读控制（默认）
+python pipelines/prosody1000_rndvoc_opus24/synthesize.py --text '下一趟航班为MU5108号。' --language zh --identifier-prosody natural --output /tmp/MU_natural.wav
+# 回到此前编号韵律控制；英文前端修复仍保留
+python pipelines/prosody1000_rndvoc_opus24/synthesize.py --text '下一趟航班为MU5108号。' --language zh --identifier-prosody original --output /tmp/MU_original.wav
+```
+
+6条中文整句样例的实际WAV音高测量、公开入口逐字节复现和模式切换回放见 `provenance/IDENTIFIER_PROSODY_VERIFIED.json`。单句内非编号声学特征未直接改写，但整句声码器有全局统计，不能承诺非编号PCM片段逐字节不变。机器识别仍会混淆个别编号；音高差减小不能替代人工自然度或完整发音验收。
+
+旧模板的字母训练标签中23/33条有至少一个元音仅10ms，需进一步做真实波形边界审查；序列匹配/正时长不等于边界可靠。原缓存未修改，不把上述训练实验当作韵律已学好或原追加3000步已完成。新控制的原生M55移植/完整10MB系统RAM尚未验证。
+
+## 英文数字与词根处理补充
+
+英文恢复旧保留版的电话号码/账号逐位、日期、时间、金额和范围规则；修复 `is 831` 被误认为编号并拼读 I/S，以及普通词抢占温度表达式的问题。°C/°F先识别为单位。英文使用现有CMU词典的可靠词根处理词形/复合词，并按已知分词拆分 WeChat、AppGallery 这类CamelCase名称；未查到的词仍显式记录OOV，未伪称词典命中。`number_words/`是 num2words 0.5.14 的英文子集，保留原源码及 LGPL 许可，不另加模型；`legacy_frontend/morphology_reference.h`保留旧版生产性词根规则的参考源码。
+
 ## 中文前端来源与适配边界
 
 中文现在实际运行指定 D 盘发布包的 `zh_t2s` 注音规则：原词典、繁转简、多音字、轻声、一/不与三声变调、词分组及本调/表调信息。`reference_chinese/source` 包含完整依赖源码与原词典字节，`SOURCE_IDENTITY.json` 记录来源哈希。旧版 Kokoro token 与本模型词表不同，桥接层将语言学决策渲染为已训练的 initial/whole-rime、phonetic32/context34 特征；不更换声学或声码器权重，不取旧音频的时长。中文编号仍整段一次中文声学生成。

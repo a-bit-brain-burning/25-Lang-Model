@@ -8,9 +8,9 @@ from runtime import Engine,write,sha
 from text_worker import plan
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=Path('output/frontend-flex'));args=parser.parse_args();out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
-    engine=Engine()
+    engine=Engine(identifier_prosody='original')
     from new25_postprocess.bwe24 import save_wav
-    cases=json.loads((PACKAGE/'tests/flexible_readings.json').read_text());old=json.loads((PACKAGE/'tests/REFERENCE.json').read_text());rows=[]
+    cases=json.loads((PACKAGE/'tests/flexible_readings.json').read_text());old=json.loads((PACKAGE/'tests/REFERENCE_before_identifier_prosody.json').read_text());rows=[]
     for case in cases:
         cfg=PACKAGE/case['config'] if 'config'in case else None
         row=plan(case['text'],case['language'],out/'features'/case['id'],cfg)

@@ -1,0 +1,27 @@
+{
+  "selected_acoustic_prosody_updates": 1000,
+  "selected_weight_sha256": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+  "independent_experiments": [
+    {
+      "name": "letter_rows_v1",
+      "updates": 200
+    },
+    {
+      "name": "letter_rows_context_v2",
+      "updates": 200
+    },
+    {
+      "name": "acoustic_prosody_v3",
+      "updates": 500
+    }
+  ],
+  "all_started_from_same_complete_step1000": true,
+  "experiments_adopted": 0,
+  "reason": "No reliable Chinese identifier improvement; retain original weights and make a bounded inference-prosody candidate",
+  "alignment_duration_review_required": 23,
+  "alignment_cases": 33,
+  "original_training_caches_unmodified": true,
+  "original_append3000_main_run_not_started": true,
+  "total_independent_experimental_optimizer_updates": 900,
+  "selected_additional_training_updates": 0
+}
