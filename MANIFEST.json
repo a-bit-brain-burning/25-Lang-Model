@@ -1,0 +1,131 @@
+{
+  "format_version": 1,
+  "component": "trained_25_language_acoustic_only",
+  "self_excluded": true,
+  "files": {
+    ".gitignore": {
+      "bytes": 272,
+      "sha256": "f91943d87d91fa5ac287197d670a1299905380265bc5a3f5f98b8526f9126550"
+    },
+    "README.md": {
+      "bytes": 4344,
+      "sha256": "61ab7339a6a4d4cc50c63b27a3a738d0c4012fa6504c88f7419698034d579c31"
+    },
+    "configs/acoustic_train.json": {
+      "bytes": 366,
+      "sha256": "15496906b820a1de276b5a56641ebdb7716595b84e5cdc33bb8b30809a7e4cc7"
+    },
+    "docs/ACOUSTIC_MODEL_CARD.md": {
+      "bytes": 11420,
+      "sha256": "b9be7c61f5a1a012392def5d895eb1379b1210eae188957d7c997ac56f028755"
+    },
+    "docs/TRAINING.md": {
+      "bytes": 8756,
+      "sha256": "d5e50bc90c8090549e83b5f30de65648c884e0b40252d9e271a38cd7f373a236"
+    },
+    "docs/VOCODER_INTERFACE.md": {
+      "bytes": 13378,
+      "sha256": "a28273bbe1b1dd501e2c196f58cc5d36a8b9a64ae7f1e425a77624914fe4d0a3"
+    },
+    "models/EXPORT.json": {
+      "bytes": 1970,
+      "sha256": "ab429b43c490874ee7cd5bf318375e3fee2a14886a48f92e5eb2e2e55cbefde6"
+    },
+    "models/acoustic_fp16.safetensors": {
+      "bytes": 2380398,
+      "sha256": "9e9b17f22b3355e4b9a09b34fab5d022119a7964cd03cf702e8f1d68987bff02"
+    },
+    "models/acoustic_fp32.pt": {
+      "bytes": 4773201,
+      "sha256": "c8c30641becc7de082ce192934761f1256007dbf4a3a786c1a0973ec31fc90c2"
+    },
+    "models/model_config.json": {
+      "bytes": 1564,
+      "sha256": "080d818ad61a47dd722c3608d0f99a4abb08fd52713c7b43e60f6637fa3f5bd4"
+    },
+    "models/normalization.json": {
+      "bytes": 121885,
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2"
+    },
+    "models/vocabulary.json": {
+      "bytes": 3887,
+      "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
+    },
+    "new25_acoustic/__init__.py": {
+      "bytes": 463,
+      "sha256": "51bc89788aeddba72bb2fc169f48cc3bc771e9fc0c9b8f340bb0c2914062d5a9"
+    },
+    "new25_acoustic/batching.py": {
+      "bytes": 2385,
+      "sha256": "e6f2b7795ad543fda27eb543060d08dad194a055eafe0eeaa8006a211a3d7a66"
+    },
+    "new25_acoustic/contracts.py": {
+      "bytes": 3761,
+      "sha256": "0d51b63ecb4a5836e1b88001e21fef08959b9e7535bb0d1477c2400d0d4cda8e"
+    },
+    "new25_acoustic/data.py": {
+      "bytes": 6694,
+      "sha256": "0e0a7b76ede1f2673e425307c9bc57ac45d8e5ec35a69178835d46900634293e"
+    },
+    "new25_acoustic/inference.py": {
+      "bytes": 18788,
+      "sha256": "500b3c7502c7d9002b693511cd5a267457478253129b6d4ca5866e73ac5f1aec"
+    },
+    "new25_acoustic/losses.py": {
+      "bytes": 2088,
+      "sha256": "650b5794fdb4a087ce57d62439e34bb8050c86d744b849a3488e1e4db6a4fa88"
+    },
+    "new25_acoustic/model.py": {
+      "bytes": 4872,
+      "sha256": "6e05a51d7f83c55566eb2032760887211e41cc092535456807208718794b7cdd"
+    },
+    "new25_acoustic/vocoder.py": {
+      "bytes": 2940,
+      "sha256": "6bab964be411b206a2aeaedeafec22a87e6d4d45d43ffa9ab071435c87e30158"
+    },
+    "pyproject.toml": {
+      "bytes": 371,
+      "sha256": "47412c52672a10cf6d149ea1d9bf7dcacdc78a7c55769872515d279236a7e901"
+    },
+    "receipts/acoustic_completed.json": {
+      "bytes": 290,
+      "sha256": "e0a10485ca8780445a4c83312cac75c6b3ac5d02d600df6310b446c8b0e69bd1"
+    },
+    "receipts/acoustic_provenance.json": {
+      "bytes": 20090,
+      "sha256": "4ac4085a421cef314842251b0ac8e88b47854f0eb2920c3a39001d5027e0ab04"
+    },
+    "receipts/release_validation.json": {
+      "bytes": 9443,
+      "sha256": "4527a7a757b7db0543a2967c6031c99d9344ee5656b998a3a4014e9895837f60"
+    },
+    "requirements.txt": {
+      "bytes": 156,
+      "sha256": "7ba6e9da9caf5c205d0054db79f98f6e4c5071eeb2321a571569f96a279448db"
+    },
+    "scripts/export_acoustic.py": {
+      "bytes": 8992,
+      "sha256": "bcfc1d5ce22a2df6f637c87951425fa5dd6967031231aa64808b6d9d600320fa"
+    },
+    "scripts/prepare_corpus.py": {
+      "bytes": 10330,
+      "sha256": "e827848b06149176fe5854bd2c99f4ccea126abea8da89dea5de662e74aac1a9"
+    },
+    "scripts/train_acoustic.py": {
+      "bytes": 15795,
+      "sha256": "46342d781bf035b81844d8796159816de71f630c6fea61e3dff819abce322201"
+    },
+    "scripts/verify_release.py": {
+      "bytes": 3436,
+      "sha256": "f667df8c8cf9ed52a707429d386bedaee0a4a86d398dcfbd4d48076b0729233a"
+    },
+    "tests/test_inference.py": {
+      "bytes": 9171,
+      "sha256": "74fcdb869afc689c4ddd9c08f0c5b4bfaaba7e9fe5dd18433e4d8e6fefe2ebad"
+    },
+    "tests/test_release.py": {
+      "bytes": 2917,
+      "sha256": "3696b34586cd691e445d2549c65fea8a8aa435800c0b1cb7e8ce48e3b650f47a"
+    }
+  }
+}

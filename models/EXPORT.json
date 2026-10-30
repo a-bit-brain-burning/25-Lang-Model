@@ -1,0 +1,49 @@
+{
+  "status": "ACOUSTIC_ONLY_EXTRACTED_AND_FP16_ROUNDED",
+  "source_combined_checkpoint_sha256": "a8219a415d3c2eb2421ebc3ad55fabfabda4c1826d0ff1c1f74a8d8059599d98",
+  "source_acoustic_checkpoint_sha256": "dbeb07dec11b3600a2f49c729353bc812b46aa9129032ada830a47927d38050f",
+  "acoustic_training_steps": 80000,
+  "source_container_phase": "vocoder_pretrain",
+  "source_container_step": 60000,
+  "source_identity": {
+    "source": "255e8f1bd1d9372e199bb82934a2d31d630de48ab739265bd0eaf3e669dca782",
+    "config": "7c13157862bdc8709eb2b13ab8536a7a017391fa0ba537b69b94dbae7193233f",
+    "data": "c8f773375ab7405b56495ce330f48c64df12c016cf137fe0a8ce5e8e58849b78"
+  },
+  "tensors": 97,
+  "parameters": 1186071,
+  "fp16_tensor_bytes": 2372142,
+  "files": {
+    "acoustic_fp16.safetensors": {
+      "sha256": "9e9b17f22b3355e4b9a09b34fab5d022119a7964cd03cf702e8f1d68987bff02",
+      "bytes": 2380398
+    },
+    "acoustic_fp32.pt": {
+      "sha256": "c8c30641becc7de082ce192934761f1256007dbf4a3a786c1a0973ec31fc90c2",
+      "bytes": 4773201
+    },
+    "vocabulary.json": {
+      "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f",
+      "bytes": 3887
+    },
+    "normalization.json": {
+      "sha256": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2",
+      "bytes": 121885
+    },
+    "model_config.json": {
+      "sha256": "080d818ad61a47dd722c3608d0f99a4abb08fd52713c7b43e60f6637fa3f5bd4",
+      "bytes": 1564
+    }
+  },
+  "contains_vocoder": false,
+  "contains_optimizer_or_rng": false,
+  "contains_training_audio_or_features": false,
+  "quality_pass": false,
+  "full_linux_process_ram_pass": false,
+  "original_acoustic_optimizer_included": false,
+  "export_torch_version": "2.6.0",
+  "export_numpy_version": "1.26.4",
+  "original_80000_acoustic_all_97_tensors_verified": true,
+  "provenance_receipt": "receipts/acoustic_provenance.json",
+  "tensor_state_sha256": "2477b4d17f94fa95f61a9d276c147e05305d6acc06c517b093db34e62d87917a"
+}

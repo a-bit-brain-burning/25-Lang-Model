@@ -1,0 +1,329 @@
+{
+  "status": "ACOUSTIC_ONLY_RELEASE_VALIDATED",
+  "time_bjt": "2026-10-30T09:43:15.382188+08:00",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.6.0",
+    "numpy": "1.26.4"
+  },
+  "unit_tests_passed": 15,
+  "original_source_model_sha256": "22c9a050b5204cfb382c38a656382f31423e822ac8d6f0039da0a74ca4fe01c3",
+  "trained_weights_reference_comparisons": [
+    {
+      "language": "bg",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "cs",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "da",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "de",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "el",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "en",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "es",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "et",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "fi",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "fr",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "hr",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "hu",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "it",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "lt",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "lv",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "nl",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "no",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "pl",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "pt",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "ro",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sk",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sl",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sv",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "tr",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "zh",
+      "weights": "acoustic_fp16.safetensors",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "bg",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "cs",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "da",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "de",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "el",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "en",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "es",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "et",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "fi",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "fr",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "hr",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "hu",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "it",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "lt",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "lv",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "nl",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "no",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "pl",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "pt",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "ro",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sk",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sl",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "sv",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "tr",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    },
+    {
+      "language": "zh",
+      "weights": "acoustic_fp32.pt",
+      "prediction_max_abs_difference": 0.0,
+      "all_decoder_state_bits_equal": true
+    }
+  ],
+  "reference_input": "Synthetic existing-feature arrays, real released weights; not a speech quality test",
+  "reference_math": "FP32 CPU; both original FP32 state and FP16-rounded state",
+  "reproduction_checks": {
+    "original_collate_all_tensors_exact_languages": 25,
+    "original_acoustic_loss_and_output_gradients_exact": true,
+    "balanced_schedule_identical_batches": 80,
+    "synthetic_continuous_vs_resumed_steps": 2,
+    "model_adam_rng_sampler_resume_exact": true,
+    "warm_start_metadata_mismatch_rejected": true,
+    "actual_cuda_updates": 0,
+    "temporary_fixture_retained": false
+  },
+  "original_80000_tensor_equality_receipt": "receipts/acoustic_provenance.json",
+  "vocoder_weights_or_implementation_included": false,
+  "whole_process_ram_pass": false,
+  "quality_pass": false
+}

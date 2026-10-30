@@ -1,0 +1,10 @@
+{
+  "status": "MAX_STEPS_REACHED",
+  "step": 80000,
+  "training_bound_only": true,
+  "quality_pass": false,
+  "full_linux_ram_pass": false,
+  "smoke_test": false,
+  "checkpoint_sha256": "dbeb07dec11b3600a2f49c729353bc812b46aa9129032ada830a47927d38050f",
+  "resolved_failure_receipts": {}
+}

@@ -1,0 +1,17 @@
+{
+  "version": "new25_acoustic_physical31_39_v1",
+  "seed": 20261028,
+  "total_wall_seconds": 172800,
+  "total_active_seconds": 172800,
+  "max_launches": 12,
+  "grad_clip": 5.0,
+  "max_consecutive_overflows": 8,
+  "status_every": 25,
+  "save_every": 1000,
+  "acoustic": {
+    "max_steps": 80000,
+    "max_seconds": 28800,
+    "lr": 0.0002,
+    "batch_size": 4
+  }
+}

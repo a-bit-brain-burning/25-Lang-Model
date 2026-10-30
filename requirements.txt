@@ -1,0 +1,4 @@
+# CPU reference environment used for release validation.
+# Original CUDA acoustic training used torch 2.8.0+cu128 / numpy 2.3.2.
+torch==2.6.0
+numpy==1.26.4
