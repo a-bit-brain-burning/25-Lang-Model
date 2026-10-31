@@ -1,0 +1,11 @@
+{
+  "ro_dict": {
+    "bytes": 68538,
+    "sha256": "b14f68866b0440c4b0d95fb7da3b7ffd3c59b693e8593d188474fabfc9a1117d",
+    "source": "/home/fomak/ffb/.venv/lib/python3.10/site-packages/espeakng_loader/espeak-ng-data/ro_dict"
+  },
+  "phonetic_tables": {
+    "phonindex": "384e5fa6f714ba5356c58008249b78699c31c1ad044b243068d263fb806b7d73",
+    "phontab": "1b40690667e1e9aa1ba5e5234773c799e7e72ea751426e5150423d53c3f24fa2"
+  }
+}

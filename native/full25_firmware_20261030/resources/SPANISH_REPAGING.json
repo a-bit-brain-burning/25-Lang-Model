@@ -1,0 +1,454 @@
+{
+  "source_package_sha256": "2942a662270577d617336b5acc9801fb8444118fe82f01d5849735277a7998fc",
+  "nvl_sha256": "9c04dc61fa69c4e34c17359f0ef42142445489474392cb7940871a80efcce966",
+  "words": 31715,
+  "pages": 248,
+  "bytes": 282410,
+  "max_page_output_bytes": 5552,
+  "all_original_records_byte_identical": true,
+  "no_entries_removed": true,
+  "predictor_sha256": "ad35a0db883c6a6d072ccdf916b0718cf2a1f57a91a8c02a2098f1cdbb46cc9e",
+  "cases": [
+    {
+      "word": "a",
+      "expected": "00ff05050300000306050103020400",
+      "known": true
+    },
+    {
+      "word": "acomode",
+      "expected": "00080c0a0c1604ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "adornaba",
+      "expected": "00160c0e0b002100ff050503000003060508030403010300030103010302030103000400",
+      "known": true
+    },
+    {
+      "word": "alberchigueros",
+      "expected": "000921040e100620041d0c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "amparen",
+      "expected": "000a0d001d040bff05050300000306050703000301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "apocalipsis",
+      "expected": "000d0c08000906210f060fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "arrancada",
+      "expected": "000e001708001600ff050503000003060508030403010300030103010302030103000400",
+      "known": true
+    },
+    {
+      "word": "atrever",
+      "expected": "00111d0421041dff05030300000300",
+      "known": true
+    },
+    {
+      "word": "ball",
+      "expected": "010c09ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "blake",
+      "expected": "0109000204ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "buscamos",
+      "expected": "01120f08000a0c0fff050503000003060508030103000301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "capas",
+      "expected": "08000d000fff050503000003060505030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "cercanas",
+      "expected": "22040e08000b000fff050503000003060508030103000301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "clases",
+      "expected": "0809000f040fff0505030000030605060301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "compass",
+      "expected": "080c0a0d000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "computadora",
+      "expected": "080c0a0d121100160c1d00ff05030300000300",
+      "known": false
+    },
+    {
+      "word": "conmigo",
+      "expected": "080c0a061b0cff0505030000030605060301030003010302030103000400",
+      "known": true
+    },
+    {
+      "word": "conyugicida",
+      "expected": "080c1c1912150622061600ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "crímenes",
+      "expected": "081d060a040b040fff050503000003060508030103010302030103000301030003010400",
+      "known": true
+    },
+    {
+      "word": "deadpool",
+      "expected": "030400160d1209ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "desarrapados",
+      "expected": "03040f000e000d00160c0fff05050300000306050b030103040301030003010300030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "despertó",
+      "expected": "03040f0d040e110cff050503000003060508030103040301030103000301030103020400",
+      "known": true
+    },
+    {
+      "word": "discurre",
+      "expected": "03060f08120e04ff05050300000306050703010300030103010302030103000400",
+      "known": true
+    },
+    {
+      "word": "duraderamente",
+      "expected": "03121d0016041d000a040b1104ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "empeños",
+      "expected": "040a0d041c0c0fff05050300000306050703000301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "enriten",
+      "expected": "040b0e0611040bff05050300000306050703000301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "escrupulosidad",
+      "expected": "040f081d120d12090c0f06160016ff05050300000306050e030403010301030103000301030403010300030103000301030203010400",
+      "known": true
+    },
+    {
+      "word": "eterna",
+      "expected": "0411040e0b00ff0505030000030605060300030103020301030103000400",
+      "known": true
+    },
+    {
+      "word": "expiación",
+      "expected": "04080f0d070022070c0bff05050300000306050a03040301030103010301030003010301030203010400",
+      "known": true
+    },
+    {
+      "word": "ferroviario",
+      "expected": "05040e0c2107001d070cff05050300000306050a03010304030103000301030103020301030103000400",
+      "known": true
+    },
+    {
+      "word": "fray",
+      "expected": "051d0006ff05050300000306050403010301030203000400",
+      "known": true
+    },
+    {
+      "word": "gerardo",
+      "expected": "15041d000e160cff05050300000306050703010300030103020301030103000400",
+      "known": true
+    },
+    {
+      "word": "guatemala",
+      "expected": "1a130011040a000900ff0505030000030605090301030103040301030003010302030103000400",
+      "known": true
+    },
+    {
+      "word": "hawk",
+      "expected": "00131bff05030300000300",
+      "known": true
+    },
+    {
+      "word": "hola",
+      "expected": "0c0900ff0505030000030605030302030103000400",
+      "known": true
+    },
+    {
+      "word": "hotel",
+      "expected": "0c110409ff05050300000306050403000301030203010400",
+      "known": true
+    },
+    {
+      "word": "importante",
+      "expected": "060a0d0c0e11000b1104ff05050300000306050a03040301030103000301030103020301030103000400",
+      "known": true
+    },
+    {
+      "word": "injertada",
+      "expected": "061c15040e11001600ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "irregular",
+      "expected": "060e041b1209001dff050503000003060508030403010300030103000301030203010400",
+      "known": true
+    },
+    {
+      "word": "kid",
+      "expected": "020616ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "leña",
+      "expected": "09041c00ff05050300000306050403010302030103000400",
+      "known": true
+    },
+    {
+      "word": "lovecraftianas",
+      "expected": "090c05081d00051107000b000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "mar",
+      "expected": "0a001dff0505030000030605030301030203010400",
+      "known": true
+    },
+    {
+      "word": "mente",
+      "expected": "0a040b1104ff050503000003060505030103020301030103000400",
+      "known": true
+    },
+    {
+      "word": "modernistas",
+      "expected": "0a0c16040e0b060f11000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "my",
+      "expected": "0a06ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "notosuquio",
+      "expected": "0b0c110c0f1208070cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "oncogénico",
+      "expected": "0c17080c15040b06080cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "palos",
+      "expected": "0d00090c0fff050503000003060505030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "pedía",
+      "expected": "0d04160600ff050503000003060505030103000301030203000400",
+      "known": true
+    },
+    {
+      "word": "philippi",
+      "expected": "0609060d06ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "poliuretano",
+      "expected": "0d0c0907121d0411000b0cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "preso",
+      "expected": "0d1d040f0cff050503000003060505030103010302030103000400",
+      "known": true
+    },
+    {
+      "word": "provenientes",
+      "expected": "0d1d0c21041c07040b11040fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "prueba",
+      "expected": "0d1d13042100ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "quienes",
+      "expected": "0807040b040fff0505030000030605060301030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "ranqueados",
+      "expected": "0e001c020400160c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "reatada",
+      "expected": "0e040011001600ff05030300000300",
+      "known": true
+    },
+    {
+      "word": "recolado",
+      "expected": "0e04080c0900160cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "redimir",
+      "expected": "0e0416060a061dff05050300000306050703010304030103000301030203010400",
+      "known": true
+    },
+    {
+      "word": "regalo",
+      "expected": "0e041b00090cff0505030000030605060301030003010302030103000400",
+      "known": true
+    },
+    {
+      "word": "reivindicados",
+      "expected": "0e040621060b03060800160c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "renderizado",
+      "expected": "0e040b03041d062200160cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "reprochados",
+      "expected": "0e040d1d0c1000160c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "responderemos",
+      "expected": "0e040f0d0c0b03041d040a0c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "retrovendidas",
+      "expected": "0e04111d0c21040b030616000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "riberas",
+      "expected": "0e0621041d000fff05050300000306050703010300030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "roer",
+      "expected": "0e0c041dff05030300000300",
+      "known": true
+    },
+    {
+      "word": "rumano",
+      "expected": "0e120a000b0cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "santísimo",
+      "expected": "0f000b11060f060a0cff0505030000030605090301030003010301030203010300030103000400",
+      "known": true
+    },
+    {
+      "word": "señala",
+      "expected": "0f041c000900ff0505030000030605060301030003010302030103000400",
+      "known": true
+    },
+    {
+      "word": "solicitar",
+      "expected": "0f0c0906220611001dff05030300000300",
+      "known": true
+    },
+    {
+      "word": "subían",
+      "expected": "0f122106000bff0505030000030605060301030003010302030003010400",
+      "known": true
+    },
+    {
+      "word": "tarjar",
+      "expected": "11000e14001dff05030300000300",
+      "known": true
+    },
+    {
+      "word": "tocaran",
+      "expected": "110c08001d000bff05050300000306050703010300030103020301030003010400",
+      "known": true
+    },
+    {
+      "word": "tripulación",
+      "expected": "111d060d12090022070c0bff05050300000306050b030103010304030103000301030003010301030203010400",
+      "known": true
+    },
+    {
+      "word": "vacunadas",
+      "expected": "010008120b0016000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "vasconización",
+      "expected": "01000f080c0b06220022070c0bff05030300000300",
+      "known": true
+    },
+    {
+      "word": "veintitrés",
+      "expected": "0104060b1106111d040fff05050300000306050a03010304030003010301030003010301030203010400",
+      "known": true
+    },
+    {
+      "word": "veraneadas",
+      "expected": "01041d000b040016000fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "viciados",
+      "expected": "0106220700160c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "visigodos",
+      "expected": "01060f061b0c160c0fff05030300000300",
+      "known": true
+    },
+    {
+      "word": "volvioseaquella",
+      "expected": "010c0921070c0f040002041f00ff05050300000306050d03010304030103010301030003010304030003010302030103000400",
+      "known": true
+    },
+    {
+      "word": "yamamoto",
+      "expected": "19000a000a0c110cff05030300000300",
+      "known": true
+    },
+    {
+      "word": "zzzztest",
+      "expected": "2222222211040f11ff05030300000300",
+      "known": false
+    },
+    {
+      "word": "íntimo",
+      "expected": "060b11060a0cff0505030000030605060302030103010300030103000400",
+      "known": true
+    },
+    {
+      "word": "útil",
+      "expected": "12110609ff05050300000306050403020301030003010400",
+      "known": true
+    },
+    {
+      "word": "útiles",
+      "expected": "12110609040fff0505030000030605060302030103000301030003010400",
+      "known": true
+    }
+  ],
+  "purpose": "Avoid whole-dictionary LZMA/key scans for each request word; exact residual records and original OOV policy retained."
+}

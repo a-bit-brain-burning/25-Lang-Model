@@ -1,0 +1,71 @@
+{
+  "source_candidate_id": "c8dc87e8576fe1711ab5329debd69a5672b28e33d6e1f99a2e168d7c5ca81532",
+  "source_package_bytes": 3567582,
+  "source_pack_unchanged": true,
+  "integration_additional_bytes": 308095,
+  "all_frontend_package_bytes": 3875677,
+  "additional_resources": [
+    {
+      "path": "espeak-ng-data/it_dict",
+      "section": "resource/0",
+      "sha256": "7ce5b6b4e2ee251516708584267a413a3c02b2fa07cb527a2eb421fbbb3b12cf"
+    },
+    {
+      "path": "espeak-ng-data/no_dict",
+      "section": "resource/1",
+      "sha256": "43b828f8c1709e7abb23a0cc6416fb32e4814e3f1ff1db4baf2935bf7c77c9ff"
+    },
+    {
+      "path": "espeak-ng-data/pt_dict",
+      "section": "resource/2",
+      "sha256": "94c689153e12e9c5e0ecbf60518a93ebb2ea0fbe805c63d97fa84c43331424e9"
+    },
+    {
+      "path": "espeak-ng-data/tr_dict",
+      "section": "resource/3",
+      "sha256": "311b0557059f2dab5ee2faabb51361f5033368f0e2a54c4bdfe45e730674f26e"
+    },
+    {
+      "path": "repairs/bg_dictionary/expanded_lexicon.json",
+      "sections": [
+        "bg_chunk/0",
+        "bg_chunk/1",
+        "bg_chunk/2",
+        "bg_chunk/3",
+        "bg_chunk/4",
+        "bg_chunk/5",
+        "bg_chunk/6",
+        "bg_chunk/7",
+        "bg_chunk/8",
+        "bg_chunk/9"
+      ],
+      "sha256": "a15eba28843378431f60e798694203971c767a8f678a3091c0c7ff771521302b"
+    }
+  ],
+  "host_native_library_bytes": 327904,
+  "libraries": {
+    "libfrontend4.so": "e7ebad5a8c4e1e35dc782e994d2c883183123d6f08dbd49e179437d0bbc1e55b",
+    "libopen_predict.so": "3dc8b00ab2fb8911133a955bb9eecd23d0e70b39e694a8a786fd209c08b519a6",
+    "libespeak_phonemes.so": "8615e98305098f4db3b1bc4ae63cb00a4b137ab695bcce362b78fbe277c98a14",
+    "libreader.so": "1a88e23155245f149e3e032cd185366bf44de61655d43cbbf4db3cdd9e32578f"
+  },
+  "packages": {
+    "zh-characters.fep": "0002828e26e658ebe137c1afc070fa75f1cf1ab2a16ac408b3fc8e50d7bbedcb",
+    "sl-SI.fep": "8ecfafe1099d526a8f0f23418e9bc750843a0816b15a4c1cf7e065c805de1ab5",
+    "en-CMU.fep": "2724410dd2ee2296c95d56a392766ba0729065a46f80863b5906677b4fec9b99",
+    "ro-RO.fep": "5cb770a0d3f5d05f7285b8f5b45fc664c919683e179a255dd2d078c6a406c7a6",
+    "lt-LT.fep": "7dc4306f0b969e05d40d335683df8d833cddf2252dbc92663b8c7b39618bfd08",
+    "es-ES.fep": "2942a662270577d617336b5acc9801fb8444118fe82f01d5849735277a7998fc",
+    "bundle.fep": "c8dc87e8576fe1711ab5329debd69a5672b28e33d6e1f99a2e168d7c5ca81532",
+    "frontend-supplement.fep": "b2bdc4eacc8827ea16adaae0133b766431c61a89f6b49001a89c5f3119f02ffe",
+    "espeak.fep": "f5a3b7dbb8cdae16767722e35cf3df5efd5e9df2db0f8890b2a6ee3fce09c5eb",
+    "zh-supplement-phrases.fep": "4bc72afb35c20e122952b214c8e973a9576d0f08449efb0d5d2657a731e88329",
+    "zh-shared.fep": "752f92c691981a26f377485367022e1c79166c98e6c3b2b223d3d5568e4469d1",
+    "integration-supplement.fep": "aaf2297c86a3106e0998c580c30ed417b39b22044ec9e3157f3a3656db28064c",
+    "pt-PT.fep": "8c491416ee52d15b68b1b6b3c33bae28608e6463f83774241b1788b378cf50d9",
+    "bg-BG.fep": "1679b9689a98fd7b85eb2dceb2dcc81377cc3ef4df51e15d02b9a1d78005a807",
+    "it-IT.fep": "373d9de287c83e8a4aaa6da87144b1bd7cc7b5cdd31fdccaad8d2450f21c5c57",
+    "fr-FR.fep": "db38e403a7118045d8beb1da12cf1f7eb23d80ca46ee6250028d6a3284fc5c4c"
+  },
+  "scope": "Host integration of native compressed-resource readers plus original Python text/feature logic; no complete C frontend or MCU RAM/ROM/timing claim."
+}
