@@ -1,0 +1,341 @@
+{
+  "status": "LOSSLESS_ASSETS_BYTE_ROUNDTRIP_VERIFIED_NOT_DEPLOYED",
+  "metadata": {
+    "files": 32,
+    "original_bytes": 627911,
+    "payload_bytes": 131654,
+    "binary_index_bytes": 2829,
+    "stored_bytes": 134483,
+    "saved_bytes": 493428,
+    "original_concatenation_sha256": "ea1ef5a4dfbf4356a280d9e017ed179a8d8cfb3d63087a61b6a205513ce39a30",
+    "payload_sha256": "db966cf6845478c18637333a8ac1bb71a9b495eb17946555f1e7ba668d937b0e",
+    "index_sha256": "f7051664c194170c952c52aeb75446747aea6c995abc543c2c238872161175fc",
+    "roundtrip_all_original_file_bytes": true,
+    "entries": [
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/FEATURE_LAYOUT.json",
+        "name": "frontend_bundle/frontend/vendor/FEATURE_LAYOUT.json",
+        "bytes": 82643,
+        "sha256": "31b28d2953102bfd782613682462b57f49d9b0d5e8835bde48a7a941ca1bf02d",
+        "raw_offset": 0
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/FRONTEND_INDEX.json",
+        "name": "frontend_bundle/frontend/vendor/FRONTEND_INDEX.json",
+        "bytes": 2523,
+        "sha256": "338cb969a9a4cdf0e2dfd8d4d753cd10362cd3a2e5b800c0f57bae99d35593a0",
+        "raw_offset": 82643
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/extra_resources/MANIFEST.json",
+        "name": "frontend_bundle/frontend/vendor/extra_resources/MANIFEST.json",
+        "bytes": 426,
+        "sha256": "b1c343cfddf60ff3574de47b7be8c713d7e345ae25675ec361c2d6c5bfc829a9",
+        "raw_offset": 85166
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/frontend/MANIFEST.json",
+        "name": "frontend_bundle/frontend/vendor/frontend/MANIFEST.json",
+        "bytes": 3386,
+        "sha256": "dc3c7a58e45f1f1a95b9430de6f3eaba795e62cfc4d96d32e677734499a50600",
+        "raw_offset": 85592
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/de/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G1/systems/de/frontend_metadata.json",
+        "bytes": 34374,
+        "sha256": "69c2e8c839203f23ed10d04f03a78f819aa912b79b17693f26ba45c2fac2ff56",
+        "raw_offset": 88978
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/en/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G1/systems/en/frontend_metadata.json",
+        "bytes": 22456,
+        "sha256": "efffd20e823a9bdcc2407b3dd3d78d506c70f24e54aea0b98c2be7bc2c1f347d",
+        "raw_offset": 123352
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G1/systems/nl/frontend_metadata.json",
+        "bytes": 32989,
+        "sha256": "6693faee83bf65dab412d5397a4af3b0d2418019c99ee42307aa24c9ef09fbbb",
+        "raw_offset": 145808
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G10/systems/tr/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G10/systems/tr/frontend_metadata.json",
+        "bytes": 27470,
+        "sha256": "aed71146a1f8fe76e39e6fb17c37e9088897d5c16164037097927e5a395e2316",
+        "raw_offset": 178797
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G11/systems/zh/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G11/systems/zh/frontend_metadata.json",
+        "bytes": 94418,
+        "sha256": "d66f19a2f6365ceaf45d45b049f9fb87053cc2802a4532e178736414b07fc9d3",
+        "raw_offset": 206267
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/da/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G2/systems/da/frontend_metadata.json",
+        "bytes": 30079,
+        "sha256": "a18d53eb8e87951728674562dbc0c8e7b048dc791fe547d61c3c0a6c655f5822",
+        "raw_offset": 300685
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/no/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G2/systems/no/frontend_metadata.json",
+        "bytes": 38644,
+        "sha256": "794df57bd9c9106482be30d58c384521ed9d8c4845a63217b5e661d06c8a5e44",
+        "raw_offset": 330764
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G2/systems/sv/frontend_metadata.json",
+        "bytes": 29562,
+        "sha256": "3ad18bfab21171290511591f8dbd16bc9a8437473de570e2943646f1badb3743",
+        "raw_offset": 369408
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/es/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/es/frontend_metadata.json",
+        "bytes": 14038,
+        "sha256": "4f2522bbec2556a56270be9368365cae784f3e6c4c9bf026c73d30cb209b822d",
+        "raw_offset": 398970
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/fr/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/fr/frontend_metadata.json",
+        "bytes": 15583,
+        "sha256": "28b88b2899783b71b05b2de39434935cc9a50aa9c9de8397d42d4aa8078b2524",
+        "raw_offset": 413008
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/it/frontend_metadata.json",
+        "bytes": 16860,
+        "sha256": "394748283aee6faee9fa819b9e574b421f376de59dbb2d88eeb8e5170aa7ac41",
+        "raw_offset": 428591
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/it/source_frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/it/source_frontend_metadata.json",
+        "bytes": 16813,
+        "sha256": "2abb200767851948c3bd4d113dbefbd2d0c7dadd7a760d7217e4a9089ff1a9c4",
+        "raw_offset": 445451
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/pt/frontend_metadata.json",
+        "bytes": 17961,
+        "sha256": "e4a1b00f01cdaa35f7469de97b49eb365d587623f1e504a59c58e455d4873697",
+        "raw_offset": 462264
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/pt/source_frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/pt/source_frontend_metadata.json",
+        "bytes": 17914,
+        "sha256": "dd0cc4f547014f8b20a98810186bc7bea18d3c4360984fd9153e6913835139e2",
+        "raw_offset": 480225
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G3/systems/ro/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G3/systems/ro/frontend_metadata.json",
+        "bytes": 14232,
+        "sha256": "e8d2e3b3cab988c5f4ed12586bd0ba22e1e7c2871c7809e0ec77925f977708a9",
+        "raw_offset": 498139
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G4/systems/cs/frontend_metadata.json",
+        "bytes": 33441,
+        "sha256": "a8ac871e8f27aa3e305be68be7ec0334bad9520a264d885c9dc7830f1b57d7e5",
+        "raw_offset": 512371
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G4/systems/pl/frontend_metadata.json",
+        "bytes": 33546,
+        "sha256": "bf5a377dd3ac1e73a27ba37fda627fab9f9e18628186e8d40341e041593afdeb",
+        "raw_offset": 545812
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G4/systems/sk/frontend_metadata.json",
+        "bytes": 33196,
+        "sha256": "2850b6dd37f0013737594822d96c639ca7ecc95fb84c8b55c7dc0b94547dc87f",
+        "raw_offset": 579358
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G5/systems/bg/frontend_metadata.json",
+        "bytes": 1403,
+        "sha256": "572d129ba5a75f4757dce2c314ebe5c5d6232a0dbb2b73b1072b72cd99736d09",
+        "raw_offset": 612554
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G5/systems/hr/frontend_metadata.json",
+        "bytes": 1200,
+        "sha256": "05867eb69e4e865aa6d23f496fc64b4e388f0ed72e8f7ee60baa474b214cf7a4",
+        "raw_offset": 613957
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G5/systems/sl/frontend_metadata.json",
+        "bytes": 1236,
+        "sha256": "4094ed6789d6d32ddac244d7e24fc9f30651153557035a30826c90040523546d",
+        "raw_offset": 615157
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G6/systems/lt/frontend_metadata.json",
+        "bytes": 1243,
+        "sha256": "f3ddb2e8b84c6b8569df8fbfc25ee500305b79a8b1e349754bcf8d35be1df2b2",
+        "raw_offset": 616393
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G6/systems/lv/frontend_metadata.json",
+        "bytes": 1213,
+        "sha256": "caf59dc11e7d004fb63e1537944335edcf5c2ac389bf9d69d7d18047c26f95b0",
+        "raw_offset": 617636
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/et/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G7/systems/et/frontend_metadata.json",
+        "bytes": 1199,
+        "sha256": "68cdfa76061e3d7a59f1663adfe86a648fb26343f6da6c289303e4769d29b189",
+        "raw_offset": 618849
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G7/systems/fi/frontend_metadata.json",
+        "bytes": 1222,
+        "sha256": "8f69142cdc453a09530ae603fd62f18fb06e6ff7fb18f0d1fdce3480cf3848da",
+        "raw_offset": 620048
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G8/systems/el/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G8/systems/el/frontend_metadata.json",
+        "bytes": 1384,
+        "sha256": "c4893f550c9a072f6739b3fa89458d225e3ce128a9cb4800506bdab27f8338ce",
+        "raw_offset": 621270
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend_metadata.json",
+        "name": "frontend_bundle/frontend/vendor/models/G9/systems/hu/frontend_metadata.json",
+        "bytes": 1229,
+        "sha256": "7fa55b73f280d92dbb496e1c07fd09b3371cb74cb4e6c5da1632f2400b9358c1",
+        "raw_offset": 622654
+      },
+      {
+        "source": "new25_zh_reference_frontend_20261030/repo/pipelines/prosody1000_rndvoc_opus24/frontend_bundle/int8/assets/vocabulary.json",
+        "name": "frontend_bundle/int8/assets/vocabulary.json",
+        "bytes": 4028,
+        "sha256": "559e1ec14d6d5747432f9b8738b6ea765db02cefaed4eb8587f457bc9d69f1fb",
+        "raw_offset": 623883
+      }
+    ],
+    "compression": "one raw DEFLATE stream across file boundaries",
+    "random_access": false,
+    "cold_full_uncompressed_bytes": 627911,
+    "bounded_sequential_reader_possible_but_not_implemented": true
+  },
+  "model": {
+    "source": "m55_fargan_stream_20261030/native_integer_combo/assets/model.bin",
+    "original_bytes": 4472904,
+    "original_sha256": "3e84b12cf4e2c990a250a8aab45517ee799a61198f9ef430e64787d7d22d324e",
+    "restored_sha256": "3e84b12cf4e2c990a250a8aab45517ee799a61198f9ef430e64787d7d22d324e",
+    "block_size": 16384,
+    "blocks": 274,
+    "raw_blocks": 10,
+    "deflate_blocks": 264,
+    "payload_bytes": 4135299,
+    "binary_index_bytes": 3304,
+    "stored_bytes": 4138603,
+    "saved_bytes": 334301,
+    "payload_sha256": "4a650562a0553b1fa8df409269fc1f33d255cc1959e9c8fff0ae21c9cc35c9ac",
+    "index_sha256": "dda424dd091d1971f13e138845e240a2c798521dcc81b773203470ff3705fb1f",
+    "all_blocks_and_whole_original_byte_exact": true,
+    "decoded_page_bytes": 16384,
+    "runtime_direct_I8_pointer_interface_unchanged": true,
+    "compressed_runtime_reader_integrated": false
+  },
+  "conditional_inventory": {
+    "previous_all_conditions_known_inventory_bytes": 10787506,
+    "additional_metadata_saving_bytes": 493428,
+    "additional_model_saving_bytes": 334301,
+    "new_conditional_known_inventory_bytes": 9959777,
+    "margin_to_10000000_bytes": 40223,
+    "asset_inventory_under_10000000": true,
+    "deployed_firmware_accepted": false,
+    "code_cache_manifest_alignment_and_unknown_components_not_included": true,
+    "all_prior_U_template_GC_JSON_dictionary_conditions_still_required": true
+  },
+  "original_files_preserved": true,
+  "no_new_quantization": true,
+  "training_updates": 0,
+  "QEMU_runs_started": 0,
+  "inference_runs_started": 0,
+  "cold_start_decode_time_unknown": true,
+  "request_page_decode_time_unknown": true,
+  "additional_runtime_RAM_unknown": true,
+  "model_whole_inflate_plus_backend_reserved_bytes": 8320680,
+  "whole_inflate_total_excludes_frontend_and_is_not_recommended_or_measured": true,
+  "metadata_whole_inflate_bytes": 627911,
+  "missing_components_unchanged": [
+    {
+      "component": "full25-language phonetic/context feature and planner/reading policy C bridge",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "text_worker.py, frontend_repair.py, frontend_live.py, reference_chinese.py, frontend_bundle/frontend/api.py and per-language Python adapters",
+      "note": "Native fixed feature arrays are still used. Python/NumPy implementation is not a Cortex-M55 port. Raw Python source file sizes are not ARM code budgets."
+    },
+    {
+      "component": "FEP LZMA2 decoder, key/value/predict readers, compressed lexical lookup",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "frontend_bundle/frontend/sources/readers/reader.c uses liblzma lzma_raw_buffer_decode and crc32",
+      "note": "Existing puff decoder handles raw DEFLATE, not the FEP LZMA2 codec. FEP data bytes counted but a complete ARM reader/codec link and dynamic peak are absent."
+    },
+    {
+      "component": "Unicode normalization and character semantics",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "reading_policy.py uses NFKC and Unicode category; language adapters use NFC/NFD and Unicode case/token rules",
+      "note": "Existing eSpeak ucd-tools case/category/script C tables are in its object budget. They do not prove equivalent Python NFKC/NFC/NFD/category/regex behavior; UTF8 decoding alone is insufficient."
+    },
+    {
+      "component": "front-end memory filesystem, retained/extracted lexical data, manifests and target libc dependencies",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "Resources._extract currently extracts espeak and integration resources into a host temporary filesystem; previous relocatable link leaves open/stat/dir APIs and native_deflate_block unresolved",
+      "note": "Requires actual native ROM-backed/paged filesystem and lifecycle; copying all extracted files into RAM is not accounted for."
+    },
+    {
+      "component": "dynamic phone/context/normalization/lookup/segmentation buffers and frontend call stack",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "reference bridge uses 65536-byte result buffer on host; text planner caches up to4096 candidate encodes; native equivalent/lifetimes not integrated",
+      "note": "Reference reachable frontend RW160887B includes code globals/custom lexcache only; it is not the complete heap/stack bound."
+    },
+    {
+      "component": "platform startup, storage map/cache, IRQ/RTOS if used, audio DMA/playback queues and error/reset paths",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "Current firmware uses semihost IO with one frozen287-frame sentence",
+      "note": "Current 20ms packet transport does not verify actual audio driver buffers or platform stack. Final combined link/map needed."
+    },
+    {
+      "component": "long/mixed text resource lifetime and streaming output retention",
+      "ROM_bytes": null,
+      "RAM_peak_bytes": null,
+      "evidence": "Current same-ELF benchmark retains full float PCM16/PCM24 diagnostic outputs; arbitrary text segmentation/front-end state not exercised",
+      "note": "Need bounded text limits and allocator/stack high-water across25 languages; current short-sentence arena peak cannot be extrapolated to unrestricted long text."
+    }
+  ],
+  "complete_system_ROM_accepted": false,
+  "complete_system_RAM_accepted": false,
+  "current_combo_ELF_or_default_pointer_changed": false
+}

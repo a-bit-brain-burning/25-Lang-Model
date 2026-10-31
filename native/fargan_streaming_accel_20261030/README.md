@@ -6,6 +6,7 @@
 |---|---|---|
 | `accepted_i8_final/` | 用户已认可量化音质的中文/英文完整固件、源码、资产、构建脚本、回执、试听 | 首音 QEMU 主机 2.2601 s（基线 3.6507，-38.09%）；300 ms/双 10 MB 未验 |
 | `best_instruction_candidate_opt300d/` | 当前最快且六输出与已认可基线逐字节一致的指令优化候选（opt12）、源码、profile、回执 | 冷 ROI 61,984,476 事件（-9.928%）；1 IPC 下界 309.922 ms；warm 口径 59,966,762→299.834 ms 但非常驻固件实测；**硬件 300 ms 未达、未最终化、未采用** |
+| `resident_runtime_candidate_opt300e/` | 常驻固件真实 API 请求候选 opt16_final（含前端源/资产/源码/逐PC CSV/回执） | request ROI 59,747,483（298.737 ms@1IPC）／full 59,988,134（299.941 ms@1IPC）双口径<60M；仅 1IPC 最乐观线、余量 0.02%、**硬件 300 ms 未验收**；SRAM 词典镜像 +1.45 MB |
 | `shared/` | i8 基线所需 BWE/上游 C 源码与 `arm-none-eabi-gcc` 包装脚本 | 工具链本体不入库（见下） |
 
 ## 构建说明

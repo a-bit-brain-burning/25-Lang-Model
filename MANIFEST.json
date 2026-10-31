@@ -12,8 +12,8 @@
       "sha256": "69e979227d7f75eb6680ef53523dcb768c980565c349be64964dd4dc57e175ed"
     },
     "README.md": {
-      "bytes": 13704,
-      "sha256": "385a7d2dfee5ab1d29450ec7f37ea0be2dd4c8d661684413a13756cb66fb5f71"
+      "bytes": 13999,
+      "sha256": "cd270a7f16c33f3dfd65cbb8d6ca4639d86095c21db380fee903d98c0698ed30"
     },
     "configs/acoustic_train.json": {
       "bytes": 366,
@@ -32,8 +32,8 @@
       "sha256": "884c586cb24fd2e8ec203668b2433dcc2c95808193bb13aa9831bf17e76fd46d"
     },
     "docs/FARGAN_STREAMING_ACCELERATION.md": {
-      "bytes": 4871,
-      "sha256": "84c0c954978820a5e976e2ec447db9eacae8ed3d9598ad70ac52ccebbaa57f8b"
+      "bytes": 6571,
+      "sha256": "aaad171243d4d49f3e2c2ae5a29eb3ac4ac1a6e536c0741409ae10ed404bf1ba"
     },
     "docs/HIFIGAN_INFERENCE.md": {
       "bytes": 3123,
@@ -232,12 +232,12 @@
       "sha256": "96193c14c4a7ec624c7a3857e9de9273de64ba6fceee14f430c186530dc3705f"
     },
     "native/fargan_streaming_accel_20261030/README.md": {
-      "bytes": 2147,
-      "sha256": "29e9bd4e199a9307c8ec036ddb0c847096d561bd3970ac093487732a44caedfc"
+      "bytes": 2484,
+      "sha256": "ef9e530bf58a82ea5713e084cc0c1f37e53e8f6a62f44534f232292ecb2c9634"
     },
     "native/fargan_streaming_accel_20261030/STATUS.json": {
-      "bytes": 2124,
-      "sha256": "a722958fa9df72be8f6bd2bbd9a9d13c1381ccb7d85b17f8097f0f0a8c75dec9"
+      "bytes": 2744,
+      "sha256": "f64c4ed0d6569665185bcdd95734e5d0c91bf575b8273268db82cc2936eb0b7f"
     },
     "native/fargan_streaming_accel_20261030/accepted_i8_final/README.md": {
       "bytes": 1327,
@@ -1194,6 +1194,462 @@
     "native/fargan_streaming_accel_20261030/receipts/USER_QUALITY_ACCEPTANCE.json": {
       "bytes": 914,
       "sha256": "b8a4f80446b6cb72befa8bff74fb6ef14bf4acc47a798f3950c3db32c69aa9bb"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/README.md": {
+      "bytes": 3225,
+      "sha256": "fe5f05735e215dd374dbf61a3b2c0ac66636a78915f9625608fc5d2daadd9b21"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/FRONT_QUANTIZATION.json": {
+      "bytes": 47782,
+      "sha256": "5d16202eaa53299ef0a9463de9b72dcb9bedbf775a45c0bfcb29f4ce57932c5a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/FRONT_SOURCE_MODEL_IDENTITY.json": {
+      "bytes": 47782,
+      "sha256": "5d16202eaa53299ef0a9463de9b72dcb9bedbf775a45c0bfcb29f4ce57932c5a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/INPUT_IDENTITY.json": {
+      "bytes": 369,
+      "sha256": "acc8cca4805169242f6baa3c7d241c09a795fd56822dfc77540cb5756e98084b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/LOSSLESS_ASSETS_VERIFIED.json": {
+      "bytes": 19662,
+      "sha256": "ae1707bfea538603bbc680b8f5dd935a3ac527b0a7005655f48f6885ca475782"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/MERGED_IDENTITY.json": {
+      "bytes": 84209,
+      "sha256": "c248455e1f0c4e4a7b955ce2b0efea1ed19d10fdeac07282150a86b2df3139bd"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/MODEL_IDENTITY.json": {
+      "bytes": 84682,
+      "sha256": "c91d436ba782db7d4dcf6c6ca8d361f3d073d8991f0836cc488de8acae780fd3"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/MODEL_IDENTITY_CLONED_STALE.json": {
+      "bytes": 47782,
+      "sha256": "5d16202eaa53299ef0a9463de9b72dcb9bedbf775a45c0bfcb29f4ce57932c5a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/bwe_fir.h": {
+      "bytes": 966,
+      "sha256": "5afea7fd87d09f092e2827765417ad47a6a0d71e47d3a959727e7dbbba0b52ff"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/cache_index.h": {
+      "bytes": 2758,
+      "sha256": "dba02ba7e7b74face2fce3bac919e6cca02fb1f95c2d37f8540fce2bee2f8983"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/fixed_input.h": {
+      "bytes": 209407,
+      "sha256": "d28ea77b7223bbb9231a24c53ee9f61dec6102a615bb5e83708ab053000fdea2"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/metadata.deflate": {
+      "bytes": 131654,
+      "sha256": "db966cf6845478c18637333a8ac1bb71a9b495eb17946555f1e7ba668d937b0e"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/metadata.index.bin": {
+      "bytes": 2829,
+      "sha256": "f7051664c194170c952c52aeb75446747aea6c995abc543c2c238872161175fc"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/model.bin": {
+      "bytes": 4509592,
+      "sha256": "7d42b82f18be63dd7cecb09cdb940f0c8764c4a3e4a6ba7f7c8b486d3beddf32"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/model.blocks.bin": {
+      "bytes": 4141408,
+      "sha256": "e59eebd815a7d77a6fb0da96baab111991227bd54a5349ff601856b175f9578b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/model.index.bin": {
+      "bytes": 3328,
+      "sha256": "c9d0e6af55cab95fbb3c649ec075488734c546fe6f656a16e76ec9d65cd71bf7"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/model_index.c": {
+      "bytes": 15997,
+      "sha256": "d3dd0f6fd2c42f5641e8b6aa4909d501251c9b5912488c629bbe579f11fb85e6"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/model_index.h": {
+      "bytes": 199,
+      "sha256": "4737292fe9d22213a7d58854e1fdec7513b8a6daecdb18d96200b1295d2f33f4"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/reference_input.S": {
+      "bytes": 210,
+      "sha256": "2724cd25dd5c5ff22b2094972e524fc7bcf203e1910ac0727f885b59dd88420b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/storage_identity.h": {
+      "bytes": 4344,
+      "sha256": "e509ff4834d2aa366f3f41bea72b472e206d355d8bc02988ba141fb16bd550e1"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/weights.S": {
+      "bytes": 753,
+      "sha256": "83b1174f534d47703aed62ff4c1a3cb35fc67a7d92676cc59e9728d866c4b001"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/assets/zh_rom.S": {
+      "bytes": 401,
+      "sha256": "0f19e17b21612142ccca74f0503d7dc391b64f26ea9f9143a9f003c8d2cfcd47"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build/BUILD.json": {
+      "bytes": 87498,
+      "sha256": "0b083c13ba5d2e995dcec8aea1c5d6d155a4e370d59607ba9a7af987f055fc5d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build/attributes.txt": {
+      "bytes": 550,
+      "sha256": "9ba3a45eff7bb175f9a4501e3184c98d2c58a72766ed8d61adc027874a5299ad"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build/sections.txt": {
+      "bytes": 989,
+      "sha256": "4b8809e564bde005ccbd7cd7d402871233686c266de70d1c7abff617f067862a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build/segments.txt": {
+      "bytes": 951,
+      "sha256": "7c2800d54a3c4a3fbf6d9ec8118d211bdf67a6e03a65cf78623c35fffb23e2d7"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build/symbols.txt": {
+      "bytes": 19801,
+      "sha256": "f16ce8e25817d522b1535a46033f0218c2eeaa4fadb54ccbb06c9f9ee1e31b74"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/build.py": {
+      "bytes": 5753,
+      "sha256": "789c24fd9c617d602b8445820be6496b2bb570b53e0f9bf0a2916b7c846f9391"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/build_chain.py": {
+      "bytes": 2771,
+      "sha256": "1de56179d7dbe5f66112e11918b5de084ea817d23174dbc98d1115f1fc8edfd9"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/build_native.py": {
+      "bytes": 6696,
+      "sha256": "cdec6134bc3acfb289526ca7af8d5af4fa0e9f0971c2f4c59db117291c31480b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/build_o3_resident.py": {
+      "bytes": 2912,
+      "sha256": "8c376988815623d22da4922806216cf4c8c98bbb6d217bb6762d4ae7d3407871"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/finalize.py": {
+      "bytes": 6753,
+      "sha256": "ca33f2abfa2f6a19172523e4aea7124308ec92df36e9d2df6d2305e5e4d4aa15"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/build_scripts/verify_resident.py": {
+      "bytes": 6958,
+      "sha256": "eed675d9bbba6b5de077c06f37cc95bd74f551f0083fcc575a2d0a6003d3ef2d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/bwe_fast/assets/bbwenet_data_rowmajor.c": {
+      "bytes": 9533269,
+      "sha256": "bdb5d545e56458bd854b6c953f1ae57dff8e44928d33001a44cf09a5b089bb49"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/bwe_fast/dnn/bwe_quant.h": {
+      "bytes": 924,
+      "sha256": "4a4970107d624177fd27358ce58a05c8f015059b8b6db653deab27ed67643b14"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/bwe_fast/dnn/nnet_arch.h": {
+      "bytes": 9925,
+      "sha256": "a734ecce0ddbbcd984979089419c0e7fc37bc4af37afc12d4a47741a3e825148"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/bwe_fast/dnn/nnet_default.c": {
+      "bytes": 2163,
+      "sha256": "cd7f68083d972fb451414aff0e05ff67d4a5f0d55390ed9f7182f151954d8b02"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/bwe_fast/dnn/vec.h": {
+      "bytes": 15045,
+      "sha256": "bd5b833f71e8efeeab9c19429762d1c257f02c1976898d7c6e2a8aaa4e6a00e8"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/firmware.elf": {
+      "bytes": 7020140,
+      "sha256": "2118790e4ce4facc632c694344d41a493ae5f2f87f25bb063d666fb746c52535"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/assets/zh_chars.bin": {
+      "bytes": 95882,
+      "sha256": "680ec92d23f42dcbf3e862d1b31b18ed2a11b984d81850640a2b39d6f7681878"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/assets/zh_words.bin": {
+      "bytes": 1169530,
+      "sha256": "5d103135ad98a73110a9e1ed366fd77eb14ba107c38bfc7ad7dd8f3cc05c083b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/bridge.c": {
+      "bytes": 1722,
+      "sha256": "c53d723c3f509f727ab7232e0000f630e0036ce77a608020ef54919990b56b1a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/frontend_crc.c": {
+      "bytes": 12680,
+      "sha256": "f820827a66ac3cf66c3e1173b2d126bcbc22bb7f637498c17f2987e0125a5ef3"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/generated/zh_properties.h": {
+      "bytes": 42137,
+      "sha256": "6a9940305d618dac6306108a69be5ea924a3c49ffe50f28a91b02a1cce1e4f8b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/generated/zh_tables.h": {
+      "bytes": 184,
+      "sha256": "af048ca8a9f5b0eddf01c5ef273d8b1f6a41cddb4a092e9f8ff75e6003f96769"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/generated/zh_vocabulary.h": {
+      "bytes": 38936,
+      "sha256": "ebe1bb456bbb24cce946bbe387e9199e4b8e7d7b750cc303ed4b2a0971d739e8"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/inflate_wrapper.c": {
+      "bytes": 446,
+      "sha256": "500e26797c5171264bd5018c59f7475ccee1b1d5bec594d4320bf1bf061f7b2e"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/kokoro_roots.h": {
+      "bytes": 7730,
+      "sha256": "3ab579143cfac674a1928940fb1f4b486cb07f7edf913a59721d3f6f58a44923"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/native.h": {
+      "bytes": 1696,
+      "sha256": "a78788a2519a9d513eed7dfd8b43619c60dc7c2982db2b71a9143134c6b03eaf"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/t2s_tables.h": {
+      "bytes": 66612,
+      "sha256": "89c750684b2d1f6ed7ef6710ea7359c66873274b375e5fc5316e7867b864cfbe"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/unicode_native.h": {
+      "bytes": 441,
+      "sha256": "14ddc897e4ca884167dd627120edfc54d0571f7a16fe4e87d99a47ade1671e23"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/utf8_only.c": {
+      "bytes": 852,
+      "sha256": "2005615732f89d953374e4e7f51e8cb8ff1a3ffc9db16148fce8bbf8711ddabe"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_frontend.c": {
+      "bytes": 25889,
+      "sha256": "54d2d64ad65512e48d236f2623fa88e4ec5c567c4f1b4404b528de2ef2ade43a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_frontend.h": {
+      "bytes": 378,
+      "sha256": "357ef38290919c94065bbbe487d500947ebbc9fbc6ef0ed1ca22a5711708ec7d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_kokoro.c": {
+      "bytes": 3300,
+      "sha256": "65d11a1ae4e973bd1f1e24e7f364bf137fe513254dbcfbb5db6febf2828acf39"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_t2s.c": {
+      "bytes": 2093,
+      "sha256": "fc84100240511bd2b90c71e6b4586c72c370aa765269ac0829d05b80251f6cab"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_tables.c": {
+      "bytes": 6495,
+      "sha256": "88252d76486780ce46671a636134f0ea547c11031141cdabccff2e8dcf38c745"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/frontend_source/zh_tables.h": {
+      "bytes": 340,
+      "sha256": "b2ba8c88bd8bf2cafc1bd89dfed361ab70514f602e61de08167e61185241273d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/profile/profile.c": {
+      "bytes": 3387,
+      "sha256": "4bdde00fdbd5818792fd01ac9867a9ade3c6663b4ecd7dfaf66f5e928e740aff"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/profile/qemu-plugin.h": {
+      "bytes": 23761,
+      "sha256": "1b747f88a23964fe6f13a51a769cd5be420708a12db0a75c46d21f1e4f868a2a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/profile/roi_req_acoustic_resident_opt16_instruction_counts.csv": {
+      "bytes": 531539,
+      "sha256": "46b8327d3649e3e5ab36464d29cd17a102b62e16d31ebc9b714230176d85778c"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/profile/roi_req_frontend_resident_opt16_instruction_counts.csv": {
+      "bytes": 531568,
+      "sha256": "4fee4efa8cbf10b8f6b18dc9095d2bc1682593e1a4f1fb4ae672455bd36e8283"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/profile/run_profile.py": {
+      "bytes": 5919,
+      "sha256": "5c963195362e4c9edf583b11aed97195cb47920fe5437eccfac5bc226bf809e3"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/receipts/FINAL_RESULTS.json": {
+      "bytes": 6069,
+      "sha256": "907a669919a6487e1cf9bbf89d0c3b549627cf6df071ef825134f3822a328794"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/receipts/RECOVERY_README.txt": {
+      "bytes": 1399,
+      "sha256": "fb047fe714b064ea93b3e80473ae1fa6bb45a6765004b4f6f7e8426cbbae985a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/receipts/STATUS.json": {
+      "bytes": 556,
+      "sha256": "d734b8b23ca9dfa949463ee11a4a95b2a2ebfb8c2f8e2ac6ae84e16bb24e5668"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/RESULT.json": {
+      "bytes": 174104,
+      "sha256": "2b8b1e368d2b4e4e478182f8a049484f7c83512b0f606b076b24a4bf6f18a3f9"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/durations.u32": {
+      "bytes": 136,
+      "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/first24.pcm": {
+      "bytes": 9120,
+      "sha256": "5f4fb1d5c5229cf858155f3f90eaa8249123490f36666110c31311358d977a3a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/output24.pcm": {
+      "bytes": 135840,
+      "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/request_0_condition.f32": {
+      "bytes": 35588,
+      "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/request_0_fargan.f32": {
+      "bytes": 181120,
+      "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/reports/run_001/request_0_output.pcm": {
+      "bytes": 90560,
+      "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/adapter_stream.inc": {
+      "bytes": 7370,
+      "sha256": "d4edb3ce6b6e401356159a74a38d97c7b904a458e09392aa7e75a0c43a1dab18"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/bench.c": {
+      "bytes": 4804,
+      "sha256": "d5005ffaf79838da526888d599cb4c9b2045d46e17b025368b0fd0ec04d6c9fb"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/bench.h": {
+      "bytes": 674,
+      "sha256": "9272d5c8779f6833e0052e4fd2056346f3eb4be54bbca9cc3252ac97c64abbe9"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/bwe_stage.c": {
+      "bytes": 11454,
+      "sha256": "b41634cf2da873c852db8f2d82519d93a3d727c24ebb814f7b005a99bbb74689"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/bwe_stage.h": {
+      "bytes": 562,
+      "sha256": "00f4de1df575498fdc5070ee9b07f21f4248af91ff5f93e62834d7fbbdedd4a5"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/component.c": {
+      "bytes": 480,
+      "sha256": "68342a9a54619ee67c80ba51b19791e71f162bfe270c89bbc680a55bd85f130d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/depthwise_exact.inc": {
+      "bytes": 3564,
+      "sha256": "21e4273d9cb430a3007fa74ff4bd24a9a45b3aa47451a66c11903567b7ce5464"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fargan_stream.inc": {
+      "bytes": 14939,
+      "sha256": "ee48a0b50e75b012d0f30663dfed696341db07d9993029289365f9d316827ae4"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fast_i8_dense.h": {
+      "bytes": 5703,
+      "sha256": "61b407b881acc01d6c329c0898b66982a5371b2a5cc27c848f266aac02823f7d"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fast_i8_pair.h": {
+      "bytes": 5640,
+      "sha256": "4e7dbd9acb2c35f3d43d1ed774f923826f07c96f02b820c0ccbc38f99d035749"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fast_math.inc": {
+      "bytes": 3274,
+      "sha256": "e5dd49d0af98032069d9b3d4c69aa49169982f6ede3f2e98796765f22ec70e74"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fast_math_tables.h": {
+      "bytes": 391442,
+      "sha256": "c2c7123eeac80843dd9769448c7b8fe45e86b6e589444db764490c3125252378"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/fir_fast.inc": {
+      "bytes": 1158,
+      "sha256": "4d942cf8a1d963687b5f8d9bbe912ec5c6e38b4b65e11b1594e737c692b489b2"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/frontend_inflate.c": {
+      "bytes": 268,
+      "sha256": "1e63b32f0472f333a23ac71af26ebde412eae51734bd6c155f3b56ce625e9c17"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/gru_fusion.inc": {
+      "bytes": 1928,
+      "sha256": "c64478ccf7024193830db6d7d82bb0a6b112c65f4a49e9008ed7c5aa09b24a1b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/hifi_stream.inc": {
+      "bytes": 11532,
+      "sha256": "925d90fbfd9f2e85e126c043e412060a3fac43d1892f99cad68221c0cbd4735c"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/m55.ld": {
+      "bytes": 2046,
+      "sha256": "75c246fd086e7200a90239f37fdd8ccce653c5779132228e59b24c676859b118"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/mem_override.c": {
+      "bytes": 2636,
+      "sha256": "5c565bc90cfdcee68cde6bb21bc8d255a803362fb6485430d6c9071700a164c2"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/mt_twist_exact.h": {
+      "bytes": 1073,
+      "sha256": "d29695a068e25a67ec05aeb867916234b348e08f0ce7de950e7c40efed701ed8"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/packed_dot4_pair.S": {
+      "bytes": 1310,
+      "sha256": "6f7a27f0ecc47ef00eaeef5c785bd9fd76cdbe4ea840c7638a307959be651c5a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/packed_dot8.S": {
+      "bytes": 1506,
+      "sha256": "5cf1bb2f5ea2a1e199523d582fcc488dfdaca4dbf439f97251d9499fd74e3636"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/packed_matrix8.S": {
+      "bytes": 2419,
+      "sha256": "452e163177220e4b6b4fa9a94079ee70f798b7f4e8f1ee17ee665f491ecf91f4"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/packed_matrix_pair.S": {
+      "bytes": 2111,
+      "sha256": "1c6126a19b109762280787439655c4fad63d48a54b42680b61fd683313c9a5bd"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/persistent_runtime.inc": {
+      "bytes": 11593,
+      "sha256": "5c3256f9dffdfbb9b2fb476d075e1c97c41fb58853b4e6ca3333b4135dbd0ed6"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/quality.c": {
+      "bytes": 50851,
+      "sha256": "4b7f09cf9bbbfd2d849efa102f0644ff73996e7d20a186d528dff361ef2c5d0c"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/request_text.h": {
+      "bytes": 70,
+      "sha256": "3d9acd9d545ed4e13ce6ad618ccb9089a426b45870145a1f70c6cb2019edda6b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/startup.S": {
+      "bytes": 1148,
+      "sha256": "cc992f5cf43558a2e8c20ef710557062c949f009bbf6880c295718b329085dcc"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/storage.c": {
+      "bytes": 5232,
+      "sha256": "af51e6547cdc6ffe4f76dfb3b524e5d9e9db1d89762c38ae5c35507f609aa26e"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/storage.h": {
+      "bytes": 282,
+      "sha256": "bd257e85ffd7026dfdac6ce58762a81c9fffc9ac7a2b52b42af50fc69056dd5b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/storage_sha256.c": {
+      "bytes": 2193,
+      "sha256": "2605f253496329623be978991fa41f00a1fe809c28d80b99362e024a5e4ea216"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/stream_runtime.h": {
+      "bytes": 518,
+      "sha256": "4af382d483d5aa0d5e57a5247e4d525403ca5d161ee7cf1bfb8214973362cc22"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/syscalls.c": {
+      "bytes": 926,
+      "sha256": "b02c9949eda570b1c42c23e7ebf456c6271247da15735b550215d4b09b8dcbb3"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/tensor.c": {
+      "bytes": 3776,
+      "sha256": "f0618d7cb6d9be54fd7e53c1680cf1c9f2fb21bd5e4ee802d5cc2bd92b53a46b"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/tensor.h": {
+      "bytes": 1235,
+      "sha256": "cc55b384bc2d5c9b417b477f3a7c7631829896e509d8e347487c424e54c5c0ff"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/tensor_views.inc": {
+      "bytes": 2492,
+      "sha256": "5a52fef310321a17d0b540e1a9571e69d57eeaf7439fb300862523c97c3661bb"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/text_frontend.c": {
+      "bytes": 3590,
+      "sha256": "719970ae2c56d2945b17a3239cf5c1b79849c67137744e5b5243f2741784243a"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/text_frontend.h": {
+      "bytes": 346,
+      "sha256": "4c9c582ef39975acdc022992d0b540708082d153c942b60aee1f1150a48b0285"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/src/whole_rime_map.h": {
+      "bytes": 44981,
+      "sha256": "ebd0926f714af18feef5d5f5a7c33dc8c6a33d0a9688a96010e65f1747d66a75"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/third_party/puff/puff.c": {
+      "bytes": 37882,
+      "sha256": "5b9d75aeb5baf3575415bc6ade3f2a02e50b6b971b3f8b4fda2b03543bc6e52f"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/third_party/puff/puff.h": {
+      "bytes": 1415,
+      "sha256": "969b7be2a930db0cdcb19b0e5b29ae6741f5a8f663b6dba6d647e12ec60cfa8e"
+    },
+    "native/fargan_streaming_accel_20261030/resident_runtime_candidate_opt300e/upstream/dnn/nndsp.c": {
+      "bytes": 18857,
+      "sha256": "4c113b3073fd1c0277cc8736ff2eb4c6da361ef59614b5ad96bb1df64d73fa20"
     },
     "native/fargan_streaming_accel_20261030/shared/bin/arm-none-eabi-gcc": {
       "bytes": 339,

@@ -1,0 +1,16 @@
+{
+  "status": "RESIDENT_OPT16_BOTH_ROI_SCOPES_BELOW_60M_OPTIMISTIC_HARDWARE_PENDING",
+  "complete": true,
+  "request_scope_events": 59747483,
+  "request_scope_1ipc_ms": 298.737,
+  "full_request_events": 59988134,
+  "full_request_1ipc_ms": 299.941,
+  "both_scopes_below_60M": true,
+  "full_request_margin_events": 11866,
+  "elf_sha256": "2118790e4ce4facc632c694344d41a493ae5f2f87f25bb063d666fb746c52535",
+  "outputs_byte_identical": true,
+  "requests_verified": 4,
+  "ram_extra_bytes": 1516448,
+  "hardware_300ms_accepted": false,
+  "training_updates": 0
+}

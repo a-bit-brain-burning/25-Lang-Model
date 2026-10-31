@@ -1,0 +1,4 @@
+#include <stdint.h>
+#include <stddef.h>
+int native_utf8_read(const char**cursor,uint32_t*out){const unsigned char*p=(const unsigned char*)*cursor;unsigned c=*p++;if(!c)return 0;uint32_t cp;int n;if(c<128){*out=c;*cursor=(const char*)p;return 1;}if(c>=194&&c<224){cp=c&31;n=1;}else if(c>=224&&c<240){cp=c&15;n=2;}else if(c>=240&&c<=244){cp=c&7;n=3;}else return-1;for(int i=0;i<n;i++){if(!*p||(*p&192)!=128)return-1;cp=(cp<<6)|(*p++&63);}if(cp<(n==1?128u:n==2?2048u:65536u)||cp>0x10ffff||(cp>=0xd800&&cp<=0xdfff))return-1;*out=cp;*cursor=(const char*)p;return 1;}
+int native_utf8_write(uint32_t cp,char*out,size_t cap){int n=cp<128?1:cp<2048?2:cp<65536?3:4;if(cp>0x10ffff||cap<(size_t)n)return-1;if(n==1)out[0]=(char)cp;else{out[0]=(char)((n==2?192:n==3?224:240)|(cp>>(6*(n-1))));for(int j=n-1;j;j--)out[n-j]=(char)(128|((cp>>(6*(j-1)))&63));}return n;}
