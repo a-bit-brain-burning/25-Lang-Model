@@ -1,0 +1,5 @@
+{
+  "before_sha256": "bb5e48f22ed6ea011e4e702a9c98cb1e3e5e80cbcd8761dde05b4e41093d9ae7",
+  "after_sha256": "660b07f8a2b326269a58f0ab5c1fb83e56328bd62768880659826f153216aa4a",
+  "policy": "Same finite/normal guard semantics with four-lane raw-bit checks; no libc memcpy in the sample scan."
+}

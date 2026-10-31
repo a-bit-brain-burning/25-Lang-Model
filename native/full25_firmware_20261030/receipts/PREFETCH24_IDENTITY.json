@@ -1,0 +1,5 @@
+{
+  "before_sha256": "16555b5343d5c307095b9618e7118f00f104ef631a33faa99a79d201d4d94a14",
+  "after_sha256": "aa6b00b0130870a8ba4b75ea18794c289d28c3b6770f3afe73130a6ff9450092",
+  "policy": "Common initial minimum 24 feature frames, independent of language and sentence. Exact tensor arithmetic/state remains; performance acceptance still measures actual delivered packet."
+}

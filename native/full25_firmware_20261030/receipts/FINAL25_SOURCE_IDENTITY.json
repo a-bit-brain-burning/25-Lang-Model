@@ -1,0 +1,413 @@
+{
+  "normalizations": [
+    {
+      "language": "bg",
+      "language_id": 0,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "6f275535c9dc531f71bd1b4a3cb3f1ca6158eb2237293754683e8bf74e19556e",
+      "record_sha256": "31ad76be84f36b70def5a41f9f1cb366c175fb7684f9a86aa0ceff1f39fee37e"
+    },
+    {
+      "language": "cs",
+      "language_id": 1,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "b4734d98db57680e80c374a44bc5423de3622539142047e16a00cee49ef88977",
+      "record_sha256": "dc9a1c1b8b497662199c56e44a8b0bd8c716c996038716ec4f488771379aeced"
+    },
+    {
+      "language": "da",
+      "language_id": 2,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "a9fc9d0c8fbbaf911731ab71a31736d083dd44521fa24c85046b17e3935d707c",
+      "record_sha256": "2a207e9f161666c9af9e620a3f9f97c22aa8b13c2a1bf7ca22d04d3a61e3ee27"
+    },
+    {
+      "language": "de",
+      "language_id": 3,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "1fb8d3a26329e4bf1bd5a488a362102541bbd1ceff650c5fc3c0624ad46a3aa5",
+      "record_sha256": "28dcd3be2a40e5c9e39d894e1a8506ed177ec39a69b789560ce5f6cc2227e720"
+    },
+    {
+      "language": "el",
+      "language_id": 4,
+      "dimensions": [
+        32,
+        22,
+        39
+      ],
+      "source_header_sha256": "eb73ba5bb178e4976f26d5ca46dc0119c0a2fcba0d583fe71aa94fe87855ada8",
+      "record_sha256": "879a74dae5b935043808c5f72384e7bb95822dda165b9e497b8dc10b191d3dcb"
+    },
+    {
+      "language": "en",
+      "language_id": 5,
+      "dimensions": [
+        32,
+        22,
+        39
+      ],
+      "source_header_sha256": "a9552e85c4eec6564d0f7ca82aae44d0bd3e2e8a753de7bfd7cb9f085e99b332",
+      "record_sha256": "28808bba63350629cfb8ccb5b035d3e98c1abdb555d544cead61d6eac6e5249a"
+    },
+    {
+      "language": "es",
+      "language_id": 6,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "561528ba016cfb576dfb966673da1b66e34a5195b340ba336acd22e32ca7d1a8",
+      "record_sha256": "4cc17aff885fad7decce34e3c14b793bf89bb516ff7fa9394a56c9ddc0d6ffde"
+    },
+    {
+      "language": "et",
+      "language_id": 7,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "c2494dc85f8920c96e3b8c0344fc58d69b7f2ea99b3f031e15c98e98af45e997",
+      "record_sha256": "9dafaa77ddcbcf946851d2e582147e50ef2dab6c719938cfe1aa9f2d7e464f36"
+    },
+    {
+      "language": "fi",
+      "language_id": 8,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "d64f5bd58b10bc0d5982e303051a62611e89c61c30f2cc935d456effd1c234d0",
+      "record_sha256": "a33d2e57138c0cd2e5682c4d669c0d3cf3d78b502571233e99f92e5447b8532f"
+    },
+    {
+      "language": "fr",
+      "language_id": 9,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "ca8aa36cf6f824833a09c67a74c172fa332137b64a7792a9f51f874dda652416",
+      "record_sha256": "36cf4579c52e18f386427e85944f81c951fc13876a18bf1f5bf603d8b5320fa0"
+    },
+    {
+      "language": "hr",
+      "language_id": 10,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "280b50cecfe14500a3921608730a091abfd0ba03a854dfc7f04e6f183459e47e",
+      "record_sha256": "d01fccd99c1717ed24e7c2fa8ef2a97401eb39043af03b7da21905570c341b14"
+    },
+    {
+      "language": "hu",
+      "language_id": 11,
+      "dimensions": [
+        32,
+        22,
+        39
+      ],
+      "source_header_sha256": "ab743d66b3bbd029fbe0db2a7d2685a74d86cd7346d0a237997ad8dbea1a7c5a",
+      "record_sha256": "63b7a9a5851dd1982a982f0f2e167292c500b3cae33d67efa013f2912d9a5f75"
+    },
+    {
+      "language": "it",
+      "language_id": 12,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "b2d0e8eb413fe04f23988291f2cdb77e43e051820ed2d7be59f6e9dbc249e509",
+      "record_sha256": "9fb5ea268f3c9d6af83dffc6721356bcdb1c173cfc452b2d4fe48bc81aff19db"
+    },
+    {
+      "language": "lt",
+      "language_id": 13,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "34196858753163ef20330c8e6146c7904f6dc247e496bbcfc5915635040e9473",
+      "record_sha256": "f7ae89abb4f28a5a4049184557081a9fa3c3705f2e611c5d5b7892801d389cd7"
+    },
+    {
+      "language": "lv",
+      "language_id": 14,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "522355f39c6487ed0ee890b95372995264bf6eae284e00c45c9c22767cb5cb38",
+      "record_sha256": "2165b0f2764fa01cd50899d2305943b5bf4f738e3837cccf76ffa105a58268c3"
+    },
+    {
+      "language": "nl",
+      "language_id": 15,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "6e20928891e386045fc6087dbd1fe0739d3a9cd06cd1f85b8102210b1fe5fdfd",
+      "record_sha256": "32a34cfc30cdaf7162e2b87f4c398df0caf34f27379355afc6bb6d544a16998f"
+    },
+    {
+      "language": "no",
+      "language_id": 16,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "dd111ca4cb072fda3bd61ba18c2633e50c6406ea9cc17afa692f1c584a096410",
+      "record_sha256": "1dda7af8f157df5920461e3a18c492ee3ad749bc2e6e9efb847edf44003b18f8"
+    },
+    {
+      "language": "pl",
+      "language_id": 17,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "41726f687c19d8346f10248799cf90d1e80dc40d000963a08b950be6b841d1b9",
+      "record_sha256": "4776e36864c5f3220ff097e7d6515409105fce378f2c6b92bb5b907f39fb87de"
+    },
+    {
+      "language": "pt",
+      "language_id": 18,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "d6561026409b98e15148cc147cc0f0cca990bedfcfcbfa96da7155f1478ed47d",
+      "record_sha256": "8789d125e46fff1f403e36378799ea2b4b01977b0eefb6b35a07b97a15c02f27"
+    },
+    {
+      "language": "ro",
+      "language_id": 19,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "366b3dccc84882d93f2be651963217185f245b4c7a69d8726bd0e2e8f047ce12",
+      "record_sha256": "f0bc367c559d7b1e115aba1e9893bbc1be668c5596c2a0d9175b452af794dbbb"
+    },
+    {
+      "language": "sk",
+      "language_id": 20,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "e3ffd1c1e670042cb86aa9a4ad9bb91228d9da7e0fdf61cbd08a1daa4ed397c2",
+      "record_sha256": "3d7e4c1ad1f654f6e8bbd0804db62a9f7f86edeb7705b51a3bdc5504d5c00b31"
+    },
+    {
+      "language": "sl",
+      "language_id": 21,
+      "dimensions": [
+        32,
+        34,
+        39
+      ],
+      "source_header_sha256": "155a2553c2b207fdf4abd1c58116535ba0041a853e23886e065ec3c90bb82c77",
+      "record_sha256": "e0c79da0a175558776e14b07512f7a989a99dc42c66a5ac5c2ae31a4190ad383"
+    },
+    {
+      "language": "sv",
+      "language_id": 22,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "ca0cb4a7dc80a9c4194b74a8af735e510d4fdde0d8daed3c4629ebf824ce3490",
+      "record_sha256": "d03166aff821437835d12cd287d0a24547a18eb7f2b6f536531ac896151cc846"
+    },
+    {
+      "language": "tr",
+      "language_id": 23,
+      "dimensions": [
+        36,
+        22,
+        39
+      ],
+      "source_header_sha256": "1183869fd39cf144e11df435bc2739d4c74cb3ef6e1cb84e5b591f4f1f3fa407",
+      "record_sha256": "0ab50c2841d0c9f89c29b8cb049ab4763205249a8ee43bb5e55f88461f26ff39"
+    },
+    {
+      "language": "zh",
+      "language_id": 24,
+      "dimensions": [
+        32,
+        34,
+        31
+      ],
+      "source_header_sha256": "d0617b8f9049386c0ce51a54a33f71ed0a8d24ecc7664811dd6ad20d7511e93d",
+      "record_sha256": "887260b29e43723f449d7dfa5d0070773dc31a4bd626e5aeb22f6f907bb0bdc0"
+    }
+  ],
+  "blob_sha256": "91248ad5cf7d080f1d209c936a4e45882c93a1e6fba5d985e837893d1474b8cb",
+  "native_text_cases": [
+    {
+      "language": "bg",
+      "language_id": 0,
+      "text": "Здравей, това е тест на гласа."
+    },
+    {
+      "language": "cs",
+      "language_id": 1,
+      "text": "Ahoj, toto je hlasový test."
+    },
+    {
+      "language": "da",
+      "language_id": 2,
+      "text": "Dette er en test af stemmen."
+    },
+    {
+      "language": "de",
+      "language_id": 3,
+      "text": "Hallo, dies ist ein Test der Stimme."
+    },
+    {
+      "language": "el",
+      "language_id": 4,
+      "text": "Γεια σας, αυτή είναι μια δοκιμή φωνής."
+    },
+    {
+      "language": "en",
+      "language_id": 5,
+      "text": "Hello, this is a test of the new voice model."
+    },
+    {
+      "language": "es",
+      "language_id": 6,
+      "text": "Hola, esta es una prueba de voz."
+    },
+    {
+      "language": "et",
+      "language_id": 7,
+      "text": "Tere, see on hääle test."
+    },
+    {
+      "language": "fi",
+      "language_id": 8,
+      "text": "Hei, tämä on puheen testi."
+    },
+    {
+      "language": "fr",
+      "language_id": 9,
+      "text": "Bonjour, ceci est un test de la voix."
+    },
+    {
+      "language": "hr",
+      "language_id": 10,
+      "text": "Pozdrav, ovo je test glasa."
+    },
+    {
+      "language": "hu",
+      "language_id": 11,
+      "text": "Szia, ez egy hangteszt."
+    },
+    {
+      "language": "it",
+      "language_id": 12,
+      "text": "Ciao, questa è una prova della voce."
+    },
+    {
+      "language": "lt",
+      "language_id": 13,
+      "text": "Labas, tai yra balso testas."
+    },
+    {
+      "language": "lv",
+      "language_id": 14,
+      "text": "Sveiki, šis ir balss tests."
+    },
+    {
+      "language": "nl",
+      "language_id": 15,
+      "text": "Hallo, dit is een test van de stem."
+    },
+    {
+      "language": "no",
+      "language_id": 16,
+      "text": "Hei, dette er en test av stemmen."
+    },
+    {
+      "language": "pl",
+      "language_id": 17,
+      "text": "Dzień dobry, to jest test głosu."
+    },
+    {
+      "language": "pt",
+      "language_id": 18,
+      "text": "Olá, este é um teste de voz."
+    },
+    {
+      "language": "ro",
+      "language_id": 19,
+      "text": "Salut, acesta este un test de voce."
+    },
+    {
+      "language": "sk",
+      "language_id": 20,
+      "text": "Ahoj, toto je skúška hlasu."
+    },
+    {
+      "language": "sl",
+      "language_id": 21,
+      "text": "Pozdravljeni, to je preizkus glasu."
+    },
+    {
+      "language": "sv",
+      "language_id": 22,
+      "text": "Hej, det här är ett test av rösten."
+    },
+    {
+      "language": "tr",
+      "language_id": 23,
+      "text": "Merhaba, bu bir ses testidir."
+    },
+    {
+      "language": "zh",
+      "language_id": 24,
+      "text": "你好，欢迎测试新的语音模型。"
+    }
+  ],
+  "native_text_language_count": 25,
+  "full25_native_text": false,
+  "scope": "Native ordinary text for 25 language families; complete normalization and remaining families are pending.",
+  "finnic_source_sha256": "fca0f9f6a113c119365d3b395a9cd08f6deed4cfe0f569d1cc661f7b2827a3a8",
+  "croatian_source_sha256": "2c5011019b81b70614d86bd0fd40896f30f79fd098ef64a28b7019202532239f",
+  "latvian_source_sha256": "94bd1ae7d43ba5f2b44cddaa7b64f7cad46abc79040355af71f74a8b2d93427f"
+}

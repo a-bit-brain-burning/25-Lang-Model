@@ -1,0 +1,104 @@
+{
+ "en": {
+  "locale": "en-CMU",
+  "words": 126052,
+  "pages": 1970,
+  "paged_bytes": 927909,
+  "index_bytes": 40534,
+  "paged_plus_index": 968443,
+  "trimmed_package_bytes": 6816,
+  "original_package_bytes": 448659,
+  "delta": 526600,
+  "max_page_raw": 1577,
+  "kept_sections": {
+   "metadata": 907,
+   "model": 23329
+  }
+ },
+ "fr": {
+  "locale": "fr-FR",
+  "words": 107051,
+  "pages": 1673,
+  "paged_bytes": 807257,
+  "index_bytes": 35678,
+  "paged_plus_index": 842935,
+  "trimmed_package_bytes": 13080,
+  "original_package_bytes": 409369,
+  "delta": 446646,
+  "max_page_raw": 1583,
+  "kept_sections": {
+   "metadata": 2297,
+   "model": 47465,
+   "auxiliary": 35,
+   "open_policy": 370
+  }
+ },
+ "it": {
+  "locale": "it-IT",
+  "words": 26055,
+  "pages": 408,
+  "paged_bytes": 208959,
+  "index_bytes": 8699,
+  "paged_plus_index": 217658,
+  "trimmed_package_bytes": 3692,
+  "original_package_bytes": 88824,
+  "delta": 132526,
+  "max_page_raw": 2982,
+  "kept_sections": {
+   "metadata": 2337,
+   "model": 6191,
+   "open_policy": 398
+  }
+ },
+ "lt": {
+  "locale": "lt-LT",
+  "words": 232776,
+  "pages": 3638,
+  "paged_bytes": 1591804,
+  "index_bytes": 80089,
+  "paged_plus_index": 1671893,
+  "trimmed_package_bytes": 13736,
+  "original_package_bytes": 684884,
+  "delta": 1000745,
+  "max_page_raw": 1725,
+  "kept_sections": {
+   "metadata": 3058,
+   "model": 48169,
+   "auxiliary": 420
+  }
+ },
+ "pt": {
+  "locale": "pt-PT",
+  "words": 7786,
+  "pages": 122,
+  "paged_bytes": 72251,
+  "index_bytes": 2387,
+  "paged_plus_index": 74638,
+  "trimmed_package_bytes": 38080,
+  "original_package_bytes": 69688,
+  "delta": 43030,
+  "max_page_raw": 2402,
+  "kept_sections": {
+   "metadata": 103331,
+   "alphabet": 40,
+   "model": 6216,
+   "open_policy": 364
+  }
+ },
+ "ro": {
+  "locale": "ro-RO",
+  "words": 56108,
+  "pages": 877,
+  "paged_bytes": 451758,
+  "index_bytes": 18223,
+  "paged_plus_index": 469981,
+  "trimmed_package_bytes": 27121,
+  "original_package_bytes": 178262,
+  "delta": 318840,
+  "max_page_raw": 3291,
+  "kept_sections": {
+   "metadata": 72491,
+   "model": 6419
+  }
+ }
+}

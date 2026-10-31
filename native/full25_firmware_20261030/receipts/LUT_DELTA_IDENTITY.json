@@ -1,0 +1,31 @@
+{
+  "tables": [
+    {
+      "name": "fast_sigmoid_tail_table",
+      "elements": 9217,
+      "raw_bytes": 36868,
+      "packed_bytes": 9875,
+      "sha256": "9217a5d3022695bd41138b48c0c524cfba2f3e741b7c164c0840f65c7dc6fc88"
+    },
+    {
+      "name": "fast_tanh_table",
+      "elements": 5121,
+      "raw_bytes": 20484,
+      "packed_bytes": 3037,
+      "sha256": "fd0daa1f61d75fa9a2f82c646fe030d30ea09bec0ce0638265518929e45da46d"
+    },
+    {
+      "name": "fast_erf_table",
+      "elements": 3073,
+      "raw_bytes": 12292,
+      "packed_bytes": 2129,
+      "sha256": "451beca5bacdaa1c1235cc72798920698872b5ac498baf9d8b1faf07e8347cc4"
+    }
+  ],
+  "raw_bytes": 69644,
+  "packed_bytes": 15041,
+  "previous_packed_bytes": 48200,
+  "exact_original_FP32_bytes": true,
+  "all_tables_boot_SHA256_required": true,
+  "request_lookup_arithmetic_unchanged": true
+}

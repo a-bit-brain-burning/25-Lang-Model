@@ -1,0 +1,30 @@
+{
+  "bytes": 141122,
+  "sha256": "2d61dcd78125116f43da9123773b079bb35b3cee5fbc8b5a521b74fcffe30462",
+  "sections": 5,
+  "max_section_raw_bytes": 154408,
+  "parts": {
+    "manifest": {
+      "packed": 289,
+      "raw": 510
+    },
+    "resource/0": {
+      "packed": 84324,
+      "raw": 154408
+    },
+    "resource/1": {
+      "packed": 2247,
+      "raw": 4178
+    },
+    "resource/2": {
+      "packed": 35287,
+      "raw": 76389
+    },
+    "resource/3": {
+      "packed": 18663,
+      "raw": 46793
+    }
+  },
+  "original_sha256": "aaf2297c86a3106e0998c580c30ed417b39b22044ec9e3157f3a3656db28064c",
+  "reason": "Native code does not consume the expanded Bulgarian JSON; a complete compact functional projection is being bound separately. Keep all four native G2P resource sections exact."
+}

@@ -1,0 +1,781 @@
+{
+  "locales": [
+    "en-CMU",
+    "es-ES",
+    "fr-FR",
+    "it-IT",
+    "lt-LT",
+    "pt-PT",
+    "ro-RO"
+  ],
+  "cases": [
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "'bout",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "a",
+      "present": true,
+      "expected_hex": "00000001"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "criss-crossed",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "hellard",
+      "present": true,
+      "expected_hex": "02030303012d"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "hello",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "is",
+      "present": true,
+      "expected_hex": "0201024294"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "model",
+      "present": true,
+      "expected_hex": "02030403000950"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "morash",
+      "present": true,
+      "expected_hex": "020303030109"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "new",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "of",
+      "present": true,
+      "expected_hex": "0201020a88"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "secessionists",
+      "present": true,
+      "expected_hex": "02020700034110034108"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "test",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "the",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "this",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "voice",
+      "present": true,
+      "expected_hex": "020000"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "zyuganov's",
+      "present": true,
+      "expected_hex": "0203050402015801"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "zywicki",
+      "present": true,
+      "expected_hex": "020303010441"
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 0,
+      "locale": "en-CMU",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "a",
+      "present": true,
+      "expected_hex": "000005050300000306050103020400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "cooperación",
+      "present": true,
+      "expected_hex": "000005050300000306050b030103040300030103040301030003010301030203010400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "de",
+      "present": true,
+      "expected_hex": "0000050503000003060502030103020400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "es",
+      "present": true,
+      "expected_hex": "0000050503000003060502030203010400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "esta",
+      "present": true,
+      "expected_hex": "000005050300000306050403020301030103000400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "haz",
+      "present": true,
+      "expected_hex": "0000050503000003060502030203010400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "hola",
+      "present": true,
+      "expected_hex": "00000505030000030605030302030103000400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "picaresca",
+      "present": true,
+      "expected_hex": "00000505030000030605090301030403010300030103020301030103000400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "prueba",
+      "present": true,
+      "expected_hex": "030302031305030300000300"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "rojas",
+      "present": true,
+      "expected_hex": "030300040e050503000003060505030103020301030003010400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "una",
+      "present": true,
+      "expected_hex": "00000505030000030605030302030103000400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "voz",
+      "present": true,
+      "expected_hex": "0103010c220505030000030605030301030203010400"
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 1,
+      "locale": "es-ES",
+      "word": "útiles",
+      "present": true,
+      "expected_hex": "00000505030000030605060302030103000301030003010400"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "<unk>",
+      "present": true,
+      "expected_hex": "01011100"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "bonjour",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "ceci",
+      "present": true,
+      "expected_hex": "100000"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "connoissois",
+      "present": true,
+      "expected_hex": "130303022200"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "de",
+      "present": true,
+      "expected_hex": "0102032100"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "est",
+      "present": true,
+      "expected_hex": "100000"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "guelzec",
+      "present": true,
+      "expected_hex": "030301042100"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "la",
+      "present": true,
+      "expected_hex": "000000"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "montpersan",
+      "present": true,
+      "expected_hex": "100000"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "salué",
+      "present": true,
+      "expected_hex": "030303012600"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "test",
+      "present": true,
+      "expected_hex": "100000"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "un",
+      "present": true,
+      "expected_hex": "01012300"
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "voix",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 2,
+      "locale": "fr-FR",
+      "word": "œx",
+      "present": true,
+      "expected_hex": "0102051a00"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "'abd",
+      "present": true,
+      "expected_hex": "000005030300000300"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "ciao",
+      "present": true,
+      "expected_hex": "00000505030000030605030301030203000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "conduttore",
+      "present": true,
+      "expected_hex": "00000505030000030605090301030003010301030003010302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "della",
+      "present": true,
+      "expected_hex": "000005050300000306050403010302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "giurisdizioni",
+      "present": true,
+      "expected_hex": "030304072b05030300000300"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "nell'all-star",
+      "present": true,
+      "expected_hex": "000005030300000300"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "prova",
+      "present": true,
+      "expected_hex": "0000050503000003060505030103010302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "questa",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "sbagliare",
+      "present": true,
+      "expected_hex": "000005050300000306050703010301030003010302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "una",
+      "present": true,
+      "expected_hex": "00000505030000030605030302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "voce",
+      "present": true,
+      "expected_hex": "000005050300000306050403010302030103000400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "è",
+      "present": true,
+      "expected_hex": "000005050300000306050103020400"
+    },
+    {
+      "lexicon": 3,
+      "locale": "it-IT",
+      "word": "žuk-krasnova",
+      "present": true,
+      "expected_hex": "030306042b05030300000300"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "aa",
+      "present": true,
+      "expected_hex": "000001"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "balso",
+      "present": true,
+      "expected_hex": "100005"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "giminyste",
+      "present": true,
+      "expected_hex": "230308005b00"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "labas",
+      "present": true,
+      "expected_hex": "030301035605"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "migruot",
+      "present": true,
+      "expected_hex": "000002"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "pataikome",
+      "present": true,
+      "expected_hex": "030303045402"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "sumautas",
+      "present": true,
+      "expected_hex": "030303035502"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "tai",
+      "present": true,
+      "expected_hex": "000001"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "testas",
+      "present": true,
+      "expected_hex": "100000"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "yra",
+      "present": true,
+      "expected_hex": "0103101e6100"
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 4,
+      "locale": "lt-LT",
+      "word": "žūčių",
+      "present": true,
+      "expected_hex": "230303005003"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "a",
+      "present": true,
+      "expected_hex": "000005050300000306050103020400"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "celia",
+      "present": true,
+      "expected_hex": "0000050503000003060505030103040301030203000400"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "de",
+      "present": true,
+      "expected_hex": "000005030300000300"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "este",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "fixando",
+      "present": true,
+      "expected_hex": "030301060505030300000300"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "medicina",
+      "present": true,
+      "expected_hex": "0303040315050503000003060508030103040301030003010302030103000400"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "olá",
+      "present": true,
+      "expected_hex": "00000505030000030605030300030103020400"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "residuais",
+      "present": true,
+      "expected_hex": "030302061505030300000300"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "teste",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "um",
+      "present": true,
+      "expected_hex": "01011805030300000300"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "voz",
+      "present": true,
+      "expected_hex": "00000505030000030605030301030203010400"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "é",
+      "present": true,
+      "expected_hex": "000005030300000300"
+    },
+    {
+      "lexicon": 5,
+      "locale": "pt-PT",
+      "word": "útil",
+      "present": true,
+      "expected_hex": "000005050300000306050403020301030003010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "a",
+      "present": true,
+      "expected_hex": "000005050300000306050103020401"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "acesta",
+      "present": true,
+      "expected_hex": "00000505030000030605060300030103020301030103000401"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "curvare",
+      "present": true,
+      "expected_hex": "000005050300000306050703010301030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "de",
+      "present": true,
+      "expected_hex": "0000050503000003060502030103020401"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "este",
+      "present": true,
+      "expected_hex": "030300040a050503000003060505030003020301030103000401"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "instalației",
+      "present": true,
+      "expected_hex": "000005050300000306050b030103010301030103010301030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "pensii",
+      "present": true,
+      "expected_hex": "00000505030000030605060301030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "salut",
+      "present": true,
+      "expected_hex": "0000050503000003060505030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "stricat",
+      "present": true,
+      "expected_hex": "000005050300000306050703010301030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "test",
+      "present": true,
+      "expected_hex": "000005050300000306050403010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "un",
+      "present": true,
+      "expected_hex": "0000050503000003060502030203010401"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "voce",
+      "present": true,
+      "expected_hex": "000005050300000306050403010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "zzzztest",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "zzzzzzzzzzzz",
+      "present": false,
+      "expected_hex": ""
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "țărănimei",
+      "present": true,
+      "expected_hex": "00000505030000030605090301030103010301030103010301030103010400"
+    },
+    {
+      "lexicon": 6,
+      "locale": "ro-RO",
+      "word": "țăsută",
+      "present": true,
+      "expected_hex": "00000505030000030605060301030103010301030103010400"
+    }
+  ],
+  "max_section_bytes": 344098,
+  "workspace_bytes": 664098,
+  "original_primitives_sha256": "7cf30084f11eb4d418ca1a4cb7aaad3b8b0c42a7cdbcc5abc97f83f60f9d4973",
+  "complete_lexicon_packages": true,
+  "scope": "Exact residual-record lookup only; feature adapters and timing acceptance are separate"
+}

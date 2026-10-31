@@ -1,0 +1,25 @@
+{
+  "lexicons": [
+    {
+      "language": "bg",
+      "full_entries": 8239,
+      "functional_records_checked": 8239,
+      "packed_bytes": 59701,
+      "page_count": 129,
+      "maximum_page_bytes": 1124,
+      "source_sha256": "a15eba28843378431f60e798694203971c767a8f678a3091c0c7ff771521302b"
+    },
+    {
+      "language": "sl",
+      "full_entries": 9131,
+      "functional_records_checked": 9131,
+      "packed_bytes": 70497,
+      "page_count": 143,
+      "maximum_page_bytes": 1274,
+      "source_sha256": "560357dcd6eaec3c5a7f0b166c7542e2717834b84bfcd4c6d4530c6e7fab50fb"
+    }
+  ],
+  "source_records_are_not_sentence_answers": true,
+  "projection": "All retained entries, exact functional stress/signature/quality/quantity fields; provenance/evidence remains in archived source JSON",
+  "original_resources_preserved": true
+}

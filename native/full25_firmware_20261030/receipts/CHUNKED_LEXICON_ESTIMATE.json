@@ -1,0 +1,56 @@
+{
+ "en": {
+  "words": 126052,
+  "chunks": 1970,
+  "chunked_packed": 934301,
+  "index": 28714,
+  "chunked_total": 963015,
+  "orig": 448659,
+  "delta": 514356
+ },
+ "fr": {
+  "words": 107051,
+  "chunks": 1673,
+  "chunked_packed": 810962,
+  "index": 25646,
+  "chunked_total": 836608,
+  "orig": 409369,
+  "delta": 427239
+ },
+ "it": {
+  "words": 26055,
+  "chunks": 408,
+  "chunked_packed": 203468,
+  "index": 6251,
+  "chunked_total": 209719,
+  "orig": 88824,
+  "delta": 120895
+ },
+ "lt": {
+  "words": 232776,
+  "chunks": 3638,
+  "chunked_packed": 1565289,
+  "index": 58261,
+  "chunked_total": 1623550,
+  "orig": 684884,
+  "delta": 938666
+ },
+ "pt": {
+  "words": 7786,
+  "chunks": 122,
+  "chunked_packed": 70292,
+  "index": 1655,
+  "chunked_total": 71947,
+  "orig": 69688,
+  "delta": 2259
+ },
+ "ro": {
+  "words": 56108,
+  "chunks": 877,
+  "chunked_packed": 448510,
+  "index": 12967,
+  "chunked_total": 461477,
+  "orig": 178262,
+  "delta": 283215
+ }
+}

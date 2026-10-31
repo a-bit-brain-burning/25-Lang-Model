@@ -1,0 +1,7 @@
+{
+  "count": 299,
+  "patches": 708,
+  "palette": 7,
+  "source_sha256": "12abc3555fe2bddba08fc4d256f9294df651a31a6660c100b36e23584d5ba717",
+  "port_scope": "Whole-utterance Italian/Portuguese G2P repair; dictionary fallback policy and extended normalization tracked separately"
+}

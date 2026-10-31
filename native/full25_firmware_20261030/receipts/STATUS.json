@@ -1,0 +1,283 @@
+{
+  "status": "INTERMEDIATE_25_LANGUAGE_TEXT_CASES_VERIFIED_FULL25_NOT_COMPLETE",
+  "complete": false,
+  "acceptance": {
+    "platform": "QEMU mps3-an547 Cortex-M55, single vCPU",
+    "user_override": "不用开发板，就用qemu验收，60M指令数以内即可",
+    "hardware_board_required": false,
+    "latest_priority": "先把25种语言的前端全接通，有一点超时可以接受",
+    "instruction_limit_is_target_with_unquantified_user_tolerance": true,
+    "request_instruction_limit": 60000000,
+    "rom_limit_exclusive": 10000000,
+    "ram_limit_exclusive": 10000000,
+    "begin": "tts_begin_language_text_request entry included",
+    "end": "tts_first_effective_packet_delivered entry excluded",
+    "packet": "480 PCM24 samples delivered; RMS >= sqrt(0.0000316227766), peak >= 0.01",
+    "boot_is_separate": true,
+    "language_neutral_boot_resources_only": true
+  },
+  "best_verified_intermediate_build": "build/native25_text_paths_v1/firmware.elf",
+  "elf_sha256": "77390626db625ac007b76f4ad3dd3d6cb67cc79792a539bc7e90c1743633921e",
+  "native_source_root": "native_final25",
+  "report": "reports/native25_text_paths_v1/RESULT.json",
+  "memory": {
+    "rom_load_bytes": 9885272,
+    "reserved_physical_ram_bytes": 9860312,
+    "segments": [
+      {
+        "vaddr": 268435456,
+        "paddr": 268435456,
+        "file_bytes": 350488,
+        "memory_bytes": 350488,
+        "physical_ram_bytes": 350488
+      },
+      {
+        "vaddr": 805306368,
+        "paddr": 268785952,
+        "file_bytes": 1728,
+        "memory_bytes": 377520,
+        "physical_ram_bytes": 377520
+      },
+      {
+        "vaddr": 805715968,
+        "paddr": 805715968,
+        "file_bytes": 0,
+        "memory_bytes": 114688,
+        "physical_ram_bytes": 114688
+      },
+      {
+        "vaddr": 822083584,
+        "paddr": 822083584,
+        "file_bytes": 1149328,
+        "memory_bytes": 3351488,
+        "physical_ram_bytes": 3351488
+      },
+      {
+        "vaddr": 939524096,
+        "paddr": 939524096,
+        "file_bytes": 8383728,
+        "memory_bytes": 8383728,
+        "physical_ram_bytes": 0
+      },
+      {
+        "vaddr": 1610612736,
+        "paddr": 1610612736,
+        "file_bytes": 0,
+        "memory_bytes": 5666128,
+        "physical_ram_bytes": 5666128
+      }
+    ]
+  },
+  "prototype_rom_below_10MB": true,
+  "prototype_ram_below_10MB": true,
+  "native_raw_text_smoke_case_languages": [
+    "bg",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "fi",
+    "fr",
+    "hr",
+    "hu",
+    "it",
+    "lt",
+    "lv",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "tr",
+    "zh"
+  ],
+  "native_raw_text_smoke_case_count": 25,
+  "all25_ordinary_raw_text_paths_same_image_verified": true,
+  "native_family_smoke_adapters_pending": false,
+  "ordinary_NFC_subset_only": true,
+  "full_text_frontends_complete": false,
+  "native_family_adapters_remaining": [],
+  "full_request_instruction_events": [
+    {
+      "language": "bg",
+      "events": 51557060,
+      "within_60M": true
+    },
+    {
+      "language": "cs",
+      "events": 50590295,
+      "within_60M": true
+    },
+    {
+      "language": "da",
+      "events": 49208259,
+      "within_60M": true
+    },
+    {
+      "language": "de",
+      "events": 55014423,
+      "within_60M": true
+    },
+    {
+      "language": "el",
+      "events": 48685785,
+      "within_60M": true
+    },
+    {
+      "language": "en",
+      "events": 1279949118,
+      "within_60M": false
+    },
+    {
+      "language": "es",
+      "events": 51444829,
+      "within_60M": true
+    },
+    {
+      "language": "et",
+      "events": 50052608,
+      "within_60M": true
+    },
+    {
+      "language": "fi",
+      "events": 64180572,
+      "within_60M": false
+    },
+    {
+      "language": "fr",
+      "events": 900148181,
+      "within_60M": false
+    },
+    {
+      "language": "hr",
+      "events": 50811243,
+      "within_60M": true
+    },
+    {
+      "language": "hu",
+      "events": 65308426,
+      "within_60M": false
+    },
+    {
+      "language": "it",
+      "events": 356829532,
+      "within_60M": false
+    },
+    {
+      "language": "lt",
+      "events": 578175936,
+      "within_60M": false
+    },
+    {
+      "language": "lv",
+      "events": 50521237,
+      "within_60M": true
+    },
+    {
+      "language": "nl",
+      "events": 51614522,
+      "within_60M": true
+    },
+    {
+      "language": "no",
+      "events": 65037277,
+      "within_60M": false
+    },
+    {
+      "language": "pl",
+      "events": 54600047,
+      "within_60M": true
+    },
+    {
+      "language": "pt",
+      "events": 144986834,
+      "within_60M": false
+    },
+    {
+      "language": "ro",
+      "events": 658352644,
+      "within_60M": false
+    },
+    {
+      "language": "sk",
+      "events": 50615318,
+      "within_60M": true
+    },
+    {
+      "language": "sl",
+      "events": 52423153,
+      "within_60M": true
+    },
+    {
+      "language": "sv",
+      "events": 62033942,
+      "within_60M": false
+    },
+    {
+      "language": "tr",
+      "events": 47404256,
+      "within_60M": true
+    },
+    {
+      "language": "zh",
+      "events": 47743045,
+      "within_60M": true
+    }
+  ],
+  "languages_within_60M": [
+    "bg",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "es",
+    "et",
+    "hr",
+    "lv",
+    "nl",
+    "pl",
+    "sk",
+    "sl",
+    "tr",
+    "zh"
+  ],
+  "target_language_count": 25,
+  "all25_request_instruction_limit_accepted": false,
+  "full25_same_image_text_acceptance": false,
+  "full_system_rom_accepted": false,
+  "full_system_ram_accepted": false,
+  "identical_core_output_files": 125,
+  "zero_tail_bit_exact_edge_cases": 2048,
+  "exact_kernel_edge_receipts": [
+    "reports/pair_quantized_edges_v1/RESULT.json",
+    "reports/float_matrix_edges_v1/RESULT.json",
+    "reports/float_load_adaconv_edges_v1/RESULT.json"
+  ],
+  "instruction_counts_are_not_physical_cycle_measurements": true,
+  "original_weights_unchanged": true,
+  "training_updates": 0,
+  "default_pointer_changed": false,
+  "published": false,
+  "explicit_pending": [
+    "Full numeric/identifier/abbreviation and Unicode normalization",
+    "10 of 25 current request cases still exceed 60M; worst 1279949118",
+    "Long-text bounded planning and broader language text regressions",
+    "Recheck both 10MB limits after all remaining executable frontends are integrated"
+  ],
+  "rejected_experiments": [
+    {
+      "name": "RNG scalar alignment peel",
+      "reason": "Slower; reverted before native12_prewarm_v3"
+    },
+    {
+      "name": "native14_zero_tail_v1",
+      "reason": "Bit-exact but slower because scalar finite checks called memcpy per sample; superseded by vector checks"
+    }
+  ]
+}

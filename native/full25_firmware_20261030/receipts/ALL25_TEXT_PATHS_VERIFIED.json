@@ -1,0 +1,201 @@
+{
+  "status": "ALL25_ORDINARY_RAW_TEXT_PATHS_VERIFIED",
+  "complete_full_original_goal": false,
+  "report": "reports/native25_text_paths_v1/RESULT.json",
+  "elf": "build/native25_text_paths_v1/firmware.elf",
+  "elf_sha256": "77390626db625ac007b76f4ad3dd3d6cb67cc79792a539bc7e90c1743633921e",
+  "raw_text_language_count": 25,
+  "identical_core_output_files": 125,
+  "packet_concatenations_exact": true,
+  "memory": {
+    "rom_load_bytes": 9885272,
+    "reserved_physical_ram_bytes": 9860312,
+    "segments": [
+      {
+        "vaddr": 268435456,
+        "paddr": 268435456,
+        "file_bytes": 350488,
+        "memory_bytes": 350488,
+        "physical_ram_bytes": 350488
+      },
+      {
+        "vaddr": 805306368,
+        "paddr": 268785952,
+        "file_bytes": 1728,
+        "memory_bytes": 377520,
+        "physical_ram_bytes": 377520
+      },
+      {
+        "vaddr": 805715968,
+        "paddr": 805715968,
+        "file_bytes": 0,
+        "memory_bytes": 114688,
+        "physical_ram_bytes": 114688
+      },
+      {
+        "vaddr": 822083584,
+        "paddr": 822083584,
+        "file_bytes": 1149328,
+        "memory_bytes": 3351488,
+        "physical_ram_bytes": 3351488
+      },
+      {
+        "vaddr": 939524096,
+        "paddr": 939524096,
+        "file_bytes": 8383728,
+        "memory_bytes": 8383728,
+        "physical_ram_bytes": 0
+      },
+      {
+        "vaddr": 1610612736,
+        "paddr": 1610612736,
+        "file_bytes": 0,
+        "memory_bytes": 5666128,
+        "physical_ram_bytes": 5666128
+      }
+    ]
+  },
+  "instruction_events": [
+    {
+      "language": "bg",
+      "events": 51557060,
+      "within_60M": true
+    },
+    {
+      "language": "cs",
+      "events": 50590295,
+      "within_60M": true
+    },
+    {
+      "language": "da",
+      "events": 49208259,
+      "within_60M": true
+    },
+    {
+      "language": "de",
+      "events": 55014423,
+      "within_60M": true
+    },
+    {
+      "language": "el",
+      "events": 48685785,
+      "within_60M": true
+    },
+    {
+      "language": "en",
+      "events": 1279949118,
+      "within_60M": false
+    },
+    {
+      "language": "es",
+      "events": 51444829,
+      "within_60M": true
+    },
+    {
+      "language": "et",
+      "events": 50052608,
+      "within_60M": true
+    },
+    {
+      "language": "fi",
+      "events": 64180572,
+      "within_60M": false
+    },
+    {
+      "language": "fr",
+      "events": 900148181,
+      "within_60M": false
+    },
+    {
+      "language": "hr",
+      "events": 50811243,
+      "within_60M": true
+    },
+    {
+      "language": "hu",
+      "events": 65308426,
+      "within_60M": false
+    },
+    {
+      "language": "it",
+      "events": 356829532,
+      "within_60M": false
+    },
+    {
+      "language": "lt",
+      "events": 578175936,
+      "within_60M": false
+    },
+    {
+      "language": "lv",
+      "events": 50521237,
+      "within_60M": true
+    },
+    {
+      "language": "nl",
+      "events": 51614522,
+      "within_60M": true
+    },
+    {
+      "language": "no",
+      "events": 65037277,
+      "within_60M": false
+    },
+    {
+      "language": "pl",
+      "events": 54600047,
+      "within_60M": true
+    },
+    {
+      "language": "pt",
+      "events": 144986834,
+      "within_60M": false
+    },
+    {
+      "language": "ro",
+      "events": 658352644,
+      "within_60M": false
+    },
+    {
+      "language": "sk",
+      "events": 50615318,
+      "within_60M": true
+    },
+    {
+      "language": "sl",
+      "events": 52423153,
+      "within_60M": true
+    },
+    {
+      "language": "sv",
+      "events": 62033942,
+      "within_60M": false
+    },
+    {
+      "language": "tr",
+      "events": 47404256,
+      "within_60M": true
+    },
+    {
+      "language": "zh",
+      "events": 47743045,
+      "within_60M": true
+    }
+  ],
+  "latency_within_60M_count": 15,
+  "scope": "One ordinary NFC raw-text smoke sentence per language; full numeric/identifier/abbreviation/Unicode normalization and arbitrary text are not accepted.",
+  "latest_user_priority": "先把25种语言的前端全接通，有一点超时可以接受",
+  "large_latency_overruns_pending": [
+    "en",
+    "fr",
+    "it",
+    "lt",
+    "pt",
+    "ro"
+  ],
+  "remaining_native_family_smoke_adapters": [],
+  "training_updates": 0,
+  "published": false,
+  "default_pointer_changed": false,
+  "source_snapshot": "build/native25_text_paths_v1/FROZEN_INPUTS.json"
+}

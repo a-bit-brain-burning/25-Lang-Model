@@ -1,0 +1,10 @@
+{
+  "key_index_capacity": 14668,
+  "id_index_capacity": 1984,
+  "index_rows": 31715,
+  "lookup_keys_and_ids_exhaustively_verified": true,
+  "cache_view_request_temporary_bytes": 0,
+  "boot_cold_query_probe_runs_before_model": true,
+  "warm_query_probe_runs_with_resident_model": true,
+  "word_answer_cache": false
+}
