@@ -12,7 +12,14 @@ Everything here is QEMU-only (Cortex-M55 `mps3-an547`); no hardware board was us
 
 ## 1. Download
 
-### 1.1 Clone the whole snapshot (27 MB)
+**Repository visibility:** `a-bit-brain-burning/25-Lang-Model` is currently a
+**private** repository. Unauthenticated `raw.githubusercontent.com` and
+`api.github.com` requests return 404 even for valid files. Use an authenticated
+SSH clone (as below), an authenticated HTTPS token, or the GitHub contents API
+with a token. If you need anonymous access, make the repository public or ask the
+owner for a token/archive.
+
+### 1.1 Clone the whole snapshot (28 MB)
 
 ```bash
 git clone --branch release/full25-qemu-60m-20261031 \
@@ -34,16 +41,26 @@ git sparse-checkout set \
   native/full25_firmware_20261030/profiles
 ```
 
-### 1.3 Raw files (no git)
+### 1.3 Single file download (private repo: token required)
 
 ```bash
-BASE=https://raw.githubusercontent.com/a-bit-brain-burning/25-Lang-Model/release/full25-qemu-60m-20261031/native/full25_firmware_20261030
-curl -L -o firmware_native25_dictcache_v9.elf \
-  $BASE/firmware/firmware_native25_dictcache_v9.elf
-curl -L -O $BASE/SOURCE_SHA256SUMS.txt
-curl -L -O $BASE/firmware/firmware_native25_dictcache_v9.elf.sha256
-sha256sum -c firmware_native25_dictcache_v9.elf.sha256
-sha256sum -c SOURCE_SHA256SUMS.txt   # from inside the full snapshot layout
+REF=release/full25-qemu-60m-20261031
+REPO=a-bit-brain-burning/25-Lang-Model
+PREFIX=native/full25_firmware_20261030
+TOKEN=<your GitHub token with repo read access>
+
+curl -sL -H "Authorization: Bearer $TOKEN" \
+  -H "Accept: application/vnd.github.raw" \
+  "https://api.github.com/repos/$REPO/contents/$PREFIX/firmware/firmware_native25_dictcache_v9.elf?ref=$REF" \
+  -o firmware_native25_dictcache_v9.elf
+
+curl -sL -H "Authorization: Bearer $TOKEN" \
+  -H "Accept: application/vnd.github.raw" \
+  "https://api.github.com/repos/$REPO/contents/$PREFIX/SOURCE_SHA256SUMS.txt?ref=$REF" \
+  -o SOURCE_SHA256SUMS.txt
+
+sha256sum firmware_native25_dictcache_v9.elf
+# expected: see firmware/firmware_native25_dictcache_v9.elf.sha256
 ```
 
 ---
