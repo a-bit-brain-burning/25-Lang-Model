@@ -1,0 +1,56 @@
+INTERMEDIATE CHECKPOINT — FULL 25-LANGUAGE GOAL NOT COMPLETE
+
+Acceptance: user explicitly chose QEMU dynamic instruction events <=60,000,000; no development board required.
+Both ROM and RAM must be strictly below 10,000,000 bytes in the final same image.
+ROI includes public language/text selection, native frontend, acoustic model, adapter, FARGAN, BWE, packet copy and effective-packet test.
+Language-neutral boot decoding, SHA checks, all G2P resource prewarming and voice registry initialization are separate. No sentence answers are cached.
+
+Best verified intermediate ELF: /home/fomak/ffb/m55_fargan_stream_20261030/full25_firmware_20261030/build/native25_text_paths_v1/firmware.elf
+ELF SHA256: 77390626db625ac007b76f4ad3dd3d6cb67cc79792a539bc7e90c1743633921e
+ROM load bytes: 9885272
+Reserved physical RAM bytes: 9860312
+Read-only assets in QEMU SRAM are conservatively counted toward BOTH ROM and RAM.
+Native raw-text smoke cases: bg, cs, da, de, el, en, es, et, fi, fr, hr, hu, it, lt, lv, nl, no, pl, pt, ro, sk, sl, sv, tr, zh
+125 core output files exactly match their frozen per-language baselines. Full packet concatenations also match.
+All 25 normalization banks are in firmware; that is not completion of all 25 text adapters.
+Current frontend scope: ordinary NFC families plus native Han subset; full normalization remains pending.
+Timing passed: bg, cs, da, de, el, es, et, hr, lv, nl, pl, sk, sl, tr, zh
+
+bg: 51557060 PASS
+cs: 50590295 PASS
+da: 49208259 PASS
+de: 55014423 PASS
+el: 48685785 PASS
+en: 1279949118 OVER LIMIT
+es: 51444829 PASS
+et: 50052608 PASS
+fi: 64180572 OVER LIMIT
+fr: 900148181 OVER LIMIT
+hr: 50811243 PASS
+hu: 65308426 OVER LIMIT
+it: 356829532 OVER LIMIT
+lt: 578175936 OVER LIMIT
+lv: 50521237 PASS
+nl: 51614522 PASS
+no: 65037277 OVER LIMIT
+pl: 54600047 PASS
+pt: 144986834 OVER LIMIT
+ro: 658352644 OVER LIMIT
+sk: 50615318 PASS
+sl: 52423153 PASS
+sv: 62033942 OVER LIMIT
+tr: 47404256 PASS
+zh: 47743045 PASS
+
+Remaining family adapters: 
+Remaining work: full numeric/identifier/abbreviation/Unicode policy, latency reduction, long-text planning, final same-image all25 memory and instruction validation.
+No training, new quantization, default-pointer change, GitHub push or external delivery was performed.
+
+Recovery: use STATUS.json, reports/native25_text_paths_v1/RESULT.json, LATENCY_HOTSPOTS.json and build/native25_text_paths_v1/FROZEN_INPUTS.json.
+The frozen_inputs/sha256 content store preserves actual compiler dependencies and linked binary assets.
+Do not rerun an existing --tag: builders intentionally require a fresh directory. Use a fresh tag for any new experiment.
+native_final25 owns src/assets/frontend_patched/dictionary_runtime and inherits immutable compiler/frontend/BWE sources through symlinks; preserve symlink targets.
+Build recipe: python3 build_combined.py --tag NEW_TAG --backend-tag compact_ring_v2 --arena-bytes 3960000 --multilang --profile --native-root /home/fomak/ffb/m55_fargan_stream_20261030/full25_firmware_20261030/native_final25 --prewarm-g2p --case-manifest FINAL25_SOURCE_IDENTITY.json
+VLDM/LDM optimizations reduce architectural instruction events while retaining all arithmetic; do not infer equal hardware cycle savings.
+The original opt16 ELF was reconstructed byte-exactly before modifications; the published source mismatch was repaired only in this isolated workspace.
+Prepared-backend 25-language diagnostics are not native raw-text acceptance. Do not substitute those results for missing frontends.

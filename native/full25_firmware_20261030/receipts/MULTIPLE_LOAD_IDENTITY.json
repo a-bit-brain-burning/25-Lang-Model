@@ -1,0 +1,22 @@
+{
+  "kernels": [
+    {
+      "source": "packed_matrix8.S",
+      "before_sha256": "452e163177220e4b6b4fa9a94079ee70f798b7f4e8f1ee17ee665f491ecf91f4",
+      "after_sha256": "ac68e698ec6451dc596646836415f46018674dcecf180ada1aaa2deeb4adc0eb"
+    },
+    {
+      "source": "packed_matrix_pair.S",
+      "before_sha256": "1c6126a19b109762280787439655c4fad63d48a54b42680b61fd683313c9a5bd",
+      "after_sha256": "e8f8db77065d06ebdb4cffb1cb49cba047e55575397e1d530c6c295ceeb38d70"
+    },
+    {
+      "source": "bwe_packed_matrix8.S",
+      "before_sha256": "e215915c937203fdcd5a875a2f85fc357b4b270c4c93b905b80693386a459f42",
+      "after_sha256": "8322dc3d26261865b47e1a93c3533a1658b1cba97e17d90eda5e6eb51bb6c53f"
+    }
+  ],
+  "arithmetic_unchanged": true,
+  "weight_layout_unchanged": true,
+  "policy": "VLDM moves identical packed bytes into the shared FP/MVE register file; all VMLADAVA sums and FP32 epilogues retained. Logical instruction acceptance is measured separately from physical cycles."
+}

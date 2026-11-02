@@ -1,0 +1,78 @@
+{
+  "status": "CURRENT_ACOUSTIC_FARGAN_LISTENING_VERIFIED",
+  "rows": [
+    {
+      "case": "CZ2671_stream24",
+      "frames": [
+        326
+      ],
+      "PCM24_samples": 77280,
+      "PCM16_samples": 51520,
+      "packets": 161,
+      "sha256": "2d6d11c5219f40b13ec8dda63d40acf01d4159361df8cc38da558a1e4700e015"
+    },
+    {
+      "case": "MU5108_stream24",
+      "frames": [
+        308
+      ],
+      "PCM24_samples": 72960,
+      "PCM16_samples": 48640,
+      "packets": 152,
+      "sha256": "ef6f90f71a69d4349748102450c475dc92e279bdde0f82bb5d108e126ff53266"
+    },
+    {
+      "case": "en_stream24",
+      "frames": [
+        375
+      ],
+      "PCM24_samples": 89040,
+      "PCM16_samples": 59360,
+      "packets": 186,
+      "sha256": "3f84abbaf0171536170f0b7a3ea6449d64cea5891ee7fe913d12e282e29690a0"
+    },
+    {
+      "case": "long_stream24",
+      "frames": [
+        831
+      ],
+      "PCM24_samples": 198480,
+      "PCM16_samples": 132320,
+      "packets": 414,
+      "sha256": "6b7d50571f3f8e855315a9011b7fa8e850f29ce3be873899e1c978387ce42c9c"
+    },
+    {
+      "case": "zh_offline24",
+      "frames": [
+        287
+      ],
+      "PCM24_samples": 67920,
+      "PCM16_samples": 45280,
+      "packets": 142,
+      "sha256": "a8d43668395dd7b9e2f61c2c5597b39f9b3c8985760e65414aaf5cc7b1c52aae"
+    },
+    {
+      "case": "zh_stream24",
+      "frames": [
+        287
+      ],
+      "PCM24_samples": 67920,
+      "PCM16_samples": 45280,
+      "packets": 142,
+      "sha256": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece"
+    }
+  ],
+  "training_updates": 0,
+  "source_weights_unchanged": true,
+  "clips_all_cases": 0,
+  "first_effective_before_complete_acoustic_all_stream_cases": true,
+  "stream_vs_offline": {
+    "file_identity": false,
+    "max_LSB": 1,
+    "RMS_LSB": 0.06234521469249267,
+    "same_sample_indices_no_shift_no_fitting": true
+  },
+  "M55_latency_verified": false,
+  "complete_10MB_verified": false,
+  "human_quality_accepted": false
+}

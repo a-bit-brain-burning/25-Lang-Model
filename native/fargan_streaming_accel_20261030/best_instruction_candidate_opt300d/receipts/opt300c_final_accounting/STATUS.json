@@ -1,0 +1,11 @@
+{
+  "status": "DYNAMIC_O2_O3_PROFILED_TARGET_NOT_REACHED",
+  "complete": true,
+  "target_300ms_passed": false,
+  "o3_event_reduction_fraction": 0.05317598907442318,
+  "o3_floor_ms": 344.083245,
+  "training_updates": 0,
+  "delivery_copied_to_D": true,
+  "D_drive_directory": "/mnt/d/newtts/fargan_m55_opt300c_20261030",
+  "D_delivery_verified": true
+}

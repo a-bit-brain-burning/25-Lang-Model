@@ -1,0 +1,141 @@
+{
+  "status": "DYNAMIC_O2_O3_PROFILED_TARGET_NOT_REACHED",
+  "task": "continue opt300c release trace: dynamic O2/O3 instruction profiling and 300 ms accounting closure",
+  "training_updates": 0,
+  "weights_changed": false,
+  "production_pointer_changed": false,
+  "artifact": "opt300c_20261030/final_accounting",
+  "measured": {
+    "roi": "one ordinary Chinese first-audio request",
+    "o2_instruction_events": 72681563,
+    "o3_instruction_events": 68816649,
+    "o2_uncalibrated_1ipc_floor_ms": 363.407815,
+    "o3_uncalibrated_1ipc_floor_ms": 344.083245,
+    "o3_event_reduction_fraction": 0.05317598907442318
+  },
+  "target_300ms": {
+    "clock_hz": 200000000,
+    "cycle_budget": 60000000,
+    "o3_events_above_budget": 8816649,
+    "o3_fraction_above_budget": 0.1281179645931321,
+    "reachable_by_o3_flags": false,
+    "reason": "Even at the most optimistic single-issue 1 instruction per cycle, O3 needs 344.083 ms; 300 ms needs at most 60000000 executed instructions. MVE beats and non-dual-issuable work make real latency higher, so 300 ms is not met and compiler-level O2/O3 changes alone cannot meet it."
+  },
+  "old_partial_estimate_reconciliation": {
+    "source": "opt300c_20261030/delivery/BENCHMARK_POLICY.json historical_same_policy.zh.current_partial_ms",
+    "old_zh_current_partial_ms": [
+      318.57743,
+      676.98042
+    ],
+    "measured_o3_1ipc_floor_ms": 344.083245,
+    "conclusion": "The old 318.58 ms figure is a *partial priced subtotal* of selected operation groups, not a whole-request lower bound. The measured executed-instruction floor for the same ordinary Chinese request is 344.08 ms (O3) / 363.41 ms (O2), so the old optimistic subtotal cannot be quoted as achievable first-audio latency and 300 ms stays unaccepted."
+  },
+  "remaining_instruction_budget_targets": {
+    "needed_cut_events": 8816649,
+    "needed_cut_fraction": 0.1281179645931321,
+    "largest_o3_groups": [
+      {
+        "function": "packed_matrix_pair",
+        "events": 14906284,
+        "share": 0.21660868723788046
+      },
+      {
+        "function": "packed_matrix8",
+        "events": 13020092,
+        "share": 0.18919973856907796
+      },
+      {
+        "function": "adaconv_xcorr_mve.constprop.0.isra.0",
+        "events": 5074800,
+        "share": 0.07374378255471288
+      },
+      {
+        "function": "cgemv8x4",
+        "events": 4494800,
+        "share": 0.06531558954577983
+      },
+      {
+        "function": "compute_linear_c",
+        "events": 3647700,
+        "share": 0.05300606834256053
+      },
+      {
+        "function": "ensure_raw_condition_chunk",
+        "events": 2300901,
+        "share": 0.033435237452494965
+      },
+      {
+        "function": "n25_unpack",
+        "events": 2114681,
+        "share": 0.03072920624193718
+      },
+      {
+        "function": "pair_prepare.isra.0",
+        "events": 1832798,
+        "share": 0.026633060845493946
+      },
+      {
+        "function": "memcpy",
+        "events": 1488026,
+        "share": 0.021623052293639
+      },
+      {
+        "function": "bbwenet_process_frames",
+        "events": 1487031,
+        "share": 0.021608593583218504
+      }
+    ],
+    "matrix_kernels": {
+      "events": 27926376,
+      "share": 0.4058084258069584
+    },
+    "note": "These are measurement targets only; no code was changed in this task and no reduction is claimed."
+  },
+  "o3_candidate": {
+    "status": "BYTE_IDENTICAL_CANDIDATE_NOT_ADOPTED",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o3_v1/firmware.elf",
+    "elf_sha256": "07948f889e62770976851b932e1442a94ed4189c40b1d7687d0bc65144e35bc1",
+    "six_files_identical": true,
+    "instruction_event_reduction_fraction": 0.05317598907442318,
+    "text_bytes_o2": 174032,
+    "text_bytes_o3": 212016,
+    "text_delta_bytes": 37984,
+    "adopted": false,
+    "reason": "Byte-identical output and 5.32%% fewer executed instructions make O3 a valid future candidate, but 300 ms is still not reached, so the default production pointer and delivery numbers stay unchanged."
+  },
+  "not_claimed": [
+    "300 ms calibrated or hardware-verified latency",
+    "QEMU host seconds as chip latency",
+    "guaranteed cycle lower/upper bounds",
+    "complete native 25-language text frontend",
+    "complete system ROM/RAM dual 10 MB acceptance",
+    "any audio/quality change (all six files byte-identical)"
+  ],
+  "evidence": {
+    "audit": {
+      "path": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/final_accounting/DYNAMIC_INSTRUCTION_AUDIT.json",
+      "sha256": "0d204cd19e42f5e38939e4aed2b349be99bdaaa2266b0a2638875c1c658f9ab3"
+    },
+    "o2_build": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o2_v1",
+    "o3_build": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o3_v1",
+    "o2_run": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/reports/ordinary_o2_v1",
+    "o3_run": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/reports/ordinary_o3_v1",
+    "profile_csvs": [
+      "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/release_ordinary_o2_v1_instruction_counts.csv",
+      "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/release_ordinary_o3_v1_instruction_counts.csv"
+    ],
+    "delivery": {
+      "local_delivery": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/delivery",
+      "D_drive_directory": "/mnt/d/newtts/fargan_m55_opt300c_20261030",
+      "D_receipt": "/mnt/d/newtts/fargan_m55_opt300c_20261030/D_DELIVERY_VERIFIED.json",
+      "D_receipt_sha256": "46ded1a950032a2b59695132123eab2abd11acf212bc8096a88bcf2199bf12dc",
+      "files": 51,
+      "wav_files": 28,
+      "links": 70,
+      "all_links_resolve": true,
+      "all_files_sha256_verified": true,
+      "all_audio_identical_to_actual_QEMU_sources": true,
+      "D_drive_copy_performed": true
+    }
+  }
+}

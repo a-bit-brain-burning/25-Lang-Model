@@ -1,0 +1,260 @@
+{
+  "status": "SYNC_CEA342E_COMPLETE_VERIFIED",
+  "updated_utc": "2026-10-30T18:47:58.566643+00:00",
+  "frontend_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+  "source_worktree_clean": true,
+  "frontend_source": "/home/fomak/ffb/new25_clarity_repair_20261030/repo/pipelines/prosody1000_rndvoc_opus24",
+  "active_files_sha256": {
+    "runtime.py": "cf9073ede15173e11d2db8ccaafc034e413ef0384b7af314b8e289431ae72039",
+    "synthesize.py": "790fe530ae17b2bf5c749b6d477e4a5a66822990a8efdf1d01a8217ca71cab63",
+    "acoustic_cursor.py": "0eb7671714482dbde197e74cd202f11fa051deadace01d5aab74d2763821ee1b",
+    "sync_cea342e_20261030/cea_controls/__init__.py": "5b74b8e26c0c6e6bdfe88687d3ebc1b37fbd8fde3bf384d89a1b39298cc54d91",
+    "sync_cea342e_20261030/cea_controls/flow.py": "e62ac8ce8f0474848ec66a44d76de4ddf07cfee416b3694fbc11e11c6796016f",
+    "sync_cea342e_20261030/cea_controls/identifier_first_digit.py": "69eb74d365fa097cf1343de87171421076696488bb76e4b4b4a85458b19bfcdb",
+    "sync_cea342e_20261030/cea_controls/identifier_light_u_long_c.py": "b9e2186088944c60e4cabfc213c5d4be89b0e06d5995ee991c5fc60d9bb118e4",
+    "sync_cea342e_20261030/cea_controls/identifier_prosody.py": "9479be4cafa79420141bdbdc0dc6acbc9b640951a0fb5f6b1f389902c1fd371b",
+    "sync_cea342e_20261030/cea_controls/identifier_rhythm.py": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77",
+    "sync_cea342e_20261030/cea_controls/identifier_u_natural_control.py": "abb6853648659a7a7bb343680db2a983853a812b40d81e6664943911c87d65ff"
+  },
+  "source_files_sha256": {
+    "text_worker.py": "d0e233a42c97147f99a81f6f4452e8720c5e4042daeb5be323ae514784e35ed8",
+    "runtime.py": "ca76dc2f25f7c39e32af35a7140a890ddf533939d7f0252fcf95fe48f12e9cd8",
+    "identifier_rhythm.py": "4f00d11894cb89365ed21a841067cf36f75693259f6b1249f6c4644d2e9b2d77",
+    "identifier_u_natural_control.py": "ef4224a598cc93c15ba3a5e281b5d40ca926f50db0af19c23fd0334bb1c8ad9d",
+    "identifier_light_u_long_c.py": "d2350f73a5805429edd53b4a1d5959f19c9263eff6e5caf8b1639437e9a4a8f0",
+    "identifier_first_digit.py": "cc7c19dc694c24d24f7e94ad72af0d776925a9cef118a4fb65ba2d35c2615291",
+    "identifier_prosody.py": "9479be4cafa79420141bdbdc0dc6acbc9b640951a0fb5f6b1f389902c1fd371b",
+    "frontend_live.py": "b9ee5d860fa1a934fe3b3de67e89a2498c2b6f730f69c6f5cc1900d320bf058a",
+    "frontend_repair.py": "1db2de90420dd9ec1f89c1f0ffe90fa4c6893cb4214ecb313b926e73f7927274",
+    "reading_policy.py": "d71d93b13a1e087b6f0e20feaf3cde011ef6eda8c08a394d9b04133051d9e3a4",
+    "english_lexicon.py": "ecb2d604de8ef82ed8a8c3da3566bfbccf9f817ea2682820d0a51651d6765164",
+    "plan_rules.py": "0b01577be29a71a248d24b933190a1254f8208d788bf45a9832d7bf3f434ed7a"
+  },
+  "controls_source_identity": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/CONTROL_SOURCE_IDENTITY.json",
+  "source_control_reference_verification": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/SYNC_VERIFIED.json",
+  "real_pipe_verification": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/PIPE_VERIFIED.json",
+  "plain_waveform_same_as_previous": true,
+  "plain_previous_wav_sha256": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece",
+  "CLI_reports": {
+    "zh_plain": {
+      "report_sha256": "06afd263deb382da3dec5c62e6757e18a13edf4432e7285b688f86303e1f36e2",
+      "mode": "natural",
+      "audio_seconds": 2.83,
+      "segments": [
+        {
+          "physical_frames": 287,
+          "first_PCM24_host_seconds": 0.05695840800035512,
+          "first_effective_PCM24_host_seconds": 0.1037859819989535,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 0,
+          "connections": 0,
+          "whole_acoustic_before_PCM": false,
+          "complete_acoustic_prediction_host_seconds": null,
+          "pitch_apply_host_seconds": null
+        }
+      ]
+    },
+    "zh_CZ2671": {
+      "report_sha256": "54bb159ca3975caf50a1b3c8f3fbc0c6bddf4779aee973cdeaea191f60daa9b1",
+      "mode": "natural",
+      "audio_seconds": 2.81,
+      "segments": [
+        {
+          "physical_frames": 285,
+          "first_PCM24_host_seconds": 0.04789008000079775,
+          "first_effective_PCM24_host_seconds": 0.0949158389994409,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 6,
+          "connections": 5,
+          "whole_acoustic_before_PCM": true,
+          "complete_acoustic_prediction_host_seconds": 0.022679041998344474,
+          "pitch_apply_host_seconds": 0.0013648969998030225
+        }
+      ]
+    },
+    "zh_MU5108": {
+      "report_sha256": "4401bc56b7f2dedfe5127e3a846efca68f6d31b2d49031669b3e51e0e1e2abab",
+      "mode": "natural",
+      "audio_seconds": 2.69,
+      "segments": [
+        {
+          "physical_frames": 273,
+          "first_PCM24_host_seconds": 0.044816503999754786,
+          "first_effective_PCM24_host_seconds": 0.09294000499903632,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 6,
+          "connections": 5,
+          "whole_acoustic_before_PCM": true,
+          "complete_acoustic_prediction_host_seconds": 0.019146529000863666,
+          "pitch_apply_host_seconds": 0.0010165740004595136
+        }
+      ]
+    },
+    "en_digits": {
+      "report_sha256": "1d4abf51844015efeab93fcc88e9744be5893598037b62704d23eb7ded65bbef",
+      "mode": "natural",
+      "audio_seconds": 5.13,
+      "segments": [
+        {
+          "physical_frames": 517,
+          "first_PCM24_host_seconds": 0.03418244800013781,
+          "first_effective_PCM24_host_seconds": 0.13136235499951,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 0,
+          "connections": 0,
+          "whole_acoustic_before_PCM": false,
+          "complete_acoustic_prediction_host_seconds": null,
+          "pitch_apply_host_seconds": null
+        }
+      ]
+    },
+    "zh_MU5108_original": {
+      "report_sha256": "24e2f1fe188972b3849d6a12ccb8c7379c0a4bb1bbd1eac633e331e96a763078",
+      "mode": "original",
+      "audio_seconds": 2.77,
+      "segments": [
+        {
+          "physical_frames": 281,
+          "first_PCM24_host_seconds": 0.0332860319995234,
+          "first_effective_PCM24_host_seconds": 0.08502501799921447,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 0,
+          "connections": 0,
+          "whole_acoustic_before_PCM": false,
+          "complete_acoustic_prediction_host_seconds": null,
+          "pitch_apply_host_seconds": null
+        }
+      ]
+    },
+    "zh_CZ2671_original": {
+      "report_sha256": "97681ed49a5f6fffc0065dc70a4b4746d3fe8939105ece28b9048597a2a3c4b4",
+      "mode": "original",
+      "audio_seconds": 2.89,
+      "segments": [
+        {
+          "physical_frames": 293,
+          "first_PCM24_host_seconds": 0.031922063000820344,
+          "first_effective_PCM24_host_seconds": 0.07914523399995232,
+          "clipped_PCM16_samples": 0,
+          "BWE_quantizer_clips": 0,
+          "identifier_pitch_units": 0,
+          "connections": 0,
+          "whole_acoustic_before_PCM": false
+        }
+      ]
+    }
+  },
+  "WAVs": {
+    "reports/zh_plain.wav": {
+      "bytes": 135884,
+      "sha256": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece"
+    },
+    "reports/zh_plain16.wav": {
+      "bytes": 90604,
+      "sha256": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7"
+    },
+    "reports/zh_CZ2671.wav": {
+      "bytes": 134924,
+      "sha256": "7977ed578bca5edf898e3bc24bf211a06a4fccaa38351362583676f08e225664"
+    },
+    "reports/zh_CZ2671_16.wav": {
+      "bytes": 89964,
+      "sha256": "3dcb256c900463d0c2a15a3ee91a3b26d78906d493827ba560e2af90f7f449a8"
+    },
+    "reports/zh_MU5108.wav": {
+      "bytes": 129164,
+      "sha256": "96addec1678485364287940f38b6bff46dc232b795e5bf3632a3e1f72f5b06b8"
+    },
+    "reports/zh_MU5108_16.wav": {
+      "bytes": 86124,
+      "sha256": "7ae39b98db9711d9a38710f6938e2b80608ec841edd8dbd46fd7fef41ae2fa5b"
+    },
+    "reports/en_digits.wav": {
+      "bytes": 246284,
+      "sha256": "7abaeb06067f472b5650689906a1f5bd0a8f9c0b183e5061e02e104af900e075"
+    },
+    "reports/en_digits16.wav": {
+      "bytes": 164204,
+      "sha256": "003c0a37326b993f1912786987adb38a9ff0327e7c310176664dd7fc9c43c55f"
+    },
+    "reports/zh_MU5108_original.wav": {
+      "bytes": 133004,
+      "sha256": "276a2cab1087ebbb7f2fa858604c0239fb052ff6b9bc5bef5c5121d7cbc6965b"
+    },
+    "reports/zh_MU5108_original16.wav": {
+      "bytes": 88684,
+      "sha256": "16cbc6b78b5a62e104c54400b48125dd2f61738e64fbac5464757de19df11dac"
+    },
+    "reports/zh_CZ2671_original.wav": {
+      "bytes": 138764,
+      "sha256": "009a8afb9dc08c816b19b669bbb082dfc54c930d91914d00edd13eaa08736741"
+    },
+    "reports/zh_CZ2671_original16.wav": {
+      "bytes": 92524,
+      "sha256": "ed207e52565c3c8e287f09b1244620c795107aad950e34259724e330862efef9"
+    }
+  },
+  "natural_identifier_policy": "Complete acoustic unit is predicted and corrected before any PCM; original full identifier statistics are retained. Then persistent FARGAN/adapter/BWE emit packets.",
+  "no_identifier_policy": "Original AcousticCursor demand-driven streaming; same original Chinese WAV bytes.",
+  "RND_HiFi_weights_loaded": false,
+  "models_modified": false,
+  "training_updates": 0,
+  "native_M55_synced_or_validated_by_this_task": false,
+  "M55_latency_verified": false,
+  "subjective_quality_accepted": false,
+  "old_auditions_preserved": true,
+  "pending_processes": [],
+  "host_audio_precision": {
+    "backend": "PyTorch CPU host reference",
+    "acoustic_weight_storage": "original INT8, expanded to FP32",
+    "adapter_FARGAN_weight_storage": "original FP16, expanded/effective FP32",
+    "recurrent_and_nonlinear_arithmetic": "original FP32",
+    "native_integer_MVE_candidate_audio": false,
+    "original_RND_80D_logmel_energy_effects_applied_to_FARGAN": false
+  },
+  "exact_reference_verification_sha256": "83ee425c9d67b712bb96500a2f73b56c206d997e3587d8da393ac434229a324f",
+  "verification_script_sha256": "5fdc53b06f3f13479622f735bfec7048104728fbdb384095f9072dd2aa52b7b2",
+  "native_reference_cases": {
+    "zh_CZ": {
+      "text": "下一趟航班为CZ2671号。",
+      "physical_frames": 318,
+      "plan": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_CZ/plan.json",
+      "plan_sha256": "3fa96f6771b154e7cd1c1034eaecc2afbdaa30182ef28ec484d5b681d00045cf",
+      "conditions": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_CZ/host_natural_conditions.npz",
+      "conditions_sha256": "aeef15fb8f33ba5bcd2d6ff798c5b3599cefcff050323ec0d1728eac19abfac6",
+      "controls": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_CZ/host_natural_controls.json",
+      "controls_sha256": "366e634bd558ec5b0bbbea0cee32b64b3e6837bab435f49351184339c0c1fa5d",
+      "source_reference_arrays_byte_equal": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      }
+    },
+    "zh_MU": {
+      "text": "下一趟航班为MU5108号。",
+      "physical_frames": 300,
+      "plan": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_MU/plan.json",
+      "plan_sha256": "809fc78f5cb280a87b62e8b223bc4dc3b5b256f49df1d06ded5e9b32033e6519",
+      "conditions": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_MU/host_natural_conditions.npz",
+      "conditions_sha256": "4471d80ac5ab15142a1e013f0f978a40c97d75d9005c04680355bc379f972c5b",
+      "controls": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/cases/zh_MU/host_natural_controls.json",
+      "controls_sha256": "46a0914f925519b26e2f89d7c4df738f92ff7701da95fb99000c892395537600",
+      "source_reference_arrays_byte_equal": {
+        "physical": true,
+        "normalized": true,
+        "prediction": true,
+        "durations": true,
+        "frame_phone": true,
+        "position": true
+      }
+    }
+  }
+}

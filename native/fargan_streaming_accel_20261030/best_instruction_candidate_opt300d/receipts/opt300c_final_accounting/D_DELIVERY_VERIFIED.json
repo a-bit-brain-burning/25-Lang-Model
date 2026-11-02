@@ -1,0 +1,56 @@
+{
+  "status": "D_DRIVE_DELIVERY_VERIFIED",
+  "delivery_directory": "/mnt/d/newtts/fargan_m55_opt300c_20261030",
+  "source_directory": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/delivery",
+  "files": 44,
+  "wav_files": 28,
+  "links": 70,
+  "all_files_sha256_verified": true,
+  "delivery_manifest_entries_verified": 43,
+  "all_links_resolve": true,
+  "all_audio_identical_to_actual_QEMU_sources": true,
+  "native_QEMU_audio_only": true,
+  "final_accounting_directory": "/mnt/d/newtts/fargan_m55_opt300c_20261030/final_accounting",
+  "final_accounting_files": [
+    {
+      "name": "DYNAMIC_INSTRUCTION_AUDIT.json",
+      "bytes": 35975,
+      "sha256": "0d204cd19e42f5e38939e4aed2b349be99bdaaa2266b0a2638875c1c658f9ab3"
+    },
+    {
+      "name": "FINAL_RESULTS.json",
+      "bytes": 5402,
+      "sha256": "bd0e9275e2302f9031770d1299324a417fe54c4d2ca456bd96063554c9d8d8a9"
+    },
+    {
+      "name": "RECOVERY_README.txt",
+      "bytes": 1644,
+      "sha256": "1f60942198b8722d6e23cd9e20c58e2d25f61e81813cb1d7321ce75855704df2"
+    },
+    {
+      "name": "STATUS.json",
+      "bytes": 253,
+      "sha256": "4620a34f9eaf5d955b29743a6410f71d26df4aa3b909a2dd40fdc89696ed938f"
+    },
+    {
+      "name": "analyze_dynamic.py",
+      "bytes": 14342,
+      "sha256": "1c6a6077d1d6fb36bf6e6ddb482b5d39ace13fcc9d780eddea5e63f653b0ee70"
+    },
+    {
+      "name": "index.html",
+      "bytes": 4692,
+      "sha256": "641a0a770b8603b2eba5add542d87a0f225a78e74f94419e49c8b7340ace7a53"
+    }
+  ],
+  "dynamic_measurement": {
+    "status": "DYNAMIC_O2_O3_PROFILED_TARGET_NOT_REACHED",
+    "o2_instruction_events": 72681563,
+    "o3_instruction_events": 68816649,
+    "o3_uncalibrated_1ipc_floor_ms": 344.083245,
+    "target_300ms_passed": false
+  },
+  "target_300ms_accepted": false,
+  "D_drive_copy_performed": true,
+  "source_manifest_sha256": "b627616a8f9e987f67dec553ffb7570e74deed508d43da866834e3d50ef30dc4"
+}

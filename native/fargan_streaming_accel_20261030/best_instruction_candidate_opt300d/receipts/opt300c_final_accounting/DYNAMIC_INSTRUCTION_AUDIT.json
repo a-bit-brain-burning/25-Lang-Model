@@ -1,0 +1,1406 @@
+{
+  "status": "RELEASE_O2_O3_DYNAMIC_INSTRUCTION_AUDIT",
+  "method": "QEMU 8.2.2 mps3-an547 Cortex-M55 single-vCPU TCG; local GPL QEMU plugin counts architectural guest instruction executions per PC between the tensor_views_prepare marker entry (inclusive) and the snapshot_first_active_costs marker entry (exclusive).",
+  "roi": "one ordinary Chinese complete first-audio request (same sentence and six output files as the frozen native zh case)",
+  "clock_hz": 200000000,
+  "o2": {
+    "tag": "ordinary_o2_v1",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o2_v1/firmware.elf",
+    "elf_sha256": "1566818332c479ebffcece1a50e97f38e591c28d9da6a36ae1a07e0c5b691dc8",
+    "disassembly_sha256": "d12c83759557d64efaa3558b411e305dfbcd05f30147bd59de9d52f8c1581ac1",
+    "csv": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/release_ordinary_o2_v1_instruction_counts.csv",
+    "csv_sha256": "91abb9418003e493183d1c8d1dc38aac45dcb024a1ad9073f2cf04cbfea0d52c",
+    "begin_symbol": "tensor_views_prepare",
+    "begin_pc": "0x10005a40",
+    "end_symbol": "snapshot_first_active_costs",
+    "end_pc": "0x10005a3c",
+    "begin_marker_instruction_events": 1,
+    "end_marker_instruction_events": 0,
+    "instruction_events": 72681563,
+    "uncalibrated_1ipc_floor_ms": 363.407815,
+    "functions": [
+      {
+        "function": "packed_matrix_pair",
+        "events": 14906284,
+        "share": 0.2050903060518938
+      },
+      {
+        "function": "packed_matrix8",
+        "events": 13020092,
+        "share": 0.17913885533804494
+      },
+      {
+        "function": "adaconv_xcorr_mve.constprop.0.isra.0",
+        "events": 5074800,
+        "share": 0.06982238397927684
+      },
+      {
+        "function": "cgemv8x4",
+        "events": 4494800,
+        "share": 0.06184236846970393
+      },
+      {
+        "function": "compute_linear_c",
+        "events": 3651460,
+        "share": 0.050239150745836327
+      },
+      {
+        "function": "ensure_raw_condition_chunk",
+        "events": 3453350,
+        "share": 0.04751342510341997
+      },
+      {
+        "function": "activation",
+        "events": 2686798,
+        "share": 0.036966706398430096
+      },
+      {
+        "function": "norm",
+        "events": 2107785,
+        "share": 0.029000270673870895
+      },
+      {
+        "function": "pair_prepare.isra.0",
+        "events": 1651814,
+        "share": 0.022726726446430437
+      },
+      {
+        "function": "n25_value",
+        "events": 1545422,
+        "share": 0.02126291642902616
+      },
+      {
+        "function": "memcpy",
+        "events": 1488026,
+        "share": 0.020473225101116772
+      },
+      {
+        "function": "depthwise_channels",
+        "events": 1421809,
+        "share": 0.01956216874422472
+      },
+      {
+        "function": "fg_noise",
+        "events": 1077236,
+        "share": 0.014821310323224613
+      },
+      {
+        "function": "log",
+        "events": 1021446,
+        "share": 0.014053715383088281
+      },
+      {
+        "function": "frame",
+        "events": 1013728,
+        "share": 0.01394752614222124
+      },
+      {
+        "function": "fast_i8_dense.constprop.0",
+        "events": 981063,
+        "share": 0.013498099923910552
+      },
+      {
+        "function": "adaconv_process_frame",
+        "events": 844960,
+        "share": 0.01162550673270469
+      },
+      {
+        "function": "apply_valin_activation",
+        "events": 827301,
+        "share": 0.011382542777733054
+      },
+      {
+        "function": "adapter_stream_need_layer",
+        "events": 812464,
+        "share": 0.011178405725809722
+      },
+      {
+        "function": "fusion_fg_gru",
+        "events": 755259,
+        "share": 0.01039134229955952
+      },
+      {
+        "function": "bbwenet_process_frames",
+        "events": 662240,
+        "share": 0.009111526674240618
+      },
+      {
+        "function": "memset",
+        "events": 646461,
+        "share": 0.008894428976437945
+      },
+      {
+        "function": "adashape_process_frame",
+        "events": 645625,
+        "share": 0.008882926747186215
+      },
+      {
+        "function": "n25_unpack",
+        "events": 616502,
+        "share": 0.008482233658073643
+      },
+      {
+        "function": "linear",
+        "events": 587272,
+        "share": 0.008080068393686031
+      },
+      {
+        "function": "memmove",
+        "events": 569550,
+        "share": 0.007836237643926287
+      },
+      {
+        "function": "opus_fft_impl",
+        "events": 437760,
+        "share": 0.006022985499087299
+      },
+      {
+        "function": "mt_twist_exact.constprop.0",
+        "events": 432640,
+        "share": 0.005952541224244173
+      },
+      {
+        "function": "fg_glu",
+        "events": 408240,
+        "share": 0.005616830226944899
+      },
+      {
+        "function": "depthwise_range",
+        "events": 348552,
+        "share": 0.0047956040791252656
+      },
+      {
+        "function": "acoustic_begin",
+        "events": 332479,
+        "share": 0.0045744613389780845
+      },
+      {
+        "function": "namefmt",
+        "events": 326168,
+        "share": 0.004487630515045473
+      },
+      {
+        "function": "strcmp",
+        "events": 307270,
+        "share": 0.004227619595907699
+      },
+      {
+        "function": "lrintf",
+        "events": 302971,
+        "share": 0.004168471170604848
+      },
+      {
+        "function": "fargan_frame",
+        "events": 291108,
+        "share": 0.0040052523361392214
+      },
+      {
+        "function": "compute_activation_c",
+        "events": 251480,
+        "share": 0.003460024655771368
+      },
+      {
+        "function": "fg_tanh",
+        "events": 220056,
+        "share": 0.0030276729189216804
+      },
+      {
+        "function": "fusion_acoustic_gru.constprop.0",
+        "events": 192960,
+        "share": 0.002654868608150323
+      },
+      {
+        "function": "vec_sigmoid",
+        "events": 173200,
+        "share": 0.002382997734927632
+      },
+      {
+        "function": "fabs",
+        "events": 160300,
+        "share": 0.0022055111830767866
+      },
+      {
+        "function": "compute_generic_gru",
+        "events": 151080,
+        "share": 0.002078656453769438
+      },
+      {
+        "function": "softmax",
+        "events": 150880,
+        "share": 0.0020759047242833784
+      },
+      {
+        "function": "scale_kernel",
+        "events": 149960,
+        "share": 0.002063246768647504
+      },
+      {
+        "function": "osce_bwe",
+        "events": 144700,
+        "share": 0.001990876283164136
+      },
+      {
+        "function": "find",
+        "events": 134817,
+        "share": 0.0018548995706105
+      },
+      {
+        "function": "osce_bwe_calculate_features",
+        "events": 107490,
+        "share": 0.0014789170122827436
+      },
+      {
+        "function": "gemm2.constprop.0",
+        "events": 102352,
+        "share": 0.0014082250817858718
+      },
+      {
+        "function": "conv_original.constprop.0",
+        "events": 99318,
+        "share": 0.0013664813454823475
+      },
+      {
+        "function": "adaconv_xcorr4_tail.constprop.0",
+        "events": 88320,
+        "share": 0.001215163741043929
+      },
+      {
+        "function": "apply_filterbank",
+        "events": 73960,
+        "share": 0.001017589563944848
+      },
+      {
+        "function": "opus_fft_c",
+        "events": 70720,
+        "share": 0.0009730115462706822
+      },
+      {
+        "function": "fast_i8_dense_pair.constprop.0",
+        "events": 66691,
+        "share": 0.0009175779557740111
+      },
+      {
+        "function": "sqrt",
+        "events": 56160,
+        "share": 0.0007726856396855417
+      },
+      {
+        "function": "strnlen",
+        "events": 48862,
+        "share": 0.0006722750307392261
+      },
+      {
+        "function": "tensor_views_prepare",
+        "events": 48516,
+        "share": 0.000667514538728343
+      },
+      {
+        "function": "packed_dot8",
+        "events": 37675,
+        "share": 0.0005183570419364812
+      },
+      {
+        "function": "strstr",
+        "events": 36253,
+        "share": 0.0004987922452905973
+      },
+      {
+        "function": "floor",
+        "events": 32000,
+        "share": 0.0004402767177695394
+      },
+      {
+        "function": "forward_transform",
+        "events": 30860,
+        "share": 0.0004245918596989996
+      },
+      {
+        "function": "bench_alloc",
+        "events": 25752,
+        "share": 0.00035431268862503684
+      },
+      {
+        "function": "fg_layer",
+        "events": 23646,
+        "share": 0.00032533697713682904
+      },
+      {
+        "function": "fg_dense",
+        "events": 22814,
+        "share": 0.000313889782474821
+      },
+      {
+        "function": "strncmp",
+        "events": 20676,
+        "share": 0.00028447379426884366
+      },
+      {
+        "function": "fabsf",
+        "events": 18928,
+        "share": 0.0002604236785606826
+      },
+      {
+        "function": "bwe_start",
+        "events": 13921,
+        "share": 0.00019153413087717996
+      },
+      {
+        "function": "exp",
+        "events": 13720,
+        "share": 0.00018876864274369002
+      },
+      {
+        "function": "memcmp",
+        "events": 13600,
+        "share": 0.00018711760505205427
+      },
+      {
+        "function": "compute_generic_conv1d",
+        "events": 13440,
+        "share": 0.00018491622146320655
+      },
+      {
+        "function": "fast_sigmoid",
+        "events": 12045,
+        "share": 0.0001657229082979407
+      },
+      {
+        "function": "dot",
+        "events": 11016,
+        "share": 0.00015156526009216394
+      },
+      {
+        "function": "sqrtf",
+        "events": 9464,
+        "share": 0.0001302118392803413
+      },
+      {
+        "function": "linear_init",
+        "events": 9374,
+        "share": 0.00012897356101161447
+      },
+      {
+        "function": "nearbyint",
+        "events": 9120,
+        "share": 0.00012547886456431873
+      },
+      {
+        "function": "strlen",
+        "events": 8840,
+        "share": 0.00012162644328383527
+      },
+      {
+        "function": "__ieee754_sqrt",
+        "events": 8640,
+        "share": 0.00011887471379777565
+      },
+      {
+        "function": "main",
+        "events": 7108,
+        "share": 9.779646593455894e-05
+      },
+      {
+        "function": "nearbyintf",
+        "events": 7002,
+        "share": 9.633804930694734e-05
+      },
+      {
+        "function": "__ieee754_rem_pio2",
+        "events": 6060,
+        "share": 8.337740342760653e-05
+      },
+      {
+        "function": "cos",
+        "events": 4740,
+        "share": 6.521598881961303e-05
+      },
+      {
+        "function": "opt_array_check",
+        "events": 4548,
+        "share": 6.257432851299579e-05
+      },
+      {
+        "function": "expf",
+        "events": 3990,
+        "share": 5.489700324688945e-05
+      },
+      {
+        "function": "__kernel_cos",
+        "events": 3832,
+        "share": 5.272313695290235e-05
+      },
+      {
+        "function": "fg_weight",
+        "events": 3598,
+        "share": 4.950361345421259e-05
+      },
+      {
+        "function": "compute_overlap_window",
+        "events": 3399,
+        "share": 4.676564261558327e-05
+      },
+      {
+        "function": "fast_tanh",
+        "events": 3024,
+        "share": 4.160614982922148e-05
+      },
+      {
+        "function": "__kernel_sin",
+        "events": 2880,
+        "share": 3.962490459925855e-05
+      },
+      {
+        "function": "compute_generic_dense",
+        "events": 2860,
+        "share": 3.9349731650652585e-05
+      },
+      {
+        "function": "bench_arena_rewind",
+        "events": 2646,
+        "share": 3.6405381100568795e-05
+      },
+      {
+        "function": "bench_write_file",
+        "events": 2528,
+        "share": 3.4781860703793615e-05
+      },
+      {
+        "function": "adapter_fargan_frame",
+        "events": 1586,
+        "share": 2.18212148244528e-05
+      },
+      {
+        "function": "fast_nonlinear4_fallback",
+        "events": 1507,
+        "share": 2.073428167745925e-05
+      },
+      {
+        "function": "__ieee754_sqrtf",
+        "events": 1456,
+        "share": 2.0032590658514043e-05
+      },
+      {
+        "function": "bench_arena_mark",
+        "events": 882,
+        "share": 1.213512703352293e-05
+      },
+      {
+        "function": "copysignf",
+        "events": 744,
+        "share": 1.0236433688141792e-05
+      },
+      {
+        "function": "bwe_push",
+        "events": 696,
+        "share": 9.576018611487483e-06
+      },
+      {
+        "function": "exp2f",
+        "events": 682,
+        "share": 9.383397547463309e-06
+      },
+      {
+        "function": "publish_packet",
+        "events": 549,
+        "share": 7.553497439233661e-06
+      },
+      {
+        "function": "fast_erf",
+        "events": 324,
+        "share": 4.457801767416587e-06
+      },
+      {
+        "function": "init_bbwenetlayers",
+        "events": 260,
+        "share": 3.577248331877508e-06
+      },
+      {
+        "function": "osce_bwe_reset",
+        "events": 151,
+        "share": 2.0775557619750143e-06
+      },
+      {
+        "function": "alloc",
+        "events": 84,
+        "share": 1.155726384145041e-06
+      },
+      {
+        "function": "fast_front_eligible",
+        "events": 38,
+        "share": 5.228286023513281e-07
+      },
+      {
+        "function": "osce_load_models",
+        "events": 28,
+        "share": 3.85242128048347e-07
+      },
+      {
+        "function": "init_adaconv_state",
+        "events": 9,
+        "share": 1.2382782687268298e-07
+      },
+      {
+        "function": "init_adashape_state",
+        "events": 6,
+        "share": 8.255188458178864e-08
+      },
+      {
+        "function": "profile_dequant",
+        "events": 5,
+        "share": 6.879323715149053e-08
+      }
+    ],
+    "semantic_classes_partial": {
+      "scalar_load_store_stack": 5974047,
+      "branch_loop_control": 6107572,
+      "other_scalar_or_vector": 16673274,
+      "VFP_or_MVE_data_transfer": 3663437,
+      "VFP_scalar": 4001939,
+      "MVE_or_coprocessor_aliased_by_objdump": 24634187,
+      "VFP_vector": 6810339,
+      "MVE_signed_I8_dot_opcode": 4816768
+    },
+    "dot_opcode_events": 4816768
+  },
+  "o3": {
+    "tag": "ordinary_o3_v1",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o3_v1/firmware.elf",
+    "elf_sha256": "07948f889e62770976851b932e1442a94ed4189c40b1d7687d0bc65144e35bc1",
+    "disassembly_sha256": "4b5a26e1ae45025544d4b120e97626fd27e293b0a16662676ef6b689d93cbe00",
+    "csv": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/release_ordinary_o3_v1_instruction_counts.csv",
+    "csv_sha256": "11954dfc06603b3c300fd9b96af195e8a327c112a92a49b62bdbc1cce9c2dd2f",
+    "begin_symbol": "tensor_views_prepare",
+    "begin_pc": "0x1000c93c",
+    "end_symbol": "snapshot_first_active_costs",
+    "end_pc": "0x1000c938",
+    "begin_marker_instruction_events": 1,
+    "end_marker_instruction_events": 0,
+    "instruction_events": 68816649,
+    "uncalibrated_1ipc_floor_ms": 344.083245,
+    "functions": [
+      {
+        "function": "packed_matrix_pair",
+        "events": 14906284,
+        "share": 0.21660868723788046
+      },
+      {
+        "function": "packed_matrix8",
+        "events": 13020092,
+        "share": 0.18919973856907796
+      },
+      {
+        "function": "adaconv_xcorr_mve.constprop.0.isra.0",
+        "events": 5074800,
+        "share": 0.07374378255471288
+      },
+      {
+        "function": "cgemv8x4",
+        "events": 4494800,
+        "share": 0.06531558954577983
+      },
+      {
+        "function": "compute_linear_c",
+        "events": 3647700,
+        "share": 0.05300606834256053
+      },
+      {
+        "function": "ensure_raw_condition_chunk",
+        "events": 2300901,
+        "share": 0.033435237452494965
+      },
+      {
+        "function": "n25_unpack",
+        "events": 2114681,
+        "share": 0.03072920624193718
+      },
+      {
+        "function": "pair_prepare.isra.0",
+        "events": 1832798,
+        "share": 0.026633060845493946
+      },
+      {
+        "function": "memcpy",
+        "events": 1488026,
+        "share": 0.021623052293639
+      },
+      {
+        "function": "bbwenet_process_frames",
+        "events": 1487031,
+        "share": 0.021608593583218504
+      },
+      {
+        "function": "fg_noise",
+        "events": 1183734,
+        "share": 0.017201273488338557
+      },
+      {
+        "function": "activation.constprop.0",
+        "events": 1161714,
+        "share": 0.016881292781344235
+      },
+      {
+        "function": "acoustic_begin",
+        "events": 1132465,
+        "share": 0.016456264820450643
+      },
+      {
+        "function": "frame",
+        "events": 1037038,
+        "share": 0.015069580037237792
+      },
+      {
+        "function": "log",
+        "events": 1021446,
+        "share": 0.01484300695897006
+      },
+      {
+        "function": "fast_i8_dense.constprop.0",
+        "events": 939766,
+        "share": 0.013656084881436176
+      },
+      {
+        "function": "depthwise_channels.constprop.0",
+        "events": 853011,
+        "share": 0.01239541611507413
+      },
+      {
+        "function": "norm.constprop.1",
+        "events": 789438,
+        "share": 0.011471613504458782
+      },
+      {
+        "function": "fg_gru",
+        "events": 753170,
+        "share": 0.010944589876789845
+      },
+      {
+        "function": "activation.constprop.1",
+        "events": 719459,
+        "share": 0.010454722955196496
+      },
+      {
+        "function": "memset",
+        "events": 646461,
+        "share": 0.009393962208185986
+      },
+      {
+        "function": "depthwise_channels",
+        "events": 599704,
+        "share": 0.008714519069360672
+      },
+      {
+        "function": "adashape_process_frame",
+        "events": 597638,
+        "share": 0.008684497264608161
+      },
+      {
+        "function": "adapter_stream_need_layer.constprop.0",
+        "events": 570548,
+        "share": 0.00829084252562196
+      },
+      {
+        "function": "compute_activation_c",
+        "events": 570300,
+        "share": 0.00828723874654228
+      },
+      {
+        "function": "memmove",
+        "events": 569550,
+        "share": 0.008276340221099694
+      },
+      {
+        "function": "opus_fft_impl",
+        "events": 437000,
+        "share": 0.006350207491213355
+      },
+      {
+        "function": "mt_twist_exact.constprop.0",
+        "events": 430105,
+        "share": 0.006250013713977849
+      },
+      {
+        "function": "fg_glu",
+        "events": 412640,
+        "share": 0.005996223384838166
+      },
+      {
+        "function": "adaconv_process_frame",
+        "events": 371120,
+        "share": 0.005392881016336614
+      },
+      {
+        "function": "fargan_frame",
+        "events": 311286,
+        "share": 0.004523411187894372
+      },
+      {
+        "function": "strcmp",
+        "events": 307270,
+        "share": 0.004465053216991139
+      },
+      {
+        "function": "lrintf",
+        "events": 302971,
+        "share": 0.004402582869154236
+      },
+      {
+        "function": "namefmt.constprop.0",
+        "events": 286495,
+        "share": 0.00416316406223151
+      },
+      {
+        "function": "linear",
+        "events": 279284,
+        "share": 0.004058378372942861
+      },
+      {
+        "function": "fg_tanh",
+        "events": 249432,
+        "share": 0.0036245879975934313
+      },
+      {
+        "function": "fusion_acoustic_gru.constprop.0",
+        "events": 192960,
+        "share": 0.0028039726258684873
+      },
+      {
+        "function": "osce_bwe_calculate_features",
+        "events": 179060,
+        "share": 0.0026019866209992296
+      },
+      {
+        "function": "fabs",
+        "events": 160300,
+        "share": 0.0023293781712620154
+      },
+      {
+        "function": "osce_bwe",
+        "events": 144700,
+        "share": 0.0021026888420562296
+      },
+      {
+        "function": "find",
+        "events": 134817,
+        "share": 0.001959075339457462
+      },
+      {
+        "function": "gemm2.constprop.2",
+        "events": 123778,
+        "share": 0.001798663576309855
+      },
+      {
+        "function": "adapter_stream_input",
+        "events": 108860,
+        "share": 0.001581884639573194
+      },
+      {
+        "function": "adaconv_xcorr4_tail.constprop.0",
+        "events": 88320,
+        "share": 0.0012834103561189096
+      },
+      {
+        "function": "opus_fft_c",
+        "events": 70720,
+        "share": 0.0010276582923995617
+      },
+      {
+        "function": "fast_i8_dense_pair.constprop.0",
+        "events": 69141,
+        "share": 0.0010047132635011041
+      },
+      {
+        "function": "sqrt",
+        "events": 56160,
+        "share": 0.0008160815851408283
+      },
+      {
+        "function": "strnlen",
+        "events": 48862,
+        "share": 0.0007100316669008396
+      },
+      {
+        "function": "tensor_views_prepare",
+        "events": 48516,
+        "share": 0.0007050038138299934
+      },
+      {
+        "function": "compute_generic_gru",
+        "events": 40320,
+        "share": 0.0005859047277934152
+      },
+      {
+        "function": "packed_dot8",
+        "events": 37675,
+        "share": 0.0005474692613992292
+      },
+      {
+        "function": "strstr",
+        "events": 36253,
+        "share": 0.0005268056571600863
+      },
+      {
+        "function": "floor",
+        "events": 32000,
+        "share": 0.00046500375221699623
+      },
+      {
+        "function": "forward_transform",
+        "events": 30880,
+        "share": 0.0004487286208894013
+      },
+      {
+        "function": "bench_alloc",
+        "events": 25752,
+        "share": 0.0003742117695966277
+      },
+      {
+        "function": "linear.constprop.0",
+        "events": 24500,
+        "share": 0.00035601849779113773
+      },
+      {
+        "function": "fg_layer.constprop.0",
+        "events": 21032,
+        "share": 0.00030562371614462075
+      },
+      {
+        "function": "strncmp",
+        "events": 20676,
+        "share": 0.00030045054940120667
+      },
+      {
+        "function": "fast_front_pair.constprop.1",
+        "events": 20224,
+        "share": 0.0002938823714011416
+      },
+      {
+        "function": "fabsf",
+        "events": 18928,
+        "share": 0.00027504971943635324
+      },
+      {
+        "function": "linear_init",
+        "events": 14324,
+        "share": 0.00020814730458613292
+      },
+      {
+        "function": "bwe_start",
+        "events": 13921,
+        "share": 0.00020229116358165013
+      },
+      {
+        "function": "exp",
+        "events": 13720,
+        "share": 0.00019937035876303714
+      },
+      {
+        "function": "memcmp",
+        "events": 13600,
+        "share": 0.0001976265946922234
+      },
+      {
+        "function": "compute_generic_conv1d",
+        "events": 13440,
+        "share": 0.0001953015759311384
+      },
+      {
+        "function": "sqrtf",
+        "events": 9464,
+        "share": 0.00013752485971817662
+      },
+      {
+        "function": "nearbyint",
+        "events": 9120,
+        "share": 0.0001325260693818439
+      },
+      {
+        "function": "strlen",
+        "events": 8840,
+        "share": 0.0001284572865499452
+      },
+      {
+        "function": "__ieee754_sqrt",
+        "events": 8640,
+        "share": 0.00012555101309858898
+      },
+      {
+        "function": "main",
+        "events": 7102,
+        "share": 0.00010320177025765959
+      },
+      {
+        "function": "nearbyintf",
+        "events": 7002,
+        "share": 0.00010174863353198149
+      },
+      {
+        "function": "__ieee754_rem_pio2",
+        "events": 6060,
+        "share": 8.806008557609366e-05
+      },
+      {
+        "function": "depthwise_range",
+        "events": 4881,
+        "share": 7.09276035803487e-05
+      },
+      {
+        "function": "cos",
+        "events": 4740,
+        "share": 6.887868079714256e-05
+      },
+      {
+        "function": "expf",
+        "events": 3990,
+        "share": 5.798015535455672e-05
+      },
+      {
+        "function": "__kernel_cos",
+        "events": 3832,
+        "share": 5.5684199327985294e-05
+      },
+      {
+        "function": "value",
+        "events": 3744,
+        "share": 5.440543900938856e-05
+      },
+      {
+        "function": "namefmt",
+        "events": 3640,
+        "share": 5.2894176814683316e-05
+      },
+      {
+        "function": "fg_weight",
+        "events": 3598,
+        "share": 5.228385938989851e-05
+      },
+      {
+        "function": "compute_overlap_window",
+        "events": 3399,
+        "share": 4.9392117305799064e-05
+      },
+      {
+        "function": "fast_tanh",
+        "events": 3024,
+        "share": 4.394285458450614e-05
+      },
+      {
+        "function": "__kernel_sin",
+        "events": 2880,
+        "share": 4.185033769952966e-05
+      },
+      {
+        "function": "compute_generic_dense",
+        "events": 2860,
+        "share": 4.1559710354394033e-05
+      },
+      {
+        "function": "bench_arena_rewind",
+        "events": 2646,
+        "share": 3.8449997761442875e-05
+      },
+      {
+        "function": "bench_write_file",
+        "events": 2528,
+        "share": 3.67352964251427e-05
+      },
+      {
+        "function": "fg_layer",
+        "events": 2510,
+        "share": 3.647373181452064e-05
+      },
+      {
+        "function": "fast_nonlinear4_fallback",
+        "events": 1631,
+        "share": 2.3700659995810025e-05
+      },
+      {
+        "function": "adapter_fargan_frame",
+        "events": 1582,
+        "share": 2.298862300022775e-05
+      },
+      {
+        "function": "__ieee754_sqrtf",
+        "events": 1456,
+        "share": 2.1157670725873328e-05
+      },
+      {
+        "function": "bench_arena_mark",
+        "events": 882,
+        "share": 1.2816665920480958e-05
+      },
+      {
+        "function": "copysignf",
+        "events": 744,
+        "share": 1.0811337239045161e-05
+      },
+      {
+        "function": "bwe_push",
+        "events": 696,
+        "share": 1.0113831610719667e-05
+      },
+      {
+        "function": "exp2f",
+        "events": 682,
+        "share": 9.910392469124731e-06
+      },
+      {
+        "function": "fast_erf",
+        "events": 324,
+        "share": 4.708162991197087e-06
+      },
+      {
+        "function": "init_bbwenetlayers",
+        "events": 260,
+        "share": 3.7781554867630943e-06
+      },
+      {
+        "function": "osce_bwe_reset",
+        "events": 151,
+        "share": 2.194236455773951e-06
+      },
+      {
+        "function": "alloc",
+        "events": 96,
+        "share": 1.3950112566509886e-06
+      },
+      {
+        "function": "osce_load_models",
+        "events": 28,
+        "share": 4.0687828318987167e-07
+      },
+      {
+        "function": "init_adaconv_state",
+        "events": 9,
+        "share": 1.307823053110302e-07
+      },
+      {
+        "function": "init_adashape_state",
+        "events": 6,
+        "share": 8.718820354068679e-08
+      },
+      {
+        "function": "profile_dequant",
+        "events": 5,
+        "share": 7.265683628390566e-08
+      }
+    ],
+    "semantic_classes_partial": {
+      "scalar_load_store_stack": 5945743,
+      "branch_loop_control": 5286478,
+      "other_scalar_or_vector": 15861411,
+      "VFP_or_MVE_data_transfer": 2010937,
+      "MVE_or_coprocessor_aliased_by_objdump": 25043252,
+      "VFP_vector": 7131049,
+      "VFP_scalar": 2721011,
+      "MVE_signed_I8_dot_opcode": 4816768
+    },
+    "dot_opcode_events": 4816768
+  },
+  "o3_vs_o2": {
+    "delta_events": -3864914,
+    "reduction_fraction": 0.05317598907442318,
+    "o2_floor_ms": 363.407815,
+    "o3_floor_ms": 344.083245
+  },
+  "o3_six_file_identity": {
+    "condition.f32": {
+      "bytes": 35588,
+      "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    },
+    "durations.u32": {
+      "bytes": 136,
+      "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    },
+    "output.pcm": {
+      "bytes": 90560,
+      "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    },
+    "output24.pcm": {
+      "bytes": 135840,
+      "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    },
+    "first24.pcm": {
+      "bytes": 9120,
+      "sha256": "5f4fb1d5c5229cf858155f3f90eaa8249123490f36666110c31311358d977a3a",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    },
+    "fargan.f32": {
+      "bytes": 181120,
+      "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7",
+      "o3_vs_o2": true,
+      "o3_vs_integrated": true,
+      "o3_vs_final_native": true
+    }
+  },
+  "six_file_references": [
+    "opt300c/integrated/reports/final_v1_ordinary/run_001",
+    "opt300c/final_native/reports/final_v1_zh/run_001"
+  ],
+  "deterministic_repeat_profiles": {
+    "ordinary_o2_v1": {
+      "run1_csv_sha256": "91abb9418003e493183d1c8d1dc38aac45dcb024a1ad9073f2cf04cbfea0d52c",
+      "repeat_csv_sha256": "91abb9418003e493183d1c8d1dc38aac45dcb024a1ad9073f2cf04cbfea0d52c",
+      "identical": true
+    },
+    "ordinary_o3_v1": {
+      "run1_csv_sha256": "11954dfc06603b3c300fd9b96af195e8a327c112a92a49b62bdbc1cce9c2dd2f",
+      "repeat_csv_sha256": "11954dfc06603b3c300fd9b96af195e8a327c112a92a49b62bdbc1cce9c2dd2f",
+      "identical": true
+    }
+  },
+  "profile_run_reports": {
+    "ordinary_o2_v1": {
+      "status": "PASSED",
+      "elf_sha256": "1566818332c479ebffcece1a50e97f38e591c28d9da6a36ae1a07e0c5b691dc8",
+      "result": "25d7a04f4560f1ec5909b5441ab5e541d66e325a914652c3f65c13acbf7481be"
+    },
+    "ordinary_o3_v1": {
+      "status": "PASSED",
+      "elf_sha256": "07948f889e62770976851b932e1442a94ed4189c40b1d7687d0bc65144e35bc1",
+      "result": "a240592aa735b1212f13a3909c2cce89fb09f587ed5d88c6ad59894831a65390"
+    }
+  },
+  "top_o3_functions": [
+    {
+      "function": "packed_matrix_pair",
+      "events": 14906284,
+      "share": 0.21660868723788046
+    },
+    {
+      "function": "packed_matrix8",
+      "events": 13020092,
+      "share": 0.18919973856907796
+    },
+    {
+      "function": "adaconv_xcorr_mve.constprop.0.isra.0",
+      "events": 5074800,
+      "share": 0.07374378255471288
+    },
+    {
+      "function": "cgemv8x4",
+      "events": 4494800,
+      "share": 0.06531558954577983
+    },
+    {
+      "function": "compute_linear_c",
+      "events": 3647700,
+      "share": 0.05300606834256053
+    },
+    {
+      "function": "ensure_raw_condition_chunk",
+      "events": 2300901,
+      "share": 0.033435237452494965
+    },
+    {
+      "function": "n25_unpack",
+      "events": 2114681,
+      "share": 0.03072920624193718
+    },
+    {
+      "function": "pair_prepare.isra.0",
+      "events": 1832798,
+      "share": 0.026633060845493946
+    },
+    {
+      "function": "memcpy",
+      "events": 1488026,
+      "share": 0.021623052293639
+    },
+    {
+      "function": "bbwenet_process_frames",
+      "events": 1487031,
+      "share": 0.021608593583218504
+    },
+    {
+      "function": "fg_noise",
+      "events": 1183734,
+      "share": 0.017201273488338557
+    },
+    {
+      "function": "activation.constprop.0",
+      "events": 1161714,
+      "share": 0.016881292781344235
+    },
+    {
+      "function": "acoustic_begin",
+      "events": 1132465,
+      "share": 0.016456264820450643
+    },
+    {
+      "function": "frame",
+      "events": 1037038,
+      "share": 0.015069580037237792
+    },
+    {
+      "function": "log",
+      "events": 1021446,
+      "share": 0.01484300695897006
+    },
+    {
+      "function": "fast_i8_dense.constprop.0",
+      "events": 939766,
+      "share": 0.013656084881436176
+    },
+    {
+      "function": "depthwise_channels.constprop.0",
+      "events": 853011,
+      "share": 0.01239541611507413
+    },
+    {
+      "function": "norm.constprop.1",
+      "events": 789438,
+      "share": 0.011471613504458782
+    },
+    {
+      "function": "fg_gru",
+      "events": 753170,
+      "share": 0.010944589876789845
+    },
+    {
+      "function": "activation.constprop.1",
+      "events": 719459,
+      "share": 0.010454722955196496
+    }
+  ],
+  "top_o2_functions": [
+    {
+      "function": "packed_matrix_pair",
+      "events": 14906284,
+      "share": 0.2050903060518938
+    },
+    {
+      "function": "packed_matrix8",
+      "events": 13020092,
+      "share": 0.17913885533804494
+    },
+    {
+      "function": "adaconv_xcorr_mve.constprop.0.isra.0",
+      "events": 5074800,
+      "share": 0.06982238397927684
+    },
+    {
+      "function": "cgemv8x4",
+      "events": 4494800,
+      "share": 0.06184236846970393
+    },
+    {
+      "function": "compute_linear_c",
+      "events": 3651460,
+      "share": 0.050239150745836327
+    },
+    {
+      "function": "ensure_raw_condition_chunk",
+      "events": 3453350,
+      "share": 0.04751342510341997
+    },
+    {
+      "function": "activation",
+      "events": 2686798,
+      "share": 0.036966706398430096
+    },
+    {
+      "function": "norm",
+      "events": 2107785,
+      "share": 0.029000270673870895
+    },
+    {
+      "function": "pair_prepare.isra.0",
+      "events": 1651814,
+      "share": 0.022726726446430437
+    },
+    {
+      "function": "n25_value",
+      "events": 1545422,
+      "share": 0.02126291642902616
+    },
+    {
+      "function": "memcpy",
+      "events": 1488026,
+      "share": 0.020473225101116772
+    },
+    {
+      "function": "depthwise_channels",
+      "events": 1421809,
+      "share": 0.01956216874422472
+    },
+    {
+      "function": "fg_noise",
+      "events": 1077236,
+      "share": 0.014821310323224613
+    },
+    {
+      "function": "log",
+      "events": 1021446,
+      "share": 0.014053715383088281
+    },
+    {
+      "function": "frame",
+      "events": 1013728,
+      "share": 0.01394752614222124
+    },
+    {
+      "function": "fast_i8_dense.constprop.0",
+      "events": 981063,
+      "share": 0.013498099923910552
+    },
+    {
+      "function": "adaconv_process_frame",
+      "events": 844960,
+      "share": 0.01162550673270469
+    },
+    {
+      "function": "apply_valin_activation",
+      "events": 827301,
+      "share": 0.011382542777733054
+    },
+    {
+      "function": "adapter_stream_need_layer",
+      "events": 812464,
+      "share": 0.011178405725809722
+    },
+    {
+      "function": "fusion_fg_gru",
+      "events": 755259,
+      "share": 0.01039134229955952
+    }
+  ],
+  "matrix_kernel_events_o3": {
+    "events": 27926376,
+    "share": 0.4058084258069584,
+    "functions": [
+      "packed_matrix_pair",
+      "packed_matrix8"
+    ]
+  },
+  "dot_opcode_events_identical": [
+    4816768,
+    4816768
+  ],
+  "assertions": [
+    "begin/end marker event counts are 1/0",
+    "all event PCs map to a real ELF instruction",
+    "O3 six files byte-identical to O2 and to both frozen references",
+    "two independent profile runs produce byte-identical CSVs",
+    "MVE signed I8 dot opcode events identical in O2 and O3 (arithmetic unchanged)"
+  ],
+  "caveats": [
+    "Guest instruction events are not cycles. No DWT/cycle model, pipeline calibration, memory wait, cache or external-memory cost is included.",
+    "Cortex-M55 is in-order; only specific 16-bit Thumb-1 pairs can dual issue and MVE operations take two 64-bit beats, so real latency is above the naive 1-instruction-per-cycle figure, not below it.",
+    "objdump aliases several MVE opcodes as coprocessor instructions, so the mnemonic class split is partial; function attribution comes from ELF labels and is complete.",
+    "QEMU host wall seconds in the RESULT.json files are emulation time and are never used as chip latency."
+  ]
+}

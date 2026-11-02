@@ -1,0 +1,183 @@
+/* Request-scoped decoded-dictionary cache.
+ * Decodes each FEP lexicon section at most once per request and answers word
+ * lookups from SRAM. If any section cannot be cached, returns -100 so the
+ * original per-word decode path runs instead; output bytes are unchanged. */
+#include "dict_cache.h"
+#include "fep_dictionary.h"
+#include "fep_runtime.h"
+#include "fep_assets.h"
+#include "reader.h"
+#include "bench.h"
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+
+#define N25_DICT_CACHE_BYTES 1650000u
+#define N25_DICT_WORK_BYTES 320000u
+#define N25_DICT_SLOTS 2
+
+static unsigned char n25_dict_cache_memory[N25_DICT_CACHE_BYTES]
+    __attribute__((section(".dictcache"),aligned(16)));
+static size_t n25_dict_used;
+
+static void *n25_dict_take(size_t bytes,size_t align){
+    size_t p=((n25_dict_used+align-1)/align)*align;
+    if(p>N25_DICT_CACHE_BYTES||bytes>N25_DICT_CACHE_BYTES-p)return NULL;
+    n25_dict_used=p+bytes;return n25_dict_cache_memory+p;
+}
+static uint32_t n25_dict_u32(const unsigned char*p){
+    return (uint32_t)p[0]|(uint32_t)p[1]<<8|(uint32_t)p[2]<<16|(uint32_t)p[3]<<24;
+}
+typedef struct{
+    const unsigned char*keys;size_t keys_bytes;
+    const unsigned char*ids;size_t ids_bytes;
+    uint32_t*id_index;size_t id_index_capacity;
+    FepKeyIndex key_index;int key_index_ready;
+    unsigned rows,block,valid;
+}DictCacheSlot;
+static struct{
+    int lexicon;
+    FepPack pack;
+    const FepLexiconDesc*d;
+    unsigned char*work;unsigned char*pool;size_t pool_bytes;
+    DictCacheSlot slot[N25_DICT_SLOTS];size_t slot_base[N25_DICT_SLOTS],slot_cap[N25_DICT_SLOTS],slot_used[N25_DICT_SLOTS];
+}N25={-1};
+
+static int n25_dict_cached_lexicon(unsigned lexicon){
+    return lexicon==0||lexicon==2||lexicon==3||lexicon==4||lexicon==5||lexicon==6;
+}
+void n25_dict_cache_reset(void){
+    N25.lexicon=-1;n25_dict_used=0;N25.pool=NULL;N25.work=NULL;N25.pool_bytes=0;
+    for(unsigned i=0;i<N25_DICT_SLOTS;i++){N25.slot[i].valid=0;N25.slot_base[i]=0;N25.slot_cap[i]=0;N25.slot_used[i]=0;}
+}
+static void *n25_dict_take_slot(unsigned slot,size_t bytes,size_t align);
+static int n25_dict_read_section(const char*name,FepSection*section,unsigned char**out,size_t*bytes){
+    if(fep_find(&N25.pack,name,section))return -1;
+    *bytes=section->raw_bytes;
+    *out=n25_dict_take(*bytes,16);
+    if(!*out)return -2;
+    size_t peak=0;
+    if(fep_decode(section,*out,*bytes,N25.work,N25_DICT_WORK_BYTES,&peak))return -3;
+    return 0;
+}
+static int n25_dict_read_section_slot(unsigned slot,const char*name,FepSection*section,unsigned char**out,size_t*bytes){
+    if(fep_find(&N25.pack,name,section))return -1;
+    *bytes=section->raw_bytes;
+    *out=n25_dict_take_slot(slot,*bytes,16);
+    if(!*out)return -2;
+    size_t peak=0;
+    if(fep_decode(section,*out,*bytes,N25.work,N25_DICT_WORK_BYTES,&peak))return -3;
+    return 0;
+}
+static void n25_dict_fail(const char*where,const char*word,int code){
+    char line[96];size_t n=0;const char*p=where;
+    while(*p&&n<sizeof(line)-8)line[n++]=*p++;
+    line[n++]=' ';line[n++]=(char)('0'+((code<0?-code:code)%10));line[n++]=' ';
+    if(word)for(const char*q=word;*q&&n<sizeof(line)-2;q++)line[n++]=*q;
+    line[n++]='\n';line[n]=0;bench_puts(line);
+}
+static void n25_dict_trace(const char*tag,unsigned a,unsigned b){
+    char line[48];size_t n=0;while(*tag&&n<40)line[n++]=*tag++;line[n++]=':';
+    line[n++]=(char)('0'+a%10);line[n++]='/';line[n++]=(char)('0'+b%10);line[n++]='\n';line[n]=0;bench_puts(line);
+}
+static int n25_dict_ensure(unsigned lexicon){
+    if(N25.lexicon==(int)lexicon)return 0;
+    n25_dict_trace("CACHE_ENS",lexicon,0);
+    n25_dict_cache_reset();
+    N25.d=fep_lexicons+lexicon;
+    if(!N25.d->pack||N25.d->pack>=FEP_PROBE_PACK_COUNT||!N25.d->blocks)return -1;
+    const FepProbePack*image=fep_probe_packs+N25.d->pack;
+    if(!image->data||!image->bytes||fep_open(&N25.pack,image->data,image->bytes))return -1;
+    N25.work=n25_dict_take(N25_DICT_WORK_BYTES,16);
+    if(!N25.work)return -1;
+    FepSection section;unsigned char*data=NULL;size_t bytes=0;
+    if(n25_dict_read_section("pool/0",&section,&data,&bytes))return -1;
+    N25.pool=data;N25.pool_bytes=bytes;
+    {size_t available=N25_DICT_CACHE_BYTES-n25_dict_used;size_t half=available/N25_DICT_SLOTS;
+     for(unsigned i=0;i<N25_DICT_SLOTS;i++){
+        size_t begin=n25_dict_used+half*i;begin=(begin+15)&~(size_t)15;
+        size_t end=(i+1<N25_DICT_SLOTS)?(n25_dict_used+half*(i+1)):N25_DICT_CACHE_BYTES;
+        N25.slot[i].valid=0;N25.slot_base[i]=begin;
+        N25.slot_cap[i]=end>begin?end-begin:0;N25.slot_used[i]=0;}}
+    N25.lexicon=(int)lexicon;
+    return 0;
+}
+static void *n25_dict_take_slot(unsigned slot,size_t bytes,size_t align){
+    size_t base=N25.slot_base[slot],used=N25.slot_used[slot];
+    size_t p=(used+align-1)&~(align-1);
+    if(p>N25.slot_cap[slot]||bytes>N25.slot_cap[slot]-p)return NULL;
+    N25.slot_used[slot]=p+bytes;
+    return n25_dict_cache_memory+base+p;
+}
+static int n25_dict_load_block(unsigned block){
+    unsigned slot=block%N25_DICT_SLOTS;
+    n25_dict_trace("CACHE_BLK",block,slot);
+    DictCacheSlot*s=N25.slot+slot;
+    if(s->valid&&s->block==block)return 0;
+    s->valid=0;s->block=block;s->key_index_ready=0;
+    N25.slot_used[slot]=0;
+    FepSection section;unsigned char*data=NULL;size_t bytes=0;
+    char name[32];
+    {
+        unsigned n=(unsigned)block;size_t k=0;char digits[10];
+        do{digits[k++]=(char)('0'+n%10);n/=10;}while(n);
+        size_t base=strlen("keys/");memcpy(name,"keys/",base);
+        while(k)name[base++]=digits[--k];name[base]=0;
+    }
+    n25_dict_trace("CACHE_K1",0,0);
+    {int r=n25_dict_read_section_slot(slot,name,&section,&data,&bytes);n25_dict_trace("CACHE_K2",(unsigned)(r<0?8:0),0);if(r)return -1;}
+    s->keys=data;s->keys_bytes=bytes;s->rows=n25_dict_u32(data+12);
+    if(!s->rows||s->rows>65536)return -1;
+    /* optional exact key index (falls back to linear scan when short on RAM) */
+    {
+        unsigned groups=(s->rows+63)/64;
+        size_t capacity=(size_t)groups*(20u+64u);
+        void*index_memory=n25_dict_take_slot(slot,capacity,16);
+        n25_dict_trace("CACHE_KI",capacity/1000,0);
+        if(index_memory&&!fep_keys_index_build(&s->key_index,s->keys,s->keys_bytes,
+                N25.d->alphabet,N25.d->alphabet_count,index_memory,capacity))s->key_index_ready=1;
+    }
+    /* ids/<0>/<block> */
+    {
+        unsigned n=(unsigned)block;size_t k=0;char digits[10];
+        do{digits[k++]=(char)('0'+n%10);n/=10;}while(n);
+        size_t base=strlen("ids/0/");memcpy(name,"ids/0/",base);
+        while(k)name[base++]=digits[--k];name[base]=0;
+    }
+    {int r=n25_dict_read_section_slot(slot,name,&section,&data,&bytes);n25_dict_trace("CACHE_I1",(unsigned)(r<0?8:0),0);if(r)return -1;}
+    s->ids=data;s->ids_bytes=bytes;
+    {
+        size_t entries=(s->rows+63)/64;size_t capacity=entries*sizeof(uint32_t);
+        uint32_t*index=n25_dict_take_slot(slot,capacity,16);
+        if(!index)return -1;
+        if(fep_ids_index_build(s->ids,s->ids_bytes,s->rows,index,entries))return -1;
+        s->id_index=index;s->id_index_capacity=entries;
+    }
+    s->valid=1;
+    return 0;
+}
+int n25_dict_cache_query(unsigned lexicon,const char*word,unsigned char*out,size_t cap,size_t*written){
+    if(!word||!out||!written)return -1;
+    if(!n25_dict_cached_lexicon(lexicon))return -100;
+    if(n25_dict_ensure(lexicon)){n25_dict_fail("ENSURE_FAIL",word,-1);return -100;}
+    if(!*word)return -5;
+    const FepLexiconDesc*d=N25.d;
+    unsigned lo=0,hi=d->blocks;
+    while(lo<hi){unsigned m=lo+(hi-lo)/2;if(strcmp(d->first_keys[m],word)<=0)lo=m+1;else hi=m;}
+    if(!lo)return -5;
+    unsigned block=lo-1;
+    if(n25_dict_load_block(block)){n25_dict_fail("BLOCK_FAIL",word,-2);return -100;}
+    DictCacheSlot*s=N25.slot+block%N25_DICT_SLOTS;
+    int row;
+    if(s->key_index_ready)row=fep_keys_index_query(&s->key_index,word);
+    else{size_t unused=0;row=fep_keys(s->keys,s->keys_bytes,d->alphabet,d->alphabet_count,word,NULL,0,&unused);}
+    if(row<0){n25_dict_fail("ROW_ABSENT",word,row);return -5;}
+    uint32_t id;
+    if(fep_id_index_query(s->ids,s->ids_bytes,s->id_index,s->rows,(unsigned)row,&id)){n25_dict_fail("ID_FAIL",word,-3);return -3;}
+    const unsigned char*value=NULL;size_t length=0;
+    if(fep_pool(N25.pool,N25.pool_bytes,id,&value,&length)){n25_dict_fail("POOL_FAIL",word,-4);return -4;}
+    if(!length)return -5;
+    if(length>cap)return -6;
+    memcpy(out,value,length);*written=length;
+    return 0;
+}

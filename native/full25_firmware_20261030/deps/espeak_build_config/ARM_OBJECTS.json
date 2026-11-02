@@ -1,0 +1,227 @@
+[
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/common.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_common.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/mnemonics.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_mnemonics.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/error.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_error.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/ieee80.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_ieee80.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/compiledata.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_compiledata.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/compiledict.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_compiledict.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/dictionary.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_dictionary.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/encoding.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_encoding.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/intonation.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_intonation.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/langopts.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_langopts.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/numbers.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_numbers.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/phoneme.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_phoneme.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/phonemelist.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_phonemelist.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/readclause.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_readclause.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/setlengths.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_setlengths.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/soundicon.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_soundicon.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/spect.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_spect.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/ssml.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_ssml.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/synthdata.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_synthdata.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/synthesize.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_synthesize.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/tr_languages.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_tr_languages.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/translate.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_translate.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/translateword.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_translateword.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/voices.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_voices.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/wavegen.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_wavegen.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/speech.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_speech.o"
+  },
+  {
+    "group": "espeak",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/libespeak-ng/espeak_api.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/espeak_espeak_api.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/case.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_case.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/categories.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_categories.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/ctype.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_ctype.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/proplist.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_proplist.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/scripts.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_scripts.o"
+  },
+  {
+    "group": "ucd",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/upstream/espeak-ng/src/ucd-tools/src/tostring.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/ucd_tostring.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/inflate.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_inflate.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/inftrees.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_inftrees.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/inffast.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_inffast.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/zutil.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_zutil.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/adler32.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_adler32.o"
+  },
+  {
+    "group": "zlib",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/sources/zlib-1.3.1/crc32.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/zlib_crc32.o"
+  },
+  {
+    "group": "fep",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/reader.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/fep.o"
+  },
+  {
+    "group": "predict",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/support/predict_reader.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/predict.o"
+  },
+  {
+    "group": "values",
+    "source": "/home/fomak/ffb/m4_frontend_4mb_20261022/support/value_decoders.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/values.o"
+  },
+  {
+    "group": "open",
+    "source": "/home/fomak/ffb/m4_frontend_lossy_20261023/open_predict.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/open_predict.o"
+  },
+  {
+    "group": "legacy",
+    "source": "/home/fomak/ffb/m4_frontend_refine_20261022/table_reader.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/legacy_table.o"
+  },
+  {
+    "group": "platform",
+    "source": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/platform_stubs.c",
+    "object": "/home/fomak/ffb/m4_frontend_rom_accounting_20261023/arm_build/platform_stubs.o"
+  }
+]

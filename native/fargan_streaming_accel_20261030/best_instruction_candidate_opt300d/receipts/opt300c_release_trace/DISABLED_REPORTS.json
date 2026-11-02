@@ -1,0 +1,451 @@
+{
+  "status": "RELEASE_DIAGNOSTIC_REPORTS_AND_HOST_CLOCK_CALLS_DISABLED",
+  "disabled_report_bodies": [
+    {
+      "file": "src/quality.c",
+      "function": "report_first_costs",
+      "old_body_sha256": "778403d929160924c53cd39ea69ded2c8e48be7f60ae256c0ca30631b488cdf8",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/quality.c",
+      "function": "snapshot_first_active_costs",
+      "old_body_sha256": "8a16af15d7dbd63f792b84ac04a13c7ba4f0928735db0c007805fe22c65dd6b6",
+      "replacement": "noinline memory-barrier PC anchor",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/quality.c",
+      "function": "report_front_i8",
+      "old_body_sha256": "4bfe84ff35bd0667f4c882fff0e96ad08e416b7ee3f24d236a392c1ce2bfae82",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/fargan_stream.inc",
+      "function": "report_fg_ram_cache",
+      "old_body_sha256": "fb3e0b1b1f0bad1d42045c15e65980c002d658ffb695a9b4d055444c4c82b51b",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/fargan_stream.inc",
+      "function": "fg_noise_report",
+      "old_body_sha256": "ddfffa5bfcb9ff06e11e2a68ce310018037e1237a973ad7f2dbe1d4e48e79a90",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/fargan_stream.inc",
+      "function": "fargan_stream_report",
+      "old_body_sha256": "b3f2ea347626cf92a6594732b51279da351a89d811c4bc11925253d6752bbd23",
+      "replacement": "if(fg_received<5||fg_output_frames!=fg_received-4)fail(\"FARGAN_VALID_CENTER_COUNT\");",
+      "retained_functional_checks": true
+    },
+    {
+      "file": "src/adapter_stream.inc",
+      "function": "adapter_stream_report",
+      "old_body_sha256": "bbd1853df87112b49dcd4e90e8497abf155c515b2db30526707703c5dc6701bc",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/fast_math.inc",
+      "function": "fast_math_report",
+      "old_body_sha256": "8b165ecd230826ec1996e48aa305518b2ee9fc405e91a44e01d61de85161153f",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/gru_fusion.inc",
+      "function": "fusion_report",
+      "old_body_sha256": "f0770cfc855d6ecc5ecca64833c2f656f88aad691264582656dbf5b90d11b15e",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/depthwise_exact.inc",
+      "function": "depthwise_report",
+      "old_body_sha256": "812fafcae9603238e449bcfd630f00dadb157c6a3c20f4734b257806de8d5641",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/fir_fast.inc",
+      "function": "fast_fir_report",
+      "old_body_sha256": "b011678fbafe095c18209116b8a1c74cc21d91833de5a55aa90aa3daf51693d5",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "function": "bwe_activation_report",
+      "old_body_sha256": "557116f7f8ae24ec7dff54f392255c7bdb3849d0163a8c4d63d6c137ef906f38",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "function": "bwe_block16_report",
+      "old_body_sha256": "257c0f466e6bfa3921f9f1d0a4352dfe73fc3a8bb0c88a6848e9717523990492",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/identifier_control.inc",
+      "function": "identifier_snapshot_first",
+      "old_body_sha256": "3aaf6efdbe145a7434d6124f5597a71cd92fc3c4b4b1df75c24f4f433793d491",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    },
+    {
+      "file": "src/identifier_control.inc",
+      "function": "identifier_report",
+      "old_body_sha256": "d923a59af6b20d3fd96872b97c7dba81940975462d8bc8ffce65d5e56dcbdd9a",
+      "replacement": "identifier_pitch_export();",
+      "retained_functional_checks": true
+    },
+    {
+      "file": "src/bench.c",
+      "function": "bench_memory_report",
+      "old_body_sha256": "5b1b70c4e29769e63252a76c9134577f617422257e2d9b6b292ae7bf608167bb",
+      "replacement": "empty report body",
+      "retained_functional_checks": false
+    }
+  ],
+  "disabled_client_APIs": [
+    "bench_metric",
+    "bench_now",
+    "bench_tick_frequency"
+  ],
+  "header_implementation_guard": "TTS_BENCH_IMPLEMENTATION defined in bench.c only",
+  "diagnostic_clock_call_audit": [
+    {
+      "file": "src/adapter_stream.inc",
+      "line": 129,
+      "source_line": " uint64_t acoustic_before=acoustic_ticks,start=bench_now();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/adapter_stream.inc",
+      "line": 131,
+      "source_line": " adapter_ticks+=bench_now()-start-(acoustic_ticks-acoustic_before);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 87,
+      "source_line": "    if(power/480>=.0000316227766f&&peak>=.01f){active_found=1;bench_metric(\"full_chain_first_active_PCM24_host_ticks\",bench_now()-started);bench_metric(\"full_chain_first_active_audio_offset24\",produced-480);bench_metric(\"first_active_BWE_frames\",frames+1);bench_metric(\"first_active_BWE_input_samples\",320*(frames+1));bench_metric(\"BWE_first_mve_vectors\",bwe_mve_vectors);bench_metric(\"BWE_first_adaconv_mve_groups\",bwe_adaconv_mve_groups);bench_metric(\"BWE_first_adaconv_scalar_macs\",bwe_adaconv_scalar_macs);bench_metric(\"BWE_first_adaconv_calls\",bwe_adaconv_calls);bench_metric(\"BWE_first_adaconv_output4_stores\",bwe_adaconv_output4_stores);bench_metric(\"BWE_first_scalar_macs\",bwe_scalar_macs);bench_metric(\"BWE_first_i8_dots\",bwe_i8_dots);bench_metric(\"BWE_first_i8_inputs\",bwe_i8_inputs);bench_metric(\"BWE_first_quant_groups\",bwe_quant_groups);bench_metric(\"first_active_FIR_output_samples\",produced);bwe_block16_report(1);snapshot_first_active_costs();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 98,
+      "source_line": " int16_t out[960];uint64_t t=bench_now();osce_bwe(&model,&state,out,pending,320,0);model_ticks+=bench_now()-t;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 98,
+      "source_line": " int16_t out[960];uint64_t t=bench_now();osce_bwe(&model,&state,out,pending,320,0);model_ticks+=bench_now()-t;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 99,
+      "source_line": " t=bench_now();consume(out);filter_ticks+=bench_now()-t;frames++;held=0;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 99,
+      "source_line": " t=bench_now();consume(out);filter_ticks+=bench_now()-t;frames++;held=0;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/bwe_stage.c",
+      "line": 100,
+      "source_line": " if(frames==1){bench_metric(\"full_chain_first_any_PCM24_host_ticks\",bench_now()-started);bench_metric(\"full_chain_first_any_PCM24_samples\",produced);}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/component.c",
+      "line": 7,
+      "source_line": " uint64_t start=bench_now();bwe_start(45920,3040,start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/fargan_stream.inc",
+      "line": 27,
+      "source_line": " uint64_t start=bench_now();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/fargan_stream.inc",
+      "line": 39,
+      "source_line": " fg_i8_ram_bytes=0;fg_i8_source_copy_bytes=0;fg_i8_ram_init_ticks=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/hifi_stream.inc",
+      "line": 135,
+      "source_line": "   uint64_t stamp=bench_now();hfs_compute_conv(n,begin,end);generator_ticks+=bench_now()-stamp;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/hifi_stream.inc",
+      "line": 135,
+      "source_line": "   uint64_t stamp=bench_now();hfs_compute_conv(n,begin,end);generator_ticks+=bench_now()-stamp;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/identifier_control.inc",
+      "line": 130,
+      "source_line": " uint64_t start=bench_now();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/identifier_control.inc",
+      "line": 178,
+      "source_line": " identifier_group_done[g]=1;rewind_to(mark);identifier_prepare_ticks+=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 75,
+      "source_line": " bench_metric(\"full_chain_first_active_including_storage_host_ticks\",bench_now()-storage_boot_ticks);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 133,
+      "source_line": " uint64_t start=bench_now();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 137,
+      "source_line": " acoustic_gru_cache_fills=1;acoustic_gru_cache_init_ticks=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 418,
+      "source_line": " uint64_t begin_time=bench_now();unsigned n=end-decoded_frames;size_t base=bench_arena_mark();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 480,
+      "source_line": " decoded_frames=end;rewind_to(base);acoustic_ticks+=bench_now()-begin_time;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 490,
+      "source_line": " ensure_condition(right);uint64_t start=bench_now();unsigned n=right-left;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 501,
+      "source_line": " rewind_to(mark);adapter_ticks+=bench_now()-start;return mel;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 579,
+      "source_line": "  unsigned m=(unsigned)(right-left);if(m>max_mel)max_mel=m;size_t mark=bench_arena_mark();float*mel=adapter_window((unsigned)left,(unsigned)right);float*chunk=alloc(m*256);uint64_t start=bench_now();if(!begin)generator_prefix(mel,m,end*256,chunk);else generator(mel,m,chunk);generator_ticks+=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 579,
+      "source_line": "  unsigned m=(unsigned)(right-left);if(m>max_mel)max_mel=m;size_t mark=bench_arena_mark();float*mel=adapter_window((unsigned)left,(unsigned)right);float*chunk=alloc(m*256);uint64_t start=bench_now();if(!begin)generator_prefix(mel,m,end*256,chunk);else generator(mel,m,chunk);generator_ticks+=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 602,
+      "source_line": " if(!stream_part){first_pcm_ticks=bench_now()-inference_start_ticks;bench_metric(\"first_pcm_ready_host_ticks\",first_pcm_ticks);bench_metric(\"first_pcm_samples\",count);}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 605,
+      "source_line": " if(!first_nonpause_ticks&&ready>=first_nonpause_sample+320){first_nonpause_ticks=bench_now()-inference_start_ticks;bench_metric(\"first_nonpause_frame_ready_host_ticks\",first_nonpause_ticks);}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 614,
+      "source_line": "   if(energy/320>=.0000316227766f&&maximum>=.01f){active_found=1;first_active_ticks=bench_now()-inference_start_ticks;bench_metric(\"first_active_frame_ready_host_ticks\",first_active_ticks);bench_metric(\"first_active_frame_start_sample\",active_scan_sample);report_first_costs();break;}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 644,
+      "source_line": " if(!stream_part){first_pcm_ticks=bench_now()-inference_start_ticks;bench_metric(\"first_pcm_ready_host_ticks\",first_pcm_ticks);bench_metric(\"first_pcm_samples\",count);}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 649,
+      "source_line": "  if(energy/320>=.0000316227766f&&peak>=.01f){active_found=1;first_active_ticks=bench_now()-inference_start_ticks;bench_metric(\"first_active_frame_ready_host_ticks\",first_active_ticks);bench_metric(\"first_active_frame_start_sample\",fg_scan);report_first_costs();break;}",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 659,
+      "source_line": " uint64_t boot=bench_now();storage_initialize(boot);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 660,
+      "source_line": " uint64_t all=bench_now(),start=bench_now();inference_start_ticks=all;bench_metric(\"storage_before_request_host_ticks\",all-boot);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 660,
+      "source_line": " uint64_t all=bench_now(),start=bench_now();inference_start_ticks=all;bench_metric(\"storage_before_request_host_ticks\",all-boot);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 662,
+      "source_line": " acoustic_begin();acoustic_ticks=bench_now()-start;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/quality.c",
+      "line": 702,
+      "source_line": " bench_metric(\"decoded_frames\",decoded_frames);bench_metric(\"active_frame_detected\",active_found);bench_metric(\"tick_frequency_hz\",bench_tick_frequency());bench_metric(\"diagnostic_operation_counters_disabled\",1);bench_metric(\"operation_estimator_must_not_read_zero_counters\",1);bench_metric(\"acoustic_host_ticks\",acoustic_ticks);bench_metric(\"adapter_host_ticks\",adapter_ticks);bench_metric(\"firmware_total_host_ticks\",bench_now()-all);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 23,
+      "source_line": " size_t initial=bench_arena_mark();uint64_t start=bench_now();",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 29,
+      "source_line": " bench_metric(\"storage_metadata_decode_host_ticks\",bench_now()-start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 31,
+      "source_line": " start=bench_now();unsigned char hashes[STORAGE_METADATA_FILES][32];unsigned previous=0;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 39,
+      "source_line": " bench_metric(\"storage_metadata_sha256_host_ticks\",bench_now()-start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 40,
+      "source_line": " start=bench_now();if(bench_write_file(\"metadata.sha256.bin\",hashes,sizeof(hashes)))fail(\"METADATA_SHA_WRITE\");",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 42,
+      "source_line": " bench_metric(\"storage_metadata_probe_export_host_ticks\",bench_now()-start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 47,
+      "source_line": " start=bench_now();const unsigned char*index=storage_model_index;",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 59,
+      "source_line": " bench_metric(\"storage_model_decode_host_ticks\",bench_now()-start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 61,
+      "source_line": " start=bench_now();unsigned char hash[32];storage_sha256(model,MODEL_BYTES,hash);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 63,
+      "source_line": " bench_metric(\"storage_model_sha256_host_ticks\",bench_now()-start);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    },
+    {
+      "file": "src/storage.c",
+      "line": 69,
+      "source_line": " bench_metric(\"storage_initialization_total_host_ticks\",bench_now()-boot);",
+      "replacement": "UINT64_C(0)",
+      "reason": "Only diagnostic elapsed-time accumulation, first-time logging latch or report argument; never RNG/model/frame/cache/PCM control."
+    }
+  ],
+  "preserved": [
+    "actual BWE active_found power/peak detection and first2 getter",
+    "snapshot_first_active_costs noinline memory-barrier PC anchor",
+    "all floating-point computation and special-value guards",
+    "RNG, decoder, cache, arena, PCM progress and true length invariants",
+    "FARGAN_VALID_CENTER_COUNT fail check and identifier export/group completion checks",
+    "original six files, streamed PCM chunks, BEGIN/PASS and error paths"
+  ],
+  "old_operation_estimator_compatible": false,
+  "diagnostic_removal_is_not_additional_saving_from_old318ms_operation_budget": true,
+  "model_and_FP_flags_changed": false
+}

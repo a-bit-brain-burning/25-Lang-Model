@@ -1,0 +1,7 @@
+{
+  "before_sha256": "4c113b3073fd1c0277cc8736ff2eb4c6da361ef59614b5ad96bb1df64d73fa20",
+  "after_sha256": "bb5e48f22ed6ea011e4e702a9c98cb1e3e5e80cbcd8761dde05b4e41093d9ae7",
+  "policy": "Only omit OPUS_CLEAR padding products when all source samples are finite and all four vector accumulators are normal finite. Zero, subnormal, nonfinite and short-tail cases retain original products/additions.",
+  "weights_changed": false,
+  "new_approximations": false
+}

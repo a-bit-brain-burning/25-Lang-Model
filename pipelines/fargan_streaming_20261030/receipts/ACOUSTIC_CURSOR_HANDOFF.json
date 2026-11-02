@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE_CURRENT_MODEL_FINITE_CHECKS_PASSED",
+  "files_sha256": {
+    "m55_fargan_stream_20261030/acoustic_cursor.py": "0eb7671714482dbde197e74cd202f11fa051deadace01d5aab74d2763821ee1b",
+    "m55_fargan_stream_20261030/acoustic_cursor_verify.py": "5ae1c03e8a6b5473e02d1ee143506a450903d7d9169b1fc63cf16916159d500a",
+    "m55_fargan_stream_20261030/ACOUSTIC_CURSOR_README.txt": "b31adc4e9bbc2dc1f079c567bf4e5fe13a94710678c889001777f3998b7e5d2c",
+    "m55_fargan_stream_20261030/acoustic_cursor_validation/RESULT.json": "f774cbadce43af161ce869065406b558fa30d39b207f4ca8a02a905f1b4ebc36"
+  },
+  "source_weights_unchanged": true,
+  "training_updates": 0,
+  "model_math_unchanged": true,
+  "pending_processes": []
+}

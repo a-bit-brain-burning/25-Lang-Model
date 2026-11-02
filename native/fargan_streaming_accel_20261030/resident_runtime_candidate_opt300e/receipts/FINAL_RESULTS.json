@@ -1,0 +1,131 @@
+{
+  "status": "RESIDENT_OPT16_BOTH_ROI_SCOPES_BELOW_60M_OPTIMISTIC_HARDWARE_PENDING",
+  "goal": "drive the resident persistent-runtime firmware full request (API call -> first active speech packet) below the 60,000,000 executed-instruction line with byte-identical outputs",
+  "build": {
+    "tag": "opt16_fast",
+    "script": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300e_resident_20261030/build_o3_resident.py",
+    "opt": "3",
+    "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300e_resident_20261030/build/opt16_final/firmware.elf",
+    "elf_sha256": "2118790e4ce4facc632c694344d41a493ae5f2f87f25bb063d666fb746c52535",
+    "reproducible_rebuild": {
+      "note": "rebuilding after reverting the experimental field-name cache reproduced exactly the same ELF SHA256 (2118790e4ce4facc632c694344d41a493ae5f2f87f25bb063d666fb746c52535)",
+      "earlier_tag": "opt16_fast",
+      "reduced_tag": "opt16_final"
+    },
+    "arena_reserved_bytes": 6000000,
+    "stack_reserved_bytes": 131072,
+    "sram_sections": {
+      "zhprewarm_bytes": 1516448,
+      "note": "whole zh dictionary page image inflated at boot"
+    },
+    "dtcm_bss_end": "0x300512d0",
+    "dtcm_stack_bottom": "0x30060000"
+  },
+  "changes": [
+    "frontend_source/zh_tables.c: boot-time whole-dictionary page image (2439 pages, 1,516,448 bytes) in SRAM; per-request lookups read the prewarmed page directly",
+    "frontend_source/zh_t2s.c: first-byte dispatch index for traditional->simplified phrase matching (removes full phrase-list scan per position)",
+    "frontend_source/bridge.c + src/text_frontend.c: state-only reference pipeline (no scratch string formatting); targeted zeroing of only the used N25TextFeatures entries instead of the full ~132 KiB struct",
+    "frontend_source/zh_tables.c: inlined bytewise key compare for the dictionary page binary search (replaces strcmp/strncmp/memchr in the search)",
+    "carried from earlier resident rounds: counter-neutralized fast_math/gru_fusion/fargan_stream/fir_fast/adapter_stream, neutralized quality.c counters, opt9-opt12 kernels"
+  ],
+  "run": {
+    "report": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/opt300e_resident_20261030/reports/opt16_fast",
+    "marker": "NEW25_PERSISTENT_RUNTIME_PASS",
+    "exit": 0,
+    "host_wall_seconds": 66.77037188199938,
+    "requests": [
+      "A0 complete",
+      "A1 complete",
+      "A2 70-packet then cancel",
+      "A3 complete"
+    ],
+    "model_init_calls": 1
+  },
+  "output_identity": {
+    "reference": "final_resident/reports/resident_final_v1/run_001",
+    "firmware_emitted_files_compared": 456,
+    "byte_different": 0,
+    "six_file_identities": {
+      "condition_f32": "45a6073e...",
+      "output_pcm": "368f7b05...",
+      "output24_pcm": "038e6545...",
+      "first24_pcm": "5f4fb1d5...",
+      "fargan_f32": "8519e0e5...",
+      "durations_u32": "0054da57..."
+    }
+  },
+  "profiling": {
+    "plugin": "GPL QEMU instruction-event plugin, single-vCPU mps3-an547 Cortex-M55, Architectural instruction events, not cycles",
+    "request_scope": {
+      "begin": "acoustic_begin",
+      "end": "snapshot_first_active_costs",
+      "instruction_events": 59747483,
+      "one_ipc_floor_ms": 298.737,
+      "csv": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/roi_req_acoustic_resident_opt16_instruction_counts.csv",
+      "below_60M": true,
+      "margin_events": 252517
+    },
+    "full_request_scope": {
+      "begin": "tts_begin_text_request",
+      "end": "snapshot_first_active_costs",
+      "instruction_events": 59988134,
+      "one_ipc_floor_ms": 299.941,
+      "csv": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/instruction_profile/roi_req_frontend_resident_opt16_instruction_counts.csv",
+      "below_60M": true,
+      "margin_events": 11866,
+      "native_text_frontend_events": 240651
+    },
+    "progression": {
+      "resident_instrumented_baseline": {
+        "request": 81071945,
+        "full": 71366967
+      },
+      "opt12_instrumented": {
+        "request": 69406315,
+        "full": 71366967
+      },
+      "opt13_counter_free": {
+        "request": 59943780,
+        "full": 61904328
+      },
+      "opt14_frontend_dict_prewarm": {
+        "request": 59943780,
+        "full": 60351746
+      },
+      "opt15_counter_free_fir_adapter": {
+        "request": 59747454,
+        "full": 60155449
+      },
+      "opt16_frontend_pipeline": {
+        "request": 59747483,
+        "full": 59988134
+      }
+    },
+    "rejected_experiment": {
+      "name": "global field-name cache",
+      "result": "slower (61.36M full scope); reverted, rebuild reproduced the opt16 ELF exactly"
+    }
+  },
+  "milestone": {
+    "full_api_to_first_speech_below_60M": true,
+    "request_scope_below_60M": true,
+    "margin_is_small": 11866,
+    "meaning": "For this ordinary Chinese benchmark request the resident firmware executes 59,988,134 architectural instructions between the API call and the first active 20 ms speech packet. At the extreme optimistic 1 IPC line this is 299.94 ms. Real M55 cycles are higher (in-order core, MVE 64-bit operations occupy two beats, loads/branches add cycles), so hardware 300 ms is NOT yet accepted."
+  },
+  "remaining_work": [
+    "build a cycle model and/or measure real M55 cycles to replace the 1 IPC accounting line",
+    "widen the margin: per-layer resolved tensor pointers (avoid namefmt in hot loops without a global linear cache), dictionary row index, request-path micro cuts",
+    "verify longer/different texts because the margin depends on text length and dictionary pages touched",
+    "re-verify complete-system ROM/RAM dual 10 MB with the added 1.45 MB dictionary image"
+  ],
+  "not_claimed": [
+    "calibrated 200 MHz cycles or hardware 300ms acceptance",
+    "guaranteed latency for arbitrary/longer text",
+    "complete system ROM/RAM dual 10MB",
+    "subjective audio quality",
+    "complete native 25-language frontend"
+  ],
+  "training_updates": 0,
+  "weights_changed": false,
+  "production_pointer_changed": false
+}

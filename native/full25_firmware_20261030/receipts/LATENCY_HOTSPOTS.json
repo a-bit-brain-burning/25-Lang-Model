@@ -1,0 +1,2155 @@
+{
+  "elf_sha256": "77390626db625ac007b76f4ad3dd3d6cb67cc79792a539bc7e90c1743633921e",
+  "requests": [
+    {
+      "language": "bg",
+      "instruction_events": 51557060,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11459003
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9929022
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3118896
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1666084
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1642764
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1230415
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139133
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1022997
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1022522
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 706000
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 690018
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 657540
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627386
+        }
+      ]
+    },
+    {
+      "language": "cs",
+      "instruction_events": 50590295,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11192691
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3165710
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1644606
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1608528
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1228125
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        },
+        {
+          "function": "log",
+          "events": 1123596
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033272
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 923784
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 697636
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 685650
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 658207
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627386
+        }
+      ]
+    },
+    {
+      "language": "da",
+      "instruction_events": 49208259,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 10771940
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9166468
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3047714
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 1894500
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1564990
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1501089
+        },
+        {
+          "function": "fg_noise",
+          "events": 1183734
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1141280
+        },
+        {
+          "function": "frame",
+          "events": 1135580
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1071321
+        },
+        {
+          "function": "MatchRule",
+          "events": 1040733
+        },
+        {
+          "function": "log",
+          "events": 1021440
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 955876
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 940672
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 790122
+        },
+        {
+          "function": "fg_gru",
+          "events": 753200
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 728037
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 659782
+        },
+        {
+          "function": "memcpy",
+          "events": 641285
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 598514
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "instruction_events": 55014423,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 12146066
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10691576
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3437676
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2273400
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1792911
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1765978
+        },
+        {
+          "function": "fg_noise",
+          "events": 1420482
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1369536
+        },
+        {
+          "function": "frame",
+          "events": 1339997
+        },
+        {
+          "function": "log",
+          "events": 1225734
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1207107
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1104372
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1084649
+        },
+        {
+          "function": "fg_gru",
+          "events": 903840
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 872658
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 822717
+        },
+        {
+          "function": "memcpy",
+          "events": 758029
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 720386
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 717860
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 684424
+        }
+      ]
+    },
+    {
+      "language": "el",
+      "instruction_events": 48685785,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11164880
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9166468
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 2950704
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 1894500
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1649744
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1500402
+        },
+        {
+          "function": "fg_noise",
+          "events": 1183734
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1147631
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1141280
+        },
+        {
+          "function": "frame",
+          "events": 1118465
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1071171
+        },
+        {
+          "function": "log",
+          "events": 1021446
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 940672
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 789762
+        },
+        {
+          "function": "fg_gru",
+          "events": 753200
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 728037
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 668386
+        },
+        {
+          "function": "memcpy",
+          "events": 643096
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 597942
+        },
+        {
+          "function": "ensure_condition",
+          "events": 572397
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "instruction_events": 1279949118,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 666520627
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 147474488
+        },
+        {
+          "function": "utf8",
+          "events": 139466220
+        },
+        {
+          "function": "memcpy",
+          "events": 71862171
+        },
+        {
+          "function": "fep_decode",
+          "events": 70475311
+        },
+        {
+          "function": "strcmp",
+          "events": 49277762
+        },
+        {
+          "function": "vi",
+          "events": 34581308
+        },
+        {
+          "function": "dict_get",
+          "events": 26678600
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 13646052
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 12288400
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 4182748
+        },
+        {
+          "function": "fep_id",
+          "events": 2731044
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2652300
+        },
+        {
+          "function": "strlen",
+          "events": 2520698
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 2099043
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1994684
+        },
+        {
+          "function": "__memcpy_veneer",
+          "events": 1863135
+        },
+        {
+          "function": "fg_noise",
+          "events": 1657230
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1597792
+        },
+        {
+          "function": "frame",
+          "events": 1565974
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "instruction_events": 51444829,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11459003
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3255600
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1665484
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1649454
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1230355
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1052580
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033272
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 730486
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 691474
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 658032
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627410
+        }
+      ]
+    },
+    {
+      "language": "et",
+      "instruction_events": 50052608,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 10926379
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9929022
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3256668
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1650381
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1552012
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1228161
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1022522
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 764751
+        },
+        {
+          "function": "memcpy",
+          "events": 699179
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 678370
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 657798
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627418
+        }
+      ]
+    },
+    {
+      "language": "fi",
+      "instruction_events": 64180572,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 13275163
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 12979238
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 4190206
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2841750
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 2237199
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1868594
+        },
+        {
+          "function": "fg_noise",
+          "events": 1775604
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1711920
+        },
+        {
+          "function": "frame",
+          "events": 1675733
+        },
+        {
+          "function": "log",
+          "events": 1532160
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1411161
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1349922
+        },
+        {
+          "function": "fg_gru",
+          "events": 1129800
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 997362
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 964737
+        },
+        {
+          "function": "memcpy",
+          "events": 931407
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 897163
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 855498
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 829303
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 791238
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "instruction_events": 900148181,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 439105014
+        },
+        {
+          "function": "utf8",
+          "events": 119196716
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 114714596
+        },
+        {
+          "function": "memcpy",
+          "events": 49174099
+        },
+        {
+          "function": "fep_decode",
+          "events": 42891465
+        },
+        {
+          "function": "strcmp",
+          "events": 36340225
+        },
+        {
+          "function": "vi",
+          "events": 23447860
+        },
+        {
+          "function": "dict_get",
+          "events": 18743680
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 11459003
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3255600
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1665484
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1652205
+        },
+        {
+          "function": "fep_id",
+          "events": 1541596
+        },
+        {
+          "function": "__memcpy_veneer",
+          "events": 1357388
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1228299
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        }
+      ]
+    },
+    {
+      "language": "hr",
+      "instruction_events": 50811243,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11192691
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3193478
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1647924
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1609048
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1235689
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139289
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033269
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 926197
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831570
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 702221
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 685782
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 657719
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627394
+        }
+      ]
+    },
+    {
+      "language": "hu",
+      "instruction_events": 65308426,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 13440026
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 12507260
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 4073082
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2841750
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 2230065
+        },
+        {
+          "function": "frame",
+          "events": 1926099
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1867974
+        },
+        {
+          "function": "fg_noise",
+          "events": 1775604
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1711920
+        },
+        {
+          "function": "log",
+          "events": 1532160
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1412586
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1310232
+        },
+        {
+          "function": "fg_gru",
+          "events": 1129800
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 1000692
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 964737
+        },
+        {
+          "function": "memcpy",
+          "events": 930899
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 896642
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 855482
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 786602
+        },
+        {
+          "function": "compute_linear_c",
+          "events": 733350
+        }
+      ]
+    },
+    {
+      "language": "it",
+      "instruction_events": 356829532,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 144707315
+        },
+        {
+          "function": "utf8",
+          "events": 46832758
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 46463024
+        },
+        {
+          "function": "memcpy",
+          "events": 20356439
+        },
+        {
+          "function": "fep_decode",
+          "events": 15725352
+        },
+        {
+          "function": "strcmp",
+          "events": 14626489
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 11725315
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9929022
+        },
+        {
+          "function": "vi",
+          "events": 9770416
+        },
+        {
+          "function": "dict_get",
+          "events": 5097620
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3417046
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1722440
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1653975
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "frame",
+          "events": 1285986
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1149142
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139589
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        }
+      ]
+    },
+    {
+      "language": "lt",
+      "instruction_events": 578175936,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 253906581
+        },
+        {
+          "function": "utf8",
+          "events": 83192396
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 72466053
+        },
+        {
+          "function": "memcpy",
+          "events": 33799958
+        },
+        {
+          "function": "fep_decode",
+          "events": 28728564
+        },
+        {
+          "function": "strcmp",
+          "events": 22853467
+        },
+        {
+          "function": "vi",
+          "events": 14129896
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 12300505
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 11526054
+        },
+        {
+          "function": "dict_get",
+          "events": 8718720
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3606046
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2462850
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1941009
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1753080
+        },
+        {
+          "function": "fg_noise",
+          "events": 1538856
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1483664
+        },
+        {
+          "function": "frame",
+          "events": 1451923
+        },
+        {
+          "function": "log",
+          "events": 1327872
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1275075
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1196969
+        }
+      ]
+    },
+    {
+      "language": "lv",
+      "instruction_events": 50521237,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11059535
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3153428
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1645521
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1580530
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1228143
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        },
+        {
+          "function": "log",
+          "events": 1123584
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033269
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 861603
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 701386
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 682738
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 657888
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627402
+        }
+      ]
+    },
+    {
+      "language": "nl",
+      "instruction_events": 51614522,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11592159
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3173008
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1693962
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1646697
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1226021
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139289
+        },
+        {
+          "function": "log",
+          "events": 1123590
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1116856
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033272
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831570
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 700798
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 694518
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 657898
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627386
+        }
+      ]
+    },
+    {
+      "language": "no",
+      "instruction_events": 65037277,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 13674631
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 13051162
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 4094442
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2841750
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 2235843
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1953548
+        },
+        {
+          "function": "fg_noise",
+          "events": 1775604
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1711920
+        },
+        {
+          "function": "frame",
+          "events": 1673584
+        },
+        {
+          "function": "log",
+          "events": 1532166
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1411161
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1360672
+        },
+        {
+          "function": "fg_gru",
+          "events": 1129800
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1052514
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 997362
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 964737
+        },
+        {
+          "function": "memcpy",
+          "events": 931682
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 896534
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 855490
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 801430
+        }
+      ]
+    },
+    {
+      "language": "pl",
+      "instruction_events": 54600047,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 12012910
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10691576
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3468114
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2273400
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1796526
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1737500
+        },
+        {
+          "function": "fg_noise",
+          "events": 1420482
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1369536
+        },
+        {
+          "function": "frame",
+          "events": 1342179
+        },
+        {
+          "function": "log",
+          "events": 1225734
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1207107
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1104372
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1020403
+        },
+        {
+          "function": "fg_gru",
+          "events": 903840
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 872658
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 822717
+        },
+        {
+          "function": "memcpy",
+          "events": 756701
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 717950
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 717474
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 684424
+        }
+      ]
+    },
+    {
+      "language": "pt",
+      "instruction_events": 144986834,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 57647061
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 17317564
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 10638784
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9238392
+        },
+        {
+          "function": "vi",
+          "events": 6294828
+        },
+        {
+          "function": "fep_decode",
+          "events": 5754968
+        },
+        {
+          "function": "strcmp",
+          "events": 4303341
+        },
+        {
+          "function": "memcpy",
+          "events": 3345200
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3056614
+        },
+        {
+          "function": "dict_get",
+          "events": 2936590
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 1894500
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1536512
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1502121
+        },
+        {
+          "function": "fg_noise",
+          "events": 1183734
+        },
+        {
+          "function": "frame",
+          "events": 1164452
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1141280
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1071621
+        },
+        {
+          "function": "log",
+          "events": 1021440
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 951422
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 923751
+        }
+      ]
+    },
+    {
+      "language": "ro",
+      "instruction_events": 658352644,
+      "top_functions": [
+        {
+          "function": "lzma_decode",
+          "events": 266199746
+        },
+        {
+          "function": "utf8",
+          "events": 105441826
+        },
+        {
+          "function": "fep_keys_worker",
+          "events": 95564098
+        },
+        {
+          "function": "memcpy",
+          "events": 42508578
+        },
+        {
+          "function": "fep_decode",
+          "events": 32447107
+        },
+        {
+          "function": "strcmp",
+          "events": 31877105
+        },
+        {
+          "function": "vi",
+          "events": 20462204
+        },
+        {
+          "function": "packed_matrix_pair",
+          "events": 11858471
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9929022
+        },
+        {
+          "function": "dict_get",
+          "events": 8643910
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3309178
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1750918
+        },
+        {
+          "function": "fep_id",
+          "events": 1744238
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1651098
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1225988
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1213502
+        },
+        {
+          "function": "__memcpy_veneer",
+          "events": 1178936
+        }
+      ]
+    },
+    {
+      "language": "sk",
+      "instruction_events": 50615318,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11192691
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3151648
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1645770
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1608528
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1230319
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139139
+        },
+        {
+          "function": "log",
+          "events": 1123590
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033272
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 923856
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831210
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 697408
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 685650
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 658074
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627390
+        }
+      ]
+    },
+    {
+      "language": "sl",
+      "instruction_events": 52423153,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11725315
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 10000946
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3300990
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2083950
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1723120
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1651653
+        },
+        {
+          "function": "fg_noise",
+          "events": 1302108
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1255408
+        },
+        {
+          "function": "frame",
+          "events": 1247551
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1184491
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1139289
+        },
+        {
+          "function": "log",
+          "events": 1123590
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1033269
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 831570
+        },
+        {
+          "function": "fg_gru",
+          "events": 828520
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 775377
+        },
+        {
+          "function": "memcpy",
+          "events": 705585
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 697430
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 658212
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 627422
+        }
+      ]
+    },
+    {
+      "language": "sv",
+      "instruction_events": 62033942,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 13387036
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 12216684
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 3933192
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 2652300
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 2086329
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1938488
+        },
+        {
+          "function": "fg_noise",
+          "events": 1657230
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1597792
+        },
+        {
+          "function": "frame",
+          "events": 1563849
+        },
+        {
+          "function": "log",
+          "events": 1430016
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1343043
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 1268072
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1149025
+        },
+        {
+          "function": "fg_gru",
+          "events": 1054480
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 955554
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 917397
+        },
+        {
+          "function": "memcpy",
+          "events": 873503
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 837596
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 798468
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 778210
+        }
+      ]
+    },
+    {
+      "language": "tr",
+      "instruction_events": 47404256,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 10771940
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9238392
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 2899440
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 1894500
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1564990
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1497243
+        },
+        {
+          "function": "fg_noise",
+          "events": 1183734
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1141280
+        },
+        {
+          "function": "frame",
+          "events": 1118654
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1071171
+        },
+        {
+          "function": "log",
+          "events": 1021440
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 988217
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 951422
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 789762
+        },
+        {
+          "function": "fg_gru",
+          "events": 753190
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 728037
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 661106
+        },
+        {
+          "function": "memcpy",
+          "events": 640767
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 597854
+        },
+        {
+          "function": "ensure_condition",
+          "events": 572393
+        }
+      ]
+    },
+    {
+      "language": "zh",
+      "instruction_events": 47743045,
+      "top_functions": [
+        {
+          "function": "packed_matrix_pair",
+          "events": 11135120
+        },
+        {
+          "function": "packed_matrix8",
+          "events": 9151474
+        },
+        {
+          "function": "bwe_adaconv16",
+          "events": 2705598
+        },
+        {
+          "function": "bwe_sgemv16",
+          "events": 1894500
+        },
+        {
+          "function": "pair_prepare.isra.0",
+          "events": 1643544
+        },
+        {
+          "function": "bbwenet_process_frames",
+          "events": 1487031
+        },
+        {
+          "function": "fg_noise",
+          "events": 1183734
+        },
+        {
+          "function": "acoustic_begin",
+          "events": 1152119
+        },
+        {
+          "function": "bwe_packed_matrix8",
+          "events": 1141280
+        },
+        {
+          "function": "frame",
+          "events": 1118573
+        },
+        {
+          "function": "activation.constprop.0",
+          "events": 1071153
+        },
+        {
+          "function": "log",
+          "events": 1023574
+        },
+        {
+          "function": "fast_i8_dense.constprop.0",
+          "events": 939766
+        },
+        {
+          "function": "norm_resolved.constprop.0",
+          "events": 789762
+        },
+        {
+          "function": "fg_gru",
+          "events": 753170
+        },
+        {
+          "function": "depthwise_channels.constprop.0",
+          "events": 728037
+        },
+        {
+          "function": "activation.constprop.1",
+          "events": 668386
+        },
+        {
+          "function": "memcpy",
+          "events": 644519
+        },
+        {
+          "function": "adashape_process_frame",
+          "events": 597638
+        },
+        {
+          "function": "compute_activation_c",
+          "events": 570300
+        }
+      ]
+    }
+  ]
+}

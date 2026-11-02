@@ -1,0 +1,125 @@
+{
+ "scope": "codex 未完成内容诊断：native25_text_paths_v1 之后 10 语超 60M",
+ "frozen_build": {
+  "tag": "native25_text_paths_v1",
+  "elf_sha256": "77390626db625ac007b76f4ad3dd3d6cb67cc79792a539bc7e90c1743633921e",
+  "rom_load_bytes": 9885272,
+  "reserved_physical_ram_bytes": 9860312,
+  "rom_headroom": 114728,
+  "ram_headroom": 139688
+ },
+ "timing_status": {
+  "pass": [
+   "bg",
+   "cs",
+   "da",
+   "de",
+   "el",
+   "es",
+   "et",
+   "hr",
+   "lv",
+   "nl",
+   "pl",
+   "sk",
+   "sl",
+   "tr",
+   "zh"
+  ],
+  "over_minor": {
+   "fi": 64180572,
+   "hu": 65308426,
+   "no": 65037277,
+   "sv": 62033942
+  },
+  "over_dictionary_heavy": {
+   "en": 1279949118,
+   "fr": 900148181,
+   "ro": 658352644,
+   "lt": 578175936,
+   "it": 356829532,
+   "pt": 144986834
+  }
+ },
+ "root_cause": {
+  "detail": "request 内对 en/fr/it/lt/pt/ro 的 FEP 词典 section 做整段 LZMA 解码，按词重复；en 每请求解码约 13MB（~20 词 × 657KB 原始 section），lzma_decode 666.5M 事件 + fep_keys_worker/utf8/strcmp 线性扫描 ~370M",
+  "en_sections": {
+   "keys/0": 284949,
+   "keys/1": 265851,
+   "pool/0": 271442,
+   "ids/0/0": 101239,
+   "ids/0/1": 92760
+  },
+  "en_per_request_decoded_bytes_estimate": 13100000.0
+ },
+ "candidate_fixes_measured": {
+  "paged_deflate_lexicon": {
+   "rom_delta_bytes": 2468387,
+   "verdict": "ROM 9,885,272+2,468,387=12.35MB > 10MB 不可行"
+  },
+  "paged_lzma_page_lexicon": {
+   "rom_delta_bytes": 2338746,
+   "verdict": "12.22MB > 10MB 不可行"
+  },
+  "chunked_lzma_repack": {
+   "rom_delta_bytes": 2286630,
+   "verdict": "12.17MB > 10MB 不可行"
+  },
+  "decoded_section_ram_cache": {
+   "needed_bytes": {
+    "en": 1016241,
+    "fr": 880052,
+    "lt": 1572124,
+    "it": 213133,
+    "pt": 87532,
+    "ro": 420448
+   },
+   "ram_headroom_bytes": 139688,
+   "verdict": "需要 +0.09~1.57MB RAM，当前 RAM 9,860,312 无空间（arena 峰值 4,073,987/4,080,000）"
+  },
+  "fast_codec_recompress": {
+   "estimate": "六语 section 原始合计 4.19MB；LZ4/zstd 级压缩预计 2.2~2.6MB，对比现 LZMA 1.88MB → ROM +0.3~0.7MB 仍超"
+  },
+  "per_request_pool_cache_only": {
+   "fits_only": [
+    "it",
+    "pt",
+    "ro"
+   ],
+   "note": "pool 单语 ≤96KB 可入 RAM 余量，但仅省 20~43% 解码事件，仍不足 60M"
+  },
+  "chunked_lzma_size_sweep": {
+   "chunk_256_words": {
+    "rom_delta_bytes": 1494513
+   },
+   "chunk_512_words": {
+    "rom_delta_bytes": 1256782
+   },
+   "chunk_1024_words": {
+    "rom_delta_bytes": 1085686
+   },
+   "verdict": "即使 1024 词/块，ROM 仍需 9,885,272+1,085,686=10.97MB > 10MB 不可行；2048+ 词/块会使单词内解码量增大到与本目标矛盾"
+  }
+ },
+ "near_miss_analysis": {
+  "fi/hu/no/sv": "超 2.0~5.3M（3.3%~8.8%）；主因是样例句更长导致 kernel 总量同比增长（packed_matrix_pair+packed_matrix8 占 41%），非算法退化；~5-9% 内核微优化可争取过线，属用户已表态可接受的‘略超’范围"
+ },
+ "recommendation": [
+  "A（最快，推荐）：RAM 预算放宽约 1.2MB（10MB→11.2MB 或 128MB 板）用于按请求解压词典缓存；可让 6 个重词典语言大幅下降，估计最慢 EN 从 1280M 降至 ~100M 量级，再配合 key/index 优化争取 ≤60M；工程量约 1-2 小时。",
+  "B（保持双 <10MB）：需要重构文本前端词典契约（例如把 per-word 全量 section 解码改为句级预扫+小缓存，或把词典记录改为更紧凑的二进制编码后再压缩），是数小时到数天级结构改动，且需逐语言重新验证 125 核心输出逐字节一致。",
+  "C（最小交付）：当前 15 语 PASS + 4 语略超 + 6 语不达标；按用户‘有一点超时可以接受’的口径，可先冻结 native25_text_paths_v1 作为交付，明确标注 fi/hu/no/sv 略超与 6 语待优化。"
+ ],
+ "no_changes": {
+  "weights": 0,
+  "arithmetic": 0,
+  "default_pointer": false,
+  "training": 0,
+  "frozen_build_modified": false
+ },
+ "new_files_created": [
+  "PAGED_LEXICON_ESTIMATE.json",
+  "PAGED_LEXICON_LZMA_ESTIMATE.json",
+  "CHUNKED_LEXICON_ESTIMATE.json",
+  "CODEX_REMAINING_ANALYSIS.json"
+ ]
+}

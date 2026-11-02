@@ -1,0 +1,10 @@
+{
+  "original_raw_sha256": "dbaebfca424ccbeba18bc7ff3ac16f009e4fa283cdeb880f0cddd4e5c950e970",
+  "packed_sha256": "5aa2e587e1b3c5fe9d65722a2d8c50d6f4873579b5d6d812772b2535ad383607",
+  "raw_bytes": 2993672,
+  "packed_bytes": 2660997,
+  "source_deflate_bytes": 2685826,
+  "all_tensor_codes_and_scales_unchanged": true,
+  "boot_only": true,
+  "request_decode_calls": 0
+}

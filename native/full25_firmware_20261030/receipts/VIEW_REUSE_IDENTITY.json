@@ -1,0 +1,7 @@
+{
+  "before_sha256": "74f1b5c9357b1f24528f721fd262cadb8ba2f2aa9bc931202bf57515549c6fcf",
+  "after_sha256": "520b5b36cfe07de1fb75131847dbaf43d6eff070552047b55a9d067a8b276602",
+  "added_persistent_allocations": 0,
+  "weight_arithmetic_unchanged": true,
+  "policy": "Reuse existing immutable tensor_view buffers; same old temporary decode when a view is absent."
+}

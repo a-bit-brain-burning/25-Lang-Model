@@ -1,0 +1,79 @@
+{
+  "matrices": [
+    {
+      "name": "bbwenet_fnet_conv2_weights_int8",
+      "rows": 128,
+      "cols": 384,
+      "canonical_row_major_sha256": "516520e7ab2413f2590abce13859467098edeb75f2f336d3fa8e2a51a0d2288a",
+      "packed8_sha256": "d1130a850cfa1be1ffb0fc113a89f72ba137915824e908f60687f985185f04a6",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_fnet_gru_input_weights_int8",
+      "rows": 384,
+      "cols": 128,
+      "canonical_row_major_sha256": "d02d62148cb8fd32bf48aa40c164aa35bdaff177d26c6055bac628e45e817b87",
+      "packed8_sha256": "f8bf50034f6a86fe013e3d3d1d56175bb7999b7d6d5ed09e4ce7c9d6c7ce837c",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_fnet_gru_recurrent_weights_int8",
+      "rows": 384,
+      "cols": 128,
+      "canonical_row_major_sha256": "3a528ea248ca7f51fb3b1b83532fd12f750804c8c06919d4980446cc431b5b6e",
+      "packed8_sha256": "9d5515649f8a55b4dfa0c761b6bb3a04a8670e7ac7941cc8f35eb494c41931e4",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_fnet_tconv_weights_int8",
+      "rows": 256,
+      "cols": 128,
+      "canonical_row_major_sha256": "596ea8d7b3282eca34e513a228d462076e2cd20b70edc902b1ea90c84443deb3",
+      "packed8_sha256": "238fcd66c158887b2d04baacd3051eb86943fc51614a8d7fe57303b7707b6413",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_tdshape1_alpha1_f_weights_int8",
+      "rows": 80,
+      "cols": 256,
+      "canonical_row_major_sha256": "b082f432d08608af903da0ef347dc1b0ae7296260fe024e889289f1f46602e73",
+      "packed8_sha256": "1711ba7a222d34e76b5a097ace6a9a69942dee70473e3450c62dc989e37a9161",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_tdshape2_alpha1_f_weights_int8",
+      "rows": 120,
+      "cols": 256,
+      "canonical_row_major_sha256": "5207fe8bfa9ba748ce560f3695dca0d8413f9b34a875b722aec2e4ea8a08e29e",
+      "packed8_sha256": "5173184693767b0bbf6ee4f1537a7850b4738d80a1b4ed2f5bd7bfd2278e005e",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_af1_kernel_weights_int8",
+      "rows": 48,
+      "cols": 128,
+      "canonical_row_major_sha256": "9ca64a5a596c435cf393d2175bcae4fd018758d21647a652d26a72d5bf6fadd9",
+      "packed8_sha256": "2dad5f2744d86e19a6d7b8d0e16ac90b5ebc0142fddbfc0f3b9e24e10f5f72a4",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_af2_kernel_weights_int8",
+      "rows": 288,
+      "cols": 128,
+      "canonical_row_major_sha256": "0d8832f0c76be09924010e5f422528d2ceaab931505451beb2da3596a3cbe4f2",
+      "packed8_sha256": "041d1c64fddb9723c35e8d4ae266fc683301733a739d8d4dd280c9b8ed008307",
+      "inverse_permutation_exact": true
+    },
+    {
+      "name": "bbwenet_af3_kernel_weights_int8",
+      "rows": 48,
+      "cols": 128,
+      "canonical_row_major_sha256": "d1f220e0b73cd0d950bbbec56128e4f83f4bc252f07ddd34ab700327e3409c73",
+      "packed8_sha256": "aae012aa1955c507095dd855f81b4410548d077da068b2b85d4e80d35eac1e41",
+      "inverse_permutation_exact": true
+    }
+  ],
+  "code_bytes_unchanged_after_inverse_permutation": true,
+  "no_new_quantization": true,
+  "arithmetic": "Same exact int32 dot sums, FP32 conversion then original FP32 scale; bias/diag remain in original caller"
+}

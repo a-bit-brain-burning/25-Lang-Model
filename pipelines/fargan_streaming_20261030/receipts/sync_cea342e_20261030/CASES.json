@@ -1,0 +1,42 @@
+[
+  [
+    "zh_plain",
+    "zh",
+    "你好，欢迎测试新的语音模型。"
+  ],
+  [
+    "zh_CZ",
+    "zh",
+    "下一趟航班为CZ2671号。"
+  ],
+  [
+    "zh_MU",
+    "zh",
+    "下一趟航班为MU5108号。"
+  ],
+  [
+    "zh_AB",
+    "zh",
+    "请检查编号AB0123。"
+  ],
+  [
+    "zh_multi",
+    "zh",
+    "请核对A12B34和007236。"
+  ],
+  [
+    "en_plain",
+    "en",
+    "Hello, welcome to the flight."
+  ],
+  [
+    "en_numbers",
+    "en",
+    "Flight BA123 departs at 18:30. The temperature is 23°C."
+  ],
+  [
+    "en_lexicon",
+    "en",
+    "The version is 2.1. Current time is 08:30. Open WiFi settings."
+  ]
+]

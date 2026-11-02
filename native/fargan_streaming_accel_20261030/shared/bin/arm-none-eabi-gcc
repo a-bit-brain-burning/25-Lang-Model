@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+m55_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec "$m55_root/toolchain/sysroot/usr/bin/arm-none-eabi-gcc" \
+  -mcpu=cortex-m55 -mthumb -mfloat-abi=hard \
+  -isystem "$m55_root/toolchain/sysroot/usr/include/newlib" \
+  -L "$m55_root/toolchain/sysroot/usr/lib/arm-none-eabi/newlib/thumb/v8-m.main+dp/hard" "$@"

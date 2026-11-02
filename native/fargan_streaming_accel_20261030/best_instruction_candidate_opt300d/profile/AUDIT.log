@@ -1,0 +1,72 @@
+{
+  "status": "PC_AGGREGATION_AND_MVE_EVENT_GRANULARITY_VERIFIED",
+  "dot_ratio": 1.0,
+  "dot": {
+    "total_events": 32282364,
+    "entry_calls": 413764,
+    "calls_entering_vector_loop": 68,
+    "calls_skipping_vector_loop": 413696,
+    "breakdown": {
+      "cost_counter_updates": 18205616,
+      "FP_vector_FMA": 1496,
+      "FP_horizontal_additions": 1241292,
+      "FP_scalar_tail_arithmetic": 827392,
+      "call_frame_save_restore": 1655056,
+      "vector_data_and_reduction_stack": 2899340,
+      "scalar_tail_operand_loads": 827392,
+      "pointer_loop_branch_other": 6624780
+    },
+    "pure_FP_instruction_events": 2070180,
+    "scalar_tail_multiply_events": 413696,
+    "scalar_tail_add_events": 413696,
+    "vector_FMA_events": 1496,
+    "caution": "Chain cost_* metrics also include gemm/decoder work; do not equate their totals with the dot function alone. Scalar-only branch means n<4; call argument distribution is not directly observed."
+  },
+  "comparison": {
+    "request_events_before": 153660145,
+    "request_events_after": 129537512,
+    "delta_events": -24122633,
+    "reduction_fraction": 0.1569869207138911,
+    "function_deltas": [
+      {
+        "function": "n25_value",
+        "before": 20964892,
+        "after": 1533502,
+        "delta": -19431390
+      },
+      {
+        "function": "strcmp",
+        "before": 4750384,
+        "after": 307270,
+        "delta": -4443114
+      },
+      {
+        "function": "dot",
+        "before": 32282364,
+        "after": 32282364,
+        "delta": 0
+      },
+      {
+        "function": "packed_matrix8",
+        "before": 29948804,
+        "after": 29948804,
+        "delta": 0
+      },
+      {
+        "function": "packed_dot8",
+        "before": 37470,
+        "after": 37470,
+        "delta": 0
+      },
+      {
+        "function": "tensor_views_prepare",
+        "before": 0,
+        "after": 48751,
+        "delta": 48751
+      }
+    ],
+    "exact_equal_dot_opcode_events": true,
+    "scope_difference": "New begin includes tensor_views_prepare initialization (395392B cache) before acoustic_begin. Old begins at acoustic_begin. Different pre-acoustic clock/metric setup is also included in the new ROI; the new ROI conservatively includes added cache preparation rather than hiding it.",
+    "instruction_count_is_not_speedup_or_cycles": true
+  }
+}

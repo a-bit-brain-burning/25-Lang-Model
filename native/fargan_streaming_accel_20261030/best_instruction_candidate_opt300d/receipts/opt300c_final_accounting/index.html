@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>opt300c：O2/O3 动态指令 profiling 与 300ms 预算收口</title>
+<style>body{font:16px system-ui;line-height:1.65;margin:24px auto;max-width:1100px;padding:0 16px;color:#111}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;margin:12px 0}
+th,td{border:1px solid #ccd3dc;padding:7px;vertical-align:top}th{background:#eff4fa}
+.notice{padding:12px;background:#fff7de;border-left:4px solid #b68b16;margin:14px 0}
+.bad{padding:12px;background:#ffecec;border-left:4px solid #c62828;margin:14px 0}
+.good{padding:12px;background:#eaf7ea;border-left:4px solid #2e7d32;margin:14px 0}
+code{background:#f2f4f7;padding:1px 4px;border-radius:3px}</style>
+<h1>opt300c：release O2/O3 动态指令 profiling 与 300 ms 预算收口</h1>
+<p>对应 codex 中断点：<code>build_o3.py</code> 已备好未执行、<code>release_trace</code> 缺动态 O2/O3 profiling 与预算收口。本轮已补完。训练 0、权重不变、默认指针不变；O2/O3 六项原始输出逐字节相同。</p>
+<h2>实测（QEMU 8.2.2 mps3-an547 Cortex-M55，单 vCPU，本地 GPL 插件逐 PC 统计指令事件）</h2>
+<table><tr><th>构建</th><th>ELF SHA256</th><th>指令事件</th><th>200MHz 1 IPC 乐观下界</th></tr>
+<tr><td>release O2（无诊断报告，六文件精确）</td><td><code>1566818332c479eb…b691dc8</code></td><td>72,681,563</td><td>363.408 ms</td></tr>
+<tr><td>release O3（-O3，六文件同样精确）</td><td><code>07948f889e627709…4e35bc1</code></td><td>68,816,649</td><td>344.083 ms</td></tr></table>
+<p>两次独立 profiling 的 CSV 逐字节相同（<code>release_ordinary_o2_v1</code> SHA <code>91abb941…0d52c</code>，O3 SHA <code>11954dfc…2dd2f</code>）；begin/end 锚点事件计数 1/0；全部事件 PC 都能映射到真实 ELF 指令；O2/O3 的 MVE int8 dot 指令事件数完全相同（4,816,768），说明算术没有变化。</p>
+<div class="bad"><strong>300 ms 仍未达到，且 O3 编译级改动无法达到。</strong>200MHz 下 300ms = 60,000,000 周期；即使按最乐观的「每条指令 1 周期」算，O3 也要 344.083ms，仍高出 8,816,649 条指令（12.81%）。M55 是顺序内核，只有特定 16-bit Thumb-1 指令对可有限双发、MVE 64-bit 操作占两个 beat，实际只会更慢。因此 O3 之后至少还要再砍 8.82M 条已执行指令才谈得上 300ms。</div>
+<div class="notice"><strong>旧 318.58ms 不能当整请求下界。</strong>它是「部分已计价运算小计」，同样一句中文的实测指令事件下界已是 344.08ms（O3）/363.41ms（O2），因此旧乐观小计不能当作可达首音时延，300ms 仍未验收。</div>
+<div class="good"><strong>O3 是合格未来候选，但未采用。</strong>六文件逐字节相同、指令事件少 5.32%，但 300ms 未达，故默认生产指针、交付数字与既有回执全部保持不变。O3 .text 212,016B vs O2 174,032B（+37,984B）。</div>
+<h2>O3 剩余指令热点（下一步真实优化目标）</h2>
+<table><tr><th>函数</th><th>指令事件</th><th>占 O3</th></tr>
+<tr><td>packed_matrix_pair</td><td>14,906,284</td><td>21.66%</td></tr>
+<tr><td>packed_matrix8</td><td>13,020,092</td><td>18.92%</td></tr>
+<tr><td>adaconv_xcorr_mve.constprop.0.isra.0</td><td>5,074,800</td><td>7.37%</td></tr>
+<tr><td>cgemv8x4</td><td>4,494,800</td><td>6.53%</td></tr>
+<tr><td>compute_linear_c</td><td>3,647,700</td><td>5.30%</td></tr>
+<tr><td>ensure_raw_condition_chunk</td><td>2,300,901</td><td>3.34%</td></tr>
+<tr><td>n25_unpack</td><td>2,114,681</td><td>3.07%</td></tr>
+<tr><td>pair_prepare.isra.0</td><td>1,832,798</td><td>2.66%</td></tr>
+<tr><td>memcpy</td><td>1,488,026</td><td>2.16%</td></tr>
+<tr><td>bbwenet_process_frames</td><td>1,487,031</td><td>2.16%</td></tr></table>
+<p>两个手写矩阵 kernel 合计 27,926,376 条事件（40.58%）；其余为 adaconv/cgemv/线性层/条件解包/准备拷贝等。下一步应对同一 ROI 做指令级削减并复测，而不是换估算口径。</p>
+<h2>不声明</h2>
+<ul><li>不是 300ms 已通过，也不是硬件实测周期/保证上下界；QEMU 主机秒数不是芯片时延。</li>
+<li>不是完整 25 语原生文本前端或完整系统 ROM/RAM 双 10MB 验收。</li>
+<li>本轮没有任何音频/音质变化：六项输出与 O2、integrated、final_native 中文参考全部逐字节相同。</li></ul>
+<p>回执：<code>DYNAMIC_INSTRUCTION_AUDIT.json</code>、<code>FINAL_RESULTS.json</code>、<code>STATUS.json</code>、<code>RECOVERY_README.txt</code>、<code>analyze_dynamic.py</code>（可复跑）。</p>
+</html>

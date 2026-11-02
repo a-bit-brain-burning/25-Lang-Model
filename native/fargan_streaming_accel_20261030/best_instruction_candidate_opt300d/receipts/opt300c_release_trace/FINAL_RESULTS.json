@@ -1,0 +1,108 @@
+{
+  "status": "RELEASE_REPORT_FREE_O2_ORDINARY_SIX_FILES_EXACT",
+  "elf": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/build/ordinary_o2_v1/firmware.elf",
+  "elf_sha256": "1566818332c479ebffcece1a50e97f38e591c28d9da6a36ae1a07e0c5b691dc8",
+  "report": "/home/fomak/ffb/m55_fargan_stream_20261030/opt300c_20261030/release_trace/reports/ordinary_o2_v1",
+  "file_identity": {
+    "condition.f32": {
+      "bytes": 35588,
+      "sha256": "45a6073e86a3e44d9d4a391264ac6f1fab54d0a9d8147efa15f5df6ef2f6a0ce",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    },
+    "durations.u32": {
+      "bytes": 136,
+      "sha256": "0054da57d328860ed744a1b1fb01a8222044064c251c7d013836af9e142a28f8",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    },
+    "output.pcm": {
+      "bytes": 90560,
+      "sha256": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    },
+    "output24.pcm": {
+      "bytes": 135840,
+      "sha256": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    },
+    "first24.pcm": {
+      "bytes": 9120,
+      "sha256": "5f4fb1d5c5229cf858155f3f90eaa8249123490f36666110c31311358d977a3a",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    },
+    "fargan.f32": {
+      "bytes": 181120,
+      "sha256": "8519e0e5b4af9338e36cb58db2775f744766ac1b491a6ee3e52ff0879e5759a7",
+      "reference_identities": {
+        "integrated": true,
+        "final_native": true
+      }
+    }
+  },
+  "symbols": {
+    "snapshot_first_active_costs": [
+      [
+        "10005a3c",
+        "snapshot_first_active_costs"
+      ]
+    ],
+    "tensor_views_prepare": [
+      [
+        "10005a40",
+        "tensor_views_prepare"
+      ]
+    ],
+    "main": [
+      [
+        "10005be8",
+        "main"
+      ]
+    ],
+    "bench_metric": [],
+    "bench_now": [],
+    "bench_tick_frequency": []
+  },
+  "stream16_reconstructs_complete": true,
+  "packets24_reconstruct_complete": true,
+  "packet_count": 142,
+  "audio_seconds": 2.83,
+  "first24_own_prefix": true,
+  "finite_condition_and_generator": true,
+  "valid_center_and_resampling_lengths": true,
+  "physical_frames": 287,
+  "PCM16_extrema_samples": 0,
+  "PCM24_extrema_samples": 0,
+  "model_and_32_metadata_M55_SHA_verified": true,
+  "report_guest_metrics_empty": true,
+  "BEGIN_PASS_only_log": true,
+  "real_BWE_energy_peak_observer_and_first2_getter_retained": true,
+  "snapshot_PC_anchor_noinline_bx_lr": true,
+  "model_FP_guards_RNG_cache_decoder_and_PCM_state_unchanged": true,
+  "mode": "Report/diagnostic clock suppression over the final math-only production trace; no new numerical approximation.",
+  "compiler_optimization": "O2",
+  "FP_flags_unchanged": true,
+  "O3_not_run_by_this_task": true,
+  "dynamic_instruction_measurement_pending": true,
+  "operation_counter_estimator_compatible": false,
+  "diagnostic_removal_not_extra_saving_from_old318ms_budget": true,
+  "calibrated_200MHz_300ms_verified": false,
+  "complete_native25_language_frontend": false,
+  "training_updates": 0,
+  "weights_changed": false,
+  "production_pointer_changed": false,
+  "scope": "One ordinary Chinese complete synthesis. No metrics/clock report exists in this variant; verification is from actual files and original PASS control checks."
+}

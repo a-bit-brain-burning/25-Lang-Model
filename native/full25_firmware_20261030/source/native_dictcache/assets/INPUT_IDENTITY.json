@@ -1,0 +1,8 @@
+{
+  "text": "你好，欢迎测试新的语音模型。",
+  "language": "zh",
+  "input_kind": "Native UTF8 text, ordinary Han/punctuation/hints to dynamic32/34 features",
+  "precomputed_numeric_input_linked": false,
+  "scope": "Number/Latin/identifier normalization and other24languages pending",
+  "duration_source": "Autonomous current acoustic/prosody prediction"
+}

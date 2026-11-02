@@ -1,4 +1,4 @@
-# FARGAN 4750离线推理
+# FARGAN 4750 推理与连续流式接口
 
 此入口使用固定窗口选中的4750步FARGAN和31/39维→20维adapter，直接消费现有`AcousticResult.normalized`。声学80k权重、音素词表和归一化统计复用`models/`原文件；`models/fargan/`仅含声码器和adapter的91个FP16张量。
 
@@ -44,6 +44,24 @@ assert pcm.shape == (1, layout["output_samples"])
 
 这是单句CPU、FP32参考计算，FP16仅用于参数存储；循环状态保持FP32。官方Python实现即使`eval()`仍会注入量化式噪声，接口用显式`seed`隔离随机数状态。相同平台、环境、输入和seed可重复；未认证跨PyTorch/CPU平台PCM逐字节一致。
 
-`streaming=False`，任何非`None`的`state`/`chunk_frames`均拒绝。该入口不实现[`VOCODER_INTERFACE.md`](VOCODER_INTERFACE.md)中的逐块`T*160`流式协议，也不能拼接独立分块当成整句结果。
+运行时 `FARGANVocoder.streaming=True`。`begin_stream(language, seed=0)` 创建请求状态，
+`synthesize_chunk(normalized_chunk, language, state=state, final=False)` 返回 `(pcm, state)`；
+最后一块传 `final=True`，也支持空块 EOS。适配器历史、GRU、激励历史、随机数和去预加重状态均跨块保留。
+`synthesize(..., chunk_frames=16)` 收集真实流式输出；原始整段参考保留为 `synthesize_offline(...)`。
+
+```python
+state = vocoder.begin_stream("zh", seed=0)
+for start in range(0, len(result.normalized), 16):
+    end = min(start + 16, len(result.normalized))
+    pcm, state = vocoder.synthesize_chunk(
+        result.normalized[None, start:end], "zh", state=state,
+        final=end == len(result.normalized))
+    # pcm is newly available audio; send it to the output before the next call.
+```
+
+不可在每个块上重建状态。总输出仍是原 `(T-4)*160` 有效中心，不是补首尾后的 `T*160` 协议。
+发布资产 `model_config.json` 中历史 `streaming:false` 为原文件身份的一部分，保持 SHA 不变；
+运行时能力由 `streaming=True` 和真实状态接口提供。流式与整段参考可能有浮点分块舍入差异，
+不得称完整音频逐字节一致或人工音质已通过。
 
 原声学入口可使用`--predict-durations`生成另一条推理路径，但4750模型的已有75句开发评分使用**真实对齐时长**，不能把该指标移植到预测时长或任意文本。普通新文本→IPA及原前端32/36维、22/34维特征的完整资产仍未交付。

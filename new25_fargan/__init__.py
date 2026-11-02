@@ -1,4 +1,4 @@
-"""Selected FARGAN 4750 and physical-feature adapter, offline CPU inference."""
+"""Selected FARGAN 4750 with persistent physical-feature and waveform streams."""
 
 __all__ = ["FARGANVocoder"]
 

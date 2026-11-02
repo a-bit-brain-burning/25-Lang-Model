@@ -1,0 +1,128 @@
+{
+  "status": "LOCAL_LISTENING_BUILT",
+  "WAV_files": 17,
+  "files": [
+    {
+      "file": "zh_stream16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/zh_stream16.wav",
+      "sample_rate": 16000,
+      "samples": 45280,
+      "sha256": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7"
+    },
+    {
+      "file": "zh_stream24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/zh_stream24.wav",
+      "sample_rate": 24000,
+      "samples": 67920,
+      "sha256": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece"
+    },
+    {
+      "file": "zh_hifi24.wav",
+      "source": "/home/fomak/ffb/m55_hifi_restart_20261030/host_stream/delivery/zh_full.wav",
+      "sample_rate": 24000,
+      "samples": 68880,
+      "sha256": "95305dddae7679ab61e2f0cd5ba16cabac231584078ef78b236a732c37c91c6c"
+    },
+    {
+      "file": "MU5108_stream16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/MU5108_stream16.wav",
+      "sample_rate": 16000,
+      "samples": 48640,
+      "sha256": "d8820f947e5190d31e3099d98a0008febad3b9d32a56f5e7b95dcd0761792492"
+    },
+    {
+      "file": "MU5108_stream24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/MU5108_stream24.wav",
+      "sample_rate": 24000,
+      "samples": 72960,
+      "sha256": "ef6f90f71a69d4349748102450c475dc92e279bdde0f82bb5d108e126ff53266"
+    },
+    {
+      "file": "MU5108_hifi24.wav",
+      "source": "/home/fomak/ffb/m55_hifi_restart_20261030/reports/cli_v1/MU5108_full.wav",
+      "sample_rate": 24000,
+      "samples": 73920,
+      "sha256": "fcfe47dfb103977c6867991167d38b5adda68abfdcb4de40155e981f9622423a"
+    },
+    {
+      "file": "CZ2671_stream16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/CZ2671_stream16.wav",
+      "sample_rate": 16000,
+      "samples": 51520,
+      "sha256": "eece33b784eb97842e8f7b408cdc6c54317bfedebfa7b7827d238c36b91eb189"
+    },
+    {
+      "file": "CZ2671_stream24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/CZ2671_stream24.wav",
+      "sample_rate": 24000,
+      "samples": 77280,
+      "sha256": "2d6d11c5219f40b13ec8dda63d40acf01d4159361df8cc38da558a1e4700e015"
+    },
+    {
+      "file": "CZ2671_hifi24.wav",
+      "source": "/home/fomak/ffb/m55_hifi_restart_20261030/host_stream/delivery/flight_full.wav",
+      "sample_rate": 24000,
+      "samples": 78240,
+      "sha256": "f9dcc6e008b494a2568f57fc0d2f5ab0efb7f186e6ccabe36d6b6f119f619c11"
+    },
+    {
+      "file": "en_stream16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/en_stream16.wav",
+      "sample_rate": 16000,
+      "samples": 59360,
+      "sha256": "c8398bf17fbb692dbbe42958679d12190828fdc36ceb5ce1d16f1377cf752b70"
+    },
+    {
+      "file": "en_stream24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/en_stream24.wav",
+      "sample_rate": 24000,
+      "samples": 89040,
+      "sha256": "3f84abbaf0171536170f0b7a3ea6449d64cea5891ee7fe913d12e282e29690a0"
+    },
+    {
+      "file": "en_hifi24.wav",
+      "source": "/home/fomak/ffb/m55_hifi_restart_20261030/host_stream/delivery/en_full.wav",
+      "sample_rate": 24000,
+      "samples": 90000,
+      "sha256": "0a56740ee24dbe62b8c82499284fbfdeefdc9686eb7bd70d8e9a3180402744c2"
+    },
+    {
+      "file": "long_stream16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/long_stream16.wav",
+      "sample_rate": 16000,
+      "samples": 132320,
+      "sha256": "55a4334816a3dc2e843a92b20dff532602e32ad3d5eb67d307dc3f8cadba7506"
+    },
+    {
+      "file": "long_stream24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/long_stream24.wav",
+      "sample_rate": 24000,
+      "samples": 198480,
+      "sha256": "6b7d50571f3f8e855315a9011b7fa8e850f29ce3be873899e1c978387ce42c9c"
+    },
+    {
+      "file": "long_hifi24.wav",
+      "source": "/home/fomak/ffb/m55_hifi_restart_20261030/host_stream/delivery/long_full.wav",
+      "sample_rate": 24000,
+      "samples": 199440,
+      "sha256": "4f1947b2e3a1d056ee8ebc9e219a6a8bafed920bbba486bff704d97854ad4e09"
+    },
+    {
+      "file": "zh_offline16.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/zh_offline16.wav",
+      "sample_rate": 16000,
+      "samples": 45280,
+      "sha256": "60512d985f9c99142a7c4ad18d2d7f45481a8434488d6af590edcac88766537f"
+    },
+    {
+      "file": "zh_offline24.wav",
+      "source": "/home/fomak/ffb/m55_fargan_stream_20261030/reports/listening_v1/zh_offline24.wav",
+      "sample_rate": 24000,
+      "samples": 67920,
+      "sha256": "a8d43668395dd7b9e2f61c2c5597b39f9b3c8985760e65414aaf5cc7b1c52aae"
+    }
+  ],
+  "training_updates": 0,
+  "source_weights_unchanged": true,
+  "human_quality_accepted": false
+}

@@ -1,0 +1,11 @@
+{
+  "reference": "Hello, welcome to the flight.",
+  "hypothesis": " Hello, welcome to the flight",
+  "normalized_exact": true,
+  "wav_sha256": "2d0cfd0998dd8b3ed948edc7742fdaee9195200f01587ae0e0fc10cb758b4b66",
+  "recognizer_weights_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "protocol": "medium,en,beam5,temp0,fp32,no_prompt,no_previous_text",
+  "scope": "Fixed-case intelligibility check; human quality unaccepted",
+  "human_quality_accepted": false,
+  "waveform_alignment": false
+}

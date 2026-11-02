@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETED",
+  "rows": [
+    {
+      "tag": "CZ_v1",
+      "text": "下一趟航班为CZ2671号。",
+      "hypothesis": "下一趟航班为CC82671号",
+      "normalized_exact": false,
+      "wav_sha256": "4e96b2021103fc27f95a9bd0d60a7d8c682ae38b6a6f6d75d100c3a4de29b0ae"
+    },
+    {
+      "tag": "MU_v1",
+      "text": "下一趟航班为MU5108号。",
+      "hypothesis": "下一趟航班AMU5108号",
+      "normalized_exact": false,
+      "wav_sha256": "90081c87d99b74e1c6ab83709cceff4d9ddbcd3319806737021c6eb953d4d31d"
+    },
+    {
+      "tag": "EN_v1",
+      "text": "Flight BA123 departs at 18:30. The temperature is 23°C.",
+      "hypothesis": " Flight BA123 departs at 18.30. The temperature is 23 degrees Celsius.",
+      "normalized_exact": false,
+      "wav_sha256": "0ffd08e73fa05e0c66e467ed2fb8dff3234ddf65950e1f247ef5d5d6db3b737e"
+    }
+  ],
+  "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+  "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+  "scope": "Actual native INT8 QEMU intelligibility check, not subjective quality acceptance",
+  "alignment_or_fitting": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "COMPLETE_HOST_FARGAN_STREAM_AND_FIRST_IMPLEMENTATION_OPTIMIZATION",
+  "updated_utc": "2026-10-30T17:40:29.195290+00:00",
+  "source_main_commit": "f6cb74533bd2e19ef3d13dfe02a35a50830f0640",
+  "runtime_streaming": true,
+  "acoustic_stage": 1000,
+  "global_step": 3000,
+  "vocoder": "FARGAN4750",
+  "source_weights_unchanged": true,
+  "training_updates": 0,
+  "acoustic_stream_agent_completed": true,
+  "acoustic_stream_integrated": true,
+  "removed_repeated_weight_norm_hooks": 6,
+  "optimization_PCM_byte_identical_to_before": true,
+  "host_pipeline_and_real_pipe_verified": true,
+  "listening_index": "/mnt/d/newtts/new25_fargan_current_stream_20261030/index.html",
+  "native_FARGAN_M55_implemented": false,
+  "latency_300ms_verified": false,
+  "complete_10MB_verified": false,
+  "quality_human_accepted": false,
+  "pending_processes": [],
+  "limitations": [
+    "Complete phone-unit text encoding and learned global prosody mean retained; this is audio streaming, not arbitrary incremental text",
+    "Original FARGAN valid center: (T-4)*160 with source coordinates [400,160*T-240); no padding/teacher prefill",
+    "Stream/offline and different adapter batches can differ by FP rounding; default Chinese PCM16 max1LSB, RMS0.0623LSB at unchanged sample indices",
+    "HiFi-specific logmel energy offsets are not applied to FARGAN20 features; acoustic duration/prosody controls retained",
+    "Python CPU timings are not Cortex-M55 or hardware-cycle estimates"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "status": "BRANCH_SNAPSHOT_COMPLETE_300MS_AND_DOUBLE10MB_UNMET",
+  "snapshot_local": "2026-10-30T17:20:00-07:00",
+  "snapshot_utc": "2026-10-31T00:20:00Z",
+  "branch_purpose": "Host FARGAN streaming inference plus M55 native acceleration handoff",
+  "training_updates": 0,
+  "host_streaming": {
+    "runtime_streaming": true,
+    "unit_tests_passed": 29,
+    "optimization_pcm_byte_identical": true,
+    "stream_offline_pcm16_max_lsb": 1,
+    "stream_offline_pcm16_rms_lsb": 0.0623,
+    "frontend_sync_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "hardware_or_m55_claim": false
+  },
+  "native_accepted_i8_final": {
+    "elf_zh_sha256": "87e096d0ecde9cdb56125ec4458055f4086d60339da1fd8938262000a0b3e2c1",
+    "elf_en_sha256": "dd8370e2e95f5aa57f172cc82d86c4a77e0dc0e8f10edcc27d1ea6ac857c90e9",
+    "qemu_first_active_pcm24_seconds": 2.260072977,
+    "qemu_baseline_first_active_pcm24_seconds": 3.650699934,
+    "first_active_reduction_percent": 38.09,
+    "qemu_total_seconds": 21.569267013,
+    "backend_rom_bytes": 5326688,
+    "reserved_resident_ram_bytes": 3850960,
+    "arena_peak_bytes": 1768720,
+    "stack_high_water_bytes": 109568,
+    "user_quantized_quality_accepted": true,
+    "human_quality_full_scope_accepted": false
+  },
+  "native_best_instruction_candidate": {
+    "tag": "opt300d/ordinary_o3_opt12",
+    "adopted_as_production_pointer": false,
+    "finalized_optimization_round": false,
+    "elf_sha256": "03537bda40035d2a836e2a89e3cc27763cd8ea4863eb0caa9835b9224d15af69",
+    "cold_roi_instruction_events": 61984476,
+    "release_o3_instruction_events": 68816649,
+    "cold_reduction_percent": 9.928,
+    "cold_uncalibrated_1ipc_floor_ms": 309.92238,
+    "warm_roi_instruction_events": 59966762,
+    "warm_roi_1ipc_ms": 299.834,
+    "warm_is_firmware_real": false,
+    "six_outputs_byte_identical_to_accepted_baseline": true,
+    "hardware_300ms_accepted": false
+  },
+  "not_verified": [
+    "calibrated_200MHz_300ms",
+    "complete_system_double_10MB",
+    "complete_native_25_language_frontend",
+    "arbitrary_long_text",
+    "human_quality_full_scope"
+  ],
+  "pending_processes": [],
+  "resident_runtime_best_candidate": {
+    "tag": "opt300e/opt16_final",
+    "elf_sha256": "2118790e4ce4facc632c694344d41a493ae5f2f87f25bb063d666fb746c52535",
+    "request_roi_events": 59747483,
+    "request_roi_1ipc_ms": 298.737,
+    "full_request_roi_events": 59988134,
+    "full_request_roi_1ipc_ms": 299.941,
+    "both_below_60m_events": true,
+    "full_request_margin_events": 11866,
+    "hardware_300ms_accepted": false,
+    "firmware_outputs_byte_identical": "456/456",
+    "sram_dictionary_mirror_bytes": 1516448,
+    "complete_system_double10MB_verified": false,
+    "adopted_as_production_pointer": false
+  }
+}

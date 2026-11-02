@@ -1,0 +1,9 @@
+{
+  "exclude": [
+    "bg-BG.fep",
+    "sl-SI.fep"
+  ],
+  "overrides": {
+    "integration-supplement.fep": "resources/integration_g2p_only.fep"
+  }
+}

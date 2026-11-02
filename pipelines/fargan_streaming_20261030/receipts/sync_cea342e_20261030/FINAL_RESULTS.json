@@ -1,0 +1,1688 @@
+{
+  "status": "CEA342E_SYNC_AND_RETEST_COMPLETE_WITH_REMAINING_QUALITY_ISSUES",
+  "updated_utc": "2026-10-30T18:57:39.738081+00:00",
+  "commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+  "actual_host_entry": "/home/fomak/ffb/m55_fargan_stream_20261030/synthesize.py",
+  "actual_frontend": "/home/fomak/ffb/new25_clarity_repair_20261030/repo/pipelines/prosody1000_rndvoc_opus24/text_worker.py",
+  "full_host_controls_synced": true,
+  "host_control_reference": {
+    "status": "EXACT_CEA342E_ACOUSTIC_CONTROL_SYNC_VERIFIED",
+    "reference_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "source_acoustic_piece_executed_without_source_runtime_import": true,
+    "full_arrays_byte_equal": true,
+    "records": [
+      {
+        "case": "zh_plain",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "natural",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+        "metadata_sha256": "ce9e69c0a94b1dc0b142c041444f3e6759f6086ec921580220f8982c1e8e415c",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_plain_natural_conditions.npz",
+        "conditions_sha256": "e849d86a56a1881382aadef21a1b0f75535f89f7766e151229f1e38a59482230",
+        "physical_frames": 287,
+        "training_updates": 0
+      },
+      {
+        "case": "zh_plain",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "original",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+        "metadata_sha256": "ce9e69c0a94b1dc0b142c041444f3e6759f6086ec921580220f8982c1e8e415c",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_plain_original_conditions.npz",
+        "conditions_sha256": "e849d86a56a1881382aadef21a1b0f75535f89f7766e151229f1e38a59482230",
+        "physical_frames": 287,
+        "training_updates": 0
+      },
+      {
+        "case": "zh_CZ2671",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "natural",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "5457752b16abbcaa6b83a210e67e5c5261149d4919215261f6c22580741f2bee",
+        "metadata_sha256": "53a41846de1cc3ae2842db947fd8dfe9cb8e6474ad9116e65d19bfa4cbae9780",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_CZ2671_natural_conditions.npz",
+        "conditions_sha256": "3ca8186093f86c7c86a2ab6505eab2ecfad384c50877feb3ab7b4f9a193ed898",
+        "physical_frames": 285,
+        "training_updates": 0
+      },
+      {
+        "case": "zh_CZ2671",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "original",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "5457752b16abbcaa6b83a210e67e5c5261149d4919215261f6c22580741f2bee",
+        "metadata_sha256": "53a41846de1cc3ae2842db947fd8dfe9cb8e6474ad9116e65d19bfa4cbae9780",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_CZ2671_original_conditions.npz",
+        "conditions_sha256": "48f363282800b2130b9d7192466bcd8cd1e15565c2c76f9395971515624514bd",
+        "physical_frames": 293,
+        "training_updates": 0
+      },
+      {
+        "case": "zh_MU5108",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "natural",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "6f0ba4357ac40d6e0f8c41229d8b0bd6438b378c4a305c1ea7f9247f40743603",
+        "metadata_sha256": "424a16e4efc8dd51842e8378514edd104aebbe01116efb13c4d51f41d10847bf",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_MU5108_natural_conditions.npz",
+        "conditions_sha256": "e7f94cb1da2a586da08e3efe447ed5346c790572fafa6779776ea9d931d3cf85",
+        "physical_frames": 273,
+        "training_updates": 0
+      },
+      {
+        "case": "zh_MU5108",
+        "chunk": 0,
+        "language": "zh",
+        "mode": "original",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "6f0ba4357ac40d6e0f8c41229d8b0bd6438b378c4a305c1ea7f9247f40743603",
+        "metadata_sha256": "424a16e4efc8dd51842e8378514edd104aebbe01116efb13c4d51f41d10847bf",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/zh_MU5108_original_conditions.npz",
+        "conditions_sha256": "e3f942728cc35191f80d376db987dbe83e9338bec46fc96298d10afec2ce5868",
+        "physical_frames": 281,
+        "training_updates": 0
+      },
+      {
+        "case": "en_digits",
+        "chunk": 0,
+        "language": "en",
+        "mode": "natural",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "bf9b22b62e7a10cad581bbbd3b7df1a0e16175f6bbe4ad06c58b951870f08b9a",
+        "metadata_sha256": "213d4a04710fb0f1a8d81aeded65b8263f27f48967d68724100496151ebfccf5",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/en_digits_natural_conditions.npz",
+        "conditions_sha256": "dc1ff419a7dd7b4706f9f0240917fa8f4f40f525654a4c360e6c141810c37e3e",
+        "physical_frames": 517,
+        "training_updates": 0
+      },
+      {
+        "case": "en_digits",
+        "chunk": 0,
+        "language": "en",
+        "mode": "original",
+        "exact_reference_arrays": {
+          "physical": true,
+          "normalized": true,
+          "prediction": true,
+          "durations": true,
+          "frame_phone": true,
+          "position": true
+        },
+        "exact_reference_controls": {
+          "regular": true,
+          "U": true,
+          "C": true,
+          "first_digit": true,
+          "continuous_code_flow": true,
+          "identifier_prosody_mode": true,
+          "connected_identifier_gaps": true,
+          "identifier_pitch": true
+        },
+        "features_sha256": "bf9b22b62e7a10cad581bbbd3b7df1a0e16175f6bbe4ad06c58b951870f08b9a",
+        "metadata_sha256": "213d4a04710fb0f1a8d81aeded65b8263f27f48967d68724100496151ebfccf5",
+        "conditions_file": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/reports/en_digits_original_conditions.npz",
+        "conditions_sha256": "dc1ff419a7dd7b4706f9f0240917fa8f4f40f525654a4c360e6c141810c37e3e",
+        "physical_frames": 517,
+        "training_updates": 0
+      }
+    ],
+    "model_files_unchanged": {
+      "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/weights.safetensors": "e2b5342c3d116693de58fe3a8cf8e55cf1aacaad5816fe0ebb38aa26b456fc74",
+      "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/step1000_acoustic_package/quantization.json": "292b1d0789ef2a3ee0cd513fd7e510512add6d91b1deb9db5fc277e2ef9060f6",
+      "/home/fomak/ffb/new25_quality_continue_20261029/baseline/int8/assets/normalization.json": "b5db6854811557e26da1471ab22b1d8daed3dc63a22eb108d08cb13a9c4909b2",
+      "/home/fomak/ffb/new25_screenreader_20261030/unified_zh_prosody_v2/assets/vocabulary.json": "fcc33a75816be07c082413431e0e0831f2b4f58f1c80a44dfc3ce27f2a41a742",
+      "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/vocoder_adapter_fp16.safetensors": "2f3fde31d51b16cfb03e4c9904371dd2f393cd29d8f5fc17b9e7cb2cf52332af",
+      "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/model_config.json": "f05ac90328e12f76f886f825d86c7f73bca885d96ef190f843330e2f17eef994",
+      "/home/fomak/ffb/m55_fargan_stream_20261030/repo/models/fargan/EXPORT.json": "6a5f8237c2d9a85c6c0f785d6c5175c64fdff826bece2a488fe5fd9d21075d28"
+    },
+    "source_RND_loaded": false,
+    "original_control_module_names_polluted": false,
+    "no_identifier_stream_keeps_persistent_acoustic_cursor": true,
+    "identifier_natural_waits_for_complete_corrected_acoustic_unit": true,
+    "training_updates": 0,
+    "human_quality_accepted": false
+  },
+  "frontend_regression": {
+    "status": "PASSED",
+    "commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "fresh_plan_cases": 34,
+    "languages": 25,
+    "all_arrays_byte_identical_to_cea_regression": true,
+    "rows": [
+      {
+        "id": "smoke_bg",
+        "language": "bg",
+        "text": "Здравей, това е тест на гласа.",
+        "segments": 1,
+        "phones": [
+          30
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "e69f2e203d5924390c5d8f5d.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_cs",
+        "language": "cs",
+        "text": "Ahoj, toto je hlasový test.",
+        "segments": 1,
+        "phones": [
+          27
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "7ed247713251d8d54b1f2f0e.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_da",
+        "language": "da",
+        "text": "Dette er en test af stemmen.",
+        "segments": 1,
+        "phones": [
+          28
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "89bfb8dbe660d57da879dc4e.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_de",
+        "language": "de",
+        "text": "Hallo, dies ist ein Test der Stimme.",
+        "segments": 1,
+        "phones": [
+          32
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "9de56195d57adc32fcb98904.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_el",
+        "language": "el",
+        "text": "Γεια σας, αυτή είναι μια δοκιμή φωνής.",
+        "segments": 1,
+        "phones": [
+          34
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "4017254c4ba55061a399e47c.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_en",
+        "language": "en",
+        "text": "Hello, this is a test of the new voice model.",
+        "segments": 1,
+        "phones": [
+          39
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "1f17b2e2fc5e97d21aa46a7d.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_es",
+        "language": "es",
+        "text": "Hola, esta es una prueba de voz.",
+        "segments": 1,
+        "phones": [
+          31
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "b243856842830b57a33e7302.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_et",
+        "language": "et",
+        "text": "Tere, see on hääle test.",
+        "segments": 1,
+        "phones": [
+          22
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "468a3ab4bf77cbc60337defa.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_fi",
+        "language": "fi",
+        "text": "Hei, tämä on puheen testi.",
+        "segments": 1,
+        "phones": [
+          24
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "a5adcac009670df931a6667e.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_fr",
+        "language": "fr",
+        "text": "Bonjour, ceci est un test de la voix.",
+        "segments": 1,
+        "phones": [
+          31
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "c557ecd6f5d7c491428e10eb.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_hr",
+        "language": "hr",
+        "text": "Pozdrav, ovo je test glasa.",
+        "segments": 1,
+        "phones": [
+          27
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "41b6a140a13697942f7a0cd7.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_hu",
+        "language": "hu",
+        "text": "Szia, ez egy hangteszt.",
+        "segments": 1,
+        "phones": [
+          20
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "92127b2371f258a80976ab99.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_it",
+        "language": "it",
+        "text": "Ciao, questa è una prova della voce.",
+        "segments": 1,
+        "phones": [
+          34
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "6e2f4e704057e24c6652919f.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_lt",
+        "language": "lt",
+        "text": "Labas, tai yra balso testas.",
+        "segments": 1,
+        "phones": [
+          27
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "80fcd56f2f73edf10eeca1f8.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_lv",
+        "language": "lv",
+        "text": "Sveiki, šis ir balss tests.",
+        "segments": 1,
+        "phones": [
+          25
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "e0c5130f3485d750c08412a8.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_nl",
+        "language": "nl",
+        "text": "Hallo, dit is een test van de stem.",
+        "segments": 1,
+        "phones": [
+          33
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "d89b097bd8ee7ae335f5b9a3.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_no",
+        "language": "no",
+        "text": "Hei, dette er en test av stemmen.",
+        "segments": 1,
+        "phones": [
+          31
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "6fdc885d0e2700f7507ff6a3.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_pl",
+        "language": "pl",
+        "text": "Dzień dobry, to jest test głosu.",
+        "segments": 1,
+        "phones": [
+          30
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "44ad57819165cd4f6f31c8bb.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_pt",
+        "language": "pt",
+        "text": "Olá, este é um teste de voz.",
+        "segments": 1,
+        "phones": [
+          27
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "89cc34f07f4f5b310f6c8e44.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_ro",
+        "language": "ro",
+        "text": "Salut, acesta este un test de voce.",
+        "segments": 1,
+        "phones": [
+          36
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "2e4f21a354fb922d4764c55c.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_sk",
+        "language": "sk",
+        "text": "Ahoj, toto je skúška hlasu.",
+        "segments": 1,
+        "phones": [
+          27
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "a0520abe42a0646826fda868.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_sl",
+        "language": "sl",
+        "text": "Pozdravljeni, to je preizkus glasu.",
+        "segments": 1,
+        "phones": [
+          35
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "f67ee376cacc643ddc479327.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_sv",
+        "language": "sv",
+        "text": "Hej, det här är ett test av rösten.",
+        "segments": 1,
+        "phones": [
+          34
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "45546379710f6181ac01b7e1.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_tr",
+        "language": "tr",
+        "text": "Merhaba, bu bir ses testidir.",
+        "segments": 1,
+        "phones": [
+          29
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "e91714a39f2d52126e665f90.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "smoke_zh",
+        "language": "zh",
+        "text": "你好，欢迎测试新的语音模型。",
+        "segments": 1,
+        "phones": [
+          34
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "42bd8645b7a0d3bbc25a26c5.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "flight_cz",
+        "language": "zh",
+        "text": "下一趟航班为CZ2671号。",
+        "segments": 1,
+        "phones": [
+          36
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "e2413d10b312f457919833ff.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "flight_mu",
+        "language": "zh",
+        "text": "下一趟航班为MU5108号，请前往T2航站楼。",
+        "segments": 1,
+        "phones": [
+          58
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "9d90f2d900e459328ba0a7bf.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "flight_ca",
+        "language": "zh",
+        "text": "航班CA0806正在登机，请核对登机口A12。",
+        "segments": 1,
+        "phones": [
+          60
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "ebbbc964d4925a3e5432d04a.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "spaced_code",
+        "language": "zh",
+        "text": "下一趟航班为cz 2671号。",
+        "segments": 1,
+        "phones": [
+          36
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "d2751afdbaa1e8fe3757355d.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "initialisms",
+        "language": "zh",
+        "text": "请打开PDF文档，检查CPU、GPU、USB和API接口。",
+        "segments": 1,
+        "phones": [
+          73
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "e5ef55dce2c3b008c1b4db28.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "digit_runs",
+        "language": "zh",
+        "text": "请核对编号A12B34和AB0072，保留开头的零。",
+        "segments": 1,
+        "phones": [
+          68
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "f8447bc2a608e1f747747bfa.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "repeat_probe",
+        "language": "zh",
+        "text": "下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。下一趟航班为CZ2671号。请准备登机。",
+        "segments": 4,
+        "phones": [
+          101,
+          101,
+          101,
+          101
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "7d1e075eb6597110a2aa43ec.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "7d1e075eb6597110a2aa43ec.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "7d1e075eb6597110a2aa43ec.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "7d1e075eb6597110a2aa43ec.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "english_long",
+        "language": "en",
+        "text": "The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. The next flight is CZ2671. Please check the departure gate and keep your boarding pass ready. ",
+        "segments": 12,
+        "phones": [
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94,
+          94
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "c8d71ef90821be0ece83e564.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "52499cabbe1c5c37a2f6345f.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "4bafc7eb6ccfc99819f95805.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      },
+      {
+        "id": "long_zh",
+        "language": "zh",
+        "text": "请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。请核对航班CZ2671和登机口A12。下一项是航站楼T2，请带好证件。",
+        "segments": 8,
+        "phones": [
+          90,
+          90,
+          90,
+          90,
+          90,
+          90,
+          90,
+          90
+        ],
+        "frontend_host_seconds": null,
+        "plan_from_current_sync_run_reused": true,
+        "reference_arrays": true,
+        "comparisons": [
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          },
+          {
+            "file": "315b4c49365b1bd4ecdba8c0.npz",
+            "all_arrays_byte_identical": true
+          }
+        ]
+      }
+    ],
+    "scope": "Frontend numeric features/planning, not generated-audio quality or complete M55 frontend",
+    "training_updates": 0
+  },
+  "native_verification": {
+    "status": "COMPLETED_ALL_FOUR_NATIVE_CASES",
+    "CEA_commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "source_model_unchanged": true,
+    "training_updates": 0,
+    "original_baselines_preserved": true,
+    "default_entry_modified_by_this_task": false,
+    "native_text_frontend_implemented": false,
+    "prepared_CEA_features_only": true,
+    "cases": [
+      {
+        "tag": "ordinary_v2",
+        "text": "你好，欢迎测试新的语音模型。",
+        "language": "zh",
+        "status": "FUNCTIONAL_CHECKS_PASSED",
+        "source_feature_sha256": "a8fed49e978d7ad6d75614f482edc934625096406c138fb44ee81c719c666194",
+        "phone_count": 34,
+        "unknown_phone_count": 0,
+        "physical_frames": 287,
+        "audio_seconds": 2.83,
+        "clips16": 0,
+        "clips24": 0,
+        "qemu_host_seconds": {
+          "first_pcm_ready_host_ticks": 1.442208802,
+          "full_chain_first_any_PCM24_host_ticks": 1.507864737,
+          "first_active_frame_ready_host_ticks": 2.300588777,
+          "full_chain_first_active_PCM24_host_ticks": 2.365195685,
+          "firmware_total_host_ticks": 22.745327733
+        },
+        "memory": {
+          "image_code_rodata_and_data_initializer_bytes": 169792,
+          "assets_qspi_rom_bytes": 5157984,
+          "static_rw_bytes": 51264,
+          "arena_reserved_bytes": 3500000,
+          "arena_peak_bytes": 1768720,
+          "stack_reserved_bytes": 131072,
+          "stack_written_high_water_bytes": 109568,
+          "reserved_resident_ram_bytes": 3852128,
+          "backend_ROM_bytes": 5327776
+        },
+        "first_effective_200MHz_partial_seconds": [
+          0.41975359,
+          0.87383979
+        ],
+        "uncalibrated_partial_not_bounds": true,
+        "unknown_control_or_system_extra_cycles": true,
+        "identifier_full_acoustic_barrier": false,
+        "native_text_parser": false,
+        "elf_sha256": "e370c2ed9d24ee48ac9ccd0bfdf2c2212c72530bf374c0e2eb41c150526542d9",
+        "audio_sha256": {
+          "output.wav": "d1e9a530b2828d86f79754c6ac3871eea12a550d1eb3b3c54aa96b7501b5275e",
+          "output24.wav": "ef11f693d57f27bbfb4f94fc60f49ea6d9ddcc4bf1ffba132f9f2a6585a32b28",
+          "output.pcm": "368f7b0592cdc6ba71fed31f2e25e22f88a914f24edbde80b5596d60c229eab5",
+          "output24.pcm": "038e65451794cb9eaedb180c709466fd8b49cb396a107afecf22383bb98c4c28"
+        },
+        "six_output_files_same_as_accepted": true
+      },
+      {
+        "tag": "CZ_v1",
+        "text": "下一趟航班为CZ2671号。",
+        "language": "zh",
+        "status": "FUNCTIONAL_CHECKS_PASSED",
+        "source_feature_sha256": "06470e29265fa6a672b2e964348d0e1242499f8529566023459651f7e4674a2d",
+        "phone_count": 36,
+        "unknown_phone_count": 0,
+        "physical_frames": 319,
+        "audio_seconds": 3.15,
+        "clips16": 0,
+        "clips24": 0,
+        "qemu_host_seconds": {
+          "first_pcm_ready_host_ticks": 5.252316529,
+          "full_chain_first_any_PCM24_host_ticks": 5.319825339,
+          "first_active_frame_ready_host_ticks": 6.268272586,
+          "full_chain_first_active_PCM24_host_ticks": 6.332549035,
+          "firmware_total_host_ticks": 28.484736229
+        },
+        "memory": {
+          "image_code_rodata_and_data_initializer_bytes": 178592,
+          "assets_qspi_rom_bytes": 5157984,
+          "static_rw_bytes": 60512,
+          "arena_reserved_bytes": 3500000,
+          "arena_peak_bytes": 1815824,
+          "stack_reserved_bytes": 131072,
+          "stack_written_high_water_bytes": 109736,
+          "reserved_resident_ram_bytes": 3870176,
+          "backend_ROM_bytes": 5336576
+        },
+        "first_effective_200MHz_partial_seconds": [
+          0.92574497,
+          1.86015031
+        ],
+        "uncalibrated_partial_not_bounds": true,
+        "unknown_control_or_system_extra_cycles": true,
+        "identifier_full_acoustic_barrier": true,
+        "native_text_parser": false,
+        "elf_sha256": "a958990da524fc7c3b9a769ca331c3c8788731953713a5188f26fc4dc8464eb6",
+        "audio_sha256": {
+          "output.wav": "4e96b2021103fc27f95a9bd0d60a7d8c682ae38b6a6f6d75d100c3a4de29b0ae",
+          "output24.wav": "8829be1557f19e610c6660ab51757f5c46eef73a0b0b3f1cac3b7fbe7dfe9847",
+          "output.pcm": "372e37b91b416cf89253aa2afc8566b70dd9ae413010cc9ad96089730d270cf0",
+          "output24.pcm": "0999ceceaafc97b0804681c4e7b7438ee639fb3458d081f818b954a84c1d2c44"
+        },
+        "control_verification": {
+          "duration_stages_exact": true,
+          "physical_pitch_transform_max_error": 0.0,
+          "pitch_changed_frames": 148,
+          "max_final_logF0_change": 0.13223791122436523,
+          "units": [
+            {
+              "symbol": "C",
+              "phone_range": [
+                17,
+                19
+              ],
+              "total_ms": 270,
+              "per_phone_ms": [
+                90,
+                180
+              ]
+            },
+            {
+              "symbol": "Z",
+              "phone_range": [
+                20,
+                22
+              ],
+              "total_ms": 220,
+              "per_phone_ms": [
+                100,
+                120
+              ]
+            },
+            {
+              "symbol": "2",
+              "phone_range": [
+                23,
+                24
+              ],
+              "total_ms": 270,
+              "per_phone_ms": [
+                270
+              ]
+            },
+            {
+              "symbol": "6",
+              "phone_range": [
+                25,
+                27
+              ],
+              "total_ms": 220,
+              "per_phone_ms": [
+                80,
+                140
+              ]
+            },
+            {
+              "symbol": "7",
+              "phone_range": [
+                28,
+                30
+              ],
+              "total_ms": 220,
+              "per_phone_ms": [
+                160,
+                60
+              ]
+            },
+            {
+              "symbol": "1",
+              "phone_range": [
+                31,
+                32
+              ],
+              "total_ms": 220,
+              "per_phone_ms": [
+                220
+              ]
+            }
+          ],
+          "gaps": [
+            {
+              "left": "C",
+              "right": "Z",
+              "ms": 0
+            },
+            {
+              "left": "Z",
+              "right": "2",
+              "ms": 60
+            },
+            {
+              "left": "2",
+              "right": "6",
+              "ms": 0
+            },
+            {
+              "left": "6",
+              "right": "7",
+              "ms": 0
+            },
+            {
+              "left": "7",
+              "right": "1",
+              "ms": 0
+            }
+          ],
+          "prosody_tensor_scope": {
+            "duration_stages_exported": true,
+            "original_or_per_stage_prosody_tensor_exported": false,
+            "first_digit_energy_plus025": "Source and executed first_digit branch count verified; original/updated p4 values not exported for tensor comparison",
+            "pause_voicing_p2_plusminus1": "Source update path checked; per-stage p2 tensor values not exported",
+            "duration_logits_log_p0_p1": "Source path checked and resulting durations exact; logit tensor bit identity not claimed",
+            "all_prosody_or_energy_conditions_bitexact_claimed": false,
+            "logmel80_offsets_applied_to_FARGAN20": false
+          }
+        }
+      },
+      {
+        "tag": "MU_v1",
+        "text": "下一趟航班为MU5108号。",
+        "language": "zh",
+        "status": "FUNCTIONAL_CHECKS_PASSED",
+        "source_feature_sha256": "cc1571e77a87325c4faaf8bc62d613e50d33c36d1779d2c003429545fa28d401",
+        "phone_count": 36,
+        "unknown_phone_count": 0,
+        "physical_frames": 300,
+        "audio_seconds": 2.96,
+        "clips16": 0,
+        "clips24": 0,
+        "qemu_host_seconds": {
+          "first_pcm_ready_host_ticks": 4.389558294,
+          "full_chain_first_any_PCM24_host_ticks": 4.451846865,
+          "first_active_frame_ready_host_ticks": 5.314277045,
+          "full_chain_first_active_PCM24_host_ticks": 5.372811433,
+          "firmware_total_host_ticks": 24.399141763
+        },
+        "memory": {
+          "image_code_rodata_and_data_initializer_bytes": 178592,
+          "assets_qspi_rom_bytes": 5157984,
+          "static_rw_bytes": 60512,
+          "arena_reserved_bytes": 3500000,
+          "arena_peak_bytes": 1786944,
+          "stack_reserved_bytes": 131072,
+          "stack_written_high_water_bytes": 109736,
+          "reserved_resident_ram_bytes": 3870176,
+          "backend_ROM_bytes": 5336576
+        },
+        "first_effective_200MHz_partial_seconds": [
+          0.8926413,
+          1.79601668
+        ],
+        "uncalibrated_partial_not_bounds": true,
+        "unknown_control_or_system_extra_cycles": true,
+        "identifier_full_acoustic_barrier": true,
+        "native_text_parser": false,
+        "elf_sha256": "f71c7607b9d300fbabec97a42d5426d2b3e05feb5900290eab3a0a30176c31ae",
+        "audio_sha256": {
+          "output.wav": "90081c87d99b74e1c6ab83709cceff4d9ddbcd3319806737021c6eb953d4d31d",
+          "output24.wav": "513acf19e3962ef670d1c5979385a6064417ef5023ac1184274c83f1e7050632",
+          "output.pcm": "cd1bb996a19ca2ffd6d406c36a2191fa3c30019d6c55a539ef6264e0e97b09ef",
+          "output24.pcm": "0050040e07877988e0a0657832fdb3ec8b29d205f558743dfc5cf2fedcb056bd"
+        },
+        "control_verification": {
+          "duration_stages_exact": true,
+          "physical_pitch_transform_max_error": 0.0,
+          "pitch_changed_frames": 131,
+          "max_final_logF0_change": 0.19030475616455078,
+          "units": [
+            {
+              "symbol": "M",
+              "phone_range": [
+                17,
+                19
+              ],
+              "total_ms": 200,
+              "per_phone_ms": [
+                80,
+                120
+              ]
+            },
+            {
+              "symbol": "U",
+              "phone_range": [
+                20,
+                22
+              ],
+              "total_ms": 200,
+              "per_phone_ms": [
+                40,
+                160
+              ]
+            },
+            {
+              "symbol": "5",
+              "phone_range": [
+                23,
+                24
+              ],
+              "total_ms": 250,
+              "per_phone_ms": [
+                250
+              ]
+            },
+            {
+              "symbol": "1",
+              "phone_range": [
+                25,
+                26
+              ],
+              "total_ms": 200,
+              "per_phone_ms": [
+                200
+              ]
+            },
+            {
+              "symbol": "0",
+              "phone_range": [
+                27,
+                29
+              ],
+              "total_ms": 200,
+              "per_phone_ms": [
+                80,
+                120
+              ]
+            },
+            {
+              "symbol": "8",
+              "phone_range": [
+                30,
+                32
+              ],
+              "total_ms": 200,
+              "per_phone_ms": [
+                50,
+                150
+              ]
+            }
+          ],
+          "gaps": [
+            {
+              "left": "M",
+              "right": "U",
+              "ms": 0
+            },
+            {
+              "left": "U",
+              "right": "5",
+              "ms": 60
+            },
+            {
+              "left": "5",
+              "right": "1",
+              "ms": 0
+            },
+            {
+              "left": "1",
+              "right": "0",
+              "ms": 0
+            },
+            {
+              "left": "0",
+              "right": "8",
+              "ms": 0
+            }
+          ],
+          "prosody_tensor_scope": {
+            "duration_stages_exported": true,
+            "original_or_per_stage_prosody_tensor_exported": false,
+            "first_digit_energy_plus025": "Source and executed first_digit branch count verified; original/updated p4 values not exported for tensor comparison",
+            "pause_voicing_p2_plusminus1": "Source update path checked; per-stage p2 tensor values not exported",
+            "duration_logits_log_p0_p1": "Source path checked and resulting durations exact; logit tensor bit identity not claimed",
+            "all_prosody_or_energy_conditions_bitexact_claimed": false,
+            "logmel80_offsets_applied_to_FARGAN20": false
+          }
+        }
+      },
+      {
+        "tag": "EN_v1",
+        "text": "Flight BA123 departs at 18:30. The temperature is 23°C.",
+        "language": "en",
+        "status": "FUNCTIONAL_CHECKS_PASSED",
+        "source_feature_sha256": "81fe73e97af61e97d23d8af748340f2ca2c6dfca8c8b5f1b303e7c2e15d26227",
+        "phone_count": 84,
+        "unknown_phone_count": 0,
+        "physical_frames": 643,
+        "audio_seconds": 6.39,
+        "clips16": 0,
+        "clips24": 0,
+        "qemu_host_seconds": {
+          "first_pcm_ready_host_ticks": 1.871466217,
+          "full_chain_first_any_PCM24_host_ticks": 1.935466789,
+          "first_active_frame_ready_host_ticks": 3.625994162,
+          "full_chain_first_active_PCM24_host_ticks": 3.651039746,
+          "firmware_total_host_ticks": 49.643745614
+        },
+        "memory": {
+          "image_code_rodata_and_data_initializer_bytes": 179296,
+          "assets_qspi_rom_bytes": 5157984,
+          "static_rw_bytes": 51472,
+          "arena_reserved_bytes": 3500000,
+          "arena_peak_bytes": 2369200,
+          "stack_reserved_bytes": 131072,
+          "stack_written_high_water_bytes": 109568,
+          "reserved_resident_ram_bytes": 3861840,
+          "backend_ROM_bytes": 5337280
+        },
+        "first_effective_200MHz_partial_seconds": [
+          0.664120155,
+          1.37337711
+        ],
+        "uncalibrated_partial_not_bounds": true,
+        "unknown_control_or_system_extra_cycles": true,
+        "identifier_full_acoustic_barrier": false,
+        "native_text_parser": false,
+        "elf_sha256": "2104a4e1e9ab5a10cf91059695513041627997021af8724b12ff7991c14eaf79",
+        "audio_sha256": {
+          "output.wav": "0ffd08e73fa05e0c66e467ed2fb8dff3234ddf65950e1f247ef5d5d6db3b737e",
+          "output24.wav": "6bba5c8790e6f7abddafef8b55ed40e16d95590a418690b6a002ccc213f4653e",
+          "output.pcm": "b099bd2d63c2d0c0ec15757ed3ed8e04370abeb14550ab555a658edc90cf17ee",
+          "output24.pcm": "ef0e0cb2538b03661930b9f75f3cb5a48d05a1d2ae2577f9b260b409b4c8eefc"
+        }
+      }
+    ],
+    "full_10MB_system_verified": false,
+    "hardware_300ms_verified": false,
+    "subjective_quality_accepted": false,
+    "new_BWE_or_vocoder_quantization": false,
+    "waveform_alignment_or_fitting": false,
+    "notes": [
+      "ID input has full acoustic-condition dependency before FARGAN; do not reuse ordinary420ms partial estimate.",
+      "Seven duration stages and the pitch transform were verified on native-generated control inputs. Other prosody tensor channels were source/branch-reviewed but not exported for exact tensor verification.",
+      "Original targetclip +/-0.18 precedes smoothing; final delta is not guaranteed <=0.18.",
+      "All costs are partial uncalibrated sensitivities with original coefficients; new ID median/F64/libm costs and dynamic frontend/platform/external memory remain incomplete."
+    ]
+  },
+  "native_timing_rows": [
+    {
+      "tag": "ordinary_v2",
+      "status": "PASSED",
+      "first_effective_QEMU_seconds": 2.365195685,
+      "clips16": 0,
+      "clips24": 0,
+      "ELF_sha256": "e370c2ed9d24ee48ac9ccd0bfdf2c2212c72530bf374c0e2eb41c150526542d9"
+    },
+    {
+      "tag": "CZ_v1",
+      "status": "PASSED",
+      "first_effective_QEMU_seconds": 6.332549035,
+      "clips16": 0,
+      "clips24": 0,
+      "ELF_sha256": "a958990da524fc7c3b9a769ca331c3c8788731953713a5188f26fc4dc8464eb6"
+    },
+    {
+      "tag": "MU_v1",
+      "status": "PASSED",
+      "first_effective_QEMU_seconds": 5.372811433,
+      "clips16": 0,
+      "clips24": 0,
+      "ELF_sha256": "f71c7607b9d300fbabec97a42d5426d2b3e05feb5900290eab3a0a30176c31ae"
+    },
+    {
+      "tag": "EN_v1",
+      "status": "PASSED",
+      "first_effective_QEMU_seconds": 3.651039746,
+      "clips16": 0,
+      "clips24": 0,
+      "ELF_sha256": "2104a4e1e9ab5a10cf91059695513041627997021af8724b12ff7991c14eaf79"
+    }
+  ],
+  "host_ASR": {
+    "status": "COMPLETED",
+    "rows": [
+      {
+        "id": "zh_plain",
+        "text": "你好，欢迎测试新的语音模型。",
+        "hypothesis": "你好,歡迎測試新的語音模型",
+        "normalized_exact": false,
+        "wav_sha256": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7",
+        "language": "zh"
+      },
+      {
+        "id": "zh_CZ2671",
+        "text": "请乘坐CZ2671航班。",
+        "hypothesis": "请乘坐CZ82671航班",
+        "normalized_exact": false,
+        "wav_sha256": "3dcb256c900463d0c2a15a3ee91a3b26d78906d493827ba560e2af90f7f449a8",
+        "language": "zh"
+      },
+      {
+        "id": "zh_MU5108",
+        "text": "请乘坐MU5108航班。",
+        "hypothesis": "請乘坐MU5108航班",
+        "normalized_exact": false,
+        "wav_sha256": "7ae39b98db9711d9a38710f6938e2b80608ec841edd8dbd46fd7fef41ae2fa5b",
+        "language": "zh"
+      },
+      {
+        "id": "en_digits",
+        "text": "Flight MU5108 departs at 10:30. Please check gate 12.",
+        "hypothesis": " Flight MU5108 departs at 10.30. Please check gate 12.",
+        "normalized_exact": true,
+        "wav_sha256": "003c0a37326b993f1912786987adb38a9ff0327e7c310176664dd7fc9c43c55f",
+        "language": "en"
+      }
+    ],
+    "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+    "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+    "scope": "Host FP16 FARGAN intelligibility check, not M55 INT8 or subjective quality acceptance",
+    "alignment_or_fitting": false
+  },
+  "host_original_ASR": {
+    "status": "COMPLETED",
+    "rows": [
+      {
+        "id": "zh_CZ2671_original",
+        "text": "请乘坐CZ2671航班。",
+        "hypothesis": "请乘坐CZ82671航班",
+        "normalized_exact": false,
+        "wav_sha256": "ed207e52565c3c8e287f09b1244620c795107aad950e34259724e330862efef9",
+        "language": "zh"
+      },
+      {
+        "id": "zh_MU5108_original",
+        "text": "请乘坐MU5108航班。",
+        "hypothesis": "請乘坐MU5108航班",
+        "normalized_exact": false,
+        "wav_sha256": "16cbc6b78b5a62e104c54400b48125dd2f61738e64fbac5464757de19df11dac",
+        "language": "zh"
+      }
+    ],
+    "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+    "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+    "scope": "Host FP16 FARGAN intelligibility check, not M55 INT8 or subjective quality acceptance",
+    "alignment_or_fitting": false
+  },
+  "native_ASR": {
+    "status": "COMPLETED",
+    "rows": [
+      {
+        "tag": "CZ_v1",
+        "text": "下一趟航班为CZ2671号。",
+        "hypothesis": "下一趟航班为CC82671号",
+        "normalized_exact": false,
+        "wav_sha256": "4e96b2021103fc27f95a9bd0d60a7d8c682ae38b6a6f6d75d100c3a4de29b0ae"
+      },
+      {
+        "tag": "MU_v1",
+        "text": "下一趟航班为MU5108号。",
+        "hypothesis": "下一趟航班AMU5108号",
+        "normalized_exact": false,
+        "wav_sha256": "90081c87d99b74e1c6ab83709cceff4d9ddbcd3319806737021c6eb953d4d31d"
+      },
+      {
+        "tag": "EN_v1",
+        "text": "Flight BA123 departs at 18:30. The temperature is 23°C.",
+        "hypothesis": " Flight BA123 departs at 18.30. The temperature is 23 degrees Celsius.",
+        "normalized_exact": false,
+        "wav_sha256": "0ffd08e73fa05e0c66e467ed2fb8dff3234ddf65950e1f247ef5d5d6db3b737e"
+      }
+    ],
+    "protocol": "Whisper-medium,beam5,temp0,FP32,no_prompt,no_previous_text",
+    "recognizer_sha256": "345ae4da62f9b3d59415adc60127b97c714f32e89e936602e85993674d08dcb1",
+    "scope": "Actual native INT8 QEMU intelligibility check, not subjective quality acceptance",
+    "alignment_or_fitting": false
+  },
+  "ordinary_native_Han_source_identity": {
+    "status": "COMPLETED_CEA_ORDINARY_HAN_IDENTITY_AND_RESOURCE_DELTA",
+    "revision": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "native_source_directory": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/frontend_identity/native",
+    "controlled_source_directory": "/home/fomak/ffb/m55_fargan_stream_20261030/sync_cea342e_20261030/frontend_identity/cea_frontend_source",
+    "git_clean": true,
+    "tracked_files_verified": 745,
+    "host_cases_byte_identical": 9,
+    "M55_cases_byte_identical": 9,
+    "component_ELF_byte_identical": true,
+    "component_ELF_sha256": "bd10c21cf76d9906fb5acc9b03f821bbabcc4f2672c7283244597a0b5711e258",
+    "native_number_Latin_identifier_parser": false,
+    "complete_native_25_language_frontend": false,
+    "full_ROM_RAM_accepted": false,
+    "training_updates": 0,
+    "full_audio_QEMU_runs": 0,
+    "component_QEMU_runs": 1,
+    "active_task_processes": false,
+    "data_inventory_delta_bytes": 244,
+    "new_production_Python_source_bytes_delta": 35484,
+    "new_reference_license_provenance_bytes": 28235,
+    "unknown_compiled_ARM_source_delta_bytes": null,
+    "reports": {
+      "CEA_TRACKED_SOURCE_IDENTITY.json": {
+        "sha256": "b4253b8e4071aff651e34d86a6a1fcd069a9f2973dafc1091420079cbddad4ca",
+        "bytes": 273473
+      },
+      "CHINESE_DEPENDENCY_IDENTITY.json": {
+        "sha256": "3bb76ffba49078114c6135542da7d4f1688841ede9a3cd88231d6c70667b2048",
+        "bytes": 35186
+      },
+      "CEA_RESOURCE_DELTA.json": {
+        "sha256": "bee659701e1ef1c22b388cff58689455985517bf8f5f51e4d9babedbcf4358b2",
+        "bytes": 42790
+      },
+      "M55_FEATURE_IDENTITY.json": {
+        "sha256": "0ec87db5038e6850c1f1d9e7a9a39ea82eebb999df1ed6c79a701f455011d7ca",
+        "bytes": 1966
+      },
+      "CONTROLLED_COPY.json": {
+        "sha256": "fbe6caf0beb3bdf2c288216ed960991241b8f7fe78b35237ab80a3514dce961e",
+        "bytes": 55801
+      },
+      "RUNTIME_IMPORT_CLOSURE.json": {
+        "sha256": "6a839f9200e60c443d8d54aed4ba159fed79e03b3eb82cf377633d6dcd120510",
+        "bytes": 6193
+      },
+      "TEXT_WORKER_IMPORT_CLOSURE.json": {
+        "sha256": "11decd65cabfeaa9708b2c14a901e3433b252df0896c545e60a619864588bd37",
+        "bytes": 7142
+      },
+      "native/HOST_FRONTEND_VERIFIED.json": {
+        "sha256": "aad4b7c96ec382822e8fcd1bf3a0177edac846918c29b484a679dd4b69afe556",
+        "bytes": 6593
+      },
+      "native/reports/frontend_v1/FRONTEND_VERIFIED.json": {
+        "sha256": "520c2d85016d58a6b1fb1e8984f40e26bdf11f90a94cbec66be35145c7d42b5a",
+        "bytes": 2176
+      },
+      "native/reports/frontend_v1/RESULT.json": {
+        "sha256": "954f3514ca499777e6d9eb28b5ed96388fcc485db4159dd19da8cc5548564bb7",
+        "bytes": 6021
+      },
+      "README.md": {
+        "sha256": "8862b1fa5dc039c8e198f338f4aa11a9f16507376620bebebd8d601250e97949",
+        "bytes": 4604
+      }
+    }
+  },
+  "version_sync_scope": "Full CEA host frontend/planning/identifier controls. Native ordinary Han bridge identical. Native CZ/MU controls tested on CEA host-prepared features; complete native text parser pending.",
+  "identifier_control_validation_scope": "Seven-stage duration transformation and physical logF0 transform verified against original Python on same native intermediate data. Raw prosody p tensors not exported; energy/logit/voicing audited from source/executed branch.",
+  "identifier_complete_acoustic_barrier": true,
+  "ID_300ms_or_old_ordinary_timing_applicable": false,
+  "all_source_weights_unchanged": true,
+  "training_updates": 0,
+  "hardware_300ms_verified": false,
+  "complete_system_double10MB_verified": false,
+  "all_identifier_quality_accepted": false,
+  "listening_index": "/mnt/d/newtts/fargan_cea342e_sync_20261030/index.html",
+  "delivery": {
+    "status": "DELIVERY_VERIFIED",
+    "path": "/mnt/d/newtts/fargan_cea342e_sync_20261030",
+    "files": 29,
+    "links": 37,
+    "host_vs_M55_audio_separately_labelled": true,
+    "all_files_byte_verified": true,
+    "commit": "cea342e5f3ee6d2efd228da78b2f3cf895062118",
+    "training_updates": 0,
+    "full_native_text_frontend_accepted": false,
+    "hardware_300ms_verified": false,
+    "files_sha256": {
+      "frontend_identity.json": "678cfc1066fe188a5632919ffb99e91e05bec4bf594af134fda01aea3deeffe2",
+      "frontend_regression.json": "a88fd2d54cbf4648ba09e4388277661a8dee6d5b11ec96293ddb9b2259ced109",
+      "host_asr.json": "48e685efd0dc66cac091b77c0a664dae729cc1ebee77f0608a7fb8f2bc4183b6",
+      "host_control_sync.json": "83ee425c9d67b712bb96500a2f73b56c206d997e3587d8da393ac434229a324f",
+      "host_en_digits_16000.wav": "003c0a37326b993f1912786987adb38a9ff0327e7c310176664dd7fc9c43c55f",
+      "host_en_digits_24000.wav": "7abaeb06067f472b5650689906a1f5bd0a8f9c0b183e5061e02e104af900e075",
+      "host_original_asr.json": "19c4a8563efc9681026743718808d089a8097f4f82f8445de983f9d90bd7e4ff",
+      "host_zh_CZ2671_16000.wav": "3dcb256c900463d0c2a15a3ee91a3b26d78906d493827ba560e2af90f7f449a8",
+      "host_zh_CZ2671_24000.wav": "7977ed578bca5edf898e3bc24bf211a06a4fccaa38351362583676f08e225664",
+      "host_zh_CZ2671_original_16000.wav": "ed207e52565c3c8e287f09b1244620c795107aad950e34259724e330862efef9",
+      "host_zh_CZ2671_original_24000.wav": "009a8afb9dc08c816b19b669bbb082dfc54c930d91914d00edd13eaa08736741",
+      "host_zh_MU5108_16000.wav": "7ae39b98db9711d9a38710f6938e2b80608ec841edd8dbd46fd7fef41ae2fa5b",
+      "host_zh_MU5108_24000.wav": "96addec1678485364287940f38b6bff46dc232b795e5bf3632a3e1f72f5b06b8",
+      "host_zh_MU5108_original_16000.wav": "16cbc6b78b5a62e104c54400b48125dd2f61738e64fbac5464757de19df11dac",
+      "host_zh_MU5108_original_24000.wav": "276a2cab1087ebbb7f2fa858604c0239fb052ff6b9bc5bef5c5121d7cbc6965b",
+      "host_zh_plain_16000.wav": "f6fdc47af7e2febca8f0154eec8a2df1909edce8c30d787296454a65081526f7",
+      "host_zh_plain_24000.wav": "37c4fa2c04891f278a62cf4949ab5ceb9e256fe66c68865ece1fa2cb3f991ece",
+      "index.html": "8f5ec5ac04765e309edd8a5863e0f4cfd8c81c4d5ac0349f9e2d364942779689",
+      "m55_CZ_v1_16000.wav": "4e96b2021103fc27f95a9bd0d60a7d8c682ae38b6a6f6d75d100c3a4de29b0ae",
+      "m55_CZ_v1_24000.wav": "8829be1557f19e610c6660ab51757f5c46eef73a0b0b3f1cac3b7fbe7dfe9847",
+      "m55_EN_v1_16000.wav": "0ffd08e73fa05e0c66e467ed2fb8dff3234ddf65950e1f247ef5d5d6db3b737e",
+      "m55_EN_v1_24000.wav": "6bba5c8790e6f7abddafef8b55ed40e16d95590a418690b6a002ccc213f4653e",
+      "m55_MU_v1_16000.wav": "90081c87d99b74e1c6ab83709cceff4d9ddbcd3319806737021c6eb953d4d31d",
+      "m55_MU_v1_24000.wav": "513acf19e3962ef670d1c5979385a6064417ef5023ac1184274c83f1e7050632",
+      "m55_ordinary_v2_16000.wav": "d1e9a530b2828d86f79754c6ac3871eea12a550d1eb3b3c54aa96b7501b5275e",
+      "m55_ordinary_v2_24000.wav": "ef11f693d57f27bbfb4f94fc60f49ea6d9ddcc4bf1ffba132f9f2a6585a32b28",
+      "MANIFEST.json": "8091eb3ce7891bcb7274395901934bcb42380963fb4557c9c233a7b4e0ab3728",
+      "native_asr.json": "59ac5fe349e704df4a35c73a5672978037adb3ff1d6cead9833e659129de92d3",
+      "native_verified.json": "07845f1546ed538483db2049bb97165caf7f12e868f9446c35848a04f5559f88"
+    }
+  },
+  "pending_processes": []
+}

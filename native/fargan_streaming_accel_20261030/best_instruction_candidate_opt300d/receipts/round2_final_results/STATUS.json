@@ -1,0 +1,10 @@
+{
+  "status": "OPT300D_INSTRUCTION_REDUCTION_ROUND2_WARM_BELOW_60M_OPTIMISTIC_NOT_HW_ACCEPTED",
+  "complete": true,
+  "warm_events": 59966762,
+  "warm_1ipc_ms": 299.834,
+  "cold_events": 61984476,
+  "cold_1ipc_ms": 309.92238,
+  "hardware_300ms_accepted": false,
+  "training_updates": 0
+}
